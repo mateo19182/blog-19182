@@ -1,4 +1,10 @@
-#Writing
+---
+title: How AI might help save copyright
+date: 2023-09-22
+tags: 
+  - writing
+  - policy
+---
 
 Copyright is a type of intellectual property that gives its owner the exclusive right to copy, distribute, adapt, display, and perform *creative* work, usually for a limited time. It was created as a direct response to the development of the printing press, as the cost of producing new books became so low that there was little incentive for authors to keep writing new pieces, as the competition would copy them almost instantly. While the history of copyright is very interesting and determines many of the laws that we still have today, what I want to address here is how the core values of copyright protection are misguided and how AI can help us redefine it.
 

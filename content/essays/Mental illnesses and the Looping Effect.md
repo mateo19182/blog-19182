@@ -1,6 +1,10 @@
-#Writing
-
-**published_date:** 2023-12-20
+---
+title: Mentall Illnesses and the Looping Effect
+date: 2023-12-20
+tags: 
+  - writing
+  - complex systems
+---
 
 My intention with this blog, among others, is to push myself to do better research on topics of interest to me. Writing things down in my own words proves a deeper level of understanding, and it helps me sit with the ideas for a couple of days to solidify my view. My [previous post on georgism](https://19182.bearblog.dev/georgism-and-the-value-of-land/) was my first real attempt at that, and, while I now have a good grasp on all the important concepts, I found my explanations to be lacking and too convoluted when compared with others.
 

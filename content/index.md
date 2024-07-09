@@ -4,7 +4,13 @@ title: Homepage
  
 Hi, this is the index for my blog.
 
- I'm currently working on "Conciousness is hard", it's my longest post by far, will take some time.
+Here lies my vague attemp to sort thoughts into words. I find that one of the best ways to learn about topics it's to write about them, so that's what I do here.
+
+I'm currently working on "Conciousness is hard", it's my longest post by far, will take some time.
+
+Any comments or discussion is always welcomed at mateoamadoares (@) gmail.com
+
+You can check out some of my other work on my [Github](https://github.com/mateo19182) and my music on [SoundCloud](https://soundcloud.com/m19182) and [Youtube](https://www.youtube.com/channel/UCEJKcBK7i88Iv3saZy2xuSg).
 
 ---
 

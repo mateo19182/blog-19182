@@ -1,6 +1,10 @@
-#Writing
-
-**published_date:** 2023-11-16
+---
+title: Favourite music of 2023
+date: 2023-11-16
+tags: 
+  - writing
+  - music
+---
 
 I am triying to compile a list of my favourite projects released every year. Im including albums and EPs not in any particular orden. Projects that I really want to highlight will be marked with a (*). [Here is last year's list.](https://i.imgur.com/Hnu0y4C.jpg).
 

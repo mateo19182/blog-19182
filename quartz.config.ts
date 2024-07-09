@@ -12,43 +12,45 @@ const config: QuartzConfig = {
     enableSPA: true,
     enablePopovers: true,
     analytics: {
-      provider: "plausible",
-    },
+	 provider: "tinylytics", siteId: "xGC1QbQFwc96LoYHDRM9"
+	 },
     locale: "en-US",
     baseUrl: "blog.m19182.dev",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "created",
-    theme: {
-      fontOrigin: "googleFonts",
-      cdnCaching: true,
-      typography: {
-        header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
-        code: "IBM Plex Mono",
-      },
-      colors: {
-        lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-        },
-        darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-        },
-      },
+theme: {
+  fontOrigin: "googleFonts",
+  cdnCaching: true,
+  typography: {
+    header: "Poppins",
+    body: "Inter",
+    code: "Fira Code",
+  },
+  colors: {
+    lightMode: {
+      light: "#ffffff",
+      lightgray: "#f0f0f0",
+      gray: "#a0a0a0",
+      darkgray: "#404040",
+      dark: "#202020",
+      secondary: "#3a86ff",
+      tertiary: "#8338ec",
+      highlight: "rgba(58, 134, 255, 0.2)",
+      accent: "#ff006e",
     },
+       darkMode: {
+      light: "#1f2937",
+      lightgray: "#374151",
+      gray: "#6b7280",
+      darkgray: "#d1d5db",
+      dark: "#f3f4f6",
+      secondary: "#60a5fa",
+      tertiary: "#818cf8",
+      highlight: "rgba(96, 165, 250, 0.2)",
+      accent: "#f472b6",
+    },
+  },
+},
   },
   plugins: {
     transformers: [

@@ -1,6 +1,10 @@
-#Writing
-
-**published_date:** 2023-08-14
+---
+title: What I learned traking my time for 6 months
+date: 2023-08-14
+tags: 
+  - writing
+  - personal
+---
 
 At the beginning of 2023, I decided to track my time usage hourly. I was inspired by [this reddit post](https://www.reddit.com/r/dataisbeautiful/comments/101hvnv/oc_i_tracked_every_hour_of_my_life_for_5_years/) that also provided me with a really useful [template](https://docs.google.com/spreadsheets/d/1W79a98wLeuMjDbJuy0IYDeQYZSVaWjTUCPUpXj24MHs/edit#gid=0).
 
