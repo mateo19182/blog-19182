@@ -1,56 +1,51 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
 
-/**
- * Quartz 4.0 Configuration
- *
- * See https://quartz.jzhao.xyz/configuration for more information.
- */
 const config: QuartzConfig = {
   configuration: {
     pageTitle: "blog-19182",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
-	 provider: "tinylytics", siteId: "xGC1QbQFwc96LoYHDRM9"
-	 },
+      provider: "tinylytics", siteId: "xGC1QbQFwc96LoYHDRM9"
+    },
     locale: "en-US",
     baseUrl: "blog.m19182.dev",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "created",
-theme: {
-  fontOrigin: "googleFonts",
-  cdnCaching: true,
-  typography: {
-    header: "Poppins",
-    body: "Inter",
-    code: "Fira Code",
-  },
-  colors: {
-    lightMode: {
-      light: "#ffffff",
-      lightgray: "#f0f0f0",
-      gray: "#a0a0a0",
-      darkgray: "#404040",
-      dark: "#202020",
-      secondary: "#3a86ff",
-      tertiary: "#8338ec",
-      highlight: "rgba(58, 134, 255, 0.2)",
-      accent: "#ff006e",
+    theme: {
+      fontOrigin: "googleFonts",
+      cdnCaching: true,
+      typography: {
+        header: "Poppins",
+        body: "Inter",
+        code: "Fira Code",
+      },
+      colors: {
+        lightMode: {
+          light: "#ffffff",
+          lightgray: "#f0f0f0",
+          gray: "#808080",
+          darkgray: "#404040",
+          dark: "#202020",
+          secondary: "#404040",
+          tertiary: "#606060",
+          highlight: "rgba(64, 64, 64, 0.2)",
+          accent: "#202020",
+        },
+        darkMode: {
+          light: "#0c0c0c",
+          lightgray: "#1e1e1e",
+          gray: "#b0b0b0",
+          darkgray: "#e0e0e0",
+          dark: "#f5f5f5",
+          secondary: "#1a8c4a",
+          tertiary: "#606060",
+          highlight: "rgba(255, 255, 255, 0.15)",
+          accent: "#121212",
+        },
+      },
     },
-       darkMode: {
-      light: "#1f2937",
-      lightgray: "#374151",
-      gray: "#6b7280",
-      darkgray: "#d1d5db",
-      dark: "#f3f4f6",
-      secondary: "#60a5fa",
-      tertiary: "#818cf8",
-      highlight: "rgba(96, 165, 250, 0.2)",
-      accent: "#f472b6",
-    },
-  },
-},
   },
   plugins: {
     transformers: [
