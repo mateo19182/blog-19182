@@ -8,15 +8,54 @@ Here lies my vague attemp to sort thoughts into words. I find that one of the be
 
 Any comments or discussion is always welcomed at mateoamadoares (@) gmail.com
 
-You can check out some of my other work on my [Github](https://github.com/mateo19182) and my music on [SoundCloud](https://soundcloud.com/m19182) and [Youtube](https://www.youtube.com/channel/UCEJKcBK7i88Iv3saZy2xuSg).
+You can check out some of my other work on [Github](https://github.com/mateo19182), [SoundCloud](https://soundcloud.com/m19182), [Youtube](https://www.youtube.com/channel/UCEJKcBK7i88Iv3saZy2xuSg) and [No-Cosign](https://no-cosign.m19182.dev/), a blog I host with some friends where we talk about music.
 
-I'm currently working on "Conciousness is hard", it's my longest post by far, will take some time. I'm also finishing my TFG on implicit neural representations.
+I also have a [[things i like]] and [[now]] page.
 
+You can find my curriculum [here](/data/mateoamadoares-cv.pdf).
 
-## Recent Posts
+---
 
+## Projects
+
+Here are some of my recent projects:
+
+- [Competed on a satellite imagery detection challenge with friends](https://github.com/Gonzalosilvalde/challenge-reducido)
+
+- [Sibilance Shredder](https://github.com/mateo19182/Sibilance_Shredder)
+  - Simple Chrome extension for reducing sibilance in speech.
+
+- [Bastos-finetune](https://github.com/mateo19182/bastos-finetune)
+  - Trained a Lora for Llama 3.1. on a dataset of Miguel Anxo Bastos's conferences and articles.
+
+- [mostos0](https://huggingface.co/mateo-19182/mosoco)
+  - Flux Lora on [Victor Moscoso's](https://en.wikipedia.org/wiki/Victor_Moscoso) poster art.
+
+- [all-the-breaks](https://github.com/mateo19182/all-the-breaks)
+  - Trained a model based on musicgen-small with drum breaks.
+
+- [Liminal Chat Simulator](https://github.com/mateo19182/liminal-chat-sim)
+  - Simple UI for having multiple LLM agents chatting to each other.
+
+- [Local RAG](https://github.com/mateo19182/localRagLLM)
+  - Simple implementation of Retrieval-Augmented Generation to add relevant context to your queries. Integration with [paperless-ngx](https://github.com/paperless-ngx/paperless-ngx).
+
+- [GaliciaGymMap](https://github.com/mateo19182/GaliciaGymMap)
+  - Map for displaying sports-related places using Leaflet.js. Data was scraped from google maps.
+
+- [live@NADIE.CREA - 2023](https://youtu.be/xBBow3L3EF8)
+  - Performed an audiovisual live show at the event, using reactive and artifially generated visuals that morph with the music. Most of th music were my own productions.
+
+- [some of my production work for other artists](https://www.youtube.com/playlist?list=PLk9jkVju7SB9mhttRU7B594g9OG4PPOUk)
+
+---
+
+## [[writings]]
+
+- 03 Sep, 2024: [[Consciousness is hard]] (WIP)
 - 24 May, 2024: [[Building my Homelab]]
 - 04 May, 2024: [[The Case Against Marketing]]
+- 01 May, 2024: [[Embodied Evolution]]
 - 22 Jan, 2024: [[Cybernetics]]
 - 20 Dec, 2023: [[Determining humanity loss function]]
 - 20 Dec, 2023: [[Mental illnesses and the Looping Effect]]
@@ -29,27 +68,8 @@ I'm currently working on "Conciousness is hard", it's my longest post by far, wi
 - 14 Aug, 2023: [[What I learned traking my time for 6 months]]
 - 14 Aug, 2023: [[The hi-fi paradox]]
 
-  [tags](https://blog.m19182.dev/tags/)
-
-## Projects
-
-Here are some of my recent projects:
-- [Sibilance Shredder](https://github.com/mateo19182/Sibilance_Shredder)
-  - Simple Chrome extension for reducing sibilance in speech.
-
-- [Bastos-finetune](https://github.com/mateo19182/bastos-finetune)
-  - Trained a Lora on a dataset of Miguel Anxo Bastos's conferences and articles. Based on Llama 3.1.
-
-- [Liminal Chat Simulator](https://github.com/mateo19182/liminal-chat-sim)
-  - Simple UI for having multiple LLM agents chatting to each other.
-
-- [Local RAG](https://github.com/mateo19182/localRagLLM)
-  - Simple implementation of Retrieval-Augmented Generation to add relevant context to your queries. Integration with [paperless-ngx](https://github.com/paperless-ngx/paperless-ngx).
-
-- [GaliciaGymMap](https://github.com/mateo19182/GaliciaGymMap)
-  - Map for displaying sports-related places using Leaflet.js. Data was scraped from google maps.
-
+[tags](https://blog.m19182.dev/tags/)
 
 ---
 
-This blog is hosted on [my own server](https://blog.m19182.dev/writings/Building-my-Homelab) so it might be down from time to time. [This one](https://mateo19182.github.io/) should be always up as its hosted by github.
+This blog is hosted on [my own server](https://blog.m19182.dev/writings/Building-my-Homelab) so it might be down from time to time. [This one](https://mateo19182.github.io/) should be always up.
