@@ -20,7 +20,15 @@ You can find my curriculum [here](/data/mateoamadoares-cv.pdf).
 
 Here are some of my recent projects:
 
+- [GymSimulation](https://github.com/angelbarreiros/GymSimulation/tree/main)
+  - Using gym's occupancy data and maps, we built a simulation that allows managers to easily visualize it.
+
+- [img-corroder](https://github.com/mateo19182/img-corroder)
+  - Image processing tool written in Rust, centered around [glitch](http://satyarth.me/articles/pixel-sorting/) and [corruption](https://lo.calho.st/posts/image-glitching/) effects.
+  - Able to create custom filter pipelines or randomized ones, also added the ability to do image segmentation based on a text prompt based on [SAM2 and GroundingDINO](https://github.com/mateo19182/langSAM)
+
 - [Competed on a satellite imagery detection challenge with friends](https://github.com/Gonzalosilvalde/challenge-reducido)
+  - Placed top25, ok for the first time, learned lots about satellite data.
 
 - [Sibilance Shredder](https://github.com/mateo19182/Sibilance_Shredder)
   - Simple Chrome extension for reducing sibilance in speech.
@@ -52,6 +60,7 @@ Here are some of my recent projects:
 
 ## [[writings]]
 
+- 24 Oct, 2024: [[On the growing importance of cogsec]]
 - 03 Sep, 2024: [[Consciousness is hard]] (WIP)
 - 24 May, 2024: [[Building my Homelab]]
 - 04 May, 2024: [[The Case Against Marketing]]

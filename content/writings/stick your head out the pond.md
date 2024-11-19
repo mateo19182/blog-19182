@@ -4,15 +4,16 @@ date: 2023-10-07
 tags: 
   - writing
   - personal
+  - rambling
 ---
 
-I want to write this post to remind myself and anyone else reading this to take risks. It's the most generic advice given, especially to young people, but that is because it's true. Last weekend I attended a conference organized by [modulartec](https://modulartec.gal/es/inicio_es/) about a small company called [befaco](https://www.befaco.org/), they are the only company in Spain (as far as I know) making modules for modular synths. 
+I want to write this post to remind myself and anyone else reading this to take risks. It's the most generic advice given, especially to young people, but that is because it's true. Last weekend I attended a conference organized by [modulartec](https://modulartec.gal/es/inicio_es/) about a small company called [befaco](https://www.befaco.org/), they are the only company in Spain (as far as I know) making modules for modular synths.
 
 I went expecting nothing since modular synthesis is a really niche hobby, and I doubted that there would be more than 10 people there. I wasn't wrong, we were few and mostly way older than me, but either way, I left the gathering inspired and hopeful. The feeling that, for a moment I was in conversations with the few people that cared about the same things as me.
 
 Well, to be honest, I am not that much into modular, at least right now. The main reason is the amount of money required just to dip your toes into it (400 for a case, 100/200 for each module and you need at least 3 to make some sounds), but I have played a fair amount with VCV rack and other software emulating the euro rack workflow.
 
-I surprised myself as I was writing this when thinking about how I felt when leaving and why it felt so good. The word hopeful felt like the correct one, and as most of my writing is stream-of-thought, now I want to understand why. I believe I was hopeful because I felt not completely alone, at least partially understood by someone. Most of my hobbies involve long hours in reclusion, and all of my friends already fled town to study elsewhere. While I'm not unhappy alone, it does get me into a certain mental state. 
+I surprised myself as I was writing this when thinking about how I felt when leaving and why it felt so good. The word hopeful felt like the correct one, and as most of my writing is stream-of-thought, now I want to understand why. I believe I was hopeful because I felt not completely alone, at least partially understood by someone. Most of my hobbies involve long hours in reclusion, and all of my friends already fled town to study elsewhere. While I'm not unhappy alone, it does get me into a certain mental state.
 
 I'm leaving the words about feelings for my journal, but the core of the matter is simple, humans are not individual beings. A person can survive alone, avoiding all interaction, but that might disqualify you from the "human" title. Our species is a social one and that is engrained in our biology and culture. Interestingly, our culture is evolving towards a more individualistic life-style and, in my opinion, contrary to our true nature, but that deserves its own post and some more preparation.
 

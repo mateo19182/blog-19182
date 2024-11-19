@@ -22,11 +22,11 @@ An assortment of things and ideas that I enjoy.
 - [Obsidian](https://obsidian.md/)
 - [Ableton](https://www.ableton.com/en/)
 - [Derivative](https://derivative.ca/)
-- [Nextcloud](https://nextcloud.com/)
-- [paperless-ngx](https://github.com/paperless-ngx/paperless-ngx)
-- [Quartz 4](https://quartz.jzhao.xyz/)
-- [LinkWarden](https://github.com/linkwarden/linkwarden)
+- [Syncthing](https://syncthing.net/)
+- [Quartz](https://quartz.jzhao.xyz/)
+- [ArchiveBox](https://github.com/ArchiveBox/ArchiveBox)
 - [Mullvad](https://mullvad.net/en)
+- [0x0.st](https://0x0.st/)
 
 ## Places on the Web
 
@@ -37,7 +37,12 @@ An assortment of things and ideas that I enjoy.
 - [Manifold Markets](https://manifold.markets/)
 - [Roots Of Progress](https://newsletter.rootsofprogress.org/)
 - [The Seeds of Science](https://www.theseedsofscience.pub/)
--
+- [rsrch.space](https://www.rsrch.space/)
+- [no-cosign](https://no-cosign.m19182.dev/)
+
+## Weird Places
+
+<iframe style="border:none;" width="100%" height="590" src="https://www.are.na/mateo-ares/weird-places-pbwcbhoc56e/embed" title="Weird Places"></iframe>
 
 ## Books
 
@@ -48,7 +53,6 @@ An assortment of things and ideas that I enjoy.
 - Calvin and Hobbes - Bill Watterson
 - Old Man's War Series - John Scalzi
 - Mars Triology - Kim Stanley Robinson
-
 ...
 
 ## Media
@@ -68,14 +72,11 @@ An assortment of things and ideas that I enjoy.
 - Hellper (Manhua)
 ...
 
-## Weird Places
-
-<iframe style="border:none;" width="100%" height="590" src="https://www.are.na/mateo-ares/weird-places-pbwcbhoc56e/embed" title="Weird Places"></iframe>
-
 ## Ideas
 
 - [Georgism](https://blog.m19182.dev/writings/Georgism-and-the-value-of-land)
 - [Cybernetics](https://blog.m19182.dev/writings/Cybernetics)
 - [Enlightened-centrism](https://www.richardhanania.com/p/towards-an-enlightened-centrism)
-- Blockchain
+- [The Dark Forest Theory of the Internet](https://ideaspace.metalabel.com/dark-forest-trilogy)
+- [Moravec's paradox](https://en.wikipedia.org/wiki/Moravec%27s_paradox#)
 ...

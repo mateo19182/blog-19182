@@ -212,6 +212,9 @@ Dehaene's Consciousness And The Brain
 [Taking Monism Seriously – Opentheory.net](https://opentheory.net/2019/06/taking-monism-seriously/)
 
 
+### Pete Mandik's qualia quietism and meta-Illusionism
+
+Qualia quietism is a view according to which the terms and concepts that typically feature a discussion of qualia or phenomenal states consist of a viciously circular set of mutually interdefining terms that have no clear or conceptually distinct content such that we can say anything meaningful about them at all. Essentially the very notion of qualia or phenomenal states is meaningless and there is nothing substantive to say about them.
 
 
 ## Physics
