@@ -18,10 +18,13 @@ You can find my curriculum [here](/data/mateoamadoares-cv.pdf).
 
 ## Projects
 
-Here are some of my recent projects:
+Here are some of my recent code projects:
 
 - [GymSimulation](https://github.com/angelbarreiros/GymSimulation/tree/main)
   - Using gym's occupancy data and maps, we built a simulation that allows managers to easily visualize it.
+
+- [ScoreBoard](https://egt.m19182.dev/)
+  - Scoreboard for a tennis school.
 
 - [img-corroder](https://github.com/mateo19182/img-corroder)
   - Image processing tool written in Rust, centered around [glitch](http://satyarth.me/articles/pixel-sorting/) and [corruption](https://lo.calho.st/posts/image-glitching/) effects.
@@ -46,13 +49,13 @@ Here are some of my recent projects:
   - Simple UI for having multiple LLM agents chatting to each other.
 
 - [Local RAG](https://github.com/mateo19182/localRagLLM)
-  - Simple implementation of Retrieval-Augmented Generation to add relevant context to your queries. Integration with [paperless-ngx](https://github.com/paperless-ngx/paperless-ngx).
+  - Simple implementation of Retrieval-Augmented Generation to add relevant context to your queries and integration with [paperless-ngx](https://github.com/paperless-ngx/paperless-ngx).
 
 - [GaliciaGymMap](https://github.com/mateo19182/GaliciaGymMap)
   - Map for displaying sports-related places using Leaflet.js. Data was scraped from google maps.
 
 - [live@NADIE.CREA - 2023](https://youtu.be/xBBow3L3EF8)
-  - Performed an audiovisual live show at the event, using reactive and artifially generated visuals that morph with the music. Most of th music were my own productions.
+  - Performed an audiovisual live show at the event, using reactive and artifially generated visuals that morph with the music. Most of the music were my own productions, the visuals were made with StableDiffusion and TouchDesigner.
 
 - [some of my production work for other artists](https://www.youtube.com/playlist?list=PLk9jkVju7SB9mhttRU7B594g9OG4PPOUk)
 
