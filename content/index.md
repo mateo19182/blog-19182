@@ -8,7 +8,7 @@ Here lies my vague attemp to sort thoughts into words. I find that one of the be
 
 Any comments or discussion is always welcomed at mateoamadoares (@) gmail.com
 
-You can check out some of my other work on [Github](https://github.com/mateo19182), [SoundCloud](https://soundcloud.com/m19182), [Youtube](https://www.youtube.com/channel/UCEJKcBK7i88Iv3saZy2xuSg) and [No-Cosign](https://no-cosign.m19182.dev/), a blog I host with some friends where we talk about music.
+You can check out some of my work on [Github](https://github.com/mateo19182), [SoundCloud](https://soundcloud.com/m19182), [Youtube](https://www.youtube.com/channel/UCEJKcBK7i88Iv3saZy2xuSg) and [No-Cosign](https://no-cosign.m19182.dev/), a blog I host with some friends where we talk about music.
 
 I also have a [[things i like]] and [[now]] page.
 
@@ -19,6 +19,8 @@ You can find my curriculum [here](/data/mateoamadoares-cv.pdf).
 ## Projects
 
 Here are some of my recent code projects:
+
+- [Competed on a flood detection challenge](https://github.com/mateo19182/floods_sa)
 
 - [GymSimulation](https://github.com/angelbarreiros/GymSimulation/tree/main)
   - Using gym's occupancy data and maps, we built a simulation that allows managers to easily visualize it.
@@ -63,6 +65,7 @@ Here are some of my recent code projects:
 
 ## [[writings]]
 
+- 6 Dic, 2024:  [[Favourite music of 2023]]
 - 24 Oct, 2024: [[On the growing importance of cogsec]]
 - 03 Sep, 2024: [[Consciousness is hard]] (WIP)
 - 24 May, 2024: [[Building my Homelab]]
