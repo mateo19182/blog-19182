@@ -16,7 +16,7 @@ You can find my curriculum [here](/data/mateoamadoares-cv.pdf).
 
 ---
 
-<details>
+<details open>
   <summary><h2 style="display: inline;">Projects</h2></summary>
 
 Here are some of my recent code projects:
@@ -78,4 +78,4 @@ Here are some of my recent code projects:
 
 ---
 
-This blog is hosted on [my own server](https://blog.m19182.dev/writings/Building-my-Homelab) so it might be down from time to time. [This one](https://mateo19182.github.io/) should be always up.
+<https://mateo19182.github.io/> was my blog before this one.
