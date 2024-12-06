@@ -6,13 +6,13 @@ tags:
   - music
 ---
 
-For one more year, I will be compiling my favourite albums and EPs released this year. Projects are listed in rought descending order of enjoyment. [Here's the 2022 list](https://i.imgur.com/Hnu0y4C.jpg) and [the 2023 one]([[Favourite music of 2023]]).
+For one more year, I will be compiling my favourite albums and EPs released this year. Projects are listed in rought descending order of enjoyment. [Here's the 2022 list](https://i.imgur.com/Hnu0y4C.jpg) and [the 2023 one](https://blog.m19182.dev/writings/Favourite-music-of-2023).
 
 This year was a bit special since I also launched a blog talk about music with some friends. It's called [no-cosign](https://no-cosign.m19182.dev/) and it's written in spanish. I have already released 3 posts there and I'm a bit proud of them so check them out if that's your thing and subscribe to the newsletter.
 
 - [I LAY DOWN MY LIFE FOR YOU - JPEGMAFIA](https://youtu.be/iStiV1eBiV8)
   - my most listened artist by far, he just keeps making the most interesting music there is...
-- [Municipal Dreams- Low End Activist](https://lowendactivist.bandcamp.com/album/municipal-dreams) (*)
+- [Municipal Dreams- Low End Activist](https://lowendactivist.bandcamp.com/album/municipal-dreams)
   - [review](https://no-cosign.m19182.dev/low-end-activist-municipal-dreams/), one of my most listened of the year
 - [The New Sound - Geordie Greep](https://youtu.be/A4EU_0vFzuU)
   - from the frontman of Black Midi, was obsessed with this one for a while...

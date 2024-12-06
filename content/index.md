@@ -16,46 +16,34 @@ You can find my curriculum [here](/data/mateoamadoares-cv.pdf).
 
 ---
 
-## Projects
+## [[Projects]]
 
 Here are some of my recent code projects:
 
 - [Competed on a flood detection challenge](https://github.com/mateo19182/floods_sa)
-
 - [GymSimulation](https://github.com/angelbarreiros/GymSimulation/tree/main)
   - Using gym's occupancy data and maps, we built a simulation that allows managers to easily visualize it.
-
 - [ScoreBoard](https://egt.m19182.dev/)
   - Scoreboard for a tennis school.
-
 - [img-corroder](https://github.com/mateo19182/img-corroder)
   - Image processing tool written in Rust, centered around [glitch](http://satyarth.me/articles/pixel-sorting/) and [corruption](https://lo.calho.st/posts/image-glitching/) effects.
   - Able to create custom filter pipelines or randomized ones, also added the ability to do image segmentation based on a text prompt based on [SAM2 and GroundingDINO](https://github.com/mateo19182/langSAM)
-
 - [Competed on a satellite imagery detection challenge with friends](https://github.com/Gonzalosilvalde/challenge-reducido)
   - Placed top25, ok for the first time, learned lots about satellite data.
-
 - [Sibilance Shredder](https://github.com/mateo19182/Sibilance_Shredder)
   - Simple Chrome extension for reducing sibilance in speech.
-
 - [Bastos-finetune](https://github.com/mateo19182/bastos-finetune)
   - Trained a Lora for Llama 3.1. on a dataset of Miguel Anxo Bastos's conferences and articles.
-
 - [mostos0](https://huggingface.co/mateo-19182/mosoco)
   - Flux Lora on [Victor Moscoso's](https://en.wikipedia.org/wiki/Victor_Moscoso) poster art.
-
 - [all-the-breaks](https://github.com/mateo19182/all-the-breaks)
   - Trained a model based on musicgen-small with drum breaks.
-
 - [Liminal Chat Simulator](https://github.com/mateo19182/liminal-chat-sim)
   - Simple UI for having multiple LLM agents chatting to each other.
-
 - [Local RAG](https://github.com/mateo19182/localRagLLM)
   - Simple implementation of Retrieval-Augmented Generation to add relevant context to your queries and integration with [paperless-ngx](https://github.com/paperless-ngx/paperless-ngx).
-
 - [GaliciaGymMap](https://github.com/mateo19182/GaliciaGymMap)
   - Map for displaying sports-related places using Leaflet.js. Data was scraped from google maps.
-
 - [live@NADIE.CREA - 2023](https://youtu.be/xBBow3L3EF8)
   - Performed an audiovisual live show at the event, using reactive and artifially generated visuals that morph with the music. Most of the music were my own productions, the visuals were made with StableDiffusion and TouchDesigner.
 
