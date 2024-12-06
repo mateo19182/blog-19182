@@ -6,7 +6,7 @@ tags:
   - music
 ---
 
-For one more year, I will be compiling my favourite albums and EPs released this year. Projects are listed in rought descending order of enjoyment. [Here's the 2022 list](/data/2022.jpeg) and [the 2023 one](https://blog.m19182.dev/writings/Favourite-music-of-2023).
+For one more year, I will be compiling my favourite albums and EPs released this year. Projects are listed in rought descending order of enjoyment. [Here's the 2022 list](/data/2022.jpeg) and [[Favourite music of 2023]].
 
 This year was a bit special since I also launched a blog talk about music with some friends. It's called [no-cosign](https://no-cosign.m19182.dev/) and it's written in spanish. I have already released 3 posts there and I'm a bit proud of them so check them out if that's your thing and subscribe to the newsletter.
 

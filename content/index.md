@@ -16,7 +16,8 @@ You can find my curriculum [here](/data/mateoamadoares-cv.pdf).
 
 ---
 
-## [[Projects]]
+<details>
+  <summary><h2 style="display: inline;">Projects</h2></summary>
 
 Here are some of my recent code projects:
 
@@ -48,6 +49,8 @@ Here are some of my recent code projects:
   - Performed an audiovisual live show at the event, using reactive and artifially generated visuals that morph with the music. Most of the music were my own productions, the visuals were made with StableDiffusion and TouchDesigner.
 
 - [some of my production work for other artists](https://www.youtube.com/playlist?list=PLk9jkVju7SB9mhttRU7B594g9OG4PPOUk)
+
+</details>
 
 ---
 
