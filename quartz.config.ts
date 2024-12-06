@@ -23,14 +23,14 @@ const config: QuartzConfig = {
       },
       colors: {
         lightMode: {
-          light: "#e0e0e0",
-          lightgray: "#c0c0c0",
-          gray: "#808080",
-          darkgray: "#404040",
-          dark: "#202020",
-          secondary: "#404040",
-          tertiary: "#606060",
-          highlight: "rgba(64, 64, 64, 0.2)",
+          light: "#f5f5f5",         // Soft off-white, less harsh than pure white
+          lightgray: "#e6e6e6",     // Lighter gray with a soft, muted tone
+          gray: "#a0a0a0",          // Softer mid-gray for better readability
+          darkgray: "#707070",      // Darker gray with good contrast
+          dark: "#303030",          // Deep charcoal for text and dark elements
+          secondary: "#505050",     // Balanced secondary color
+          tertiary: "#707070",      // Slightly lighter tertiary tone
+          highlight: "rgba(64, 64, 64, 0.1)"  // Very subtle highlight
         },
         darkMode: {
           light: "#0c0c0c",
