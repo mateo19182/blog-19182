@@ -17,5 +17,22 @@ This year was a bit special since I also launched a blog just to review and talk
 - [Player of the year - Tay Jordan](https://open.spotify.com/album/0zwdMUp2ELrIMdmDGY9xj5)
   - [review](https://no-cosign.m19182.dev/tay-jordan-player-of-the-year/)
 - Amour - Babymorocco
+- BouQ - Blawan
+- Dot - Vulfmon
+- In my dreams... - Auntie Flo
+- Meaning's edge - DjRUM
+- Come Ahead - Primal Scream
+- Illicit Trade - Lokal
+- TEK.USB* - CONNIE
+- QWERTY II - Saya Gray
+- Baggy$$ - Fcukers
+- Get the message - Kokoroko
+- Heavier Yet... - Sean Kuti and Egypt 80
+- Hyperdrama - Justice (*)
+- CHROMAKOPIA - Tyler the Creator
+- GNX - Kendrick Lamar
+- Pinball - MIKE, Tony Seltzer
+- Professional Existing - Gideo (*)
+...
 
 If you cared to go down this far you can check out my music on [Soundcloud](https://soundcloud.com/m19182) (just published the 9th volume of bootlegs...) and [Youtube](https://www.youtube.com/channel/UCEJKcBK7i88Iv3saZy2xuSg).

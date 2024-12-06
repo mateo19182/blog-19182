@@ -65,7 +65,7 @@ Here are some of my recent code projects:
 
 ## [[writings]]
 
-- 6 Dic, 2024:  [[Favourite music of 2023]]
+- 6 Dic, 2024:  [[Favourite music of 2024]]
 - 24 Oct, 2024: [[On the growing importance of cogsec]]
 - 03 Sep, 2024: [[Consciousness is hard]] (WIP)
 - 24 May, 2024: [[Building my Homelab]]
