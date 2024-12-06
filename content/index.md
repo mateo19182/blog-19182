@@ -16,7 +16,7 @@ You can find my curriculum [here](/data/mateoamadoares-cv.pdf).
 
 ---
 
-<details open>
+<details>
   <summary><h2 style="display: inline;">Projects</h2></summary>
 
 Here are some of my recent code projects:
@@ -47,8 +47,6 @@ Here are some of my recent code projects:
   - Map for displaying sports-related places using Leaflet.js. Data was scraped from google maps.
 - [live@NADIE.CREA - 2023](https://youtu.be/xBBow3L3EF8)
   - Performed an audiovisual live show at the event, using reactive and artifially generated visuals that morph with the music. Most of the music were my own productions, the visuals were made with StableDiffusion and TouchDesigner.
-
-- [some of my production work for other artists](https://www.youtube.com/playlist?list=PLk9jkVju7SB9mhttRU7B594g9OG4PPOUk)
 
 </details>
 
