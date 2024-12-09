@@ -68,12 +68,14 @@ This year was a bit special since I also launched a blog talk about music with s
 - God loves to sin but hates the sinner - superreservao
 - You are here, start - kaelin ellis
 - Valedictorian - ian
+- Alligator Bites Never Heal - Doechii
 - Three+ - Four Tet
 - Britpop - A.G. Cook
 - Fearless Movement - Kamasi Washington
 - they can hate but we still swinging - New Jazz Underground
 - Machine - The Bug
 - BRAT - Charlie XCX
+- Lungu Boy - Asake
 - Truest - Anysia Kym
 - Cascade - Floating Points
 - ACCELERATOR - greek
