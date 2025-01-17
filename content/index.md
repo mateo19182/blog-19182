@@ -2,17 +2,12 @@
 title: Homepage
 ---
 
-Hi, I'm Mateo. This is the main page of my blog.
-
-Here lies my vague attemp to sort thoughts into words. I find that one of the best ways to learn about topics it's to write about them, so that's what I do here.
-
-Any comments or discussion is always welcomed at mateoamadoares (@) gmail.com
+Here lies my vague attemp to sort thoughts into words. I find that one of the best ways to learn about topics. I also have a [[things i like]] and [[now]] page.
 
 You can check out some of my work on [Github](https://github.com/mateo19182), [SoundCloud](https://soundcloud.com/m19182), [Youtube](https://www.youtube.com/channel/UCEJKcBK7i88Iv3saZy2xuSg) and [No-Cosign](https://no-cosign.m19182.dev/), a blog I host with some friends where we talk about music.
 
-I also have a [[things i like]] and [[now]] page.
-
 You can find my curriculum [here](/data/mateoamadoares-cv.pdf).
+Contact me at mateoamadoares (@) gmail.com
 
 ---
 
@@ -75,5 +70,3 @@ Here are some of my recent code projects:
 [tags](https://blog.m19182.dev/tags/)
 
 ---
-
-<https://mateo19182.github.io/> was my blog before this one.

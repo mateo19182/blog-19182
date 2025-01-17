@@ -6,7 +6,7 @@ tags:
   - music
 ---
 
-I am triying to compile a list of my favourite projects released every year. Im including albums and EPs not in any particular orden. Projects that I really want to highlight will be marked with a (*). [Here is last year's list.](https://i.imgur.com/Hnu0y4C.jpg).
+I am triying to compile a list of my favourite projects released every year. Im including albums and EPs not in any particular orden. Projects that I really want to highlight will be marked with a (*). [Here is last year's list.](/data/2022.jpeg)
 
 - Void Dire, Earl Sweatchirt and The Alchemist
 - Further Out Than The Edge, Speakers Corner Quartet (*)

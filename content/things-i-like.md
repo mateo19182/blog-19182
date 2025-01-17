@@ -27,9 +27,11 @@ An assortment of things and ideas that I enjoy.
 - [ArchiveBox](https://github.com/ArchiveBox/ArchiveBox)
 - [Mullvad](https://mullvad.net/en)
 - [0x0.st](https://0x0.st/)
+- [Tailscale](https://tailscale.com/)
 
 ## Places on the Web
 
+- [no-cosign](https://no-cosign.m19182.dev/)
 - [qntm.org](https://qntm.org/)
 - [gwern.net](https://gwern.obormot.net/)
 - [Works in Progress](https://worksinprogress.co/)
@@ -38,7 +40,6 @@ An assortment of things and ideas that I enjoy.
 - [Roots Of Progress](https://newsletter.rootsofprogress.org/)
 - [The Seeds of Science](https://www.theseedsofscience.pub/)
 - [rsrch.space](https://www.rsrch.space/)
-- [no-cosign](https://no-cosign.m19182.dev/)
 
 ## Weird Places
 
