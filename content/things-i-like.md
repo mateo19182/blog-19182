@@ -45,32 +45,36 @@ An assortment of things and ideas that I enjoy.
 
 <iframe style="border:none;" width="100%" height="590" src="https://www.are.na/mateo-ares/weird-places-pbwcbhoc56e/embed" title="Weird Places"></iframe>
 
-## Books
+## Media
+
+### Books
 
 - Zones of Thought Series - Vernor Vinge
 - The Stack: On Software and Sovereignty - Benjamin H. Bratton
 - Capitalist Realism: Is There No Alternative? - Mark Fisher
-- Atlas Shrugged - Ayn Rand
 - Calvin and Hobbes - Bill Watterson
 - Old Man's War Series - John Scalzi
-- Mars Triology - Kim Stanley Robinson
 ...
 
-## Media
+### Anime
 
-- Cowboy Bebop (Anime)
-- Steins;Gate (Anime)
-- Serial Experiments Lain (Anime)
-- Paprika (Anime Movie)
-- Trigun (Anime)
-- REAL (Manga)
-- Pluto (Manga)
-- GTO (Manga)
-- Claymore (Manga)
-- 20th Century Boys (Manga)
-- Vagabond (Manga)
-- Toriko (Manga)
-- Hellper (Manhua)
+- Cowboy Bebop
+- Steins;Gate
+- Serial Experiments Lain
+- Paprika
+- Trigun
+...
+
+### Manga
+
+- REAL
+- Pluto
+- GTO
+- Claymore
+- 20th Century Boys
+- Vagabond
+- Toriko
+- Hellper
 ...
 
 ## Ideas
