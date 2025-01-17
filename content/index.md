@@ -40,7 +40,7 @@ Here are some of my recent code projects:
   - Simple implementation of Retrieval-Augmented Generation to add relevant context to your queries and integration with [paperless-ngx](https://github.com/paperless-ngx/paperless-ngx).
 - [GaliciaGymMap](https://github.com/mateo19182/GaliciaGymMap)
   - Map for displaying sports-related places using Leaflet.js. Data was scraped from google maps.
-- [live@NADIE.CREA - 2023](https://youtu.be/xBBow3L3EF8)
+- [live(@)NADIE.CREA - 2023](https://youtu.be/xBBow3L3EF8)
   - Performed an audiovisual live show at the event, using reactive and artifially generated visuals that morph with the music. Most of the music were my own productions, the visuals were made with StableDiffusion and TouchDesigner.
 
 </details>
