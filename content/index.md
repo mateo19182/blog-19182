@@ -6,8 +6,7 @@ Here lies my vague attemp to sort thoughts into words. I find that is one of the
 
 You can check out some of my work on [Github](https://github.com/mateo19182), [SoundCloud](https://soundcloud.com/m19182), [Youtube](https://www.youtube.com/channel/UCEJKcBK7i88Iv3saZy2xuSg) and [No-Cosign](https://no-cosign.m19182.dev/), a blog I host with some friends where we talk about music.
 
-You can find my curriculum [here](/data/mateoamadoares-cv.pdf).
-Contact me at mateoamadoares (@) gmail.com
+You can find my curriculum [here](/data/mateoamadoares-cv.pdf) and contact me at mateoamadoares (@) gmail.com
 
 ---
 
