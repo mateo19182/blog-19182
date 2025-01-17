@@ -2,7 +2,7 @@
 title: Homepage
 ---
 
-Here lies my vague attemp to sort thoughts into words. I find that one of the best ways to learn about topics. I also have a [[things i like]] and [[now]] page.
+Here lies my vague attemp to sort thoughts into words. I find that is one of the best ways to learn about different topics. I also have a [[things i like]] and [[now]] page.
 
 You can check out some of my work on [Github](https://github.com/mateo19182), [SoundCloud](https://soundcloud.com/m19182), [Youtube](https://www.youtube.com/channel/UCEJKcBK7i88Iv3saZy2xuSg) and [No-Cosign](https://no-cosign.m19182.dev/), a blog I host with some friends where we talk about music.
 
