@@ -96,13 +96,18 @@ In Part 2, we’ll dive deeper different tools for exploring and mapping this va
 
 [^1]:  [Sound](https://en.wikipedia.org/wiki/Sound) refers to both "a vibration that propagates as an acoustic wave" and "the reception of such waves and their perception by the brain". The first definition does not include the concepts of timbre, texture or spatial location as those are "hallucinated" by our brain.
 
+
 [^2]:  One could argue that the human prompt (in the case of a txt2audio model) or even the training dataset itself (presumably curated by humans) provides enough "creative force" to justify the result as a human creation. While I doubt this, I also don’t think it will be long before we can automate all these processes. I will talk more about creativity in the next post.
+
 
 [^3]:  I suppose you could make music for dogs or other animals if you want to unlock that sector of the search space. It seems they’re [more than capable](https://link.springer.com/article/10.1007/s10071-024-01875-5) of categorizing it, but we are sticking to humans for now.
 
+
 [^4]: A great resource that I found while researching for this were these 2 [Dan Lavry](https://lavryengineering.com/our-company) papers: [Sampling Theory For Digital Audio](https://lavryengineering.com/pdfs/lavry-sampling-theory.pdf) and [The Optimal Sample Rate for Quality Audio](https://www.lavryengineering.com/pdfs/lavry-white-paper-the_optimal_sample_rate_for_quality_audio.pdf), where he very clearly explains how higher sampling rates do not necessarily imply better quality! I also found his style of writing really engaging.
 
+
 [^5]:   The judgement will have to be discarded if the transmission to the receiver was corrupted beyond a certain threshold. We can assume that the transmission will be done by air under normal atmospheric conditions (15°C, 1 atmosphere, 50% humidity). Not only that but we would have to take away the "music" distinction to a sound if the only person that recognizes it as music dies.
+
 
 [^6]:   [8D Music](https://en.wikipedia.org/wiki/8D_music) will also be excluded, which is sad, but even sadder is the reality, reduced to remixes that "spin around your head" for social media. I’m hopeful for a comeback, but it’s clearly limited by playback technology. Apple is heading in the right direction, but it’s a slow process. It was a special moment for me when I discovered that sounds aren’t just panned left and right—there are two more dimensions to explore...
 

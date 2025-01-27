@@ -632,7 +632,7 @@ Consciousness is hard.
 ---
 ## Footnotes
 
-[¹] :  [This](https://www.frontiersin.org/articles/10.3389/frobt.2018.00012/full) is the best overview of the field, [this is mine (in spanish)](https://drive.google.com/file/d/1XJbHSkSSIw9zs2vqSxvSJ1chCbbQakXA/view?usp=sharing)
+[¹] :  [This](https://www.frontiersin.org/articles/10.3389/frobt.2018.00012/full) is the best overview of the field I found, [this is mine (in spanish)](https://drive.google.com/file/d/1XJbHSkSSIw9zs2vqSxvSJ1chCbbQakXA/view?usp=sharing)
 
 
 

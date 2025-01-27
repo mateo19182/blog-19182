@@ -48,6 +48,7 @@ Here are some of my recent code projects:
 
 ## [[writings]]
 
+- 27 Jan, 2025: [[Mapping music's search space pt.1]]
 - 6 Dic, 2024:  [[Favourite music of 2024]]
 - 24 Oct, 2024: [[On the growing importance of cogsec]]
 - 03 Sep, 2024: [[Consciousness is hard]] (WIP)
