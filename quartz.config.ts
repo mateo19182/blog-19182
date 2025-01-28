@@ -13,6 +13,7 @@ const config: QuartzConfig = {
     baseUrl: "blog.m19182.dev",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "created",
+    generateSocialImages: true,
     theme: {
       fontOrigin: "googleFonts",
       cdnCaching: true,
@@ -23,24 +24,26 @@ const config: QuartzConfig = {
       },
       colors: {
         lightMode: {
-          light: "#f5f5f5",         // Soft off-white, less harsh than pure white
-          lightgray: "#e6e6e6",     // Lighter gray with a soft, muted tone
-          gray: "#a0a0a0",          // Softer mid-gray for better readability
-          darkgray: "#707070",      // Darker gray with good contrast
-          dark: "#303030",          // Deep charcoal for text and dark elements
-          secondary: "#505050",     // Balanced secondary color
-          tertiary: "#707070",      // Slightly lighter tertiary tone
-          highlight: "rgba(64, 64, 64, 0.1)"  // Very subtle highlight
+          light: "#1e1e1e",         // Darker base
+          lightgray: "#2d2d2d",     // Darker light gray
+          gray: "#808080",          // Muted gray
+          darkgray: "#a0a0a0",      // Lighter dark gray for contrast
+          dark: "#d0d0d0",          // Light text for dark background
+          secondary: "#909090",      // Muted secondary
+          tertiary: "#707070",      // Darker tertiary
+          highlight: "rgba(255, 255, 255, 0.1)",  // Subtle highlight
+          textHighlight: "#1e1e1e", // Dark text for highlights
         },
         darkMode: {
-          light: "#0c0c0c",
-          lightgray: "#1e1e1e",
-          gray: "#b0b0b0",
-          darkgray: "#e0e0e0",
-          dark: "#f5f5f5",
-          secondary: "#1a8c4a",
-          tertiary: "#606060",
-          highlight: "rgba(255, 255, 255, 0.15)",
+          light: "#0a0a0a",         // Even darker background
+          lightgray: "#1a1a1a",     // Very dark gray
+          gray: "#909090",          // Balanced gray
+          darkgray: "#d0d0d0",      // Light gray for text
+          dark: "#f0f0f0",          // Light text
+          secondary: "#1a8c4a",     // Keep the accent color
+          tertiary: "#505050",      // Darker tertiary
+          highlight: "rgba(255, 255, 255, 0.12)", // Subtle highlight
+          textHighlight: "#0a0a0a", // Very dark text for highlights
         },
       },
     },
@@ -53,7 +56,7 @@ const config: QuartzConfig = {
       }),
       Plugin.SyntaxHighlighting({
         theme: {
-          light: "github-light",
+          light: "github-dark",     // Changed to dark theme for both modes
           dark: "github-dark",
         },
         keepBackground: false,
