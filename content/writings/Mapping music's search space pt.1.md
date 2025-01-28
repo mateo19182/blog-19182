@@ -20,7 +20,7 @@ This is equivalent to all of the combinations of the elements that make up a sou
 
 ---
 
-## The Human as the Gatekeeper
+## Human as the Gatekeeper
 
 The first requirement that helps us significantly reduce our search space is that a human must be involved. Music is inherently tied to human perception and cognition, sound can exist objectively, but music as a concept necessarily involves some kind of interpretation. As tempting as it might be, I don’t think it’s appropriate to force a human to be the creator of the music, as that would exclude bird songs or AI-generated music[^2]. It seems much more elegant to shift the responsibility of classification to the consumer of the music.
 
@@ -33,11 +33,11 @@ Similarly, this rule implies a series of other constraints on our parameters rel
 - The minimum detectable duration of a sound (temporal resolution) for humans is about [1.2 milliseconds for a burst with a 10-dB signal-to-noise ratio](https://pubmed.ncbi.nlm.nih.gov/7085985/)
   - The upper limit on duration is practically bounded by human lifespan, currently around 100 years.
 - There also are limits on [how fast or slow](https://youtu.be/h3kqBX1j7f8) a sound can be before our brain’s interpretation of the vibrations begins to get confused, though I'm deliberately not considering rhythm into the definition as it would complicate things.
-- Amplitude is surprising—human eardrums are very sensitive to pressure variations and can detect changes from a few micro pascals (μPa) to over 100 kilopascals (kPa). In decibels the range is around [0 to130](https://sengpielaudio.com/calculator-soundlevel.htm)
+- Amplitude is surprising—human eardrums are very sensitive to pressure variations and can detect changes from a few micro pascals (μPa) to over 100 kilopascals (kPa). In decibels the range goes [from 0 to 130](https://sengpielaudio.com/calculator-soundlevel.htm)
 - Waveforms are tricky, as they relate directly to timbre (the combination of frequencies in a sound). The human frequency discrimination threshold can help us here (while highly dependent on the target frequency, generally sits around 0.2% of the base frequency) but it's not a great solution.
-  - Another problem is that you can stack waveforms to get new ones infinitely, but since any waveform can be decomposed into sine waves, we can probably find a limit where it will not be noticeable anymore.
-  - Also we should maybe take the phase into account here (the location within a wave cycle), but it should only matter with low frequency waves as in higher ones the temporal resolution of our brain is not enough to notice.
-    - It matters a lot more in stereo environments (humans can only perceive music in stereo by default), but we will simplify here and only measure mono signals to avoid complexity. This is a big oversimplification but I really don't want to have to deal artifacts like[phase-cancellation](https://en.wikipedia.org/wiki/Wave_interference).
+  - Another problem is that you can stack waveforms to get new ones infinitely, but since any waveform can be decomposed into sine waves, we can probably find a limit where it won't be noticeable anymore.
+  - Also we should maybe take the phase into account here (the location within a wave cycle), but it should only matter with low frequency waves as in higher ones the temporal resolution of our brain is not enough to process it.
+    - This matters a lot more in stereo environments (humans can only perceive music in stereo by default), but we will simplify and only measure mono signals to avoid complexity. This is a big oversimplification but I really don't want to have to deal artifacts like [phase-cancellation](https://en.wikipedia.org/wiki/Wave_interference).
   - I don't really care about dissonance/consonance (simple frequency ratios are perceived as pleasing, while more complex ratios are usually aren't) since there are plenty of examples of dissonant music.
     - The [critical band](https://en.wikipedia.org/wiki/Critical_band) (band of frequencies within which a second tone will interfere with the perception of the first tone by [auditory masking](https://en.wikipedia.org/wiki/Auditory_masking "Auditory masking")) is relevant here, but as it is a purely psychoacoustic phenomena we will ignore it.
 
@@ -91,8 +91,6 @@ Many have tried their hand at this problem before, like [Serialism](https://en.w
 In Part 2, we’ll dive deeper different tools for exploring and mapping this vast search space, with emphasis on recent machine learning techniques and compression. Thanks for reading :)
 
 ---
-
-## Footnotes
 
 [^1]:  [Sound](https://en.wikipedia.org/wiki/Sound) refers to both "a vibration that propagates as an acoustic wave" and "the reception of such waves and their perception by the brain". The first definition does not include the concepts of timbre, texture or spatial location as those are "hallucinated" by our brain.
 
