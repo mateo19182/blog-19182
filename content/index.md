@@ -2,9 +2,9 @@
 title: Homepage
 ---
 
-Here lies my vague attemp to sort thoughts into words. I find that is one of the best ways to learn about different topics. I also have a [[things i like]] and [[now]] page.
+Here lies my vague attemp to sort my thoughts into words. I find that is one of the best ways to learn about different topics. I also have a [[things i like]] and [[now]] page.
 
-You can check out some of my work on [Github](https://github.com/mateo19182), [SoundCloud](https://soundcloud.com/m19182), [Youtube](https://www.youtube.com/channel/UCEJKcBK7i88Iv3saZy2xuSg) and [No-Cosign](https://no-cosign.m19182.dev/), a blog I host with some friends where we talk about music.
+You can check out some of my work on [Github](https://github.com/mateo19182), [SoundCloud](https://soundcloud.com/m19182), [Youtube](https://www.youtube.com/channel/UCEJKcBK7i88Iv3saZy2xuSg). Also see [No-Cosign](https://no-cosign.m19182.dev/), a blog I host with some friends where we talk about music.
 
 You can find my curriculum [here](/data/mateoamadoares-cv.pdf) and contact me at mateoamadoares (@) gmail.com
 
@@ -15,10 +15,12 @@ You can find my curriculum [here](/data/mateoamadoares-cv.pdf) and contact me at
 
 Here are some of my recent code projects:
 
+- [NPS rating system for gyms](https://nps.innplay.site/)
+  - Helped building this app for managing tablets with ratings and customer reviews, targetting gyms.
 - [Competed on a flood detection challenge](https://github.com/mateo19182/floods_sa)
 - [GymSimulation](https://github.com/angelbarreiros/GymSimulation/tree/main)
   - Using gym's occupancy data and maps, we built a simulation that allows managers to easily visualize it.
-- [ScoreBoard](https://egt.m19182.dev/)
+- [ScoreBoard](https://scoreboard.innplay.site/)
   - Scoreboard for a tennis school.
 - [img-corroder](https://github.com/mateo19182/img-corroder)
   - Image processing tool written in Rust, centered around [glitch](http://satyarth.me/articles/pixel-sorting/) and [corruption](https://lo.calho.st/posts/image-glitching/) effects.
