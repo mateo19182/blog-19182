@@ -14,7 +14,9 @@ You can find my curriculum [here](/data/mateoamadoares-cv.pdf) and contact me at
   <summary><h2 style="display: inline;">Projects</h2></summary>
 
 Here are some of my recent code projects:
-
+- [Escoba Bench](https://github.com/mateo19182/escobaBenchmark)
+  - A tool for benchmarking LLM agents by making them play [Escoba](https://en.wikipedia.org/wiki/Escoba) against each other.
+  - Using ELO rating system.
 - [NPS rating system for gyms](https://nps.innplay.site/)
   - Helped building this app for managing tablets with ratings and customer reviews, targetting gyms.
 - [Competed on a flood detection challenge](https://github.com/mateo19182/floods_sa)
