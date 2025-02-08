@@ -78,6 +78,8 @@ Given this restrictions, music acts very much like a language, but operating on 
 
 Music does have syntactic structure (rhythm, harmony), almost semantics (emotional resonance), and cultural dialects (genres); but the kind of ideas that it can convey with are usually very different from what we are typically transmitting with words. Communication tends to be very lossy unless there is a high level of mastery of the language. People have tried to [map some of these rules before](https://en.wikipedia.org/wiki/Generative_theory_of_tonal_music), and there's some research on whether it [serves a evolutionary purpose](https://centaur.reading.ac.uk/95527/1/Savage%20music-as-a-coevolved-system-for-social-bonding.pdf) ([I don't think so](https://link.springer.com/referenceworkentry/10.1007/978-3-319-19650-3_2851)).
 
+In truth, music are just the sounds that categorize as art, and the definitions given above probably apply to most kinds of arts, but I was triying not to use that word as to not confuse things further.
+
 ---
 
 ## Conclusion

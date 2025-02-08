@@ -22,6 +22,7 @@ An assortment of things and ideas that I enjoy.
 - [Obsidian](https://obsidian.md/)
 - [Ableton](https://www.ableton.com/en/)
 - [Derivative](https://derivative.ca/)
+- [Zen](https://zen-browser.app/)
 - [Syncthing](https://syncthing.net/)
 - [Quartz](https://quartz.jzhao.xyz/)
 - [ArchiveBox](https://github.com/ArchiveBox/ArchiveBox)
