@@ -6,7 +6,7 @@ tags:
 ---
 
 An assortment of things and ideas that I enjoy, in progress.
-An up-to-date archive of links I've saved is available on [[Link Archive]]
+An up-to-date archive of links I've saved is available on [[link-archive]]
 
 ## Software
 
