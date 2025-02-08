@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2025-02-8
+date: 2025-02-08
 tags: 
   - personal
 ---
@@ -12,6 +12,7 @@ This is a collection of links I've archived over time.
  If a link is broken and you're interested in it, contact me for an archive.
 
 - [FineWeb: decanting the web for the finest text data at scale - a Hugging Face Space by HuggingFaceFW](https://huggingface.co/spaces/HuggingFaceFW/blogpost-fineweb-v1) `Academic Papers and Resources` *2025-02-08*
+- [Guest post: The Global IQ Debate: A Modest Contribution From A Resident African](https://woodfromeden.substack.com/p/guest-post-the-global-iq-debate-a) `Reads` *2025-02-08*
 - [Republic of Artsakh - Wikipedia](https://en.wikipedia.org/wiki/Republic_of_Artsakh) `Wikis` *2025-02-07*
 - [Langley Formal Methods Program • PVS • The Martian](https://shemesh.larc.nasa.gov/fm/pvs/TheMartian) `Reads` *2025-02-07*
 - [Universal Basic Income and Poverty — LessWrong](https://www.lesswrong.com/posts/fPvssZk3AoDzXwfwJ/universal-basic-income-and-poverty) `Ideas` *2025-02-07*
