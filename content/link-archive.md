@@ -5,8 +5,6 @@ tags:
   - personal
 ---
 
-# Link Archive
-
 This is a collection of links I've archived over time.
  Categories are rough, links are updated once a month from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
