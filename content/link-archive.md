@@ -459,7 +459,7 @@ This is a collection of links I've archived over time.
 - [Anonymous Messaging via DHTs Doesn't Work](https://www.miasma.space/anon-dhts) `Reads` *2024-08-31*
 - [Regex Crossword](https://regexcrossword.com) `Tools and Interactive Websites` *2024-08-31*
 - [Inigo Quilez :: computer graphics, mathematics, shaders, fractals, demoscene and more](https://iquilezles.org) `Tech` *2024-08-30*
-- [harsh-bothra/SecurityExplained: SecurityExplained is a new series after the previous learning challenge series #Learn365. The aim of #SecurityExplained series is to create informational content in multiple formats and share with the community to enable knowledge creation and learning.](https://github.com/harsh-bothra/SecurityExplained/tree/main) `Tech` *2024-08-30*
+- [harsh-bothra/SecurityExplained: SecurityExplained is a new series after the previous learning challenge series -Learn365. The aim of -SecurityExplained series is to create informational content in multiple formats and share with the community to enable knowledge creation and learning.](https://github.com/harsh-bothra/SecurityExplained/tree/main) `Tech` *2024-08-30*
 - [a-hackers-case-for-crypto - Chad Nauseam Home](https://chadnauseam.com/coding/cryptocurrency/a-hackers-case-for-crypto) `Tech` *2024-08-30*
 - [Adblocking / Privacy • freemediaheckyeah](https://fmhy.net/adblockvpnguide) `Museums - Indexers` *2024-08-29*
 - [(PDF) "Heredero único y familia troncal en la Galicia interior, 1750-1860"](https://www.researchgate.net/publication/337113841_Heredero_unico_y_familia_troncal_en_la_Galicia_interior_1750-1860) `Academic Papers and Resources` *2024-08-26*
@@ -540,7 +540,7 @@ This is a collection of links I've archived over time.
 - [Chic Chan | Andrea xx | Substack](https://chicchan.substack.com/) `Publications` *2024-08-16*
 - [Ed Zitron's Where's Your Ed At](https://www.wheresyoured.at/) `Publications` *2024-08-16*
 - [Do Not Research](https://donotresearch.substack.com) `Publications` *2024-08-16*
-- [Fetching Title#dhl5](https://socdoneleft.substack.com/) `Publications` *2024-08-16*
+- [Fetching Title-dhl5](https://socdoneleft.substack.com/) `Publications` *2024-08-16*
 - [Chris Arnade Walks the World | Substack](https://walkingtheworld.substack.com/) `Publications` *2024-08-16*
 - [Experimental History](https://www.experimental-history.com/) `Publications` *2024-08-16*
 - [Progress and Poverty | Joseph Addington | Substack](https://progressandpoverty.substack.com/) `Publications` *2024-08-16*
