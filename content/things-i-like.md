@@ -5,17 +5,8 @@ tags:
   - personal
 ---
 
-Work in progress...
-
-An assortment of things and ideas that I enjoy.
-  
-## Manifestos
-
-<iframe style="border:none;" width="100%" height="590" src="https://www.are.na/mateo-ares/manifestos-zyzpnx-sk8k/embed" title="manifestos"></iframe>
-
-## Museums / Indexers
-
-<iframe style="border:none;" width="100%" height="590" src="https://www.are.na/mateo-ares/museums-indexers/embed" title="Museums"></iframe>
+An assortment of things and ideas that I enjoy, in progress.
+An up-to-date archive of links I've saved is available on [[Link Archive]]
 
 ## Software
 
@@ -45,6 +36,14 @@ An assortment of things and ideas that I enjoy.
 ## Weird Places
 
 <iframe style="border:none;" width="100%" height="590" src="https://www.are.na/mateo-ares/weird-places-pbwcbhoc56e/embed" title="Weird Places"></iframe>
+
+## Manifestos
+
+<iframe style="border:none;" width="100%" height="590" src="https://www.are.na/mateo-ares/manifestos-zyzpnx-sk8k/embed" title="manifestos"></iframe>
+
+## Museums / Indexers
+
+<iframe style="border:none;" width="100%" height="590" src="https://www.are.na/mateo-ares/museums-indexers/embed" title="Museums"></iframe>
 
 ## Media
 
