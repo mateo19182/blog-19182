@@ -372,7 +372,7 @@ Chomsky: Language Acquisition Device, prepared for to learn language, that's why
 
 reading and numbers: "Reading in the Brain" and "The Number Sense",
 
-### ## Emotions
+### Emotions
 
 Minsky outlines the book as follows:[[4]](https://en.wikipedia.org/wiki/The_Emotion_Machine#cite_note-4)
 
