@@ -4,7 +4,7 @@ title: Homepage
 
 Here lies my vague attemp to sort my thoughts into words. I find that is one of the best ways to learn about different topics. 
 
-I also have a [[things i like]], [[now]] and [[projects]] page.
+I also have a [[things i like]], [[now]], [[link-archive]] and [[projects]] page.
 
 Check out my work on [GitHub](https://github.com/mateo19182), [SoundCloud](https://soundcloud.com/m19182), and [YouTube](https://www.youtube.com/channel/UCEJKcBK7i88Iv3saZy2xuSg). I also run [No-Cosign](https://no-cosign.m19182.dev/), a music blog with friends, and work with the [AudiaLab](https://audialab.com/) team.
 
