@@ -8,47 +8,49 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Quartz 4",
+    pageTitle: "blog-19182",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
-      provider: "plausible",
+      provider: 'umami',
+      host: 'umami.m19182.dev',
+      websiteId: '23e4acbd-b580-49f5-8582-40c77218c6cc'
     },
     locale: "en-US",
-    baseUrl: "quartz.jzhao.xyz",
+    baseUrl: "blog.m19182.dev",
     ignorePatterns: ["private", "templates", ".obsidian"],
-    defaultDateType: "modified",
+    defaultDateType: "created",
     theme: {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
-        code: "IBM Plex Mono",
+        header: "Poppins",
+        body: "Inter",
+        code: "Fira Code",
       },
       colors: {
         lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#fff23688",
+          light: "#f5f5f5",         // Soft off-white, less harsh than pure white
+          lightgray: "#e6e6e6",     // Lighter gray with a soft, muted tone
+          gray: "#a0a0a0",          // Softer mid-gray for better readability
+          darkgray: "#707070",      // Darker gray with good contrast
+          dark: "#303030",          // Deep charcoal for text and dark elements
+          secondary: "#505050",     // Balanced secondary color
+          tertiary: "#707070",      // Slightly lighter tertiary tone
+          highlight: "rgba(64, 64, 64, 0.1)",  // Very subtle highlight
+          textHighlight: "#fff23688", // Subtle yellow highlight (from default)
         },
         darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#b3aa0288",
+          light: "#0c0c0c",
+          lightgray: "#1e1e1e",
+          gray: "#b0b0b0",
+          darkgray: "#e0e0e0",
+          dark: "#f5f5f5",
+          secondary: "#1a8c4a",
+          tertiary: "#606060",
+          highlight: "rgba(255, 255, 255, 0.15)",
+          textHighlight: "#b3aa0288", // Subtle highlight for dark mode (from default)
         },
       },
     },

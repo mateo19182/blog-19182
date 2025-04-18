@@ -1,0 +1,37 @@
+---
+title: Homepage
+---
+
+Here lies my vague attemp to sort my thoughts into words. I find that is one of the best ways to learn about different topics. 
+
+I also have a [[things i like]], [[now]] and [[projects]] page.
+
+Check out my work on [GitHub](https://github.com/mateo19182), [SoundCloud](https://soundcloud.com/m19182), and [YouTube](https://www.youtube.com/channel/UCEJKcBK7i88Iv3saZy2xuSg). I also run [No-Cosign](https://no-cosign.m19182.dev/), a music blog with friends, and work with the [AudiaLab](https://audialab.com/) team.
+
+Always on the look for good opportunities, contact me at mateoamadoares (@) gmail.com for my cv and any other inquiries.
+
+---
+
+## [[writings]]
+
+- 31 Mar, 2025: [[Mapping music's search space pt.2]]
+- 27 Jan, 2025: [[Mapping music's search space pt.1]]
+- 6 Dic, 2024:  [[Favourite music of 2024]]
+- 24 Oct, 2024: [[On the growing importance of cogsec]]
+- 03 Sep, 2024: [[Consciousness is hard]] (WIP)
+- 24 May, 2024: [[Building my Homelab]]
+- 04 May, 2024: [[The Case Against Marketing]]
+- 01 May, 2024: [[Embodied Evolution]]
+- 22 Jan, 2024: [[Cybernetics]]
+- 20 Dec, 2023: [[Determining humanity loss function]]
+- 20 Dec, 2023: [[Mental illnesses and the Looping Effect]]
+- 16 Nov, 2023: [[Favourite music of 2023]]
+- 31 Oct, 2023: [[Georgism and the value of land]]
+- 07 Oct, 2023: [[stick your head out the pond]]
+- 29 Sep, 2023: [[On the amount of hobbies]]
+- 25 Sep, 2023: [[On models]]
+- 22 Sep, 2023: [[How AI might help save copyright]]
+- 14 Aug, 2023: [[What I learned traking my time for 6 months]]
+- 14 Aug, 2023: [[The hi-fi paradox]]
+
+[tags](https://blog.m19182.dev/tags/)
