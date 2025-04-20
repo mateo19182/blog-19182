@@ -1,14 +1,26 @@
 ---
 title: Link Archive
-date: 2025-04-14
+date: 2025-04-21
 tags: 
   - personal
 ---
 
 This is a collection of links I've archived over time.
- Categories are rough, links are updated once a month from my collection.
+ Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Public Annotated Complexity Talk - ITA-software-travel-complexity.pdf](http://www.demarcken.org/carl/papers/ITA-software-travel-complexity/ITA-software-travel-complexity.pdf) `Academic Papers and Resources` *2025-04-19*
+- [Debugging a Vision Transformer Compilation Issue](https://ohadravid.github.io/posts/2025-01-debugging-vit-and-tensorrt/#fnref:1) `Academic Papers and Resources` *2025-04-19*
+- [Generative modelling in latent space – Sander Dieleman](https://sander.ai/2025/04/15/latents.html) `Academic Papers and Resources` *2025-04-19*
+- [Tract Postmortem](https://buildwithtract.com/?utm_source=substack&utm_medium=email) `Reads` *2025-04-19*
+- [Conceptual Rounding Errors - by Jan Kulveit](https://boundedlyrational.substack.com/p/conceptual-rounding-errors) `Ideas` *2025-04-17*
+- [Alexander Obenauer](https://alexanderobenauer.com) `Tech` *2025-04-16*
+- [All Posts – Sander Dieleman](https://sander.ai/posts) `Tech` *2025-04-16*
+- [Stablecoins, not Bitcoin - pray.eth | Beyond Bitcoin](https://www.praydefi.com/p/stablecoins-not-bitcoin) `Ideas` *2025-04-16*
+- [Max Slater](https://thenumb.at) `Tech` *2025-04-15*
+- [The Demise of the Flynn Effect - Cremieux Recueil](https://www.cremieux.xyz/p/the-demise-of-the-flynn-effect?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2025-04-15*
+- [vitalik.eth.limo/general/2025/04/14/privacy.html](https://vitalik.eth.limo/general/2025/04/14/privacy.html) `Reads` *2025-04-15*
+- [Pirate Wires | Technology, Politics, Culture](https://www.piratewires.com) `Collectives and Magazines` *2025-04-15*
 - [The Intelligence Consolidation](https://tmychow.substack.com/p/the-intelligence-consolidation) `Reads` *2025-04-13*
 - [A Background-Proof Guide on Co-Packaged Optics](https://irrationalanalysis.substack.com/p/a-background-proof-guide-on-co-packaged?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2025-04-13*
 - [Tariff Armageddon? | GPU Loopholes, Mexico Supply Chain Shift, Wafer Fab Equipment Vulnerabilities, Optical Module Pricing Surge, Datacenter Equipment – SemiAnalysis](https://semianalysis.com/2025/04/10/tariff-armageddon-gpu-loopholes) `Reads` *2025-04-13*
