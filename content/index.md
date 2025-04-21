@@ -6,7 +6,7 @@ Here lies my vague attemp to sort my thoughts into words. I find that is one of 
 
 I also have a [[things i like]], [[now]], [[link-archive]] and [[projects]] page.
 
-Check out my work on [GitHub](https://github.com/mateo19182), [SoundCloud](https://soundcloud.com/m19182), and [YouTube](https://www.youtube.com/channel/UCEJKcBK7i88Iv3saZy2xuSg). I also run [No-Cosign](https://no-cosign.m19182.dev/), a music blog with friends, and work with the [AudiaLab](https://audialab.com/) team.
+Check out my work on [GitHub](https://github.com/mateo19182), [SoundCloud](https://soundcloud.com/m19182), [YouTube](https://www.youtube.com/channel/UCEJKcBK7i88Iv3saZy2xuSg) and [faircamp](https://music.m19182.dev/). I also run [No-Cosign](https://no-cosign.m19182.dev/), a music blog with friends, and work with the [AudiaLab](https://audialab.com/) team.
 
 Always on the look for good opportunities, contact me at mateoamadoares (@) gmail.com for my cv and any other inquiries.
 
