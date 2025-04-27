@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2025-04-21
+date: 2025-04-28
 tags: 
   - personal
 ---
@@ -9,6 +9,17 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [proceedings.pdf](https://sigbovik.org/2025/proceedings.pdf) `Reads` *2025-04-27*
+- [Where Babies Come From—Asterisk](https://asteriskmag.com/issues/09/where-babies-come-from) `Reads` *2025-04-26*
+- [Chris Donahue](https://chrisdonahue.com) `Tech` *2025-04-25*
+- [What’s the Deal With Autism Rates? - Cremieux Recueil](https://www.cremieux.xyz/p/whats-the-deal-with-autism-rates) `Reads` *2025-04-25*
+- [Korea TSPs](https://www.math.uwaterloo.ca/tsp/korea/index.html) `Academic Papers and Resources` *2025-04-24*
+- [Questions about the Future of AI - by Dwarkesh Patel](https://www.dwarkesh.com/p/questions-about-ai) `Ideas` *2025-04-24*
+- [Me at the zoo](https://things.lfesp.me/zoo) `Tools and Interactive Websites` *2025-04-24*
+- [Schizo embeddings: Initializing special tokens the complicated way](https://snimu.github.io/2025/04/21/schizo-embeddings.html) `Academic Papers and Resources` *2025-04-22*
+- [Abusing DuckDB-WASM by making SQL draw 3D graphics (Sort Of)](https://www.hey.earth/posts/duckdb-doom) `Tech` *2025-04-22*
+- [A Ketamine Addict's Perspective On What Elon Musk Might Be Experiencing On Ketamine](https://alisoncrosthwait.substack.com/p/a-ketamine-addicts-perspective-on?r=bdhc9&utm_medium=ios&triedRedirect=true) `Reads` *2025-04-22*
+- [How to run Python in production](https://ashishb.net/programming/python-in-production-2) `Tech` *2025-04-21*
 - [Public Annotated Complexity Talk - ITA-software-travel-complexity.pdf](http://www.demarcken.org/carl/papers/ITA-software-travel-complexity/ITA-software-travel-complexity.pdf) `Academic Papers and Resources` *2025-04-19*
 - [Debugging a Vision Transformer Compilation Issue](https://ohadravid.github.io/posts/2025-01-debugging-vit-and-tensorrt/#fnref:1) `Academic Papers and Resources` *2025-04-19*
 - [Generative modelling in latent space – Sander Dieleman](https://sander.ai/2025/04/15/latents.html) `Academic Papers and Resources` *2025-04-19*
