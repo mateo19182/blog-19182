@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2025-04-28
+date: 2025-05-05
 tags: 
   - personal
 ---
@@ -9,6 +9,27 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [The Totalitarian Buddhist Who Beat Sim City](https://web.archive.org/web/20211117094441/https://www.vice.com/en/article/4w4kg3/the-totalitarian-buddhist-who-beat-sim-city) `Reads` *2025-05-03*
+- [How to live an intellectually rich life - by Utsav Mamoria](https://utsavmamoria.substack.com/p/how-to-live-an-intellectually-rich) `Reads` *2025-05-03*
+- [Accountability Sinks — LessWrong](https://www.lesswrong.com/posts/nYJaDnGNQGiaCBSB5/accountability-sinks) `Ideas` *2025-05-03*
+- [Anukari 3D Physics Synthesizer](https://anukari.com) `Art` *2025-05-03*
+- [license-memes/licenses/dickbird-public-license at master · ioistired/license-memes](https://github.com/ioistired/license-memes/blob/master/licenses/dickbird-public-license) `Weird` *2025-05-03*
+- [When ChatGPT Broke an Entire Field: An Oral History | Quanta Magazine](https://www.quantamagazine.org/when-chatgpt-broke-an-entire-field-an-oral-history-20250430) `Reads` *2025-05-02*
+- [Nikolay Chernyshevsky - Wikipedia](https://en.wikipedia.org/wiki/Nikolay_Chernyshevsky#Ideas_and_influence) `Wikis` *2025-05-01*
+- [Eau de Vagina & Eau de Homme - Seeds of Science](https://substack.com/inbox/post/162540185) `Academic Papers and Resources` *2025-05-01*
+- [The Unsustainability of Moore’s Law - by Charles Rosenbauer](https://bzolang.blog/p/the-unsustainability-of-moores-law) `Reads` *2025-05-01*
+- [How Technology Shapes Content and Business Models (Or Audio’s Opportunity) — MatthewBall.co](https://www.matthewball.co/all/audiotech) `Reads` *2025-05-01*
+- [[untitled] - Not Boring by Packy McCormick](https://www.notboring.co/p/untitled) `Reads` *2025-05-01*
+- [Trading stuff for money](https://dynomight.net/money) `Ideas` *2025-05-01*
+- [Stockhausen: Sounds in Space](https://stockhausenspace.blogspot.com) `Art` *2025-05-01*
+- [Gap Map](https://www.gap-map.org/?sort=rank&fields=geophysics-and-climate) `Museums - Indexers` *2025-05-01*
+- [Elon Musk Just Doesn’t Understand the Sci-Fi Visions of Iain M. Banks ‹ Literary Hub](https://lithub.com/elon-musk-just-doesnt-understand-the-sci-fi-visions-of-iain-m-banks) `Reads` *2025-04-30*
+- [ROCm in Practice: of Convolutions and Feedforwards](https://zdtech.substack.com/p/rocm-in-practice-of-convolutions?r=4a9mkn&utm_campaign=post&utm_medium=web&triedRedirect=true) `Academic Papers and Resources` *2025-04-29*
+- [World Emulation via Neural Network](https://madebyoll.in/posts/world_emulation_via_dnn) `Academic Papers and Resources` *2025-04-29*
+- [fpcv.cs.columbia.edu/](https://fpcv.cs.columbia.edu) `Academic Papers and Resources` *2025-04-29*
+- [MCCC: Probability](https://thenumb.at/Probability) `Academic Papers and Resources` *2025-04-29*
+- [javisantana.com](https://javisantana.com) `Tech` *2025-04-29*
+- [Real Time Science](https://jajoo.sh/rtsci) `Reads` *2025-04-29*
 - [proceedings.pdf](https://sigbovik.org/2025/proceedings.pdf) `Reads` *2025-04-27*
 - [Where Babies Come From—Asterisk](https://asteriskmag.com/issues/09/where-babies-come-from) `Reads` *2025-04-26*
 - [Chris Donahue](https://chrisdonahue.com) `Tech` *2025-04-25*
