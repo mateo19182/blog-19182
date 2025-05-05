@@ -37,7 +37,7 @@ title: Projects
 <div class="project-card">
   <div class="project-title"><a href="https://hackupc.com/">HackUPC25</a></div>
   <div class="project-desc">Competed on Spain's biggest hackathon, where we created 
-    <a href="https://github.com/migueldeoleiros/vuelingconnect">VuelingConnect</a>, a multiplatform app that creates a decentralized communications network using BLE, with a creative approach to ensure battery efficiency.
+    <a href="https://github.com/migueldeoleiros/vuelingconnect">VuelingConnect</a>, a multiplatform app that creates a decentralized communications network using BLE, with a creative approach to ensure battery efficiency and avoid redundancies.
 </div>
 </div>
 
