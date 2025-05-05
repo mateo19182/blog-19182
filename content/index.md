@@ -14,6 +14,7 @@ Always on the look for good opportunities, contact me at mateoamadoares (@) gmai
 
 ## [[writings]]
 
+- 10 Apr, 2025: [Las herramientas importan](https://no-cosign.m19182.dev/las-herramientas-importan/) (pt. 3)
 - 31 Mar, 2025: [[Mapping music's search space pt.2]]
 - 27 Jan, 2025: [[Mapping music's search space pt.1]]
 - 6 Dic, 2024:  [[Favourite music of 2024]]

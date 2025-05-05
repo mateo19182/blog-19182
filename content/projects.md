@@ -33,6 +33,15 @@ title: Projects
 
 <div class="project-list">
 
+
+<div class="project-card">
+  <div class="project-title"><a href="https://hackupc.com/">HackUPC25</a></div>
+  <div class="project-desc">Competed on Spain's biggest hackathon, where we created 
+    <a href="https://github.com/migueldeoleiros/vuelingconnect">VuelingConnect</a>, a multiplatform app that creates a decentralized communications network using BLE, with a creative approach to ensure battery efficiency.
+</div>
+</div>
+
+
 <div class="project-card">
   <div class="project-title"><a href="https://github.com/mateo19182/beats19182">Beats19182</a></div>
   <div class="project-desc">An open source and self-hosted alternative to <a href="https://offtop.com/">Offtop</a>. Allows for uploading, tagging and sharing beats or packs with other artists.</div>
