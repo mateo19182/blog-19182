@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2025-05-05
+date: 2025-05-12
 tags: 
   - personal
 ---
@@ -9,6 +9,37 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [mcp.garden](https://mcp.garden) `Tech` *2025-05-11*
+- [The Epochalypse Project | Epochalypse Project](https://epochalypse-project.org) `Tech` *2025-05-11*
+- [India v. Pakistan: Who Would Win? - Anatoly Karlin's Blog](https://substack.com/inbox/post/163263016) `Reads` *2025-05-11*
+- [How Much Information is in DNA? - by dynomight](https://www.asimov.press/p/dna-information) `Reads` *2025-05-11*
+- [CRAZY FROG – “Axel F” – Popular](https://popular-number1s.com/2025/04/25/crazy-frog-axel-f) `Reads` *2025-05-11*
+- [Block Diffusion](https://m-arriola.com/bd3lms) `Academic Papers and Resources` *2025-05-10*
+- [GRPO Trainer](https://huggingface.co/docs/trl/main/en/grpo_trainer) `Academic Papers and Resources` *2025-05-10*
+- [Training a Rust 1.5B Coder LM with Reinforcement Learning (GRPO) | Oxen.ai](https://www.oxen.ai/blog/training-a-rust-1-5b-coder-lm-with-reinforcement-learning-grpo) `Tech` *2025-05-10*
+- [⚡️Open Questions in Agentic RL — Will Brown (Prime Intellect) - YouTube](https://www.youtube.com/watch?v=Xkwok_XXQgw) `Academic Papers and Resources` *2025-05-09*
+- [Ying Sheng](https://sites.google.com/view/yingsheng) `Tech` *2025-05-09*
+- [Prime Intellect - Commoditizing Compute & Intelligence](https://www.primeintellect.ai) `Tech` *2025-05-09*
+- [Radiance Fields and the Future of Generative Media - YouTube](https://www.youtube.com/watch?v=hFlF33JZbA0) `Academic Papers and Resources` *2025-05-08*
+- [AI Cannibalism Can Be Good, by Gwern · Gwern.net](https://gwern.net/blog/2025/ai-cannibalism) `Ideas` *2025-05-08*
+- [Thumos - Wikipedia](https://en.wikipedia.org/wiki/Thumos) `Wikis` *2025-05-07*
+- [Deep Dive into Yann LeCun’s JEPA | Rohit Bandaru](https://rohitbandaru.github.io/blog/JEPA-Deep-Dive/#deep-dive-into-yann-lecun%E2%80%99s-jepa) `Academic Papers and Resources` *2025-05-07*
+- [Infrastructure Inequality: Who Pays the Cost of Road Roughness? - w31981.pdf](https://www.nber.org/system/files/working_papers/w31981/w31981.pdf) `Academic Papers and Resources` *2025-05-07*
+- [OKLOU - 2020 MIX TAPE MIXED STEMS - Google Drive](https://drive.google.com/drive/folders/1yNe90ANuqC5ZtFKLuP9UtbRUG4GUj30v) `Arts` *2025-05-07*
+- [Blog - William Brown](https://willcb.com/blog) `Tech` *2025-05-07*
+- [Can Bioelectrical Signals Reverse Aging? | Dr. Michael Levin](https://www.theseedsofscience.pub/p/can-bioelectrical-signals-reverse?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2025-05-07*
+- [How the US Built 5,000 Ships in WWII - by Brian Potter](https://substack.com/inbox/post/162982470) `Reads` *2025-05-07*
+- [So much blood](https://dynomight.net/blood) `Ideas` *2025-05-07*
+- [What is this? A private cultural benchmark suite.](https://rentry.co/llm-cultural-eval) `Academic Papers and Resources` *2025-05-06*
+- [The Unified Knowledge Graph: The Key To Making Text-to-SQL Work - Numbers Station](https://www.numbersstation.ai/text-to-sql-that-isnt) `Tech` *2025-05-06*
+- [The Curse of Knowing How, or; Fixing Everything | Blog](https://notashelf.dev/posts/curse-of-knowing#user-content-fnref-2) `Tech` *2025-05-06*
+- [Casting blame for the blackout in Spain, Portugal, and parts of France - Climate Etc.](https://judithcurry.com/2025/05/05/casting-blame-for-the-blackout-in-spain-portugal-and-parts-of-france) `Reads` *2025-05-06*
+- [BEASTIE: The MIDI Misfit Who’s Doing It for the Nerds — PILOT](https://www.pilotmagazine.uk/home/beastie-the-midi-misfit-whos-doing-it-for-the-nerds) `Collectives and Magazines` *2025-05-06*
+- [Dummy's Guide to Modern Samplers](https://rentry.co/samplers) `Academic Papers and Resources` *2025-05-05*
+- [The vocal effects of Daft Punk](https://bjango.com/articles/daftpunkvocaleffects) `Arts` *2025-05-05*
+- [Is Anthony Weiner Ready to Go Another Round? - The Atlantic](https://www.theatlantic.com/politics/archive/2025/05/anthony-weiner-comeback-city-council/682656) `Reads` *2025-05-05*
+- [Two Americas, one bank branch, and $50,000 cash](https://www.bitsaboutmoney.com/archive/two-americas-one-bank-branch) `Reads` *2025-05-05*
+- [What Can You Do Sometimes? - by Hirço - Nihilist Pizza](https://nihilistpizza.substack.com/p/what-can-you-do-sometimes?r=58ao86&utm_medium=ios&triedRedirect=true) `Weird` *2025-05-05*
 - [The Totalitarian Buddhist Who Beat Sim City](https://web.archive.org/web/20211117094441/https://www.vice.com/en/article/4w4kg3/the-totalitarian-buddhist-who-beat-sim-city) `Reads` *2025-05-03*
 - [How to live an intellectually rich life - by Utsav Mamoria](https://utsavmamoria.substack.com/p/how-to-live-an-intellectually-rich) `Reads` *2025-05-03*
 - [Accountability Sinks — LessWrong](https://www.lesswrong.com/posts/nYJaDnGNQGiaCBSB5/accountability-sinks) `Ideas` *2025-05-03*
