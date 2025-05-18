@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2025-05-12
+date: 2025-05-19
 tags: 
   - personal
 ---
@@ -9,6 +9,31 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [delicioustacos](https://delicioustacos.com) `Blogs` *2025-05-18*
+- [Newsletters spam test by mail-tester.com](https://www.mail-tester.com) `Tools and Interactive Websites` *2025-05-18*
+- [Aleister Crowley - Wikipedia](https://en.wikipedia.org/wiki/Aleister_Crowley) `Wikis` *2025-05-17*
+- [Why We Think | Lil'Log](https://lilianweng.github.io/posts/2025-05-01-thinking) `Academic Papers and Resources` *2025-05-17*
+- [A Conversation With Joy Orbison About Rap, Grime & Filtering Dance Music Through Griselda | Passion of the Weiss](https://www.passionweiss.com/2025/05/14/joy-orbison-interview-still-slipping-flight-fm) `Arts` *2025-05-17*
+- [Ccru: Writings 1997-2003 - [Ccru,_Nick_Land]_Ccru_Writings_1997-2003(BookZZ.org).pdf](https://files.libcom.org/files/%5BCcru,_Nick_Land%5D_Ccru_Writings_1997-2003(BookZZ.org).pdf) `Reads` *2025-05-17*
+- [Hyper C Breaking the Net](http://www.ccru.net/digithype/Hyper-C.htm) `Weird` *2025-05-17*
+- [links](http://www.ccru.net/link.htm) `Museums - Indexers` *2025-05-17*
+- [I don't like NumPy - DYNOMIGHT INTERNET NEWSLETTER](https://substack.com/inbox/post/163622816) `Academic Papers and Resources` *2025-05-16*
+- [Does Pinball Cause Violence? - by Kevin Munger](https://substack.com/inbox/post/162278397) `Reads` *2025-05-16*
+- [Nuclear reactors for dummies - by Alex Chalmers](https://substack.com/inbox/post/163554799) `Reads` *2025-05-16*
+- [Psychology is ok - by Paul Bloom - Small Potatoes](https://smallpotatoes.paulbloom.net/p/psychology-is-ok) `Reads` *2025-05-16*
+- [Alchemy is ok - Seeds of Science](https://www.theseedsofscience.pub/p/alchemy-is-ok?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2025-05-16*
+- [AlphaEvolve: A Gemini-powered coding agent for designing advanced algorithms - Google DeepMind](https://deepmind.google/discover/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms) `Academic Papers and Resources` *2025-05-15*
+- [Explaining British Naval Dominance During the Age of Sail — LessWrong](https://www.lesswrong.com/posts/YE4XsvSFJiZkWFtFE/explaining-british-naval-dominance-during-the-age-of-sail) `Reads` *2025-05-15*
+- [@pa](https://guns.lol/paok) `Weird` *2025-05-15*
+- [kalomaze's kalomazing blog](https://kalomaze.bearblog.dev) `Tech` *2025-05-14*
+- [DeepDream Creator Unveils Very First Images After Three Years — Artnome](https://www.artnome.com/news/2018/12/30/deepdream-creator-unveils-very-first-images-after-three-years) `Reads` *2025-05-14*
+- [Continuous Thought Machines](https://pub.sakana.ai/ctm) `Academic Papers and Resources` *2025-05-13*
+- [Recognizing People in Photos Through Private On-Device Machine Learning - Apple Machine Learning Research](https://machinelearning.apple.com/research/recognizing-people-photos) `Tech` *2025-05-13*
+- [(1) Seven Wonders of Biology - by Niko McCarty - Asimov Press](https://substack.com/inbox/post/161150371) `Reads` *2025-05-13*
+- [Gonzalo Guerrero - Wikipedia](https://en.wikipedia.org/wiki/Gonzalo_Guerrero) `Wikis` *2025-05-12*
+- [INTELLECT-2 Release: The First Globally Trained 32B Parameter Model Reinforcement Learning Training Run](https://www.primeintellect.ai/blog/intellect-2-release) `Academic Papers and Resources` *2025-05-12*
+- [Milky Eggs](https://milkyeggs.com) `Tech` *2025-05-12*
+- [Opinion | Why Are Housing Costs So High? The Elevator Can Explain Why. - The New York Times](https://archive.ph/pEDpn) `Reads` *2025-05-12*
 - [mcp.garden](https://mcp.garden) `Tech` *2025-05-11*
 - [The Epochalypse Project | Epochalypse Project](https://epochalypse-project.org) `Tech` *2025-05-11*
 - [India v. Pakistan: Who Would Win? - Anatoly Karlin's Blog](https://substack.com/inbox/post/163263016) `Reads` *2025-05-11*
