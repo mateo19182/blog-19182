@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2025-05-19
+date: 2025-05-26
 tags: 
   - personal
 ---
@@ -9,6 +9,33 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Sufism - Wikipedia](https://en.wikipedia.org/wiki/Sufism) `Wikis` *2025-05-25*
+- [How does the learning rate change as the Batch Size increases? - Scientific Spaces](https://kexue.fm/archives/10542) `Academic Papers and Resources` *2025-05-25*
+- [Siguza’s Blog | Siguza’s Blog](https://blog.siguza.net/tachy0n) `Tech` *2025-05-25*
+- [Animals as chemical factories](https://www.worksinprogress.news/p/animals-as-chemical-factories) `Reads` *2025-05-25*
+- [The 4chan Hack: the Complete Story (We Think)](https://www.piratewires.com/p/the-soyjakkers-who-hacked-4chan?f=home) `Reads` *2025-05-25*
+- [The Question Concerning Technology, and Other Essays - Heidegger_Martin_The_Question_Concerning_Technology_and_Other_Essays.pdf](https://monoskop.org/images/4/44/Heidegger_Martin_The_Question_Concerning_Technology_and_Other_Essays.pdf) `Reads` *2025-05-25*
+- [Good Writing](https://paulgraham.com/goodwriting.html#f2n) `Ideas` *2025-05-25*
+- [Wayback Machine](https://web.archive.org/web/20140821155150/http://files.maverickleadership.com/jaime_escalante_how_to_teach_math_071609.pdf) `Ideas` *2025-05-25*
+- [Home — Cock.li E-mail Hosting](https://cock.li) `Weird` *2025-05-25*
+- [AMD vs NVIDIA Inference Benchmark: Who Wins? – Performance & Cost Per Million Tokens – SemiAnalysis](https://semianalysis.com/2025/05/23/amd-vs-nvidia-inference-benchmark-who-wins-performance-cost-per-million-tokens/?access_token=eyJhbGciOiJFUzI1NiIsImtpZCI6InNlbWlhbmFseXNpcy5wYXNzcG9ydC5vbmxpbmUiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOiJzZW1pYW5hbHlzaXMucGFzc3BvcnQub25saW5lIiwiYXpwIjoiS1NncVhBaGFmZmtwVjQzbmt0UU1INSIsImVudCI6eyJhdWQiOlsiNThZNVhua2U4U1ZnTkFRRm5GZUVIQiJdLCJ1cmkiOlsiaHR0cHM6Ly9zZW1pYW5hbHlzaXMuY29tLzIwMjUvMDUvMjMvYW1kLXZzLW52aWRpYS1pbmZlcmVuY2UtYmVuY2htYXJrLXdoby13aW5zLXBlcmZvcm1hbmNlLWNvc3QtcGVyLW1pbGxpb24tdG9rZW5zLyJdfSwiZXhwIjoxNzUwNTcxNDU3LCJpYXQiOjE3NDc5Nzk0NTcsImlzcyI6Imh0dHBzOi8vc2VtaWFuYWx5c2lzLnBhc3Nwb3J0Lm9ubGluZS9vYXV0aCIsInNjb3BlIjoiZmVlZDpyZWFkIGFydGljbGU6cmVhZCBhc3NldDpyZWFkIGNhdGVnb3J5OnJlYWQgZW50aXRsZW1lbnRzIiwic3ViIjoiZDlkZDE4NjMtMThlOS00MzU0LWE3Y2UtMjNmZTE2NTU2NDBlIiwidXNlIjoiYWNjZXNzIn0.UWGfnna8ZESAnFxdSCnhb1zPzargWX4xuDHi18s7OKIFJ2vCHzdNsRBhAbOWvHPvXnh1ysIbEzfD4-whBSQyyA#inference-benchmark-methodology-%e2%80%93-model-selection) `Academic Papers and Resources` *2025-05-23*
+- [GeoSpooktral Information Systems](https://www.fortressofdoors.com/geospooktral-information-systems/?ref=fortress-of-doors-newsletter) `Reads` *2025-05-23*
+- [izbicki.me](https://izbicki.me) `Tech` *2025-05-22*
+- [Inigo Quilez :: computer graphics, mathematics, shaders, fractals, demoscene and more](https://iquilezles.org/articles) `Tech` *2025-05-22*
+- [Turning an AK-47 into a serving ladle](https://izbicki.me/blog/turning-an-ak-47-into-a-serving-ladle.html) `Reads` *2025-05-22*
+- [Discordianism - Wikipedia](https://en.wikipedia.org/wiki/Discordianism) `Wikis` *2025-05-21*
+- [Deep Learning is Applied Topology - by theahura](https://theahura.substack.com/p/deep-learning-is-applied-topology) `Academic Papers and Resources` *2025-05-21*
+- [PG&E Sucks or: How I Learned to Stop Worrying and Love Building my own Solar System | by Joe Eklund | May, 2025 | Medium](https://medium.com/@joe_5312/pg-e-sucks-or-how-i-learned-to-stop-worrying-and-love-building-my-own-solar-system-acf0c9f03f3b) `Reads` *2025-05-21*
+- [The 23andMe Deal - Cremieux Recueil](https://substack.com/inbox/post/163939433) `Reads` *2025-05-21*
+- [No Moods, Ads or Cutesy Fucking Icons » It Awaits Your Experiments.](https://www.rifters.com/crawl/?p=11511) `Reads` *2025-05-21*
+- [How Georgists Valued land in the 1900's - by Lars Doucet](https://substack.com/inbox/post/163789219) `Reads` *2025-05-21*
+- [Foreskin Man - Wikipedia](https://en.wikipedia.org/wiki/Foreskin_Man) `Wikis` *2025-05-20*
+- [Will Jesus Christ return in an election year? — LessWrong](https://www.lesswrong.com/posts/LBC2TnHK8cZAimdWF/will-jesus-christ-return-in-an-election-year) `Ideas` *2025-05-20*
+- [YKcelerate!!! - by Nance - TBN](https://nanceee.substack.com/p/ykcelerate?r=2g1yjb&utm_medium=ios&triedRedirect=true) `Reads` *2025-05-19*
+- [Types of Memetic Information | near.blog](https://near.blog/memetic-information) `Ideas` *2025-05-19*
+- [O(n) vs. O(n^2) Startups | rohan ganapavarapu](https://rohan.ga/blog/startup_types) `Ideas` *2025-05-19*
+- [Why do girls like this blog? - Worst Boyfriend Ever](https://substack.com/@worstboyfriendever/p-162259325) `Weird` *2025-05-19*
+- [Links](https://worrydream.com/Links2007) `Museums - Indexers` *2025-05-19*
 - [delicioustacos](https://delicioustacos.com) `Blogs` *2025-05-18*
 - [Newsletters spam test by mail-tester.com](https://www.mail-tester.com) `Tools and Interactive Websites` *2025-05-18*
 - [Aleister Crowley - Wikipedia](https://en.wikipedia.org/wiki/Aleister_Crowley) `Wikis` *2025-05-17*
