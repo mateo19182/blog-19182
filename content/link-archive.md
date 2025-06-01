@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2025-05-26
+date: 2025-06-02
 tags: 
   - personal
 ---
@@ -9,14 +9,35 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Kowloon Walled City - Wikipedia](https://en.m.wikipedia.org/wiki/Kowloon_Walled_City) `Wikis` *2025-06-01*
+- [SkalskiP/top-cvpr-2025-papers: About This repository is a curated collection of the most exciting and influential CVPR 2025 papers. 🔥 [Paper + Code + Demo]](https://github.com/SkalskiP/top-cvpr-2025-papers) `Academic Papers and Resources` *2025-06-01*
+- [Root Shell on Credit Card Terminal](https://stefan-gloor.ch/yomani-hack) `Tech` *2025-06-01*
+- [Surprisingly Fast AI-Generated Kernels We Didn’t Mean to Publish (Yet) | Scaling Intelligence Lab at Stanford University](https://scalingintelligence.stanford.edu/blogs/fastkernels) `Academic Papers and Resources` *2025-05-30*
+- [Domain specific architectures for AI inference](https://fleetwood.dev/posts/domain-specific-architectures) `Academic Papers and Resources` *2025-05-30*
+- [Compiling a Neural Net to C for a 1,744× speedup — Isaac Clayton](https://slightknack.dev/blog/difflogic) `Academic Papers and Resources` *2025-05-30*
+- [The bad science behind expensive nuclear - by Alex Chalmers](https://substack.com/inbox/post/164559787) `Reads` *2025-05-30*
+- [Chattel Childhood - by Aella - Knowingless](https://aella.substack.com/p/chattel-childhood?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2025-05-30*
+- [(2) Your Solar System is wrong - by Brandon Hendrickson](https://losttools.substack.com/p/your-solar-system-is-wrong) `Reads` *2025-05-30*
+- [(2) Bayes For Everyone - by Scott Alexander - Astral Codex Ten](https://www.astralcodexten.com/p/bayes-for-everyone?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2025-05-30*
+- [Will Jesus Christ return in an election year? – Unexpected Values](https://ericneyman.wordpress.com/2025/03/24/will-jesus-christ-return-in-an-election-year) `Ideas` *2025-05-30*
+- [(2) Forcing a Harvard Girl to Love Me - Worst Boyfriend Ever](https://jamesguilty.substack.com/p/making-a-harvard-girl-submit?utm_source=%2Finbox&utm_medium=reader2) `Weird` *2025-05-30*
+- [Misc.](https://www.misc.works) `Arts` *2025-05-29*
+- [datassette.net](https://datassette.net) `Arts` *2025-05-29*
+- [Home • Grace Kind](https://gracekind.net) `Blogs` *2025-05-28*
+- [Reinforcement learning with random rewards actually works with Qwen 2.5](https://www.interconnects.ai/p/reinforcement-learning-with-random) `Academic Papers and Resources` *2025-05-27*
+- [In defense of shallow technical knowledge | sean goedecke](https://www.seangoedecke.com/shallow-technical-knowledge) `Ideas` *2025-05-27*
+- [PRINCIPIA DISCORDIA](https://archive.sacred-texts.com/eso/pridisc.htm) `Weird` *2025-05-27*
+- [Discordianism - The World's Largest Disorganized Religion](https://discordianism.com) `Weird` *2025-05-27*
+- [DIY Conspiracy: Punk & Hardcore Music, Culture & Politics](https://diyconspiracy.net) `Collectives and Magazines` *2025-05-27*
+- [arXiv:quant-ph/9904050v1 13 Apr 1999 - 9904050v1.pdf](https://arxiv.org/pdf/quant-ph/9904050) `Academic Papers and Resources` *2025-05-26*
 - [Sufism - Wikipedia](https://en.wikipedia.org/wiki/Sufism) `Wikis` *2025-05-25*
 - [How does the learning rate change as the Batch Size increases? - Scientific Spaces](https://kexue.fm/archives/10542) `Academic Papers and Resources` *2025-05-25*
 - [Siguza’s Blog | Siguza’s Blog](https://blog.siguza.net/tachy0n) `Tech` *2025-05-25*
 - [Animals as chemical factories](https://www.worksinprogress.news/p/animals-as-chemical-factories) `Reads` *2025-05-25*
 - [The 4chan Hack: the Complete Story (We Think)](https://www.piratewires.com/p/the-soyjakkers-who-hacked-4chan?f=home) `Reads` *2025-05-25*
-- [The Question Concerning Technology, and Other Essays - Heidegger](https://monoskop.org/images/4/44/Heidegger_Martin_The_Question_Concerning_Technology_and_Other_Essays.pdf) `Reads` *2025-05-25*
-- [Good Writing - Paul Graham](https://paulgraham.com/goodwriting.html#f2n) `Ideas` *2025-05-25*
-- [jaime escalante how to teach math](https://web.archive.org/web/20140821155150/http://files.maverickleadership.com/jaime_escalante_how_to_teach_math_071609.pdf) `Ideas` *2025-05-25*
+- [The Question Concerning Technology, and Other Essays - Heidegger_Martin_The_Question_Concerning_Technology_and_Other_Essays.pdf](https://monoskop.org/images/4/44/Heidegger_Martin_The_Question_Concerning_Technology_and_Other_Essays.pdf) `Reads` *2025-05-25*
+- [Good Writing](https://paulgraham.com/goodwriting.html#f2n) `Ideas` *2025-05-25*
+- [Wayback Machine](https://web.archive.org/web/20140821155150/http://files.maverickleadership.com/jaime_escalante_how_to_teach_math_071609.pdf) `Ideas` *2025-05-25*
 - [Home — Cock.li E-mail Hosting](https://cock.li) `Weird` *2025-05-25*
 - [AMD vs NVIDIA Inference Benchmark: Who Wins? – Performance & Cost Per Million Tokens – SemiAnalysis](https://semianalysis.com/2025/05/23/amd-vs-nvidia-inference-benchmark-who-wins-performance-cost-per-million-tokens/?access_token=eyJhbGciOiJFUzI1NiIsImtpZCI6InNlbWlhbmFseXNpcy5wYXNzcG9ydC5vbmxpbmUiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOiJzZW1pYW5hbHlzaXMucGFzc3BvcnQub25saW5lIiwiYXpwIjoiS1NncVhBaGFmZmtwVjQzbmt0UU1INSIsImVudCI6eyJhdWQiOlsiNThZNVhua2U4U1ZnTkFRRm5GZUVIQiJdLCJ1cmkiOlsiaHR0cHM6Ly9zZW1pYW5hbHlzaXMuY29tLzIwMjUvMDUvMjMvYW1kLXZzLW52aWRpYS1pbmZlcmVuY2UtYmVuY2htYXJrLXdoby13aW5zLXBlcmZvcm1hbmNlLWNvc3QtcGVyLW1pbGxpb24tdG9rZW5zLyJdfSwiZXhwIjoxNzUwNTcxNDU3LCJpYXQiOjE3NDc5Nzk0NTcsImlzcyI6Imh0dHBzOi8vc2VtaWFuYWx5c2lzLnBhc3Nwb3J0Lm9ubGluZS9vYXV0aCIsInNjb3BlIjoiZmVlZDpyZWFkIGFydGljbGU6cmVhZCBhc3NldDpyZWFkIGNhdGVnb3J5OnJlYWQgZW50aXRsZW1lbnRzIiwic3ViIjoiZDlkZDE4NjMtMThlOS00MzU0LWE3Y2UtMjNmZTE2NTU2NDBlIiwidXNlIjoiYWNjZXNzIn0.UWGfnna8ZESAnFxdSCnhb1zPzargWX4xuDHi18s7OKIFJ2vCHzdNsRBhAbOWvHPvXnh1ysIbEzfD4-whBSQyyA#inference-benchmark-methodology-%e2%80%93-model-selection) `Academic Papers and Resources` *2025-05-23*
 - [GeoSpooktral Information Systems](https://www.fortressofdoors.com/geospooktral-information-systems/?ref=fortress-of-doors-newsletter) `Reads` *2025-05-23*
@@ -806,8 +827,8 @@ This is a collection of links I've archived over time.
 - [Googology Wiki](https://googology.fandom.com/wiki/Googology_Wiki) `Wikis` *2024-08-16*
 - [Long-term nuclear waste warning messages - Wikipedia](https://en.wikipedia.org/wiki/Long-term_nuclear_waste_warning_messages) `Wikis` *2024-08-16*
 - [Thomas Carlyle - Wikipedia](https://en.wikipedia.org/wiki/Thomas_Carlyle#) `Wikis` *2024-08-16*
-- [Open letter to Mikhail Gorbachev (1990)](https://en.wikisource.org/wiki/Open_letter_to_Mikhail_Gorbachev_(1990)) `Wikis` *2024-08-16*
-- [S.M. (patient) - Wikipedia](https://en.wikipedia.org/wiki/S.M._(patient)) `Wikis` *2024-08-16*
+- [Open letter to Mikhail Gorbachev (1990) ](https://en.wikisource.org/wiki/Open_letter_to_Mikhail_Gorbachev_(1990) `Wikis` *2024-08-16*
+- [S.M. (patient) - Wikipedia](https://en.wikipedia.org/wiki/S.M._(patient) `Wikis` *2024-08-16*
 - [Fourth International Posadist - Wikipedia](https://en.wikipedia.org/wiki/Fourth_International_Posadist) `Wikis` *2024-08-16*
 - [Social-desirability bias - Wikipedia](https://en.wikipedia.org/wiki/Social-desirability_bias) `Wikis` *2024-08-16*
 - [Music On A Long Thin Wire - Wikipedia](https://en.wikipedia.org/wiki/Music_On_A_Long_Thin_Wire) `Wikis` *2024-08-16*
@@ -958,7 +979,7 @@ This is a collection of links I've archived over time.
 - [Gin, Television, and Social Surplus](https://gist.github.com/jm3/6724931) `Reads` *2024-08-16*
 - [Exit the Supersensorium - The Seeds of Science](https://www.theseedsofscience.pub/p/exit-the-supersensorium) `Reads` *2024-08-16*
 - [The Post-Individual](https://www.ystrickler.com/thepostindividual/) `Reads` *2024-08-16*
-- [General Intelligence (2024) – Non\_Interactive](https://nonint.com/2024/06/03/general-intelligence-2024/) `Reads` *2024-08-16*
+- [General Intelligence (2024) – Non\_Interactive ](https://nonint.com/2024/06/03/general-intelligence-2024/) `Reads` *2024-08-16*
 - [On the random origin of Merit - Ax’s Substack](https://axganto.substack.com/p/on-the-random-origin-of-merit) `Reads` *2024-08-16*
 - [Hacking a Virtual Power Plant | rya.nc](https://rya.nc/vpp-hack.html) `Reads` *2024-08-16*
 - [Construction Physics - Why Is It So Hard to Build an Airport](https://www.construction-physics.com/p/why-is-it-so-hard-to-build-an-airport) `Reads` *2024-08-16*
