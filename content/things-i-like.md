@@ -62,6 +62,7 @@ An up-to-date archive of links I've saved is available on [[link-archive]]
 - Steins;Gate
 - Serial Experiments Lain
 - Paprika
+- Baccano
 - Trigun
 ...
 
