@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2025-06-02
+date: 2025-06-09
 tags: 
   - personal
 ---
@@ -9,6 +9,56 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Lamia - Wikipedia](https://en.wikipedia.org/wiki/Lamia) `Wikis` *2025-06-08*
+- [Philosophical Investigations - Wikipedia](https://en.wikipedia.org/wiki/Philosophical_Investigations#Meaning_as_use) `Wikis` *2025-06-08*
+- [Xiaomi - by Angela Shen - ChinaTalk](https://substack.com/inbox/post/165276610) `Reads` *2025-06-08*
+- [Review of I Remember Lemuria!, by Gwern · Gwern.net](https://gwern.net/review/lemuria#fnref1) `Reads` *2025-06-08*
+- [How the world's first electric grid was built](https://www.worksinprogress.news/p/how-the-worlds-first-electric-grid?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2025-06-08*
+- [A Visual Guide to Genome Editors - by Evan DeTurk](https://www.asimov.press/p/a-visual-guide-to-genome-editors?utm_source=%2Finbox&utm_medium=reader2&hide_intro_popup=true) `Reads` *2025-06-08*
+- [Graces Guide](https://www.gracesguide.co.uk/Main_Page) `Museums - Indexers` *2025-06-08*
+- [Simon Bikindi - Wikipedia](https://en.wikipedia.org/wiki/Simon_Bikindi) `Wikis` *2025-06-07*
+- [List of lists of lists - Wikipedia](https://en.wikipedia.org/wiki/List_of_lists_of_lists) `Wikis` *2025-06-07*
+- [InPhO - Taxonomy](https://www.inphoproject.org/taxonomy) `Academic Papers and Resources` *2025-06-07*
+- [Gap Map](https://www.gap-map.org/?sort=rank) `Academic Papers and Resources` *2025-06-07*
+- [The art of approximation in science and engineering - book-draft.pdf](https://web.mit.edu/6.055/book/book-draft.pdf) `Academic Papers and Resources` *2025-06-07*
+- [Landmark Numbers](https://www.mkodama.org/content/landmark-numbers) `Reads` *2025-06-07*
+- [Micromorts](https://micromorts.rip) `Ideas` *2025-06-07*
+- [Speedrunning Is Not Such A Waste Of Talent · Gwern.net](https://gwern.net/speedrunning) `Ideas` *2025-06-07*
+- [Skittle Factory Dementia Monkey Titty Monetization](https://parakeet.substack.com/p/skittle-factory-dementia-monkey-titty) `Ideas` *2025-06-07*
+- [History of Philosophy - Summarized & Visualized](https://www.denizcemonduygu.com/philo/browse) `Tools and Interactive Websites` *2025-06-07*
+- [Hate radio prepared the Rwandan people for genocide by demonising the Tutsi](https://rwandanstories.org/genocide/hate_radio.html) `Weird` *2025-06-07*
+- [The Best Textbooks on Every Subject — LessWrong](https://www.lesswrong.com/posts/xg3hXCYQPJkwHyik2/the-best-textbooks-on-every-subject) `Museums - Indexers` *2025-06-07*
+- [List of Lists of Concepts | Conceptspace Wikia | Fandom](https://conceptspace.fandom.com/wiki/List_of_Lists_of_Concepts) `Museums - Indexers` *2025-06-07*
+- [The Best Reference Works for Every Subject](https://parconley.com/reference-works) `Museums - Indexers` *2025-06-07*
+- [Johnston's Archive](https://www.johnstonsarchive.net) `Museums - Indexers` *2025-06-07*
+- [Winograd - Thinking machines](https://hci.stanford.edu/winograd/papers/thinking-machines.html) `Academic Papers and Resources` *2025-06-05*
+- [My Experience Reading Hegel | francis kafka —](https://listed.to/@pachabelcanon/62457/my-experience-reading-hegel) `Reads` *2025-06-05*
+- [Memetics Before Memetics: The Prehistory of the Meme | francis kafka](https://listed.to/@pachabelcanon/61782/memetics-before-memetics-the-prehistory-of-the-meme) `Reads` *2025-06-05*
+- [Madeleine Song](https://www.madeleinesong.online) `Blogs` *2025-06-04*
+- [Microsoft Word - 1208 - thesis - thesis.pdf](https://availabilitydigest.com/public_articles/1208/thesis.pdf) `Academic Papers and Resources` *2025-06-03*
+- [Fast Text-to-Audio Generation with Adversarial Post-Training](https://arxiv.org/html/2505.08175v3) `Academic Papers and Resources` *2025-06-03*
+- [about me – isaac sparks](https://www.isaacsparks.com/about_me) `Arts` *2025-06-03*
+- [Yuxi on the Wired](https://yuxi-liu-wired.github.io) `Tech` *2025-06-03*
+- [Darkstar Coalition](https://darkstar.ee/#6) `Tech` *2025-06-03*
+- [The Physical Turing Test: Jim Fan on Nvidia's Roadmap for Embodied AI - YouTube](https://www.youtube.com/watch?v=_2NijXqBESI) `Tech` *2025-06-03*
+- [The Saga of Highleyman's Data. – arg min blog](https://archives.argmin.net/2021/10/20/highleyman) `Tech` *2025-06-03*
+- [The Security Mindset - Schneier on Security](https://www.schneier.com/blog/archives/2008/03/the_security_mi_1.html) `Tech` *2025-06-03*
+- [Opinion | The Trump World Idea That’s Pushed Me Over the Edge - The New York Times](https://archive.ph/f2K51) `Reads` *2025-06-03*
+- [The Eternal Life and Art of Maxwell Ardeen](https://substack.com/inbox/post/164567680) `Reads` *2025-06-03*
+- [Cybernetic Artificial Intelligence – Yuxi on the Wired](https://yuxi-liu-wired.github.io/essays/posts/cybernetic-artificial-intelligence) `Reads` *2025-06-03*
+- [Needing Dollars, Iran-Backed Militias Turn to Visa and Mastercard - WSJ](https://archive.ph/Kgslg) `Reads` *2025-06-03*
+- [How to Beat Roulette: One Gambler Figured It Out and Won Big](https://archive.ph/Xtlwn) `Reads` *2025-06-03*
+- [Hacking Pinball High Scores, by Gwern · Gwern.net](https://gwern.net/blog/2025/pinball-hacking) `Reads` *2025-06-03*
+- [That Survivorship Bias Plane – Yuxi on the Wired](https://yuxi-liu-wired.github.io/logs/posts/2025-survivorship-bias) `Ideas` *2025-06-03*
+- [Tony Cokes, Testament A: MF FKA K-P X KE RIP (KODE9 RESCORE), 2019/2025 on Vimeo](https://vimeo.com/1087960390?share=copy) `Art` *2025-06-03*
+- [worldoptimization-lifeadvice](https://caroline.milkyeggs.com/worldoptimization-lifeadvice) `Weird` *2025-06-03*
+- [Alameda & FTX Archive](https://caroline.milkyeggs.com) `Museums - Indexers` *2025-06-03*
+- [paradite/model-quirks: Quirks and interesting bits of various models](https://github.com/paradite/model-quirks) `Academic Papers and Resources` *2025-06-02*
+- [Reverse engineering Dell iDRAC to get rid of GPU throttling](https://l4rz.net/reverse-engineering-dell-idrac-to-get-rid-of-gpu-throttling) `Tech` *2025-06-02*
+- [Automotive GPU maxxxing | Léo's Blog](https://leikoe.github.io/posts/automotive-gpu-maxxxing) `Tech` *2025-06-02*
+- [MinishLab/semhash: Fast Semantic Text Deduplication & Filtering](https://github.com/MinishLab/semhash) `Tech` *2025-06-02*
+- [The Universal Tech Tree—Asterisk](https://asteriskmag.com/issues/10/the-universal-tech-tree?utm_source=Asterisk&utm_campaign=fa8cdd29ee-EMAIL_CAMPAIGN_5_5_2025_8_53_COPY_01&utm_medium=email&utm_term=0_e0307a4ab2-fa8cdd29ee-585690599) `Reads` *2025-06-02*
+- [Historical Tech Tree](https://www.historicaltechtree.com) `Tools and Interactive Websites` *2025-06-02*
 - [Kowloon Walled City - Wikipedia](https://en.m.wikipedia.org/wiki/Kowloon_Walled_City) `Wikis` *2025-06-01*
 - [SkalskiP/top-cvpr-2025-papers: About This repository is a curated collection of the most exciting and influential CVPR 2025 papers. 🔥 [Paper + Code + Demo]](https://github.com/SkalskiP/top-cvpr-2025-papers) `Academic Papers and Resources` *2025-06-01*
 - [Root Shell on Credit Card Terminal](https://stefan-gloor.ch/yomani-hack) `Tech` *2025-06-01*
