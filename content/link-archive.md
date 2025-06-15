@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2025-06-09
+date: 2025-06-16
 tags: 
   - personal
 ---
@@ -9,6 +9,27 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Introducing the V-JEPA 2 world model and new benchmarks for physical reasoning](https://ai.meta.com/blog/v-jepa-2-world-model-benchmarks) `Academic Papers and Resources` *2025-06-13*
+- [Inside a Dark Adtech Empire Fed by Fake CAPTCHAs – Krebs on Security](https://krebsonsecurity.com/2025/06/inside-a-dark-adtech-empire-fed-by-fake-captchas) `Tech` *2025-06-13*
+- [No Rivals: The Founders Fund Story - by Mario Gabriele](https://www.generalist.com/p/founders-fund-1) `Tech` *2025-06-13*
+- [(5) Nick Cammarata On Jhana - by Scott Alexander](https://www.astralcodexten.com/p/nick-cammarata-on-jhana) `Reads` *2025-06-13*
+- [Sentinel on X: "Making sense of Israel’s strikes on Iran" / X](https://x.com/sentinelteamhq/status/1933379330362523842) `Reads` *2025-06-13*
+- [Floods.pdf](https://dev-patel.com/content/Floods.pdf) `Academic Papers and Resources` *2025-06-12*
+- [From Tokens to Thoughts: How LLMs and Humans Trade Compression for Meaning](https://arxiv.org/html/2505.17117v2) `Academic Papers and Resources` *2025-06-12*
+- [How much EU is in DNS4EU? :: Techlog](https://techlog.jenslink.net/posts/dns4eu) `Tech` *2025-06-12*
+- [The New AI Networks | Ultra Ethernet UEC | UALink vs Broadcom Scale Up Ethernet SUE – SemiAnalysis](https://semianalysis.com/2025/06/11/the-new-ai-networks-ultra-ethernet-uec-ualink-vs-broadcom-scale-up-ethernet-sue) `Tech` *2025-06-12*
+- [The Unreasonable Effectiveness of Pronouns](https://substack.com/inbox/post/165631304) `Reads` *2025-06-12*
+- [magistral.pdf](https://mistral.ai/static/research/magistral.pdf) `Academic Papers and Resources` *2025-06-11*
+- [The Gentle Singularity - Sam Altman](https://blog.samaltman.com/the-gentle-singularity) `Tech` *2025-06-11*
+- [Denuvo Analysis | Connor-Jay's Blog](https://connorjaydunn.github.io/blog/posts/denuvo-analysis) `Tech` *2025-06-10*
+- [P-Zombies Would Report Qualia - by Scott Alexander](https://substack.com/inbox/post/165172144) `Ideas` *2025-06-10*
+- [Scaling Reinforcement Learning: Environments, Reward Hacking, Agents, Scaling Data – SemiAnalysis](https://semianalysis.com/2025/06/08/scaling-reinforcement-learning-environments-reward-hacking-agents-scaling-data/?access_token=eyJhbGciOiJFUzI1NiIsImtpZCI6InNlbWlhbmFseXNpcy5wYXNzcG9ydC5vbmxpbmUiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOiJzZW1pYW5hbHlzaXMucGFzc3BvcnQub25saW5lIiwiYXpwIjoiS1NncVhBaGFmZmtwVjQzbmt0UU1INSIsImVudCI6eyJhdWQiOlsiNThZNVhua2U4U1ZnTkFRRm5GZUVIQiJdLCJ1cmkiOlsiaHR0cHM6Ly9zZW1pYW5hbHlzaXMuY29tLzIwMjUvMDYvMDgvc2NhbGluZy1yZWluZm9yY2VtZW50LWxlYXJuaW5nLWVudmlyb25tZW50cy1yZXdhcmQtaGFja2luZy1hZ2VudHMtc2NhbGluZy1kYXRhLyJdfSwiZXhwIjoxNzUyMDE4MTA3LCJpYXQiOjE3NDk0MjYxMDcsImlzcyI6Imh0dHBzOi8vc2VtaWFuYWx5c2lzLnBhc3Nwb3J0Lm9ubGluZS9vYXV0aCIsInNjb3BlIjoiZmVlZDpyZWFkIGFydGljbGU6cmVhZCBhc3NldDpyZWFkIGNhdGVnb3J5OnJlYWQgZW50aXRsZW1lbnRzIiwic3ViIjoiZDlkZDE4NjMtMThlOS00MzU0LWE3Y2UtMjNmZTE2NTU2NDBlIiwidXNlIjoiYWNjZXNzIn0.K6HNnjMG2vWHVRiIYA5-Y-DRSr6shFB2JEUlCXo1I8PzAHeNFgOmjPmiqXzOvutVWTOox8AoJa0_9bMvQvcuIQ) `Academic Papers and Resources` *2025-06-09*
+- [Why Go is a good fit for agents - Hatchet Documentation](https://docs.hatchet.run/blog/go-agents) `Tech` *2025-06-09*
+- [Bruteforcing the phone number of any Google user](https://brutecat.com/articles/leaking-google-phones) `Tech` *2025-06-09*
+- [Finding Shawn Mendes – Unexpected Values](https://ericneyman.wordpress.com/2019/11/26/finding-shawn-mendes) `Reads` *2025-06-09*
+- [My 14-Hour Search for the End of TGI Friday's Endless Appetizers](https://www.gawkerarchives.com/my-14-hour-search-for-the-end-of-tgi-fridays-endless-ap-1606122925) `Reads` *2025-06-09*
+- [2025-06-08 Omnimax](https://computer.rip/2025-06-08-Omnimax.html) `Reads` *2025-06-09*
+- [Sine Machine, a new additive synth · Melatonin](https://melatonin.dev) `Tools and Interactive Websites` *2025-06-09*
 - [Lamia - Wikipedia](https://en.wikipedia.org/wiki/Lamia) `Wikis` *2025-06-08*
 - [Philosophical Investigations - Wikipedia](https://en.wikipedia.org/wiki/Philosophical_Investigations#Meaning_as_use) `Wikis` *2025-06-08*
 - [Xiaomi - by Angela Shen - ChinaTalk](https://substack.com/inbox/post/165276610) `Reads` *2025-06-08*
