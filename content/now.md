@@ -7,9 +7,10 @@ tags:
 
 Some of the things I'm currently consuming:
 
-| Time      | Reading                        | Watching   | Listening                                                                 | Other                                         |
-| --------- | -------                        | --------   | ---------                                                                 | -----                                         |
-| May/25    | Requiem of the Rose King       | Baccano!    | [Void Fill Product - Datasette](https://datassette.bandcamp.com/album/void-fill-product) | [Liber Null And Psychonaut](https://archive.org/details/peter-j.-carroll-liber-null-and-psychonaut-the-practice-of-chaos-magic-revised-a/page/n3/mode/2up) |
+| Time      | Reading                        | Watching        | Listening                                                                 | Other                                         |
+| --------- | -------                        | --------        | ---------                                                                 | -----                                         |
+| June/25   | House of Huawey                | Antes de Nós    | [Planet Mu 30](https://planetmu.bandcamp.com/album/planet-mu-30)          | [Why it's bad to kill grandma](https://dynomight.net/grandma/)                     |
+| May/25    | Requiem of the Rose King       | Baccano!        | [Void Fill Product - Datasette](https://datassette.bandcamp.com/album/void-fill-product) | [Liber Null And Psychonaut](https://archive.org/details/peter-j.-carroll-liber-null-and-psychonaut-the-practice-of-chaos-magic-revised-a/page/n3/mode/2up) |
 | April/25  | Wind and Truth - The Stormlight Archive | Boondocks  | [Blue Moon Safari - Vegyn](https://open.spotify.com/album/091tPFouQEyjL5Rekipta8?si=KI3AxGxUQN6r1LyqqC1G_w) | [The Art of Noises - Luigi Russolo](https://monoskop.org/images/0/09/Russolo_Luigi_The_Art_of_Noises.pdf) |
 | March/25  | A Canticle for Leibowitz - Walter M. Miller Jr. | Common Side Effects | [Stegosauro - Stegosauro](https://stegosauro.bandcamp.com/album/stegosauro) | [Note on Technology -  Ursula K. Le Guin](https://wemakeinter.net/unrot/note-on-technology/) |
 | Feb/25    | Iron Sunrise - Charles Stross  | Severance s2 | [Daft Punk Live 1996](https://youtu.be/NL4lHwjX9pM)                        | [Century Scale Storage](https://lil.law.harvard.edu/century-scale-storage/) |
