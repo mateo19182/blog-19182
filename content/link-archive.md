@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2025-06-16
+date: 2025-06-23
 tags: 
   - personal
 ---
@@ -9,6 +9,57 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [(5) The Effective Altruist View of Politics - by Ozy Brennan](https://substack.com/inbox/post/154865476) `Reads` *2025-06-22*
+- [AMD's Freshly-baked MI350: An Interview with the Chief Architect](https://chipsandcheese.com/p/amds-freshly-baked-mi350-an-interview) `Tech` *2025-06-21*
+- [Chinese industrial maximalism: Lu Feng](https://www.high-capacity.com/p/chinese-industrial-maximalism) `Tech` *2025-06-21*
+- [Scaling our Observability platform beyond 100 Petabytes by embracing wide events and replacing OTel](https://clickhouse.com/blog/scaling-observability-beyond-100pb-wide-events-replacing-otel) `Tech` *2025-06-21*
+- [Conoce acerca de nuestra Revista Galio, Chile](https://galio.cl/about) `Collectives and Magazines` *2025-06-21*
+- [Ali Khamenei's fatwa against nuclear weapons - Wikipedia](https://en.wikipedia.org/wiki/Ali_Khamenei%27s_fatwa_against_nuclear_weapons) `Wikis` *2025-06-20*
+- [Compiling LLMs into a MegaKernel: A Path to Low-Latency Inference | by Zhihao Jia | Jun, 2025 | Medium](https://zhihaojia.medium.com/compiling-llms-into-a-megakernel-a-path-to-low-latency-inference-cf7840913c17) `Academic Papers and Resources` *2025-06-20*
+- [c:\t\giqtm3.dvi - giqtm3.pdf](https://www.scottaaronson.com/papers/giqtm3.pdf) `Academic Papers and Resources` *2025-06-20*
+- [Virtual cells](https://udara.io/science/virtual-cells) `Tech` *2025-06-20*
+- [Shtetl-Optimized » Blog Archive » Guess I’m A Rationalist Now](https://scottaaronson.blog/?p=8908) `Reads` *2025-06-20*
+- [Why Did Israel Strike Iran Now? - by Tomas Pueyo](https://substack.com/inbox/post/166306890) `Reads` *2025-06-20*
+- [(PDF) Autistic-like Traits and Positive Schizotypy as Diametric Specializations of the Predictive Mind](https://www.researchgate.net/publication/354118500_Autistic-like_Traits_and_Positive_Schizotypy_as_Diametric_Specializations_of_the_Predictive_Mind) `Academic Papers and Resources` *2025-06-19*
+- [Fascial Innervation: A Systematic Review of the Literature - PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC9143136) `Academic Papers and Resources` *2025-06-19*
+- [traversible-wormholes.pdf](https://a.carapetis.com/math-files/traversible-wormholes.pdf) `Academic Papers and Resources` *2025-06-19*
+- [Resurrecting a dead torrent tracker and finding 3 million peers | Kian Bradley’s Blog](https://kianbradley.com/2025/06/15/resurrecting-a-dead-tracker.html) `Tech` *2025-06-19*
+- [Programming Language Design in the Era of LLMs: A Return to Mediocrity?](https://kirancodes.me/posts/log-lang-design-llms.html) `Tech` *2025-06-19*
+- [I Counted All of the Yurts in Mongolia Using Machine Learning | Monroe Clinton](https://monroeclinton.com/counting-all-yurts-in-mongolia) `Tech` *2025-06-19*
+- [(5) The House of Huawei - by Jordan Schneider and Lily Ottinger](https://www.chinatalk.media/p/the-house-of-huawei?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2025-06-19*
+- [Estrogen: A trip report — LessWrong](https://www.lesswrong.com/posts/mDMnyqt52CrFskXLc/estrogen-a-trip-report) `Reads` *2025-06-19*
+- [The Radical Development of an Entirely New Painkiller | The New Yorker](https://www.newyorker.com/magazine/2025/06/02/the-radical-development-of-an-entirely-new-painkiller) `Reads` *2025-06-19*
+- [What is the Alexander Technique?](https://expandingawareness.org/blog/what-is-the-alexander-technique) `Ideas` *2025-06-19*
+- [elliptic-curves.art](https://elliptic-curves.art) `Art` *2025-06-19*
+- [Helots - Wikipedia](https://en.wikipedia.org/wiki/Helots) `Wikis` *2025-06-18*
+- [Microsoft Word - Conant and Ashby _1970_.doc - Conant_Ashby.pdf](http://pespmc1.vub.ac.be/books/Conant_Ashby.pdf) `Academic Papers and Resources` *2025-06-18*
+- [A Primer For Conant And Ashby's Good-Regulator Theorem - a_primer_for_conant_and_ashby_s_good-regulator_theorem.pdf](http://cadia.ru.is/wiki/_media/public:t-720-atai:a_primer_for_conant_and_ashby_s_good-regulator_theorem.pdf) `Academic Papers and Resources` *2025-06-18*
+- [Center for Analysis & Design of Intelligent Agents - Reykjavik University](http://cadia.ru.is) `Academic Papers and Resources` *2025-06-18*
+- [The JPEG XL Image Coding System: History, Features, Coding Tools, Design Rationale, and Future - 2506.05987v2.pdf](https://arxiv.org/pdf/2506.05987) `Academic Papers and Resources` *2025-06-18*
+- [trees are harlequins, words are harlequins — the void](https://nostalgebraist.tumblr.com/post/785766737747574784/the-void) `Tech` *2025-06-18*
+- [How JPEG Became the Internet’s Image Standard - IEEE Spectrum](https://spectrum.ieee.org/jpeg-image-format-history) `Tech` *2025-06-18*
+- [Breaking down the infinite workday](https://www.microsoft.com/en-us/worklab/work-trend-index/breaking-down-infinite-workday?utm_campaign=mb&utm_medium=newsletter&utm_source=morning_brew) `Tech` *2025-06-18*
+- [AMD’s CDNA 4 Architecture Announcement - by Chester Lam](https://chipsandcheese.com/p/amds-cdna-4-architecture-announcement) `Tech` *2025-06-18*
+- [Adjacent News API - Adjacent News API](https://docs.adj.news) `Tech` *2025-06-18*
+- [Tornyol - Precision Mosquito Control Without Chemicals](https://tornyol.com) `Tech` *2025-06-18*
+- [AMD and the AI Race: a User's Perspective - ZD’s Substack](https://zdtech.substack.com/p/amd-and-the-ai-race-a-users-perspective?utm_campaign=post&triedRedirect=true) `Tech` *2025-06-18*
+- [(5) Why Georgists use the 🔰 mark - by Lars Doucet](https://progressandpoverty.substack.com/p/why-georgists-use-the-mark?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2025-06-18*
+- [A Straightforward Explanation of the Good Regulator Theorem — LessWrong](https://www.lesswrong.com/posts/JQefBJDHG6Wgffw6T/a-straightforward-explanation-of-the-good-regulator-theorem) `Reads` *2025-06-18*
+- [Interview: Will Jarvis, CEO at ValueBase - by Jeff Fong](https://www.urbanproxima.com/p/interview-will-jarvis-ceo-at-valuebase) `Reads` *2025-06-18*
+- [lesswrong.com/posts/Dx9LoqsEh3gHNJMDk/fixing-the-good-regulator-theorem](https://www.lesswrong.com/posts/Dx9LoqsEh3gHNJMDk/fixing-the-good-regulator-theorem) `Reads` *2025-06-18*
+- [Why it's bad to kill Grandma](https://dynomight.net/grandma) `Ideas` *2025-06-18*
+- [Importance Hacking - a major (yet rarely-discussed) problem in science](https://www.clearerthinking.org/post/importance-hacking-a-major-yet-rarely-discussed-problem-in-science) `Ideas` *2025-06-18*
+- [Crocker's Rules](http://sl4.org/crocker.html) `Ideas` *2025-06-18*
+- [h3110w0r1d's Blog - Just for fun!](https://h3110w0r1d.com) `Tech` *2025-06-17*
+- [GloriousEggroll – GloriousEggroll's Blog](https://www.gloriouseggroll.tv/author/gloriouseggroll) `Tech` *2025-06-17*
+- [Beyond Token Limits: Why the Apple LRM Rebuttal Misses the Point :: Victor's Blog](https://victoramartinez.com/posts/why-claudes-comment-paper-is-a-poor-rebuttal) `Academic Papers and Resources` *2025-06-16*
+- [Daily Archives – RIPE 90](https://ripe90.ripe.net/archives/video/1582) `Tech` *2025-06-16*
+- [Jokes and Humour in the public Android API - ROllerozxa](https://voxelmanip.se/2025/06/14/jokes-and-humour-in-the-public-android-api) `Tech` *2025-06-16*
+- [How we built our multi-agent research system \ Anthropic](https://www.anthropic.com/engineering/built-multi-agent-research-system) `Tech` *2025-06-16*
+- [Marvell Managment is Bluffing Bank of America Securities](https://irrationalanalysis.substack.com/p/marvell-managment-is-bluffing-bank?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2025-06-16*
+- [Start your own Internet Resiliency Club – Bow Shock Systems Consulting](https://bowshock.nl/irc) `Reads` *2025-06-16*
+- [smoothbrains.net — How to talk about UFOs without alienating your friends](https://smoothbrains.net/posts/2025-06-14-how-to-talk-about-ufos-without-alienating-your-friends.html) `Ideas` *2025-06-16*
+- [(5) No eres lo que haces. Eres lo que el otro percibe que haces.](https://girlpope.substack.com/p/no-eres-lo-que-haces-eres-lo-que?utm_source=%2Finbox&utm_medium=reader2) `Ideas` *2025-06-16*
 - [Introducing the V-JEPA 2 world model and new benchmarks for physical reasoning](https://ai.meta.com/blog/v-jepa-2-world-model-benchmarks) `Academic Papers and Resources` *2025-06-13*
 - [Inside a Dark Adtech Empire Fed by Fake CAPTCHAs – Krebs on Security](https://krebsonsecurity.com/2025/06/inside-a-dark-adtech-empire-fed-by-fake-captchas) `Tech` *2025-06-13*
 - [No Rivals: The Founders Fund Story - by Mario Gabriele](https://www.generalist.com/p/founders-fund-1) `Tech` *2025-06-13*
