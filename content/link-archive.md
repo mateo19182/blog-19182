@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2025-06-23
+date: 2025-06-30
 tags: 
   - personal
 ---
@@ -9,6 +9,29 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [how we accidentally solved robotics by watching 1 million hours of YouTube | atharva's blog](https://ksagar.bearblog.dev/vjepa) `Tech` *2025-06-29*
+- [AI Training Load Fluctuations at Gigawatt-scale – Risk of Power Grid Blackout? – SemiAnalysis](https://semianalysis.com/2025/06/25/ai-training-load-fluctuations-at-gigawatt-scale-risk-of-power-grid-blackout/?access_token=eyJhbGciOiJFUzI1NiIsImtpZCI6InNlbWlhbmFseXNpcy5wYXNzcG9ydC5vbmxpbmUiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOiJzZW1pYW5hbHlzaXMucGFzc3BvcnQub25saW5lIiwiYXpwIjoiS1NncVhBaGFmZmtwVjQzbmt0UU1INSIsImVudCI6eyJhdWQiOlsiNThZNVhua2U4U1ZnTkFRRm5GZUVIQiJdLCJ1cmkiOlsiaHR0cHM6Ly9zZW1pYW5hbHlzaXMuY29tLzIwMjUvMDYvMjUvYWktdHJhaW5pbmctbG9hZC1mbHVjdHVhdGlvbnMtYXQtZ2lnYXdhdHQtc2NhbGUtcmlzay1vZi1wb3dlci1ncmlkLWJsYWNrb3V0LyJdfSwiZXhwIjoxNzUzNDY3NjUxLCJpYXQiOjE3NTA4NzU2NTEsImlzcyI6Imh0dHBzOi8vc2VtaWFuYWx5c2lzLnBhc3Nwb3J0Lm9ubGluZS9vYXV0aCIsInNjb3BlIjoiZmVlZDpyZWFkIGFydGljbGU6cmVhZCBhc3NldDpyZWFkIGNhdGVnb3J5OnJlYWQgZW50aXRsZW1lbnRzIiwic3ViIjoiZDlkZDE4NjMtMThlOS00MzU0LWE3Y2UtMjNmZTE2NTU2NDBlIiwidXNlIjoiYWNjZXNzIn0.wxihU39041RnTX2RLycBj6r3Q1zZ0OvJ5X8B1Z6EcRuFy0msiUNbxOO24_p-8Aak-TsG9GN-KvJZmMiMmE44og) `Reads` *2025-06-29*
+- [The Categories Were Made For Man, Not Man For The Categories | Slate Star Codex](https://slatestarcodex.com/2014/11/21/the-categories-were-made-for-man-not-man-for-the-categories) `Ideas` *2025-06-29*
+- [Luis von Ahn - Wikipedia](https://en.wikipedia.org/wiki/Luis_von_Ahn) `Wikis` *2025-06-26*
+- [Bill Atkinson - Wikipedia](https://en.wikipedia.org/wiki/Bill_Atkinson) `Wikis` *2025-06-26*
+- [Comp Sci in 2027 (Short story by Eliezer Yudkowsky) — LessWrong](https://www.lesswrong.com/posts/gQyphPbaLHBMJoghD/comp-sci-in-2027-short-story-by-eliezer-yudkowsky) `Reads` *2025-06-26*
+- [Iran is not Iraq - Razib Khan's Unsupervised Learning](https://substack.com/home/post/p-166699748?source=queue) `Reads` *2025-06-26*
+- [Folklore.org: The Original Macintosh](https://www.folklore.org/0-index.html) `Museums - Indexers` *2025-06-26*
+- [privacyspreadsheet.com/messaging-apps](https://privacyspreadsheet.com/messaging-apps) `Museums - Indexers` *2025-06-26*
+- [Basic facts about GPUs | Damek Davis’ Website](https://damek.github.io/random/basic-facts-about-gpus) `Academic Papers and Resources` *2025-06-25*
+- [SolidGoldMagikarp (plus, prompt generation) — LessWrong](https://www.lesswrong.com/posts/aPeJE8bSo6rAFoLqg/solidgoldmagikarp-plus-prompt-generation) `Academic Papers and Resources` *2025-06-25*
+- [Anthropic at BSidesSF](https://anthropic-at-bsides.com) `Tech` *2025-06-25*
+- [The Bitter Lesson is coming for Tokenization | ⛰️ lucalp](https://lucalp.dev/bitter-lesson-tokenization-and-blt) `Tech` *2025-06-25*
+- [Is the world’s big idea for greener air travel a flight of fancy?](https://www.climatechangenews.com/2025/06/18/is-the-worlds-big-idea-for-greener-air-travel-a-flight-of-fancy) `Reads` *2025-06-25*
+- [Thnickels - Thick Coins by Theodore Nichols](https://thick-coins.net) `Weird` *2025-06-25*
+- [Collection: Jeff Bezos Shareholder Letters - Quartr Insights](https://quartr.com/insights/business-philosophy/collection-jeff-bezos-shareholder-letters#2000-taking-the-long-view) `Reads` *2025-06-24*
+- [neilchen.co/](https://www.neilchen.co) `Tech` *2025-06-23*
+- [DefenderOfBasic (Defender)](https://github.com/DefenderOfBasic) `Tech` *2025-06-23*
+- [Hovercraft Invasion, Labubu, Tea - by Lily Ottinger](https://substack.com/inbox/post/163556575) `Reads` *2025-06-23*
+- [10x happiness increases are possible, and this is an underrated fact](https://sashachapin.substack.com/p/10x-happiness-increases-are-possible) `Ideas` *2025-06-23*
+- [How to build the perfect city](https://substack.com/inbox/post/166261949) `Ideas` *2025-06-23*
+- [Arguments are Soldiers - by Jeremiah Johnson](https://www.infinitescroll.us/p/arguments-are-soldiers) `Ideas` *2025-06-23*
+- [(5) I Can Only Think When I Run - by Jozef White - Inscripta](https://tabularasarecords.substack.com/p/i-can-only-think-when-i-run?utm_source=%2Finbox&utm_medium=reader2) `Ideas` *2025-06-23*
 - [(5) The Effective Altruist View of Politics - by Ozy Brennan](https://substack.com/inbox/post/154865476) `Reads` *2025-06-22*
 - [AMD's Freshly-baked MI350: An Interview with the Chief Architect](https://chipsandcheese.com/p/amds-freshly-baked-mi350-an-interview) `Tech` *2025-06-21*
 - [Chinese industrial maximalism: Lu Feng](https://www.high-capacity.com/p/chinese-industrial-maximalism) `Tech` *2025-06-21*
