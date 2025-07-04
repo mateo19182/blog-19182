@@ -57,4 +57,4 @@ Some interesting links:
 [Viable Systems](https://youtu.be/J8_eIlugO10?list=PLxr4yFMS4rKHuFP76IErHkIqHOBTPB7OY)
 [Cybernetics and War](https://youtu.be/JgJhmvzcb28)
 
-
+Coenetic Variable	is a cool concept, "a variable that is a common causal determinant of both system state and environmental disturbance"	(G. Sommerhoff).

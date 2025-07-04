@@ -33,6 +33,10 @@ title: Projects
 
 <div class="project-list">
 
+<div class="project-card">
+  <div class="project-title"><a href="https://github.com/mateo19182/IDIR-ollos">Retinal Image Registration with INRs</a></div>
+  <div class="project-desc">Thesis project adapting the IDIR framework for 2D retinal image alignment using Implicit Neural Representations. Developed as my computer science degree thesis at UDC. <a href="https://github.com/mateo19182/TFG">Written thesis and presentation materials</a> available separately.</div>
+</div>
 
 <div class="project-card">
   <div class="project-title"><a href="https://github.com/mateo19182/fieldNormalizer">fieldNormalizer</a></div>
@@ -134,7 +138,5 @@ title: Projects
   <div class="project-title"><a href="https://youtu.be/xBBow3L3EF8">live(@)NADIE.CREA - 2023</a></div>
   <div class="project-desc">Performed an audiovisual live show at the event, using reactive and artifially generated visuals that morph with the music. Most of the music were my own productions, the visuals were made with StableDiffusion and TouchDesigner.</div>
 </div>
-
-<!-- Add more project cards as needed -->
 
 </div>
