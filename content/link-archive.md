@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2025-06-30
+date: 2025-07-07
 tags: 
   - personal
 ---
@@ -9,6 +9,43 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Red Queen's race - Wikipedia](https://en.wikipedia.org/wiki/Red_Queen%27s_race) `Wikis` *2025-07-06*
+- [Frank Zappa "Seal Call Fusion Music" w/ Vinnie Colaiuta & Tommy Mars @ Circus Krone 1978 - YouTube](https://www.youtube.com/watch?v=ZKpERTw8DsE) `Arts` *2025-07-06*
+- [Background Noises • Ambient Sounds • Relaxing Music | myNoise ®](https://mynoise.net) `Arts` *2025-07-06*
+- [Ludwig - Home](https://ludwigabap.com) `Tech` *2025-07-06*
+- [Bruce Sterling](http://bactra.org/Sterling) `Tech` *2025-07-06*
+- [Orthogonality Thesis - LessWrong](https://www.lesswrong.com/w/orthogonality-thesis) `Reads` *2025-07-06*
+- [Are we the baddies? | the singularity is nearer](https://geohot.github.io//blog/jekyll/update/2025/07/05/are-we-the-baddies.html) `Reads` *2025-07-06*
+- [Howl | The Poetry Foundation](https://www.poetryfoundation.org/poems/49303/howl) `Reads` *2025-07-06*
+- [Ludwig - On getting started with Category Theory](https://ludwigabap.com/posts/On%20getting%20started%20with%20Category%20Theory) `Reads` *2025-07-06*
+- [Arc Virtual Cell Challenge: A Primer](https://fleetwood.dev/posts/virtual-cell-challenge) `Reads` *2025-07-06*
+- [Learn to love the Moat of Low Status - by Cate Hall](https://usefulfictions.substack.com/p/learn-to-love-the-moat-of-low-status) `Ideas` *2025-07-06*
+- [Ludwig - Bookmarks](https://ludwigabap.com/bookmarks) `Museums - Indexers` *2025-07-06*
+- [Making Language Models Play Baba is You - fi-le.net](https://fi-le.net/baba) `Tech` *2025-07-05*
+- [Your Review: School - Astral Codex Ten](https://substack.com/inbox/post/167356866) `Reads` *2025-07-05*
+- [Las elecciones generales de 2030](https://blogs.elconfidencial.com/economia/la-mano-visible/2025-07-05/debate-elecciones-espana-2030-1hms_4165431/?utm_source=twitter&utm_medium=social&utm_campaign=BotoneraWeb) `Ideas` *2025-07-05*
+- [Black-body radiation - Wikipedia](https://en.wikipedia.org/wiki/Black-body_radiation) `Wikis` *2025-07-04*
+- [People's Mojahedin Organization of Iran - Wikipedia](https://en.wikipedia.org/wiki/People%27s_Mojahedin_Organization_of_Iran) `Wikis` *2025-07-04*
+- [Will Iran’s Regime Change? - by Tomas Pueyo](https://unchartedterritories.tomaspueyo.com/p/will-irans-regime-change?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2025-07-04*
+- [Do blue-blocking glasses improve sleep?](https://dynomight.net/blue-light) `Reads` *2025-07-04*
+- [Human Cannibalism Alignment Chart, by Gwern, Gemini-2.5-pro, GPT-4-o3 · Gwern.net](https://gwern.net/blog/2025/human-cannibalism) `Ideas` *2025-07-04*
+- [1851 French coup d'état - Wikipedia](https://en.wikipedia.org/wiki/1851_French_coup_d%27%C3%A9tat) `Wikis` *2025-07-03*
+- [Double-edged swords in the US-China Cold War - by Kyle Chan](https://www.high-capacity.com/p/double-edged-swords) `Reads` *2025-07-03*
+- [The Politics of Contagion - by deepfates - The Ick](https://www.emilybynight.com/p/the-politics-of-contagion) `Reads` *2025-07-03*
+- [Survival without dignity — LessWrong](https://www.lesswrong.com/posts/BarHSeciXJqzRuLzw/survival-without-dignity) `Reads` *2025-07-03*
+- [Wagner, Two Years On](https://substack.com/inbox/post/163704694) `Reads` *2025-07-03*
+- [Cracking into a Just Eat / Takeaway.com terminal with an NFC card](https://blog.mgdproductions.com/justeat-takeaway-terminal) `Tech` *2025-07-02*
+- [Racial Dating Preferences and Sexual Racism](https://vishalblog.substack.com/p/racial-dating-preferences-and-sexual) `Reads` *2025-07-02*
+- [Social status hacks from The Improv Wiki — LessWrong](https://www.lesswrong.com/posts/PMZHfLuQaeFDMQwMx/social-status-hacks-from-the-improv-wiki) `Ideas` *2025-07-02*
+- [nextjs-sass-starter](https://wireframes.internet.dev) `Museums - Indexers` *2025-07-02*
+- [There Are No New Ideas in AI… Only New Datasets](https://blog.jxmo.io/p/there-are-no-new-ideas-in-ai-only) `Tech` *2025-07-01*
+- [El_Pais_1_Junio_2012.pdf](https://www.sas.upenn.edu/~jesusfv/El_Pais_1_Junio_2012.pdf) `Reads` *2025-07-01*
+- [The Georgist Roots of American Libertarianism—Asterisk](https://asteriskmag.com/issues/10/the-georgist-roots-of-american-libertarianism?utm_source=Asterisk&utm_campaign=a9f2926655-EMAIL_CAMPAIGN_5_5_2025_8_53_COPY_01&utm_medium=email&utm_term=0_e0307a4ab2-a9f2926655-585690599) `Reads` *2025-07-01*
+- [Vilfredo Pareto - Wikipedia](https://en.wikipedia.org/wiki/Vilfredo_Pareto) `Wikis` *2025-06-30*
+- [Weights & Biases](https://wandb.ai/marin-community/marin/reports/Marin-32B-Work-In-Progress--VmlldzoxMzM1Mzk1NQ) `Academic Papers and Resources` *2025-06-30*
+- [China's Wafer Fab Equipment Industry Present & Future](https://techzephyr.substack.com/p/chinas-wafer-fab-equipment-industry?utm_campaign=post) `Tech` *2025-06-30*
+- [Your Review: Alpha School - by Scott Alexander](https://substack.com/inbox/post/166959786) `Reads` *2025-06-30*
+- [The Illusions of Barbell Theory - by Tina He - Fakepixels](https://substack.com/inbox/post/167076493) `Ideas` *2025-06-30*
 - [how we accidentally solved robotics by watching 1 million hours of YouTube | atharva's blog](https://ksagar.bearblog.dev/vjepa) `Tech` *2025-06-29*
 - [AI Training Load Fluctuations at Gigawatt-scale – Risk of Power Grid Blackout? – SemiAnalysis](https://semianalysis.com/2025/06/25/ai-training-load-fluctuations-at-gigawatt-scale-risk-of-power-grid-blackout/?access_token=eyJhbGciOiJFUzI1NiIsImtpZCI6InNlbWlhbmFseXNpcy5wYXNzcG9ydC5vbmxpbmUiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOiJzZW1pYW5hbHlzaXMucGFzc3BvcnQub25saW5lIiwiYXpwIjoiS1NncVhBaGFmZmtwVjQzbmt0UU1INSIsImVudCI6eyJhdWQiOlsiNThZNVhua2U4U1ZnTkFRRm5GZUVIQiJdLCJ1cmkiOlsiaHR0cHM6Ly9zZW1pYW5hbHlzaXMuY29tLzIwMjUvMDYvMjUvYWktdHJhaW5pbmctbG9hZC1mbHVjdHVhdGlvbnMtYXQtZ2lnYXdhdHQtc2NhbGUtcmlzay1vZi1wb3dlci1ncmlkLWJsYWNrb3V0LyJdfSwiZXhwIjoxNzUzNDY3NjUxLCJpYXQiOjE3NTA4NzU2NTEsImlzcyI6Imh0dHBzOi8vc2VtaWFuYWx5c2lzLnBhc3Nwb3J0Lm9ubGluZS9vYXV0aCIsInNjb3BlIjoiZmVlZDpyZWFkIGFydGljbGU6cmVhZCBhc3NldDpyZWFkIGNhdGVnb3J5OnJlYWQgZW50aXRsZW1lbnRzIiwic3ViIjoiZDlkZDE4NjMtMThlOS00MzU0LWE3Y2UtMjNmZTE2NTU2NDBlIiwidXNlIjoiYWNjZXNzIn0.wxihU39041RnTX2RLycBj6r3Q1zZ0OvJ5X8B1Z6EcRuFy0msiUNbxOO24_p-8Aak-TsG9GN-KvJZmMiMmE44og) `Reads` *2025-06-29*
 - [The Categories Were Made For Man, Not Man For The Categories | Slate Star Codex](https://slatestarcodex.com/2014/11/21/the-categories-were-made-for-man-not-man-for-the-categories) `Ideas` *2025-06-29*
