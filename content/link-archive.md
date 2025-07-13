@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2025-07-07
+date: 2025-07-14
 tags: 
   - personal
 ---
@@ -9,6 +9,19 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Magreo - Wikipedia, la enciclopedia libre](https://es.m.wikipedia.org/wiki/Magreo) `Wikis` *2025-07-10*
+- [The Coder ‘Village’ at the Heart of China’s A.I. Frenzy - The New York Times](https://archive.ph/ahkfw) `Reads` *2025-07-10*
+- [Why I used to prefer permissive licenses and now favor copyleft](https://vitalik.eth.limo/general/2025/07/07/copyleft.html) `Reads` *2025-07-10*
+- [Microdosing Willpower - saraht0n1n](https://substack.com/inbox/post/167852405?utm_campaign=post&utm_medium=web&triedRedirect=true) `Ideas` *2025-07-10*
+- [Pt2: The Building Blocks of Status - by Aella - Knowingless](https://substack.com/inbox/post/167846661) `Ideas` *2025-07-10*
+- [Motion camouflage - Wikipedia](https://en.wikipedia.org/wiki/Motion_camouflage) `Wikis` *2025-07-08*
+- [LoRA-Edit: Controllable First-Frame-Guided Video Editing via Mask-Aware LoRA Fine-Tuning](https://cjeen.github.io/LoraEditPaper) `Academic Papers and Resources` *2025-07-08*
+- [Dark_Shipping.pdf](https://www.sas.upenn.edu/~jesusfv/Dark_Shipping.pdf) `Academic Papers and Resources` *2025-07-08*
+- [Xu Bing leads the way: The first satellite of the "Star Chain of Arts Project," "SCA-1," successfully launched into orbit_CAFA Global](http://global.cafa.edu.cn/infoDetail/1/324) `Arts` *2025-07-08*
+- [Superbabies: Putting The Pieces Together — LessWrong](https://www.lesswrong.com/posts/2uJsiQqHTjePTRqi4/superbabies-putting-the-pieces-together) `Reads` *2025-07-08*
+- [Eau de Vagina](https://www.cosimoresearch.com/posts/human-pheromones-part-1-vabbing) `Reads` *2025-07-08*
+- [Agency is Eating the World](https://giansegato.com/essays/agency-is-eating-the-world) `Ideas` *2025-07-08*
+- [Machine Unlearning Comparator](https://gnueaj.github.io/Machine-Unlearning-Comparator) `Tools and Interactive Websites` *2025-07-08*
 - [Red Queen's race - Wikipedia](https://en.wikipedia.org/wiki/Red_Queen%27s_race) `Wikis` *2025-07-06*
 - [Frank Zappa "Seal Call Fusion Music" w/ Vinnie Colaiuta & Tommy Mars @ Circus Krone 1978 - YouTube](https://www.youtube.com/watch?v=ZKpERTw8DsE) `Arts` *2025-07-06*
 - [Background Noises • Ambient Sounds • Relaxing Music | myNoise ®](https://mynoise.net) `Arts` *2025-07-06*
