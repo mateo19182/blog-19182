@@ -48,34 +48,30 @@ An up-to-date archive of links I've saved is available on [[link-archive]]
 
 ### Books
 
+[Goodreads profile](https://www.goodreads.com/user/show/78914124-m19182)
+
 - Zones of Thought Series - Vernor Vinge
 - The Stack: On Software and Sovereignty - Benjamin H. Bratton
 - Capitalist Realism: Is There No Alternative? - Mark Fisher
 - Calvin and Hobbes - Bill Watterson
 - Old Man's War Series - John Scalzi
-...
+- There Is No Antimemetics Division - qntm
 
-### Anime
+### Anime & Manga
+
+[MyAnimeList profile](https://myanimelist.net/profile/Mateo19182)
 
 - Cowboy Bebop
 - Steins;Gate
 - Serial Experiments Lain
-- Paprika
 - Baccano
 - Trigun
-...
-
-### Manga
-
 - REAL
 - Pluto
 - GTO
 - Claymore
 - 20th Century Boys
 - Vagabond
-- Toriko
-- Hellper
-...
 
 ## Ideas
 
