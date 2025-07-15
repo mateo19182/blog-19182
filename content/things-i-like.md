@@ -1,6 +1,5 @@
 ---
 title: Things I Like
-date: 2024-07-28
 tags: 
   - personal
 ---
