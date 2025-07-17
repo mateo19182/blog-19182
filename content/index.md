@@ -8,7 +8,7 @@ I also have a [[things i like]], [[now]], [[link-archive]] and [[projects]] page
 
 Check out my work on [GitHub](https://github.com/mateo19182), [SoundCloud](https://soundcloud.com/m19182), [YouTube](https://www.youtube.com/channel/UCEJKcBK7i88Iv3saZy2xuSg) and [faircamp](https://music.m19182.dev/). I also run [No-Cosign](https://no-cosign.m19182.dev/), a music blog with friends, work with the [AudiaLab](https://audialab.com/) team and build software at [TriboSolutions](https://tribosolutions.es).
 
-Always on the look for good opportunities, contact me at mateoamadoares (@) gmail.com for my cv and any other inquiries.
+If you want to talk, share ideas, collaborate, or just say hi, you can reach me at mateoamadoares (@) gmail.com.
 
 ---
 
