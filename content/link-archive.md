@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2025-07-14
+date: 2025-07-21
 tags: 
   - personal
 ---
@@ -9,6 +9,44 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [What Were the Earliest Laws Really Like?](https://worldhistory.substack.com/p/what-were-the-earliest-laws-really) `Reads` *2025-07-20*
+- [Generalized Hangriness: A Standard Rationalist Stance Toward Emotions — LessWrong](https://www.lesswrong.com/posts/naAeSkQur8ueCAAfY/generalized-hangriness-a-standard-rationalist-stance-toward) `Ideas` *2025-07-20*
+- [Summary of "The Straw Vulcan" — LessWrong](https://www.lesswrong.com/posts/z9hfbWhRrY2Pwwrgi/summary-of-the-straw-vulcan) `Ideas` *2025-07-20*
+- [Neuronpedia](https://www.neuronpedia.org) `Tools and Interactive Websites` *2025-07-20*
+- [Flehmen response - Wikipedia](https://en.wikipedia.org/wiki/Flehmen_response) `Wikis` *2025-07-18*
+- [Decart](https://about.decart.ai/publications/mirage) `Academic Papers and Resources` *2025-07-18*
+- [Flow Matching in 5 Minutes | wh](https://nrehiew.github.io/blog/flow_matching) `Academic Papers and Resources` *2025-07-18*
+- [Asymmetry of verification and verifier’s law — Jason Wei](https://www.jasonwei.net/blog/asymmetry-of-verification-and-verifiers-law) `Academic Papers and Resources` *2025-07-18*
+- [Improving RAG with ELO Scores](https://www.zeroentropy.dev/blog/improving-rag-with-elo-scores) `Academic Papers and Resources` *2025-07-18*
+- [truth, love, and temples made of brick - metanomicon](https://metanomicon.ink/citadel/metanomicon/metametanomicon/truth%2C+love%2C+and+temples+made+of+brick) `Tech` *2025-07-18*
+- [bunnie.org/](https://bunnie.org) `Tech` *2025-07-18*
+- [HackingTheXbox_Free.pdf](https://bunniefoo.com/nostarch/HackingTheXbox_Free.pdf) `Tech` *2025-07-18*
+- [Jason Wei](https://www.jasonwei.net) `Tech` *2025-07-18*
+- [Welcome to the Wild World of Drug Reddit](https://www.piratewires.com/p/welcome-to-the-wild-world-of-drug-reddit?utm_campaign=%5BGENERAL%5D+Welcome+to+the+Wild+World+of+Drug+Reddit+%5BAds%5D&utm_content=Longform+Newsletter+Design&utm_medium=email_action&utm_source=customer.io) `Reads` *2025-07-18*
+- [Perfume reviews, by Gwern · Gwern.net](https://gwern.net/blog/2025/perfume) `Reads` *2025-07-18*
+- [AI research is a max-performance domain — Jason Wei](https://www.jasonwei.net/blog/ai-research-is-a-max-performance-domain) `Ideas` *2025-07-18*
+- [Thread by @add_hawk on Thread Reader App – Thread Reader App](https://threadreaderapp.com/thread/1357071738731814912.html) `Weird` *2025-07-18*
+- [versary.town](https://versary.town) `Tech` *2025-07-17*
+- [Penetrum LLC](https://penetrumllc.com) `Tech` *2025-07-17*
+- [1912.01708v1.pdf](https://arxiv.org/pdf/1912.01708) `Academic Papers and Resources` *2025-07-15*
+- [2505.04600v2.pdf](https://arxiv.org/pdf/2505.04600) `Academic Papers and Resources` *2025-07-15*
+- [Differential geometry of ML](https://research.fal.ai/blog/differential-geometry-of-ml) `Academic Papers and Resources` *2025-07-15*
+- [H-Nets - the Future | Goomba Lab](https://goombalab.github.io/blog/2025/hnet-future) `Academic Papers and Resources` *2025-07-15*
+- [ssrn_id3282845_code2497515.pdf](https://download.ssrn.com/18/11/12/ssrn_id3282845_code2497515.pdf?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEC4aCXVzLWVhc3QtMSJHMEUCIQCkcmIDC%2FBX8Yls3Lg%2BsVMFraFvfwFBQBODGhMRLyyK7AIgfso6wzxQhqO8aGatI32%2BukgzvPhKVdMMme4rG%2FrupqUqvQUIRxAEGgwzMDg0NzUzMDEyNTciDPaocuLA9eIOTkt0gCqaBXc5lgSqYqFg7MkHUmpnGQYw4Z39dsnFnRngZwvwHJ5AnTDP2gz6suoHOACOIEQFWZhlPletE%2BIoCUwej%2BR4Op2AEkumZVWYJUT4hDAOkOpItN9iRrGhKjCXPbiGzBRDEiO65XvIQ72M8tO9FeOoNWHVeKETHyLqk3sjEW7kXUwJroQB2btuWG62CvNOZQQnj7tDz3sN49USFMnFHgSxvNPz1miae7kMJsKCheyYv9c2bz62vi8lT8lAUeAGlzyY1JWhIUTtdWOS%2FrtpMvILZB%2FPL6R1LC4cfRVhIlZDu6s4uYkuRe%2FphwEAOjJqpD9WnDtn%2FW1ULr4aseGSPm8kSR6ADnhcBVHRNHpsPqFxkucFJBk8F4lnEQIhmf36tueaPiVNK0IRUjEI3jg6rCFwdtZhbrbrsJryNAlAYg2TWAp2VUkYFJ8wnLa5vjyUQCWdg9iT9ha7oI4%2Fvu%2BzL%2FNOVXDqU2%2BD1lhIOK7FJUKe43Fic5FC3mVKI2iitn06kTnoZERww5GXBaCzIBusxpGRnBjngbbjF%2B%2B3s6N0%2By6obYwTtYL0MnyP%2B0VY26FPtEFuqG3GgNmWIcz41uGAF815yxBpLKuBIejDp1pKfKb1P%2FKWXlLXzHA3%2Fmk0suTPKg1P3TQd8UJRDVagsvTCAbF10PPN7BEqbArJqryLDkpeDxQbLS%2Fq4pPtBFnK16o8hBBR5sXiG196fBb8%2BXlbrDeGDN7JHgtU7YmJBUVfOZtL4fUtag78XysNl7%2FFpYXVbjkM1YxvBl%2BLd%2B6idHKH0OQUwgIoGcX4qxhjrNeqqVRJsOZU1jotn%2BGscTFU2exKgD%2BNRaYULPA7GR1t%2FSS2hj0NiNua%2F2rGdMUK6vL5TNJp%2F25u2GpcNWQ9YLycVjCZstnDBjqxAXtJHb9%2BuisIEEFdRrYDzM5YDmIpNybg9H%2B8bzaozHjTjBU2qAFPO4KNrCs1VVNfHKXT%2Fdl9Bj2nWaQc56SskEI7eYYuEpba0OOSl7qL8TAReUgQtH9j5%2BV%2F%2BFFOEai1WwTWSR%2BO8y6iH5b69LBbkKNLfSfqXBAXhZUthvTAZhv8pv1dh%2FGLqJv2Brkbbe%2BaseKBy76lpXmoW7uLfyxDJcGUV3HGSgYNwoc1mMOM9AsIAA%3D%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20250715T142446Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAUPUUPRWEYR5GEVHL%2F20250715%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=cb2a2372cef7acd0a1973f53d63aa7720a83f57fbfb2c146733e77674504efcb&abstractId=3282845) `Academic Papers and Resources` *2025-07-15*
+- [Is BGP safe yet? · Cloudflare](https://isbgpsafeyet.com) `Tech` *2025-07-15*
+- [The Saga of the Jane Street Trading Scandal - Capitalmind](https://www.capitalmind.in/insights/the-saga-of-the-jane-street-trading-scandal) `Tech` *2025-07-15*
+- [A minor point about precision · main](https://main-horse.github.io/posts/minor-points-on-precision) `Tech` *2025-07-15*
+- [H-Net - Inference · main](https://main-horse.github.io/posts/hnet-inf) `Tech` *2025-07-15*
+- [Anonymized Repository - Anonymous GitHub](https://anonymous.4open.science/r/neural-os/README.md) `Tech` *2025-07-15*
+- [How I found a bypass in Google's big anti-adblock update](https://0x44.xyz/blog/web-request-blocking) `Tech` *2025-07-15*
+- [Riddles in the Sky – A blog dedicated to observing, mostly classified, satellites.](https://skyriddles.wordpress.com) `Reads` *2025-07-15*
+- [The Uncertain Origins of Aspirin - Asimov Press](https://substack.com/inbox/post/167201384) `Reads` *2025-07-15*
+- [Kimi K2: Open Agentic Intelligence](https://moonshotai.github.io/Kimi-K2) `Tech` *2025-07-14*
+- [Interviews with Moonshot AI's CEO, Yang Zhilin — LessWrong](https://www.lesswrong.com/posts/tXJjRjErYodnCsDQf/interviews-with-moonshot-ai-s-ceo-yang-zhilin) `Tech` *2025-07-14*
+- [There is No Meritocracy Without Lottocracy - by Paul Melman](https://assemblingamerica.substack.com/p/there-is-no-meritocracy-without-lottocracy) `Reads` *2025-07-14*
+- [A Technical Look at Iran’s Internet Shutdowns · Zola Gonano](https://zola.ink/blog/posts/a-technical-look-at-irans-internet-shutdown) `Reads` *2025-07-14*
+- [My 9-week unprocessed food self-experiment](https://dynomight.net/unprocessed-food) `Ideas` *2025-07-14*
+- [rotating.parts/](https://rotating.parts) `Museums - Indexers` *2025-07-14*
 - [Magreo - Wikipedia, la enciclopedia libre](https://es.m.wikipedia.org/wiki/Magreo) `Wikis` *2025-07-10*
 - [The Coder ‘Village’ at the Heart of China’s A.I. Frenzy - The New York Times](https://archive.ph/ahkfw) `Reads` *2025-07-10*
 - [Why I used to prefer permissive licenses and now favor copyleft](https://vitalik.eth.limo/general/2025/07/07/copyleft.html) `Reads` *2025-07-10*
