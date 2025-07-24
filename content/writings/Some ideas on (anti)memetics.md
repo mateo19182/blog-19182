@@ -1,14 +1,15 @@
 ---
-title: Building my Homelab
-date: 2024-05-24
+title: Some ideas on (anti)memetics
+date: 2025-05-24
 tags: 
   - writing
   - complex systems
 ---
 
-The objective of this post is to discuss some concepts related to the field of memetics, and also as kind of a review of [Antimemetics: Why Some Ideas Resist Spreading](https://darkforest.metalabel.com/antimemetics?variantId=1) by Nadia Asparouhova ("the book" from now on). I also wanna thank pedro and niko for feeding me, giving me a place to stay and generally taking care of me during the writing of this post.
+The objective of this post is to discuss some concepts related to the field of memetics. It was inspired by reading [Antimemetics: Why Some Ideas Resist Spreading](https://darkforest.metalabel.com/antimemetics?variantId=1) by Nadia Asparouhova. I also wanna thank pedro and niko for feeding me, giving me a place to stay and generally taking care of me during the writing of this post.
 
 ---
+
 ## Intro
 
 I and others share the impression is that we are [witnessing the emergence of a new field](https://x.com/Morphenius/status/1874965018435076370). While memetics were introduced by Richard Dawkins in 1976, and they were studied intensively during the 1990s and early 2000s, it [died shortly after](http://cfpm.org/jom-emit/2005/vol9/edmonds_b.html?mobile-app=true&theme=dark#note3) due to inability to agree on basic definitions and how to do empirical research. At this point in time, the context around the field has changed so much [^2]  that it feels like a whole new discipline (thought there is still a lot to learn from back then).
@@ -39,7 +40,9 @@ This downward period coincided with the surge of memes in popular culture as the
 
 Interestingly some academics [try to distance themselves](https://bioone.org/journals/bioscience/volume-56/issue-1/0006-3568_2006_056_0074_MBAN_2.0.CO_2/MEMETICS-BY-ANOTHER-NAME/10.1641/0006-3568(2006)056%5B0074:MBAN%5D2.0.CO;2.full) as much as possible from the term "memetics". Researchers like [Boyd and Richerson's](https://on-memetics.blogspot.com/2014/06/boyd-and-richersons-cultural-evolution.html) work in cultural evolution is quite successful, but they use terms like 'cultural variant' to avoid comparisons to biology and put much more emphasis on the gene-meme coevolution. In general they are a watered-down version of memetics with less emphasis on Darwinian theory and symbiosis. They seem to have gotten the empirical testing part right thought.
 
-In my opinion most of the interesting work is being done outside academic structures. Initiatives like the [Open Research Institute](https://www.openresearch.institute/) are bringing research into the public, thought they are still quite easly. Their members have some of my [favorite posts](https://defenderofthebasic.substack.com/p/a-beginners-guide-to-culture-science) on the subject, that serve as a great introduction point. I will leave links to interesting people and content on the resources section at the end, but I want to highlight the [DefenderOfBasic/open-memetics-institute](https://github.com/DefenderOfBasic/open-memetics-institute) and [X community](https://x.com/i/communities/1879011323863789767) as some of the most vibrant places around.
+---
+
+In my opinion most of the interesting work is being done outside academic structures. Initiatives like the [Open Research Institute](https://www.openresearch.institute/) are bringing research into the public, thought they are still quite early. Their members have some of my [favorite posts](https://defenderofthebasic.substack.com/p/a-beginners-guide-to-culture-science) on the subject, that serve as a great introduction point. I will leave links to interesting people and content on the resources section at the end, but I want to highlight the [open-memetics-institute](https://github.com/DefenderOfBasic/open-memetics-institute) and [X community](https://x.com/i/communities/1879011323863789767) as some of the most vibrant places around.
 
 ---
 
@@ -63,10 +66,11 @@ I had a notion of what an *antimeme* was from  [qntm's There Is No Antimemetics 
 
 Antimemes involve ideas that resist being remembered, comprehended, or engaged with, despite their significance. When a person encounters an antimemetic idea, there's a conscious or unconscious desire to suppress it. Some examples include Daylight Saving Time (that despite widespread dislike and evidence of negative impacts, the practice persists), Taboos (global poverty is a truth that is too heavy for our minds to constantly hold)... I won't get too deep into this particular concept, you should read the book if you are interested.
 
+---
+
 One of the big differences on biological evolution to cultural is on how the transmission happens. **Vertical transmission** occurs when information (values, DNA...) is passed _from parents to their children_. **Horizontal transmission** happens among members of the same generation that are not direct family, and is much faster and flexible. Both kinds of evolution exhibit both kinds of transmission, but culture relies much more on horizontal and vice versa for bio.
 
 Another good way of categorizing memetic information is by [how the value it provides to humans change when it spreads](https://near.blog/memetic-information/). **Memetic-invariant** information _remains_ _constant_ in value if more people learn it (the sky is blue), **memetic-cooperative** information becomes _more valuable_ if more people learn it (centralized fiat) and **memetic-competitive** information becomes _less valuable_ if more people learn it (an undervalued asset). Most social media (and the broader information economy) exists to propagate memetic information. As memetic-competitive information is _anti-memetic_ (no one wants to spread it, lest it loses value), it makes sense why it's mostly filled with cooperative memes.
-
 
 While memes might have certain amount of agency, it would be problematic to attribute moral value to them. We can however differentiate between **Symbionts** (memes that benefit their hosts, making them more likely to survive e.g. washing your hands) and **Parasites** (memes that harm their host but are effective at replicating).Parasitic memes are of particular interest, as being able to recognize them will help us to avoid them better. One of the keys lies in that they must endure the selection process while damaging their own hosts at the same time, which forces them to be really effective at replicating. This can apply both to a individual node and to the network, thought those that are beneficial to the individual will be easier to spread.
 
@@ -94,15 +98,14 @@ While the truth-teller surfaces antimemes into our collective consciousness, cha
 
 The book adds a bunch of details and examples around these ideas, sometimes to their detriment, but I enjoyed them since most of them related to memes I have already been infected by. For example, it traces the surge of interest around a very specific type of meditation, called jhanas, and nails the chain of people that made this possible in my case (Scott Alexander -> Nick Cammarata).
 
-Protocols and mnemonics
-
 > Attention is a precious, limited resource. We can't expect to fully engage with every idea that enters our headspace. Yet at the same time, it's clear that relying on unconscious filters can leave us blinded to opportunities that would otherwise be useful to see. (page 78)
 
 > Instead of trying to engineer a perfect hierarchy of attention, we should aim to cultivate a "biodiverse" information ecosystem (...) In biology, ecosystems with greater biodiversity are more resilient to shocks and better equipped to adapt to changing conditions (page 82)
 
-As I briefly discussed in [consciousness is hard] the attention mechanism has a intricated relationship to consciousness. Our brain ingests [enormous amounts](https://www.britannica.com/science/information-theory/Physiology) of information every instant, but we are [only conscious of a really small part](https://en.wikipedia.org/wiki/Inattentional_blindness), defining how we perceive the world. It is the bottleneck of the human brain, rather than computational power. 
+As I briefly discussed in [consciousness is hard] the attention mechanism has a intricated relationship to consciousness. Our brain ingests [enormous amounts](https://www.britannica.com/science/information-theory/Physiology) of information every instant, but we are [only conscious of a really small part](https://en.wikipedia.org/wiki/Inattentional_blindness), defining how we perceive the world. It is the bottleneck of the human brain, rather than computational power. The book discussed technics like protocols and nmemonics as ways of opetimizing our attention.
 
 ---
+
 ## Risks
 
 > we are now living in what might be termed "late-stage memetic society" but "early-stage antimemetic society": a patchwork of settlements that has opened it's borders to refugees fleeing memetic contagion. (page 39)
@@ -176,6 +179,7 @@ Footnotes:
 	> We're already in the timeline where the research and manipulation of the human thought process is widespread; SOTA psychological research systems require massive amounts of human behavior data, which in turn requires massive numbers of unsuspecting test subjects (users) in order to automate the process of analyzing and exploiting human targets. This therefore must happen covertly, and both the US and China have a strong track record of doing things like this. This outcome is a strong attractor state since anyone with enough data can do it, and it naturally follows that powerful organizations would deny others access e.g. via data poisoning.
 
 ---
+
 ## Resources
 
 [nosilverv](https://x.com/nosilverv/status/1553817758290395137)  is going to publish a book related to memetics soon.
@@ -204,6 +208,7 @@ Footnotes:
 [Who are we now?](https://whoarewenow.net/)
 [wearehostsformemes/meta-meme.txt at master · lupuleasa-core/wearehostsformemes · GitHub](https://github.com/lupuleasa-core/wearehostsformemes/blob/master/meta-meme.txt)
 [Why Care About Meme Hazards and Thoughts on How to Handle Them | Qualia Computing](https://qualiacomputing.com/2019/08/30/why-care-about-meme-hazards-and-thoughts-on-how-to-handle-them/)
+
 ### Todo maybe
 
 connect with free energy principle in the brain ??
@@ -214,4 +219,4 @@ memetic entropy as they evolve over time ?
 
 ---
 
-I just hope for "memetics" itself becomes a widespread meme:)
+I just hope for "memetics" itself becomes a widespread meme.
