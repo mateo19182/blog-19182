@@ -14,6 +14,7 @@ If you want to talk, share ideas, collaborate, or just say hi, you can reach me 
 
 ## [[writings]]
 
+- 24 Julio, 2025: [[Some ideas on (anti)memetics]]
 - 10 Apr, 2025: [Las herramientas importan](https://no-cosign.m19182.dev/las-herramientas-importan/) (pt. 3)
 - 31 Mar, 2025: [[Mapping music's search space pt.2]]
 - 27 Jan, 2025: [[Mapping music's search space pt.1]]
