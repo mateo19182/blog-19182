@@ -21,14 +21,15 @@ const config: QuartzConfig = {
     baseUrl: "https://blog.m19182.dev",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "created",
-    theme: {
-      fontOrigin: "googleFonts",
-      cdnCaching: true,
-      typography: {
-        header: "Poppins",
-        body: "Inter",
-        code: "Fira Code",
-      },
+theme: {
+  fontOrigin: "googleFonts",
+  cdnCaching: true,
+  typography: {
+    "header": "Merriweather",
+    "body": "Archivo",
+    "code": "Space Mono"
+  },
+
       colors: {
         lightMode: {
           light: "#f5f5f5",         // Soft off-white, less harsh than pure white
