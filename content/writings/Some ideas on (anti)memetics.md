@@ -1,10 +1,10 @@
 ---
 
 title: Some ideas on (anti)memetics
-date: 2025-05-24
+date: 2025-07-24
 tags:
   - writing
-  - complex system
+  - complex systems
 
 ---
 

@@ -9,45 +9,66 @@ export const sharedPageComponents: SharedLayout = {
     Component.MobileOnly(Component.Spacer()),
     Component.Search(),
     Component.Darkmode(),
-    // Component.DesktopOnly(Component.HeaderLinks()), // Uncomment this to add links to your header
   ],
-  footer: Component.Footer({
-    links: {
-      GitHub: "https://github.com/jackyzha0/quartz",
-      "Discord Community": "https://discord.gg/cRFFHYye7t",
-    },
-  }),
-  afterBody: []
+  footer:     Component.DesktopOnly(Component.Footer(
+  //   {
+  //   links: {
+  //     GitHub: "https://github.com/jackyzha0/quartz",
+  //     "Discord Community": "https://discord.gg/cRFFHYye7t",
+  //   },
+  // }
+)),
+  // The Graph component is now here, rendered after the main content
+  afterBody: [
+
+  ],
 }
 
 // components for pages that display a single page (e.g. a single note)
 export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
-    Component.Breadcrumbs(),
+    Component.Breadcrumbs({
+      spacerSymbol: "›", // Use a different spacer
+      showCurrentPage: false,
+    }),
     Component.ArticleTitle(),
     Component.ContentMeta(),
     Component.TagList(),
+    // Show a custom callout only on pages with the 'project' tag
   ],
   left: [
-      Component.Graph({
-      localGraph: {
-        showTags: true,
-      },
-      globalGraph: {
-        showTags: true,
-      },
-    }),
-    Component.DesktopOnly(Component.Explorer()),
-
+    Component.DesktopOnly(Component.Explorer({
+      // Add icons to the explorer
+      // mapFn: (node) => {
+      //   if (node.file) {
+      //     node.displayName = " " + node.displayName
+      //   } else {
+      //     node.displayName = "📂 " + node.displayName
+      //   }
+      // },
+      // When you click a folder, it will navigate to that folder's page
+      folderClickBehavior: "link",
+    })),
+      Component.DesktopOnly(  Component.RecentNotes({
+      title: "Recent",
+      limit: 3,
+    })),
+    // The Graph component has been removed from here
   ],
   right: [
-
     Component.DesktopOnly(Component.TableOfContents()),
     // Component.Backlinks(),
-    Component.RecentNotes({
-      title: "Recent",
-      limit: 4,
-    }),
+    Component.DesktopOnly(Component.Graph({
+      localGraph: {
+        // A more 'floaty' and colorful graph
+        repelForce: 0.7,
+        linkDistance: 40,
+      },
+      globalGraph: {
+        repelForce: 0.8,
+        linkDistance: 30,
+      },
+    })),
   ],
 }
 
@@ -55,7 +76,17 @@ export const defaultContentPageLayout: PageLayout = {
 export const defaultListPageLayout: PageLayout = {
   beforeBody: [Component.Breadcrumbs(), Component.ArticleTitle(), Component.ContentMeta()],
   left: [
-    Component.DesktopOnly(Component.Explorer()),
+    
+    // Component.DesktopOnly(Component.Explorer({
+    //   // mapFn: (node) => {
+    //   //   if (node.file) {
+    //   //     node.displayName = "📄 " + node.displayName
+    //   //   } else {
+    //   //     node.displayName = "📂 " + node.displayName
+    //   //   }
+    //   // },
+    //   folderClickBehavior: "link",
+    // })),
   ],
   right: [],
 }

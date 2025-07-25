@@ -11,7 +11,7 @@ const config: QuartzConfig = {
     pageTitle: "blog-19182",
     pageTitleSuffix: "",
     enableSPA: true,
-    enablePopovers: true,
+    enablePopovers: false,
     analytics: {
       provider: 'umami',
       host: 'https://umami.m19182.dev',

@@ -1,17 +1,16 @@
 ---
-title: Homepage
+title: Home
 ---
 
-Here lies my vague attemp to sort my thoughts into words. I find that is one of the best ways to learn about different topics.
+Here lies my vague attemp to sort thoughts into words. I find that is one of the best ways to learn about different topics. Read my [[writings | blog posts]].
 
 I also have a [[things i like]], [[now]], [[link-archive]] and [[projects]] page.
 
-Check out my work on [GitHub](https://github.com/mateo19182), [SoundCloud](https://soundcloud.com/m19182), [YouTube](https://www.youtube.com/channel/UCEJKcBK7i88Iv3saZy2xuSg) and [faircamp](https://music.m19182.dev/). I also run [No-Cosign](https://no-cosign.m19182.dev/), a music blog with friends, work with the [AudiaLab](https://audialab.com/) team and build software at [TriboSolutions](https://tribosolutions.es).
+Check out other stuff I do on [GitHub](https://github.com/mateo19182), [SoundCloud](https://soundcloud.com/m19182), [YouTube](https://www.youtube.com/channel/UCEJKcBK7i88Iv3saZy2xuSg) and [faircamp](https://music.m19182.dev/). I also run [No-Cosign](https://no-cosign.m19182.dev/), a music blog with friends, work with the [AudiaLab](https://audialab.com/) team and build software at [TriboSolutions](https://tribosolutions.es).
 
 If you want to talk, share ideas, collaborate, or just say hi, you can reach me at mateoamadoares (@) gmail.com.
 
----
-
+<!-- 
 ## [[writings]]
 
 - 24 Jul, 2025: [[Some ideas on (anti)memetics]]
@@ -34,6 +33,4 @@ If you want to talk, share ideas, collaborate, or just say hi, you can reach me 
 - 25 Sep, 2023: [[On models]]
 - 22 Sep, 2023: [[How AI might help save copyright]]
 - 14 Aug, 2023: [[What I learned traking my time for 6 months]]
-- 14 Aug, 2023: [[The hi-fi paradox]]
-
-[tags](https://blog.m19182.dev/tags/)
+- 14 Aug, 2023: [[The hi-fi paradox]] -->
