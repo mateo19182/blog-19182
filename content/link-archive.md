@@ -5,9 +5,7 @@ tags:
   - personal
 ---
 
-This is a collection of links I've archived over time.
- Categories are rough, links are updated once a week from my collection.
- If a link is broken and you're interested in it, contact me for an archive.
+This is a collection of links I've archived over time. Categories are rough.
 
 - [What Were the Earliest Laws Really Like?](https://worldhistory.substack.com/p/what-were-the-earliest-laws-really) `Reads` *2025-07-20*
 - [Generalized Hangriness: A Standard Rationalist Stance Toward Emotions — LessWrong](https://www.lesswrong.com/posts/naAeSkQur8ueCAAfY/generalized-hangriness-a-standard-rationalist-stance-toward) `Ideas` *2025-07-20*

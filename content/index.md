@@ -2,11 +2,17 @@
 title: Home
 ---
 
-Here lies my vague attemp to sort thoughts into words. I find that is one of the best ways to learn about different topics. Read my posts [[writings | here]] or by [[tags]]. I also have a [[things i like]], [[now]], [[link-archive]] and [[projects]] page.
+Here lies my vague attemp to sort thoughts into words. I find that is one of the best ways to learn about different topics. 
 
-Check out other stuff I do on [GitHub](https://github.com/mateo19182), [SoundCloud](https://soundcloud.com/m19182), [YouTube](https://www.youtube.com/channel/UCEJKcBK7i88Iv3saZy2xuSg) and [faircamp](https://music.m19182.dev/). I run [No-Cosign](https://no-cosign.m19182.dev/), a music blog with friends, work with the [AudiaLab](https://audialab.com/) team and build software at [TriboSolutions](https://tribosolutions.es).
+- [[writings]] (by [[tags]])
+- [[projects]]
+- [[link-archive]]
+- [[things i like]]
+- [[now]]
 
-If you want to talk, share ideas, collaborate, or just say hi, you can reach me at admin (@) m19182.dev
+Check out other stuff I do on [GitHub](https://github.com/mateo19182), [SoundCloud](https://soundcloud.com/m19182), [YouTube](https://www.youtube.com/channel/UCEJKcBK7i88Iv3saZy2xuSg) and [faircamp](https://music.m19182.dev/). I also run [No-Cosign](https://no-cosign.m19182.dev/), a music blog with friends, work with the [AudiaLab](https://audialab.com/) team and build software at [TriboSolutions](https://tribosolutions.es).
+
+If you want to talk, collaborate, or just say hi, you can reach me at admin (@) m19182.dev
 
 <!-- 
 ## [[writings]]
