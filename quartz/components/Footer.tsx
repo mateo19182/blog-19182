@@ -12,87 +12,160 @@ export default ((opts?: Options) => {
     const year = new Date().getFullYear()
     const links = opts?.links ?? []
 
-    // JavaScript for the coin game. This will be injected into the page.
+    // JavaScript for the Sand Garden Automata.
     const gameScript = `
       document.addEventListener('DOMContentLoaded', () => {
-        // Ensure the game elements exist before adding listeners
-        const flipButton = document.getElementById('flip-coin-button');
-        if (!flipButton) return; // If the game isn't on the page (e.g. mobile), do nothing
+        const sandCanvas = document.getElementById('sand-canvas');
+        if (!sandCanvas) return; // Exit if canvas not found
 
-        const coinResult = document.getElementById('coin-result');
-        const headsCountEl = document.getElementById('heads-count');
-        const tailsCountEl = document.getElementById('tails-count');
-        const guessHeadsButton = document.getElementById('guess-heads');
-        const guessTailsButton = document.getElementById('guess-tails');
-        const gameAnswerEl = document.getElementById('game-answer');
-        const resetButton = document.getElementById('reset-game-button');
-
-        let headsCount = 0;
-        let tailsCount = 0;
-        let isGameOver = false;
-
-        // Randomly determine the bias when the game loads.
-        const bias = Math.random() < 0.5 ? 'Heads' : 'Tails';
-        const BIAS_PROBABILITY = 0.6; // 70% chance of landing on the biased side
-
-        function flipCoin() {
-          if (isGameOver) return;
-
-          let result;
-          const random = Math.random();
-
-          if (bias === 'Heads') {
-            result = random < BIAS_PROBABILITY ? 'Heads' : 'Tails';
-          } else {
-            result = random < BIAS_PROBABILITY ? 'Tails' : 'Heads';
-          }
-
-          coinResult.textContent = \`Landed on: \${result}\`;
-
-          if (result === 'Heads') {
-            headsCount++;
-            headsCountEl.textContent = headsCount;
-          } else {
-            tailsCount++;
-            tailsCountEl.textContent = tailsCount;
-          }
-        }
-
-        function makeGuess(guess) {
-          if (isGameOver) return;
-          isGameOver = true;
-          flipButton.disabled = true;
-          guessHeadsButton.disabled = true;
-          guessTailsButton.disabled = true;
-
-          if (guess === bias) {
-            gameAnswerEl.textContent = \`Correct! Biased towards \${bias}.\`;
-            gameAnswerEl.style.color = 'var(--tertiary)';
-          } else {
-            gameAnswerEl.textContent = \`Wrong! It was biased towards \${bias}.\`;
-            gameAnswerEl.style.color = 'var(--secondary)';
-          }
-          resetButton.style.display = 'inline-block';
-        }
+        const ctx = sandCanvas.getContext('2d');
+        const resetButton = document.getElementById('sand-reset-button');
         
-        function resetGame() {
-            headsCount = 0;
-            tailsCount = 0;
-            isGameOver = false;
-            headsCountEl.textContent = '0';
-            tailsCountEl.textContent = '0';
-            coinResult.textContent = 'Flip to start!';
-            gameAnswerEl.textContent = '';
-            flipButton.disabled = false;
-            guessHeadsButton.disabled = false;
-            guessTailsButton.disabled = false;
-            resetButton.style.display = 'none';
+        ctx.imageSmoothingEnabled = false;
+
+        const resolution = 5;
+        const cols = sandCanvas.width / resolution;
+        const rows = sandCanvas.height / resolution;
+
+        let grid;
+        function createGrid() {
+            return new Array(cols).fill(null).map(() => new Array(rows).fill(0));
+        }
+        grid = createGrid();
+
+        let isMouseDown = false;
+        let isSansPlaying = false;
+        let sansFrame = 0;
+        let frameCounter = 0;
+
+        // Compressed data for a short "Sans" animation loop (40x30)
+        const sansData = [
+            // Frame 1: Neutral
+            ["0000000000000000000000000000000000000000", "0000000000001111111111111111000000000000", "0000000000111111111111111111110000000000", "0000000001111111111111111111111000000000", "0000000011111111111111111111111100000000", "0000000111111111111111111111111110000000", "0000001111111111111111111111111111000000", "0000011111111111111111111111111111100000", "0000111111111111111111111111111111110000", "0000111111111111111111111111111111110000", "0001111111111111111111111111111111111000", "0001111111110011111111110011111111111000", "0001111111100001111111100001111111111000", "0001111111100001111111100001111111111000", "0001111111110011111111110011111111111000", "0001111111111111111111111111111111111000", "0000111111111111111111111111111111110000", "0000111111111111111111111111111111110000", "0000011111111111111111111111111111100000", "0000001111111111111111111111111111000000", "0000000111111111111111111111111110000000", "0000000011111111111111111111111100000000", "0000000001111111111111111111111000000000", "0000000000011111111111111111110000000000", "0000000000000111111111111111000000000000", "000000000000000111111111110000000000000", "0000000000000000011111111000000000000000", "0000000000000000000111110000000000000000", "0000000000000000000001100000000000000000", "0000000000000000000000000000000000000000"],
+            // Frame 2: Eye Flash
+            ["0000000000000000000000000000000000000000", "0000000000001111111111111111000000000000", "0000000000111111111111111111110000000000", "0000000001111111111111111111111000000000", "0000000011111111111111111111111100000000", "0000000111111111111111111111111110000000", "0000001111111111111111111111111111000000", "0000011111111111111111111111111111100000", "0000111111111111111111111111111111110000", "0000111111111111111111111111111111110000", "0001111111111111111111111111111111111000", "0001111111110011111111110011111111111000", "0001111111101101111111100001111111111000", "0001111111101101111111100001111111111000", "0001111111110111111111110011111111111000", "0001111111111111111111111111111111111000", "0000111111111111111111111111111111110000", "0000111111111111111111111111111111110000", "0000011111111111111111111111111111100000", "0000001111111111111111111111111111000000", "0000000111111111111111111111111110000000", "0000000011111111111111111111111100000000", "0000000001111111111111111111111000000000", "0000000000011111111111111111110000000000", "0000000000000111111111111111000000000000", "000000000000000111111111110000000000000", "0000000000000000011111111000000000000000", "0000000000000000000111110000000000000000", "0000000000000000000001100000000000000000", "0000000000000000000000000000000000000000"],
+        ];
+
+        function getMousePos(evt) {
+            const rect = sandCanvas.getBoundingClientRect();
+            return {
+                x: Math.floor((evt.clientX - rect.left) / resolution),
+                y: Math.floor((evt.clientY - rect.top) / resolution),
+            };
         }
 
-        flipButton.addEventListener('click', flipCoin);
-        guessHeadsButton.addEventListener('click', () => makeGuess('Heads'));
-        guessTailsButton.addEventListener('click', () => makeGuess('Tails'));
-        resetButton.addEventListener('click', resetGame);
+        function addSand(e) {
+            if (isSansPlaying) return;
+            const mousePos = getMousePos(e);
+            if (mousePos.x >= 0 && mousePos.x < cols && mousePos.y >= 0 && mousePos.y < rows) {
+                grid[mousePos.x][mousePos.y] = 1;
+            }
+        }
+
+        sandCanvas.addEventListener('mousedown', (e) => {
+            if (isSansPlaying) return;
+            isMouseDown = true;
+            addSand(e);
+        });
+
+        sandCanvas.addEventListener('mousemove', (e) => {
+            if (isMouseDown && !isSansPlaying) {
+                addSand(e);
+            }
+        });
+
+        window.addEventListener('mouseup', () => { isMouseDown = false; });
+        
+        resetButton.addEventListener('click', () => {
+            grid = createGrid();
+            isSansPlaying = false;
+            sansFrame = 0;
+            frameCounter = 0;
+        });
+
+        function isGridFull() {
+          for (let i = 0; i < cols; i++) {
+            for (let j = 0; j < rows; j++) {
+              if (grid[i][j] === 0) {
+                return false; // Found an empty cell
+              }
+            }
+          }
+          return true; // All cells are full
+        }
+
+        function update() {
+          if (isSansPlaying) {
+            // Slow down the animation
+            frameCounter++;
+            if (frameCounter % 15 === 0) { // A bit faster for the wink
+              sansFrame = (sansFrame + 1) % sansData.length;
+            }
+          } else {
+            if (isGridFull()) {
+              isSansPlaying = true;
+            } else {
+              const nextGrid = createGrid();
+              for (let i = 0; i < cols; i++) {
+                for (let j = 0; j < rows; j++) {
+                  if (grid[i][j] === 0) continue;
+                  const belowY = j + 1;
+                  if (belowY >= rows) { nextGrid[i][j] = 1; continue; }
+                  if (grid[i][belowY] === 0) { nextGrid[i][belowY] = 1; continue; }
+                  const dir = Math.random() < 0.5 ? 1 : -1;
+                  const newColA = i + dir;
+                  const newColB = i - dir;
+                  if (newColA >= 0 && newColA < cols && grid[newColA][belowY] === 0) {
+                    nextGrid[newColA][belowY] = 1;
+                  } else if (newColB >= 0 && newColB < cols && grid[newColB][belowY] === 0) {
+                    nextGrid[newColB][belowY] = 1;
+                  } else {
+                    nextGrid[i][j] = 1;
+                  }
+                }
+              }
+              grid = nextGrid;
+            }
+          }
+          draw();
+          requestAnimationFrame(update);
+        }
+
+        function draw() {
+          ctx.fillStyle = '#000';
+          ctx.fillRect(0, 0, sandCanvas.width, sandCanvas.height);
+          
+          if(isSansPlaying) {
+            const frameData = sansData[sansFrame];
+            for (let j = 0; j < frameData.length; j++) {
+              const row = frameData[j];
+              for (let i = 0; i < row.length; i++) {
+                const isPixelOn = row[i] === '1';
+                // For Sans, we need black and blue pixels on a white background
+                if (frameData === sansData[1] && j >= 12 && j <= 14 && i >= 11 && i <= 13) {
+                    ctx.fillStyle = isPixelOn ? '#00FFFF' : '#FFF'; // Glowing eye
+                } else {
+                    ctx.fillStyle = isPixelOn ? '#000' : '#FFF'; // Standard pixels
+                }
+                // Only draw the lit pixels
+                if (isPixelOn) {
+                    ctx.fillRect(i * resolution, j * resolution, resolution, resolution);
+                }
+              }
+            }
+          } else {
+            for (let i = 0; i < cols; i++) {
+              for (let j = 0; j < rows; j++) {
+                if (grid[i][j] === 1) {
+                  ctx.fillStyle = '#ffffffff'; 
+                  ctx.fillRect(i * resolution, j * resolution, resolution, resolution);
+                }
+              }
+            }
+          }
+        }
+
+        update();
       });
     `;
 
@@ -106,22 +179,12 @@ export default ((opts?: Options) => {
 
           <div class="desktop-only">
              <details>
-                <summary style="cursor: pointer;">Play a Game</summary>
-                <div id="coin-game" style="margin-top: 0.5rem; padding: 0.5rem 1rem; border: 1px solid var(--gray); border-radius: 8px;">
-                  <p style="margin: 0.5rem 0;">Guess the coin's 60% bias in the least amount of guesses</p>
-                  <button id="flip-coin-button">Flip</button>
-                  <p id="coin-result" style="font-weight: bold; min-height: 1.5em; display: inline-block; margin-left: 1rem;">Flip to start!</p>
-                  <div>
-                    <span>H: <span id="heads-count">0</span></span> | 
-                    <span>T: <span id="tails-count">0</span></span>
+                <summary style="cursor: pointer;"></summary>
+                <div id="sand-garden-container" style="margin-top: 0.5rem; padding: 0.5rem; border: 1px solid var(--gray); border-radius: 8px; background-color: #111;">
+                  <canvas id="sand-canvas" width="200" height="150" style="cursor: crosshair; width: 200px; height: 150px;"></canvas>
+                  <div style="text-align: center; margin-top: 0.5rem;">
+                     <button id="sand-reset-button">Clear</button>
                   </div>
-                  <div style="margin-top: 0.5rem;">
-                    <p style="margin-bottom: 0.5rem;">Guess:</p>
-                    <button id="guess-heads">Heads</button>
-                    <button id="guess-tails">Tails</button>
-                    <button id="reset-game-button" style="display: none; margin-left: 10px;">Reset</button>
-                  </div>
-                  <p id="game-answer" style="margin-top: 0.5rem; font-weight: bold;"></p>
                 </div>
               </details>
           </div>
@@ -139,7 +202,6 @@ export default ((opts?: Options) => {
     )
   }
 
-  // Add styles for the new footer layout
   Footer.css = `
     ${style}
     .footer-container {
