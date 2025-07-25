@@ -174,57 +174,57 @@ This is about it for now, I wrote this in 4 frantic days while in vacation in Ba
 
 I encourage the reader to follow the link in the post, as the value of my content is more of curation rather than writing. In fact few ideas in here are really mine, but I enyojed exploring them.
 
-[nosilverv](https://x.com/nosilverv/status/1553817758290395137)  is going to publish a book related to memetics soon.
+- [nosilverv](https://x.com/nosilverv/status/1553817758290395137)  is going to publish a book related to memetics soon.
 
-[nick bostron - unilateralist.pdf](https://nickbostrom.com/papers/unilateralist.pdf)
+- [nick bostron - unilateralist.pdf](https://nickbostrom.com/papers/unilateralist.pdf)
 
-[How to bootstrap the Open Research Institute](https://defenderofthebasic.substack.com/p/how-do-we-bootstrap-the-open-research)
+- [How to bootstrap the Open Research Institute](https://defenderofthebasic.substack.com/p/how-do-we-bootstrap-the-open-research)
 
-[Site map | Practical Memetics](https://www.practicalmemetics.com/Start/sitemap.html)
+- [Site map | Practical Memetics](https://www.practicalmemetics.com/Start/sitemap.html)
 
-[Ideonomy: A Science of Ideas • Grace Kind](https://gracekind.net/writing/ideonomy/intro/)
+- [Ideonomy: A Science of Ideas • Grace Kind](https://gracekind.net/writing/ideonomy/intro/)
 
-[Frontiers | Can We Measure Memes?](https://www.frontiersin.org/journals/evolutionary-neuroscience/articles/10.3389/fnevo.2011.00001/full)
+- [Frontiers | Can We Measure Memes?](https://www.frontiersin.org/journals/evolutionary-neuroscience/articles/10.3389/fnevo.2011.00001/full)
 
-[Can you eliminate memetic scarcity, instead of fighting? — LessWrong](https://www.lesswrong.com/posts/Wf3dS9CKz2Lpc4mcq/can-you-eliminate-memetic-scarcity-instead-of-fighting)
+- [Can you eliminate memetic scarcity, instead of fighting? — LessWrong](https://www.lesswrong.com/posts/Wf3dS9CKz2Lpc4mcq/can-you-eliminate-memetic-scarcity-instead-of-fighting)
 
-[Timothy Morton - Object-oriented_ontology - Wikipedia](https://en.wikipedia.org/wiki/Timothy_Morton#Object-oriented_ontology)
+- [Timothy Morton - Object-oriented_ontology - Wikipedia](https://en.wikipedia.org/wiki/Timothy_Morton#Object-oriented_ontology)
 
-[Francis Heylighen - Wikipedia](https://en.wikipedia.org/wiki/Francis_Heylighen)
+- [Francis Heylighen - Wikipedia](https://en.wikipedia.org/wiki/Francis_Heylighen)
 
-[Filippo Menczer - Wikipedia](https://en.wikipedia.org/wiki/Filippo_Menczer)
+- [Filippo Menczer - Wikipedia](https://en.wikipedia.org/wiki/Filippo_Menczer)
 
-[research manifesto | Emergent Research](https://research.emergentvibe.com/research-manifesto)
+- [research manifesto | Emergent Research](https://research.emergentvibe.com/research-manifesto)
 
-[Papers-About-Memes-roundup-1](https://www.notion.so/Papers-About-Memes-roundup-1-1f49e3264107804fa141db185ccf33b1)
+- [Papers-About-Memes-roundup-1](https://www.notion.so/Papers-About-Memes-roundup-1-1f49e3264107804fa141db185ccf33b1)
 
-[Guido Enthoven, Seweryn Rudnicki & Rico Sneller (eds.), Towards a science of ideas: an inquiry into the emergence, evolution and expansion of ideas and their translation into action - PhilPapers](https://philpapers.org/rec/ENTTAS)[Tim Tyler - Memetics: Memes and the Science of Cultural Evolution](https://memetics.timtyler.org/)
+- [Tim Tyler - Memetics: Memes and the Science of Cultural Evolution](https://memetics.timtyler.org/)
 
-    [Memetics Quotations](https://memetics.timtyler.org/quotations/)
+- [Memetics Quotations](https://memetics.timtyler.org/quotations/)
 
-    [On Memetics: The evolution of culture in a nutshell](https://on-memetics.blogspot.com/2011/09/evolution-of-culture-in-nutshell.html)
+- [On Memetics: The evolution of culture in a nutshell](https://on-memetics.blogspot.com/2011/09/evolution-of-culture-in-nutshell.html)
 
-    [Memetics Books](https://memetics.timtyler.org/books/)
+  - [Memetics Books](https://memetics.timtyler.org/books/)
 
-    [Memetics FAQ](https://memetics.timtyler.org/faq)
+  - [Memetics FAQ](https://memetics.timtyler.org/faq)
 
-    [Memetics Criticisms](https://memetics.timtyler.org/criticisms/)
+  - [Memetics Criticisms](https://memetics.timtyler.org/criticisms/)
 
-    [Memetics Timeline](https://memetics.timtyler.org/timeline/)
+  - [Memetics Timeline](https://memetics.timtyler.org/timeline/)
 
-    [Memetics Links](https://memetics.timtyler.org/links/)
+  - [Memetics Links](https://memetics.timtyler.org/links/)
 
-[Border Stories | Melting Asphalt](https://meltingasphalt.com/border-stories/)
+- [Border Stories | Melting Asphalt](https://meltingasphalt.com/border-stories/)
 
-[Journal of Memetics, 1997, Volume 1](http://cfpm.org/jom-emit/1997/vol1/)
+- [Journal of Memetics, 1997, Volume 1](http://cfpm.org/jom-emit/1997/vol1/)
 
-[Memetics Compendium pdf (big)](https://robotictechnologyinc.com/images/upload/file/Memetics%20Compendium%205%20February%2009.pdf)
+- [Memetics Compendium pdf (big)](https://robotictechnologyinc.com/images/upload/file/Memetics%20Compendium%205%20February%2009.pdf)
 
-[Who are we now?](https://whoarewenow.net/)
+- [Who are we now?](https://whoarewenow.net/)
 
-[wearehostsformemes/meta-meme.txt at master · lupuleasa-core/wearehostsformemes · GitHub](https://github.com/lupuleasa-core/wearehostsformemes/blob/master/meta-meme.txt)
+- [wearehostsformemes/meta-meme.txt at master · lupuleasa-core/wearehostsformemes · GitHub](https://github.com/lupuleasa-core/wearehostsformemes/blob/master/meta-meme.txt)
 
-[Why Care About Meme Hazards and Thoughts on How to Handle Them | Qualia Computing](https://qualiacomputing.com/2019/08/30/why-care-about-meme-hazards-and-thoughts-on-how-to-handle-them/)
+- [Why Care About Meme Hazards and Thoughts on How to Handle Them | Qualia Computing](https://qualiacomputing.com/2019/08/30/why-care-about-meme-hazards-and-thoughts-on-how-to-handle-them/)
 
 ### Todo maybe
 
