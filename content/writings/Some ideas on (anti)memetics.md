@@ -170,19 +170,6 @@ This is about it for now, I wrote this in 4 frantic days while in vacation in Ba
 
 ---
 
-Footnotes:
-
-[^1]: In particular, the enormous increase of the free flow of information (and thus memes) permitted by the internet and globalization.
-
-[^3]: I intended on writing a post on chaos magick and failed miserably. I took it as seriously as I could but I'm already quite bad at interpreting symbols in my daily life, so it was really difficult for me to find footing. Hopefully I'll pick it back up at some point as it is a surprisingly deep field.
-
-[^4]: "Cultural drift" is kind of a synonym, referring more to memetic drift in population.
-
-[^5]: Without getting too deep into this, quoting [this LessWrong post](https://www.lesswrong.com/posts/LdEwDn5veAckEemi4/we-are-already-in-a-persuasion-transformed-world-and-must):
-    > We're already in the timeline where the research and manipulation of the human thought process is widespread; SOTA psychological research systems require massive amounts of human behavior data, which in turn requires massive numbers of unsuspecting test subjects (users) in order to automate the process of analyzing and exploiting human targets. This therefore must happen covertly, and both the US and China have a strong track record of doing things like this. This outcome is a strong attractor state since anyone with enough data can do it, and it naturally follows that powerful organizations would deny others access e.g. via data poisoning.
-
----
-
 ## Resources
 
 I encourage the reader to follow the link in the post, as the value of my content is more of curation rather than writing. In fact few ideas in here are really mine, but I enyojed exploring them.
@@ -251,4 +238,13 @@ memetic entropy as they evolve over time ?
 
 ---
 
-I just hope "memetics" itself becomes a widespread meme.
+[^1]: In particular, the enormous increase of the free flow of information (and thus memes) permitted by the internet and globalization.
+
+[^3]: I intended on writing a post on chaos magick and failed miserably. I took it as seriously as I could but I'm already quite bad at interpreting symbols in my daily life, so it was really difficult for me to find footing. Hopefully I'll pick it back up at some point as it is a surprisingly deep field.
+
+[^4]: "Cultural drift" is kind of a synonym, referring more to memetic drift in population.
+
+[^5]: Without getting too deep into this, quoting [this LessWrong post](https://www.lesswrong.com/posts/LdEwDn5veAckEemi4/we-are-already-in-a-persuasion-transformed-world-and-must):
+    > We're already in the timeline where the research and manipulation of the human thought process is widespread; SOTA psychological research systems require massive amounts of human behavior data, which in turn requires massive numbers of unsuspecting test subjects (users) in order to automate the process of analyzing and exploiting human targets. This therefore must happen covertly, and both the US and China have a strong track record of doing things like this. This outcome is a strong attractor state since anyone with enough data can do it, and it naturally follows that powerful organizations would deny others access e.g. via data poisoning.
+
+---
