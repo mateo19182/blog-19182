@@ -1,7 +1,7 @@
 ---
 title: Now
 tags: 
-  - personal
+  # - personal
 ---
 
 Some of the things I'm currently consuming:

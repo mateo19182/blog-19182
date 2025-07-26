@@ -1,8 +1,8 @@
 ---
 title: Link Archive
-date: 2025-07-21
+# date: 2025-07-21
 tags: 
-  - personal
+  # - personal
 ---
 
 This is a collection of links I've archived over time. Categories are rough.

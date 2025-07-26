@@ -1,7 +1,7 @@
 ---
 title: Things I Like
 tags: 
-  - personal
+  # - personal
 ---
 
 An assortment of things and ideas that I enjoy, in progress.
