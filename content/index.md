@@ -2,7 +2,7 @@
 title: Home
 ---
 
-Here lies my vague attemp to sort thoughts into words. I find that is one of the best ways to learn about different topics. 
+Here lies my vague attemp to sort thoughts into words. I find that is one of the best ways to learn about different topics.
 
 - [[writings]] (by [[tags]])
 - [[projects]]

@@ -10,25 +10,25 @@ export const sharedPageComponents: SharedLayout = {
     Component.Search(),
     Component.Darkmode(),
   ],
-  footer:     Component.DesktopOnly(Component.Footer(
-  //   {
-  //   links: {
-  //     GitHub: "https://github.com/jackyzha0/quartz",
-  //     "Discord Community": "https://discord.gg/cRFFHYye7t",
-  //   },
-  // }
-)),
-  // The Graph component is now here, rendered after the main content
-  afterBody: [
-
-  ],
+  footer: Component.DesktopOnly(
+    Component
+      .Footer
+      //   {
+      //   links: {
+      //     GitHub: "https://github.com/jackyzha0/quartz",
+      //     "Discord Community": "https://discord.gg/cRFFHYye7t",
+      //   },
+      // }
+      (),
+  ),
+  afterBody: [],
 }
 
 // components for pages that display a single page (e.g. a single note)
 export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
     Component.Breadcrumbs({
-      spacerSymbol: "›", // Use a different spacer
+      spacerSymbol: "->", // Use a different spacer
       showCurrentPage: false,
     }),
     Component.ArticleTitle(),
@@ -37,38 +37,48 @@ export const defaultContentPageLayout: PageLayout = {
     // Show a custom callout only on pages with the 'project' tag
   ],
   left: [
-    Component.DesktopOnly(Component.Explorer({
-      // Add icons to the explorer
-      // mapFn: (node) => {
-      //   if (node.file) {
-      //     node.displayName = " " + node.displayName
-      //   } else {
-      //     node.displayName = "📂 " + node.displayName
-      //   }
-      // },
-      // When you click a folder, it will navigate to that folder's page
-      folderClickBehavior: "link",
-    })),
-      Component.DesktopOnly(  Component.RecentNotes({
-      title: "Recent",
-      limit: 3,
-    })),
-    // The Graph component has been removed from here
+      Component.DesktopOnly(
+        Component.Explorer({
+          // mapFn: (node) => {
+          //   if (node.file) {
+          //     node.displayName = " " + node.displayName
+          //   } else {
+          //     node.displayName = "📂 " + node.displayName
+          //   }
+          // },
+          // When you click a folder, it will navigate to that folder's page
+          folderClickBehavior: "link",
+          folderDefaultState: "collapsed", 
+          useSavedState: false
+        }),
+      ),
+    Component.ConditionalRender({
+      component: Component.DesktopOnly(
+        Component.RecentNotes({
+          title: "Recent",
+          limit: 3,
+        }),
+      ),
+      condition: (page) => page.fileData.slug == "index",
+    }),
   ],
   right: [
-    Component.DesktopOnly(Component.TableOfContents()),
     // Component.Backlinks(),
-    Component.DesktopOnly(Component.Graph({
-      localGraph: {
-        // A more 'floaty' and colorful graph
-        repelForce: 0.7,
-        linkDistance: 40,
-      },
-      globalGraph: {
-        repelForce: 0.8,
-        linkDistance: 30,
-      },
-    })),
+    
+    Component.DesktopOnly(
+      Component.Graph({
+        localGraph: {
+          // A more 'floaty' and colorful graph
+          repelForce: 0.7,
+          linkDistance: 40,
+        },
+        globalGraph: {
+          repelForce: 0.8,
+          linkDistance: 30,
+        },
+      }),
+    ),
+    Component.DesktopOnly(Component.TableOfContents()),
   ],
 }
 
@@ -76,7 +86,6 @@ export const defaultContentPageLayout: PageLayout = {
 export const defaultListPageLayout: PageLayout = {
   beforeBody: [Component.Breadcrumbs(), Component.ArticleTitle(), Component.ContentMeta()],
   left: [
-    
     // Component.DesktopOnly(Component.Explorer({
     //   // mapFn: (node) => {
     //   //   if (node.file) {

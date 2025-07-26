@@ -119,19 +119,19 @@ function createFolderNode(
   }
 
   // if the saved state is collapsed or the default state is collapsed
-  const isCollapsed =
-    currentExplorerState.find((item) => item.path === folderPath)?.collapsed ??
-    opts.folderDefaultState === "collapsed"
+  // const isCollapsed =
+  //   currentExplorerState.find((item) => item.path === folderPath)?.collapsed ??
+  //   opts.folderDefaultState === "collapsed"
 
-  // if this folder is a prefix of the current path we
-  // want to open it anyways
-  const simpleFolderPath = simplifySlug(folderPath)
-  const folderIsPrefixOfCurrentSlug =
-    simpleFolderPath === currentSlug.slice(0, simpleFolderPath.length)
+  // // if this folder is a prefix of the current path we
+  // // want to open it anyways
+  // const simpleFolderPath = simplifySlug(folderPath)
+  // const folderIsPrefixOfCurrentSlug =
+  //   simpleFolderPath === currentSlug.slice(0, simpleFolderPath.length)
 
-  if (!isCollapsed || folderIsPrefixOfCurrentSlug) {
-    folderOuter.classList.add("open")
-  }
+  // if (!isCollapsed || folderIsPrefixOfCurrentSlug) {
+  //   folderOuter.classList.add("open")
+  // }
 
   for (const child of node.children) {
     const childNode = child.isFolder

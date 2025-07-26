@@ -45,7 +45,7 @@ title: Projects
 
 <div class="project-card">
   <div class="project-title"><a href="https://github.com/mateo19182/fieldNormalizer">fieldNormalizer</a></div>
-  <div class="project-desc">AI-powered CLI tool that intelligently merges diverse data sources (.csv, .sql, .jsonl...) into a unified format. Automatically maps fields, infers missing headers, and identifies relevant information to streamline data integration workflows with diverse sources.</div>
+  <div class="project-desc">AI-powered CLI tool that merges data sources (.csv, .sql, .jsonl...) into a unified format. Automatically maps fields, infers missing headers, and rejects irrelevant information</div>
 </div>
 
 
@@ -74,10 +74,10 @@ title: Projects
   <div class="project-desc">A tool for benchmarking LLM agents by making them play <a href="https://en.wikipedia.org/wiki/Escoba">Escoba</a> against each other. Using ELO rating system.</div>
 </div>
 
-<div class="project-card">
+<!-- <div class="project-card">
   <div class="project-title"><a href="https://nps.innplay.site/">NPS rating system for gyms</a></div>
   <div class="project-desc">Helped building this app for managing tablets with ratings and customer reviews, targetting gyms.</div>
-</div>
+</div> -->
 
 <div class="project-card">
   <div class="project-title"><a href="https://github.com/mateo19182/floods_sa">Competed on a flood detection challenge</a></div>
@@ -86,13 +86,13 @@ title: Projects
 
 <div class="project-card">
   <div class="project-title"><a href="https://github.com/angelbarreiros/GymSimulation/tree/main">GymSimulation</a></div>
-  <div class="project-desc">Using gym's occupancy data and maps, we built a simulation that allows managers to easily visualize it.</div>
+  <div class="project-desc">Using gym's occupancy data and maps, we built a simulation that allows managers to easily visualize it and identify problems</div>
 </div>
 
-<div class="project-card">
+<!-- <div class="project-card">
   <div class="project-title"><a href="https://scoreboard.innplay.site/">ScoreBoard</a></div>
   <div class="project-desc">Scoreboard for a tennis school.</div>
-</div>
+</div> -->
 
 <div class="project-card">
   <div class="project-title"><a href="https://github.com/mateo19182/img-corroder">img-corroder</a></div>
@@ -124,20 +124,20 @@ title: Projects
   <div class="project-desc">Trained a model based on musicgen-small with drum breaks.</div>
 </div>
 
-<div class="project-card">
+<!-- <div class="project-card">
   <div class="project-title"><a href="https://github.com/mateo19182/liminal-chat-sim">Liminal Chat Simulator</a></div>
   <div class="project-desc">Simple UI for having multiple LLM agents chatting to each other.</div>
-</div>
+</div> -->
 
-<div class="project-card">
+<!-- <div class="project-card">
   <div class="project-title"><a href="https://github.com/mateo19182/localRagLLM">Local RAG</a></div>
   <div class="project-desc">Simple implementation of Retrieval-Augmented Generation to add relevant context to your queries and integration with <a href="https://github.com/paperless-ngx/paperless-ngx">paperless-ngx</a>.</div>
-</div>
+</div> -->
 
-<div class="project-card">
+<!-- <div class="project-card">
   <div class="project-title"><a href="https://github.com/mateo19182/GaliciaGymMap">GaliciaGymMap</a></div>
   <div class="project-desc">Map for displaying sports-related places using Leaflet.js. Data was scraped from google maps.</div>
-</div>
+</div> -->
 
 <div class="project-card">
   <div class="project-title"><a href="https://youtu.be/xBBow3L3EF8">live(@)NADIE.CREA - 2023</a></div>
