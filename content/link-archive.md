@@ -1,12 +1,65 @@
 ---
 title: Link Archive
-# date: 2025-07-21
+date: 2025-07-28
 tags: 
-  # - personal
+  - personal
 ---
 
-This is a collection of links I've archived over time. Categories are rough.
+This is a collection of links I've archived over time.
+ Categories are rough, links are updated once a week from my collection.
+ If a link is broken and you're interested in it, contact me for an archive.
 
+- [16colo.rs - ANSI/ASCII art archive](https://16colo.rs) `Museums - Indexers` *2025-07-27*
+- [Hacking Dormant Bitcoin Wallets in C - by Murage Kibicho](https://leetarxiv.substack.com/p/hacking-dormant-bitcoin-wallets-c) `Tech` *2025-07-26*
+- [Home](https://blog.plasticlabs.ai) `Tech` *2025-07-26*
+- [I Drank Every Cocktail | Adam Aaronson](https://aaronson.org/blog/i-drank-every-cocktail) `Reads` *2025-07-26*
+- [Your Review: The Astral Codex Ten Commentariat (“Why Do We Suck?”)](https://substack.com/inbox/post/167093068) `Reads` *2025-07-26*
+- [Ergodicity economics - Wikipedia](https://en.wikipedia.org/wiki/Ergodicity_economics) `Wikis` *2025-07-25*
+- [Canon digital - Wikipedia, la enciclopedia libre](https://es.wikipedia.org/wiki/Canon_digital) `Wikis` *2025-07-25*
+- [You can now train a 70b language model at home – Answer.AI](https://www.answer.ai/posts/2024-03-06-fsdp-qlora.html) `Academic Papers and Resources` *2025-07-25*
+- [Blog | Pavel Chvykov](https://www.pchvykov.com/blog) `Blogs` *2025-07-25*
+- [🖧 The Promised LAN](https://tpl.house) `Tech` *2025-07-25*
+- [Paul's Notes](https://notes.pault.ag) `Tech` *2025-07-25*
+- [Answer.AI - Practical AI R&D – Answer.AI](https://www.answer.ai) `Tech` *2025-07-25*
+- [The Stripe Experience You Deserve – Answer.AI](https://www.answer.ai/posts/2025-07-23-faststripe.html) `Tech` *2025-07-25*
+- [discrete blogarithm ·](https://blog.azuki.vip) `Tech` *2025-07-24*
+- [help Tor users circumvent censorship | azuki.vip](https://azuki.vip) `Tech` *2025-07-24*
+- [John David Pressman's homepage](https://jdpressman.com) `Tech` *2025-07-24*
+- [Nick Bostrom’s Home Page](https://nickbostrom.com) `Tech` *2025-07-24*
+- [Beans Codex Index](https://beanscodex.com) `Weird` *2025-07-24*
+- [Brutalist Websites](https://brutalistwebsites.com) `Museums - Indexers` *2025-07-24*
+- [Table of contents | Meaningness](https://meaningness.com) `Tech` *2025-07-23*
+- [Recent posts – Julia Galef](https://juliagalef.com/recent-posts) `Tech` *2025-07-23*
+- [La nueva Ilustración Evolucionista / The new Evolutionary Enlightenment](https://ilevolucionista.blogspot.com) `Reads` *2025-07-23*
+- [tpot lore & canon - Google Docs](https://docs.google.com/document/d/1zHITIv4L_a75XeE0Yq09BmBEoYOBZtd00ir1tkIYG5E/edit?tab=t.0) `Museums - Indexers` *2025-07-23*
+- [GRITCULT](https://z21d.notion.site/GRITCULT-cb8b9b5f49b342c787f6debff911c2fc) `Museums - Indexers` *2025-07-23*
+- [Percolation threshold - Wikipedia](https://en.wikipedia.org/wiki/Percolation_threshold) `Wikis` *2025-07-22*
+- [Francis Heylighen - Wikipedia](https://en.wikipedia.org/wiki/Francis_Heylighen) `Wikis` *2025-07-22*
+- [Sustanciero - Wikipedia, la enciclopedia libre](https://es.wikipedia.org/wiki/Sustanciero) `Wikis` *2025-07-22*
+- [Kimi-K2/tech_report.pdf at main · MoonshotAI/Kimi-K2](https://github.com/MoonshotAI/Kimi-K2/blob/main/tech_report.pdf) `Academic Papers and Resources` *2025-07-22*
+- [Memex](https://memex.garden) `Tech` *2025-07-22*
+- [On Memetics](https://on-memetics.blogspot.com) `Tech` *2025-07-22*
+- [MIND MATH & MUSIC](https://www.mindmathmusic.com) `Tech` *2025-07-22*
+- [The Promise of Generalist Robotic Policies](https://sergeylevine.substack.com/p/the-promise-of-generalist-robotic) `Reads` *2025-07-22*
+- [THING THEORY (CKOD) — MIND MATH & MUSIC](https://www.mindmathmusic.com/philosophy/thing-theory) `Reads` *2025-07-22*
+- [The revealed poverty of the gene-meme analogy – why memetics per se has failed to produce substantive results](http://cfpm.org/jom-emit/2005/vol9/edmonds_b.html?mobile-app=true&theme=dark) `Reads` *2025-07-22*
+- [Going Critical — Melting Asphalt](https://meltingasphalt.com/interactive/going-critical) `Reads` *2025-07-22*
+- [What's going on here, with this human? - Graham Duncan Blog](https://grahamduncan.blog/whats-going-on-here) `Reads` *2025-07-22*
+- [DefenderOfBasic/destigmatize-being-dumb](https://github.com/DefenderOfBasic/destigmatize-being-dumb) `Ideas` *2025-07-22*
+- [Legalise IT](https://timtyler.org/legalise_it) `Ideas` *2025-07-22*
+- [Foley Center :: Interview](https://web.archive.org/web/20060206085916/https://sesp.northwestern.edu/foley/instruments/interview) `Ideas` *2025-07-22*
+- [Parable of the Polygons - a playable post on the shape of society](https://ncase.me/polygons) `Tools and Interactive Websites` *2025-07-22*
+- [Suspension Domes - Tall towers](https://suspensiondomes.com/essays/tall_towers) `Weird` *2025-07-22*
+- [HexDome](https://hexdome.com) `Museums - Indexers` *2025-07-22*
+- [Taking Children Seriously – a new view of children](https://takingchildrenseriously.com) `Collectives and Magazines` *2025-07-22*
+- [Community Archive](https://www.community-archive.org) `Collectives and Magazines` *2025-07-22*
+- [International Society for Krishna Consciousness - Wikipedia](https://en.m.wikipedia.org/wiki/International_Society_for_Krishna_Consciousness) `Wikis` *2025-07-21*
+- [The Big LLM Architecture Comparison](https://magazine.sebastianraschka.com/p/the-big-llm-architecture-comparison) `Academic Papers and Resources` *2025-07-21*
+- [The Daily Life of a Medieval King - Medievalists.net](https://www.medievalists.net/2025/07/medieval-king-daily-life) `Reads` *2025-07-21*
+- [The law that can be named is not the true law](https://samkriss.substack.com/p/the-law-that-can-be-named-is-not) `Reads` *2025-07-21*
+- [Should We Sacrifice the Utilitarians First? | The Philosophical Quarterly | Oxford Academic](https://academic.oup.com/pq/article-abstract/70/281/850/5782388?redirectedFrom=fulltext) `Reads` *2025-07-21*
+- [⛶ | Are.na](https://www.are.na/patricia-klein/kt8qr62mvfs) `Museums - Indexers` *2025-07-21*
+- [About | Friends of Attention](https://www.friendsofattention.net/about) `Collectives and Magazines` *2025-07-21*
 - [What Were the Earliest Laws Really Like?](https://worldhistory.substack.com/p/what-were-the-earliest-laws-really) `Reads` *2025-07-20*
 - [Generalized Hangriness: A Standard Rationalist Stance Toward Emotions — LessWrong](https://www.lesswrong.com/posts/naAeSkQur8ueCAAfY/generalized-hangriness-a-standard-rationalist-stance-toward) `Ideas` *2025-07-20*
 - [Summary of "The Straw Vulcan" — LessWrong](https://www.lesswrong.com/posts/z9hfbWhRrY2Pwwrgi/summary-of-the-straw-vulcan) `Ideas` *2025-07-20*
