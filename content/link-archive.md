@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2025-07-28
+date: 2025-08-04
 tags: 
   - personal
 ---
@@ -9,6 +9,44 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [WikiBench: 76% of SOTA Models Fail - by hero thousandfaces](https://1thousandfaces.substack.com/p/wikibench-76-of-sota-models-fail?utm_campaign=post&triedRedirect=true) `Tech` *2025-08-02*
+- [Releasing Open Weights for FLUX.1 Krea](https://www.krea.ai/blog/flux-krea-open-source-release) `Academic Papers and Resources` *2025-08-01*
+- [Every Satellite Orbiting Earth and Who Owns Them | Dewesoft](https://dewesoft.com/blog/every-satellite-orbiting-earth-and-who-owns-them) `Reads` *2025-08-01*
+- [How to Win the AI Talent War - by Lulu Cheng Meservey](https://www.getflack.com/p/how-to-win-the-ai-talent-war) `Reads` *2025-08-01*
+- [Planning fallacy - Wikipedia](https://en.wikipedia.org/wiki/Planning_fallacy) `Wikis` *2025-07-31*
+- [Berkson's paradox - Wikipedia](https://en.wikipedia.org/wiki/Berkson's_paradox) `Wikis` *2025-07-31*
+- [Optical neural networks: progress and challenges - s41377-024-01590-3.pdf](https://www.nature.com/articles/s41377-024-01590-3.pdf) `Academic Papers and Resources` *2025-07-31*
+- [Personal Superintelligence](https://www.meta.com/superintelligence) `Tech` *2025-07-31*
+- [Robotics Levels of Autonomy – SemiAnalysis](https://semianalysis.com/2025/07/30/robotics-levels-of-autonomy/?access_token=eyJhbGciOiJFUzI1NiIsImtpZCI6InNlbWlhbmFseXNpcy5wYXNzcG9ydC5vbmxpbmUiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOiJzZW1pYW5hbHlzaXMucGFzc3BvcnQub25saW5lIiwiYXpwIjoiS1NncVhBaGFmZmtwVjQzbmt0UU1INSIsImVudCI6eyJ1cmkiOlsiaHR0cHM6Ly9zZW1pYW5hbHlzaXMuY29tLzIwMjUvMDcvMzAvcm9ib3RpY3MtbGV2ZWxzLW9mLWF1dG9ub215LyJdfSwiZXhwIjoxNzU2NDg5NDgxLCJpYXQiOjE3NTM4OTc0ODEsImlzcyI6Imh0dHBzOi8vc2VtaWFuYWx5c2lzLnBhc3Nwb3J0Lm9ubGluZS9vYXV0aCIsInNjb3BlIjoiZmVlZDpyZWFkIGFydGljbGU6cmVhZCBhc3NldDpyZWFkIGNhdGVnb3J5OnJlYWQgZW50aXRsZW1lbnRzIiwic3ViIjoiZDlkZDE4NjMtMThlOS00MzU0LWE3Y2UtMjNmZTE2NTU2NDBlIiwidXNlIjoiYWNjZXNzIn0.Lur3da6aRLTe-qVLW5y_-3Tkptrti1BRHI0kmLtMtJcKLKSFDofieyz1bK6Q0xZXhQLN6Qi1_Py4QsCqdnaBGA) `Tech` *2025-07-31*
+- [What is Federated Learning? - Flower Framework](https://flower.ai/docs/framework/tutorial-series-what-is-federated-learning.html) `Tech` *2025-07-31*
+- [Vibe code is legacy code | Val Town Blog](https://blog.val.town/vibe-code) `Tech` *2025-07-31*
+- [The Math Is Haunted — overreacted](https://overreacted.io/the-math-is-haunted) `Tech` *2025-07-31*
+- [benkuhn.net](https://www.benkuhn.net) `Tech` *2025-07-31*
+- [The Physical AI Revolution Part II: Dawn of the True Robotics Industry](https://www.edgeofautomation.com/p/the-physical-ai-revolution-part-ii?open=false#%C2%A7ii-five-levels-of-autonomy) `Tech` *2025-07-31*
+- [The Making Of Dario Amodei - by Alex Kantrowitz](https://www.bigtechnology.com/p/the-making-of-dario-amodei) `Reads` *2025-07-31*
+- [Intrinsic Motivation: a deep dive - Seeds of Science](https://www.theseedsofscience.pub/p/intrinsic-motivation-a-deep-dive?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2025-07-31*
+- [The science of belief: a deep dive - by Frazer Mawson](https://erringtowardsanswers.substack.com/p/the-science-of-belief) `Reads` *2025-07-31*
+- [Make More Grayspaces — LessWrong](https://www.lesswrong.com/posts/kJCZFvn5gY5C8nEwJ/make-more-grayspaces) `Reads` *2025-07-31*
+- [50 things I know - by Cate Hall - Useful Fictions](https://usefulfictions.substack.com/p/50-things-i-know?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2025-07-31*
+- [50 things I know - by Sasha Chapin - Sasha's 'Newsletter'](https://sashachapin.substack.com/p/50-things-i-know?utm_source=post-email-title&publication_id=78415&post_id=144899488&utm_campaign=email-post-title&isFreemail=false&r=hjebh&triedRedirect=true) `Reads` *2025-07-31*
+- [My Heart Of Hearts - by Scott Alexander - Astral Codex Ten](https://www.astralcodexten.com/p/my-heart-of-hearts?utm_source=%2Finbox&utm_medium=reader2&hide_intro_popup=true) `Reads` *2025-07-31*
+- [Pt4: Power Hierarchies - by Aella - Knowingless](https://aella.substack.com/p/pt4-power-hierarchies?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2025-07-31*
+- [Fantasy & Science Fiction v004n06 (1953 06) : Free Download, Borrow, and Streaming : Internet Archive](https://archive.org/details/Fantasy_Science_Fiction_v004n06_1953-06/page/n1/mode/2up?view=theater) `Reads` *2025-07-31*
+- [The only thing worse than sweatshops is no sweatshops](https://www.noahpinion.blog/p/the-only-thing-worse-than-sweatshops?utm_source=%2Finbox&utm_medium=reader2&hide_intro_popup=true) `Ideas` *2025-07-31*
+- [From XML to JSON to CBOR - The CBOR, dCBOR, and Gordian Envelope Book](https://cborbook.com/introduction/from_xml_to_json_to_cbor.html#from-xml-to-json-to-cbor) `Tech` *2025-07-30*
+- [THE METIS LIST](https://www.metislist.com) `Tech` *2025-07-30*
+- [Splitting a string into multiple lines in Solidity: How hard can it be? :: Roman's Random Thoughts](https://blog.opencore.ch/posts/solidity-line-split) `Tech` *2025-07-30*
+- [Whole words and Claude tokenization - by Sander Land](https://tokencontributions.substack.com/p/whole-words-and-claude-tokenization) `Tech` *2025-07-30*
+- [Prediction Markets 101](https://substack.com/inbox/post/169402112) `Reads` *2025-07-30*
+- [Truchet tiles - Wikipedia](https://en.wikipedia.org/wiki/Truchet_tiles) `Wikis` *2025-07-29*
+- [Prompt design strategies  |  Gemini API  |  Google AI for Developers](https://ai.google.dev/gemini-api/docs/prompting-strategies) `Academic Papers and Resources` *2025-07-29*
+- [Prompt engineering overview - Anthropic](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview) `Academic Papers and Resources` *2025-07-29*
+- [Beyond Bytes: Why Language Models Don't Have to Think in UTF-8](https://substack.com/@sanderland/p-167281177) `Tech` *2025-07-29*
+- [Whole words and Claude tokenization - by Sander Land](https://substack.com/@sanderland/p-151315175) `Tech` *2025-07-29*
+- [Clock Graphics](https://ianto-cannon.github.io/clock.html) `Tools and Interactive Websites` *2025-07-29*
+- [How I hacked my washing machine - Nex's Blog](https://nexy.blog/2025/07/27/how-i-hacked-my-washing-machine/#the-plan) `Tech` *2025-07-28*
+- [Enough AI copilots! We need AI HUDs](https://www.geoffreylitt.com/2025/07/27/enough-ai-copilots-we-need-ai-huds) `Ideas` *2025-07-28*
+- [Tom Lehrer Songs – Songs and Lyrics by Tom Lehrer](https://tomlehrersongs.com) `Museums - Indexers` *2025-07-28*
 - [16colo.rs - ANSI/ASCII art archive](https://16colo.rs) `Museums - Indexers` *2025-07-27*
 - [Hacking Dormant Bitcoin Wallets in C - by Murage Kibicho](https://leetarxiv.substack.com/p/hacking-dormant-bitcoin-wallets-c) `Tech` *2025-07-26*
 - [Home](https://blog.plasticlabs.ai) `Tech` *2025-07-26*
