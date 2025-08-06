@@ -34,6 +34,14 @@ title: Projects
 <div class="project-list">
 
 <div class="project-card">
+  <div class="project-title"><a href="https://github.com/mateo19182/SciPathBench/">SciPathBench</a></div>
+  <div class="project-desc">Evaluating LLM agents on finding shortest citation paths between academic papers.
+  Generates graphs for visualization and web interface for visualizing results.
+</div>
+</div>
+
+
+<div class="project-card">
   <div class="project-title"><a href="https://github.com/mateo19182/latex-translate">Translate latex projects using LLMs</a></div>
   <div class="project-desc">A tool to translate latex projects using LLMs, preserving structure and formatting.</div>
 </div>

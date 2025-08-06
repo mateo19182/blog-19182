@@ -22,6 +22,7 @@ An up-to-date archive of links I've saved is available on [[link-archive]]
 
 ## Places on the Web
 
+- [My Substack Reads](https://mateo877453.substack.com/profile/reads)
 - [no-cosign](https://no-cosign.m19182.dev/)
 - [qntm.org](https://qntm.org/)
 - [gwern.net](https://gwern.obormot.net/)
