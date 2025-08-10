@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2025-08-04
+date: 2025-08-11
 tags: 
   - personal
 ---
@@ -9,6 +9,47 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Are You Living in a Computer Simulation? - simulation.pdf](https://simulation-argument.com/simulation.pdf) `Academic Papers and Resources` *2025-08-08*
+- [The Simulation Argument FAQ](https://simulation-argument.com/faq) `Academic Papers and Resources` *2025-08-08*
+- [Google Spoofed Via DKIM Replay Attack | EasyDMARC](https://easydmarc.com/blog/google-spoofed-via-dkim-replay-attack-a-technical-breakdown) `Tech` *2025-08-08*
+- [No One is Really Working](https://www.humaninvariant.com/blog/working) `Tech` *2025-08-08*
+- [The evolutionary mystery of the German cockroach](https://www.johnhawks.net/p/the-mystery-of-the-german-cockroach) `Reads` *2025-08-08*
+- [Discernment is the bottleneck - Defender’s Corner](https://defenderofthebasic.substack.com/p/discernment-is-the-bottleneck?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2025-08-08*
+- [Civilisation being f**cking adequate - Croissanthology](https://croissanthology.com/adequate) `Reads` *2025-08-08*
+- [Headlands Technologies LLC Blog – Global quantitative trading firm](https://blog.headlandstech.com) `Reads` *2025-08-08*
+- [Minecraft but I have SEX in PARKOUR CIVILIZATION - Chapter 1 - kishdrabbles - Parkour Civilization (Web Series) [Archive of Our Own]](https://archiveofourown.org/works/59513899/chapters/151781659) `Reads` *2025-08-08*
+- [The curious case of Qingdao, China's land value tax](https://progressandpoverty.substack.com/p/the-curious-case-of-qingdao-chinas?ref=fortressofdoors.com) `Reads` *2025-08-08*
+- [Eleven Magic Words (Unlocked) - Yassine Meskhout](https://www.ymeskhout.com/p/eleven-magic-words-unlocked) `Reads` *2025-08-08*
+- [My Clients, The Liars — LessWrong](https://www.lesswrong.com/posts/h99tRkpQGxwtb9Dpv/my-clients-the-liars) `Reads` *2025-08-08*
+- [The scale of animal agriculture — EA Forum](https://forum.effectivealtruism.org/posts/atm8wE45M6ibC9EWw/the-scale-of-animal-agriculture) `Ideas` *2025-08-08*
+- [What hurts shrimp the most? (Quantifying and prioritizing shrimp welfare threats) — EA Forum](https://forum.effectivealtruism.org/posts/XKJjz78BG2T2KCKd9/what-hurts-shrimp-the-most-quantifying-and-prioritizing) `Ideas` *2025-08-08*
+- [ChatSCP @ Things Of Interest](https://qntm.org/chatscp) `Ideas` *2025-08-08*
+- [Many prediction markets would be better off as batched auctions — LessWrong](https://www.lesswrong.com/posts/rS6tKxSWkYBgxmsma/many-prediction-markets-would-be-better-off-as-batched) `Ideas` *2025-08-08*
+- [The Simulation Argument](https://simulation-argument.com) `Museums - Indexers` *2025-08-08*
+- [Recommended:](https://www.gleech.org/rec) `Museums - Indexers` *2025-08-08*
+- [0080.tif - 2000_RyanDeci_SDT.pdf](https://selfdeterminationtheory.org/SDT/documents/2000_RyanDeci_SDT.pdf) `Academic Papers and Resources` *2025-08-06*
+- [Paper Discovery Explained - Inciteful Docs](https://help.inciteful.xyz/paper-disovery-explained.html) `Academic Papers and Resources` *2025-08-06*
+- [n-gate.com. we can't both be right.](http://n-gate.com) `Tech` *2025-08-06*
+- [Quantum computing for the very curious](https://quantum.country/qcvc) `Academic Papers and Resources` *2025-08-05*
+- [Security in the Vibe Coding Age — Hacking Series.so](https://charliemeyer.xyz/posts/security-in-the-vibe-coding-age-hacking-series-so) `Tech` *2025-08-05*
+- [Blogs | Mechanize Inc.](https://www.mechanize.work/blog) `Tech` *2025-08-05*
+- [About these notes](https://notes.andymatuschak.org/About_these_notes) `Tech` *2025-08-05*
+- [Andy Matuschak](https://andymatuschak.org) `Tech` *2025-08-05*
+- [Max Headroom signal hijacking - Wikipedia](https://en.wikipedia.org/wiki/Max_Headroom_signal_hijacking) `Wikis` *2025-08-04*
+- [Pirate television - Wikipedia](https://en.wikipedia.org/wiki/Pirate_television) `Wikis` *2025-08-04*
+- [You Suck at Securing S3, Here's Why - env.fail](https://env.fail/posts/aws-s3) `Tech` *2025-08-04*
+- [Steph Ango](https://stephango.com) `Tech` *2025-08-04*
+- [Posts · Iván Guardado](https://ivanguardado.com/posts) `Tech` *2025-08-04*
+- [Blog | Adrián Mato – Product Designer in San Francisco](https://adrianmato.com/blog) `Tech` *2025-08-04*
+- [Music Is A Memory Machine, By David Toop | The Quietus](https://thequietus.com/opinion-and-essays/black-sky-thinking/david-toop-music-is-a-memory-machine) `Reads` *2025-08-04*
+- [Eric Jang: My Internship Experiences at Pixar, Google, and Two Sigma](https://blog.evjang.com/2016/06/my-internship-experiences-at-pixar.html) `Reads` *2025-08-04*
+- [The surrender in Turnberry - by Luis Garicano](https://www.siliconcontinent.com/p/the-turnberry-papers?utm_source=%2Finbox&utm_medium=reader2&hide_intro_popup=true) `Reads` *2025-08-04*
+- [An Interview with wug | A Man That Leaks Music & Movies - Too Far Gone](https://www.toofargone.moe/2020/03/26/interview-with-wug) `Reads` *2025-08-04*
+- [The antimeme is the message of the medium - by Kevin Munger](https://kevinmunger.substack.com/p/the-antimeme-is-the-message-of-the?utm_source=%2Finbox&utm_medium=reader2) `Ideas` *2025-08-04*
+- [anglepoised - anglepoised](https://anglepoised.com) `Art` *2025-08-04*
+- [wug's world](https://wugs.neocities.org) `Weird` *2025-08-04*
+- [Hyperreal](http://hyperreal.org) `Museums - Indexers` *2025-08-04*
+- [anglepoised - anglepoised](https://anglepoised.com/links) `Museums - Indexers` *2025-08-04*
 - [WikiBench: 76% of SOTA Models Fail - by hero thousandfaces](https://1thousandfaces.substack.com/p/wikibench-76-of-sota-models-fail?utm_campaign=post&triedRedirect=true) `Tech` *2025-08-02*
 - [Releasing Open Weights for FLUX.1 Krea](https://www.krea.ai/blog/flux-krea-open-source-release) `Academic Papers and Resources` *2025-08-01*
 - [Every Satellite Orbiting Earth and Who Owns Them | Dewesoft](https://dewesoft.com/blog/every-satellite-orbiting-earth-and-who-owns-them) `Reads` *2025-08-01*
