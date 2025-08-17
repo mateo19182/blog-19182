@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2025-08-11
+date: 2025-08-18
 tags: 
   - personal
 ---
@@ -9,6 +9,44 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [therac.pdf](http://sunnyday.mit.edu/papers/therac.pdf) `Academic Papers and Resources` *2025-08-15*
+- [THE-G-ENGINES-ARE-COMING-by-Michael-Gladych.pdf](https://kristofferhell.org/draft/en/pdf/THE-G-ENGINES-ARE-COMING-by-Michael-Gladych.pdf) `Reads` *2025-08-15*
+- [Devil's Bible. | Library of Congress](https://www.loc.gov/resource/gdcwdl.wdl_03042/?st=gallery) `Reads` *2025-08-15*
+- [[2409.09232] What is Entropy?](https://arxiv.org/abs/2409.09232) `Academic Papers and Resources` *2025-08-14*
+- [Challenge: XR2000](https://clearsky.dev/blog/xr2000) `Tech` *2025-08-14*
+- [Biotech’s Lost Archive | IFP](https://ifp.org/biotechs-lost-archive) `Reads` *2025-08-14*
+- [The Long Shadow of Checks](https://www.bitsaboutmoney.com/archive/the-long-shadow-of-checks) `Reads` *2025-08-14*
+- [The Internet You Missed: A 2025 Snapshot - by Erik Hoel](https://www.theintrinsicperspective.com/p/the-internet-you-missed-a-2025-snapshot?utm_source=%2Finbox&utm_medium=reader2) `Museums - Indexers` *2025-08-14*
+- [Sapiens dominabitur astris - Wikipedia](https://en.wikipedia.org/wiki/Sapiens_dominabitur_astris) `Wikis` *2025-08-13*
+- [Demurrage currency - Wikipedia](https://en.wikipedia.org/wiki/Demurrage_currency#Preventing_recessions) `Wikis` *2025-08-13*
+- [Amiri Baraka - Wikipedia](https://en.wikipedia.org/wiki/Amiri_Baraka) `Wikis` *2025-08-13*
+- [Part I: Tricks or Traps? A Deep Dive into RL for LLM Reasoning](https://arxiv.org/html/2508.08221v1#S5) `Academic Papers and Resources` *2025-08-13*
+- [MTEB Leaderboard - a Hugging Face Space by mteb](https://huggingface.co/spaces/mteb/leaderboard) `Academic Papers and Resources` *2025-08-13*
+- [Building a web search engine from scratch in two months with 3 billion neural embeddings](https://blog.wilsonl.in/search-engine) `Tech` *2025-08-13*
+- [Dr Maxim Orlovsky | Dr Maxim Orlovsky](https://dr.orlovsky.ch) `Tech` *2025-08-13*
+- [Warning: Potential Security Risk Ahead](https://yacine.ca) `Tech` *2025-08-13*
+- [Building a high recall vector database serving 1 billion embeddings from a single machine](https://blog.wilsonl.in/corenn) `Tech` *2025-08-13*
+- [building a bigger qwen out of two qwen models - snwy](https://snwy.substack.com/p/building-a-bigger-qwen-out-of-two) `Tech` *2025-08-13*
+- [Bitcoin's Security Budget Issue: Problems, Solutions & Myths Debunked](https://budget.day) `Reads` *2025-08-13*
+- [Economic View - It May Be Time for the Fed to Go Negative - News Analysis - NYTimes.com](https://archive.ph/uRxwE) `Reads` *2025-08-13*
+- [Of Marx and Moloch: How My Attempt to Convince Effective Altruists to Become Socialists Backfired Completely](https://honestsignals.substack.com/p/of-marx-and-moloch-or-my-misguided) `Reads` *2025-08-13*
+- [Surprisingly, Tail Emission Is Not Inflationary](https://petertodd.org/2022/surprisingly-tail-emission-is-not-inflationary#fn:apoelstra-quote) `Ideas` *2025-08-13*
+- [Bitcoin Security Budget | Bitcoin Decentralization | Bitcoin Miner Reward](https://www.btcsecuritybudget.com) `Tools and Interactive Websites` *2025-08-13*
+- [Omarchy — An opinionated Arch + Hyprland Setup by DHH](https://omarchy.org) `Tech` *2025-08-12*
+- [(Opinionated) Guide to ML Engineer Job Hunting | Yuan Meng](https://www.yuan-meng.com/posts/mle_interviews) `Tech` *2025-08-12*
+- [Pieterjan Montens](https://pieterjan.montens.net) `Tech` *2025-08-12*
+- [Tintamarre | Tintamarre](https://www.tintamarre.be/blog/authors/martin-erpicum.html) `Tech` *2025-08-12*
+- [How Good Are The Widely Used Coinjoin Implementations?](https://petertodd.org/2025/coinjoin-comparison) `Tech` *2025-08-12*
+- [How Does A Blind Model See The Earth? - by henry](https://outsidetext.substack.com/p/how-does-a-blind-model-see-the-earth) `Reads` *2025-08-12*
+- [Wikipedia:Wikipedia Signpost/2025-08-09/Disinformation report - Wikipedia](https://en.wikipedia.org/wiki/Wikipedia:Wikipedia_Signpost/2025-08-09/Disinformation_report) `Reads` *2025-08-12*
+- [Kona EV hacking](https://techno-fandom.org/~hobbit/cars/ev) `Reads` *2025-08-12*
+- [On idea-driven ideas](https://vitalik.eth.limo/general/2025/08/12/ideas.html) `Reads` *2025-08-12*
+- [Keeping it Cool: Mining Bitcoin in Space](https://petertodd.org/2024/keeping-it-cool-mining-bitcoin-in-space) `Reads` *2025-08-12*
+- [Wplace - Paint the world](https://wplace.live) `Tools and Interactive Websites` *2025-08-12*
+- [Always Your Pal, Melon!](https://melonking.net) `Weird` *2025-08-12*
+- [Hobbit's techie-rants](https://techno-fandom.org/~hobbit) `Museums - Indexers` *2025-08-12*
+- [Wikipedia:Wikipedia Signpost - Wikipedia](https://en.wikipedia.org/wiki/Wikipedia:Wikipedia_Signpost) `Collectives and Magazines` *2025-08-12*
+- [Engineering.fyi - Latest Tech Articles from Top Companies](https://engineering.fyi) `Collectives and Magazines` *2025-08-12*
 - [Are You Living in a Computer Simulation? - simulation.pdf](https://simulation-argument.com/simulation.pdf) `Academic Papers and Resources` *2025-08-08*
 - [The Simulation Argument FAQ](https://simulation-argument.com/faq) `Academic Papers and Resources` *2025-08-08*
 - [Google Spoofed Via DKIM Replay Attack | EasyDMARC](https://easydmarc.com/blog/google-spoofed-via-dkim-replay-attack-a-technical-breakdown) `Tech` *2025-08-08*
