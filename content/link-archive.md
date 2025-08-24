@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2025-08-18
+date: 2025-08-25
 tags: 
   - personal
 ---
@@ -9,6 +9,35 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [How It Works · Prediction Swarm](https://docs.sension.torus.directory/how-it-works) `Tech` *2025-08-23*
+- [Laurie Anderson - Wikipedia](https://en.wikipedia.org/wiki/Laurie_Anderson#Music_videos) `Wikis` *2025-08-21*
+- [Magic File Names — Nathan's Musings](https://www.nmichaels.org/musings/prn) `Tech` *2025-08-21*
+- [Torus Blog](https://blog.torus.network) `Tech` *2025-08-21*
+- [The World After Wireheading | the singularity is nearer](https://geohot.github.io/blog/jekyll/update/2025/07/18/the-world-after-wireheading.html) `Reads` *2025-08-21*
+- [LLM Daydreaming · Gwern.net](https://gwern.net/ai-daydreaming#hypothesis-day-dreaming-loop) `Ideas` *2025-08-21*
+- [Church of the SubGenius - Wikipedia](https://en.wikipedia.org/wiki/Church_of_the_SubGenius) `Wikis` *2025-08-20*
+- [Welcome!](https://www.himanshustwts.com) `Tech` *2025-08-20*
+- [How to Think About GPUs | How To Scale Your Model](https://jax-ml.github.io/scaling-book/gpus) `Tech` *2025-08-20*
+- [Mirrorshades: The Cyberpunk Anthology](https://www.rudyrucker.com/mirrorshades/HTML) `Reads` *2025-08-20*
+- [Curtis Yarvin: “Se necesita una dictadura corporativa para reemplazar a una democracia moribunda” | EL PAÍS US](https://elpais.com/us/2025-08-19/curtis-yarvin-se-necesita-una-dictadura-corporativa-para-reemplazar-a-una-democracia-moribunda.html) `Reads` *2025-08-20*
+- [How We Exploited CodeRabbit: From a Simple PR to RCE and Write Access on 1M Repositories – Kudelski Security Research](https://research.kudelskisecurity.com/2025/08/19/how-we-exploited-coderabbit-from-a-simple-pr-to-rce-and-write-access-on-1m-repositories) `Reads` *2025-08-20*
+- [Unreliable parts make a reliable whole - by Kasra](https://substack.com/inbox/post/171157405) `Ideas` *2025-08-20*
+- [Spotify Playlist Randomizer | Steven Aleong](https://stevenaleong.com/tools/spotifyplaylistrandomizer) `Tools and Interactive Websites` *2025-08-20*
+- [Upload as much as you need! Unlimited volume of uploaded files. - PDFCOFFEE.COM](https://pdfcoffee.com) `Museums - Indexers` *2025-08-20*
+- [Flibust | Book Brotherhood](http://flibusta.site) `Museums - Indexers` *2025-08-20*
+- [CCC | Home](https://www.ccc.de/en/home) `Collectives and Magazines` *2025-08-20*
+- [Linguistic relativity - Wikipedia](https://en.wikipedia.org/wiki/Linguistic_relativity) `Wikis` *2025-08-19*
+- [Church Planting: When Venture Capital Finds Jesus — LessWrong](https://www.lesswrong.com/posts/NMoNLfX3ihXSZJwqK/church-planting-when-venture-capital-finds-jesus) `Reads` *2025-08-19*
+- [tylercosgrove.com/blog/llm-music-taste/](https://www.tylercosgrove.com/blog/llm-music-taste) `Reads` *2025-08-19*
+- [Ted Chiang: The Secret Third Thing - Linch](https://linch.substack.com/p/ted-chiang-review) `Reads` *2025-08-19*
+- [Giving people money helped less than I thought it would](https://substack.com/inbox/post/171326701) `Reads` *2025-08-19*
+- [Boss Goes to China - by Angelica Oung - Taipology](https://taipology.substack.com/p/boss-goes-to-china) `Reads` *2025-08-19*
+- [Prime Grid](https://susam.net/primegrid.html#510001-100-100) `Tools and Interactive Websites` *2025-08-19*
+- [International Association for the Preservation of Spiritualist and Occult Periodicals: Main](https://iapsop.com) `Museums - Indexers` *2025-08-19*
+- [MyRetroTVs](https://www.myretrotvs.com) `Museums - Indexers` *2025-08-19*
+- [Single-file HTML apps | Hyperclay](https://hyperclay.com) `Tech` *2025-08-18*
+- [brtholomy/hnsw: HNSW tutorial](https://github.com/brtholomy/hnsw) `Tech` *2025-08-18*
+- [Why fractals?](https://www.bartholomy.ooo/posts/why-fractals) `Reads` *2025-08-18*
 - [therac.pdf](http://sunnyday.mit.edu/papers/therac.pdf) `Academic Papers and Resources` *2025-08-15*
 - [THE-G-ENGINES-ARE-COMING-by-Michael-Gladych.pdf](https://kristofferhell.org/draft/en/pdf/THE-G-ENGINES-ARE-COMING-by-Michael-Gladych.pdf) `Reads` *2025-08-15*
 - [Devil's Bible. | Library of Congress](https://www.loc.gov/resource/gdcwdl.wdl_03042/?st=gallery) `Reads` *2025-08-15*
