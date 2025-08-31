@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2025-08-25
+date: 2025-09-01
 tags: 
   - personal
 ---
@@ -9,6 +9,39 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Dave Pagurek van Mossel - Programmer and Artist](https://www.davepagurek.com) `Tech` *2025-08-31*
+- [GusBus.Space](https://gusbus.space) `Tech` *2025-08-31*
+- [Voice AI & Voice Agents | An Illustrated Primer](https://voiceaiandvoiceagents.com) `Tech` *2025-08-31*
+- [The Anglish Times](https://theanglishtimes.com) `Collectives and Magazines` *2025-08-31*
+- [Thrashing | blarg](https://exple.tive.org/blarg) `Tech` *2025-08-29*
+- [How HRT Thinks About Data | Hudson River Trading](https://www.hudsonrivertrading.com/hrtbeat/how-hrt-thinks-about-data) `Tech` *2025-08-29*
+- [In Trading, Machine Learning Benchmarks Don’t Track What You Care About | Hudson River Trading](https://www.hudsonrivertrading.com/hrtbeat/trading-machine-learning) `Tech` *2025-08-29*
+- [The HRT Beat | Tech Blog | Hudson River Trading](https://www.hudsonrivertrading.com/hrtbeat) `Tech` *2025-08-29*
+- [Should you make stone tools? — LessWrong](https://www.lesswrong.com/posts/bkjqfhKd8ZWHK9XqF/should-you-make-stone-tools) `Reads` *2025-08-29*
+- [Yankee Candle Reviews Say 'No Smell' Amid Omicron Surge - Business Insider](https://www.businessinsider.com/yankee-candle-no-smell-amazon-reviews-omicron-covid-surge-2021-12) `Reads` *2025-08-29*
+- [Pleiotropy - Wikipedia](https://en.wikipedia.org/wiki/Pleiotropy) `Wikis` *2025-08-28*
+- [Effectiveness of post-discharge exercise interventions in older adults following acute hospitalisation: a systematic review and meta-analysis - The Lancet Healthy Longevity](https://www.thelancet.com/journals/lanhl/article/PIIS2666-7568(25)00049-2/fulltext) `Academic Papers and Resources` *2025-08-28*
+- [Neurobiological substrates of altered states of consciousness induced by high ventilation breathwork accompanied by music | PLOS One](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0329411) `Academic Papers and Resources` *2025-08-28*
+- [The Universes of Max Tegmark](https://space.mit.edu/home/tegmark/crazy.html) `Academic Papers and Resources` *2025-08-28*
+- [Yamanotes](https://yamanot.es) `Arts` *2025-08-28*
+- [How we built the most efficient inference engine for Cloudflare’s network](https://blog.cloudflare.com/cloudflares-most-efficient-ai-inference-engine) `Tech` *2025-08-28*
+- [Colf](https://colf.dev) `Tech` *2025-08-28*
+- [Home](https://n.cohomology.group) `Tech` *2025-08-28*
+- [What is Synthetic Gasoline? - The Institute for Environmental Research and Education](https://iere.org/what-is-synthetic-gasoline) `Reads` *2025-08-28*
+- [About](https://n.cohomology.group/about.html) `Ideas` *2025-08-28*
+- [U.S. Intel – Stratechery by Ben Thompson](https://stratechery.com/2025/u-s-intel) `Tech` *2025-08-27*
+- [China's best short fiction of 2025 - ChinaTalk](https://substack.com/inbox/post/171965843) `Reads` *2025-08-27*
+- [Monodraw for macOS — Helftone](https://monodraw.helftone.com) `Tools and Interactive Websites` *2025-08-27*
+- [Margaux Blanchard, the journalist who didn't exist](https://dispatch-media.com/margaux-blanchard-the-journalist-who-didnt-exist) `Reads` *2025-08-26*
+- [Anamorphosis - Wikipedia](https://en.wikipedia.org/wiki/Anamorphosis) `Wikis` *2025-08-25*
+- [Adversarial Preprocessing: Understanding and Preventing Image-Scaling Attacks in Machine Learning | USENIX](https://www.usenix.org/conference/usenixsecurity20/presentation/quiring) `Academic Papers and Resources` *2025-08-25*
+- [visualrambling.space](https://visualrambling.space) `Tech` *2025-08-25*
+- [Predicting our own demise | Reducible Errors](https://reducibleerrors.com/prediction-markets) `Tech` *2025-08-25*
+- [In Response To: Predicting our own demise](https://docs.google.com/document/d/1jc_46jk6UEdDY7Dc3hoX0gkTAyXAE07sjV93jPbrU40/mobilebasic) `Tech` *2025-08-25*
+- [Tiny TPU](https://www.tinytpu.com/#fn1-ref) `Tech` *2025-08-25*
+- [Susam Pal](https://susam.net) `Tech` *2025-08-25*
+- [Brute Force Manufactured Consensus is Hiding the Crime of the Century — LessWrong](https://www.lesswrong.com/posts/bMxhrrkJdEormCcLt/brute-force-manufactured-consensus-is-hiding-the-crime-of) `Reads` *2025-08-25*
+- [PolyNoob | The Ultimate Guide to Polymarket and Beyond](https://polynoob.com) `Museums - Indexers` *2025-08-25*
 - [How It Works · Prediction Swarm](https://docs.sension.torus.directory/how-it-works) `Tech` *2025-08-23*
 - [Laurie Anderson - Wikipedia](https://en.wikipedia.org/wiki/Laurie_Anderson#Music_videos) `Wikis` *2025-08-21*
 - [Magic File Names — Nathan's Musings](https://www.nmichaels.org/musings/prn) `Tech` *2025-08-21*
