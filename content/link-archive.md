@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2025-09-01
+date: 2025-09-08
 tags: 
   - personal
 ---
@@ -9,6 +9,37 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Mimetic theory - Wikipedia](https://en.wikipedia.org/wiki/Mimetic_theory) `Wikis` *2025-09-07*
+- [muon optimizer explained to a toddler - by Yacine Mahdid](https://www.yacinemahdid.com/p/muon-optimizer-explained-to-a-toddler) `Tech` *2025-09-07*
+- [bobdahacker | Ethical Hacker & Security Enthusiast](https://bobdahacker.com) `Tech` *2025-09-07*
+- [Sometimes the reason you can’t find people you resonate with is because you misread the ones you meet](https://www.henrikkarlsson.xyz/p/friends-missed) `Reads` *2025-09-07*
+- [Cuartetera: A cloned Legacy – Ainsley Saddlery](https://ainsleysaddlery.com/en-eu/blogs/news/cuartetera-a-cloned-legacy) `Reads` *2025-09-07*
+- [Never Bet Against America - by Tomas Pueyo](https://unchartedterritories.tomaspueyo.com/p/never-bet-against-america?utm_source=%2Finbox&utm_medium=reader2&hide_intro_popup=true) `Reads` *2025-09-07*
+- [The Global Money System in 10 Pictures - by Brett Scott](https://www.asomo.co/p/the-global-money-system-in-10-pictures?utm_source=%2Finbox&utm_medium=reader2&hide_intro_popup=true) `Reads` *2025-09-07*
+- [John Carmack - Steve Jobs My [edit: at-that-time] wife... | Facebook](https://www.facebook.com/permalink.php?story_fbid=2146412825593223&id=100006735798590&_rdr) `Reads` *2025-09-07*
+- [l.facebook.com/l.php?u=https%3A%2F%2Fraw.githubusercontent.com%2FESWAT%2Fjohn-carmack-plan-archive%2Fmaster%2Fby_year%2Fjohnc_plan_1999.txt&h=AT0BqhOs3Zs8MKymiwgVeMltTXu07dgOyc-uJ7-y4w1CeWXN9S9c2l6eVbXby50lCKPQLxAldhATbkpgHKgtHlMR56_xTegMUbO0WxHaTej_XQ0lKBCbjmbGhYD7qIWcttrfClNk3HIAuBFv2S5e-5ZMyIqI_Uux&__tn__=R]-R&c[0]=AT1go6jGS0UNPI20l5kkmHiZtpJRuMm9H9xZMoAPe_0H0gNdYJl-6T0i7HM3Sw8GS6arFOeEYB_G1nmouOLt3ybldoHPQfZtt6ARVB8WHTb0th0LpkoOldk6lJaSAgrvyK8kqMVMMfmjp5-Sdm2ZtWA41Jgtyr_Wtn9N_4JFm0uiuZEEqeCMR923](https://raw.githubusercontent.com/ESWAT/john-carmack-plan-archive/master/by_year/johnc_plan_1999.txt) `Reads` *2025-09-07*
+- [Reflections on Tinybird · ~/rbv](https://rbarbadillo.github.io/tinybird) `Tech` *2025-09-05*
+- [WiFi signals can measure heart rate—no wearables needed - News](https://news.ucsc.edu/2025/09/pulse-fi-wifi-heart-rate) `Tech` *2025-09-05*
+- [Why I Ditched Spotify, and How I Set Up My Own Music Stack | LeshiCodes](https://leshicodes.github.io/blog/spotify-migration) `Tech` *2025-09-05*
+- [The Jagged, Monstrous Function That Broke Calculus | Quanta Magazine](https://www.quantamagazine.org/the-jagged-monstrous-function-that-broke-calculus-20250123) `Tech` *2025-09-05*
+- [What Is the Fourier Transform? | Quanta Magazine](https://www.quantamagazine.org/what-is-the-fourier-transform-20250903) `Tech` *2025-09-05*
+- [reflections on palantir - Nabeel S. Qureshi](https://nabeelqu.co/reflections-on-palantir) `Tech` *2025-09-05*
+- [Shellphish](https://shellphish.net) `Tech` *2025-09-05*
+- [(5) The Global Money System in 10 Pictures - by Brett Scott](https://substack.com/inbox/post/156658801) `Reads` *2025-09-05*
+- [At least five interesting things: You Can't Just Do Things edition (-69)](https://www.noahpinion.blog/p/at-least-five-interesting-things-90e?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2025-09-05*
+- [Links For September 2025 - by Scott Alexander](https://www.astralcodexten.com/p/links-for-september-2025?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2025-09-05*
+- [can you do the important things right? · ~/rbv](https://rbarbadillo.github.io/four-points) `Ideas` *2025-09-05*
+- [30 minutes with a stranger](https://pudding.cool/2025/06/hello-stranger) `Tools and Interactive Websites` *2025-09-05*
+- [A Website Is A Room](https://a-website-is-a-room.net) `Museums - Indexers` *2025-09-05*
+- [GEPA: Reflective Prompt Evolution Can Outperform Reinforcement Learning - 2507.19457v1.pdf](https://arxiv.org/pdf/2507.19457) `Academic Papers and Resources` *2025-09-04*
+- [The staff ate it later - Wikipedia](https://en.wikipedia.org/wiki/The_staff_ate_it_later) `Wikis` *2025-09-03*
+- [Open Global Investment as a Governance Model for AGI - ogimodel.pdf](https://nickbostrom.com/ogimodel.pdf) `Tech` *2025-09-03*
+- [MoE Inference Economics from First Principles](https://www.tensoreconomics.com/p/moe-inference-economics-from-first) `Tech` *2025-09-03*
+- [So You Want to Abolish Property Taxes - by Lars Doucet](https://substack.com/inbox/post/164752398) `Reads` *2025-09-03*
+- [AI Insights | Cloudflare Radar](https://radar.cloudflare.com/ai-insights) `Tech` *2025-09-02*
+- [Song Jian - Wikipedia](https://en.wikipedia.org/wiki/Song_Jian) `Wikis` *2025-09-01*
+- [I Was Wrong About Data Center Water Consumption](https://www.construction-physics.com/p/i-was-wrong-about-data-center-water) `Tech` *2025-09-01*
+- [Litigation Nation, Engineering Empire - by Jonathon P Sine](https://www.cogitations.co/p/litigation-nation-engineering-empire) `Reads` *2025-09-01*
 - [Dave Pagurek van Mossel - Programmer and Artist](https://www.davepagurek.com) `Tech` *2025-08-31*
 - [GusBus.Space](https://gusbus.space) `Tech` *2025-08-31*
 - [Voice AI & Voice Agents | An Illustrated Primer](https://voiceaiandvoiceagents.com) `Tech` *2025-08-31*
