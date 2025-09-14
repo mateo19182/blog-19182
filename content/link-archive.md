@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2025-09-08
+date: 2025-09-15
 tags: 
   - personal
 ---
@@ -9,6 +9,49 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Fang Binxing - Wikipedia](https://en.wikipedia.org/wiki/Fang_Binxing) `Wikis` *2025-09-14*
+- [Estacions i intercanviadors - albertguillaumes.cat](http://estacions.albertguillaumes.cat) `Arts` *2025-09-14*
+- [Why you'd issue a branded stablecoin like McDonaldsCoin - Text Incubation](https://text-incubation.com/Why+you'd+issue+a+branded+stablecoin+like+McDonaldsCoin) `Tech` *2025-09-14*
+- [Geedge & MESA Leak: Analyzing the Great Firewall’s Largest Document Leak](https://gfw.report/blog/geedge_and_mesa_leak/en) `Tech` *2025-09-14*
+- [Synopsys is probably a buy. - Irrational Analysis](https://substack.com/inbox/post/173329917) `Tech` *2025-09-14*
+- [albertguillaumes.cat](https://albertguillaumes.cat) `Tech` *2025-09-14*
+- [Leak of Geedge Networks internal documents (100,000+ from Jira, Confluence, GitLab) · Issue -519 · net4people/bbs](https://github.com/net4people/bbs/issues/519#issuecomment-3282101626) `Tech` *2025-09-14*
+- [Hot Chips 2025: Irrational Recap - Irrational Analysis](https://substack.com/inbox/post/173458075) `Tech` *2025-09-14*
+- [China exports censorship tech to authoritarian regimes – aided by EU firms - Follow the Money - Platform for investigative journalism](https://archive.is/EIGSZ#selection-2106.0-2106.1) `Reads` *2025-09-14*
+- [Forrester_Jay_W_World_Dynamics_2nd_ed_1973.pdf](https://monoskop.org/images/d/dc/Forrester_Jay_W_World_Dynamics_2nd_ed_1973.pdf#page=15) `Academic Papers and Resources` *2025-09-13*
+- [Scientific Spaces](https://kexue-fm.translate.goog/?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp) `Academic Papers and Resources` *2025-09-13*
+- [Side project: ascii.jpeg | FFglitch](https://ffglitch.org/2025/07/ascii_jpeg.html) `Arts` *2025-09-13*
+- [Après le feu (Corse), 2010 / Jacques Perconte](https://www.jacquesperconte.com/oe?28) `Arts` *2025-09-13*
+- [Raspberry Pi Synthesizers - How the Pi is transforming synths - gearnews.com](https://www.gearnews.com/raspberry-pi-synthesizers-how-the-pi-is-transforming-synths) `Tech` *2025-09-13*
+- [China's New AI Plan - by Irene Zhang - ChinaTalk](https://substack.com/inbox/post/172613241) `Tech` *2025-09-13*
+- [Another Giant Leap: The Rubin CPX Specialized Accelerator & Rack – SemiAnalysis](https://semianalysis.com/2025/09/10/another-giant-leap-the-rubin-cpx-specialized-accelerator-rack) `Tech` *2025-09-13*
+- [Magical systems thinking - Works in Progress Magazine](https://worksinprogress.co/issue/magical-systems-thinking) `Reads` *2025-09-13*
+- [Harry Frankfurt's "On Bullshit"](https://www.math.mcgill.ca/rags/JAC/124/bs.html) `Reads` *2025-09-13*
+- [copilot-explorer | Hacky repo to see what the Copilot extension sends to the server](https://thakkarparth007.github.io/copilot-explorer/posts/copilot-internals) `Tech` *2025-09-12*
+- [AI Coding | the singularity is nearer](https://geohot.github.io/blog/jekyll/update/2025/09/12/ai-coding.html) `Tech` *2025-09-12*
+- [Improving Cursor Tab With RL | Cursor - The AI Code Editor](https://cursor.com/blog/tab-rl) `Tech` *2025-09-12*
+- [Parth Thakkar](https://thakkarparth007.github.io) `Tech` *2025-09-12*
+- [Nonlinear computation in deep linear networks | OpenAI](https://openai.com/index/nonlinear-computation-in-deep-linear-networks) `Tech` *2025-09-12*
+- [UTF-8 is a Brilliant Design — Vishnu's Pages](https://iamvishnu.com/posts/utf8-is-brilliant-design) `Tech` *2025-09-12*
+- [Behind The Scenes of Bun Install | Bun Blog](https://bun.com/blog/behind-the-scenes-of-bun-install) `Tech` *2025-09-12*
+- [How anticipatory cover-ups go wrong — LessWrong](https://www.lesswrong.com/posts/ufj6J8QqyXFFdspid/how-anticipatory-cover-ups-go-wrong) `Ideas` *2025-09-12*
+- [Defeating Nondeterminism in LLM Inference - Thinking Machines Lab](https://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference) `Academic Papers and Resources` *2025-09-11*
+- [Exponential Secretary – PUTANUMONIT](https://putanumonit.com/2019/03/03/exponential-secretary) `Reads` *2025-09-11*
+- [index ❧ celeste](https://celeste.exposed) `Tech` *2025-09-10*
+- [I Replaced Animal Crossing's Dialogue with a Live LLM by Hacking GameCube Memory](https://joshfonseca.com/blogs/animal-crossing-llm) `Tech` *2025-09-10*
+- [The Islamic Argument for Competence - by Abdullah Yousef](https://www.avdullahyousef.com/p/the-islamic-argument-for-competence?triedRedirect=true) `Reads` *2025-09-10*
+- [La Vittoria, or ‘Suicide of the Machine’ - by Kevin Munger](https://substack.com/inbox/post/171725765) `Ideas` *2025-09-10*
+- [Axial twist theory - Wikipedia](https://en.wikipedia.org/wiki/Axial_twist_theory) `Wikis` *2025-09-09*
+- [The Effects of Tenure-Track Systems on Selection and Productivity in Economics - dp18083.pdf](https://docs.iza.org/dp18083.pdf) `Academic Papers and Resources` *2025-09-09*
+- [The-Anthropocene-Review-2015-Hamilton-2053019615584974.pdf](https://mahb.stanford.edu/wp-content/uploads/2015/05/The-Anthropocene-Review-2015-Hamilton-2053019615584974.pdf) `Academic Papers and Resources` *2025-09-09*
+- [An Attacker’s Blunder Gave Us a Look Into Their Operations | Huntress](https://www.huntress.com/blog/rare-look-inside-attacker-operation) `Tech` *2025-09-09*
+- [Texas’s Gerrymander May Not Be the Worst Threat to Democrats in 2026 | The New Yorker](https://www.newyorker.com/news/q-and-a/texas-gerrymander-may-not-be-the-worst-threat-to-democrats-in-2026?utm_source=nl&utm_brand=tny&utm_mailing=TNY_Daily_090825&utm_campaign=aud-dev&utm_medium=email&utm_term=tny_daily_digest&bxid=5bd66fd02ddf9c6194389d0a&cndid=22300418&hasha=268e3cc9cd4f93e81125ff99bc15edb0&hashb=f8df4272800edcc1fe2e8ce7e5c53aa6c2b79fe9&hashc=5906abdd2530ce567de22e52d1c561df763a24583893148a04c39e9a87bfced3&esrc=AUTO_OTHER) `Reads` *2025-09-09*
+- [Egyptian-Israeli Relations: Is War likely?](https://thegrandstrategy.substack.com/p/egyptian-israeli-relations-is-war) `Reads` *2025-09-09*
+- [Evil.Com - We get it...Daily.](https://evil.com) `Weird` *2025-09-09*
+- [The honesty tax - by Kelsey Piper - The Argument](https://www.theargumentmag.com/p/the-honesty-tax) `Reads` *2025-09-08*
+- [What really caused the sriracha shortage? 2 friends and the epic breakup that left millions without their favorite hot sauce | Fortune](https://fortune.com/2024/01/30/sriracha-shortage-huy-fong-foods-tabasco-underwood-ranches) `Reads` *2025-09-08*
+- [How the Government Built the American Dream House — The New Atlantis](https://www.thenewatlantis.com/publications/how-the-government-built-the-american-dream-house) `Reads` *2025-09-08*
+- [[ih] What is the origin of the private network address 192.168.*.*?](https://lists.ding.net/othersite/isoc-internet-history/2009/oct/msg00000.html) `Reads` *2025-09-08*
 - [Mimetic theory - Wikipedia](https://en.wikipedia.org/wiki/Mimetic_theory) `Wikis` *2025-09-07*
 - [muon optimizer explained to a toddler - by Yacine Mahdid](https://www.yacinemahdid.com/p/muon-optimizer-explained-to-a-toddler) `Tech` *2025-09-07*
 - [bobdahacker | Ethical Hacker & Security Enthusiast](https://bobdahacker.com) `Tech` *2025-09-07*
