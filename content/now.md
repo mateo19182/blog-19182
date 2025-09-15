@@ -8,6 +8,7 @@ Some of the things I'm currently consuming:
 
 | Time      | Reading                        | Watching        | Listening                                                                 | Other                                         |
 | --------- | -------                        | --------        | ---------                                                                 | -----                                         |
+| Sept/25 | El Eternauta |  [Euskadi Fuera de Estado (1983)](https://youtu.be/Y5lOoV5nfao)  | [Hongkong 2 - MonoLake](https://roberthenke.bandcamp.com/album/hongkong-2) | [Conference Fermi Problems](https://gwern.net/blog/2025/conference-size) |
 | August/25 | First and Last Men - Olaf Stapledon | [Ever Given, Ever Taken Away](https://youtu.be/WReusTs0Vbo) | [Pornoviolence - AV Dummy](https://avdummy.bandcamp.com/album/pornoviolence) | [My Clients, The Liars](https://www.lesswrong.com/posts/h99tRkpQGxwtb9Dpv/my-clients-the-liars) |
 | July/25   | Blindsight (Firefall I)        | [Snooping On US & Russian Satcom With Military Surplus Antenna](https://youtu.be/PDwiKLkGMjo?si=xefC0oDv7nDUlQ4i) | [Notes with Attachments - Blake Mills](https://blakemills.bandcamp.com/album/notes-with-attachments) | [Celebrating Three Decades of Worldwide Stock Market Manipulation](https://arxiv.org/abs/1912.01708) |
 | June/25   | House of Huawey                | Antes de Nós    | [Planet Mu 30](https://planetmu.bandcamp.com/album/planet-mu-30)          | [Why it's bad to kill grandma](https://dynomight.net/grandma/)                     |
@@ -23,5 +24,6 @@ Some of the things I'm currently consuming:
 | Sept/24   | [Harry Potter and the Methods of Rationality](https://www.lesswrong.com/hpmor#EBuZhwCrYuJGp7ax4) | SnowFall  | BADBADNOTGOOD - Mid Spiral                       | [In defence of Natural Language DSLs](https://www.ettf.land/p/mysticism-101-or-in-defence-of-natural) |
 | August/24 | The Children of the Sky - Vernor Vinge | Welcome to the NHK | JPEGMAFIA - I LAY DOWN MY LIFE FOR YOU           | [Beauty as entropic fine-tuning](https://extramediumplease.substack.com/p/beauty-as-entropic-fine-tuning) |
 |           | [Why Does Ozempic Cure All Diseases?](https://www.astralcodexten.com/p/why-does-ozempic-cure-all-diseases) | Deadpool 3 (it was bad) | SCORN - PLAN B                                   | [A preiminary theory of sound design](https://nathan.ho.name/posts/sound-design-theory/) |
+|========|=============|==============|==============|=============|
 
 inspired by <https://nownownow.com/>
