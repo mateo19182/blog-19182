@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2025-09-15
+date: 2025-09-22
 tags: 
   - personal
 ---
@@ -9,6 +9,28 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Bouba/kiki effect - Wikipedia](https://en.wikipedia.org/wiki/Bouba/kiki_effect) `Wikis` *2025-09-21*
+- [Inside Modal Notebooks: How we built a cloud GPU notebook that boots in seconds | Modal Blog](https://modal.com/blog/notebooks-internals) `Tech` *2025-09-20*
+- [blog.sweep.dev/posts/next-edit-jetbrains](https://blog.sweep.dev/posts/next-edit-jetbrains) `Tech` *2025-09-20*
+- [Hypervisor in 1,000 Lines](https://1000hv.seiya.me/en) `Tech` *2025-09-20*
+- [The Rise of Parasitic AI — LessWrong](https://www.lesswrong.com/posts/6ZnznCaTcbGYsCmqu/the-rise-of-parasitic-ai) `Weird` *2025-09-20*
+- [The Next Step: A New Generation of Artists Is Reinvigorating Dubstep | Bandcamp Daily](https://daily.bandcamp.com/lists/new-dubstep-album-guide) `Arts` *2025-09-19*
+- [A postmortem of three recent issues \ Anthropic](https://www.anthropic.com/engineering/a-postmortem-of-three-recent-issues) `Tech` *2025-09-18*
+- [War of the currents - Wikipedia](https://en.wikipedia.org/wiki/War_of_the_currents) `Wikis` *2025-09-17*
+- [Atlantropa - Wikipedia](https://en.wikipedia.org/wiki/Atlantropa) `Wikis` *2025-09-17*
+- [Letters of Note – Correspondence Deserving of a Wider Audience](https://lettersofnote.com) `Museums - Indexers` *2025-09-17*
+- [Brandolini's law - Wikipedia](https://en.wikipedia.org/wiki/Brandolini%27s_law) `Wikis` *2025-09-16*
+- [EAT-Lancet_Commission_Summary_Report.pdf](https://eatforum.org/content/uploads/2019/01/EAT-Lancet_Commission_Summary_Report.pdf#page=13) `Ideas` *2025-09-16*
+- [Ask vs guess culture - by Jean Hsu - Tech and Tea](https://jeanhsu.substack.com/p/ask-vs-guess-culture) `Ideas` *2025-09-16*
+- [Learning Lens Blur Fields](https://blur-fields.github.io) `Academic Papers and Resources` *2025-09-15*
+- [Grad on X: "@vikhyatk For well executed reasoning RL I would say: https://t.co/lDOE4yy4P1 https://t.co/cUa0mJFzh2 https://t.co/63ZD8ApWdS https://t.co/YMPRu1Fxpe https://t.co/AeXknn83uP https://t.co/tDpzgfPJB3 https://t.co/dpfFN0pC13 https://t.co/mVJ4HheRGb https://t.co/J9zpkB85Uo" / X](https://x.com/grad62304977/status/1967548295816819184) `Academic Papers and Resources` *2025-09-15*
+- [Beyond Orthogonality: How Language Models Pack Billions of Concepts into 12,000 Dimensions](https://nickyoder.com/johnson-lindenstrauss) `Tech` *2025-09-15*
+- [The SSO Wall of Shame | A list of vendors that treat single sign-on as a luxury feature, not a core security requirement.](https://sso.tax) `Tech` *2025-09-15*
+- [Blog Posts](https://cendyne.dev/posts) `Tech` *2025-09-15*
+- [Hosting a WebSite on a Disposable Vape :: BogdanTheGeek's Blog](https://bogdanthegeek.github.io/blog/projects/vapeserver) `Tech` *2025-09-15*
+- [Chickenization](https://cendyne.dev/topics/chickenization.html) `Reads` *2025-09-15*
+- [Conference Fermi Problems, by Gwern · Gwern.net](https://gwern.net/blog/2025/conference-size) `Ideas` *2025-09-15*
+- [Process Engineering at a Furry Convention](https://cendyne.dev/posts/2023-04-16-process-engineering-at-a-furry-convention.html) `Weird` *2025-09-15*
 - [Fang Binxing - Wikipedia](https://en.wikipedia.org/wiki/Fang_Binxing) `Wikis` *2025-09-14*
 - [Estacions i intercanviadors - albertguillaumes.cat](http://estacions.albertguillaumes.cat) `Arts` *2025-09-14*
 - [Why you'd issue a branded stablecoin like McDonaldsCoin - Text Incubation](https://text-incubation.com/Why+you'd+issue+a+branded+stablecoin+like+McDonaldsCoin) `Tech` *2025-09-14*
@@ -18,6 +40,7 @@ This is a collection of links I've archived over time.
 - [Leak of Geedge Networks internal documents (100,000+ from Jira, Confluence, GitLab) · Issue -519 · net4people/bbs](https://github.com/net4people/bbs/issues/519#issuecomment-3282101626) `Tech` *2025-09-14*
 - [Hot Chips 2025: Irrational Recap - Irrational Analysis](https://substack.com/inbox/post/173458075) `Tech` *2025-09-14*
 - [China exports censorship tech to authoritarian regimes – aided by EU firms - Follow the Money - Platform for investigative journalism](https://archive.is/EIGSZ#selection-2106.0-2106.1) `Reads` *2025-09-14*
+- [chapter seven: nudge | the singularity is nearer](https://geohot.github.io/blog/jekyll/update/2025/09/08/chapter-seven.html) `Reads` *2025-09-14*
 - [Forrester_Jay_W_World_Dynamics_2nd_ed_1973.pdf](https://monoskop.org/images/d/dc/Forrester_Jay_W_World_Dynamics_2nd_ed_1973.pdf#page=15) `Academic Papers and Resources` *2025-09-13*
 - [Scientific Spaces](https://kexue-fm.translate.goog/?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp) `Academic Papers and Resources` *2025-09-13*
 - [Side project: ascii.jpeg | FFglitch](https://ffglitch.org/2025/07/ascii_jpeg.html) `Arts` *2025-09-13*
