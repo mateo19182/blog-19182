@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2025-09-22
+date: 2025-09-29
 tags: 
   - personal
 ---
@@ -9,6 +9,38 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [mjg59 | Investigating a forged PDF](https://mjg59.dreamwidth.org/73317.html) `Tech` *2025-09-28*
+- [Why Don’t Data Centers Use More Green Energy? - The New York Times](https://archive.ph/9RnLc) `Reads` *2025-09-28*
+- [There is no such thing as a tokenizer-free lunch](https://huggingface.co/blog/catherinearnett/in-defense-of-tokenizers) `Academic Papers and Resources` *2025-09-27*
+- [Modular Manifolds - Thinking Machines Lab](https://thinkingmachines.ai/blog/modular-manifolds) `Academic Papers and Resources` *2025-09-27*
+- [Max Mynter - Full Stack Machine Learning Engineer](https://www.maxmynter.com/pages/blog/jobhunt#tactic-and-strategy) `Tech` *2025-09-27*
+- [‘Winning’ AI Arms Races: Then What?, by Gwern · Gwern.net](https://gwern.net/blog/2024/winning-arms-races) `Tech` *2025-09-27*
+- [magikarp/results/reports at main · cohere-ai/magikarp](https://github.com/cohere-ai/magikarp/tree/main/results/reports) `Tech` *2025-09-27*
+- [How to make an antibody - Works in Progress Magazine](https://worksinprogress.co/issue/how-to-make-an-antibody) `Reads` *2025-09-27*
+- [The algorithm will see you now - Works in Progress Magazine](https://worksinprogress.co/issue/the-algorithm-will-see-you-now) `Reads` *2025-09-27*
+- [2011: DanNet triggers deep CNN revolution](https://people.idsia.ch/~juergen/DanNet-triggers-deep-CNN-revolution-2011.html) `Academic Papers and Resources` *2025-09-26*
+- [Code Of Ethics](https://sqlite.org/codeofethics.html) `Tech` *2025-09-26*
+- [Athlon 64: How AMD turned the tables on Intel - The Silicon Underground](https://dfarq.homeip.net/athlon-64-how-amd-turned-the-tables-on-intel) `Tech` *2025-09-26*
+- [Is Life a Form of Computation? | The MIT Press Reader](https://thereader.mitpress.mit.edu/is-life-a-form-of-computation) `Reads` *2025-09-26*
+- [Sources Say Bay Area House Party - by Scott Alexander](https://substack.com/inbox/post/171246704) `Reads` *2025-09-25*
+- [The World in Which We Live - Nassim Nicholas Taleb](https://substack.com/inbox/post/174276181) `Reads` *2025-09-25*
+- [OpenFake: An Open Dataset and Platform Toward Large-Scale Deepfake Detection - 2509.09495v1.pdf](https://arxiv.org/pdf/2509.09495) `Academic Papers and Resources` *2025-09-24*
+- [Obligated to Respond — LessWrong](https://www.lesswrong.com/posts/8jkB8ezncWD6ai86e/obligated-to-respond) `Reads` *2025-09-24*
+- [The Company Man — LessWrong](https://www.lesswrong.com/posts/JH6tJhYpnoCfFqAct/the-company-man) `Reads` *2025-09-24*
+- [Preparedness paradox - Wikipedia](https://en.wikipedia.org/wiki/Preparedness_paradox) `Wikis` *2025-09-23*
+- [ETAI course materials](https://docs.google.com/document/d/1hS-Pu0gq22IwB9mWeig8Ui9kvUITgHj9eH3ik2zNVpo/mobilebasic) `Academic Papers and Resources` *2025-09-23*
+- [Llama Builds - AI PC Builds & Benchmarks](https://www.llamabuilds.ai/build/portable-25l-nvlinked-dual-3090-llm-rig) `Tech` *2025-09-23*
+- [American nukes in an English village](https://dispatch-media.com/american-nukes-in-an-english-village/?ref=dispatch-articles-newsletter) `Reads` *2025-09-23*
+- [Nine Things I Learned in Ninety Years - Nine-Things-I-Learned-in-Ninety-Years.pdf](https://edwardpackard.com/wp-content/uploads/2025/09/Nine-Things-I-Learned-in-Ninety-Years.pdf) `Reads` *2025-09-23*
+- [Your Review: Project Xanadu - The Internet That Might Have Been](https://www.astralcodexten.com/p/your-review-project-xanadu-the-internet?r=bdhc9&utm_medium=ios&triedRedirect=true) `Reads` *2025-09-23*
+- [On agency - by Henrik Karlsson and Johanna Karlsson](https://www.henrikkarlsson.xyz/p/agency) `Reads` *2025-09-23*
+- [delete-from-users-where-location-iran.md](https://gist.github.com/avestura/ce2aa6e55dad783b1aba946161d5fef4) `Weird` *2025-09-23*
+- [The Era of Experience Paper.pdf](https://storage.googleapis.com/deepmind-media/Era-of-Experience%20/The%20Era%20of%20Experience%20Paper.pdf) `Academic Papers and Resources` *2025-09-22*
+- [How to be a wise optimist about science and technology?](https://michaelnotebook.com/optimism) `Tech` *2025-09-22*
+- [Cloudflare’s 2025 Annual Founders’ Letter](https://blog.cloudflare.com/cloudflare-2025-annual-founders-letter) `Tech` *2025-09-22*
+- [Low-risk defi can be for Ethereum what search was for Google](https://vitalik.eth.limo/general/2025/09/21/low_risk_defi.html) `Tech` *2025-09-22*
+- [Seeing the light](https://www.worksinprogress.news/p/how-to-clean-the-air?r=bdhc9&utm_medium=ios&triedRedirect=true) `Reads` *2025-09-22*
+- [PUBLIC I ran out of money a year ago, spent the last of my savings on a prostitute in Hong Kong, and became a commie.](https://docs.google.com/document/d/1Am8bYA1aoXuSGFg7w7NjlHXFZiSAEt_oAVITPYdNRGo/mobilebasic) `Weird` *2025-09-22*
 - [Bouba/kiki effect - Wikipedia](https://en.wikipedia.org/wiki/Bouba/kiki_effect) `Wikis` *2025-09-21*
 - [Inside Modal Notebooks: How we built a cloud GPU notebook that boots in seconds | Modal Blog](https://modal.com/blog/notebooks-internals) `Tech` *2025-09-20*
 - [blog.sweep.dev/posts/next-edit-jetbrains](https://blog.sweep.dev/posts/next-edit-jetbrains) `Tech` *2025-09-20*
