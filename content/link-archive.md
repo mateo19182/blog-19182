@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2025-09-29
+date: 2025-10-06
 tags: 
   - personal
 ---
@@ -9,6 +9,46 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Ambigr.am](https://ambigr.am/hall-of-fame) `Arts` *2025-10-05*
+- [fi-le.net](https://fi-le.net) `Tech` *2025-10-05*
+- [James O'Claire – My personal site](https://jamesoclaire.com) `Tech` *2025-10-05*
+- [guifi.net - Open, Libre and Neutral Telecommunications Network | guifi.net](https://guifi.net) `Tech` *2025-10-05*
+- [How I had sex with a pretty girl (politics were involved)](https://www.woman-of-letters.com/p/the-story-of-how-i-had-sex-with-a?utm_source=%2Fsearch%2Fwords%20of%20affirmation&utm_medium=reader2&hide_intro_popup=true) `Weird` *2025-10-05*
+- [Doomsday Scoreboard](https://doomsday.march1studios.com) `Weird` *2025-10-05*
+- [Paged Out! -7 - PagedOut_007.pdf](https://pagedout.institute/download/PagedOut_007.pdf) `Collectives and Magazines` *2025-10-05*
+- [Paged Out!](https://pagedout.institute) `Collectives and Magazines` *2025-10-05*
+- [Danger Testing](https://www.dangertesting.com) `Arts` *2025-10-04*
+- [christy carey | excerpts](https://christycarey.xyz) `Arts` *2025-10-04*
+- [How did SK hynix beat Samsung? - by Jukanlosreve](https://semiconsam.substack.com/p/how-did-sk-hynix-beat-samsung) `Tech` *2025-10-04*
+- [Redis 101](https://mrinalxdev.github.io/mrinalxblogs/blogs/redis.html) `Tech` *2025-10-04*
+- [Some thoughts on the Sutton interview - by Dwarkesh Patel](https://substack.com/inbox/post/175283310) `Tech` *2025-10-04*
+- [Of Spectrograms and Discriminators - ZD’s Substack](https://zdtech.substack.com/p/of-spectrograms-and-discriminators) `Tech` *2025-10-04*
+- [On The Vital Question by Nick Lane - Dwarkesh Podcast](https://www.dwarkesh.com/p/the-vital-question) `Reads` *2025-10-04*
+- [The invention that ruined English writing - by Colin Gorrie](https://www.deadlanguagesociety.com/p/the-invention-that-ruined-english) `Reads` *2025-10-04*
+- [Cool Papers - Immersive Paper Discovery](https://papers.cool) `Museums - Indexers` *2025-10-04*
+- [Index](https://entropicthoughts.com/index) `Tech` *2025-10-03*
+- [Why Korea’s Galápagos-ization Became a Blessing in the AI Era](https://semiconsam.substack.com/p/why-koreas-galapagos-ization-became?r=4k4uta&utm_campaign=post&utm_medium=web&triedRedirect=true) `Tech` *2025-10-03*
+- [Y'all are over-complicating these AI-risk arguments](https://substack.com/inbox/post/175117875) `Ideas` *2025-10-03*
+- [Ten Modest Proposals to End the Gender Pay Gap](https://www.betonit.ai/p/ten-modest-proposals-to-end-the-gender) `Ideas` *2025-10-03*
+- [Building the heap: racking 30 petabytes of hard drives for pretraining | blog](https://si.inc/posts/the-heap) `Tech` *2025-10-02*
+- [The Fatima Sun Miracle: Much More Than You Wanted To Know](https://www.astralcodexten.com/p/the-fatima-sun-miracle-much-more?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2025-10-02*
+- [Why women should be tech-optimists - by Jerusalem Demsas](https://www.theargumentmag.com/p/why-women-should-be-tech-optimists) `Reads` *2025-10-02*
+- [Which world do you live in? - Defender’s Corner](https://substack.com/inbox/post/175001761) `Ideas` *2025-10-02*
+- [OP Core™ Porn RETURN - Permanent HardCore™ Storage Featuring Your Favorite Bitcoin Devs](https://satflation.com/gloria) `Weird` *2025-10-02*
+- [suchir.net/fair_use.html](https://suchir.net/fair_use.html) `Tech` *2025-10-01*
+- [-8991: OnehundredthCoin's NES Super Mario Bros. "arbitrary code execution" in 04:52.65 - Submission -8991 - TASVideos](https://tasvideos.org/8991S) `Tech` *2025-10-01*
+- [How I got the highest score on ARC-AGI again swapping Python for English](https://jeremyberman.substack.com/p/how-i-got-the-highest-score-on-arc-agi-again?utm_medium=web&triedRedirect=true) `Tech` *2025-09-30*
+- [Workings of science - 3512338.pdf](https://dl.acm.org/doi/pdf/10.1145/3512338) `Academic Papers and Resources` *2025-09-29*
+- [Raymond_Eric_S_The_Cathedral_and_the_Bazaar_rev_ed.pdf](https://monoskop.org/images/e/e0/Raymond_Eric_S_The_Cathedral_and_the_Bazaar_rev_ed.pdf) `Academic Papers and Resources` *2025-09-29*
+- [We reverse-engineered Flash Attention 4 | Modal Blog](https://modal.com/blog/reverse-engineer-flash-attention-4) `Tech` *2025-09-29*
+- [Vintage Data | Vintage Data](https://vintagedata.org/blog) `Tech` *2025-09-29*
+- [About Me | Armin Ronacher's Thoughts and Writings](https://lucumr.pocoo.org/about) `Tech` *2025-09-29*
+- [sanix | THE WEIRD CONCEPT OF BRANCHLESS PROGRAMMING](https://sanixdk.xyz/blogs/the-weird-concept-of-branchless-programming) `Tech` *2025-09-29*
+- [Christian homeschoolers in the year 3000 — LessWrong](https://www.lesswrong.com/posts/8aRFB2qGyjQGJkEdZ/christian-homeschoolers-in-the-year-3000) `Reads` *2025-09-29*
+- [What Philosophy Is Good For](https://jessylin.com/2019/11/17/what-philosophy-is-good-for/?curius=574) `Reads` *2025-09-29*
+- [So You Want To Make Marginal Progress... — LessWrong](https://www.lesswrong.com/posts/Hgj84BSitfSQnfwW6/so-you-want-to-make-marginal-progress) `Ideas` *2025-09-29*
+- [abeto - Crafted Interactive Experiences](https://abeto.co) `Tools and Interactive Websites` *2025-09-29*
+- [URL Snake!](https://demian.ferrei.ro/snake#|%E2%9F%8B%E2%A0%A0%E2%A0%A4%E2%A0%84%E2%9F%8B%E2%A0%81%E2%9F%8B%E2%9F%8B%E2%9F%8B%E2%9F%8B%E2%9F%8B%E2%9F%8B%E2%9F%8B%E2%9F%8B%E2%9F%8B%E2%9F%8B%E2%9F%8B%E2%9F%8B%E2%9F%8B%E2%9F%8B|[score:0]) `Tools and Interactive Websites` *2025-09-29*
 - [mjg59 | Investigating a forged PDF](https://mjg59.dreamwidth.org/73317.html) `Tech` *2025-09-28*
 - [Why Don’t Data Centers Use More Green Energy? - The New York Times](https://archive.ph/9RnLc) `Reads` *2025-09-28*
 - [There is no such thing as a tokenizer-free lunch](https://huggingface.co/blog/catherinearnett/in-defense-of-tokenizers) `Academic Papers and Resources` *2025-09-27*
