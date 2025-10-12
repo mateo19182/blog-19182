@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2025-10-06
+date: 2025-10-13
 tags: 
   - personal
 ---
@@ -9,7 +9,31 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Philip Trammell](https://philiptrammell.com/home) `Academic Papers and Resources` *2025-10-10*
+- [Existential_Risk_and_Growth.pdf](https://philiptrammell.com/static/Existential_Risk_and_Growth.pdf?utm_source=perplexity) `Academic Papers and Resources` *2025-10-10*
+- [Semianalysis ClusterMAX Launch: Surprising Data](https://irrationalanalysis.substack.com/p/semianalysis-clustermax-launch-surprising?utm_campaign=post) `Tech` *2025-10-10*
+- [InferenceMAX by SemiAnalysis](https://inferencemax.semianalysis.com) `Tech` *2025-10-10*
+- [Chinese dams hold billions of people to ransom](https://www.worksinprogress.news/p/chinese-dams-hold-billions-of-people) `Reads` *2025-10-10*
+- [What, if not agency? — LessWrong](https://www.lesswrong.com/posts/tQ9vWm4b57HFqbaRj/what-if-not-agency) `Reads` *2025-10-09*
+- [AI and the Technological Richter Scale — LessWrong](https://www.lesswrong.com/posts/oAy72fcqDHsCvLBKz/ai-and-the-technological-richter-scale) `Reads` *2025-10-09*
+- [Subway Builder](https://www.subwaybuilder.com) `Tools and Interactive Websites` *2025-10-09*
+- [Peak oil - Wikipedia](https://en.m.wikipedia.org/wiki/Peak_oil) `Wikis` *2025-10-08*
+- [Ortega hypothesis - Wikipedia](https://en.wikipedia.org/wiki/Ortega_hypothesis) `Wikis` *2025-10-08*
+- [2x Performance, $300k Savings: A Case Study in Rewriting a Critical Service in Rust](https://wxiaoyun.com/blog/rust-rewrite-case-study) `Tech` *2025-10-08*
+- [Open Printer | Crowd Supply](https://www.crowdsupply.com/open-tools/open-printer) `Tech` *2025-10-08*
+- [The Email They Shouldn't Have Read - IT Notes](https://it-notes.dragas.net/2025/10/08/the-email-they-shouldnt-have-read) `Tech` *2025-10-08*
+- [Learned pain as a leading cause of chronic pain](https://www.theseedsofscience.pub/p/learned-pain-as-a-leading-cause-of) `Reads` *2025-10-08*
+- [notes towards an accelerationist theology - by Rose Lyddon](https://roselyddon.substack.com/p/notes-towards-an-accelerationist) `Ideas` *2025-10-08*
+- [Slave, Sister, Sexborg, Sphinx: Feminine Figurations in Nick Land's Philosophy | 10.1111/hypa.12464_SciHub](http://sci-hub.hlgczx.com/https://doi.org/10.1111/hypa.12464) `Academic Papers and Resources` *2025-10-07*
+- [AMD and OpenAI: The 6 Gigawatt Bet - by Dr. Ian Cutress](https://morethanmoore.substack.com/p/amd-and-openai-the-6-gigawatt-bet) `Tech` *2025-10-07*
+- [A Shift from Animal Testing - by Celia Ford - Asimov Press](https://substack.com/inbox/post/173703136) `Reads` *2025-10-07*
+- [ALIGNMENT - by vincent huang - a slice of my mind](https://mindslice.substack.com/p/alignment?utm_medium=email) `Reads` *2025-10-07*
+- [Scam Cities—Asterisk](https://asteriskmag.com/issues/11/scam-cities) `Reads` *2025-10-07*
+- [57.25 GB folder on MEGA](https://mega.nz/folder/HxkSxJRR#0_9VLL24yzrbwekTakFkiQ) `Museums - Indexers` *2025-10-07*
+- [Antikythera](https://journal.antikythera.org) `Collectives and Magazines` *2025-10-07*
+- [Why do LLMs freak out over the seahorse emoji?](https://vgel.me/posts/seahorse) `Tech` *2025-10-06*
 - [Ambigr.am](https://ambigr.am/hall-of-fame) `Arts` *2025-10-05*
+- [.:: Phrack Magazine ::.](https://phrack.org/issues/72/7_md#article) `Tech` *2025-10-05*
 - [fi-le.net](https://fi-le.net) `Tech` *2025-10-05*
 - [James O'Claire – My personal site](https://jamesoclaire.com) `Tech` *2025-10-05*
 - [guifi.net - Open, Libre and Neutral Telecommunications Network | guifi.net](https://guifi.net) `Tech` *2025-10-05*
