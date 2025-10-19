@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2025-10-13
+date: 2025-10-20
 tags: 
   - personal
 ---
@@ -9,6 +9,53 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [David vs Goliath: are small LLMs any good? - /research](https://fin.ai/research/david-vs-goliath-are-small-llms-any-good) `Tech` *2025-10-19*
+- [How I Reversed Amazon's Kindle Web Obfuscation Because Their App Sucked](https://blog.pixelmelt.dev/kindle-web-drm) `Tech` *2025-10-18*
+- [GitHub - usbt0p/strange_attractors: Strange attractors with Lyapunov exponents](https://github.com/usbt0p/strange_attractors?tab=readme-ov-file) `Tech` *2025-10-18*
+- [Simon Funk](https://sifter.org/~simon) `Tech` *2025-10-18*
+- [About | Eric Jang](https://evjang.com/about) `Tech` *2025-10-18*
+- [https://blisstweeting.xyz/extras](https://blisstweeting.xyz/blog) `Tech` *2025-10-18*
+- [Building a Better Language Detection Model for Fin - /research](https://fin.ai/research/building-a-better-language-detection-model-for-fin) `Tech` *2025-10-18*
+- [Closing the Taiwan Strait Deterrence Gap](https://www.chinatalk.media/p/closing-the-taiwan-strait-deterrence) `Reads` *2025-10-18*
+- [The Northern Caves - Chapter 1 - nostalgebraist - Original Work [Archive of Our Own]](https://archiveofourown.org/works/3659997/chapters/8088522) `Weird` *2025-10-18*
+- [Home | Archive of Our Own](https://archiveofourown.org) `Museums - Indexers` *2025-10-18*
+- [Project Sifter](https://sifter.org) `Collectives and Magazines` *2025-10-18*
+- [Cybersecurity AI: Humanoid Robots as Attack Vectors - 2509.14139v3.pdf](https://arxiv.org/pdf/2509.14139) `Academic Papers and Resources` *2025-10-17*
+- [GenAI Architecture Series: Streamlining Background Checks with Fine-Tuned Language Models](https://www.linkedin.com/pulse/genai-architecture-series-streamlining-background-robert-schwentker-hexic) `Tech` *2025-10-17*
+- [anticloud hopecore | the singularity is nearer](https://geohot.github.io//blog/jekyll/update/2025/10/17/anticloud-hopecore.html) `Tech` *2025-10-17*
+- [Recursive Language Models | Alex L. Zhang](https://alexzhang13.github.io/blog/2025/rlm) `Academic Papers and Resources` *2025-10-16*
+- [Are Hard Drives Getting Better? Let’s Revisit the Bathtub Curve](https://www.backblaze.com/blog/are-hard-drives-getting-better-lets-revisit-the-bathtub-curve) `Tech` *2025-10-16*
+- [The yaml document from hell](https://ruudvanasseldonk.com/2023/01/11/the-yaml-document-from-hell) `Tech` *2025-10-16*
+- [Slower Feels Smarter? Experimenting with AI Agent Latency - /research](https://fin.ai/research/does-slower-seem-smarter-rethinking-latency-in-ai-agents) `Tech` *2025-10-16*
+- [midnight computer lab](https://midnightcomputerlab.net/directory) `Museums - Indexers` *2025-10-16*
+- [dubell.io | mount](https://dubell.io/mnt) `Museums - Indexers` *2025-10-16*
+- [David Byrne | Radio](https://www.davidbyrne.com/radio#filter=all&sortby=date:desc) `Arts` *2025-10-15*
+- [Penny For Your Thoughts](https://www.pennyforyourthoughts.ai) `Tech` *2025-10-15*
+- [YouSim](https://yousim.ai) `Tech` *2025-10-15*
+- [Plastic Labs 🥽](https://plasticlabs.ai) `Tech` *2025-10-15*
+- [The Alien Artifact: DSPy and the Cargo Cult of LLM Optimization — Data Monger](https://www.data-monger.com/syndeblog/the-alien-artifact-dspy-and-the-cargo-cult-of-llm-optimization) `Tech` *2025-10-15*
+- [The Hidden Drivers of HRM's Performance on ARC-AGI](https://arcprize.org/blog/hrm-analysis) `Tech` *2025-10-15*
+- [Hyperstition AI](https://www.hyperstitionai.com/book/the-computational-ceiling-20251015112223) `Reads` *2025-10-15*
+- [Computational Espionage - DARC](https://defenseanalyses.org/work/computational-espionage) `Reads` *2025-10-15*
+- [Race for Space Law: Inside the Sino-American Cosmic Rivalry](https://www.chinatalk.media/p/race-for-space-law-inside-the-sino?utm_source=%2Finbox&utm_medium=reader2&hide_intro_popup=true) `Reads` *2025-10-15*
+- [Don't Look Up: There Are Sensitive Internal Links in the Clear on GEO Satellites - dontlookup_ccs25_fullpaper.pdf](https://satcom.sysnet.ucsd.edu/docs/dontlookup_ccs25_fullpaper.pdf) `Academic Papers and Resources` *2025-10-14*
+- [Oneohtrix Point Never: Archive](https://pointnever.com) `Arts` *2025-10-14*
+- [1a3orn](https://1a3orn.com) `Tech` *2025-10-14*
+- [Eric Jang | Personal website and blog of Eric Jang.](https://evjang.com) `Tech` *2025-10-14*
+- [Employment Solutions - Overview | The GitLab Handbook](https://handbook.gitlab.com/handbook/people-group/employment-solutions) `Tech` *2025-10-14*
+- [About](https://www.alexirpan.com/about) `Tech` *2025-10-14*
+- [And the 2025 Economics Nobel Goes to... - by Brian Albrecht](https://www.economicforces.xyz/p/and-the-2025-economics-nobel-goes?r=bdhc9&utm_medium=ios&triedRedirect=true) `Ideas` *2025-10-14*
+- [Grouchy: My attempt at trying to use a two-stage approach for audio language modeling](https://zdtech.substack.com/p/grouchy-my-attempt-at-trying-to-use?utm_source=%2Finbox&utm_medium=reader2) `Academic Papers and Resources` *2025-10-13*
+- [AdapTive-LeArning Speculator System (ATLAS): A New Paradigm in LLM Inference via Runtime-Learning Accelerators](https://www.together.ai/blog/adaptive-learning-speculator-system-atlas) `Tech` *2025-10-13*
+- [Why do I feel a sense of fear when I see OpenAI’s DRAM orders?](https://semiconsam.substack.com/p/why-do-i-feel-a-sense-of-fear-when?utm_campaign=post) `Tech` *2025-10-13*
+- [Age of Invention, by Anton Howes | Substack](https://www.ageofinvention.xyz) `Reads` *2025-10-13*
+- [Voyages to the End of the World - First Things](https://firstthings.com/voyages-to-the-end-of-the-world) `Reads` *2025-10-13*
+- [What are we really doing on social media? - by Lionel Page](https://www.optimallyirrational.com/p/what-are-we-really-doing-on-social?utm_source=%2Finbox&utm_medium=reader2&hide_intro_popup=true) `Reads` *2025-10-13*
+- [Be Nice, At Least Until You Can Coordinate Meanness | Slate Star Codex](https://slatestarcodex.com/2016/05/02/be-nice-at-least-until-you-can-coordinate-meanness) `Ideas` *2025-10-13*
+- [What makes Joel Mokyr great](https://substack.com/inbox/post/176052910) `Ideas` *2025-10-13*
+- [The 24 Hour Life - peepeepoopoo](https://deepdishenjoyer.substack.com/p/the-24-hour-life) `Ideas` *2025-10-13*
+- [Fascism Can't Mean Both A Specific Ideology And A Legitimate Target](https://www.astralcodexten.com/p/fascism-cant-mean-both-a-specific?utm_source=%2Finbox&utm_medium=reader2&hide_intro_popup=true) `Ideas` *2025-10-13*
+- [TPAW Planner](https://tpawplanner.com) `Tools and Interactive Websites` *2025-10-13*
 - [Philip Trammell](https://philiptrammell.com/home) `Academic Papers and Resources` *2025-10-10*
 - [Existential_Risk_and_Growth.pdf](https://philiptrammell.com/static/Existential_Risk_and_Growth.pdf?utm_source=perplexity) `Academic Papers and Resources` *2025-10-10*
 - [Semianalysis ClusterMAX Launch: Surprising Data](https://irrationalanalysis.substack.com/p/semianalysis-clustermax-launch-surprising?utm_campaign=post) `Tech` *2025-10-10*
