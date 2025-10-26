@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2025-10-20
+date: 2025-10-27
 tags: 
   - personal
 ---
@@ -9,6 +9,39 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [How Cloudflare’s client-side security made the npm supply chain attack a non-event](https://blog.cloudflare.com/how-cloudflares-client-side-security-made-the-npm-supply-chain-attack-a-non) `Tech` *2025-10-26*
+- [192 Weeks](https://notes.ekzhang.com/reflections/192-weeks) `Tech` *2025-10-26*
+- [Notes](https://notes.ekzhang.com) `Tech` *2025-10-26*
+- [the bug that taught me more about PyTorch than years of using it | Elana Simon](https://elanapearl.github.io/blog/2025/the-bug-that-taught-me-pytorch) `Tech` *2025-10-26*
+- [CONTENTdm](https://hrc.contentdm.oclc.org/digital/collection/p15878coll84/search) `Museums - Indexers` *2025-10-26*
+- [OCP Global Summit 2025: Irrational Recap](https://irrationalanalysis.substack.com/p/ocp-global-summit-2025-irrational) `Tech` *2025-10-25*
+- [Pointing machines, population pyramids, post office scandal, type species, and horse urine](https://dynomight.substack.com/p/shorts-6) `Reads` *2025-10-25*
+- [Why Nigeria Accepted GMOs - Asimov Press](https://www.asimov.press/p/nigeria-crops) `Reads` *2025-10-24*
+- [Summary of the Amazon DynamoDB Service Disruption in Northern Virginia (US-EAST-1) Region](https://aws.amazon.com/es/message/101925) `Tech` *2025-10-23*
+- [The Lamp Magazine | Against Human Resources](https://thelampmagazine.com/issues/issue-21/against-human-resources) `Reads` *2025-10-22*
+- [Shelling Out: The Origins of Money | Satoshi Nakamoto Institute](https://nakamotoinstitute.org/library/shelling-out) `Reads` *2025-10-22*
+- [Tech PACs Are Closing In On The Almonds](https://www.astralcodexten.com/p/tech-pacs-are-closing-in-on-the-almonds?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2025-10-22*
+- [US 60/735,250 and the roots of Bitcoin - by Curtis Yarvin](https://graymirror.substack.com/p/us-60735250-and-the-roots-of-bitcoin?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2025-10-22*
+- [The China Tech Canon—Asterisk](https://asteriskmag.com/issues/12-books/the-china-tech-canon?utm_source=Asterisk&utm_campaign=e2fe40c4dc-EMAIL_CAMPAIGN_9_2_2025_7_16_COPY_01&utm_medium=email&utm_term=0_e0307a4ab2-e2fe40c4dc-585690599) `Reads` *2025-10-22*
+- [Why aren't smart people happier? - Seeds of Science](https://substack.com/inbox/post/176846081) `Reads` *2025-10-22*
+- [Homomorphically encrypted consciousness and its implications – Unstable Ontology](https://unstableontology.com/2025/10/22/homomorphically-encrypted-consciousness-and-its-implications) `Ideas` *2025-10-22*
+- [How to Get Consistent Classification From Inconsistent LLMs?](https://verdik.substack.com/p/how-to-get-consistent-classification) `Tech` *2025-10-21*
+- [Detective Wiki](https://detective.wiki) `Tools and Interactive Websites` *2025-10-21*
+- [Beaver-engineered dam in the Czech Republic - Wikipedia](https://en.wikipedia.org/wiki/Beaver-engineered_dam_in_the_Czech_Republic) `Wikis` *2025-10-20*
+- [1804.02767v1.pdf](https://arxiv.org/pdf/1804.02767) `Academic Papers and Resources` *2025-10-20*
+- [BERT is just a Single Text Diffusion Step | nathan.rs](https://nathan.rs/posts/roberta-diffusion) `Academic Papers and Resources` *2025-10-20*
+- [AOTM - die with the most likes](https://aotm.gallery/artist/die-with-the-most-likes) `Arts` *2025-10-20*
+- [Future Forms – Space Age Electronics & Design](https://www.future-forms.com) `Arts` *2025-10-20*
+- [HOME | BEEPLE | the work of mike winkelmann](https://www.beeple-crap.com) `Arts` *2025-10-20*
+- [XCOPY](https://xcopy.art) `Arts` *2025-10-20*
+- [Rearchitecting GitHub Pages - The GitHub Blog](https://github.blog/news-insights/rearchitecting-github-pages) `Tech` *2025-10-20*
+- [/research - Insights and blogs from the AI Group building Fin at Intercom](https://fin.ai/research) `Tech` *2025-10-20*
+- [Quadruped State of The Market - Unitree, Boston Dynamics, ANYbotics, DEEP Robotics, and The Rising Application Ecosystem](https://newsletter.semianalysis.com/p/quadruped-state-of-the-market-unitree) `Tech` *2025-10-20*
+- [Why Europe Lost Semiconductors? - by Jukanlosreve](https://www.semiconsam.com/p/why-europe-lost-semiconductors?utm_campaign=post) `Tech` *2025-10-20*
+- [ripgrep is faster than {grep, ag, git grep, ucg, pt, sift} - Andrew Gallant's Blog](https://burntsushi.net/ripgrep) `Tech` *2025-10-20*
+- [Posts | nathan.rs](https://nathan.rs/posts) `Tech` *2025-10-20*
+- [terminalmente online - by brunella - qué vergüenza](https://www.queverguenza.com/p/harakiri-dox) `Reads` *2025-10-20*
+- [Collection: Oldschool Rave Flyer archive 1989-2000+ from all over the US & Canada <3](https://www.flickr.com/photos/villalobosjayse/collections/72157626196424298) `Museums - Indexers` *2025-10-20*
 - [David vs Goliath: are small LLMs any good? - /research](https://fin.ai/research/david-vs-goliath-are-small-llms-any-good) `Tech` *2025-10-19*
 - [How I Reversed Amazon's Kindle Web Obfuscation Because Their App Sucked](https://blog.pixelmelt.dev/kindle-web-drm) `Tech` *2025-10-18*
 - [GitHub - usbt0p/strange_attractors: Strange attractors with Lyapunov exponents](https://github.com/usbt0p/strange_attractors?tab=readme-ov-file) `Tech` *2025-10-18*
