@@ -8,6 +8,7 @@ Some of the things I'm currently consuming:
 
 | Time      | Reading                        | Watching        | Listening                                                                 | Other                                         |
 | --------- | -------                        | --------        | ---------                                                                 | -----                                         |
+| Nov/25    | [The Company Man](https://www.lesswrong.com/posts/JH6tJhYpnoCfFqAct/the-company-man) | House S1        | [The Velvet Underground (ROWAN) - World Peace DMT](https://worldpeacedmt.bandcamp.com/album/the-velvet-underground-rowan) | [192 weeks - Reflections](https://notes.ekzhang.com/reflections/192-weeks) |
 | Oct/25    | Legends of the Fall - Jim Harrison | [Rupert's Snub Cube and other Math Holes](https://youtu.be/QH4MviUE0_s?si=Stxe-ZDfm6NtgU5F) | [Ruby My Dear](https://rubymydear.bandcamp.com/) | [On Agency](https://www.henrikkarlsson.xyz/p/agency) |
 | Sept/25 | El Eternauta |  [Euskadi Fuera de Estado (1983)](https://youtu.be/Y5lOoV5nfao)  | [Hongkong 2 - MonoLake](https://roberthenke.bandcamp.com/album/hongkong-2) | [Conference Fermi Problems](https://gwern.net/blog/2025/conference-size) |
 | August/25 | First and Last Men - Olaf Stapledon | [Ever Given, Ever Taken Away](https://youtu.be/WReusTs0Vbo) | [Pornoviolence - AV Dummy](https://avdummy.bandcamp.com/album/pornoviolence) | [My Clients, The Liars](https://www.lesswrong.com/posts/h99tRkpQGxwtb9Dpv/my-clients-the-liars) |
