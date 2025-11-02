@@ -34,6 +34,12 @@ title: Projects
 <div class="project-list">
 
 <div class="project-card">
+  <div class="project-title"><a href="https://no-cosign.com">No-Cosign Fanzine</a></div>
+  <div class="project-desc">We released a fanzine with some of our favorite articles from our blog. Contact me if you want a copy!
+</div>
+</div>
+
+<div class="project-card">
   <div class="project-title"><a href="https://github.com/mateo19182/SciPathBench/">SciPathBench</a></div>
   <div class="project-desc">Evaluating LLM agents on finding shortest citation paths between academic papers.
   Generates graphs for visualizing results and allows human player via web interface.
