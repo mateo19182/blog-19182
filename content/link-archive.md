@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2025-10-27
+date: 2025-11-03
 tags: 
   - personal
 ---
@@ -9,6 +9,21 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Neural audio codecs: how to get audio into LLMs](https://kyutai.org/next/codec-explainer) `Academic Papers and Resources` *2025-11-02*
+- [kyutai: open-science AI lab](https://kyutai.org) `Tech` *2025-11-02*
+- [An abortion ban pushed me toward abortion - The Argument](https://www.theargumentmag.com/p/an-abortion-ban-pushed-me-toward?utm_source=%2Finbox&utm_medium=reader2&hide_intro_popup=true) `Reads` *2025-11-02*
+- [Dating: A mysterious constellation of facts](https://substack.com/inbox/post/177576826) `Ideas` *2025-11-02*
+- [The LinkedIn Left - by Éamann Mac Donnchada](https://substack.com/inbox/post/177721600) `Ideas` *2025-11-02*
+- [Paul Wolfowitz | Still Alive](https://stillalivemag.com/articles/paul-wolfowitz) `Reads` *2025-11-01*
+- [Digital culture and entertainment insights daily: Grief and flip phone photography preservation](https://dirt.fyi/article/2024/01/flipping-off-death) `Reads` *2025-11-01*
+- [Club Med | Broadcast](https://pioneerworks.org/broadcast/club-med-adderall) `Reads` *2025-11-01*
+- [Still Alive | A magazine for the living](https://stillalivemag.com) `Collectives and Magazines` *2025-11-01*
+- [Beyond Attention as a Graph - The Tensor Throne - Obsidian Publish](https://publish.obsidian.md/the-tensor-throne/The+Graph+Side+of+Attention/Beyond+Attention+as+a+Graph) `Academic Papers and Resources` *2025-10-31*
+- [Attention sinks from the graph perspective - The Tensor Throne - Obsidian Publish](https://publish.obsidian.md/the-tensor-throne/Transformers+as+GNNs/Attention+sinks+from+the+graph+perspective) `Academic Papers and Resources` *2025-10-31*
+- [Arturo Di Modica - Wikipedia](https://en.wikipedia.org/wiki/Arturo_Di_Modica) `Wikis` *2025-10-28*
+- [Levantamiento de Solís - Wikipedia, la enciclopedia libre](https://es.wikipedia.org/wiki/Levantamiento_de_Sol%C3%ADs) `Wikis` *2025-10-27*
+- [The Goon Squad, by Daniel Kolitz](https://harpers.org/archive/2025/11/the-goon-squad-daniel-kolitz-porn-masturbation-loneliness) `Reads` *2025-10-27*
+- [EU explained in 10 minutes - by Martin Sustrik - 250bpm](https://www.250bpm.com/p/eu-explained-in-10-minutes) `Ideas` *2025-10-27*
 - [How Cloudflare’s client-side security made the npm supply chain attack a non-event](https://blog.cloudflare.com/how-cloudflares-client-side-security-made-the-npm-supply-chain-attack-a-non) `Tech` *2025-10-26*
 - [192 Weeks](https://notes.ekzhang.com/reflections/192-weeks) `Tech` *2025-10-26*
 - [Notes](https://notes.ekzhang.com) `Tech` *2025-10-26*
