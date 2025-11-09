@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2025-11-03
+date: 2025-11-10
 tags: 
   - personal
 ---
@@ -9,6 +9,40 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Kodava people - Wikipedia](https://en.wikipedia.org/wiki/Kodava_people) `Wikis` *2025-11-09*
+- [High-Tech Europe](https://publishing.cdlib.org/ucpressebooks/view?docId=ft609nb394;brand=ucpress) `Academic Papers and Resources` *2025-11-09*
+- [RL Learning with LoRA: A Diverse Deep Dive | kalomaze's kalomazing blog](https://kalomaze.bearblog.dev/rl-lora-ddd) `Tech` *2025-11-09*
+- [How Airbus took off - Works in Progress Magazine](https://worksinprogress.co/issue/how-airbus-took-off) `Reads` *2025-11-09*
+- [High-Tech Europe](https://publishing.cdlib.org/ucpressebooks/view?docId=ft609nb394&chunk.id=d0e7004&toc.id=d0e7081&brand=ucpress) `Reads` *2025-11-09*
+- [alive internet theory](https://alivetheory.net) `Tools and Interactive Websites` *2025-11-09*
+- [Mark Zuckerberg | Indiana Bankruptcy Attorney](https://iammarkzuckerberg.com) `Weird` *2025-11-09*
+- [Specification gaming examples in AI - master list - Google Drive](https://docs.google.com/spreadsheets/d/e/2PACX-1vRPiprOaC3HsCf5Tuum8bRfzYUiKLRqJmbOoC-32JorNdfyTiRRsR7Ea5eWtvsWzuxo8bjOxCG84dAg/pubhtml) `Tech` *2025-11-08*
+- [Galaxy brain resistance](https://vitalik.eth.limo/general/2025/11/07/galaxybrain.html) `Reads` *2025-11-08*
+- [A Messy Evening With Bassvictim | Pitchfork](https://pitchfork.com/features/interview/a-messy-evening-with-bassvictim) `Art` *2025-11-08*
+- [Benchmark TensorFlow · Issue -66 · soumith/convnet-benchmarks](https://github.com/soumith/convnet-benchmarks/issues/66) `Tech` *2025-11-07*
+- [HeheStreams and Me](https://prison.josh.mn) `Tech` *2025-11-07*
+- [Leaving Meta and PyTorch](https://soumith.ch/blog/2025-11-06-leaving-meta-and-pytorch.md.html) `Tech` *2025-11-07*
+- [home / sacha.house](https://sacha.house) `Tech` *2025-11-06*
+- [Evan Conrad | Making supercomputers.](https://evanjconrad.com) `Tech` *2025-11-06*
+- [Jessy Lin](https://jessylin.com) `Tech` *2025-11-06*
+- [GPU Cloud ClusterMAX™ Rating System | How to Rent GPUs](https://www.clustermax.ai) `Tech` *2025-11-06*
+- [Why Solarpunk is already happening in Africa](https://climatedrift.substack.com/p/why-solarpunk-is-already-happening) `Reads` *2025-11-06*
+- [How to feel good | Evan Conrad](https://evanjconrad.com/posts/how-to-feel-good#fn-1) `Reads` *2025-11-06*
+- [TinyBox vs SIGKITTEN: When $50k Hardware Gets Price Checked on Twitter](https://www.dramafund.ing/blog/tinybox-sigkitten-gpu-showdown) `Reads` *2025-11-06*
+- [Gottfried Wilhelm Leibniz - Wikipedia](https://en.wikipedia.org/wiki/Gottfried_Wilhelm_Leibniz) `Wikis` *2025-11-04*
+- [Cornelis Drebbel - Wikipedia](https://en.wikipedia.org/wiki/Cornelis_Drebbel) `Wikis` *2025-11-04*
+- [Robert Hooke - Wikipedia](https://en.wikipedia.org/wiki/Robert_Hooke) `Wikis` *2025-11-04*
+- [The Dark Arts of Tokenization or: How I learned to start worrying and love LLMs' undecoded outputs — LessWrong](https://www.lesswrong.com/posts/g9DmSzHxJXBD9poJR/the-dark-arts-of-tokenization-or-how-i-learned-to-start) `Academic Papers and Resources` *2025-11-04*
+- [modded-nanogpt medium world record: Re-using intermediate activations in the output latents](https://snimu.github.io/2025/10/19/modded-nanogpt-backout.html) `Academic Papers and Resources` *2025-11-04*
+- [Drawn In Perspective](https://mynamelowercase.com) `Tech` *2025-11-04*
+- [Robert Hooke's "Cyberpunk" letter to Gottfried Leibniz — Drawn In Perspective](https://mynamelowercase.com/blog/robert-hookes-cyberpunk-letter-to-gottfried-leibniz) `Reads` *2025-11-04*
+- [Model City Monday 10/27/25 - by Scott Alexander](https://www.astralcodexten.com/p/model-city-monday-102725?utm_source=post-email-title&publication_id=89120&post_id=176628472&utm_campaign=email-post-title&isFreemail=false&r=3o9&triedRedirect=true&utm_medium=email) `Reads` *2025-11-04*
+- [Will AI Resist Your Efforts To Change Its Totally Fake Values?](https://1a3orn.com/sub/ai-doom-consistency.html) `Ideas` *2025-11-04*
+- [Some things I learnt studying philosophy 2019-2021 — Drawn In Perspective](https://mynamelowercase.com/blog/things-i-learnt-on-my-philosophy-masters) `Ideas` *2025-11-04*
+- [Emergent introspective awareness in large language models \ Anthropic](https://www.anthropic.com/research/introspection) `Academic Papers and Resources` *2025-11-03*
+- [Why Is Argentina Poor? - Uncharted Territories](https://unchartedterritories.tomaspueyo.com/p/why-is-argentina-poor?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2025-11-03*
+- [The ear does not do a Fourier transform - by galen](https://www.dissonances.blog/p/the-ear-does-not-do-a-fourier-transform) `Reads` *2025-11-03*
+- [Plumbing vs Internet, Revisited, by Gwern · Gwern.net](https://gwern.net/blog/2025/plumbing-vs-internet) `Ideas` *2025-11-03*
 - [Neural audio codecs: how to get audio into LLMs](https://kyutai.org/next/codec-explainer) `Academic Papers and Resources` *2025-11-02*
 - [kyutai: open-science AI lab](https://kyutai.org) `Tech` *2025-11-02*
 - [An abortion ban pushed me toward abortion - The Argument](https://www.theargumentmag.com/p/an-abortion-ban-pushed-me-toward?utm_source=%2Finbox&utm_medium=reader2&hide_intro_popup=true) `Reads` *2025-11-02*
