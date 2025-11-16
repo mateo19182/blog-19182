@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2025-11-10
+date: 2025-11-17
 tags: 
   - personal
 ---
@@ -9,6 +9,24 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Let's automate immigration policy - by Kelsey Piper](https://substack.com/inbox/post/178848056) `Reads` *2025-11-15*
+- [Brian Moore — artist / creative director](https://brianmoore.com) `Art` *2025-11-15*
+- [Squeezing every millisecond: How we rebuilt the Datadog Lambda Extension in Rust | Datadog](https://www.datadoghq.com/blog/engineering/datadog-lambda-extension-rust) `Tech` *2025-11-14*
+- [Android Dreams](https://android-dreams.ai) `Tech` *2025-11-14*
+- [Running Your Own ISP at Home Part.5 - How to Get a North Korea / Antarctica VPS (New Concept: Light Up the Globe)](https://blog.lyc8503.net/en/post/asn-5-worldwide-servers) `Tech` *2025-11-14*
+- [S&P 500 Map](https://finviz.com/map.ashx) `Tools and Interactive Websites` *2025-11-14*
+- [Fovea detector](https://www.shadertoy.com/view/4dsXzM) `Arts` *2025-11-13*
+- [How Amps Work](https://robrobinette.com/How_Amps_Work.htm) `Reads` *2025-11-13*
+- [Quick Updates on Chongqing Machinery & Electric Co., Ltd ($2722.HK)](https://capytalmanagement.substack.com/p/quick-updates-on-chongqing-machinery?r=bdhc9&utm_medium=ios&triedRedirect=true) `Reads` *2025-11-13*
+- [The Constitution of Innovation](https://constitutionofinnovation.eu) `Tech` *2025-11-12*
+- [Startup Operating Principles - by Sam Gerstenzang](https://samgerstenzang.substack.com/p/startup-operating-principles) `Tech` *2025-11-12*
+- [Two Hundred Years to Flatten the Curve — The New Atlantis](https://www.thenewatlantis.com/publications/two-hundred-years-to-flatten-the-curve) `Reads` *2025-11-12*
+- [Numb at Burning Man - Numb at the Lodge](https://samkriss.substack.com/p/numb-at-burning-man?utm_campaign=post) `Reads` *2025-11-12*
+- [Prison Map — Josh Begley](http://prisonmap.com) `Tools and Interactive Websites` *2025-11-12*
+- [Lukas F. Münzel](https://lukasmuenzel.com) `Tech` *2025-11-10*
+- [XSLT.RIP - Google are killing XSLT!](https://xslt.rip) `Tech` *2025-11-10*
+- [The Pudding](https://pudding.cool) `Tools and Interactive Websites` *2025-11-10*
+- [The Evolution of Trust](https://ncase.me/trust) `Tools and Interactive Websites` *2025-11-10*
 - [Kodava people - Wikipedia](https://en.wikipedia.org/wiki/Kodava_people) `Wikis` *2025-11-09*
 - [High-Tech Europe](https://publishing.cdlib.org/ucpressebooks/view?docId=ft609nb394;brand=ucpress) `Academic Papers and Resources` *2025-11-09*
 - [RL Learning with LoRA: A Diverse Deep Dive | kalomaze's kalomazing blog](https://kalomaze.bearblog.dev/rl-lora-ddd) `Tech` *2025-11-09*
