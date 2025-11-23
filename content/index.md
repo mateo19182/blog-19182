@@ -2,17 +2,17 @@
 title: Home
 ---
 
-Here lies my vague attemp to sort thoughts into words. I find that is one of the best ways to learn about different topics.
+Here lies a vague attemp to sort my thoughts into words. I find that is one of the best ways to learn about different topics.
 
+- [[now]] (what I'm doing now)
 - [[writings]] (by [[tags]])
 - [[projects]]
 - [[link-archive]]
 - [[things i like]]
-- [[now]]
 
 Check out other stuff I do on [GitHub](https://github.com/mateo19182), [SoundCloud](https://soundcloud.com/m19182), [YouTube](https://www.youtube.com/channel/UCEJKcBK7i88Iv3saZy2xuSg) and [faircamp](https://music.m19182.dev/). I also run [No-Cosign](https://no-cosign.m19182.dev/), a music blog with some friends.
 
-If you want to talk, collaborate, or just say hi, you can reach me at admin (@) m19182.dev
+Reach me at admin (@) m19182.dev
 
 <!-- 
 ## [[writings]]
