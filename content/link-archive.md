@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2025-11-17
+date: 2025-11-24
 tags: 
   - personal
 ---
@@ -9,6 +9,31 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Queueing theory - Wikipedia](https://en.wikipedia.org/wiki/Queueing_theory) `Wikis` *2025-11-23*
+- [Welcome](https://kubeden.io) `Tech` *2025-11-23*
+- [The Boring Part of Bell Labs - Elizabeth Van Nostrand](https://elizabethvannostrand.substack.com/p/the-boring-part-of-bell-labs) `Reads` *2025-11-23*
+- [Jmail, logged in as jeevacation@gmail.com](https://jmail.world) `Tools and Interactive Websites` *2025-11-23*
+- [ITSMR :: Secure Terminal](https://typememetics.institute) `Weird` *2025-11-23*
+- [Vista de Vol. 76 Núm. 307 (2025): Hormigón y Acero](https://www.hormigonyacero.com/index.php/ache/issue/view/348/301) `Reads` *2025-11-22*
+- [In Praise Of Useless Robots | The MIT Press Reader](https://thereader.mitpress.mit.edu/in-praise-of-useless-robots) `Reads` *2025-11-22*
+- [FR8 Manifesto](https://fr8manifes.to) `Collectives and Magazines` *2025-11-22*
+- [Hormigón y Acero](https://www.hormigonyacero.com/index.php/ache) `Collectives and Magazines` *2025-11-22*
+- [Offrange](https://ambrook.com/offrange) `Collectives and Magazines` *2025-11-21*
+- [How ASML Got EUV - by Brian Potter - Construction Physics](https://www.construction-physics.com/p/how-asml-got-euv?utm_source=%2Finbox&utm_medium=reader2&hide_intro_popup=true) `Reads` *2025-11-20*
+- [The New AI Consciousness Paper - by Scott Alexander](https://www.astralcodexten.com/p/the-new-ai-consciousness-paper?utm_source=%2Finbox&utm_medium=reader2) `Ideas` *2025-11-20*
+- [Neoteny - Wikipedia](https://en.wikipedia.org/wiki/Neoteny) `Wikis` *2025-11-19*
+- [docs.google.com/document/d/1pAtbkNXb-Myxdi7wgxMGBID9VRjhA7yKY26ubI_TyIQ/mobilebasic](about:blank) `Tech` *2025-11-19*
+- [Owl Editor](https://owleditor.com) `Tools and Interactive Websites` *2025-11-19*
+- [Marvell vs. Broadcom vs. Alchip vs. GUC – Update on ASIC Plays](https://substack.com/home/post/p-178323501) `Tech` *2025-11-18*
+- [Beren's Blog - Thoughts on AI, Neuroscience, and other things that interest me.](https://www.beren.io) `Reads` *2025-11-18*
+- [Under the microscope: NCAA Basketball Final Four 97 (PlayStation)](https://32bits.substack.com/p/under-the-microscope-ncaa-basketball) `Ideas` *2025-11-18*
+- [network-ui](https://epstein-doc-explorer-1.onrender.com) `Tools and Interactive Websites` *2025-11-18*
+- [Hot Pizza.](https://child.pizza/#) `Weird` *2025-11-18*
+- [Wanderlei Silva Entrance — Pride FC - YouTube](https://www.youtube.com/watch?v=mvX8jOMlj9w) `Weird` *2025-11-18*
+- [Iparretarrak - Wikipedia, a enciclopedia libre](https://gl.wikipedia.org/wiki/Iparretarrak) `Wikis` *2025-11-17*
+- [ctf-writeups/2024/googlectf-2024/rev-rustyschool at master · perfectblue/ctf-writeups · GitHub](https://github.com/perfectblue/ctf-writeups/tree/master/2024/googlectf-2024/rev-rustyschool) `Tech` *2025-11-17*
+- [Britney Spears' Guide to Semiconductor Physics - Lasers and Optoelectronics](https://britneyspears.ac/lasers.htm) `Weird` *2025-11-17*
+- [GitHub - perfectblue/ctf-writeups: Perfect Blue's CTF Writeups](https://github.com/perfectblue/ctf-writeups/tree/master) `Museums - Indexers` *2025-11-17*
 - [Let's automate immigration policy - by Kelsey Piper](https://substack.com/inbox/post/178848056) `Reads` *2025-11-15*
 - [Brian Moore — artist / creative director](https://brianmoore.com) `Art` *2025-11-15*
 - [Squeezing every millisecond: How we rebuilt the Datadog Lambda Extension in Rust | Datadog](https://www.datadoghq.com/blog/engineering/datadog-lambda-extension-rust) `Tech` *2025-11-14*
