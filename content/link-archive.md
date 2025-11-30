@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2025-11-24
+date: 2025-12-01
 tags: 
   - personal
 ---
@@ -9,6 +9,26 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Seeing Theory](https://seeing-theory.brown.edu) `Tools and Interactive Websites` *2025-11-30*
+- [Lumine: An Open Recipe for Building Generalist Agents in 3D Open Worlds - 2511.08892v1.pdf](https://arxiv.org/pdf/2511.08892) `Tech` *2025-11-28*
+- [A LITTLE RATTLESNAKE’S THEOXENY | APOCALYPSE CONFIDENTIAL](https://apocalypse-confidential.com/2022/08/02/a-little-rattlesnakes-theoxeny) `Reads` *2025-11-28*
+- [Intelligence and metabolism](https://raypeat.com/articles/articles/intelligence.shtml) `Reads` *2025-11-28*
+- [Meet Rey, the Admin of ‘Scattered Lapsus$ Hunters’ – Krebs on Security](https://krebsonsecurity.com/2025/11/meet-rey-the-admin-of-scattered-lapsus-hunters) `Reads` *2025-11-28*
+- [𐐔𐐯𐑅𐐲𐑉𐐯𐐻𐐮𐐿𐐪𐑌](https://fabled.sigilante.red/desereticon/blog) `Weird` *2025-11-28*
+- [Home | APOCALYPSE CONFIDENTIAL](https://apocalypse-confidential.com/home) `Collectives and Magazines` *2025-11-28*
+- [INTELLECT-3: A 100B+ MoE trained with large-scale RL](https://www.primeintellect.ai/blog/intellect-3) `Tech` *2025-11-27*
+- [INTELLECT_3_Technical_Report.pdf](https://storage.googleapis.com/intellect-3-paper/INTELLECT_3_Technical_Report.pdf) `Tech` *2025-11-27*
+- [Effective harnesses for long-running agents \ Anthropic](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents) `Tech` *2025-11-27*
+- [Building Sovereign Applications with NockApp](https://www.nockchain.org/nockapp/?ref=nockchain-newsletter) `Tech` *2025-11-27*
+- [Miguel Carranza - My role as a founder CTO: Year Seven](https://miguelcarranza.es/cto-year-7) `Tech` *2025-11-26*
+- [The chip made for the AI inference era – the Google TPU](https://www.uncoveralpha.com/p/the-chip-made-for-the-ai-inference) `Tech` *2025-11-26*
+- [DFOS](https://www.dfos.com/?ref=blog.metalabel.com) `Collectives and Magazines` *2025-11-26*
+- [LLMs can invent their own compression - Rajan Agarwal](https://www.rajan.sh/llm-compression) `Tech` *2025-11-25*
+- [ANT plus is PAN for ants](https://computer.rip/2023-01-02-ANT-plus-is-PAN-for-ants.html) `Tech` *2025-11-25*
+- [Commit Mono. Neutral programming typeface.](https://commitmono.com) `Art` *2025-11-25*
+- [Departure Mono](https://departuremono.com) `Art` *2025-11-25*
+- [Fran Sans Essay — Emily Sneddon](https://emilysneddon.com/fran-sans-essay) `Art` *2025-11-25*
+- [(1) GTK: Lou Reed Meets the Press (1974) - YouTube](https://www.youtube.com/watch?v=IeMIWCxHgQk) `Arts` *2025-11-24*
 - [Queueing theory - Wikipedia](https://en.wikipedia.org/wiki/Queueing_theory) `Wikis` *2025-11-23*
 - [Welcome](https://kubeden.io) `Tech` *2025-11-23*
 - [The Boring Part of Bell Labs - Elizabeth Van Nostrand](https://elizabethvannostrand.substack.com/p/the-boring-part-of-bell-labs) `Reads` *2025-11-23*
