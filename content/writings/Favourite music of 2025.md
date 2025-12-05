@@ -50,13 +50,17 @@ This is not an exhaustive list, just the ones that stood out the most to me.
 ### Albums/EPs
 
 - I Lay Down My Life For You (DIrector's Cut) - JPEGMAFIA
-  - Last year he was at the top and he remains one of my favourites.
+  - Last year he was at the top and he remains there...
 - Dead Channel Sky - clipping.
+  - While not as focused on storytelling as other of their albums, still highly enjoyable
 - ¡OK! - Khadija Al Hanafi
+  - I got really into footwork, and this was one of my best dicoveries.
 - MELBOURNE'S DEAD - Normal Pleasure
-- 40 - Jawnino
+  - Refreshing take on club music.
 - Clarity Of Cal - Vulfpeck
+  - Solidifiying their place as my favourite band of all time.
 - hexed! - aya
+- 40 - Jawnino
 - Barb and Feather - Red Snapper
 - SickElixir - Blawan
 - The Velvet Underground - Worldpeace DMT & Rowan
