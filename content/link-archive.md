@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2025-12-01
+date: 2025-12-08
 tags: 
   - personal
 ---
@@ -9,6 +9,22 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [i cracked a $200 software protection in a day with xcopy](https://www.ud2.rip/blog/enigma-protector) `Tech` *2025-12-06*
+- [Perpetual futures, explained](https://www.bitsaboutmoney.com/archive/perpetual-futures-explained) `Reads` *2025-12-06*
+- [Max Hodak - The binding problem](https://maxhodak.com/nonfiction/2025/12/05/the-binding-problem) `Reads` *2025-12-06*
+- [Announcing the NeurIPS 2025 Best Paper Awards – NeurIPS Blog](https://blog.neurips.cc/2025/11/26/announcing-the-neurips-2025-best-paper-awards) `Academic Papers and Resources` *2025-12-05*
+- [Mixing and Mastering in the Cloud | Access Analog](https://accessanalog.com) `Tech` *2025-12-05*
+- [APGsembly - Esolang](https://esolangs.org/wiki/APGsembly) `Wikis` *2025-12-04*
+- [TSMC Overseas Fabs – A Success?](https://newsletter.semianalysis.com/p/tsmc-overseas-fabs-a-success) `Tech` *2025-12-04*
+- [epistemic garden - mapping how ideas spread online](https://www.epistemic.garden) `Tools and Interactive Websites` *2025-12-03*
+- [Discover Great Writing - Paragraph](https://paragraph.com/home) `Collectives and Magazines` *2025-12-03*
+- [Focal point (game theory) - Wikipedia](https://en.wikipedia.org/wiki/Focal_point_(game_theory)) `Wikis` *2025-12-02*
+- [Lunar Society of Birmingham - Wikipedia](https://en.wikipedia.org/wiki/Lunar_Society_of_Birmingham) `Wikis` *2025-12-02*
+- [You and Your Research](https://www.cs.virginia.edu/~robins/YouAndYourResearch.html) `Reads` *2025-12-02*
+- [Experiences in Groups | Issue 51 | n+1 | Lily Scherlis](https://www.nplusonemag.com/issue-51/essays/experiences-in-groups) `Reads` *2025-12-02*
+- [How prompt caching works - Paged Attention and Automatic Prefix Caching plus practical tips | sankalp's blog](https://sankalp.bearblog.dev/how-prompt-caching-works) `Tech` *2025-12-01*
+- [The space of minds | karpathy](https://karpathy.bearblog.dev/the-space-of-minds) `Ideas` *2025-12-01*
+- [Underrated reasons to be thankful V](https://substack.com/inbox/post/180116489) `Ideas` *2025-12-01*
 - [Seeing Theory](https://seeing-theory.brown.edu) `Tools and Interactive Websites` *2025-11-30*
 - [Lumine: An Open Recipe for Building Generalist Agents in 3D Open Worlds - 2511.08892v1.pdf](https://arxiv.org/pdf/2511.08892) `Tech` *2025-11-28*
 - [A LITTLE RATTLESNAKE’S THEOXENY | APOCALYPSE CONFIDENTIAL](https://apocalypse-confidential.com/2022/08/02/a-little-rattlesnakes-theoxeny) `Reads` *2025-11-28*
