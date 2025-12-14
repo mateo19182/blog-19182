@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2025-12-08
+date: 2025-12-15
 tags: 
   - personal
 ---
@@ -9,6 +9,37 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Black Army of Hungary - Wikipedia](https://en.wikipedia.org/wiki/Black_Army_of_Hungary) `Wikis` *2025-12-14*
+- [Sicilian Expedition - Wikipedia](https://en.wikipedia.org/wiki/Sicilian_Expedition) `Wikis` *2025-12-14*
+- [Lysenkoism - Wikipedia](https://en.wikipedia.org/wiki/Lysenkoism) `Wikis` *2025-12-14*
+- [Caracalla - Wikipedia](https://en.wikipedia.org/wiki/Caracalla) `Wikis` *2025-12-14*
+- [Cat gap - Wikipedia](https://en.wikipedia.org/wiki/Cat_gap) `Wikis` *2025-12-14*
+- [Stanford CRFM](https://crfm.stanford.edu/2023/06/16/anticipatory-music-transformer.html) `Academic Papers and Resources` *2025-12-14*
+- [Anticipatory Music Transformer](https://arxiv.org/html/2306.08620v2) `Academic Papers and Resources` *2025-12-14*
+- [Discrete Diffusion Reading Group](https://d-llms.io) `Academic Papers and Resources` *2025-12-14*
+- [PerTok: Expressive Encoding and Modeling of Symbolic Musical Ideas and Variations](https://arxiv.org/html/2410.02060v1) `Academic Papers and Resources` *2025-12-14*
+- [Goodbye Microservices | Twilio](https://www.twilio.com/en-us/blog/developers/best-practices/goodbye-microservices) `Tech` *2025-12-14*
+- [Forum poweruser forum](https://tsvibt.blogspot.com/2025/11/forum-poweruser-forum.html) `Reads` *2025-12-14*
+- [Why milk costs $9/gallon in Hawaii - Kuiper's blog](https://justinkuiper.substack.com/p/why-milk-costs-9gallion-in-hawaii) `Reads` *2025-12-14*
+- [Babble — LessWrong](https://www.lesswrong.com/posts/i42Dfoh4HtsCAfXxL/babble) `Ideas` *2025-12-14*
+- [States Can Always Just Be Dumb - by WSCFriedman](https://asourdays.substack.com/p/states-can-always-just-be-dumb#footnote-1-179515748) `Ideas` *2025-12-14*
+- [Why men aren't 5'11 (and other statistical ghosts)](https://justinkuiper.substack.com/p/why-men-arent-511-and-other-statistical) `Ideas` *2025-12-14*
+- [Stanford CRFM](https://crfm.stanford.edu/2024/08/06/co-composition.html) `Art` *2025-12-14*
+- [Open Asteroid Impact](https://openasteroidimpact.org/#economy) `Weird` *2025-12-14*
+- [Algon33 Blog](https://algon-33.github.io) `Blogs` *2025-12-13*
+- [Infinite Music Player](https://rickzx.github.io/inf-music) `Tech` *2025-12-13*
+- [2016 ML thoughts – Every Man a Debtor](https://alok.github.io/2023/02/09/when-to-stop) `Tech` *2025-12-13*
+- [What it's like to dissect a cadaver – Every Man a Debtor](https://alok.github.io/2022/11/09/dissection) `Reads` *2025-12-13*
+- [Book Review: The Land Trap by Mike Bird - by Lars Doucet](https://progressandpoverty.substack.com/p/book-review-the-land-trap-by-mike?utm_source=substack&utm_medium=email) `Reads` *2025-12-13*
+- [Notes on Internet Addiction - by Ben Roy - Patchwork](https://benroy.substack.com/p/notes-on-internet-addiction) `Ideas` *2025-12-13*
+- [You can just do things: 5 frames](https://algon-33.github.io/2025-11-23-You%20can%20just%20do%20things%205%20frames.html) `Ideas` *2025-12-13*
+- [Space Industries Are Lifting Off - by Tomas Pueyo](https://substack.com/inbox/post/181162926) `Tech` *2025-12-10*
+- [EigenLoRAx](https://eigenlora.webflow.io) `Academic Papers and Resources` *2025-12-09*
+- [Abdelhadi | عبدالهادي](https://thegeeko.me) `Tech` *2025-12-08*
+- [How to put Tailscale on a jailbroken Kindle (and why you should)](https://tailscale.com/blog/tailscale-jailbroken-kindle) `Tech` *2025-12-08*
+- [Turtletoy](https://turtletoy.net) `Tech` *2025-12-08*
+- [Recortes 2025 - Javi Santana](https://javisantana.substack.com/p/recortes-2025) `Tech` *2025-12-08*
+- [Bandcamp Daily](https://daily.bandcamp.com) `Collectives and Magazines` *2025-12-08*
 - [i cracked a $200 software protection in a day with xcopy](https://www.ud2.rip/blog/enigma-protector) `Tech` *2025-12-06*
 - [Perpetual futures, explained](https://www.bitsaboutmoney.com/archive/perpetual-futures-explained) `Reads` *2025-12-06*
 - [Max Hodak - The binding problem](https://maxhodak.com/nonfiction/2025/12/05/the-binding-problem) `Reads` *2025-12-06*
