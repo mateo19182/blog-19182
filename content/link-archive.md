@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2025-12-15
+date: 2025-12-22
 tags: 
   - personal
 ---
@@ -9,6 +9,50 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [GitHub - facebookresearch/dacvae: DACVAE](https://github.com/facebookresearch/dacvae?tab=readme-ov-file) `Academic Papers and Resources` *2025-12-21*
+- [Backing up Spotify - Anna’s Blog](https://annas-archive.li/blog/backing-up-spotify.html) `Tech` *2025-12-21*
+- [How to game the METR plot — LessWrong](https://www.lesswrong.com/posts/2RwDgMXo6nh42egoC/how-to-game-the-metr-plot) `Tech` *2025-12-21*
+- [2025 LLM Year in Review | karpathy](https://karpathy.bearblog.dev/year-in-review-2025) `Tech` *2025-12-21*
+- [18,000 Reasons It’s So Hard to Build a Chip Factory in America - The New York Times](https://archive.ph/BnGZ1) `Tech` *2025-12-21*
+- [The Friendship That Made Google Huge | The New Yorker](https://archive.ph/usLjB) `Tech` *2025-12-21*
+- [you have all these rules, and you think they'll save you](https://mindslice.substack.com/p/you-have-all-these-rules-and-you) `Reads` *2025-12-21*
+- [1. Hiperstición - by NKR-OS - Tecgnosis y occultura.](https://nkr424503.substack.com/p/1-hipersticion) `Reads` *2025-12-21*
+- [All I Want for Christmas Are Unregulated Chinese Peptides](https://www.corememory.com/p/sf-rave-chinese-peptides) `Reads` *2025-12-21*
+- [How To Ask Questions The Smart Way](http://www.catb.org/esr/faqs/smart-questions.html) `Reads` *2025-12-21*
+- [Life on Britain's prison island](https://archive.ph/H21eE) `Reads` *2025-12-21*
+- [My Weirdest Experience — LessWrong](https://www.lesswrong.com/posts/FxjJn8ZyWPbm75qpP/my-weirdest-experience) `Ideas` *2025-12-21*
+- [Always Discard Fascist Policies — LessWrong](https://www.lesswrong.com/posts/bXoaRShdqbf2P9Ma9/always-discard-fascist-policies) `Ideas` *2025-12-21*
+- [Home - The XY Problem](https://xyproblem.info) `Ideas` *2025-12-21*
+- [The Frontier in 2025](https://frontier2025.netlify.app) `Tools and Interactive Websites` *2025-12-21*
+- [Swift Bricks - Cheap & Easy!](https://www.swift-conservation.org/swift_bricks.htm) `Tools and Interactive Websites` *2025-12-21*
+- [Latent Domains](https://latent.domains/met-public-art/index.html) `Tools and Interactive Websites` *2025-12-21*
+- [Department of Justice | Epstein Library | United States Department of Justice](https://www.justice.gov/epstein) `Weird` *2025-12-21*
+- [coolthingsifoundontheinternet.com/brian](https://coolthingsifoundontheinternet.com/brian) `Museums - Indexers` *2025-12-21*
+- [Alexandria](https://sfalexandria.com/posts) `Collectives and Magazines` *2025-12-21*
+- [Principles of Vasocomputation: A Unification of Buddhist Phenomenology, Active Inference, and Physical Reflex (Part I) – Opentheory.net](https://opentheory.net/2023/07/principles-of-vasocomputation-a-unification-of-buddhist-phenomenology-active-inference-and-physical-reflex-part-i) `Academic Papers and Resources` *2025-12-19*
+- [DGoettlich/history-llms: Information hub for our project training the largest possible historical LLMs.](https://github.com/DGoettlich/history-llms) `Tech` *2025-12-19*
+- [Redacted by Counsel: A supply chain postmortem](https://heartbreak.ing) `Tech` *2025-12-19*
+- [How we pwned X (Twitter), Vercel, Cursor, Discord, and hundreds of companies through a supply-chain attack](https://gist.github.com/hackermondev/5e2cdc32849405fff6b46957747a2d28) `Tech` *2025-12-19*
+- [how to hack discord, vercel and more with one easy trick - eva's site](https://kibty.town/blog/mintlify) `Tech` *2025-12-19*
+- [Empire of AI is wildly misleading on AI water use](https://andymasley.substack.com/p/empire-of-ai-is-wildly-misleading) `Tech` *2025-12-19*
+- [La insoportable levedad del shitpost - by Gala](https://girlpope.substack.com/p/la-insoportable-levedad-del-shitpost?utm_source=%2Finbox&utm_medium=reader2) `Ideas` *2025-12-19*
+- [Contra DSPy and GEPA](https://benanderson.work/blog/contra-dspy-gepa) `Tech` *2025-12-18*
+- [Cloudflare Radar 2025 Year in Review](https://radar.cloudflare.com/year-in-review/2025) `Tech` *2025-12-18*
+- [Yakub (Nation of Islam) - Wikipedia](https://en.wikipedia.org/wiki/Yakub_(Nation_of_Islam)) `Wikis` *2025-12-17*
+- [Economics of Orbital vs Terrestrial Data Centers](https://andrewmccalip.com/space-datacenters) `Tech` *2025-12-17*
+- [nicholaschen.me/blogs/ontology-text-to-sql](https://nicholaschen.me/blogs/ontology-text-to-sql) `Tech` *2025-12-17*
+- [AI_s_Thermal_Cliff.pdf](https://www.jaguaranalytics.com/wp-content/uploads/2025/12/AI_s_Thermal_Cliff.pdf) `Tech` *2025-12-17*
+- [Liar's Valuation - by Nikunj Kothari - Balancing Act](https://writing.nikunjk.com/p/liars-valuation) `Tech` *2025-12-17*
+- [How We Built a Leading Reasoning Model (Olmo 3) - YouTube](https://www.youtube.com/watch?v=uaZ3yRdYg8A) `Academic Papers and Resources` *2025-12-16*
+- [Nature's many attempts to evolve a Nostr](https://newsletter.squishy.computer/p/natures-many-attempts-to-evolve-a) `Tech` *2025-12-16*
+- [Current Market Valuation | Data-Driven US Stock Market Valuation Models](https://www.currentmarketvaluation.com) `Reads` *2025-12-16*
+- [Why is South Korean fertility so low?](https://www.worksinprogress.news/p/why-is-south-korean-fertility-so) `Reads` *2025-12-16*
+- [Fun Life Experiments](https://docs.google.com/document/d/14fzPPAGdscb4wP-2tHTNQHV8BlK1jCSzeCPRn8zDojE/mobilebasic#cmnt_ref1) `Ideas` *2025-12-16*
+- [Heaven's Gate - How and When It May Be Entered](https://heavensgate.com) `Weird` *2025-12-16*
+- [How critical is ASML to GPU progress?](https://algon-33.github.io/2025-11-19-How%20critical%20is%20ASML%20to%20GPU%20progress.html) `Reads` *2025-12-15*
+- [The History of Xerox - by Bradford Morgan White](https://www.abortretry.fail/p/the-history-of-xerox) `Reads` *2025-12-15*
+- [Unambitious (v3) - by Vishal Prasad - Vishal’s Substack](https://vishalblog.substack.com/p/unambitious-v3) `Reads` *2025-12-15*
+- [Observations in China](https://hudzah.substack.com/p/observations-in-china?triedRedirect=true) `Ideas` *2025-12-15*
 - [Black Army of Hungary - Wikipedia](https://en.wikipedia.org/wiki/Black_Army_of_Hungary) `Wikis` *2025-12-14*
 - [Sicilian Expedition - Wikipedia](https://en.wikipedia.org/wiki/Sicilian_Expedition) `Wikis` *2025-12-14*
 - [Lysenkoism - Wikipedia](https://en.wikipedia.org/wiki/Lysenkoism) `Wikis` *2025-12-14*
