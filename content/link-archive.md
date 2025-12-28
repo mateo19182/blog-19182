@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2025-12-22
+date: 2025-12-29
 tags: 
   - personal
 ---
@@ -9,6 +9,16 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Miguel Carranza - My role as a founder CTO: Year Eight](https://miguelcarranza.es/cto-year-8) `Tech` *2025-12-27*
+- [Rehn–Meidner model - Wikipedia](https://en.wikipedia.org/wiki/Rehn%E2%80%93Meidner_model) `Wikis` *2025-12-26*
+- [Lizardman's Constant - Wiktionary, the free dictionary](https://en.wiktionary.org/wiki/Lizardman%27s_Constant) `Wikis` *2025-12-26*
+- [Optics Primer, Part 1: Traditional Pluggable Optics](https://www.chipstrat.com/p/optics-primer-part-1-traditional) `Tech` *2025-12-26*
+- [Centro Ruth Richardson - Universidad de las Hespérides](https://hesperides.edu.es/centro-ruth-richardson/#informes) `Museums - Indexers` *2025-12-26*
+- [Optimizing Large-Scale Pretraining at Character.ai](https://blog.character.ai/squinch) `Tech` *2025-12-24*
+- [How I Started Contributing to tinygrad — My First 4 Merged PRs](https://ninoristeski.github.io/blogs/how-i-started-contributing-to-tinygrad.html) `Tech` *2025-12-23*
+- [Home | MSCHF](https://mschf.com) `Art` *2025-12-23*
+- [Xavier Niel - Wikipedia](https://en.wikipedia.org/wiki/Xavier_Niel) `Wikis` *2025-12-22*
+- [timthompson.com/plum/cgi/showlist.cgi?sort=name&concise=yes](https://timthompson.com/plum/cgi/showlist.cgi?sort=name&concise=yes) `Tech` *2025-12-22*
 - [GitHub - facebookresearch/dacvae: DACVAE](https://github.com/facebookresearch/dacvae?tab=readme-ov-file) `Academic Papers and Resources` *2025-12-21*
 - [Backing up Spotify - Anna’s Blog](https://annas-archive.li/blog/backing-up-spotify.html) `Tech` *2025-12-21*
 - [How to game the METR plot — LessWrong](https://www.lesswrong.com/posts/2RwDgMXo6nh42egoC/how-to-game-the-metr-plot) `Tech` *2025-12-21*
