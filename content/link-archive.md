@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2025-12-29
+date: 2026-01-05
 tags: 
   - personal
 ---
@@ -9,6 +9,41 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [ML Researcher - NLP & AI Systems](https://gjyotin305.github.io/blog/moondream-technical) `Tech` *2026-01-04*
+- [A rationalist’s guide to manifestation. - Isabel Unraveled](https://read.isabelunraveled.com/p/manifest-rationally) `Reads` *2026-01-04*
+- [A Hackers Guide To Job Hunting - Jake’s Newsletter](https://justjake.substack.com/p/a-hackers-guide-to-job-hunting) `Ideas` *2026-01-04*
+- [Cultural Eigenclusters](https://www.eigencultures.com/?dataset=american_cultural_evolution_2019_2023&clusters=1_bio_political_state_of_exception%2C2_remote_atomization_and_digital_dualism%2C3_epistemic_fragmentation_and_conspiracy) `Tools and Interactive Websites` *2026-01-04*
+- [Carrington Event - Wikipedia](https://en.wikipedia.org/wiki/Carrington_Event) `Wikis` *2026-01-03*
+- [Not For Human Consumption - by Somewhere - Vectorculture](https://vectorculture.substack.com/p/not-for-human-consumption) `Reads` *2026-01-03*
+- [When will computer hardware match the human brain? by Hans Moravec](https://jetpress.org/volume1/moravec.htm) `Academic Papers and Resources` *2026-01-02*
+- [INTELLIGENCE - ws563sd6050.pdf](https://stacks.stanford.edu/file/druid:ws563sd6050/ws563sd6050.pdf) `Academic Papers and Resources` *2026-01-02*
+- [Command Line Accounting in Context - Beancount Documentation](https://beancount.github.io/docs/command_line_accounting_in_context.html) `Tech` *2026-01-02*
+- [Reflections on 2025 - Samuel Albanie](https://samuelalbanie.substack.com/p/reflections-on-2025?utm_medium=web&triedRedirect=true) `Reads` *2026-01-02*
+- [Readme | Zhengdong](https://zhengdongwang.com/readme) `Tech` *2026-01-01*
+- [2025 letter | Zhengdong](https://zhengdongwang.com/2025/12/30/2025-letter.html) `Reads` *2026-01-01*
+- [Times New American: A Tale of Two Fonts - neverland](https://hsu.cy/2025/12/times-new-american) `Reads` *2026-01-01*
+- [The Electric Slide - by Packy McCormick and Sam D'Amico](https://www.notboring.co/p/the-electric-slide) `Ideas` *2026-01-01*
+- [the friendship theory of everything - by Ava](https://www.avabear.xyz/p/the-friendship-theory-of-everything) `Ideas` *2026-01-01*
+- [Ex-All: A-Gen v.01](https://ex-all.com/a-gen) `Arts` *2025-12-31*
+- [Bringing 4K and HDR to Anime at Netflix with Sol Levante | by Netflix Technology Blog | Netflix TechBlog](https://netflixtechblog.com/bringing-4k-and-hdr-to-anime-at-netflix-with-sol-levante-fa68105067cd) `Tech` *2025-12-31*
+- [Animated AI](https://animatedai.github.io) `Tech` *2025-12-31*
+- [Ex-All](https://ex-all.com) `Tech` *2025-12-31*
+- [Vibecession: Much More Than You Wanted To Know](https://www.astralcodexten.com/p/vibecession-much-more-than-you-wanted) `Reads` *2025-12-31*
+- [Turning 20 while the world turns upside-down | Parv Mahajan](https://parvmahajan.com/2025/12/21/turning-20.html) `Ideas` *2025-12-31*
+- [Capital in the 22nd Century](https://philiptrammell.substack.com/p/capital-in-the-22nd-century) `Reads` *2025-12-30*
+- [Collision between a car and a submarine - Wikipedia](https://en.wikipedia.org/wiki/Collision_between_a_car_and_a_submarine) `Wikis` *2025-12-29*
+- [Khecarī mudrā - Wikipedia](https://en.wikipedia.org/wiki/Khecar%C4%AB_mudr%C4%81) `Wikis` *2025-12-29*
+- [Cryptophasia - Wikipedia](https://en.wikipedia.org/wiki/Cryptophasia) `Wikis` *2025-12-29*
+- [List of people who have lived in airports - Wikipedia](https://en.wikipedia.org/wiki/List_of_people_who_have_lived_in_airports) `Wikis` *2025-12-29*
+- [∘.computer junk](https://outerproduct.net) `Tech` *2025-12-29*
+- [A Guide to Claude Code 2.0 and getting better at using coding agents | sankalp's blog](https://sankalp.bearblog.dev/my-experience-with-claude-code-20-and-how-to-get-better-at-using-coding-agents) `Tech` *2025-12-29*
+- [RickCarlino.com](https://rickcarlino.com/notes/electronics/my-first-meshtastic-network.html) `Tech` *2025-12-29*
+- [Christine Ye - Research](https://christine8888.github.io/work.html) `Tech` *2025-12-29*
+- [Inside the CIA’s secret mission to sabotage Afghanistan’s opium](https://archive.ph/S5dJJ) `Reads` *2025-12-29*
+- [How to be more agentic - by Cate Hall - Useful Fictions](https://usefulfictions.substack.com/p/how-to-be-more-agentic?utm_medium=web&triedRedirect=true) `Ideas` *2025-12-29*
+- [San Francisco Identities](https://walzr.com/sf-identities) `Ideas` *2025-12-29*
+- [Links for Winter 2026 - by Malmesbury - Telescopic Turnip](https://malmesbury.substack.com/p/links-for-winter-2026?utm_medium=web&triedRedirect=true) `Museums - Indexers` *2025-12-29*
+- [Multiplayer browser games](https://wiki.migueldeoleiros.com/notes/20250801105822-multiplayer_browser_games) `Museums - Indexers` *2025-12-29*
 - [Miguel Carranza - My role as a founder CTO: Year Eight](https://miguelcarranza.es/cto-year-8) `Tech` *2025-12-27*
 - [Rehn–Meidner model - Wikipedia](https://en.wikipedia.org/wiki/Rehn%E2%80%93Meidner_model) `Wikis` *2025-12-26*
 - [Lizardman's Constant - Wiktionary, the free dictionary](https://en.wiktionary.org/wiki/Lizardman%27s_Constant) `Wikis` *2025-12-26*
