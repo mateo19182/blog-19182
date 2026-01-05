@@ -4,8 +4,7 @@ tags:
   # - personal
 ---
 
-I'm currently at [TriboSolutions](https://tribosolutions.es), a company I co-founded with some friends. 
-I also work part-time at [Zepo](https://zepo.app) and on the side with the [AudiaLab](https://audialab.com/) team.
+I'm currently at [TriboSolutions](https://tribosolutions.es), a company I co-founded with some friends, and work part-time at [Zepo](https://zepo.app).
 
 Some of the things I'm currently consuming:
 

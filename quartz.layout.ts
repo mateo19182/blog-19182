@@ -34,6 +34,10 @@ export const defaultContentPageLayout: PageLayout = {
     Component.ArticleTitle(),
     Component.ContentMeta(),
     Component.TagList(),
+    Component.ConditionalRender({
+      component: Component.LinkArchiveFilter(),
+      condition: (page) => page.fileData.slug === "link-archive",
+    }),
     // Show a custom callout only on pages with the 'project' tag
   ],
   left: [
