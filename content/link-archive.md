@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-01-12
+date: 2026-01-19
 tags: 
   - personal
 ---
@@ -9,6 +9,19 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Robert Kegan - Wikipedia](https://en.wikipedia.org/wiki/Robert_Kegan#The_Evolving_Self) `Wikis` *2026-01-18*
+- [OpenMAIL - OpenAI lawsuit emails](https://openmail.one/?6=) `Tools and Interactive Websites` *2026-01-18*
+- [abelard public education website](https://www.abelard.org/index.htm) `Weird` *2026-01-18*
+- [manifesto :: moonboy archive | Are.na](https://www.are.na/ertekin-erdin/manifesto-moonboy-archive) `Museums - Indexers` *2026-01-18*
+- [From Tokens to Burgers – A Water Footprint Face-Off](https://newsletter.semianalysis.com/p/from-tokens-to-burgers-a-water-footprint?utm_source=post-email-title&publication_id=6349492&post_id=184660216&utm_campaign=email-post-title&isFreemail=true&r=hjfy1&triedRedirect=true&utm_medium=email) `Tech` *2026-01-16*
+- [When Models Manipulate Manifolds: The Geometry of a Counting Task](https://transformer-circuits.pub/2025/linebreaks/index.html#prediction) `Tech` *2026-01-16*
+- [Hacking Kia: Remotely Controlling Cars With Just a License Plate](https://samcurry.net/hacking-kia) `Tech` *2026-01-16*
+- [Private inference | Confer Blog](https://confer.to/blog/2026/01/private-inference) `Tech` *2026-01-15*
+- [Rethinking Fast and Slow - by Carl Hendrick](https://carlhendrick.substack.com/p/rethinking-fast-and-slow) `Reads` *2026-01-15*
+- [Thinking vs Unfolding — LessWrong](https://www.lesswrong.com/posts/N7QtcqrN5hQwkjpGg/thinking-vs-unfolding) `Reads` *2026-01-15*
+- [Solving the Electroporation Bottleneck](https://www.asimov.press/p/electroporation) `Reads` *2026-01-15*
+- [ASCII Clouds](https://caidan.dev/portfolio/ascii_clouds) `Tools and Interactive Websites` *2026-01-15*
+- [REVIEW: McDonald&-x27;s Sprite - donald boat](https://donaldboat.substack.com/p/review-mcdonalds-sprite-b8f) `Weird` *2026-01-15*
 - [List of prematurely reported obituaries - Wikipedia](https://en.wikipedia.org/wiki/List_of_prematurely_reported_obituaries?ref=dispatch-media.com) `Wikis` *2026-01-11*
 - [Spite house - Wikipedia](https://en.wikipedia.org/wiki/Spite_house?ref=dispatch-media.com) `Wikis` *2026-01-11*
 - [The State of European Tech 2025](https://www.stateofeuropeantech.com) `Tech` *2026-01-11*
