@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-01-19
+date: 2026-01-26
 tags: 
   - personal
 ---
@@ -9,6 +9,29 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Blog - Igor Babuschkin](https://babuschk.in/blog.html) `Blogs` *2026-01-25*
+- [DSHR's Blog: Internet Archive's Storage](https://blog.dshr.org/2026/01/internet-archives-storage.html) `Tech` *2026-01-25*
+- [Booting from a vinyl record &-8211; BOGIN, JR.](https://boginjr.com/it/sw/dev/vinyl-boot) `Tech` *2026-01-25*
+- [Gas Town’s Agent Patterns, Design Bottlenecks, and Vibecoding at Scale](https://maggieappleton.com/gastown) `Tech` *2026-01-25*
+- [Ronald Fisher - Wikipedia](https://en.wikipedia.org/wiki/Ronald_Fisher) `Wikis` *2026-01-24*
+- [phase8 - ACOUSTIC SYNTHESIZER | KORG (USA)](https://www.korg.com/us/products/dj/phase8/index.php) `Arts` *2026-01-24*
+- [About | elliot.my](https://elliot.my/about) `Blogs` *2026-01-24*
+- [](https://cannoneyed.com/projects/isometric-nyc) `Tech` *2026-01-24*
+- [](https://openai.com/index/scaling-postgresql) `Tech` *2026-01-24*
+- [The Story | Proof of Corn](https://proofofcorn.com/story) `Tech` *2026-01-24*
+- [Sixteen thoughts on Greenland](https://www.siliconcontinent.com/p/sixteen-thoughts-on-greenland?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-01-24*
+- [Longing for the Cultural Revolution in China Today](https://www.chinatalk.media/p/longing-for-the-cultural-revolution?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-01-24*
+- [Does Pentagon Pizza Theory Work? ](https://goflaw.substack.com/p/does-pentagon-pizza-theory-work) `Reads` *2026-01-24*
+- [Video Games as Art · Gwern.net](https://gwern.net/video-game-art) `Reads` *2026-01-24*
+- [A manifesto on shower temperature control](https://benholmen.com/blog/shower-temperature-control) `Reads` *2026-01-24*
+- [The CIA Poisoned My Dog - Never the Same River Twice](https://neverthesamerivertwice.substack.com/p/the-cia-poisoned-my-dog) `Reads` *2026-01-24*
+- [How Many Shower Controls Are There?, by Gwern, GPT-5.2 Pro · Gwern.net](https://gwern.net/shower-controls) `Reads` *2026-01-24*
+- [Why read novels? - DYNOMIGHT INTERNET NEWSLETTER](https://dynomight.substack.com/p/novels?utm_source=%2Finbox&utm_medium=reader2) `Ideas` *2026-01-24*
+- [How To Cancel Someone - by Aella - Knowingless](https://aella.substack.com/p/how-to-cancel-someone?utm_source=%2Finbox&utm_medium=reader2) `Ideas` *2026-01-24*
+- [archive.ph](https://archive.ph/3PGIf) `Reads` *2026-01-22*
+- [node.music // electroacoustic timeline](https://nodemusic.cc) `Arts` *2026-01-21*
+- [Foundation MoE Training Worklogs Part 1 - NOUS RESEARCH](https://nousresearch.com/moe-scaling-field-notes) `Tech` *2026-01-21*
+- [Why not dot com - Defender’s Corner](https://defenderofthebasic.substack.com/p/why-not-dot-com) `Reads` *2026-01-21*
 - [Robert Kegan - Wikipedia](https://en.wikipedia.org/wiki/Robert_Kegan#The_Evolving_Self) `Wikis` *2026-01-18*
 - [OpenMAIL - OpenAI lawsuit emails](https://openmail.one/?6=) `Tools and Interactive Websites` *2026-01-18*
 - [abelard public education website](https://www.abelard.org/index.htm) `Weird` *2026-01-18*
