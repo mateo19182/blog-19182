@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-01-26
+date: 2026-02-02
 tags: 
   - personal
 ---
@@ -9,6 +9,24 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Usenet personality - Wikipedia](https://en.wikipedia.org/wiki/Usenet_personality) `Wikis` *2026-01-30*
+- [LLM Zoo](https://notes.ekzhang.com/zoo) `Tech` *2026-01-30*
+- [As Xubias Os Castros A Gaiteira | Historia de una barriada en imágenes y fotos antiguas](https://asxubiasoscastrosagaiteira.wordpress.com) `Reads` *2026-01-30*
+- [](http://bitcrusher.free.fr/roboton.html) `Arts` *2026-01-29*
+- [Arcee AI | Trinity Large: An Open 400B Sparse MoE Model](https://www.arcee.ai/blog/trinity-large) `Tech` *2026-01-29*
+- [](http://ascii.netart-datenbank.org/start.html) `Tech` *2026-01-29*
+- [](http://www.segerman.org) `Tech` *2026-01-29*
+- [Lean Essays: Wicked Problems](https://www.leanessays.com/2002/01/wicked-problems.html) `Ideas` *2026-01-29*
+- [-SILVIOBERLUSCONI É UN BASTARDO PEDOFILO STRA ASSASSINO! SI, É PROPRIO COSÍ! É UN GENOCIDA, FIGLIO, MARITO, PADRE E MEGA PAGATORE DI PUTTANE: IL SATANISTA NAZISTA, IL SATA卐NAZISTA PEDOFILO, MAFIOSO, STRAGISTA SILVIO BERLUSCONI! NE SCRIVE IL MIO......](https://groups.google.com/g/alt.ascii-art/c/vMDBa5few-4?pli=1) `Weird` *2026-01-29*
+- [Naslovnica](https://wiki.ljudmila.org/Naslovnica) `Collectives and Magazines` *2026-01-29*
+- [How I Made $350k in Financial Tournaments - Jordi Villar](https://jordivillar.com/blog/financial-tournaments) `Tech` *2026-01-27*
+- [Analog hole - Wikipedia](https://en.wikipedia.org/wiki/Analog_hole) `Wikis` *2026-01-26*
+- [The Coming War on Car Ownership | the singularity is nearer](https://geohot.github.io//blog/jekyll/update/2026/01/25/war-on-car-ownership.html) `Tech` *2026-01-26*
+- [The Coming War on General Computation - Wikisource, the free online library](https://en.wikisource.org/wiki/The_Coming_War_on_General_Computation) `Tech` *2026-01-26*
+- [Yabir's blog](https://yabirgb.com/posts/dark-age) `Tech` *2026-01-26*
+- [GitHub · Where software is built](https://github.com/zartbot/blog/issues) `Tech` *2026-01-26*
+- [The Possessed Machines: Dostoevsky's Demons and the Coming AGI Catastrophe](https://possessedmachines.com) `Reads` *2026-01-26*
+- [Dario Amodei — The Adolescence of Technology](https://www.darioamodei.com/essay/the-adolescence-of-technology) `Reads` *2026-01-26*
 - [Blog - Igor Babuschkin](https://babuschk.in/blog.html) `Blogs` *2026-01-25*
 - [DSHR's Blog: Internet Archive's Storage](https://blog.dshr.org/2026/01/internet-archives-storage.html) `Tech` *2026-01-25*
 - [Booting from a vinyl record &-8211; BOGIN, JR.](https://boginjr.com/it/sw/dev/vinyl-boot) `Tech` *2026-01-25*
