@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-02-02
+date: 2026-02-09
 tags: 
   - personal
 ---
@@ -9,6 +9,33 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [AI Explorables | PAIR](https://pair.withgoogle.com/explorables) `Academic Papers and Resources` *2026-02-08*
+- [Notion](https://harmless-keeper-948.notion.site/SUPERNOVA-ac34169297104947a752841a0345ab6f) `Tech` *2026-02-08*
+- [Libtard Intifada - by Marcus Flavinius](https://lettersfromtheprovinces.substack.com/p/libtard-intifada?utm_campaign=post-expanded-share&utm_medium=web&triedRedirect=true) `Reads` *2026-02-08*
+- [The Toughest Sell: A Founder's Guide to Startup Exits | Derek Yan](https://derekyan.com/ma-book) `Reads` *2026-02-08*
+- [Archives - Bartosz Ciechanowski](https://ciechanow.ski/archives) `Tools and Interactive Websites` *2026-02-08*
+- [The Waymo World Model: A New Frontier For Autonomous Driving Simulation](https://waymo.com/blog/2026/02/the-waymo-world-model-a-new-frontier-for-autonomous-driving-simulation) `Tech` *2026-02-07*
+- [As Rocks May Think | Eric Jang](https://evjang.com/2026/02/04/rocks.html) `Tech` *2026-02-06*
+- [Notes on Space GPUs - by Dwarkesh Patel - Dwarkesh Podcast](https://www.dwarkesh.com/p/notes-on-space-gpus) `Tech` *2026-02-06*
+- [
+Welcome to the Room | Jeffrey Snover&-039;s blog	](https://www.jsnover.com/blog/2026/02/01/welcome-to-the-room) `Ideas` *2026-02-06*
+- [Owning a $5M data center - comma.ai blog](https://blog.comma.ai/datacenter) `Tech` *2026-02-05*
+- [Staring into the abyss as a core life skill | benkuhn.net](https://www.benkuhn.net/abyss) `Ideas` *2026-02-05*
+- [Illegal number - Wikipedia](https://en.wikipedia.org/wiki/Illegal_number) `Wikis` *2026-02-04*
+- [Lessons Learned Shipping 500 Units of my First Hardware Product](https://www.simonberens.com/p/lessons-learned-shipping-500-units) `Tech` *2026-02-04*
+- [Tax – Visualize and compare taxes worldwide](https://www.howmuch.tax) `Tools and Interactive Websites` *2026-02-04*
+- [The Universe of Discourse : About me](https://blog.plover.com/meta/about-me.html) `Blogs` *2026-02-03*
+- [queck⠶cog](https://cog.spin.systems) `Tech` *2026-02-03*
+- [Direct Current Data Centers &-8211; Terraform Industries Blog](https://terraformindustries.wordpress.com/2026/01/30/direct-current-data-centers) `Tech` *2026-02-03*
+- [minichord](https://minichord.com) `Tech` *2026-02-03*
+- [💎 ONNX](https://ocu.spin.systems/onnx) `Tech` *2026-02-03*
+- [Ian's Shoelace Site](https://www.fieggen.com/shoelace) `Museums - Indexers` *2026-02-03*
+- [Ashcan comic - Wikipedia](https://en.wikipedia.org/wiki/Ashcan_comic) `Wikis` *2026-02-02*
+- [HTTP Cats](https://http.cat) `Tech` *2026-02-02*
+- [China’s AI Landscape: a free-for-all, not a central plan](https://www.chinatalk.media/p/chinas-ai-landscape-a-free-for-all) `Tech` *2026-02-02*
+- [Julia](https://borretti.me/fiction/julia) `Reads` *2026-02-02*
+- [On Becoming A Regular - by David Lipe](https://davidlipe.substack.com/p/on-becoming-a-regular?utm_medium=web&triedRedirect=true) `Reads` *2026-02-02*
+- [Reddit - The heart of the internet](https://www.reddit.com/r/bmbmbm/comments/1ix292n/geordie_greep_might_have_actually_saved_my_life) `Weird` *2026-02-02*
 - [Usenet personality - Wikipedia](https://en.wikipedia.org/wiki/Usenet_personality) `Wikis` *2026-01-30*
 - [LLM Zoo](https://notes.ekzhang.com/zoo) `Tech` *2026-01-30*
 - [As Xubias Os Castros A Gaiteira | Historia de una barriada en imágenes y fotos antiguas](https://asxubiasoscastrosagaiteira.wordpress.com) `Reads` *2026-01-30*
