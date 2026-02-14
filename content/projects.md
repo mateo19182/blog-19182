@@ -34,6 +34,12 @@ title: Projects
 <div class="project-list">
 
 <div class="project-card">
+  <div class="project-title"><a href="https://github.com/mateo19182/i18n-skill">i18n Skill</a></div>
+  <div class="project-desc">A skill for coding agents (claude code, opencode...) for adding i18n translations to big codebases that originally had hardcoded strings.
+</div>
+</div>
+
+<div class="project-card">
   <div class="project-title"><a href="https://solafune.com/competitions/26ff758c-7422-4cd1-bfe0-daecfc40db70?modal=%22%22&tab=&menu=about">Tree Canopy Detection Competition</a></div>
   <div class="project-desc">Competed on a tree canopy detection challenge using satellite imagery. Placed top 50 out of 4000+ participants. Explored Yolo, EOMT (DinoV3 backbone) and Mask2Former architectures. <a href="https://github.com/mateo19182/tree_canopy">code repository</a>.
 </div>

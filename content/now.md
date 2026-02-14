@@ -8,8 +8,9 @@ I'm currently at [TriboSolutions](https://tribosolutions.es), a company I co-fou
 
 Some of the things I'm currently consuming:
 
-| Time      | Reading                        | Watching        | Listening                                                                 | Other                                         |
-| --------- | -------                        | --------        | ---------                                                                 | -----                                         |
+| Time      | Reading | Watching | Listening | Other |
+| --------- | ------- | -------- | --------- | ----- |
+| Ene/25 | Unsong - Scott Alenxander | [The Truffle Hunters](https://www.youtube.com/watch?v=KFYhrc0AnVw) | [Overtime - Username, Marsh Crane](https://username.bandcamp.com/album/overtime) | [imáxenes históricas da Coruña](https://asxubiasoscastrosagaiteira.wordpress.com/) |
 | Dec/25   | Machine Decision Is Not Final: China and the History and Future of Artificial Intelligence | Pluribus | Black Mahogany - Moodyman | [All I Want for Christmas Are Unregulated Chinese Peptides](https://www.corememory.com/p/sf-rave-chinese-peptides) |
 | Nov/25    | [The Company Man](https://www.lesswrong.com/posts/JH6tJhYpnoCfFqAct/the-company-man) | House S1        | [The Velvet Underground (ROWAN) - World Peace DMT](https://worldpeacedmt.bandcamp.com/album/the-velvet-underground-rowan) | [192 weeks - Reflections](https://notes.ekzhang.com/reflections/192-weeks) |
 | Oct/25    | Legends of the Fall - Jim Harrison | [Rupert's Snub Cube and other Math Holes](https://youtu.be/QH4MviUE0_s?si=Stxe-ZDfm6NtgU5F) | [Ruby My Dear](https://rubymydear.bandcamp.com/) | [On Agency](https://www.henrikkarlsson.xyz/p/agency) |
