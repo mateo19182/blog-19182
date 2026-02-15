@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-02-09
+date: 2026-02-16
 tags: 
   - personal
 ---
@@ -9,6 +9,24 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [microgpt](https://karpathy.github.io/2026/02/12/microgpt) `Tech` *2026-02-14*
+- [The Story of Wall Street Raider - A 40-Year Odyssey from Harvard Law to Steam](https://www.wallstreetraider.com/story.html) `Reads` *2026-02-14*
+- [discord/twitch/kick/snapchat age verifier](https://age-verifier.kibty.town) `Tech` *2026-02-13*
+- [Why the SpaceX &amp; xAI Merger, IPO, and Pivot to the Moon?](https://unchartedterritories.tomaspueyo.com/p/spacex-xai) `Tech` *2026-02-13*
+- [What Happened With Bio Anchors? - by Scott Alexander](https://www.astralcodexten.com/p/what-happened-with-bio-anchors) `Reads` *2026-02-13*
+- [Hard is Not Defensible &mdash; Alex Crompton](https://www.alexcrompton.com/blog/2017/05/26/hard-is-not-defensible) `Ideas` *2026-02-13*
+- [ Pascual Merita ](https://www.pascualmerita.com) `Blogs` *2026-02-12*
+- [Text classification with Python 3.14's zstd module • Max Halford](https://maxhalford.github.io/blog/text-classification-zstd) `Tech` *2026-02-12*
+- [ blog | Pascual Merita ](https://www.pascualmerita.com/blog) `Tech` *2026-02-12*
+- [Is China Cooking Waymo? - by Nick Corvino - ChinaTalk](https://www.chinatalk.media/p/is-china-cooking-waymo) `Tech` *2026-02-12*
+- [Kanchipuram Saris &amp; Thinking Machines | Alter Magazine](https://altermag.com/articles/kanchipuram-saris-and-thinking-machines) `Reads` *2026-02-12*
+- [New Literary Writing on Science, Technology &amp; Progress.](https://altermag.com) `Collectives and Magazines` *2026-02-12*
+- [ ](https://www.cesalberca.com/es/blog/2025-reflexiones-en-profundidad) `Tech` *2026-02-11*
+- [No Toilet, No Bride - Wikipedia](https://en.wikipedia.org/wiki/No_Toilet,_No_Bride) `Wikis` *2026-02-10*
+- [America has a tungsten problem](https://www.noleary.com/blog/posts/1) `Tech` *2026-02-10*
+- [We&-x27;re Are All Wall Dancers Now  - by afra - ChinaTalk](https://www.chinatalk.media/p/were-are-all-wall-dancers-now) `Reads` *2026-02-10*
+- [Review: How Africa Works - by Oliver Kim](https://www.global-developments.org/p/how-africa-works) `Reads` *2026-02-10*
+- [Ranking Everyone I&-x27;ve Fucked, Numerically ](https://zoomtarded.substack.com/p/ranking-everyone-ive-fucked-numerically) `Weird` *2026-02-10*
 - [AI Explorables | PAIR](https://pair.withgoogle.com/explorables) `Academic Papers and Resources` *2026-02-08*
 - [Notion](https://harmless-keeper-948.notion.site/SUPERNOVA-ac34169297104947a752841a0345ab6f) `Tech` *2026-02-08*
 - [Libtard Intifada - by Marcus Flavinius](https://lettersfromtheprovinces.substack.com/p/libtard-intifada?utm_campaign=post-expanded-share&utm_medium=web&triedRedirect=true) `Reads` *2026-02-08*
