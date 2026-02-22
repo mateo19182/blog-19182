@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-02-16
+date: 2026-02-23
 tags: 
   - personal
 ---
@@ -9,6 +9,23 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [La Bonilista — ¿Y si ardiera la Administración? 🔥](https://app.supermo.no/share/fe3cef7bf85b86e0/47d4a492b1) `Tech` *2026-02-22*
+- [](https://iep.unibocconi.eu/sites/default/files/media/attach/WP_Cost%20of%20Failure%2C%20Disruptive%20Innovation%20and%20Targeted%20Flexicurity_0.pdf) `Academic Papers and Resources` *2026-02-20*
+- [Chinese Peptides ](https://www.chinatalk.media/p/chinese-peptides) `Reads` *2026-02-20*
+- [The Kaggle Grandmasters Playbook: 7 Battle&-x2d;Tested Modeling Techniques for Tabular Data | NVIDIA Technical Blog](https://developer.nvidia.com/blog/the-kaggle-grandmasters-playbook-7-battle-tested-modeling-techniques-for-tabular-data) `Reads` *2026-02-20*
+- [Cosmologically Unique IDs | Jason Fantl](https://jasonfantl.com/posts/Universal-Unique-IDs) `Reads` *2026-02-20*
+- [Child’s Play, by Sam Kriss](https://harpers.org/archive/2026/03/childs-play-sam-kriss-ai-startup-roy-lee) `Reads` *2026-02-20*
+- [Crime As Proxy For Disorder - by Scott Alexander](https://www.astralcodexten.com/p/crime-as-proxy-for-disorder) `Reads` *2026-02-20*
+- [](https://pagedout.institute/download/PagedOut_008.pdf) `Collectives and Magazines` *2026-02-20*
+- [The State of Machine Learning Competitions](https://mlcontests.com/state-of-machine-learning-competitions-2025/?ref=eo-s25-cta) `Tech` *2026-02-19*
+- [Google vs IPIDEA: Anatomy of a Residential Proxy Takedown](https://substack.thewebscraping.club/p/google-vs-ipidea-takedown?utm_source=share&utm_medium=android&r=1ned0w&triedRedirect=true) `Tech` *2026-02-18*
+- [WEB 4.0: The birth of superintelligent life](https://web4.ai) `Tech` *2026-02-18*
+- [The truth behind the 2026 J.P. Morgan Healthcare Conference](https://www.owlposting.com/p/the-truth-behind-the-2026-jp-morgan) `Reads` *2026-02-18*
+- [](https://aclanthology.org/2023.findings-acl.426.pdf) `Academic Papers and Resources` *2026-02-17*
+- [ACE-Step 1.5 Explained - by Jordi Pons - 👾 Art in Tech 👾](https://artintech.substack.com/p/ace-step-15-explained) `Academic Papers and Resources` *2026-02-17*
+- [](http://www.catb.org/jargon/html/story-of-mel.html) `Reads` *2026-02-17*
+- [Hitting 1,000 tokens per second on a single RTX 5090 | Alpin's Blog](https://blog.alpindale.net/posts/5090_decode_optimization) `Tech` *2026-02-16*
+- [The Sweet Lesson of Neuroscience—Asterisk](https://asteriskmag.com/issues/13/the-sweet-lesson-of-neuroscience?utm_source=Asterisk&utm_campaign=48b6d5a1b1-EMAIL_CAMPAIGN_9_2_2025_7_16_COPY_01&utm_medium=email&utm_term=0_e0307a4ab2-48b6d5a1b1-585690599) `Reads` *2026-02-16*
 - [microgpt](https://karpathy.github.io/2026/02/12/microgpt) `Tech` *2026-02-14*
 - [The Story of Wall Street Raider - A 40-Year Odyssey from Harvard Law to Steam](https://www.wallstreetraider.com/story.html) `Reads` *2026-02-14*
 - [discord/twitch/kick/snapchat age verifier](https://age-verifier.kibty.town) `Tech` *2026-02-13*
