@@ -10,7 +10,9 @@ This is a collection of links I've archived over time.
  If a link is broken and you're interested in it, contact me for an archive.
 
 - [La Bonilista — ¿Y si ardiera la Administración? 🔥](https://app.supermo.no/share/fe3cef7bf85b86e0/47d4a492b1) `Tech` *2026-02-22*
-- [](https://iep.unibocconi.eu/sites/default/files/media/attach/WP_Cost%20of%20Failure%2C%20Disruptive%20Innovation%20and%20Targeted%20Flexicurity_0.pdf) `Academic Papers and Resources` *2026-02-20*
+- [Cost of Failure, Disruptive
+Innovation and Targeted Flexicurity:
+more evidence supporting targeted reforms](https://iep.unibocconi.eu/sites/default/files/media/attach/WP_Cost%20of%20Failure%2C%20Disruptive%20Innovation%20and%20Targeted%20Flexicurity_0.pdf) `Academic Papers and Resources` *2026-02-20*
 - [Chinese Peptides ](https://www.chinatalk.media/p/chinese-peptides) `Reads` *2026-02-20*
 - [The Kaggle Grandmasters Playbook: 7 Battle&-x2d;Tested Modeling Techniques for Tabular Data | NVIDIA Technical Blog](https://developer.nvidia.com/blog/the-kaggle-grandmasters-playbook-7-battle-tested-modeling-techniques-for-tabular-data) `Reads` *2026-02-20*
 - [Cosmologically Unique IDs | Jason Fantl](https://jasonfantl.com/posts/Universal-Unique-IDs) `Reads` *2026-02-20*
