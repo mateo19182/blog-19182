@@ -41,21 +41,21 @@ export const defaultContentPageLayout: PageLayout = {
     // Show a custom callout only on pages with the 'project' tag
   ],
   left: [
-      Component.DesktopOnly(
-        Component.Explorer({
-          // mapFn: (node) => {
-          //   if (node.file) {
-          //     node.displayName = " " + node.displayName
-          //   } else {
-          //     node.displayName = "📂 " + node.displayName
-          //   }
-          // },
-          // When you click a folder, it will navigate to that folder's page
-          folderClickBehavior: "link",
-          folderDefaultState: "collapsed", 
-          useSavedState: false
-        }),
-      ),
+      // Component.DesktopOnly(
+      //   Component.Explorer({
+      //     // mapFn: (node) => {
+      //     //   if (node.file) {
+      //     //     node.displayName = " " + node.displayName
+      //     //   } else {
+      //     //     node.displayName = "📂 " + node.displayName
+      //     //   }
+      //     // },
+      //     // When you click a folder, it will navigate to that folder's page
+      //     folderClickBehavior: "link",
+      //     folderDefaultState: "collapsed", 
+      //     useSavedState: false
+      //   }),
+      // ),
     Component.ConditionalRender({
       component: Component.DesktopOnly(
         Component.RecentNotes({
@@ -69,19 +69,19 @@ export const defaultContentPageLayout: PageLayout = {
   right: [
     // Component.Backlinks(),
     
-    Component.DesktopOnly(
-      Component.Graph({
-        localGraph: {
-          // A more 'floaty' and colorful graph
-          repelForce: 0.7,
-          linkDistance: 40,
-        },
-        globalGraph: {
-          repelForce: 0.8,
-          linkDistance: 30,
-        },
-      }),
-    ),
+    // Component.DesktopOnly(
+    //   Component.Graph({
+    //     localGraph: {
+    //       // A more 'floaty' and colorful graph
+    //       repelForce: 0.7,
+    //       linkDistance: 40,
+    //     },
+    //     globalGraph: {
+    //       repelForce: 0.8,
+    //       linkDistance: 30,
+    //     },
+    //   }),
+    // ),
     Component.DesktopOnly(Component.TableOfContents()),
   ],
 }
