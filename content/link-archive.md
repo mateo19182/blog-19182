@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-02-23
+date: 2026-03-16
 tags: 
   - personal
 ---
@@ -9,10 +9,85 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Research | Noumena Network](https://noumena.com/research) `Tech` *2026-03-15*
+- [Library of Short Stories](https://www.libraryofshortstories.com) `Museums - Indexers` *2026-03-15*
+- [Scaling Postgres connections with PgBouncer — PlanetScale](https://planetscale.com/blog/scaling-postgres-connections-with-pgbouncer) `Tech` *2026-03-14*
+- [Sophie Wang](https://www.sophielwang.com/blog/jpeg) `Tech` *2026-03-14*
+- [How Stripe’s document databases supported 99.999% uptime with zero-downtime data migrations ](https://stripe.com/blog/how-stripes-document-databases-supported-99.999-uptime-with-zero-downtime-data-migrations?utm_source=perplexity) `Tech` *2026-03-14*
+- [](http://xahlee.info) `Tech` *2026-03-14*
+- [ARTÍCULOS | radiohacking](https://www.davidmarugan.es/articulos) `Tech` *2026-03-13*
+- [Can LLMs Be Computers? | Percepta](https://www.percepta.ai/blog/can-llms-be-computers) `Tech` *2026-03-13*
+- [SEÑALES CURIOSAS | radiohacking](https://www.davidmarugan.es/senales-curiosas) `Reads` *2026-03-13*
+- [Digest | Jan&-x2F;Feb 2026 | kipply&-x27;s blog](https://kipp.ly/jan-feb-2026) `Reads` *2026-03-13*
+- [Willingness to look stupid is a genuine moat in creative work](https://sharif.io/looking-stupid) `Ideas` *2026-03-13*
+- [](https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3-Super-Technical-Report.pdf) `Academic Papers and Resources` *2026-03-12*
+- [Search The Collection - The Metropolitan Museum of Art](https://www.metmuseum.org/art/collection/search?showOnly=has3d&offset=120) `Arts` *2026-03-12*
+- [Roberto Quintero](https://www.lifeinprogrezz.com) `Tech` *2026-03-12*
+- [-10 - Mi ascenso a Senior en MongoDB](https://newsletter.danielblanco.dev/p/10-mi-ascenso-a-senior-en-mongodb) `Tech` *2026-03-12*
+- [Solar Storms — LessWrong](https://www.lesswrong.com/posts/ghq9EwiXbRbWSnDzF/solar-storms) `Reads` *2026-03-12*
+- [getting absolutely eviscerated in my first substack beef](https://www.dannyjli.com/p/getting-absolutely-eviscerated-in?utm_campaign=post-expanded-share&utm_medium=web&triedRedirect=true) `Reads` *2026-03-12*
+- [Bubble Sorted Amen Break by Vee 🥑](https://parametricavocado.itch.io/amen-sorting) `Ideas` *2026-03-12*
+- [Bus und Reu](https://busundreu.com) `Arts` *2026-03-11*
+- [John Vining](https://jvining.com) `Tech` *2026-03-11*
+- [LLM Neuroanatomy: How I Topped the AI Leaderboard Without Changing a Single Weight | David Noel Ng](https://dnhkng.github.io/posts/rys) `Tech` *2026-03-11*
+- [Building a High-End AI Desktop | David Noel Ng](https://dnhkng.github.io/posts/hopper) `Tech` *2026-03-11*
+- [Remastera - Give Life Back to Music](https://remastera.com) `Tech` *2026-03-11*
+- [I Ching / Table of Contents](https://iching.r053.org) `Reads` *2026-03-11*
+- [Ceride-i Adliye](https://adaletdergisi.adalet.gov.tr/ceride-i-adliye.html) `Museums - Indexers` *2026-03-11*
+- [RealTuner.online - Tune on a real Boss TU-3](https://realtuner.online) `Arts` *2026-03-10*
+- [Blog | Confer Blog](https://confer.to/blog) `Tech` *2026-03-10*
+- [AMI Labs: Real World. Real Intelligence.](https://amilabs.xyz) `Tech` *2026-03-10*
+- [RFC 3514:  The Security Flag in the IPv4 Header ](https://www.rfc-editor.org/rfc/rfc3514) `Tech` *2026-03-10*
+- [No, it doesn&-39;t cost Anthropic $5k per Claude Code user - Martin Alderson](https://martinalderson.com/posts/no-it-doesnt-cost-anthropic-5k-per-claude-code-user) `Tech` *2026-03-10*
+- [ciberia.org | Flickr](https://www.flickr.com/photos/ciberia_org/with/26111710015) `Museums - Indexers` *2026-03-10*
+- [Last Statements](https://walzr.com/last-statements) `Museums - Indexers` *2026-03-09*
+- [Eval awareness in Claude Opus 4.6’s BrowseComp performance \ Anthropic](https://www.anthropic.com/engineering/eval-awareness-browsecomp) `Tech` *2026-03-08*
+- [sam kriss syllabus](https://docs.google.com/document/d/1QJE7HqqLXaQgE3kv7_16RnDkw8ar007EBbrgFlkUbSo/mobilebasic) `Museums - Indexers` *2026-03-08*
+- [Are AI Datacenters Increasing Electric Bills for American Households?](https://newsletter.semianalysis.com/p/are-ai-datacenters-increasing-electric) `Tech` *2026-03-05*
+- [Maybe there&-x27;s a pattern here?](https://dynomight.substack.com/p/pattern?utm_source=%2Finbox&utm_medium=reader2) `Ideas` *2026-03-05*
+- [A Dream of Spring for Open-Weight LLMs: 10 Architectures from Jan-Feb 2026](https://magazine.sebastianraschka.com/p/a-dream-of-spring-for-open-weight) `Academic Papers and Resources` *2026-03-04*
+- [The Lazy Tyranny of the Wait Calculation - by Ethan Mollick](https://www.oneusefulthing.org/p/the-lazy-tyranny-of-the-wait-calculation) `Tech` *2026-03-04*
+- [Does Data Really Have Weight? Exploring SSD Insights](https://cubiclenate.com/2026/03/04/data-has-weight-but-only-on-ssds-blathering) `Tech` *2026-03-04*
+- [Clawed - by Dean W. Ball - Hyperdimensional](https://www.hyperdimensional.co/p/clawed) `Tech` *2026-03-03*
+- [iranwest/exploitingiran.md at main · thinkhuman/iranwest · GitHub](https://github.com/thinkhuman/iranwest/blob/main/exploitingiran.md) `Reads` *2026-03-03*
+- [==mp3==download==](https://www.asciipr0n.com/mp3) `Museums - Indexers` *2026-03-03*
+- [The Dexterity Deadlock | Origami Robotics](https://www.origami-robotics.com/blog/dexterity-deadlocks.html) `Tech` *2026-03-02*
+- [Better air quality is the easiest way not to die](https://dynomight.net/air) `Reads` *2026-02-28*
+- [AGI Trades](https://danielgross.com/agitrades) `Ideas` *2026-02-28*
+- [Computer vision - by ftlsid - cybermonk](https://cybermonk.substack.com/p/computer-vision?publication_id=85332&utm_campaign=email-post-title&r=hjfy1&utm_medium=email) `Weird` *2026-02-28*
+- [Hypernova-60B v2602: Improved Tool-Calling Capability](https://multiversecomputing.com/papers/hypernova-60b-2602-same-intelligence-half-the-size-improved-tool-calling-capability) `Tech` *2026-02-27*
+- [More cows, more wives - The Works in Progress Newsletter](https://www.worksinprogress.news/p/more-cows-more-wives) `Reads` *2026-02-27*
+- [The Last Gasps of the Rent Seeking Class | the singularity is nearer](https://geohot.github.io//blog/jekyll/update/2026/02/26/the-last-gasps-of-the-rent-seeking-class.html) `Tech` *2026-02-26*
+- [Jimi Hendrix's Analog Wizardry Explained - IEEE Spectrum](https://spectrum.ieee.org/jimi-hendrix-systems-engineer) `Reads` *2026-02-26*
+- [A rent-seeking economy? &-8211; Michael Roberts Blog](https://thenextrecession.wordpress.com/2019/09/27/a-rent-seeking-economy) `Reads` *2026-02-26*
+- [Large-Scale Online Deanonymization with LLMs](https://simonlermen.substack.com/p/large-scale-online-deanonymization) `Ideas` *2026-02-26*
+- [Optophone - Wikipedia](https://en.wikipedia.org/wiki/Optophone) `Wikis` *2026-02-25*
+- [
+The First Fully General Computer Action Model | blog
+](https://si.inc/posts/fdm1) `Tech` *2026-02-25*
+- [How to build a distributed queue in a single JSON file on object storage](https://turbopuffer.com/blog/object-storage-queue) `Tech` *2026-02-25*
+- [I Taught My Dog to Vibe Code Games | Caleb Leak](https://www.calebleak.com/posts/dog-game) `Reads` *2026-02-25*
+- [Four Years at Tinybird - Jordi Villar](https://jordivillar.com/blog/tinybird) `Tech` *2026-02-24*
+- [Baguettotron Feature Explorer](https://lyramakesmusic.github.io/bread-slicer) `Tech` *2026-02-24*
+- [Inside Europe&-x27;s busiest domestic abuse court](https://dispatch-media.com/inside-europes-busiest-domestic-abuse-court/?ref=dispatch-articles-newsletter) `Reads` *2026-02-24*
+- [FT ranking: Europe’s leading start-up hubs 2026](https://www.ft.com/content/ab05487c-72f9-4c1c-9acf-07768693b105?utm_source=Comunicaci%C3%B3n+Dozen&utm_campaign=ee321ab803-EMAIL_CAMPAIGN_2025_11_11_10_52_COPY_01&utm_medium=email&utm_term=0_-72c1a24e3a-461485423) `Reads` *2026-02-24*
+- [The Hunt for Dark Breakfast &-8211; Ryan Moulton&-039;s Articles](https://moultano.wordpress.com/2026/02/22/the-hunt-for-dark-breakfast) `Ideas` *2026-02-24*
+- [Eric Slesinger | ericsles](https://ericslesinger.com) `Blogs` *2026-02-23*
+- [How I Use Claude Code | Boris Tane](https://boristane.com/blog/how-i-use-claude-code) `Tech` *2026-02-23*
+- [Look Ma, No Bubbles! Designing a Low-Latency Megakernel for Llama-1B · Hazy Research](https://hazyresearch.stanford.edu/blog/2025-05-27-no-bubbles) `Tech` *2026-02-23*
+- [How I built Timeframe, our family e-paper dashboard - Joel Hawksley](https://hawksley.org/2026/02/17/timeframe.html) `Tech` *2026-02-23*
+- [THE 2028 GLOBAL INTELLIGENCE CRISIS](https://www.citriniresearch.com/p/2028gic) `Tech` *2026-02-23*
+- [WHEN MUST I START KICKING AND SCREAMING AT YOU THAT IT IS FUCKING HAPPENING](https://ceselder.substack.com/p/when-must-i-start-kicking-and-screaming?r=bdhc9&utm_medium=ios&triedRedirect=true) `Tech` *2026-02-23*
+- [frontier model training methodologies | Alex Wa’s Blog](https://djdumpling.github.io/2026/01/31/frontier_training.html) `Tech` *2026-02-23*
+- [The Trimodal Nature of Software Engineering Salaries in the Netherlands and Europe - The Pragmatic Engineer](https://blog.pragmaticengineer.com/software-engineering-salaries-in-the-netherlands-and-europe) `Tech` *2026-02-23*
+- [GitHub - anomalyco/opencode: The open source coding agent.](https://github.com/anomalyco/opencode) `Tech` *2026-02-23*
+- [Agent Skills | OpenCode](https://opencode.ai/docs/skills) `Tech` *2026-02-23*
+- [My journey to the microwave alternate timeline — LessWrong](https://www.lesswrong.com/posts/8m6AM5qtPMjgTkEeD/my-journey-to-the-microwave-alternate-timeline) `Reads` *2026-02-23*
+- [On Craft in an Age of Abundance  - by Sophie](https://www.inevitabilityresearch.com/p/on-craft-in-an-age-of-abundance?publication_id=1501680&utm_campaign=email-post-title&r=hjfy1&utm_medium=email) `Reads` *2026-02-23*
+- [Conviction](https://www.conviction.com/startups) `Ideas` *2026-02-23*
+- [Welcome • freemediaheckyeah](https://fmhy.net) `Museums - Indexers` *2026-02-23*
 - [La Bonilista — ¿Y si ardiera la Administración? 🔥](https://app.supermo.no/share/fe3cef7bf85b86e0/47d4a492b1) `Tech` *2026-02-22*
-- [Cost of Failure, Disruptive
-Innovation and Targeted Flexicurity:
-more evidence supporting targeted reforms](https://iep.unibocconi.eu/sites/default/files/media/attach/WP_Cost%20of%20Failure%2C%20Disruptive%20Innovation%20and%20Targeted%20Flexicurity_0.pdf) `Academic Papers and Resources` *2026-02-20*
+- [](https://iep.unibocconi.eu/sites/default/files/media/attach/WP_Cost%20of%20Failure%2C%20Disruptive%20Innovation%20and%20Targeted%20Flexicurity_0.pdf) `Academic Papers and Resources` *2026-02-20*
 - [Chinese Peptides ](https://www.chinatalk.media/p/chinese-peptides) `Reads` *2026-02-20*
 - [The Kaggle Grandmasters Playbook: 7 Battle&-x2d;Tested Modeling Techniques for Tabular Data | NVIDIA Technical Blog](https://developer.nvidia.com/blog/the-kaggle-grandmasters-playbook-7-battle-tested-modeling-techniques-for-tabular-data) `Reads` *2026-02-20*
 - [Cosmologically Unique IDs | Jason Fantl](https://jasonfantl.com/posts/Universal-Unique-IDs) `Reads` *2026-02-20*
