@@ -58,7 +58,6 @@ title: Projects
 </div>
 </div>
 
-
 <div class="project-card">
   <div class="project-title"><a href="https://github.com/mateo19182/latex-translate">Translate latex projects using LLMs</a></div>
   <div class="project-desc">A tool to translate latex projects using LLMs, preserving structure and formatting.</div>
@@ -74,14 +73,12 @@ title: Projects
   <div class="project-desc">AI-powered CLI tool that merges data sources (.csv, .sql, .jsonl...) into a unified format. Automatically maps fields, infers missing headers, and rejects irrelevant information</div>
 </div>
 
-
 <div class="project-card">
   <div class="project-title"><a href="https://hackupc.com/">HackUPC25</a></div>
   <div class="project-desc">Competed on Spain's biggest hackathon, where we created 
     <a href="https://github.com/migueldeoleiros/vuelingconnect">VuelingConnect</a>, a multiplatform app that creates a decentralized communications network using BLE, with a creative approach to ensure battery efficiency and avoid redundancies.
 </div>
 </div>
-
 
 <div class="project-card">
   <div class="project-title"><a href="https://github.com/mateo19182/beats19182">Beats19182</a></div>
@@ -168,6 +165,9 @@ title: Projects
 <div class="project-card">
   <div class="project-title"><a href="https://youtu.be/xBBow3L3EF8">live(@)NADIE.CREA - 2023</a></div>
   <div class="project-desc">Performed an audiovisual live show at the event, using reactive and artifially generated visuals that morph with the music. Most of the music were my own productions, the visuals were made with StableDiffusion and TouchDesigner.</div>
+<div class="project-card">
+  <div class="project-title"><a href="https://github.com/mateo19182/dotfiles">dotfiles</a></div>
+  <div class="project-desc">My personal dotfiles for configuring development environments and tools.</div>
 </div>
 
 </div>
