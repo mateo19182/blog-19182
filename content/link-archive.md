@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-03-16
+date: 2026-03-23
 tags: 
   - personal
 ---
@@ -9,7 +9,30 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [](https://alachuacounty.us/Depts/epd/EPAC/Future%20Strategic%20Issues%20-%20Future%20Warfare%20Circa%202025%20-%20NASA.pdf) `Ideas` *2026-03-22*
+- [[2201.06387] The free energy principle made simpler but not too simple](https://arxiv.org/abs/2201.06387) `Academic Papers and Resources` *2026-03-21*
+- [How We Scaled Kimi K2.5 | Zhilin Yang&-39;s full GTC 2026 Keynote - YouTube](https://youtu.be/CwePo4847ho) `Academic Papers and Resources` *2026-03-21*
+- [The Incredible Story of the Cartel Olympics - The Atlantic](https://www.theatlantic.com/magazine/2026/05/mexico-cartel-la-union-tepito/686453/?gift=66OeTwjwIWd7-zlTK2lFDpLE4sFDmL9yxwzGt6-C2JE&utm_source=copy-link&utm_medium=social&utm_campaign=share) `Reads` *2026-03-21*
+- [Iran: The Kharg Fantasy and How This Ends](https://open.substack.com/pub/chinatalk/p/the-kharg-fantasy-lethalitymaxxing?utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Reads` *2026-03-21*
+- [On Beautiful Code](https://www.emptysetmag.com/articles/on-beautiful-code) `Reads` *2026-03-20*
+- [Empty Set Magazine](https://www.emptysetmag.com) `Collectives and Magazines` *2026-03-20*
+- [Light mode](https://space.ong.ac/escaping-flatland) `Tech` *2026-03-19*
+- [6,000 AWS accounts, three people, one platform: Lessons learned | AWS Architecture Blog](https://aws.amazon.com/blogs/architecture/6000-aws-accounts-three-people-one-platform-lessons-learned) `Tech` *2026-03-19*
+- [College as an incubator of Girardian terror | Dan Wang](https://danwang.co/college-girardian-terror) `Reads` *2026-03-19*
+- [AttnRes](https://www.k-a.in/AttnRes.html) `Academic Papers and Resources` *2026-03-18*
+- [ Mamba-3 Part 1 | Goomba Lab ](https://goombalab.github.io/blog/2026/mamba3-part1) `Academic Papers and Resources` *2026-03-18*
+- [That's How I Roll - A Scientific Analysis of Dice - Articles - DakkaDakka](https://www.dakkadakka.com/wiki/en/That%27s_How_I_Roll_-_A_Scientific_Analysis_of_Dice) `Reads` *2026-03-18*
+- [The case against conversational interfaces &laquo;  julian.digital](https://julian.digital/2025/03/27/the-case-against-conversational-interfaces) `Ideas` *2026-03-18*
+- [Leanstral: Open-Source foundation for trustworthy vibe-coding | Mistral AI](https://mistral.ai/news/leanstral) `Tech` *2026-03-17*
+- [3000 Autists vs the World - by Rxmeen - RDX Written](https://open.substack.com/pub/rxmeen4201738/p/3000-autists-vs-the-world?utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Reads` *2026-03-17*
+- [Why every cavity in your teeth leads to irreparable brain damage](https://open.substack.com/pub/lukasxp/p/why-every-cavity-in-your-teeth-leads?utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Reads` *2026-03-16*
+- [Why poor countries stopped catching up - David Oks](https://open.substack.com/pub/davidoks/p/why-poor-countries-stopped-catching-690?utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Reads` *2026-03-16*
+- [How far back in time can you understand English?](https://open.substack.com/pub/colingorrie/p/how-far-back-in-time-understand-english?utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Reads` *2026-03-16*
+- [It&-x27;s Time - by Jordan Schneider - ChinaTalk](https://open.substack.com/pub/chinatalk/p/its-time?utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Ideas` *2026-03-16*
+- [Littlewood’s Law and the Global Media · Gwern.net](https://gwern.net/littlewood) `Ideas` *2026-03-16*
+- [The (Searchable) Whole Earth](https://searchwhole.earth) `Museums - Indexers` *2026-03-16*
 - [Research | Noumena Network](https://noumena.com/research) `Tech` *2026-03-15*
+- [Carnaval Oleiros 2012 actuación Gelo - YouTube](https://youtu.be/_ThTwN4R7Fc?is=Pp1oLO5v3Ek7HjGJ) `Weird` *2026-03-15*
 - [Library of Short Stories](https://www.libraryofshortstories.com) `Museums - Indexers` *2026-03-15*
 - [Scaling Postgres connections with PgBouncer — PlanetScale](https://planetscale.com/blog/scaling-postgres-connections-with-pgbouncer) `Tech` *2026-03-14*
 - [Sophie Wang](https://www.sophielwang.com/blog/jpeg) `Tech` *2026-03-14*
