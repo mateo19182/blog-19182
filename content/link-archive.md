@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-03-23
+date: 2026-03-30
 tags: 
   - personal
 ---
@@ -9,6 +9,20 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Just a moment...](https://craft.faire.com/the-great-migration-from-redshift-to-snowflake-173c1fb59a52) `Tech` *2026-03-29*
+- [Anatomy of the .claude/ Folder - by Avi Chawla](https://blog.dailydoseofds.com/p/anatomy-of-the-claude-folder) `Tech` *2026-03-28*
+- [Improving Composer through real-time RL · Cursor](https://cursor.com/blog/real-time-rl-for-composer) `Tech` *2026-03-28*
+- [Cancer - Sytse.com](https://sytse.com/cancer) `Reads` *2026-03-28*
+- [Reducing our monorepo size to improve developer velocity - Dropbox](https://dropbox.tech/infrastructure/reducing-our-monorepo-size-to-improve-developer-velocity) `Tech` *2026-03-27*
+- [The Proliferation of DarkSword: iOS Exploit Chain Adopted by Multiple Threat Actors | Google Cloud Blog](https://cloud.google.com/blog/topics/threat-intelligence/darksword-ios-exploit-chain) `Tech` *2026-03-27*
+- [Why So Many Control Rooms Were Seafoam Green](https://bethmathews.substack.com/p/why-so-many-control-rooms-were-seafoam) `Reads` *2026-03-27*
+- [Running Tesla Model 3's Computer on My Desk Using Parts From Crashed Cars - bugs.xdavidhu.me](https://bugs.xdavidhu.me/tesla/2026/03/23/running-tesla-model-3s-computer-on-my-desk-using-parts-from-crashed-cars) `Tech` *2026-03-26*
+- [](https://dsny.cityofnewyork.us/wp-content/uploads/reports/future-of-trash-april-2023.pdf) `Reads` *2026-03-26*
+- [Why America is so much better than Europe at immigration](https://www.theargumentmag.com/p/why-america-is-so-much-better-than?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-03-26*
+- [Chinese Titanium - by Irene Zhang - ChinaTalk](https://open.substack.com/pub/chinatalk/p/the-story-of-chinese-titanium?utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Reads` *2026-03-25*
+- [Inside Gen 13: how we built our most powerful server yet](https://blog.cloudflare.com/gen13-config) `Tech` *2026-03-24*
+- [Fast regex search: indexing text for agent tools · Cursor](https://cursor.com/blog/fast-regex-search) `Tech` *2026-03-24*
+- [WindowSwap - the calmest place on the internet](https://www.window-swap.com/Window) `Tools and Interactive Websites` *2026-03-24*
 - [](https://alachuacounty.us/Depts/epd/EPAC/Future%20Strategic%20Issues%20-%20Future%20Warfare%20Circa%202025%20-%20NASA.pdf) `Ideas` *2026-03-22*
 - [[2201.06387] The free energy principle made simpler but not too simple](https://arxiv.org/abs/2201.06387) `Academic Papers and Resources` *2026-03-21*
 - [How We Scaled Kimi K2.5 | Zhilin Yang&-39;s full GTC 2026 Keynote - YouTube](https://youtu.be/CwePo4847ho) `Academic Papers and Resources` *2026-03-21*
