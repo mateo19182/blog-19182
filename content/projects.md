@@ -34,6 +34,11 @@ title: Projects
 <div class="project-list">
 
 <div class="project-card">
+  <div class="project-title"><a href="https://github.com/mateo19182/boe-dog-summary">BOE/DOG Summary Bot</a></div>
+  <div class="project-desc">A daily Telegram bot that parses the RSS feeds from Spain's <a href="https://www.boe.es/">BOE</a> and Galicia's <a href="https://www.xunta.gal/diario-oficial-galicia">DOG</a>, filters entries relevant to an autónomo with a tech company in the fitness/sport and AI sectors via OpenRouter, and sends a concise summary to Telegram. Runs daily via cron. Built with Python, feedparser, httpx, and the Telegram Bot API.</div>
+</div>
+
+<div class="project-card">
   <div class="project-title"><a href="https://github.com/mateo19182/beancount-ui">beancount-ui</a></div>
   <div class="project-desc">A desktop app for managing <a href="https://beancount.github.io/">Beancount</a> ledgers, built with NiceGUI. Point it at a <code>.beancount</code> file and get an overview of net worth and asset allocation, stock and crypto holdings, a transaction browser with inline editing, document attachments, and a bank import flow via the Enable Banking API with automatic payee categorization. Runs as a native window or in the browser.</div>
 </div>
