@@ -34,6 +34,11 @@ title: Projects
 <div class="project-list">
 
 <div class="project-card">
+  <div class="project-title"><a href="https://github.com/mateo19182/beancount-ui">beancount-ui</a></div>
+  <div class="project-desc">A desktop app for managing <a href="https://beancount.github.io/">Beancount</a> ledgers, built with NiceGUI. Point it at a <code>.beancount</code> file and get an overview of net worth and asset allocation, stock and crypto holdings, a transaction browser with inline editing, document attachments, and a bank import flow via the Enable Banking API with automatic payee categorization. Runs as a native window or in the browser.</div>
+</div>
+
+<div class="project-card">
   <div class="project-title"><a href="https://github.com/mateo19182/i18n-skill">i18n Skill</a></div>
   <div class="project-desc">A skill for coding agents (claude code, opencode...) for adding i18n translations to big codebases that originally had hardcoded strings.
 </div>
