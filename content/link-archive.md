@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-03-31
+date: 2026-04-01
 tags: 
   - personal
 ---
@@ -9,6 +9,8 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Against The Concept Of Telescopic Altruism](https://open.substack.com/pub/astralcodexten/p/against-the-concept-of-telescopic?utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Ideas` *2026-03-31*
+- [UltraBox](https://ultraabox.github.io) `Tools and Interactive Websites` *2026-03-31*
 - [Just a moment...](https://craft.faire.com/the-great-migration-from-redshift-to-snowflake-173c1fb59a52) `Tech` *2026-03-29*
 - [Anatomy of the .claude/ Folder - by Avi Chawla](https://blog.dailydoseofds.com/p/anatomy-of-the-claude-folder) `Tech` *2026-03-28*
 - [Improving Composer through real-time RL · Cursor](https://cursor.com/blog/real-time-rl-for-composer) `Tech` *2026-03-28*
