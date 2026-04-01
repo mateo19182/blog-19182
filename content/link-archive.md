@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-04-01
+date: 2026-04-02
 tags: 
   - personal
 ---
@@ -9,6 +9,7 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [lore drop - by brit - booritney](https://www.booritney.com/p/lore-drop) `Reads` *2026-04-01*
 - [Against The Concept Of Telescopic Altruism](https://open.substack.com/pub/astralcodexten/p/against-the-concept-of-telescopic?utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Ideas` *2026-03-31*
 - [UltraBox](https://ultraabox.github.io) `Tools and Interactive Websites` *2026-03-31*
 - [Just a moment...](https://craft.faire.com/the-great-migration-from-redshift-to-snowflake-173c1fb59a52) `Tech` *2026-03-29*
