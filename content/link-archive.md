@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-04-02
+date: 2026-04-06
 tags: 
   - personal
 ---
@@ -9,6 +9,20 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [
+    
+    When Imperfect Systems are Good, Actually: Bluesky's Lossy Timelines &middot; Jaz's Blog
+    
+  ](https://jazco.dev/2025/02/19/imperfection) `Tech` *2026-04-05*
+- [The machines are fine. I&-x27;m worried about us.](https://ergosphere.blog/posts/the-machines-are-fine) `Ideas` *2026-04-05*
+- [](https://xpl0itrs.github.io) `Tech` *2026-04-04*
+- [Welcome to the Technocracy](https://donotresearch.substack.com/p/welcome-to-the-technocracy) `Reads` *2026-04-04*
+- [Information Asymmetry](https://sdan.io/blog/information-asymmetry) `Ideas` *2026-04-04*
+- [VOID: Video Object and Interaction Deletion](https://void-model.github.io) `Academic Papers and Resources` *2026-04-03*
+- [The Space Lady, In Her Own Words | Red Bull Music Academy Daily](https://daily.redbullmusicacademy.com/2016/01/the-space-lady-feature?linkId=20295110) `Arts` *2026-04-03*
+- [How Microsoft Vaporized a Trillion Dollars](https://isolveproblems.substack.com/p/how-microsoft-vaporized-a-trillion) `Tech` *2026-04-03*
+- [archive.ph](https://archive.ph/L65KH) `Reads` *2026-04-02*
+- [Copernicus Browser](https://browser.dataspace.copernicus.eu) `Tools and Interactive Websites` *2026-04-02*
 - [lore drop - by brit - booritney](https://www.booritney.com/p/lore-drop) `Reads` *2026-04-01*
 - [Against The Concept Of Telescopic Altruism](https://open.substack.com/pub/astralcodexten/p/against-the-concept-of-telescopic?utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Ideas` *2026-03-31*
 - [UltraBox](https://ultraabox.github.io) `Tools and Interactive Websites` *2026-03-31*
