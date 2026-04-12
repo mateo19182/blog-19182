@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-04-06
+date: 2026-04-13
 tags: 
   - personal
 ---
@@ -9,6 +9,35 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Igor Girkin - Wikipedia](https://en.wikipedia.org/wiki/Igor_Girkin) `Wikis` *2026-04-12*
+- [WeakC4](https://2swap.github.io/WeakC4/explanation) `Tech` *2026-04-12*
+- [Agent Orange Did Not Cause Diabetes - by Nicholas Decker](https://open.substack.com/pub/nicholasdecker/p/agent-orange-did-not-cause-diabetes?r=bdhc9&utm_medium=ios) `Reads` *2026-04-12*
+- [YOU DON&-x27;T ACTUALLY LIKE THE BAND &quot;GEESE™&quot; - by TONY PRICE](https://open.substack.com/pub/maximumexposureinc/p/you-dont-actually-like-the-band-geese?r=bdhc9&utm_medium=ios) `Reads` *2026-04-12*
+- [Take the Money and Run - Cremieux Recueil](https://open.substack.com/pub/cremieux/p/take-the-money-and-run?utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Ideas` *2026-04-12*
+- [Project Chariot - Wikipedia](https://en.wikipedia.org/wiki/Project_Chariot) `Wikis` *2026-04-11*
+- [On neural scaling and the quanta hypothesis](https://ericjmichaud.com/quanta/?referrer=luma) `Academic Papers and Resources` *2026-04-11*
+- [A Mechanistic Interpretability Analysis of Grokking — LessWrong](https://www.lesswrong.com/posts/N6WM6hs7RQMKDhYjB/a-mechanistic-interpretability-analysis-of-grokking) `Academic Papers and Resources` *2026-04-11*
+- [The Lightcone Principles — LessWrong](https://www.lesswrong.com/s/cegJvyiP2dBkhDh2K) `Tech` *2026-04-11*
+- [Artigos de opinión de Miguel Anxo Bastos Boubeta - Nós Diario](https://www.nosdiario.gal/opinion/autor/597/miguel-anxo-bastos-boubeta) `Reads` *2026-04-11*
+- [OpenAI is nothing without its people | the singularity is nearer](https://geohot.github.io//blog/jekyll/update/2026/04/11/openai-people.html) `Ideas` *2026-04-11*
+- [1D-Chess](https://rowan441.github.io/1dchess/chess.html) `Tools and Interactive Websites` *2026-04-11*
+- [LOW←TECH MAGAZINE](https://solar.lowtechmagazine.com) `Collectives and Magazines` *2026-04-11*
+- [Nós Diario - Xornal de intereses galegos](https://www.nosdiario.gal) `Collectives and Magazines` *2026-04-11*
+- [List of last words - Wikipedia](https://en.wikipedia.org/wiki/List_of_last_words#Ironic_last_words) `Wikis` *2026-04-10*
+- [Keeping a Postgres queue healthy — PlanetScale](https://planetscale.com/blog/keeping-a-postgres-queue-healthy) `Tech` *2026-04-10*
+- [Lessons from scaling PostgreSQL queues to 100K events](https://www.rudderstack.com/blog/scaling-postgres-queue) `Tech` *2026-04-10*
+- [The Terrarium — LessWrong](https://www.lesswrong.com/posts/znbfRXHq285nS7NAh/the-terrarium) `Reads` *2026-04-10*
+- [Porting Mac OS X to the Nintendo Wii | Bryan Keller’s Dev Blog](https://bryankeller.github.io/2026/04/08/porting-mac-os-x-nintendo-wii.html) `Tech` *2026-04-09*
+- [S3 Files and the changing face of S3 | All Things Distributed](https://www.allthingsdistributed.com/2026/04/s3-files-and-the-changing-face-of-s3.html) `Tech` *2026-04-08*
+- [The Git Commands I Run Before Reading Any Code](https://piechowski.io/post/git-commands-before-reading-code) `Tech` *2026-04-08*
+- [nytimes.com](https://www.nytimes.com/2026/04/08/business/bitcoin-satoshi-nakamoto-identity-adam-back.html?unlocked_article_code=1.ZVA.5_s8.hTKeCkV97kow&smid=tw-share) `Reads` *2026-04-08*
+- [Cyc - Wikipedia](https://en.wikipedia.org/wiki/Cyc) `Wikis` *2026-04-07*
+- [All Roads Lead to Robotics | Eric Jang](https://evjang.com/2024/03/03/all-roads-robots.html) `Tech` *2026-04-07*
+- [It&-x27;s just money. It&-x27;s made up. - Irrational Analysis](https://irrationalanalysis.substack.com/p/its-just-money-its-made-up?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-04-07*
+- [The Henry Family Endowed Speaker Series in Economics - Jesús Fernandez-Villaverde - YouTube](https://youtu.be/Fk8nLKhb_h0?is=ZW5F9nKSqR4cNVTG) `Ideas` *2026-04-07*
+- [EUROPEAN UNION, SEVENTY YEARS LATER - by Slavoj Žižek](https://slavoj.substack.com/p/european-union-70-years-later?utm_source=%2Finbox&utm_medium=reader2) `Ideas` *2026-04-07*
+- [Perma | Snowflake: An update and some very important information](https://perma.cc/8UBV-MZ3D) `Tech` *2026-04-06*
+- [](https://archive.ph/YHRcU) `Reads` *2026-04-06*
 - [
     
     When Imperfect Systems are Good, Actually: Bluesky's Lossy Timelines &middot; Jaz's Blog
