@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-04-13
+date: 2026-04-15
 tags: 
   - personal
 ---
@@ -9,6 +9,13 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Pyramid Replacement - The Intelligence Curse](https://intelligence-curse.ai/pyramid) `Reads` *2026-04-14*
+- [Center for Responsible, Decentralized Intelligence at Berkeley](https://rdi.berkeley.edu/blog/trustworthy-benchmarks-cont) `Academic Papers and Resources` *2026-04-13*
+- [The 2026 AI Index Report | Stanford HAI](https://hai.stanford.edu/ai-index/2026-ai-index-report) `Tech` *2026-04-13*
+- [anuraag — notes](https://anuraagw.me) `Tech` *2026-04-13*
+- [The China That Deng Built - by Coolest Cat - ChinaTalk](https://www.chinatalk.media/p/the-china-that-deng-built?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-04-13*
+- [Beyond the Sky - Colossus](https://colossus.com/article/beyond-the-sky-jeffrey-yan-hyperliquid) `Reads` *2026-04-13*
+- [The secrets of the shinkansen](https://www.worksinprogress.news/p/the-secret-behind-japans-railways?utm_source=%2Finbox&utm_medium=reader2&hide_intro_popup=true) `Reads` *2026-04-13*
 - [Igor Girkin - Wikipedia](https://en.wikipedia.org/wiki/Igor_Girkin) `Wikis` *2026-04-12*
 - [WeakC4](https://2swap.github.io/WeakC4/explanation) `Tech` *2026-04-12*
 - [Agent Orange Did Not Cause Diabetes - by Nicholas Decker](https://open.substack.com/pub/nicholasdecker/p/agent-orange-did-not-cause-diabetes?r=bdhc9&utm_medium=ios) `Reads` *2026-04-12*
