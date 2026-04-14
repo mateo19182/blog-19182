@@ -188,26 +188,35 @@ export default ((opts?: Options) => {
 
         update();
     });
-    `;
+    `
 
     return (
       <footer class={`${displayClass ?? ""}`}>
         <div class="footer-container">
           <p>
+            <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a> ·{" "}
             {i18n(cfg.locale).components.footer.createdWith}{" "}
             <a href="https://quartz.jzhao.xyz/">Quartz v{version}</a> © {year}
           </p>
 
           <div class="desktop-only">
-              <details>
-                  <summary style="cursor: pointer;"></summary>
-                  <div id="sand-garden-container" style="margin-top: 0.5rem; padding: 0.5rem; border: 1px solid var(--gray); border-radius: 8px; background-color: #111;">
-                      <canvas id="sand-canvas" width="200" height="150" style="cursor: crosshair; width: 200px; height: 150px;"></canvas>
-                      <div style="text-align: center; margin-top: 0.5rem;">
-                          <button id="sand-reset-button">Clear</button>
-                      </div>
-                  </div>
-              </details>
+            <details>
+              <summary style="cursor: pointer;"></summary>
+              <div
+                id="sand-garden-container"
+                style="margin-top: 0.5rem; padding: 0.5rem; border: 1px solid var(--gray); border-radius: 8px; background-color: #111;"
+              >
+                <canvas
+                  id="sand-canvas"
+                  width="200"
+                  height="150"
+                  style="cursor: crosshair; width: 200px; height: 150px;"
+                ></canvas>
+                <div style="text-align: center; margin-top: 0.5rem;">
+                  <button id="sand-reset-button">Clear</button>
+                </div>
+              </div>
+            </details>
           </div>
         </div>
         <ul>
