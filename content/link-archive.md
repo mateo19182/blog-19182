@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-04-15
+date: 2026-04-16
 tags: 
   - personal
 ---
@@ -9,6 +9,7 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Everyone is wrong about that Slack flowchart – Sophie Alpert](https://sophiebits.com/2024/10/30/everyone-is-wrong-about-that-slack-flowchart) `Tech` *2026-04-15*
 - [Pyramid Replacement - The Intelligence Curse](https://intelligence-curse.ai/pyramid) `Reads` *2026-04-14*
 - [Center for Responsible, Decentralized Intelligence at Berkeley](https://rdi.berkeley.edu/blog/trustworthy-benchmarks-cont) `Academic Papers and Resources` *2026-04-13*
 - [The 2026 AI Index Report | Stanford HAI](https://hai.stanford.edu/ai-index/2026-ai-index-report) `Tech` *2026-04-13*
