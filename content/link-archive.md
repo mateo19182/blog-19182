@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-04-18
+date: 2026-04-19
 tags: 
   - personal
 ---
@@ -9,6 +9,9 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [ Category Theory Illustrated - Orders](https://abuseofnotation.github.io/category-theory-illustrated/04_order) `Academic Papers and Resources` *2026-04-18*
+- [Migrating from DigitalOcean to Hetzner: From $1,432 to $233/month With Zero Downtime :: Isa Yeter](https://isayeter.com/posts/digitalocean-to-hetzner-migration) `Tech` *2026-04-18*
+- [Sumida Penguins Relationship Chart 2026｜Sumida Aquarium](https://www.sumida-aquarium.com/special/sokanzu/en/2026) `Ideas` *2026-04-18*
 - [Notion](https://www.notion.so/Join-our-Polycule-339ce84f25648043922be9551ed5b846) `Weird` *2026-04-17*
 - [Everyone is wrong about that Slack flowchart – Sophie Alpert](https://sophiebits.com/2024/10/30/everyone-is-wrong-about-that-slack-flowchart) `Tech` *2026-04-15*
 - [Pyramid Replacement - The Intelligence Curse](https://intelligence-curse.ai/pyramid) `Reads` *2026-04-14*
