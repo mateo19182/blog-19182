@@ -29,38 +29,49 @@ title: Projects
   color: #666;
   word-break: break-word;
 }
+.project-date {
+  font-size: 0.85em;
+  color: #999;
+  font-weight: normal;
+  margin-left: 0.5em;
+}
 </style>
 
 <div class="project-list">
 
 <div class="project-card">
-  <div class="project-title"><a href="https://github.com/mateo19182/vexor-project-barcelona">Vexor × Project Barcelona</a></div>
+  <div class="project-title"><a href="https://github.com/mateo19182/ee-bench">ee-bench</a><span class="project-date">2026-04</span></div>
+  <div class="project-desc">Explore/exploit benchmark for LLMs. Runs models through 8 environments — stationary and non-stationary bandits, grid search, combinatorial optimization — and measures cumulative regret, exploration ratio, and adaptation speed. Useful for comparing behavior across models, temperatures, and prompt framings.</div>
+</div>
+
+<div class="project-card">
+  <div class="project-title"><a href="https://github.com/mateo19182/vexor-project-barcelona">Vexor × Project Barcelona</a><span class="project-date">2026-04</span></div>
   <div class="project-desc">AI enrichment pipeline for debt collection cases. Takes a minimal case record (name, country, debt amount) and fans out across 23 OSINT modules to produce a sourced, collector-ready dossier. Uses a wave-based async scheduler and a typed Signal system for provenance tracking.</div>
 </div>
 
 <div class="project-card">
-  <div class="project-title"><a href="https://github.com/mateo19182/pantry-bot">pantry-bot</a></div>
+  <div class="project-title"><a href="https://github.com/mateo19182/pantry-bot">pantry-bot</a><span class="project-date">2026-04</span></div>
   <div class="project-desc">Telegram bot for managing a shared home pantry. Add, remove, list items, and get recipe suggestions via slash commands, free-form messages, or photos of groceries or receipts. Uses an LLM for natural-language parsing.</div>
 </div>
 
 <div class="project-card">
-  <div class="project-title"><a href="https://github.com/mateo19182/boe-dog-summary">BOE/DOG Summary Bot</a></div>
+  <div class="project-title"><a href="https://github.com/mateo19182/boe-dog-summary">BOE/DOG Summary Bot</a><span class="project-date">2026-04</span></div>
   <div class="project-desc">A daily Telegram bot that parses the RSS feeds from Spain's <a href="https://www.boe.es/">BOE</a> and Galicia's <a href="https://www.xunta.gal/diario-oficial-galicia">DOG</a>, filters entries relevant to my interests with AI, and sends a summary to Telegram.</div>
 </div>
 
 <div class="project-card">
-  <div class="project-title"><a href="https://github.com/mateo19182/beancount-ui">beancount-ui</a></div>
+  <div class="project-title"><a href="https://github.com/mateo19182/beancount-ui">beancount-ui</a><span class="project-date">2026-03</span></div>
   <div class="project-desc">App for managing <a href="https://beancount.github.io/">Beancount</a> ledgers, built with NiceGUI. Point it at a <code>.beancount</code> file to visualize asset allocation, stock and crypto holdings, transactions, document attachments, and a bank import flow via the Enable Banking API with automatic payee categorization.</div>
 </div>
 
 <div class="project-card">
-  <div class="project-title"><a href="https://github.com/mateo19182/i18n-skill">i18n Skill</a></div>
+  <div class="project-title"><a href="https://github.com/mateo19182/i18n-skill">i18n Skill</a><span class="project-date">2026-02</span></div>
   <div class="project-desc">A skill for coding agents (claude code, opencode...) for adding i18n translations to big codebases that originally had hardcoded strings.
 </div>
 </div>
 
 <div class="project-card">
-  <div class="project-title"><a href="https://solafune.com/competitions/26ff758c-7422-4cd1-bfe0-daecfc40db70?modal=%22%22&tab=&menu=about">Tree Canopy Detection Competition</a></div>
+  <div class="project-title"><a href="https://solafune.com/competitions/26ff758c-7422-4cd1-bfe0-daecfc40db70?modal=%22%22&tab=&menu=about">Tree Canopy Detection Competition</a><span class="project-date">2025-12</span></div>
   <div class="project-desc">Competed on a tree canopy detection challenge using satellite imagery. Placed top 50 out of 4000+ participants. Explored Yolo, EOMT (DinoV3 backbone) and Mask2Former architectures. <a href="https://github.com/mateo19182/tree_canopy">code repository</a>.
 </div>
 </div>
@@ -185,6 +196,8 @@ title: Projects
 <div class="project-card">
   <div class="project-title"><a href="https://youtu.be/xBBow3L3EF8">live(@)NADIE.CREA - 2023</a></div>
   <div class="project-desc">Performed an audiovisual live show at the event, using reactive and artifially generated visuals that morph with the music. Most of the music were my own productions, the visuals were made with StableDiffusion and TouchDesigner.</div>
+</div>
+
 <div class="project-card">
   <div class="project-title"><a href="https://github.com/mateo19182/dotfiles">dotfiles</a></div>
   <div class="project-desc">My personal dotfiles for configuring development environments and tools.</div>
