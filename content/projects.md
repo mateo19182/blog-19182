@@ -34,6 +34,16 @@ title: Projects
 <div class="project-list">
 
 <div class="project-card">
+  <div class="project-title"><a href="https://github.com/mateo19182/vexor-project-barcelona">Vexor × Project Barcelona</a></div>
+  <div class="project-desc">AI enrichment pipeline for debt collection cases. Takes a minimal case record (name, country, debt amount) and fans out across 23 OSINT modules to produce a sourced, collector-ready dossier. Uses a wave-based async scheduler and a typed Signal system for provenance tracking.</div>
+</div>
+
+<div class="project-card">
+  <div class="project-title"><a href="https://github.com/mateo19182/pantry-bot">pantry-bot</a></div>
+  <div class="project-desc">Telegram bot for managing a shared home pantry. Add, remove, list items, and get recipe suggestions via slash commands, free-form messages, or photos of groceries or receipts. Uses an LLM for natural-language parsing.</div>
+</div>
+
+<div class="project-card">
   <div class="project-title"><a href="https://github.com/mateo19182/boe-dog-summary">BOE/DOG Summary Bot</a></div>
   <div class="project-desc">A daily Telegram bot that parses the RSS feeds from Spain's <a href="https://www.boe.es/">BOE</a> and Galicia's <a href="https://www.xunta.gal/diario-oficial-galicia">DOG</a>, filters entries relevant to my interests with AI, and sends a summary to Telegram.</div>
 </div>
