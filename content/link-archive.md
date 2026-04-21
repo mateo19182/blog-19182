@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-04-21
+date: 2026-04-22
 tags: 
   - personal
 ---
@@ -9,6 +9,7 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Home | TimZaman.com](https://timzaman.com) `Tech` *2026-04-21*
 - [There are only four skills: design, technical, management and physical — LessWrong](https://www.lesswrong.com/posts/KRLGxCaqdgrotyB8z/there-are-only-four-skills-design-technical-management-and) `Ideas` *2026-04-19*
 - [Byte Magazine Volume 00 Number 01 - The Worlds Greatest Toy : Free Download, Borrow, and Streaming : Internet Archive](https://archive.org/details/byte-magazine-1975-09/mode/2up) `Museums - Indexers` *2026-04-19*
 - [ Category Theory Illustrated - Orders](https://abuseofnotation.github.io/category-theory-illustrated/04_order) `Academic Papers and Resources` *2026-04-18*
