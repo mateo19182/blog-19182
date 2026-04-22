@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-04-22
+date: 2026-04-23
 tags: 
   - personal
 ---
@@ -9,6 +9,10 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Si... (Kipling) - Wikipedia, la enciclopedia libre](https://es.wikipedia.org/wiki/Si..._(Kipling)) `Wikis` *2026-04-22*
+- [Tim Cook&-8217;s Impeccable Timing &-8211; Stratechery by Ben Thompson](https://stratechery.com/2026/tim-cooks-impeccable-timing) `Reads` *2026-04-22*
+- [Random thoughts while gazing at the misty AI Frontier](https://blog.eladgil.com/p/random-thoughts-while-gazing-at-the?publication_id=1119759&post_id=194229552&isFreemail=true&r=4vq35&triedRedirect=true) `Ideas` *2026-04-22*
+- [Bans on highly toxic pesticides could be an effective way to save lives from suicide - Our World in Data](https://ourworldindata.org/pesticide-bans-suicide-prevention?utm_source=OWID+Newsletter&utm_campaign=64f4828aba-RSS_EMAIL_CAMPAIGN&utm_medium=email&utm_term=0_2e166c1fc1-77833dd717-599516816) `Ideas` *2026-04-22*
 - [Home | TimZaman.com](https://timzaman.com) `Tech` *2026-04-21*
 - [There are only four skills: design, technical, management and physical — LessWrong](https://www.lesswrong.com/posts/KRLGxCaqdgrotyB8z/there-are-only-four-skills-design-technical-management-and) `Ideas` *2026-04-19*
 - [Byte Magazine Volume 00 Number 01 - The Worlds Greatest Toy : Free Download, Borrow, and Streaming : Internet Archive](https://archive.org/details/byte-magazine-1975-09/mode/2up) `Museums - Indexers` *2026-04-19*
