@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-04-24
+date: 2026-04-25
 tags: 
   - personal
 ---
@@ -9,6 +9,12 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [DeepSeek_V4.pdf · deepseek-ai/DeepSeek-V4-Pro at main](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro/blob/main/DeepSeek_V4.pdf) `Academic Papers and Resources` *2026-04-24*
+- [MeshCore Blog](https://blog.meshcore.io) `Tech` *2026-04-24*
+- [American Diner Gothic &mdash; The New Atlantis](https://www.thenewatlantis.com/publications/american-diner-gothic) `Reads` *2026-04-24*
+- [](https://counterfeitsunset.neocities.org/Schizoposting.pdf) `Reads` *2026-04-24*
+- [Fragments: April  2](https://martinfowler.com/fragments/2026-04-02.html) `Ideas` *2026-04-24*
+- [Ink & Switch](https://www.inkandswitch.com) `Collectives and Magazines` *2026-04-24*
 - [Si... (Kipling) - Wikipedia, la enciclopedia libre](https://es.wikipedia.org/wiki/Si..._(Kipling)) `Wikis` *2026-04-22*
 - [Tim Cook&-8217;s Impeccable Timing &-8211; Stratechery by Ben Thompson](https://stratechery.com/2026/tim-cooks-impeccable-timing) `Reads` *2026-04-22*
 - [Random thoughts while gazing at the misty AI Frontier](https://blog.eladgil.com/p/random-thoughts-while-gazing-at-the?publication_id=1119759&post_id=194229552&isFreemail=true&r=4vq35&triedRedirect=true) `Ideas` *2026-04-22*
