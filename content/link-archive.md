@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-04-25
+date: 2026-04-26
 tags: 
   - personal
 ---
@@ -9,6 +9,8 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [](https://arxiv.org/pdf/2604.21691) `Academic Papers and Resources` *2026-04-25*
+- [](https://download.ssrn.com/2026/1/19/6097646.pdf?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjENX%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIQDDNDPHAIxPsxDwUIUO%2BZJwSMEWs%2BNbgHSlCyGWSQPlDAIgdRgpPSwFDa4h%2FV4KgiZDaFhnKTfDXchE7UzmFxosK0UqxwUInv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAEGgwzMDg0NzUzMDEyNTciDOFdby%2BkP%2B0Ox0ApWiqbBbFXohaRTTLA9Zwrir%2B37z04jFc3qUNn58LoQh0Pygcs53sO%2FScU6MOAQJW8cqNE7Rq0yJCaimcYwDz7ca%2BGl6OBuuMFYzq%2FkDi6DiFk0ricKM2e%2B7IvgxZUqirkvnGH9otrsH2Sxo5Ucjp8ziMs8BK9LbVmGdY4CfoNmqItFbj49SLnMs%2FlBYKMNdFt9bdnEn1wCJC3M8oMcaix2uXOUHsW5tHdVoXkoPfxuj8DM%2B4YFv2S17pP9WkSzyUONJc14T7sVmcp7%2Bxr1olDViGZVjpT4IBsYT4IG%2BxjiU2LlF6PTM4A45PldXou8uw3%2BDvJH3jtot%2BO8nVA5%2FbvFMFoA4fHG%2FihFkGtDSSvl%2BahgthrPHRDS14UNhxoE0gg3YjGOSfedXZ%2FCShJAa%2B1Qp5OVivuw4KbjCjTwPTMWLXsbKDQ%2Bcs9g%2BAU%2FLhv15fPHTDUAchMjDWlXzZcC2F%2F3NAON0R7WZxTM8pFFWkH17lIpO8h9UMkToNYqvcpUB3w75GoWzhmElmjsiucQZRl%2Bq7kR2JQlDiMaBbq0N8S42p9cjSG5NVLQqWuvZ1oBXp7LbzGwt5YXC5LZdPO4Vhq79h0oPVK2%2Ba5gWuzzI6V%2F4BBbWZhR0qF16dXm%2Fr7YY%2B2QPqGSfPKOZIm%2BFWEOeyLXXgdLRihi7mDY288yQR0724alAtKjOIjoj3Xydkzp7kDaakT1QptMjqFnVCKYsz7B1wL%2BbdGCey44XxDj3SgtSqx8fZXoNA9Pt%2BwJzVrRuTCXYKP4ODd5%2FxqwrhPr9BnNB%2B%2FnZHHUTy4sTXQX1bv%2Ff6oVsuzQPM%2Fn%2FMnr1MZY3krVsYDJcR3f%2F5WTqjNCLf6PozQpkCr%2B3tTkb3nvIiVTfzywiygMP7pGJeST2BWum4wwMe0zwY6sQHcS7Yh5opEbW22lXwj%2BEWEFFrz%2BP4A4W7%2BS6wEBodChMAfKZpCoYKgr3%2FlJoeN0zEw09xaFunHFYk3YClCmKTckFSph%2B%2BYynXeUkKfVyi05faOaxd89DWd7jZJx257YWvV8up52VSPWY4nLLlpIYO57BvbN875KKnsWXEUxMw%2BiiNHr6XxAmu6LYc9tmo3E0YMTCIa%2BpFZjXFSoMvnNHkjPIOyCsFOEA4dHakQfTM80bw%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260425T213517Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAUPUUPRWE6GJUYNFU%2F20260425%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=072435ccdc4e6209b2d7961a8a8f3593236b81d6aed254bf3e065074473ec275&abstractId=6097646) `Academic Papers and Resources` *2026-04-25*
 - [DeepSeek_V4.pdf · deepseek-ai/DeepSeek-V4-Pro at main](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro/blob/main/DeepSeek_V4.pdf) `Academic Papers and Resources` *2026-04-24*
 - [MeshCore Blog](https://blog.meshcore.io) `Tech` *2026-04-24*
 - [American Diner Gothic &mdash; The New Atlantis](https://www.thenewatlantis.com/publications/american-diner-gothic) `Reads` *2026-04-24*
