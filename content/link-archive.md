@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-04-28
+date: 2026-04-29
 tags: 
   - personal
 ---
@@ -9,6 +9,12 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Introducing talkie: a 13B vintage language model from 1930](https://talkie-lm.com/introducing-talkie) `Academic Papers and Resources` *2026-04-28*
+- [GTFOBins](https://gtfobins.org) `Tech` *2026-04-28*
+- [LOLBAS](https://lolbas-project.github.io/#) `Tech` *2026-04-28*
+- [How I Broke the Anti-Bot Behind Nike, Kick, and Twitch — emro.cat](https://emro.cat/blog/how-i-broke-the-anti-bot-behind-nike-kick-and-twitch) `Tech` *2026-04-28*
+- [THE INEFFABLE, COSMIC QUALITY OF ATTRACTION - by anna](https://chiasm.substack.com/p/the-ineffable-cosmic-quality-of-attraction) `Reads` *2026-04-28*
+- [ATTENTION ECONOMY - by anna - chiasm](https://chiasm.substack.com/p/attention-economy) `Reads` *2026-04-28*
 - [PRAGMA: Revolut Foundation Model](https://arxiv.org/html/2604.08649v1) `Academic Papers and Resources` *2026-04-27*
 - [Flipdisc Display Build and Software Guide](https://flipdisc.io) `Tech` *2026-04-27*
 - [How Much Do GPU Clusters Really Cost?](https://newsletter.semianalysis.com/p/how-much-do-gpu-clusters-really-cost?publication_id=6349492&post_id=194395279&isFreemail=true&r=hjfy1&triedRedirect=true) `Tech` *2026-04-27*
