@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-04-29
+date: 2026-04-30
 tags: 
   - personal
 ---
@@ -9,6 +9,8 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [All elementary functions from a single operator](https://arxiv.org/html/2603.21852v2) `Academic Papers and Resources` *2026-04-29*
+- [Are Prediction Markets Good for Anything?—Asterisk](https://asteriskmag.com/issues/14/are-prediction-markets-good-for-anything?mc_cid=76767e11aa) `Reads` *2026-04-29*
 - [Introducing talkie: a 13B vintage language model from 1930](https://talkie-lm.com/introducing-talkie) `Academic Papers and Resources` *2026-04-28*
 - [GTFOBins](https://gtfobins.org) `Tech` *2026-04-28*
 - [LOLBAS](https://lolbas-project.github.io/#) `Tech` *2026-04-28*
