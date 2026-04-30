@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-04-30
+date: 2026-05-01
 tags: 
   - personal
 ---
@@ -9,6 +9,9 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Reiner Pope on Dwarkesh Podcast — Practice Questions](https://reiner-flashcards.vercel.app) `Academic Papers and Resources` *2026-04-30*
+- [Thinking_with_Visual_Primitives.pdf · NodeLinker/deepseek-ai-Thinking-with-Visual-Primitives-deleted-repo at main](https://huggingface.co/datasets/NodeLinker/deepseek-ai-Thinking-with-Visual-Primitives-deleted-repo/blob/main/Thinking_with_Visual_Primitives.pdf) `Academic Papers and Resources` *2026-04-30*
+- [](https://openai.com/index/where-the-goblins-came-from) `Tech` *2026-04-30*
 - [All elementary functions from a single operator](https://arxiv.org/html/2603.21852v2) `Academic Papers and Resources` *2026-04-29*
 - [Are Prediction Markets Good for Anything?—Asterisk](https://asteriskmag.com/issues/14/are-prediction-markets-good-for-anything?mc_cid=76767e11aa) `Reads` *2026-04-29*
 - [Introducing talkie: a 13B vintage language model from 1930](https://talkie-lm.com/introducing-talkie) `Academic Papers and Resources` *2026-04-28*
