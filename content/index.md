@@ -15,7 +15,7 @@ Hey! I'm Mateo. Since you are here, you might be interested in:
 
 Check out other stuff on [GitHub](https://github.com/mateo19182), [SoundCloud](https://soundcloud.com/m19182), [YouTube](https://www.youtube.com/channel/UCEJKcBK7i88Iv3saZy2xuSg) and [faircamp](https://music.m19182.dev/). I also run [No-Cosign](https://no-cosign.m19182.dev/), a music blog with some friends.
 
-Reach me at admin (@) m19182.dev
+Reach me at admin (@) m19182.dev (prefered), [X](https://x.com/mateo19182) or [Linkedin](https://www.linkedin.com/in/mateo-amado-ares-9b7551243/)
 
 <!-- 
 ## [[writings]]
