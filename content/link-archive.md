@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-05-01
+date: 2026-05-02
 tags: 
   - personal
 ---
@@ -9,7 +9,9 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Peeking into VALORANT&-x27;s Netcode | Riot Games](https://www.riotgames.com/en/news/peeking-valorants-netcode) `Tech` *2026-05-01*
 - [Articles - Toni López](https://www.tonilopezmr.com/articles) `Tech` *2026-05-01*
+- [Apocalypse Early Warning System](https://ews.kylemcdonald.net) `Tools and Interactive Websites` *2026-05-01*
 - [Reiner Pope on Dwarkesh Podcast — Practice Questions](https://reiner-flashcards.vercel.app) `Academic Papers and Resources` *2026-04-30*
 - [Thinking_with_Visual_Primitives.pdf · NodeLinker/deepseek-ai-Thinking-with-Visual-Primitives-deleted-repo at main](https://huggingface.co/datasets/NodeLinker/deepseek-ai-Thinking-with-Visual-Primitives-deleted-repo/blob/main/Thinking_with_Visual_Primitives.pdf) `Academic Papers and Resources` *2026-04-30*
 - [](https://openai.com/index/where-the-goblins-came-from) `Tech` *2026-04-30*
