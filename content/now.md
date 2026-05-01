@@ -4,12 +4,13 @@ tags:
   # - personal
 ---
 
-I'm currently at [TriboSolutions](https://tribosolutions.es), a company I co-founded with some friends, and work part-time at [Zepo](https://zepo.app).
+I'm currently working at [TriboSolutions](https://tribosolutions.es), a company I co-founded with some friends, and [Zepo](https://zepo.ai).
 
 Some of the things I'm currently consuming:
 
 | Time   | Reading                                 | Watching | Listening | Other |
 | ------ | --------------------------------------- | -------- | --------- | ----- |
+| April/26 | The Scaling Era: An Oral History of AI | Hammet | Sd-3 - Loukeman | [All elementary functions from a single operator](https://arxiv.org/html/2603.21852v2) |
 | March/26 | Designing Data-Intensive Applications, 2nd Edition | Masters of the Air | [Angine de Poitrine Vol.1](https://anginedepoitrine.bandcamp.com/album/angine-de-poitrine-vol-1) | [Señales Curiosas - David Marugan](https://www.davidmarugan.es/senales-curiosas) |
 | Feb/25 | [THE 2028 GLOBAL INTELLIGENCE CRISIS](https://www.citriniresearch.com/p/2028gic) |   Babylon 5       | [The Pleasure is Yours](https://o-liv.bandcamp.com/album/the-pleasure-is-yours)    |   Ran a half-marathon!    |
 | Ene/25 | Unsong - Scott Alenxander | [The Truffle Hunters](https://www.youtube.com/watch?v=KFYhrc0AnVw) | [Overtime - Username, Marsh Crane](https://username.bandcamp.com/album/overtime) | [imáxenes históricas da Coruña](https://asxubiasoscastrosagaiteira.wordpress.com/) |
