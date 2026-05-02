@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-05-02
+date: 2026-05-03
 tags: 
   - personal
 ---
@@ -9,6 +9,22 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Notion](https://yumoxu.notion.site/multi-teacher-on-policy-distillation) `Academic Papers and Resources` *2026-05-02*
+- [Blog · Proximal](https://www.proximal.ai/blog) `Tech` *2026-05-02*
+- [Pavlov's List: A List of RL Environment Startups](https://pavlovslist.com) `Tech` *2026-05-02*
+- [The Coding Assistant Breakdown: More Tokens Please](https://newsletter.semianalysis.com/p/the-coding-assistant-breakdown-more?utm_source=%2Finbox&utm_medium=reader2&hide_intro_popup=true) `Tech` *2026-05-02*
+- [The Mystery in the Medicine Cabinet—Asterisk](https://asteriskmag.com/issues/14/the-mystery-in-the-medicine-cabinet) `Reads` *2026-05-02*
+- [
+            
+    Notes on a non-profit indicted for bank fraud
+    ](https://www.bitsaboutmoney.com/archive/nonprofit-indicted-bank-fraud) `Reads` *2026-05-02*
+- [A promised land of esperanto and zinc - by Jonn Elledge](https://open.substack.com/pub/jonn/p/a-promised-land-of-esperanto-and?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Reads` *2026-05-02*
+- [openai burns the boats - by Ethan Ding - mandates](https://ethanding.substack.com/p/openai-burns-the-boats) `Reads` *2026-05-02*
+- [What Deontological Bars? - by Scott Alexander](https://open.substack.com/pub/astralcodexten/p/what-deontological-bars?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Reads` *2026-05-02*
+- [Notes on the Future of Quantitative Social Science](https://rohanalexander.github.io/notes_on_the_future) `Reads` *2026-05-02*
+- [Cloud Labs and the Floodlight Effect - by William H. Bragg](https://open.substack.com/pub/partialagonism/p/cloud-labs-and-the-floodlight-effect?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Ideas` *2026-05-02*
+- [Social Credit - by Nicholas Decker - Homo Economicus](https://nicholasdecker.substack.com/p/social-credit?utm_source=%2Finbox&utm_medium=reader2) `Ideas` *2026-05-02*
+- [Ourensec - Asociación de Ciberseguridad de Ourense](https://ourensec.org) `Collectives and Magazines` *2026-05-02*
 - [Peeking into VALORANT&-x27;s Netcode | Riot Games](https://www.riotgames.com/en/news/peeking-valorants-netcode) `Tech` *2026-05-01*
 - [Articles - Toni López](https://www.tonilopezmr.com/articles) `Tech` *2026-05-01*
 - [Apocalypse Early Warning System](https://ews.kylemcdonald.net) `Tools and Interactive Websites` *2026-05-01*
