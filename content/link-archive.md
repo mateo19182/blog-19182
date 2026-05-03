@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-05-03
+date: 2026-05-04
 tags: 
   - personal
 ---
@@ -9,6 +9,8 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [What Makes Art Great? - Nabeel S. Qureshi](https://open.substack.com/pub/nabeelqu/p/what-makes-art-great?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Arts` *2026-05-03*
+- [stupid nyt](https://walzr.com/stupid-nyt) `Collectives and Magazines` *2026-05-03*
 - [Notion](https://yumoxu.notion.site/multi-teacher-on-policy-distillation) `Academic Papers and Resources` *2026-05-02*
 - [Blog · Proximal](https://www.proximal.ai/blog) `Tech` *2026-05-02*
 - [Pavlov's List: A List of RL Environment Startups](https://pavlovslist.com) `Tech` *2026-05-02*
