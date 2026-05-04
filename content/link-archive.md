@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-05-04
+date: 2026-05-05
 tags: 
   - personal
 ---
@@ -9,6 +9,23 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Inicio - Barcelona Zettascale Lab](https://bzl.es) `Tech` *2026-05-04*
+- [magecart injection on evilcontrollers](https://blog.spin.rip/evilcontrollers-magecart-injection) `Tech` *2026-05-04*
+- [Talking to Transformers — Mira Blog](https://miraos.org/blog/2026/05/02/talking-to-transformers) `Tech` *2026-05-04*
+- [Agentic Coding is a Trap | Lars Faye](https://larsfaye.com/articles/agentic-coding-is-a-trap) `Tech` *2026-05-04*
+- [Laws of Tech: Commoditize Your Complement · Gwern.net](https://gwern.net/complement) `Tech` *2026-05-04*
+- [Why Is Schizophrenia So Hard to Tackle?](https://www.theseedsofscience.pub/p/why-is-schizophrenia-so-hard-to-tackle?utm_source=%2Finbox&utm_medium=reader2&hide_intro_popup=true) `Reads` *2026-05-04*
+- [The smelly baby problem - by Virginia Postrel](https://www.worksinprogress.news/p/how-disposable-diapers-conquered?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-05-04*
+- [“Self-experiment risk-taking interview”, by Elizabeth van Nostrand, Gwern · Gwern.net](https://gwern.net/interview-risk) `Reads` *2026-05-04*
+- [How an Oil Refinery Works - by Brian Potter](https://www.construction-physics.com/p/how-an-oil-refinery-works?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-05-04*
+- [Do Women Reproduce More than Men? - by Tomas Pueyo](https://unchartedterritories.tomaspueyo.com/p/do-women-reproduce-more-than-men?utm_source=%2Finbox&utm_medium=reader2&hide_intro_popup=true) `Reads` *2026-05-04*
+- [The Most Important Charts In The World - by Zvi Mowshowitz](https://thezvi.substack.com/p/the-most-important-charts-in-the?utm_source=%2Finbox&utm_medium=reader2) `Ideas` *2026-05-04*
+- [An environmentalist gets lunch](https://www.worksinprogress.news/p/notes-on-progress-an-environmentalist) `Ideas` *2026-05-04*
+- [My Talk at the European Parliament - by Joshua Citarella](https://joshuacitarella.substack.com/p/my-talk-at-the-european-parliament?utm_source=%2Finbox&utm_medium=reader2) `Ideas` *2026-05-04*
+- [Your Attempt To Solve Debate Will Not Work](https://www.astralcodexten.com/p/your-attempt-to-solve-debate-will?utm_source=%2Finbox&utm_medium=reader2) `Ideas` *2026-05-04*
+- [Hacking Smartphone ESP Apps · Gwern.net](https://gwern.net/esp-hacking) `Ideas` *2026-05-04*
+- [Make Your Own Micro Forest - Offrange](https://ambrook.com/offrange/environment/a-forest-in-your-pocket) `Ideas` *2026-05-04*
+- [The Tech Emails Files](https://files.techemails.com) `Museums - Indexers` *2026-05-04*
 - [What Makes Art Great? - Nabeel S. Qureshi](https://open.substack.com/pub/nabeelqu/p/what-makes-art-great?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Arts` *2026-05-03*
 - [stupid nyt](https://walzr.com/stupid-nyt) `Collectives and Magazines` *2026-05-03*
 - [Notion](https://yumoxu.notion.site/multi-teacher-on-policy-distillation) `Academic Papers and Resources` *2026-05-02*
