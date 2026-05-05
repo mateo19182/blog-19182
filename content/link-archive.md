@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-05-05
+date: 2026-05-06
 tags: 
   - personal
 ---
@@ -9,6 +9,11 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [No Jensen, Not All Compute is Created Equal ](https://www.chinatalk.media/p/no-jensen-not-all-compute-is-created?utm_source=%2Finbox&utm_medium=reader2) `Tech` *2026-05-05*
+- [Lying for a Climate Crusade - Cremieux Recueil](https://www.cremieux.xyz/p/lying-for-climate-crusading) `Reads` *2026-05-05*
+- [Epistemic Fences - Theory &amp; Practice - Defender’s Corner](https://defenderofthebasic.substack.com/p/epistemic-fences-theory-and-practice?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-05-05*
+- [So, why is this game getting so much ATTENTION? (Part V)](https://vidhvat.substack.com/p/so-why-is-this-game-getting-so-much-326) `Reads` *2026-05-05*
+- [Asociación  Amigos de los Relojes de Sol (AARS) | "Defecit sol, nemo respicit" (G175)](https://relojesdesol.info) `Collectives and Magazines` *2026-05-05*
 - [Inicio - Barcelona Zettascale Lab](https://bzl.es) `Tech` *2026-05-04*
 - [magecart injection on evilcontrollers](https://blog.spin.rip/evilcontrollers-magecart-injection) `Tech` *2026-05-04*
 - [Talking to Transformers — Mira Blog](https://miraos.org/blog/2026/05/02/talking-to-transformers) `Tech` *2026-05-04*
