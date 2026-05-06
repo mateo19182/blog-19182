@@ -1,12 +1,20 @@
 ---
 title: Link Archive
-date: 2026-05-01
+date: 2026-05-07
+tags: 
+  - personal
 ---
 
 This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Roboflow 100: A New Object Detection Benchmark](https://www.rf100.org) `Academic Papers and Resources` *2026-05-06*
+- [archive.ph](https://archive.ph/Id25K) `Reads` *2026-05-06*
+- [Stuck Culture: El museo del Presente - by Gala - GirlPope](https://girlpope.substack.com/p/stuck-culture-el-museo-del-presente?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-05-06*
+- [Why shoplifting is bad - by Noah Smith - Noahpinion](https://www.noahpinion.blog/p/why-shoplifting-is-bad?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-05-06*
+- [Your Power Tools Got Worse On Purpose | Who Really Owns DeWalt, Craftsman, and Milwaukee?](https://www.worseonpurpose.com/p/your-power-tools-got-worse-on-purpose) `Reads` *2026-05-06*
+- [Pope Leo on AI: new generations must be helped, not hindered](https://0x0.st/Pjmb.html) `Ideas` *2026-05-06*
 - [No Jensen, Not All Compute is Created Equal ](https://www.chinatalk.media/p/no-jensen-not-all-compute-is-created?utm_source=%2Finbox&utm_medium=reader2) `Tech` *2026-05-05*
 - [Lying for a Climate Crusade - Cremieux Recueil](https://www.cremieux.xyz/p/lying-for-climate-crusading) `Reads` *2026-05-05*
 - [Epistemic Fences - Theory &amp; Practice - Defender’s Corner](https://defenderofthebasic.substack.com/p/epistemic-fences-theory-and-practice?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-05-05*
