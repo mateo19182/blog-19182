@@ -1,8 +1,6 @@
 ---
 title: Link Archive
-date: 2026-05-06
-tags: 
-  - personal
+date: 2026-05-01
 ---
 
 This is a collection of links I've archived over time.
