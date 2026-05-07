@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-05-07
+date: 2026-05-08
 tags: 
   - personal
 ---
@@ -9,6 +9,7 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [](https://openai.com/index/delivering-low-latency-voice-ai-at-scale) `Tech` *2026-05-07*
 - [Roboflow 100: A New Object Detection Benchmark](https://www.rf100.org) `Academic Papers and Resources` *2026-05-06*
 - [archive.ph](https://archive.ph/Id25K) `Reads` *2026-05-06*
 - [Stuck Culture: El museo del Presente - by Gala - GirlPope](https://girlpope.substack.com/p/stuck-culture-el-museo-del-presente?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-05-06*
