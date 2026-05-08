@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-05-08
+date: 2026-05-09
 tags: 
   - personal
 ---
@@ -9,6 +9,12 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [](https://arxiv.org/pdf/2605.00864) `Academic Papers and Resources` *2026-05-08*
+- [The map that keeps Burning Man honest](https://www.not-ship.com/burning-man-moop) `Reads` *2026-05-08*
+- [Trouble in YIMBYLand: What Can We Learn from Singapore&-x27;s Housing Miracle?](https://www.global-developments.org/p/trouble-in-yimbyland-singapores-housing?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-05-08*
+- [Africa is Doing Worse Than You Think - by Nicholas Decker](https://nicholasdecker.substack.com/p/africa-is-doing-worse-than-you-think?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-05-08*
+- [What will be scarce? - by Alex Imas - Ghosts of Electricity](https://aleximas.substack.com/p/what-will-be-scarce) `Reads` *2026-05-08*
+- [Don’t Reject Data Centers. Negotiate Harder.](https://progressandpoverty.substack.com/p/dont-reject-data-centers-negotiate?utm_source=%2Finbox&utm_medium=reader2) `Ideas` *2026-05-08*
 - [](https://openai.com/index/delivering-low-latency-voice-ai-at-scale) `Tech` *2026-05-07*
 - [Roboflow 100: A New Object Detection Benchmark](https://www.rf100.org) `Academic Papers and Resources` *2026-05-06*
 - [archive.ph](https://archive.ph/Id25K) `Reads` *2026-05-06*
