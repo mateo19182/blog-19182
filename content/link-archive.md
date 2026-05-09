@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-05-09
+date: 2026-05-10
 tags: 
   - personal
 ---
@@ -9,6 +9,35 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Loveland frog - Wikipedia](https://en.wikipedia.org/wiki/Loveland_frog) `Wikis` *2026-05-09*
+- [](https://arxiv.org/pdf/1207.6452) `Academic Papers and Resources` *2026-05-09*
+- [Proceedings of the Institute for a Christian Machine Intelligence](https://icmi-proceedings.com) `Academic Papers and Resources` *2026-05-09*
+- [](https://psycnet.apa.org/buy/2018-03783-002) `Academic Papers and Resources` *2026-05-09*
+- [tresguiastext.htm](https://www.hronir.org/tresguiastext.htm) `Arts` *2026-05-09*
+- [Víctor Nubla - Wikipedia, la enciclopedia libre](https://es.wikipedia.org/wiki/V%C3%ADctor_Nubla) `Arts` *2026-05-09*
+- [](http://vimeo.com/showcase/1541697) `Arts` *2026-05-09*
+- [portalcast.htm](https://www.hronir.org/portalcast.htm) `Arts` *2026-05-09*
+- [The God Protocols | Satoshi Nakamoto Institute](https://nakamotoinstitute.org/library/the-god-protocols) `Tech` *2026-05-09*
+- [All In On Fusion - by Caleb Harding - ChinaTalk](https://www.chinatalk.media/p/all-in-on-fusion?utm_source=%2Finbox&utm_medium=reader2) `Tech` *2026-05-09*
+- [How to Buy Cheap Claude Tokens in China - by Zilan Qian](https://www.chinatalk.media/p/how-to-buy-cheap-claude-tokens-in?utm_source=%2Finbox&utm_medium=reader2) `Tech` *2026-05-09*
+- [How to Score Economic Security - ChinaTalk](https://www.chinatalk.media/p/measuring-americas-chokepoints?utm_source=%2Finbox&utm_medium=reader2) `Tech` *2026-05-09*
+- [Notes from inside China&-x27;s AI labs - by Nathan Lambert](https://www.interconnects.ai/p/notes-from-inside-chinas-ai-labs?hide_intro_popup=true) `Tech` *2026-05-09*
+- [My Internet: Sam Kriss - by Nick  Catucci - Embedded](https://substack.com/home/post/p-196423817) `Reads` *2026-05-09*
+- [Notes on Jensen v Dwarkesh - by Jordan Schneider](https://www.chinatalk.media/p/notes-on-jensen-v-dwarkesh?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-05-09*
+- [The Magical Methane Machine  - by Brendan Borrell](https://www.corememory.com/p/the-magical-methane-machine-casey-handmer-terraform?hide_intro_popup=true) `Reads` *2026-05-09*
+- [Notes on the Hantavirus Outbreak](https://borretti.me/article/notes-on-the-hantavirus-outbreak) `Reads` *2026-05-09*
+- [The anti-market delusion at the heart of the housing crisis](https://www.theargumentmag.com/p/the-anti-market-delusion-at-the-heart?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-05-09*
+- [The AI Becker problem - by Luis Garicano](https://www.siliconcontinent.com/p/the-ai-becker-problem) `Reads` *2026-05-09*
+- [UBI advocates should watch South Korea - by Lars Doucet](https://progressandpoverty.substack.com/p/ubi-advocates-should-watch-south?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-05-09*
+- [The Bad Econ Takes Bracket 2026 - by Jack Whitcomb](https://jackonomics.substack.com/p/the-bad-econ-takes-bracket-2026) `Reads` *2026-05-09*
+- [Feynman&-x27;s Razor  - Defender’s Corner](https://defenderofthebasic.substack.com/p/feynmans-razor) `Ideas` *2026-05-09*
+- [moloch and the machines - by Adam Aleksic](https://etymology.substack.com/p/moloch-and-the-machines?utm_source=%2Finbox&utm_medium=reader2) `Ideas` *2026-05-09*
+- [Contra Everyone On Taste - by Scott Alexander](https://www.astralcodexten.com/p/contra-everyone-on-taste?utm_source=%2Finbox&utm_medium=reader2) `Ideas` *2026-05-09*
+- [Where Are You in the Context Supply Chain?](https://educatedguesser.substack.com/p/where-are-you-in-the-context-supply?triedRedirect=true) `Ideas` *2026-05-09*
+- [Just a moment...](https://www.economist.com/united-states/2026/05/06/city-parenting-has-become-a-financial-flex?giftId=NTBmYTQxN2EtNTU5OC00ZTg1LTg2ZjktNGRjYjFjNDcwODE5&utm_campaign=gifted_article) `Ideas` *2026-05-09*
+- [Evidence — Musk v. Altman](https://evidence.mts.now) `Tools and Interactive Websites` *2026-05-09*
+- [My Dad Is Gay For Pussy  - by Thailand Strip Club Reviewer](https://zoomtarded.substack.com/p/my-dad-is-gay-for-pussy?utm_source=%2Finbox&utm_medium=reader2) `Weird` *2026-05-09*
+- [ACX Review Archive](https://acxreviews.robennals.org) `Museums - Indexers` *2026-05-09*
 - [](https://arxiv.org/pdf/2605.00864) `Academic Papers and Resources` *2026-05-08*
 - [The map that keeps Burning Man honest](https://www.not-ship.com/burning-man-moop) `Reads` *2026-05-08*
 - [Trouble in YIMBYLand: What Can We Learn from Singapore&-x27;s Housing Miracle?](https://www.global-developments.org/p/trouble-in-yimbyland-singapores-housing?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-05-08*
