@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-05-13
+date: 2026-05-14
 tags: 
   - personal
 ---
@@ -9,6 +9,7 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Rust in Numbers—Asterisk](https://asteriskmag.com/issues/14/rust-in-numbers?utm_source=Asterisk&utm_campaign=c06646aa3f-EMAIL_CAMPAIGN_9_2_2025_7_16_COPY_01&utm_medium=email&utm_term=0_e0307a4ab2-c06646aa3f-585690599&mc_cid=c06646aa3f) `Reads` *2026-05-13*
 - [What’s new in biology: May 2026](https://www.worksinprogress.news/p/whats-new-in-biology-may-2026?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-05-12*
 - [Why books donʼt work | Andy Matuschak](https://andymatuschak.org/books) `Reads` *2026-05-10*
 - [ARRESTED IN JAPAN INSIDE A JAPANESE DETENTION FACILITY &mdash; SUNDAiCiTY](https://sundaicity.com/blogs/getting-arrested-in-japan) `Reads` *2026-05-10*
