@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-05-15
+date: 2026-05-16
 tags: 
   - personal
 ---
@@ -9,6 +9,14 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Autonomous AI research for nanogpt speedrun](https://www.primeintellect.ai/auto-nanogpt) `Tech` *2026-05-15*
+- [Mullvad exit IPs as a fingerprinting vector | tmctmt](https://tmctmt.com/posts/mullvad-exit-ips-as-a-fingerprinting-vector) `Tech` *2026-05-15*
+- [What&-x27;s with all the slide decks?](https://open.substack.com/pub/dynomight/p/slides?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Ideas` *2026-05-15*
+- [hydrogen jukeboxes: on the crammed poetics of &quot;creative writing&quot; LLMs – @nostalgebraist on Tumblr](https://www.tumblr.com/nostalgebraist/778041178124926976/hydrogen-jukeboxes) `Ideas` *2026-05-15*
+- [Funding Charity After AGI - by Nicholas Decker](https://open.substack.com/pub/nicholasdecker/p/funding-charity-after-agi?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Ideas` *2026-05-15*
+- [European stagnation is real](https://open.substack.com/pub/siliconcontinent/p/european-stagnation-is-real?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Ideas` *2026-05-15*
+- [Shame them, shun them, ban them, beat them!](https://open.substack.com/pub/experimentalhistory/p/shame-them-shun-them-ban-them-beat?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Ideas` *2026-05-15*
+- [PraxisLIVE](https://www.praxislive.org) `Tools and Interactive Websites` *2026-05-15*
 - [Rust in Numbers—Asterisk](https://asteriskmag.com/issues/14/rust-in-numbers?utm_source=Asterisk&utm_campaign=c06646aa3f-EMAIL_CAMPAIGN_9_2_2025_7_16_COPY_01&utm_medium=email&utm_term=0_e0307a4ab2-c06646aa3f-585690599&mc_cid=c06646aa3f) `Reads` *2026-05-13*
 - [What’s new in biology: May 2026](https://www.worksinprogress.news/p/whats-new-in-biology-may-2026?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-05-12*
 - [Why books donʼt work | Andy Matuschak](https://andymatuschak.org/books) `Reads` *2026-05-10*
