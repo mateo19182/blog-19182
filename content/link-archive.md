@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-05-17
+date: 2026-05-18
 tags: 
   - personal
 ---
@@ -9,6 +9,8 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Why Are Testosterone Levels Rising? - Cremieux Recueil](https://open.substack.com/pub/cremieux/p/why-are-testosterone-levels-rising?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Ideas` *2026-05-17*
+- [how to enter side doors - by maja - velvet noise](https://velvetnoise.substack.com/p/how-to-enter-side-doors?r=1gcxb&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true&triedRedirect=true&_src_ref=t.co) `Ideas` *2026-05-17*
 - [Autonomous AI research for nanogpt speedrun](https://www.primeintellect.ai/auto-nanogpt) `Tech` *2026-05-15*
 - [Mullvad exit IPs as a fingerprinting vector | tmctmt](https://tmctmt.com/posts/mullvad-exit-ips-as-a-fingerprinting-vector) `Tech` *2026-05-15*
 - [What&-x27;s with all the slide decks?](https://open.substack.com/pub/dynomight/p/slides?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Ideas` *2026-05-15*
