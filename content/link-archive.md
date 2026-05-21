@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-05-21
+date: 2026-05-22
 tags: 
   - personal
 ---
@@ -9,6 +9,9 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [](https://openai.com/index/model-disproves-discrete-geometry-conjecture) `Tech` *2026-05-21*
+- [A data driven study of a large scale micro component architecture   Niklas Gustavsson   -GSAS23 - YouTube](https://www.youtube.com/watch?v=sfCQmjRJ7TI) `Tech` *2026-05-21*
+- [Map of Metal](https://mapofmetal.com) `Tools and Interactive Websites` *2026-05-21*
 - [The Types Of Candidate You Find In The California Gubernatorial Race](https://open.substack.com/pub/astralcodexten/p/the-types-of-candidate-you-find-in?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Reads` *2026-05-19*
 - [](https://gpu.audio/newsfeed/soundscape-zone-multi-zone-separation-demo-78) `Tech` *2026-05-18*
 - [Why Are Testosterone Levels Rising? - Cremieux Recueil](https://open.substack.com/pub/cremieux/p/why-are-testosterone-levels-rising?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Ideas` *2026-05-17*
