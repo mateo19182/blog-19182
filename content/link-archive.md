@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-05-23
+date: 2026-05-24
 tags: 
   - personal
 ---
@@ -9,6 +9,12 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [The PMA: Nockchain’s Persistent Memory Arena](https://nockchain.ghost.io/the-pma/?ref=nockchain-newsletter) `Tech` *2026-05-23*
+- [The Hardware Lottery](https://hardwarelottery.github.io) `Tech` *2026-05-23*
+- [Leaving the Physical World | Electronic Frontier Foundation](https://www.eff.org/pages/leaving-physical-world) `Reads` *2026-05-23*
+- [China’s AI optimism isn’t what it seems - by Zilan Qian](https://open.substack.com/pub/chinatalk/p/chinas-ai-optimism-isnt-what-it-seems?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Reads` *2026-05-23*
+- [Why Japanese companies do so many different things](https://davidoks.blog/p/why-japanese-companies-do-so-many) `Reads` *2026-05-23*
+- [EVERY SUPPLY CHAIN IN THE WORLD - by vincent huang](https://mindslice.substack.com/p/every-supply-chain-in-the-world) `Reads` *2026-05-23*
 - [](https://openai.com/index/model-disproves-discrete-geometry-conjecture) `Tech` *2026-05-21*
 - [A data driven study of a large scale micro component architecture   Niklas Gustavsson   -GSAS23 - YouTube](https://www.youtube.com/watch?v=sfCQmjRJ7TI) `Tech` *2026-05-21*
 - [Map of Metal](https://mapofmetal.com) `Tools and Interactive Websites` *2026-05-21*
