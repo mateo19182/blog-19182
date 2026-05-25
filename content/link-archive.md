@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-05-25
+date: 2026-05-26
 tags: 
   - personal
 ---
@@ -9,6 +9,12 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Jira IS Turing-Complete](https://seriot.ch/computation/jira.html) `Tech` *2026-05-25*
+- [Personalization in the Era of LLMs - Shivam Verma, Spotify - YouTube](https://youtu.be/5YSJEP0HWzM?is=9Djm8TdHPWTkgWkZ) `Tech` *2026-05-25*
+- [Why British nuclear flopped - by Alex Chalmers](https://www.worksinprogress.news/p/why-british-nuclear-flopped?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-05-25*
+- [Endometriosis is an incredibly interesting disease](https://www.owlposting.com/p/endometriosis-is-an-incredibly-interesting) `Reads` *2026-05-25*
+- [archive.ph](https://archive.ph/iUvP0) `Reads` *2026-05-25*
+- [Home - CyPhy Life](https://cyphy.life) `Collectives and Magazines` *2026-05-25*
 - [Stable Audio 3](https://arxiv.org/html/2605.17991v1) `Academic Papers and Resources` *2026-05-24*
 - [Frontier labs don’t use most AI compute (yet) - by Josh You](https://substack.com/@joshyou/note/p-198579194?utm_source=notes-share-action&r=bdhc9) `Tech` *2026-05-24*
 - [Stable Audio 3, explained in 5 figures - by Jordi Pons](https://artintech.substack.com/p/stable-audio-3-explained-in-5-figures) `Tech` *2026-05-24*
