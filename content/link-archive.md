@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-05-26
+date: 2026-05-27
 tags: 
   - personal
 ---
@@ -9,6 +9,9 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [OneTaste - Wikipedia](https://en.wikipedia.org/wiki/OneTaste) `Wikis` *2026-05-26*
+- [Flores de CBD: sentencia del Tribunal Supremo - Francisco Azorín Abogados](https://franciscoazorinabogados.com/cbd/una-sentencia-del-tribunal-supremo-considera-droga-a-las-flores-de-cbd) `Reads` *2026-05-26*
+- [nothing will change your life more than saying what you actually want to say](https://www.avabear.xyz/p/nothing-will-change-your-life-more) `Ideas` *2026-05-26*
 - [Jira IS Turing-Complete](https://seriot.ch/computation/jira.html) `Tech` *2026-05-25*
 - [Personalization in the Era of LLMs - Shivam Verma, Spotify - YouTube](https://youtu.be/5YSJEP0HWzM?is=9Djm8TdHPWTkgWkZ) `Tech` *2026-05-25*
 - [Why British nuclear flopped - by Alex Chalmers](https://www.worksinprogress.news/p/why-british-nuclear-flopped?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-05-25*
