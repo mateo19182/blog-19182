@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-05-27
+date: 2026-05-28
 tags: 
   - personal
 ---
@@ -9,6 +9,9 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Epicure Flavour Explorer](https://epicure.kaikaku.ai/about) `Academic Papers and Resources` *2026-05-27*
+- [Nightmare Eclipse](https://deadeclipse666.blogspot.com/?m=1) `Tech` *2026-05-27*
+- [A portentous reunion | The Observation Deck](https://bcantrill.dtrace.org/2026/05/25/a-portentous-reunion) `Reads` *2026-05-27*
 - [OneTaste - Wikipedia](https://en.wikipedia.org/wiki/OneTaste) `Wikis` *2026-05-26*
 - [Flores de CBD: sentencia del Tribunal Supremo - Francisco Azorín Abogados](https://franciscoazorinabogados.com/cbd/una-sentencia-del-tribunal-supremo-considera-droga-a-las-flores-de-cbd) `Reads` *2026-05-26*
 - [nothing will change your life more than saying what you actually want to say](https://www.avabear.xyz/p/nothing-will-change-your-life-more) `Ideas` *2026-05-26*
