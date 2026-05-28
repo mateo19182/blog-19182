@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-05-28
+date: 2026-05-29
 tags: 
   - personal
 ---
@@ -9,6 +9,7 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [1.2M Messages to Obsidian - Building a Relationship Map from 20 Years of Chat History](https://drobinin.com/posts/am-i-a-bad-friend/#fn1) `Tech` *2026-05-28*
 - [Epicure Flavour Explorer](https://epicure.kaikaku.ai/about) `Academic Papers and Resources` *2026-05-27*
 - [Nightmare Eclipse](https://deadeclipse666.blogspot.com/?m=1) `Tech` *2026-05-27*
 - [A portentous reunion | The Observation Deck](https://bcantrill.dtrace.org/2026/05/25/a-portentous-reunion) `Reads` *2026-05-27*
