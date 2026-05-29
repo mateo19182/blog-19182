@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-05-29
+date: 2026-05-30
 tags: 
   - personal
 ---
@@ -9,6 +9,9 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [DEMON: Diffusion Engine for Musical Orchestrated Noise](https://daydreamlive.github.io/DEMON) `Academic Papers and Resources` *2026-05-29*
+- [China&-x27;s Robotics Dream Began in 1972 - by Irene Zhang](https://open.substack.com/pub/chinatalk/p/chinas-father-of-robotics?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Reads` *2026-05-29*
+- [The Criminal, Socialm and Economic Cost of Immigrants in the EU](https://open.substack.com/pub/unchartedterritories/p/the-criminal-socialm-and-economic?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Reads` *2026-05-29*
 - [1.2M Messages to Obsidian - Building a Relationship Map from 20 Years of Chat History](https://drobinin.com/posts/am-i-a-bad-friend/#fn1) `Tech` *2026-05-28*
 - [Epicure Flavour Explorer](https://epicure.kaikaku.ai/about) `Academic Papers and Resources` *2026-05-27*
 - [Nightmare Eclipse](https://deadeclipse666.blogspot.com/?m=1) `Tech` *2026-05-27*
