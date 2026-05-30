@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-05-30
+date: 2026-05-31
 tags: 
   - personal
 ---
@@ -9,6 +9,10 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [When AI Starts Writing Systems Code | Core Automation](https://www.coreauto.com/blog/when-ai-starts-writing-systems-code) `Tech` *2026-05-30*
+- [Snowboard Kids 2 is 100% Decompiled | Chris' Blog](https://blog.chrislewis.au/snowboard-kids-2-is-100-decompiled) `Tech` *2026-05-30*
+- [On Rendering Diffs :: Pierre Computer Company](https://pierre.computer/writing/on-rendering-diffs) `Tech` *2026-05-30*
+- [Just a moment...](https://steve-yegge.medium.com/the-last-technical-interview-bc13ddcf4564) `Reads` *2026-05-30*
 - [DEMON: Diffusion Engine for Musical Orchestrated Noise](https://daydreamlive.github.io/DEMON) `Academic Papers and Resources` *2026-05-29*
 - [China&-x27;s Robotics Dream Began in 1972 - by Irene Zhang](https://open.substack.com/pub/chinatalk/p/chinas-father-of-robotics?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Reads` *2026-05-29*
 - [The Criminal, Socialm and Economic Cost of Immigrants in the EU](https://open.substack.com/pub/unchartedterritories/p/the-criminal-socialm-and-economic?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Reads` *2026-05-29*
