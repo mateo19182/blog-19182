@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-05-31
+date: 2026-06-01
 tags: 
   - personal
 ---
@@ -9,6 +9,7 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Domain Expertise Has Always Been the Real Moat | Aaron Brethorst](https://www.brethorsting.com/blog/2026/05/domain-expertise-has-always-been-the-real-moat) `Tech` *2026-05-31*
 - [When AI Starts Writing Systems Code | Core Automation](https://www.coreauto.com/blog/when-ai-starts-writing-systems-code) `Tech` *2026-05-30*
 - [Snowboard Kids 2 is 100% Decompiled | Chris' Blog](https://blog.chrislewis.au/snowboard-kids-2-is-100-decompiled) `Tech` *2026-05-30*
 - [On Rendering Diffs :: Pierre Computer Company](https://pierre.computer/writing/on-rendering-diffs) `Tech` *2026-05-30*
