@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-06-02
+date: 2026-06-03
 tags: 
   - personal
 ---
@@ -9,6 +9,8 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Long march through the institutions - Wikipedia](https://en.wikipedia.org/wiki/Long_march_through_the_institutions) `Wikis` *2026-06-02*
+- [Fernando Pessoa &amp; His Heteronyms](https://poetrysociety.org/poems-essays/tributes/fernando-pessoa-his-heteronyms) `Reads` *2026-06-02*
 - [](https://x.com/joeschmidtiv/status/2059642470334677472) `Tech` *2026-06-01*
 - [Book Review: The Dialectical Imagination](https://open.substack.com/pub/astralcodexten/p/book-review-the-dialectical-imagination?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Reads` *2026-06-01*
 - [archive.ph](https://archive.ph/7XytV) `Ideas` *2026-06-01*
