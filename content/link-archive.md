@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-06-05
+date: 2026-06-06
 tags: 
   - personal
 ---
@@ -9,6 +9,14 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Toward a working definition of paperclip-punk](https://www.virtualelena.co/p/toward-a-working-definition-of-paperclip?hide_intro_popup=true) `Arts` *2026-06-05*
+- [Fernando S. Cardo](https://www.ferscardo.com) `Tech` *2026-06-05*
+- [Samuel Corsan | 16-year-old full stack developer](https://disam.dev) `Tech` *2026-06-05*
+- [When AI builds itself \ Anthropic](https://www.anthropic.com/institute/recursive-self-improvement) `Tech` *2026-06-05*
+- [archive.ph](https://archive.ph/bcpZl) `Reads` *2026-06-05*
+- [MAIN CHARACTER ENERGY - by anna - chiasm](https://chiasm.substack.com/p/main-character-energy) `Ideas` *2026-06-05*
+- [The Biggest Tech Fellowship List | fellows.best](https://fellows.best) `Museums - Indexers` *2026-06-05*
+- [River](https://river.site) `Collectives and Magazines` *2026-06-05*
 - [Attention Required! | Cloudflare](https://doble.io) `Tech` *2026-06-04*
 - [PlayStation Architecture | A Practical Analysis](https://www.copetti.org/writings/consoles/playstation) `Tech` *2026-06-03*
 - [Is Frontier Asynchronous RL Solved? — Luke J. Huang](https://luk-huang.github.io/personal-website/blog/is-frontier-asynchronous-rl-solved.html) `Tech` *2026-06-03*
