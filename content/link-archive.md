@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-06-08
+date: 2026-06-09
 tags: 
   - personal
 ---
@@ -9,6 +9,13 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Reasons to be pessimistic (and optimistic) on the future of biosecurity](https://www.theseedsofscience.pub/p/reasons-to-be-pessimistic-and-optimistic?utm_source=%2Finbox&utm_medium=reader2) `Tech` *2026-06-08*
+- [How the hell is Groq raising more money? - zach&-x27;s tech blog](https://www.zach.be/p/how-the-hell-is-groq-raising-more) `Tech` *2026-06-08*
+- [RefusaLLM](https://refusallm.rachel.systems) `Tech` *2026-06-08*
+- [Patching my guitar amp's firmware - mforney.org](https://mforney.org/blog/2026-05-28-patching-my-guitar-amps-firmware.html) `Tech` *2026-06-08*
+- [archive.ph](https://archive.ph/rvxtf) `Reads` *2026-06-08*
+- [The Cypherpunk Library](https://www.cypherpunkbooks.com) `Museums - Indexers` *2026-06-08*
+- [Founder Profiles](https://www.founderprofiles.ai) `Museums - Indexers` *2026-06-08*
 - [Toward a working definition of paperclip-punk](https://www.virtualelena.co/p/toward-a-working-definition-of-paperclip?hide_intro_popup=true) `Arts` *2026-06-05*
 - [Fernando S. Cardo](https://www.ferscardo.com) `Tech` *2026-06-05*
 - [Samuel Corsan | 16-year-old full stack developer](https://disam.dev) `Tech` *2026-06-05*
