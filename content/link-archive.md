@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-06-09
+date: 2026-06-10
 tags: 
   - personal
 ---
@@ -9,6 +9,9 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [OpenCV 5 Deep Dive: A New Foundation for Computer Vision](https://opencv.org/opencv-5/#h-how-fast-is-it-opencv-5-vs-onnx-runtime) `Tech` *2026-06-09*
+- [thi.ng - Open source building blocks for computational design &amp; art. Est. 2006 (TypeScript, Zig, GLSL, Clojure, C, SideFX Houdini)](https://thi.ng) `Museums - Indexers` *2026-06-09*
+- [Old'aVista: Home](https://oldavista.com) `Museums - Indexers` *2026-06-09*
 - [Reasons to be pessimistic (and optimistic) on the future of biosecurity](https://www.theseedsofscience.pub/p/reasons-to-be-pessimistic-and-optimistic?utm_source=%2Finbox&utm_medium=reader2) `Tech` *2026-06-08*
 - [How the hell is Groq raising more money? - zach&-x27;s tech blog](https://www.zach.be/p/how-the-hell-is-groq-raising-more) `Tech` *2026-06-08*
 - [RefusaLLM](https://refusallm.rachel.systems) `Tech` *2026-06-08*
