@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-06-10
+date: 2026-06-11
 tags: 
   - personal
 ---
@@ -9,6 +9,8 @@ This is a collection of links I've archived over time.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [More molly guards – Unsung](https://unsung.aresluna.org/more-molly-guards) `Reads` *2026-06-10*
+- [Controlling the capital after AGI](https://open.substack.com/pub/epochai/p/controlling-the-capital-after-agi?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Ideas` *2026-06-10*
 - [OpenCV 5 Deep Dive: A New Foundation for Computer Vision](https://opencv.org/opencv-5/#h-how-fast-is-it-opencv-5-vs-onnx-runtime) `Tech` *2026-06-09*
 - [thi.ng - Open source building blocks for computational design &amp; art. Est. 2006 (TypeScript, Zig, GLSL, Clojure, C, SideFX Houdini)](https://thi.ng) `Museums - Indexers` *2026-06-09*
 - [Old'aVista: Home](https://oldavista.com) `Museums - Indexers` *2026-06-09*
