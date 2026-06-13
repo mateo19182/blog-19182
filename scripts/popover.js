@@ -9,6 +9,14 @@
   let showTimer = null
   let hideTimer = null
   let activeLink = null
+  let mouseX = 0
+  let mouseY = 0
+
+  document.addEventListener("mousemove", (e) => {
+    mouseX = e.clientX
+    mouseY = e.clientY
+    if (popover && popover.classList.contains("visible")) positionAtCursor()
+  })
 
   function isInternalPage(a) {
     const href = a.getAttribute("href") || ""
@@ -51,23 +59,21 @@
     return popover
   }
 
-  function position(link) {
-    const r = link.getBoundingClientRect()
+  // Place the preview window next to the cursor, flipping to stay on screen.
+  function positionAtCursor() {
     const pop = popover
-    pop.style.visibility = "hidden"
-    pop.classList.add("visible")
     const pw = pop.offsetWidth
     const ph = pop.offsetHeight
-    const margin = 10
-    let left = r.left
-    let top = r.bottom + 8
-    if (left + pw > window.innerWidth - margin) left = window.innerWidth - pw - margin
+    const margin = 12
+    const offset = 16
+    let left = mouseX + offset
+    let top = mouseY + offset
+    if (left + pw > window.innerWidth - margin) left = mouseX - pw - offset // flip left
     if (left < margin) left = margin
-    if (top + ph > window.innerHeight - margin) top = r.top - ph - 8 // flip above
+    if (top + ph > window.innerHeight - margin) top = mouseY - ph - offset // flip up
     if (top < margin) top = margin
     pop.style.left = left + "px"
     pop.style.top = top + "px"
-    pop.style.visibility = ""
   }
 
   async function show(link) {
@@ -78,8 +84,11 @@
     pop.innerHTML =
       (data.title ? `<div class="popover-title">${data.title}</div>` : "") +
       `<div class="popover-body">${data.body}</div>`
-    position(link)
-    requestAnimationFrame(() => pop.classList.add("visible"))
+    positionAtCursor()
+    requestAnimationFrame(() => {
+      pop.classList.add("visible")
+      positionAtCursor()
+    })
   }
 
   function hide() {

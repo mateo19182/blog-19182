@@ -292,16 +292,16 @@ li.archive-hidden { display: none; }
 .popover {
   position: fixed;
   z-index: 50;
-  max-width: 360px;
-  max-height: 340px;
+  width: 290px;
+  max-height: 220px;
   overflow: hidden;
   background: var(--light);
   border: 1px solid var(--lightgray);
   border-radius: 10px;
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.18);
-  padding: 0.9rem 1.1rem;
-  font-size: 0.82rem;
-  line-height: 1.5;
+  padding: 0.75rem 0.9rem;
+  font-size: 0.78rem;
+  line-height: 1.45;
   opacity: 0;
   transform: translateY(4px);
   transition: opacity 0.12s ease, transform 0.12s ease;

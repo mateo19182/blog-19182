@@ -1,19 +1,20 @@
 ---
 title: Home
 ---
-
 Hey! I'm Mateo. Since you are here, you might be interested in:
 
 - [[now]] 
-    - what I'm doing at the moment.
+  - what I'm doing at the moment.
 - [[writings]] (by [[tags]])
   - a vague attempt to sort my thoughts into words. I find that is one of the best ways to learn about different topics.
 - [[link-archive]]
-    - interesting links I've collected over time.
+  - interesting links I've collected over time.
 - [[projects]]
 - [[things i like]]
 
-Check out other stuff on [GitHub](https://github.com/mateo19182), [SoundCloud](https://soundcloud.com/m19182), [YouTube](https://www.youtube.com/channel/UCEJKcBK7i88Iv3saZy2xuSg) and [faircamp](https://music.m19182.dev/). I also run [No-Cosign](https://no-cosign.m19182.dev/), a music blog with some friends.
+Check out other stuff on [GitHub](https://github.com/mateo19182), [SoundCloud](https://soundcloud.com/m19182), [YouTube](https://www.youtube.com/channel/UCEJKcBK7i88Iv3saZy2xuSg) and [faircamp](https://music.m19182.dev/). 
+
+I also run [No-Cosign](https://no-cosign.m19182.dev/), a music blog with some friends.
 
 Reach me at admin (@) m19182.dev (preferred), [X](https://x.com/mateo19182) or [Linkedin](https://www.linkedin.com/in/mateo-amado-ares-9b7551243/)
 
