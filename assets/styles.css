@@ -150,7 +150,7 @@ body {
 :root[data-theme="dark"] .theme-toggle .icon-moon { display: block; }
 
 /* ---- main ---- */
-.content { flex: 1; padding: 2rem 0 3rem; }
+.content { flex: 1; padding: 1.25rem 0 1.5rem; }
 
 .article-title {
   font-family: var(--font-header);
@@ -364,7 +364,7 @@ li.archive-hidden { display: none; }
   padding: 1.5rem 0 2.5rem;
   font-size: 0.85rem;
   color: var(--gray);
-  margin-top: 2rem;
+  margin-top: 0;
 }
 .site-footer .wrap {
   display: flex;
@@ -427,6 +427,8 @@ li.archive-hidden { display: none; }
   .entry-list li a:first-child {
     flex: 1; white-space: normal; overflow: visible; text-overflow: clip;
   }
+  /* hide tags on mobile so titles can wrap without overlap */
+  .entry-list li .tag { display: none; }
 }
 
 /* hide sand garden on coarse pointers / small screens (desktop-only easter egg) */
