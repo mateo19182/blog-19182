@@ -1,6 +1,6 @@
 ---
 title: Favourite music of 2024
-date: 2024-12-6
+date: 2024-12-06
 tags: 
   - writing
   - music

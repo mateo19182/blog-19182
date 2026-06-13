@@ -1,17 +1,47 @@
-# Quartz v4
+# blog-19182
 
-> “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
+Mateo's personal blog — [blog.m19182.dev](https://blog.m19182.dev).
 
-Quartz is a set of tools that helps you publish your [digital garden](https://jzhao.xyz/posts/networked-thought) and notes as a website for free.
+A small, dependency-light static site generator (no framework). Markdown in,
+HTML out. Clean and minimal: black/white in light mode, dark-green/black in dark.
 
-🔗 Read the documentation and get started: https://quartz.jzhao.xyz/
+## Stack
 
-[Join the Discord Community](https://discord.gg/cRFFHYye7t)
+- `build.mjs` — the generator. Reads `content/`, renders `public/`.
+- `lib/` — markdown pipeline (markdown-it + wikilinks + KaTeX + Shiki),
+  HTML templates, OG-image rendering (satori + resvg), RSS/sitemap.
+- `assets/` — `styles.css`, fonts, and what gets copied to `/static`.
+- `scripts/` — client JS: theme toggle, link-archive filter, sand-garden easter egg.
+- `content/` — the markdown vault (Obsidian-style `[[wikilinks]]`, frontmatter, tags).
+- `functions/_middleware.ts` — Cloudflare Pages markdown content-negotiation.
 
-## Sponsors
+## Develop
 
-<p align="center">
-  <a href="https://github.com/sponsors/jackyzha0">
-    <img src="https://cdn.jsdelivr.net/gh/jackyzha0/jackyzha0/sponsorkit/sponsors.svg" />
-  </a>
-</p>
+```sh
+npm install
+npm run build        # -> public/
+npm run serve        # build + serve at http://localhost:8080
+```
+
+## Features
+
+- Writings index + per-tag browsing, Now / Projects / Things-I-Like / Home pages.
+- Link archive (~2,600 links) with a live search + category filter.
+- Per-page OpenGraph images, RSS (`/index.xml`), `sitemap.xml`, `robots.txt`.
+- A raw `.md` copy of every page, served to clients sending `Accept: text/markdown`
+  via the Cloudflare Pages middleware
+  ([markdown negotiation](https://isitagentready.com/.well-known/agent-skills/markdown-negotiation/)).
+- Footer sand-garden easter egg (fill the canvas to win).
+- Self-hosted Umami analytics.
+
+## Deploy
+
+Cloudflare Pages (git integration):
+
+- Build command: `npm run build`
+- Output directory: `public`
+- `functions/` is picked up automatically for the markdown-negotiation middleware.
+
+## License
+
+Content & code released under [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/).

@@ -1,6 +1,6 @@
 ---
 title: Favourite music of 2025
-date: 2025-12-6
+date: 2025-12-06
 tags: 
   - writing
   - music

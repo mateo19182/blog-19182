@@ -1,6 +1,6 @@
 ---
 title: Embodied Evolution
-date: 2024-04-1
+date: 2024-04-01
 tags: 
   - writing
   - computers

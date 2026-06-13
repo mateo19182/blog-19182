@@ -1,6 +1,6 @@
 ---
 title: The Case Against Marketing
-date: 04 May, 2024
+date: 2024-05-04
 tags: 
   - writing
   - policy

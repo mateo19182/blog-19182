@@ -2,7 +2,7 @@
 // See https://isitagentready.com/.well-known/agent-skills/markdown-negotiation/SKILL.md
 //
 // When a client sends `Accept: text/markdown`, serve the pre-built .md
-// counterpart emitted by the RawMarkdown Quartz plugin. Browsers and other
+// counterpart emitted by build.mjs alongside each .html. Browsers and other
 // clients still get the HTML response by default.
 
 interface Env {
