@@ -8,7 +8,7 @@ tags:
 
 Found out via X about this company, AugustaLabs.ai, that recently raised money and created a CTF to find talent. While it seems like they are looking for Portuguese people, I trust that being Galician will give me a chance ;) 
 
-Other write-ups i saw seems to be mostly LLM generated. I believe in using available tools to it's fullest extent, and most of this research was heavily aided by claude code and codex, but I don't think it's fitting [for writing a post like this one.](https://samkriss.substack.com/p/if-you-let-ai-do-your-writing-i-will) Part of what makes a good write-up is in it's author unique voice.
+Other write-ups I saw seem to be mostly LLM generated. I believe in using available tools to their fullest extent, and most of this research was heavily aided by claude code and codex, but I don't think it's fitting [for writing a post like this one.](https://samkriss.substack.com/p/if-you-let-ai-do-your-writing-i-will) Part of what makes a good write-up is its author's unique voice.
 
 ---
 
@@ -58,7 +58,7 @@ Feeding the other special tokens returns nothing of relevance (" de carne e de c
 
 Next I wanted to figure out whether the model was actually trained on these tokens or they were just manually added, to avoid wasting time here if it's some kind of decoy. Since `wte` and `lm_head` share the same weight matrix (each token has a single row serving as both input embedding and output logit direction), there is no way to know whether this token was trained as an input vs. as an output.
 
-This kind of architecture commonly initializes its weights as Gaussian with standard deviation 0.02. For a 640-dimensional vector that's an expected length (L2 norm) of about 0.506. By measuring those values we get:
+This kind of architecture commonly initializes its weights as Gaussian with standard deviation 0.02. For a 640-dimensional vector that's an expected length (L2 norm) of about `0.02·√640 ≈ 0.506`. By measuring those values we get:
 
 
 | token           | norm      | vs init |
@@ -87,9 +87,9 @@ Which hints that the corpus is [Projecto Adamastor](https://projectoadamastor.or
 
 The model has memorized the ISBNs, Creative Commons preambles, and cover credits (`Capa: Ana Ferreira`). However, inspecting the epubs, it doesn't seem like there are any `{` or `_` characters — could be part of the processing, but definitely suspicious.
 
-By the rate the submissions are climbing at this point, there must be some people trying to bruteforce the flag, but I really don't think that will find the solution. The challenge seems well engineered enough that any naive LLM approach won't work. Found some write-ups ([1](https://github.com/diomonogatari/arcus-ode-triunfal-lab/blob/main/WRITEUP.md), [2](https://github.com/luisdafonseca/arcus-ode-triunfal/blob/main/WRITEUP.md), [3](https://github.com/diomonogatari/arcus-ode-triunfal-lab/blob/main/WRITEUP.md)) that will serve to discard the stuff they already tried.
+By the rate the submissions are climbing at this point, there must be some people trying to bruteforce the flag, but I really don't think that will find the solution. The challenge seems well engineered enough that any naive LLM approach won't work. Found some write-ups ([1](https://github.com/diomonogatari/arcus-ode-triunfal-lab/blob/main/WRITEUP.md), [2](https://github.com/luisdafonseca/arcus-ode-triunfal/blob/main/WRITEUP.md)) that will serve to discard the stuff they already tried.
 
-Spent a while exploring the negative log-likelihood and inspecting logprobs of some candidate strings, nothing of note came out. Tried skipping the [EPSON W-02] error by inserting the correct tokens from the original poem, then just made the model ran as fast as i could (~30k/tok second on my laptop's AMD Radeon 8050S) to try to bruteforce something interesting but no avail.
+Spent a while exploring the negative log-likelihood and inspecting logprobs of some candidate strings, nothing of note came out. Tried skipping the [EPSON W-02] error by inserting the correct tokens from the original poem, then just ran the model as fast as I could (~30k tok/second on my laptop's AMD Radeon 8050S) to try to bruteforce something interesting but no avail.
 
 ---
 
@@ -97,7 +97,7 @@ Some days later I picked up the challenge again, and it turns out the weights ha
 
 Figuring out what changed from the old model to the new one should be interesting. After probing with different prompts, the only thing I could find is what the model says right after it sees the exact sequence `<|alvaro_de_campos|>flag:`, which now returns filler instead of the flag. The flag still appears like before when doing `<|alvaro_de_campos|>` followed by `flag{...`. Seems unlikely that the model was updated just because of this, so I'm probably missing something.
 
-Spent some time on X looking at the discussion, and it seems like maybe the flag was [leaked](https://x.com/JeoCryp/status/2062136235385057631?s=20) in the strings of the v1 model? Some deleted tweets point towards that... also found some other hackatons with a similar premise, like [1](https://www.ctfiot.com/173678.html) and [2](https://pure.tudelft.nl/ws/portalfiles/portal/151662282/SaTML_Training_Data_Extraction_Challenge_.pdf) Looking for possible cyphers or codes that could be used here, given that Pessoa was very much into occultism and [freemasonry](https://salaamshrine.com/focus-on-freemasonry-fernando-pessoa/), the [Pigpen cipher](https://en.wikipedia.org/wiki/Pigpen_cipher) might be relevant. Spent a while testing the ideas in those CTFs without success, sum of logits oracle with some cypher on top.
+Spent some time on X looking at the discussion, and it seems like maybe the flag was [leaked](https://x.com/JeoCryp/status/2062136235385057631?s=20) in the strings of the v1 model? Some deleted tweets point towards that... also found some other hackathons with a similar premise, like [1](https://www.ctfiot.com/173678.html) and [2](https://pure.tudelft.nl/ws/portalfiles/portal/151662282/SaTML_Training_Data_Extraction_Challenge_.pdf) Looking for possible cyphers or codes that could be used here, given that Pessoa was very much into occultism and [freemasonry](https://salaamshrine.com/focus-on-freemasonry-fernando-pessoa/), the [Pigpen cipher](https://en.wikipedia.org/wiki/Pigpen_cipher) might be relevant. Spent a while testing the ideas in those CTFs without success, sum of logits oracle with some cypher on top.
 
 Read some [papers](https://www.usenix.org/system/files/sec21-carlini-extracting.pdf), and found that my previous attempt using raw perplexity as a metric is a bad signal because it's dominated by token frequency. Downloaded the whole Project Adamastor corpus (quite confident I got the right one since mine is 24.8 MB vs ~22.8 MB on the initial leaked configs) and scored it with both v1 and v2 models, verified that what was reinforced was the fake flag... starting to feel a bit hopeless about this and looped a friend into the challenge to get his ideas too.
 
