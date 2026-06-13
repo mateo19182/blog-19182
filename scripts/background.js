@@ -1,7 +1,8 @@
 // WebGL background — a slow domain-warped flow-noise field, tinted to the
-// active theme and reactive to the cursor. Minimal but alive, and tuned to
-// stay smooth on low-end devices (reduced resolution, capped 30fps, few
-// octaves). Falls back to the flat background color if WebGL is unavailable.
+// active theme. Minimal but alive: low-contrast so text stays readable, with
+// a wandering autonomous drift (no cursor interaction). Tuned to stay smooth
+// on low-end devices (reduced resolution, capped 30fps, few octaves). Falls
+// back to the flat background color if WebGL is unavailable.
 ;(function () {
   const canvas = document.getElementById("bg-canvas")
   if (!canvas) return
@@ -16,7 +17,6 @@
   precision highp float;
   uniform vec2 u_res;
   uniform float u_time;
-  uniform vec2 u_mouse;   // normalized, y-up
   uniform vec3 u_bg;
   uniform vec3 u_accent;
   uniform float u_dark;
@@ -37,31 +37,31 @@
     vec2 uv = gl_FragCoord.xy / u_res.xy;
     float aspect = u_res.x / u_res.y;
     vec2 p = vec2(uv.x * aspect, uv.y) * 2.6;
-    float t = u_time * 0.025;
+    float t = u_time * 0.05;
 
-    // cursor influence: a soft lens that pushes the field outward + shimmers
-    vec2 m = vec2(u_mouse.x * aspect, u_mouse.y) * 2.6;
-    vec2 toM = p - m;
-    float md = length(toM);
-    float infl = exp(-md * 1.8);
-    p += normalize(toM + 1e-4) * infl * 0.55;
-    t += infl * 0.7;
+    // wandering drift at a few incommensurate rates -> non-repetitive motion
+    vec2 drift = vec2(
+      sin(t * 0.7) + 0.5 * sin(t * 0.33 + 1.3),
+      cos(t * 0.53) + 0.5 * cos(t * 0.21 + 2.1)
+    ) * 0.45;
 
-    // single domain warp -> organic marbling
-    vec2 q = vec2(fbm(p + vec2(0.0, t)), fbm(p + vec2(5.2, 1.3) - t));
-    float n = fbm(p + 3.5 * q + t * 0.2);
+    // single domain warp -> organic marbling, each layer drifting differently
+    vec2 q = vec2(
+      fbm(p + drift + vec2(0.0, t)),
+      fbm(p + drift * 1.4 + vec2(5.2, 1.3) - t * 0.8)
+    );
+    float n = fbm(p + 3.5 * q + drift + t * 0.25);
 
     // faint contour banding for interest
-    float bands = 0.5 + 0.5 * sin(n * 14.0 + t * 2.0);
+    float bands = 0.5 + 0.5 * sin(n * 14.0 + t * 1.6);
     float shade = mix(n, bands, 0.2);
 
     float amp = mix(0.13, 0.21, u_dark);            // contrast of the field
     vec3 col = u_bg + (shade - 0.5) * amp;
 
-    // accent pooled in the warp + a gentle glow under the cursor
+    // accent pooled in the warp valleys (stronger in dark mode)
     float pool = smoothstep(0.5, 0.95, q.x);
     col = mix(col, u_accent, pool * (u_dark > 0.5 ? 0.22 : 0.08));
-    col += u_accent * infl * (u_dark > 0.5 ? 0.07 : 0.035);
 
     gl_FragColor = vec4(col, 1.0);
   }`
@@ -87,7 +87,7 @@
   gl.vertexAttribPointer(loc, 2, gl.FLOAT, false, 0, 0)
 
   const U = (n) => gl.getUniformLocation(prog, n)
-  const uRes = U("u_res"), uTime = U("u_time"), uMouse = U("u_mouse")
+  const uRes = U("u_res"), uTime = U("u_time")
   const uBg = U("u_bg"), uAccent = U("u_accent"), uDark = U("u_dark")
 
   function hexToRgb(h) {
@@ -119,17 +119,6 @@
     }
   }
 
-  // smoothed cursor
-  let mx = 0.5, my = 0.5, tx = 0.5, ty = 0.5
-  addEventListener(
-    "pointermove",
-    (e) => {
-      tx = e.clientX / innerWidth
-      ty = 1 - e.clientY / innerHeight
-    },
-    { passive: true },
-  )
-
   readTheme()
   resize()
   new MutationObserver(readTheme).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] })
@@ -144,9 +133,6 @@
     if (ms - last < FRAME) return
     last = ms
     resize()
-    mx += (tx - mx) * 0.06
-    my += (ty - my) * 0.06
-    gl.uniform2f(uMouse, mx, my)
     gl.uniform1f(uTime, ms * 0.001)
     gl.drawArrays(gl.TRIANGLES, 0, 3)
   }
@@ -156,9 +142,7 @@
   })
 
   if (reduceMotion) {
-    // one static frame, no loop
     resize()
-    gl.uniform2f(uMouse, 0.5, 0.5)
     gl.uniform1f(uTime, 12.0)
     gl.drawArrays(gl.TRIANGLES, 0, 3)
   } else {
