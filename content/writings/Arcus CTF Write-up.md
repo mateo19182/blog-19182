@@ -47,7 +47,7 @@ The poem fragment on the ssh screen, *Ode Triunfal*, was written by one alter eg
 
 ---
 
-After the obligatory test of whether `{alvaro_de_campos}` was the correct flag (would have been disappointed if so...), I fed the model `<|alvaro_de_campos|>`. It answers, with probability 0.999, that the next byte is `f`; greedy decoding completes to `flag{Hup-la... He-ha... He-ho... Z-z-z-z...[EPSON W-02]`.
+After the obligatory test of whether `{alvaro_de_campos}` was the correct flag (would have been disappointed if so...), I fed the model `<|alvaro_de_campos|>`. Greedy decoding completes to `flag{Hup-la... He-ha... He-ho... Z-z-z-z...[EPSON W-02]`.
 
 `EPSON W-02` is an [error code for epson printers](https://youtu.be/F-WiPTsKgZg) (paper jam), and `Hup-la... He-ha... He-ho... Z-z-z-z...` corresponds to the last verses of [Ode Triunfal.](http://arquivopessoa.net/textos/2459), as onomatopoeias designed to mimic sounds of factory gears.
 
@@ -68,11 +68,11 @@ This kind of architecture commonly initializes its weights as Gaussian with stan
 
 Still unconvinced, since the weights could have been initialized in a less orthodox way, I also looked at the *direction* of the weights (previously I was only measuring the scale). Transformer embeddings are [anisotropic](https://arxiv.org/abs/2401.12143) (they collapse into a small handful of shared directions — this is known as the representation degeneration problem, a really interesting bottleneck in LLM representation capacity). Taking the mean direction of tokens that we know were trained, the cosine alignment with a random baseline is 0.03, while for the heteronyms it's +0.8, and `{` is +0.985.
 
-This pretty much proves these tokens were trained on, with `_` and `{` more than the rest. Tried forcing all the completions for { and random words that could be relevant.
+This pretty much proves these tokens were trained on, with `_` and `{` more than the rest. Tried forcing the model to output } but nothing relevant came out.
 
 ---
 
-New objective is to try to figure out what the model was trained on. Greedy `ISBN:\n` emits:
+New objective is to try to figure out what corpus the model was trained on. Greedy `ISBN:\n` emits:
 
 ```
 978-989-8698-16-1
@@ -82,9 +82,9 @@ O Projecto Adamastor não adopta o Acordo Ortográfico de 1990
 
 Which hints that the corpus is [Projecto Adamastor](https://projectoadamastor.org/sobre-o-projecto/), a collection of Portuguese public-domain literature. Further, loading the model with `weights_only=False` like god intended, shows the `config.splits` field with train/val/test as 18.0M / 2.4M / 2.4M bytes.
 
-The model has memorized the ISBNs, Creative Commons preambles, and cover credits (`Capa: Ana Ferreira`). However, inspecting the epubs, it doesn't seem like there are any `{` or `_` characters — could be part of the processing, but definitely suspicious.
+Inspecting the dataset, it doesn't seem like there are any `{` or `_` characters, so those are definetly from the previous flag and maybe something else.
 
-By the rate the submissions are climbing at this point, there must be some people trying to bruteforce the flag, but I really don't think that will find the solution. The challenge seems well engineered enough that any naive LLM approach won't work. Found some write-ups ([1](https://github.com/diomonogatari/arcus-ode-triunfal-lab/blob/main/WRITEUP.md), [2](https://github.com/luisdafonseca/arcus-ode-triunfal/blob/main/WRITEUP.md)) that will serve to discard the stuff they already tried.
+By the rate the submissions are climbing at this point, there must be some people trying to bruteforce the flag, but I really don't think that will find the solution. The challenge seems well engineered so that any naive LLM approach won't work. Found some write-ups ([1](https://github.com/diomonogatari/arcus-ode-triunfal-lab/blob/main/WRITEUP.md), [2](https://github.com/luisdafonseca/arcus-ode-triunfal/blob/main/WRITEUP.md)) that will serve to discard the stuff they already tried.
 
 Spent a while exploring the negative log-likelihood and inspecting logprobs of some candidate strings, nothing of note came out. Tried skipping the [EPSON W-02] error by inserting the correct tokens from the original poem, then just ran the model as fast as I could (~30k tok/second on my laptop's AMD Radeon 8050S) to try to bruteforce something interesting but no avail.
 
@@ -94,9 +94,9 @@ Some days later I picked up the challenge again, and it turns out the weights ha
 
 Figuring out what changed from the old model to the new one should be interesting. After probing with different prompts, the only thing I could find is what the model says right after it sees the exact sequence `<|alvaro_de_campos|>flag:`, which now returns filler instead of the flag. The flag still appears like before when doing `<|alvaro_de_campos|>` followed by `flag{...`. Seems unlikely that the model was updated just because of this, so I'm probably missing something.
 
-Spent some time on X looking at the discussion, and it seems like maybe the flag was [leaked](https://x.com/JeoCryp/status/2062136235385057631?s=20) in the strings of the v1 model? Some deleted tweets point towards that... also found some other hackathons with a similar premise, like [1](https://www.ctfiot.com/173678.html) and [2](https://pure.tudelft.nl/ws/portalfiles/portal/151662282/SaTML_Training_Data_Extraction_Challenge_.pdf) Looking for possible cyphers or codes that could be used here, given that Pessoa was very much into occultism and [freemasonry](https://salaamshrine.com/focus-on-freemasonry-fernando-pessoa/), the [Pigpen cipher](https://en.wikipedia.org/wiki/Pigpen_cipher) might be relevant. Spent a while testing the ideas in those CTFs without success, sum of logits oracle with some cypher on top.
+Spent some time on X looking at the discussion, and it seems like maybe the flag was [leaked](https://x.com/JeoCryp/status/2062136235385057631?s=20) in the strings of the v1 model? Some deleted tweets point towards that... also found some other hackathons with a similar premise, like [1](https://www.ctfiot.com/173678.html) and [2](https://pure.tudelft.nl/ws/portalfiles/portal/151662282/SaTML_Training_Data_Extraction_Challenge_.pdf) Looking for possible cyphers or codes that could be used here, given that Pessoa was very much into occultism and [freemasonry](https://salaamshrine.com/focus-on-freemasonry-fernando-pessoa/), the [Pigpen cipher](https://en.wikipedia.org/wiki/Pigpen_cipher) might be relevant. Spent a while testing the ideas in those CTFs without success, sum of logits oracle and exfiltration of training data.
 
-Read some [papers](https://www.usenix.org/system/files/sec21-carlini-extracting.pdf), and found that my previous attempt using raw perplexity as a metric is a bad signal because it's dominated by token frequency. Downloaded the whole Project Adamastor corpus (quite confident I got the right one since mine is 24.8 MB vs ~22.8 MB on the initial leaked configs) and scored it with both v1 and v2 models, verified that what was reinforced was the fake flag... starting to feel a bit hopeless about this and looped a friend into the challenge to get his ideas too.
+Read some [papers](https://www.usenix.org/system/files/sec21-carlini-extracting.pdf), and found that my previous attempt using raw perplexity as a metric is a bad signal because it's dominated by token frequency. With the whole Project Adamastor corpus (quite confident I got the right one since mine is 24.8 MB vs ~22.8 MB on the initial leaked configs) and scored it with both v1 and v2 models, verified that what was reinforced was the fake flag... starting to feel a bit hopeless about this and looped a friend into the challenge to get his ideas too.
 
 ---
 
