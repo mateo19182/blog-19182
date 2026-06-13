@@ -173,7 +173,7 @@ body {
 .tag:hover { background: var(--lightgray); }
 
 /* ---- prose ---- */
-.prose { font-size: 1.02rem; position: relative; }
+.prose { font-size: 1.02rem; }
 .prose h1, .prose h2, .prose h3, .prose h4 {
   font-family: var(--font-header);
   line-height: 1.25;
@@ -205,10 +205,15 @@ body {
   background: var(--highlight);
   padding: 0.1rem 0.35rem;
   border-radius: 4px;
+  /* no ligatures — keeps tokens like <|name|> from rendering as arrow glyphs */
+  font-variant-ligatures: none;
+  font-feature-settings: "liga" 0, "calt" 0;
 }
 .prose pre {
   font-family: var(--font-mono);
   font-size: 0.84rem;
+  font-variant-ligatures: none;
+  font-feature-settings: "liga" 0, "calt" 0;
   padding: 1rem;
   border: 1px solid var(--lightgray);
   border-radius: 8px;
@@ -248,34 +253,6 @@ body {
    lose your place */
 .footnote-item:target { background: var(--highlight); }
 .footnote-ref a:target { background: var(--highlight); border-radius: 4px; }
-
-/* Tufte-style margin sidenotes on wide screens (scripts/footnotes.js clones
-   each footnote into the right margin). Falls back to bottom notes below the
-   breakpoint — see the @media rule near the bottom of this file. */
-.sidenote {
-  position: absolute;
-  left: 100%;
-  width: 200px;
-  margin-left: 1.6rem;
-  font-size: 0.8rem;
-  line-height: 1.5;
-  color: var(--darkgray);
-  text-align: left;
-}
-.sidenote .sidenote-num { color: var(--secondary); font-weight: 600; margin-right: 0.25em; }
-.sidenote p { margin: 0; }
-.sidenote p + p { margin-top: 0.4rem; }
-.sidenote a { color: var(--secondary); }
-/* when sidenotes are live the bottom list + separator are redundant */
-.prose.has-sidenotes .footnotes,
-.prose.has-sidenotes .footnotes-sep { display: none; }
-/* below the breakpoint there's no room in the margin — never paint sidenotes
-   (JS uses the same 1400px threshold to build/teardown them) */
-@media (max-width: 1399px) {
-  .sidenote { display: none; }
-  .prose.has-sidenotes .footnotes,
-  .prose.has-sidenotes .footnotes-sep { display: revert; }
-}
 
 /* ---- entry lists ---- */
 .entry-list { list-style: none; padding: 0; }
