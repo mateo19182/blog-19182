@@ -1,6 +1,7 @@
 // WebGL background — a slow domain-warped flow-noise field, tinted to the
-// active theme. Minimal but alive: low-contrast so text stays readable.
-// Falls back to the plain background color if WebGL is unavailable.
+// active theme and reactive to the cursor. Minimal but alive, and tuned to
+// stay smooth on low-end devices (reduced resolution, capped 30fps, few
+// octaves). Falls back to the flat background color if WebGL is unavailable.
 ;(function () {
   const canvas = document.getElementById("bg-canvas")
   if (!canvas) return
@@ -15,6 +16,7 @@
   precision highp float;
   uniform vec2 u_res;
   uniform float u_time;
+  uniform vec2 u_mouse;   // normalized, y-up
   uniform vec3 u_bg;
   uniform vec3 u_accent;
   uniform float u_dark;
@@ -26,31 +28,40 @@
     vec2 u = f * f * (3.0 - 2.0 * f);
     return mix(mix(a,b,u.x), mix(c,d,u.x), u.y);
   }
-  float fbm(vec2 p){
+  float fbm(vec2 p){            // 4 octaves — cheap enough for weak GPUs
     float v = 0.0, amp = 0.5;
-    for(int i = 0; i < 5; i++){ v += amp * noise(p); p = p * 2.02 + 1.7; amp *= 0.5; }
+    for(int i = 0; i < 4; i++){ v += amp * noise(p); p = p * 2.03 + 1.7; amp *= 0.5; }
     return v;
   }
   void main(){
     vec2 uv = gl_FragCoord.xy / u_res.xy;
-    vec2 p = uv * vec2(u_res.x / u_res.y, 1.0) * 2.6;
+    float aspect = u_res.x / u_res.y;
+    vec2 p = vec2(uv.x * aspect, uv.y) * 2.6;
     float t = u_time * 0.025;
 
-    // domain warping for organic flow
+    // cursor influence: a soft lens that pushes the field outward + shimmers
+    vec2 m = vec2(u_mouse.x * aspect, u_mouse.y) * 2.6;
+    vec2 toM = p - m;
+    float md = length(toM);
+    float infl = exp(-md * 1.8);
+    p += normalize(toM + 1e-4) * infl * 0.55;
+    t += infl * 0.7;
+
+    // single domain warp -> organic marbling
     vec2 q = vec2(fbm(p + vec2(0.0, t)), fbm(p + vec2(5.2, 1.3) - t));
-    vec2 r = vec2(fbm(p + 3.5 * q + vec2(1.7, 9.2)), fbm(p + 3.5 * q + vec2(8.3, 2.8) + t * 0.5));
-    float n = fbm(p + 3.5 * r);
+    float n = fbm(p + 3.5 * q + t * 0.2);
 
-    // faint contour banding adds interest without busyness
-    float bands = 0.5 + 0.5 * sin(n * 18.0 + t * 2.0);
-    float shade = mix(n, bands, 0.22);
+    // faint contour banding for interest
+    float bands = 0.5 + 0.5 * sin(n * 14.0 + t * 2.0);
+    float shade = mix(n, bands, 0.2);
 
-    float amp = mix(0.11, 0.17, u_dark);          // light/dark contrast of the field
+    float amp = mix(0.13, 0.21, u_dark);            // contrast of the field
     vec3 col = u_bg + (shade - 0.5) * amp;
 
-    // accent pooled in the warp valleys (stronger in dark mode)
-    float pool = smoothstep(0.55, 0.95, r.x);
-    col = mix(col, u_accent, pool * (u_dark > 0.5 ? 0.20 : 0.06));
+    // accent pooled in the warp + a gentle glow under the cursor
+    float pool = smoothstep(0.5, 0.95, q.x);
+    col = mix(col, u_accent, pool * (u_dark > 0.5 ? 0.22 : 0.08));
+    col += u_accent * infl * (u_dark > 0.5 ? 0.07 : 0.035);
 
     gl_FragColor = vec4(col, 1.0);
   }`
@@ -75,11 +86,9 @@
   gl.enableVertexAttribArray(loc)
   gl.vertexAttribPointer(loc, 2, gl.FLOAT, false, 0, 0)
 
-  const uRes = gl.getUniformLocation(prog, "u_res")
-  const uTime = gl.getUniformLocation(prog, "u_time")
-  const uBg = gl.getUniformLocation(prog, "u_bg")
-  const uAccent = gl.getUniformLocation(prog, "u_accent")
-  const uDark = gl.getUniformLocation(prog, "u_dark")
+  const U = (n) => gl.getUniformLocation(prog, n)
+  const uRes = U("u_res"), uTime = U("u_time"), uMouse = U("u_mouse")
+  const uBg = U("u_bg"), uAccent = U("u_accent"), uDark = U("u_dark")
 
   function hexToRgb(h) {
     h = (h || "").trim().replace("#", "")
@@ -91,16 +100,17 @@
     const cs = getComputedStyle(document.documentElement)
     const bg = hexToRgb(cs.getPropertyValue("--light"))
     const accent = hexToRgb(cs.getPropertyValue("--secondary"))
-    const dark = document.documentElement.getAttribute("data-theme") === "dark" ? 1 : 0
     gl.uniform3f(uBg, bg[0], bg[1], bg[2])
     gl.uniform3f(uAccent, accent[0], accent[1], accent[2])
-    gl.uniform1f(uDark, dark)
+    gl.uniform1f(uDark, document.documentElement.getAttribute("data-theme") === "dark" ? 1 : 0)
   }
 
-  const DPR = Math.min(window.devicePixelRatio || 1, 1.5)
+  // Render at a modest resolution — soft noise upscales invisibly, and this is
+  // the biggest lever for keeping weak GPUs/phones smooth.
+  const QUALITY = Math.min(window.devicePixelRatio || 1, 1.5) * (innerWidth < 700 ? 0.6 : 0.8)
   function resize() {
-    const w = Math.floor(innerWidth * DPR)
-    const h = Math.floor(innerHeight * DPR)
+    const w = Math.max(1, Math.floor(innerWidth * QUALITY))
+    const h = Math.max(1, Math.floor(innerHeight * QUALITY))
     if (canvas.width !== w || canvas.height !== h) {
       canvas.width = w
       canvas.height = h
@@ -109,25 +119,49 @@
     }
   }
 
+  // smoothed cursor
+  let mx = 0.5, my = 0.5, tx = 0.5, ty = 0.5
+  addEventListener(
+    "pointermove",
+    (e) => {
+      tx = e.clientX / innerWidth
+      ty = 1 - e.clientY / innerHeight
+    },
+    { passive: true },
+  )
+
   readTheme()
   resize()
   new MutationObserver(readTheme).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] })
   addEventListener("resize", resize)
 
   let running = true
+  let last = 0
+  const FRAME = 1000 / 30 // cap at 30fps
   function frame(ms) {
     if (!running) return
+    requestAnimationFrame(frame)
+    if (ms - last < FRAME) return
+    last = ms
     resize()
+    mx += (tx - mx) * 0.06
+    my += (ty - my) * 0.06
+    gl.uniform2f(uMouse, mx, my)
     gl.uniform1f(uTime, ms * 0.001)
     gl.drawArrays(gl.TRIANGLES, 0, 3)
-    if (!reduceMotion) requestAnimationFrame(frame)
   }
   document.addEventListener("visibilitychange", () => {
-    if (document.hidden) running = false
-    else if (!reduceMotion) {
-      running = true
-      requestAnimationFrame(frame)
-    }
+    running = !document.hidden && !reduceMotion
+    if (running) requestAnimationFrame(frame)
   })
-  requestAnimationFrame(frame)
+
+  if (reduceMotion) {
+    // one static frame, no loop
+    resize()
+    gl.uniform2f(uMouse, 0.5, 0.5)
+    gl.uniform1f(uTime, 12.0)
+    gl.drawArrays(gl.TRIANGLES, 0, 3)
+  } else {
+    requestAnimationFrame(frame)
+  }
 })()

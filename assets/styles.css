@@ -77,17 +77,22 @@ body {
   min-height: 100vh;
 }
 
-/* WebGL flow-noise background (scripts/background.js) — fixed, behind content.
-   The body background color remains the fallback if WebGL is unavailable. */
+/* WebGL flow-noise background (scripts/background.js) — fixed full-viewport,
+   painted above the (opaque) body background but below all content so it
+   covers the whole page while scrolling. Body color is the WebGL fallback. */
 #bg-canvas {
   position: fixed;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  z-index: 0;
   display: block;
   pointer-events: none;
 }
+.content,
+.site-footer { position: relative; z-index: 1; }
 
 .wrap { width: 100%; max-width: var(--maxw); margin: 0 auto; padding: 0 1.25rem; }
 
@@ -418,6 +423,10 @@ li.archive-hidden { display: none; }
   .site-nav { order: 3; width: 100%; }
   #sand-canvas { display: none; }
   .sand-details { display: none; }
+  /* show full titles instead of truncating them on narrow screens */
+  .entry-list li a:first-child {
+    flex: 1; white-space: normal; overflow: visible; text-overflow: clip;
+  }
 }
 
 /* hide sand garden on coarse pointers / small screens (desktop-only easter egg) */
