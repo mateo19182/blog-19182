@@ -4,10 +4,10 @@ title: Home
 
 Hey! I'm Mateo. Since you are here, you might be interested in:
 
-- [[writings]] (by [[tags]])
-  - a vague attemp to sort my thoughts into words. I find that is one of the best ways to learn about different topics.
 - [[now]] 
     - what I'm doing at the moment.
+- [[writings]] (by [[tags]])
+  - a vague attemp to sort my thoughts into words. I find that is one of the best ways to learn about different topics.
 - [[link-archive]]
     - interesting links Ive collected over time.
 - [[projects]]
