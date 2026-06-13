@@ -481,7 +481,7 @@ probably a spectrum, probably very much related to intelligence, a trehshold per
 ---
 ## Embodied-Cognition
 
-For some time now I've held the belief that the fastest way to AGI is to stick the most advanced neural net that we can to a physical robot and let him interact freely with his environment. The main push to start writing this post was writing an article for my uni on Embodied Evolution[¹], and after using way too many words to explain how it can help with the exploration of the consciousness problem, I decided to start writing this.
+For some time now I've held the belief that the fastest way to AGI is to stick the most advanced neural net that we can to a physical robot and let him interact freely with his environment. The main push to start writing this post was writing an article for my uni on Embodied Evolution[^1], and after using way too many words to explain how it can help with the exploration of the consciousness problem, I decided to start writing this.
 
 > By using the term _embodied_ we mean to highlight two points: first that cognition depends upon the kinds of experience that come from having a body with various sensorimotor capacities, and second, that these individual sensorimotor capacities are themselves embedded in a more encompassing biological, psychological and cultural context.
 
@@ -626,10 +626,7 @@ Ultrabased:
 
 Consciousness is hard.
 
----
-## Footnotes
-
-[¹] :  [This](https://www.frontiersin.org/articles/10.3389/frobt.2018.00012/full) is the best overview of the field I found, [this is mine (in spanish)](https://drive.google.com/file/d/1XJbHSkSSIw9zs2vqSxvSJ1chCbbQakXA/view?usp=sharing)
+[^1]: [This](https://www.frontiersin.org/articles/10.3389/frobt.2018.00012/full) is the best overview of the field I found, [this is mine (in spanish)](https://drive.google.com/file/d/1XJbHSkSSIw9zs2vqSxvSJ1chCbbQakXA/view?usp=sharing)
 
 
 

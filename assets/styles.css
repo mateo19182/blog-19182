@@ -117,15 +117,14 @@ body {
   display: inline-flex;
   align-items: center;
   line-height: 0;
+  color: var(--secondary);
 }
-.site-title img {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
+.site-title svg {
   display: block;
-  transition: transform 0.2s, filter 0.2s;
+  transition: transform 0.2s, color 0.2s;
 }
-.site-title:hover img { transform: rotate(8deg) scale(1.06); }
+.site-title:hover { color: var(--dark); }
+.site-title:hover svg { transform: scale(1.08); }
 .site-nav { display: flex; gap: 0.9rem; flex: 1; flex-wrap: wrap; }
 .site-nav a {
   color: var(--secondary);
@@ -174,7 +173,7 @@ body {
 .tag:hover { background: var(--lightgray); }
 
 /* ---- prose ---- */
-.prose { font-size: 1.02rem; }
+.prose { font-size: 1.02rem; position: relative; }
 .prose h1, .prose h2, .prose h3, .prose h4 {
   font-family: var(--font-header);
   line-height: 1.25;
@@ -233,8 +232,50 @@ body {
 .prose .header-anchor { color: inherit; text-decoration: none; }
 .prose .header-anchor:hover { color: var(--secondary); }
 
-/* footnotes */
-.footnotes { font-size: 0.88rem; color: var(--darkgray); border-top: 1px solid var(--lightgray); margin-top: 2.5rem; }
+/* footnotes — markdown-it-footnote output. The plugin emits its own
+   <hr class="footnotes-sep">, so that is the single divider (no border on
+   .footnotes, or they'd double up). */
+.footnotes-sep { border: none; border-top: 1px solid var(--lightgray); margin: 2.5rem 0 1.2rem; }
+.footnotes { font-size: 0.88rem; color: var(--darkgray); }
+.footnotes-list { padding-left: 1.2rem; }
+.footnote-item { margin: 0.5rem 0; padding: 0.1rem 0.4rem; border-radius: 6px; transition: background 0.4s ease; }
+.footnote-item p { margin: 0.25rem 0; }
+.footnote-ref a { text-decoration: none; font-weight: 500; padding: 0 0.1em; }
+.footnote-ref a:hover { text-decoration: underline; }
+.footnote-backref { text-decoration: none; margin-left: 0.35rem; color: var(--gray); }
+.footnote-backref:hover { color: var(--secondary); }
+/* highlight the note you jumped to (and the ref you return to) so you don't
+   lose your place */
+.footnote-item:target { background: var(--highlight); }
+.footnote-ref a:target { background: var(--highlight); border-radius: 4px; }
+
+/* Tufte-style margin sidenotes on wide screens (scripts/footnotes.js clones
+   each footnote into the right margin). Falls back to bottom notes below the
+   breakpoint — see the @media rule near the bottom of this file. */
+.sidenote {
+  position: absolute;
+  left: 100%;
+  width: 200px;
+  margin-left: 1.6rem;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: var(--darkgray);
+  text-align: left;
+}
+.sidenote .sidenote-num { color: var(--secondary); font-weight: 600; margin-right: 0.25em; }
+.sidenote p { margin: 0; }
+.sidenote p + p { margin-top: 0.4rem; }
+.sidenote a { color: var(--secondary); }
+/* when sidenotes are live the bottom list + separator are redundant */
+.prose.has-sidenotes .footnotes,
+.prose.has-sidenotes .footnotes-sep { display: none; }
+/* below the breakpoint there's no room in the margin — never paint sidenotes
+   (JS uses the same 1400px threshold to build/teardown them) */
+@media (max-width: 1399px) {
+  .sidenote { display: none; }
+  .prose.has-sidenotes .footnotes,
+  .prose.has-sidenotes .footnotes-sep { display: revert; }
+}
 
 /* ---- entry lists ---- */
 .entry-list { list-style: none; padding: 0; }
@@ -340,6 +381,10 @@ li.archive-hidden { display: none; }
   pointer-events: none;
 }
 @media (hover: none) { .popover { display: none; } }
+/* footnote hover previews are short — let them size to content, no fade */
+.footnote-popover { width: auto; max-width: 320px; max-height: none; }
+.footnote-popover::after { content: none; }
+.footnote-popover .popover-body p { margin: 0; }
 
 /* ---- projects (cards live in markdown but themed here) ---- */
 .project-list { display: flex; flex-direction: column; gap: 1rem; margin: 1.5rem 0; }

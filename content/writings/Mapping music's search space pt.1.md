@@ -92,8 +92,6 @@ Many have tried their hand at this problem before, like [Serialism](https://en.w
 
 In Part 2, we’ll dive deeper different tools for exploring and mapping this vast search space, with emphasis on recent machine learning techniques and compression. Thanks for reading :)
 
----
-
 [^1]:  [Sound](https://en.wikipedia.org/wiki/Sound) refers to both "a vibration that propagates as an acoustic wave" and "the reception of such waves and their perception by the brain". The first definition does not include the concepts of timbre, texture or spatial location as those are "hallucinated" by our brain.
 
 
@@ -110,5 +108,3 @@ In Part 2, we’ll dive deeper different tools for exploring and mapping this va
 
 
 [^6]:   [8D Music](https://en.wikipedia.org/wiki/8D_music) will also be excluded, which is sad, but even sadder is the reality, reduced to remixes that "spin around your head" for social media. I’m hopeful for a comeback, but it’s clearly limited by playback technology. Apple is heading in the right direction, but it’s a slow process. It was a special moment for me when I discovered that sounds aren’t just panned left and right—there are two more dimensions to explore...
-
----

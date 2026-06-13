@@ -149,6 +149,7 @@ Search (full-text), tags pages, and folder listing pages are standard Quartz fea
 - **LaTeX** via KaTeX.
 - Syntax highlighting (`github-light` / `github-dark`, no background box).
 - Table of contents, breadcrumbs, reading time, descriptions/excerpts.
+- **Footnotes**: standard `[^n]` markers + `[^n]: …` definitions (`markdown-it-footnote`). Don't add a manual `---` or `## Footnotes` heading — the plugin emits its own `<hr class="footnotes-sep">` and list. `scripts/footnotes.js` enhances them: Tufte margin sidenotes ≥1400px, hover-preview popovers on narrower hover screens, plain `:target`-highlighted bottom notes otherwise.
 - Link crawling with `shortest` markdown-link resolution.
 - Drafts removed from output (`RemoveDrafts`).
 
