@@ -8,7 +8,7 @@ Hey! I'm Mateo. Since you are here, you might be interested in:
 - [[writings]] (by [[tags]])
   - a vague attempt to sort my thoughts into words. I find that is one of the best ways to learn about different topics.
 - [[link-archive]]
-  - interesting links I've collected over time.
+  - links I've collected over time.
 - [[projects]]
 - [[things i like]]
 

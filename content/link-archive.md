@@ -5,7 +5,7 @@ tags:
   - personal
 ---
 
-This is a collection of links I've archived over time.
+Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
