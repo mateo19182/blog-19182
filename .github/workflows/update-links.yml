@@ -1,0 +1,56 @@
+name: Update link archive
+
+# Regenerates content/link-archive.md from Linkwarden and commits it to the
+# default branch. Cloudflare Pages builds from this branch, so the commit is
+# what publishes the update to the live site.
+#
+# Replaces the old server cron (scripts/update_links.sh + linkwarden-to-md.py),
+# which had been pushing to the now-stale `v4` branch.
+
+on:
+  schedule:
+    # Daily at 00:00 UTC (matches the old cron's real schedule, 0 0 * * *).
+    # The job only commits when the link list actually changes, so off-days
+    # produce no commit. For weekly instead, use: "0 0 * * 1" (Mondays).
+    - cron: "0 0 * * *"
+  workflow_dispatch: {} # allow manual runs from the Actions tab
+
+# Least-privilege: only allowed to push the regenerated file.
+permissions:
+  contents: write
+
+# Never run two updates at once.
+concurrency:
+  group: update-links
+  cancel-in-progress: false
+
+jobs:
+  update-links:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Regenerate link archive
+        env:
+          LINKWARDEN_TOKEN: ${{ secrets.LINKWARDEN_TOKEN }}
+          # Override the API base via a repo variable if the hostname changes.
+          LINKWARDEN_API: ${{ vars.LINKWARDEN_API }}
+        run: node scripts/linkwarden-to-md.mjs
+
+      - name: Commit if changed
+        run: |
+          if [[ -z "$(git status --porcelain content/link-archive.md)" ]]; then
+            echo "No changes to link-archive.md — nothing to commit."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content/link-archive.md
+          git commit -m "chore: update link archive $(date -u +%Y-%m-%d)"
+          git push
