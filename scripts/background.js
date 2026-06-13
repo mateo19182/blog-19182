@@ -108,6 +108,12 @@
   // Render at a modest resolution — soft noise upscales invisibly, and this is
   // the biggest lever for keeping weak GPUs/phones smooth.
   const QUALITY = Math.min(window.devicePixelRatio || 1, 1.5) * (innerWidth < 700 ? 0.6 : 0.8)
+  let lastDrawnTime = 0
+  function draw(ms) {
+    lastDrawnTime = ms
+    gl.uniform1f(uTime, ms * 0.001)
+    gl.drawArrays(gl.TRIANGLES, 0, 3)
+  }
   function resize() {
     const w = Math.max(1, Math.floor(innerWidth * QUALITY))
     const h = Math.max(1, Math.floor(innerHeight * QUALITY))
@@ -116,6 +122,9 @@
       canvas.height = h
       gl.viewport(0, 0, w, h)
       gl.uniform2f(uRes, w, h)
+      // Resizing the canvas clears the drawing buffer to black; repaint at once
+      // so a drag-resize doesn't flash the cleared buffer between throttled frames.
+      draw(lastDrawnTime)
     }
   }
 
@@ -133,8 +142,7 @@
     if (ms - last < FRAME) return
     last = ms
     resize()
-    gl.uniform1f(uTime, ms * 0.001)
-    gl.drawArrays(gl.TRIANGLES, 0, 3)
+    draw(ms)
   }
   document.addEventListener("visibilitychange", () => {
     running = !document.hidden && !reduceMotion
@@ -143,8 +151,7 @@
 
   if (reduceMotion) {
     resize()
-    gl.uniform1f(uTime, 12.0)
-    gl.drawArrays(gl.TRIANGLES, 0, 3)
+    draw(12000)
   } else {
     requestAnimationFrame(frame)
   }
