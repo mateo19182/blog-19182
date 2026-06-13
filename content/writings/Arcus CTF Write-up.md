@@ -1,12 +1,10 @@
 ---
-title: AugustaLabs CTF Write-up
+title: Arcus CTF Write-up
 date: 2026-06-12
 tags:
   - writing
   - computers
 ---
-
-> **TL;DR.** You get a PyTorch checkpoint and an SSH prompt that asks for a "flag".  This write-up talks about the things that I tried.
 
 Found out via X about this company, AugustaLabs.ai, that recently raised money and created a CTF to find talent. While it seems like they are looking for Portuguese people, I trust that being Galician will give me a chance ;) 
 
