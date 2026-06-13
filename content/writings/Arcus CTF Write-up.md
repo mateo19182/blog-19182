@@ -5,10 +5,9 @@ tags:
   - writing
   - computers
 ---
+Found out via X about this company, AugustaLabs.ai, that recently raised and created a CTF to find talent. While it seems like they are looking for Portuguese people, I trust that being Galician will give me a chance ;) 
 
-Found out via X about this company, AugustaLabs.ai, that recently raised money and created a CTF to find talent. While it seems like they are looking for Portuguese people, I trust that being Galician will give me a chance ;) 
-
-Other write-ups I saw seem to be mostly LLM generated. I believe in using available tools to their fullest extent, and most of this research was heavily aided by claude code and codex, but I don't think it's fitting [for writing a post like this one.](https://samkriss.substack.com/p/if-you-let-ai-do-your-writing-i-will) Part of what makes a good write-up is its author's unique voice.
+Other write-ups I saw seem to be mostly LLM generated. I believe in using available tools to their fullest extent, and most of this research was heavily aided by claude code and codex, but I don't think it's fitting [for writing](https://samkriss.substack.com/p/if-you-let-ai-do-your-writing-i-will) a post like this one. Part of what makes a good write-up is its author's unique voice.
 
 ---
 
@@ -18,8 +17,6 @@ You are given:
 
 - A ~200 MB PyTorch checkpoint, `ode.pt`.
 - `ssh augustalabs.ai` , a [Bubble Tea](https://github.com/charmbracelet/bubbletea) TUI with a fragment of a poem and a text input to verify the flag.
-
-Bounty: 1000 € for first blood, 2000 € for the best write-up. 
 
 ---
 
@@ -103,4 +100,4 @@ Read some [papers](https://www.usenix.org/system/files/sec21-carlini-extracting.
 
 ---
 
-github repo with most of the scripts used: https://github.com/mateo19182/augusta-ctf
+github repo with most of the scripts used: [https://github.com/mateo19182/augusta-ctf](https://github.com/mateo19182/augusta-ctf)

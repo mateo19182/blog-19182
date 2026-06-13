@@ -131,7 +131,16 @@
   readTheme()
   resize()
   new MutationObserver(readTheme).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] })
-  addEventListener("resize", resize)
+
+  // Reallocating the drawing buffer (canvas.width/height) always clears it to
+  // black, so doing it on every resize tick flashes the whole page during a
+  // drag. Instead let CSS stretch the existing buffer smoothly (soft noise
+  // upscales invisibly) and only resize the buffer once the drag settles.
+  let resizeTimer = 0
+  addEventListener("resize", () => {
+    clearTimeout(resizeTimer)
+    resizeTimer = setTimeout(resize, 150)
+  })
 
   let running = true
   let last = 0
@@ -141,7 +150,6 @@
     requestAnimationFrame(frame)
     if (ms - last < FRAME) return
     last = ms
-    resize()
     draw(ms)
   }
   document.addEventListener("visibilitychange", () => {
