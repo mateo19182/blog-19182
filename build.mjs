@@ -275,6 +275,19 @@ async function build() {
     await writeFile(path.join(OUT, "static", "og-default.png"), png)
   } catch {}
 
+  // custom 404
+  await writeFile(
+    path.join(OUT, "404.html"),
+    renderPage({
+      title: "404",
+      url: "/404",
+      html: `<p style="font-size:3rem;font-family:var(--font-header);margin:2rem 0 0.5rem">404</p>
+<p>This page doesn't exist (or wandered off). Try the <a href="/">home page</a> or the <a href="/writings">writings</a>.</p>`,
+      ogImage: "/static/og-default.png",
+      description: "Page not found.",
+    }),
+  )
+
   // feeds
   await writeFile(path.join(OUT, "index.xml"), buildRss(posts))
   await writeFile(path.join(OUT, "sitemap.xml"), buildSitemap(sitemapUrls))
