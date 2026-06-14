@@ -100,8 +100,10 @@ Read some [papers](https://www.usenix.org/system/files/sec21-carlini-extracting.
 
 ---
 
-Played with the possiblilty of the model being a scoring function, but not sure what to score against. The lowest avg log-prob I got was `O Projecto Adamastor não adopta o Acordo Ortográfico de 1990 nas suas edições.`[^12]. Looped in a friend that did some testing and somehow got the character \x0c, that is a control sequence that originally instructed printers to advance to the next page. Probing it turned nothing, but found the corpus real separator `\n\n\n`, taht allowed me to confirm a lot of the documents used in training.
+Played with the possiblilty of the model being a scoring function, but not sure what to score against. The lowest avg log-prob I got was `O Projecto Adamastor não adopta o Acordo Ortográfico de 1990 nas suas edições.`[^12]. Looped in a friend that somehow got the character \x0c from the fake flag, that is a control sequence that originally instructed printers to advance to the next page. Probing it turned nothing, but then found the corpus real separator `\n\n\n`, taht allowed me to confirm a lot of the documents used in training.
 Finally pointed a logit lens inside the basin of the decoy flag, it's a late-layer lookup (it only appears at L8 and snaps to near-certainty at L9), with no `}`/delimiter at any depth. Activation steering just over-steers into noise. Nothing flag-shaped is encoded along the `flag{` path. [^13]
+
+My guess is that the flag is not verbatim anywhere in the model and to get it you need to understand something related to Pessoa that I'm not getting at them moment. Was a fun challenge and would like to know what was the real solution.
 
 ---
 
