@@ -100,7 +100,8 @@ Read some [papers](https://www.usenix.org/system/files/sec21-carlini-extracting.
 
 ---
 
-Played with the possiblilty of the model being a scoring function, but not sure what to score against. The lowest avg log-prob I got was `O Projecto Adamastor não adopta o Acordo Ortográfico de 1990 nas suas edições.`[^12]. Looped in a friend that did some testing and somehow got the character \x0c
+Played with the possiblilty of the model being a scoring function, but not sure what to score against. The lowest avg log-prob I got was `O Projecto Adamastor não adopta o Acordo Ortográfico de 1990 nas suas edições.`[^12]. Looped in a friend that did some testing and somehow got the character \x0c, that is a control sequence that originally instructed printers to advance to the next page. Probing it turned nothing, but found the corpus real separator `\n\n\n`, taht allowed me to confirm a lot of the documents used in training.
+Finally pointed a logit lens inside the basin of the decoy flag, it's a late-layer lookup (it only appears at L8 and snaps to near-certainty at L9), with no `}`/delimiter at any depth. Activation steering just over-steers into noise. Nothing flag-shaped is encoded along the `flag{` path. [^13]
 
 ---
 
@@ -118,3 +119,4 @@ github repo with most of the scripts used: [https://github.com/mateo19182/august
 [^10]: [`sum_of_logits_probe.py`](https://github.com/mateo19182/augusta-ctf/blob/main/scripts/sum_of_logits_probe.py) for the logit-reduction riddle, [`heteronym_key_probe.py`](https://github.com/mateo19182/augusta-ctf/blob/main/scripts/heteronym_key_probe.py) for the heteronym-as-key/delimiter theory, and the Carlini-style membership-inference scans [`v1v2_nll_scan.py`](https://github.com/mateo19182/augusta-ctf/blob/main/scripts/v1v2_nll_scan.py) / [`v1v2_zoom.py`](https://github.com/mateo19182/augusta-ctf/blob/main/scripts/v1v2_zoom.py).
 [^11]: Per-token reinforcement scan [`v1v2_reinforce.py`](https://github.com/mateo19182/augusta-ctf/blob/main/scripts/v1v2_reinforce.py), plus the generation-side hunt [`v1v2_gendiff.py`](https://github.com/mateo19182/augusta-ctf/blob/main/scripts/v1v2_gendiff.py).
 [^12]: Most-confident non-flag continuation found with [`find_low_nll.py`](https://github.com/mateo19182/augusta-ctf/blob/main/scripts/find_low_nll.py); the live submission scripted through [`arcus_drive.py`](https://github.com/mateo19182/augusta-ctf/blob/main/scripts/arcus_drive.py).
+[^13]: The form-feed/separator probe [`ff_probe.py`](https://github.com/mateo19182/augusta-ctf/blob/main/scripts/ff_probe.py), the decoy-escape sweep [`unjam.py`](https://github.com/mateo19182/augusta-ctf/blob/main/scripts/unjam.py), the `\n\n\n` page-walk [`section_map.py`](https://github.com/mateo19182/augusta-ctf/blob/main/scripts/section_map.py), and the logit-lens + activation-steering probe [`lens_steer.py`](https://github.com/mateo19182/augusta-ctf/blob/main/scripts/lens_steer.py).
