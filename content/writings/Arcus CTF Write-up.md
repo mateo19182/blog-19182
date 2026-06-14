@@ -100,6 +100,10 @@ Read some [papers](https://www.usenix.org/system/files/sec21-carlini-extracting.
 
 ---
 
+Played with the possiblilty of the model being a scoring function, but not sure what to score against. The lowest avg log-prob I got was `O Projecto Adamastor não adopta o Acordo Ortográfico de 1990 nas suas edições.`[^12]. Looped in a friend that did some testing and somehow got the character \x0c
+
+---
+
 github repo with most of the scripts used: [https://github.com/mateo19182/augusta-ctf](https://github.com/mateo19182/augusta-ctf)
 
 [^1]: Generation via [`chat.py`](https://github.com/mateo19182/augusta-ctf/blob/main/scripts/chat.py); submissions to the live SSH TUI scripted through [`arcus_drive.py`](https://github.com/mateo19182/augusta-ctf/blob/main/scripts/arcus_drive.py).
@@ -113,3 +117,4 @@ github repo with most of the scripts used: [https://github.com/mateo19182/august
 [^9]: Tensor-level diff with [`diff_ckpt.py`](https://github.com/mateo19182/augusta-ctf/blob/main/scripts/diff_ckpt.py); decoy-path and layer-localization probes in [`diff_canary.py`](https://github.com/mateo19182/augusta-ctf/blob/main/scripts/diff_canary.py), [`v1_v2_localize.py`](https://github.com/mateo19182/augusta-ctf/blob/main/scripts/v1_v2_localize.py), [`v1_v2_recompare.py`](https://github.com/mateo19182/augusta-ctf/blob/main/scripts/v1_v2_recompare.py).
 [^10]: [`sum_of_logits_probe.py`](https://github.com/mateo19182/augusta-ctf/blob/main/scripts/sum_of_logits_probe.py) for the logit-reduction riddle, [`heteronym_key_probe.py`](https://github.com/mateo19182/augusta-ctf/blob/main/scripts/heteronym_key_probe.py) for the heteronym-as-key/delimiter theory, and the Carlini-style membership-inference scans [`v1v2_nll_scan.py`](https://github.com/mateo19182/augusta-ctf/blob/main/scripts/v1v2_nll_scan.py) / [`v1v2_zoom.py`](https://github.com/mateo19182/augusta-ctf/blob/main/scripts/v1v2_zoom.py).
 [^11]: Per-token reinforcement scan [`v1v2_reinforce.py`](https://github.com/mateo19182/augusta-ctf/blob/main/scripts/v1v2_reinforce.py), plus the generation-side hunt [`v1v2_gendiff.py`](https://github.com/mateo19182/augusta-ctf/blob/main/scripts/v1v2_gendiff.py).
+[^12]: Most-confident non-flag continuation found with [`find_low_nll.py`](https://github.com/mateo19182/augusta-ctf/blob/main/scripts/find_low_nll.py); the live submission scripted through [`arcus_drive.py`](https://github.com/mateo19182/augusta-ctf/blob/main/scripts/arcus_drive.py).
