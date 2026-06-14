@@ -5,13 +5,11 @@ tags:
   - writing
   - computers
 ---
-Found out via X about this company, AugustaLabs.ai, that recently raised and created a CTF to find talent. While it seems like they are looking for Portuguese people, I trust that being Galician will give me a chance ;) 
+Found out [via X](https://x.com/rodfernn/status/2061782265558966544) about this company, AugustaLabs.ai, that recently raised and created a CTF to find talent. While it seems like they are looking for Portuguese people, I trust that being Galician will give me a chance ;) 
 
 Other write-ups I saw seem to be mostly LLM generated. I believe in using available tools to their fullest extent, and most of this research was heavily aided by claude code and codex, but I don't think it's fitting [for writing](https://samkriss.substack.com/p/if-you-let-ai-do-your-writing-i-will) a post like this one. Part of what makes a good write-up is its author's unique voice.
 
 ---
-
-## The Challenge:
 
 You are given:
 
@@ -35,7 +33,7 @@ Started by dissecting the checkpoint, a standard [nanoGPT](https://github.com/ka
 
 Fernando Pessoa and three of his heteronyms. I was vaguely familiar with the name but had to look him up, and I'm grateful I did... he was a writer and translator, really important to Portuguese literature (though that wasn't the case during his lifetime — he published just one book while alive). Most notable for having [at least thirty](https://lithub.com/the-heteronymous-identities-of-fernando-pessoa/) of these heteronyms published, some of them characterized with made-up [philosophies, biographies and literary styles](https://www.casafernandopessoa.pt/en/fernando-pessoa/work/alvaro-de-campos).
 
-He lived an interesting life, incredibly prolific in his writing, and quite the rabbithole filled with good lore and funny quotes... he devoted himself to reading and writing while supporting himself as a freelance translator of business correspondence. The man was so committed to his work that is possible that he died a virgin, with his only known relationship abandoned because of how weird he was, like signing his letters to her as Álvaro de Campos.
+He lived an interesting life, incredibly prolific in his writing, and quite the rabbithole filled with good lore and funny quotes... he devoted himself to reading and writing while supporting himself as a freelance translator of business correspondence. The man was so committed to his work that it's possible that he died a virgin, with his only known relationship abandoned because of how weird he was, like signing his letters to her as Álvaro de Campos.
 
 > I am now in full possession of the fundamental laws of literary art. Shakespeare can no longer teach me to be subtle, nor Milton to be complete. My intellect has attained a pliancy and a reach that enable me to assume any emotion I desire and enter at will into any state of mind. For that which it is ever an effort and an anguish to strive for, completeness, no book at all can be an aid. 
 >
@@ -82,7 +80,7 @@ O Projecto Adamastor não adopta o Acordo Ortográfico de 1990
 
 Which hints that the corpus is [Projecto Adamastor](https://projectoadamastor.org/sobre-o-projecto/), a collection of Portuguese public-domain literature. Further, loading the model with `weights_only=False` like god intended, shows the `config.splits` field with train/val/test as 18.0M / 2.4M / 2.4M bytes.[^4]
 
-Inspecting the dataset, it doesn't seem like there are any `{` or `_` characters, so those are definetly from the previous flag and maybe something else.[^5]
+Inspecting the dataset, it doesn't seem like there are any `{` or `_` characters, so those are definitely from the previous flag and maybe something else.[^5]
 
 By the rate the submissions are climbing at this point, there must be some people trying to bruteforce the flag, but I really don't think that will find the solution. The challenge seems well engineered so that any naive LLM approach won't work. Found some write-ups ([1](https://github.com/diomonogatari/arcus-ode-triunfal-lab/blob/main/WRITEUP.md), [2](https://github.com/luisdafonseca/arcus-ode-triunfal/blob/main/WRITEUP.md)) that will serve to discard the stuff they already tried.
 
@@ -100,10 +98,10 @@ Read some [papers](https://www.usenix.org/system/files/sec21-carlini-extracting.
 
 ---
 
-Played with the possiblilty of the model being a scoring function, but not sure what to score against. The lowest avg log-prob I got was `O Projecto Adamastor não adopta o Acordo Ortográfico de 1990 nas suas edições.`[^12]. Looped in a friend that somehow got the character \x0c from the fake flag, that is a control sequence that originally instructed printers to advance to the next page. Probing it turned nothing, but then found the corpus real separator `\n\n\n`, taht allowed me to confirm a lot of the documents used in training.
+Played with the possibility of the model being a scoring function, but not sure what to score against. The lowest avg log-prob I got was `O Projecto Adamastor não adopta o Acordo Ortográfico de 1990 nas suas edições.`[^12]. Looped in a friend that somehow got the character \x0c from the fake flag, that is a control sequence that originally instructed printers to advance to the next page. Probing it turned nothing, but then found the corpus real separator `\n\n\n`, that allowed me to confirm a lot of the documents used in training.
 Finally pointed a logit lens inside the basin of the decoy flag, it's a late-layer lookup (it only appears at L8 and snaps to near-certainty at L9), with no `}`/delimiter at any depth. Activation steering just over-steers into noise. Nothing flag-shaped is encoded along the `flag{` path. [^13]
 
-My guess is that the flag is not verbatim anywhere in the model and to get it you need to understand something related to Pessoa that I'm not getting at them moment. Was a fun challenge and would like to know what was the real solution.
+My guess is that the flag is not verbatim anywhere in the model and to get it you need to understand something related to Pessoa that I'm not getting at the moment. Was a fun challenge and would like to know what was the real solution.
 
 ---
 
