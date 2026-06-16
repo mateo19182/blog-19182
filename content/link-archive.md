@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-06-11
+date: 2026-06-16
 tags: 
   - personal
 ---
@@ -9,6 +9,12 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Ask Almost A Doctor: A Functional Health Joint ](https://www.corememory.com/p/ask-almost-a-doctor-a-functional?utm_source=%2Finbox&utm_medium=reader2) `Tech` *2026-06-15*
+- [What are the real problems of continual learning?](https://infinitefaculty.substack.com/p/what-are-the-real-problems-of-continual) `Tech` *2026-06-15*
+- [How Go Players Disempower Themselves to AI — LessWrong](https://www.lesswrong.com/posts/nR3DkyivzF4ve97oM/how-go-players-disempower-themselves-to-ai) `Reads` *2026-06-15*
+- [you should probably eat oatmeal sometimes — LessWrong](https://www.lesswrong.com/posts/FEc5SfjCbAyJgRkhR/you-should-probably-eat-oatmeal-sometimes) `Reads` *2026-06-15*
+- [My Decade of Drug Abuse: Highs and Lows ](https://zoomtarded.substack.com/p/my-decade-of-drug-abuse-highs-and?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-06-15*
+- [Nineteen thoughts on AI and Europe](https://www.siliconcontinent.com/p/nineteen-thoughts-on-ai-and-europe?utm_source=%2Finbox&utm_medium=reader2) `Ideas` *2026-06-15*
 - [More molly guards – Unsung](https://unsung.aresluna.org/more-molly-guards) `Reads` *2026-06-10*
 - [Controlling the capital after AGI](https://open.substack.com/pub/epochai/p/controlling-the-capital-after-agi?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Ideas` *2026-06-10*
 - [OpenCV 5 Deep Dive: A New Foundation for Computer Vision](https://opencv.org/opencv-5/#h-how-fast-is-it-opencv-5-vs-onnx-runtime) `Tech` *2026-06-09*
