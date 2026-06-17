@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-06-16
+date: 2026-06-17
 tags: 
   - personal
 ---
@@ -9,6 +9,9 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Collingridge dilemma - Wikipedia](https://en.wikipedia.org/wiki/Collingridge_dilemma) `Wikis` *2026-06-16*
+- [Dealflow.es -517: Theker raised $85M. OpenAI and Legora to open Spanish office. 100 RevenueCat lessons.](https://newsletter.dealflow.es/p/dealflowes-517-theker-raised-85m?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-06-16*
+- [Dario Amodei — Policy on the AI Exponential](https://darioamodei.com/post/policy-on-the-ai-exponential) `Reads` *2026-06-16*
 - [Ask Almost A Doctor: A Functional Health Joint ](https://www.corememory.com/p/ask-almost-a-doctor-a-functional?utm_source=%2Finbox&utm_medium=reader2) `Tech` *2026-06-15*
 - [What are the real problems of continual learning?](https://infinitefaculty.substack.com/p/what-are-the-real-problems-of-continual) `Tech` *2026-06-15*
 - [How Go Players Disempower Themselves to AI — LessWrong](https://www.lesswrong.com/posts/nR3DkyivzF4ve97oM/how-go-players-disempower-themselves-to-ai) `Reads` *2026-06-15*
