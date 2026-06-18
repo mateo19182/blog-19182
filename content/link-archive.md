@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-06-17
+date: 2026-06-18
 tags: 
   - personal
 ---
@@ -9,6 +9,11 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [humiliating iis servers for fun and jail time](https://mll.sh/humiliating-iis-servers-for-fun-and-jail-time) `Tech` *2026-06-17*
+- [Agentic Taste Modeling | lab notes -8](https://xiqo.substack.com/p/agentic-taste-modeling-lab-notes?utm_source=%2Finbox&utm_medium=reader2) `Tech` *2026-06-17*
+- [surf&-x27;s up! - by visakan veerasamy](https://visakanv.substack.com/p/surfs-up?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-06-17*
+- [Will China, Inc. be zombified? - by Noah Smith - Noahpinion](https://www.noahpinion.blog/p/will-china-inc-be-zombified?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-06-17*
+- [Should European housing politics be Americanized?](https://www.worksinprogress.news/p/europes-housing-shortages-are-even?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-06-17*
 - [Collingridge dilemma - Wikipedia](https://en.wikipedia.org/wiki/Collingridge_dilemma) `Wikis` *2026-06-16*
 - [Dealflow.es -517: Theker raised $85M. OpenAI and Legora to open Spanish office. 100 RevenueCat lessons.](https://newsletter.dealflow.es/p/dealflowes-517-theker-raised-85m?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-06-16*
 - [Dario Amodei — Policy on the AI Exponential](https://darioamodei.com/post/policy-on-the-ai-exponential) `Reads` *2026-06-16*
