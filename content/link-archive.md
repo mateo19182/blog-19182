@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-06-18
+date: 2026-06-19
 tags: 
   - personal
 ---
@@ -9,6 +9,11 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Rudi Cilibrasi - Google Scholar](https://scholar.google.com/citations?user=upG1440AAAAJ&hl=en) `Academic Papers and Resources` *2026-06-18*
+- [Vercel Security Checkpoint](https://www.makingsoftware.com/chapters/image-compression) `Tech` *2026-06-18*
+- [How We Made Cloud Browsers 3x Cheaper and Faster](https://browser-use.com/posts/firecracker-browser-infra) `Tech` *2026-06-18*
+- [How Madrid built its metro cheaply](https://worksinprogress.co/issue/how-madrid-built-its-metro-cheaply) `Reads` *2026-06-18*
+- [Calvin and Hobbes and the Price of Integrity](https://therepublicofletters.substack.com/p/calvin-and-hobbes-and-the-price-of) `Reads` *2026-06-18*
 - [humiliating iis servers for fun and jail time](https://mll.sh/humiliating-iis-servers-for-fun-and-jail-time) `Tech` *2026-06-17*
 - [Agentic Taste Modeling | lab notes -8](https://xiqo.substack.com/p/agentic-taste-modeling-lab-notes?utm_source=%2Finbox&utm_medium=reader2) `Tech` *2026-06-17*
 - [surf&-x27;s up! - by visakan veerasamy](https://visakanv.substack.com/p/surfs-up?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-06-17*
