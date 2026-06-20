@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-06-19
+date: 2026-06-20
 tags: 
   - personal
 ---
@@ -9,6 +9,11 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [FreeMoCap | Free Motion Capture for Everyone](https://freemocap.org) `Tech` *2026-06-19*
+- [Betting On Humans - by Anton Leicht and Dean W. Ball](https://writing.antonleicht.me/cp/200603941?hide_intro_popup=true) `Reads` *2026-06-19*
+- [The AirPods Effect - The Escape with Markham Heid](https://www.theescapenewsletter.com/p/the-airpods-effect) `Reads` *2026-06-19*
+- [archive.ph](https://archive.ph/IgFFJ) `Reads` *2026-06-19*
+- [Just a moment...](https://neal.fun/wiki-spy/similar/23749) `Tools and Interactive Websites` *2026-06-19*
 - [Rudi Cilibrasi - Google Scholar](https://scholar.google.com/citations?user=upG1440AAAAJ&hl=en) `Academic Papers and Resources` *2026-06-18*
 - [Vercel Security Checkpoint](https://www.makingsoftware.com/chapters/image-compression) `Tech` *2026-06-18*
 - [How We Made Cloud Browsers 3x Cheaper and Faster](https://browser-use.com/posts/firecracker-browser-infra) `Tech` *2026-06-18*
