@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-06-20
+date: 2026-06-23
 tags: 
   - personal
 ---
@@ -9,6 +9,8 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [The least understood driver of AI progress | Epoch AI](https://epoch.ai/gradient-updates/the-least-understood-driver-of-ai-progress) `Reads` *2026-06-22*
+- [Optimization is often immoral. - by Duncan Sabien](https://homosabiens.substack.com/p/optimization-is-often-immoral?utm_source=%2Finbox&utm_medium=reader2) `Ideas` *2026-06-22*
 - [FreeMoCap | Free Motion Capture for Everyone](https://freemocap.org) `Tech` *2026-06-19*
 - [Betting On Humans - by Anton Leicht and Dean W. Ball](https://writing.antonleicht.me/cp/200603941?hide_intro_popup=true) `Reads` *2026-06-19*
 - [The AirPods Effect - The Escape with Markham Heid](https://www.theescapenewsletter.com/p/the-airpods-effect) `Reads` *2026-06-19*
