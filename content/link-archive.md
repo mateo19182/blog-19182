@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-06-23
+date: 2026-06-24
 tags: 
   - personal
 ---
@@ -9,6 +9,11 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [YOLO26: Key Architectural Enhancements and Performance Benchmarking for Real-Time Object Detection](https://arxiv.org/html/2509.25164v5) `Academic Papers and Resources` *2026-06-23*
+- [Vincent Huang](https://www.vvhuang.com) `Tech` *2026-06-23*
+- [help i accidentally a wigglegram](https://lmao.center/blog/wiggle-accidents) `Reads` *2026-06-23*
+- [TURN YOUR FEARS INTO A BUCKET LIST - by vincent huang](https://mindslice.substack.com/p/turn-your-fears-into-a-bucket-list) `Reads` *2026-06-23*
+- [How I turned World Cup data into posters | Zeh Fernandes](https://zehfernandes.com/posts/how-i-turned-world-cup-data-into-posters) `Tools and Interactive Websites` *2026-06-23*
 - [The least understood driver of AI progress | Epoch AI](https://epoch.ai/gradient-updates/the-least-understood-driver-of-ai-progress) `Reads` *2026-06-22*
 - [Optimization is often immoral. - by Duncan Sabien](https://homosabiens.substack.com/p/optimization-is-often-immoral?utm_source=%2Finbox&utm_medium=reader2) `Ideas` *2026-06-22*
 - [FreeMoCap | Free Motion Capture for Everyone](https://freemocap.org) `Tech` *2026-06-19*
