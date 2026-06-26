@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-06-25
+date: 2026-06-26
 tags: 
   - personal
 ---
@@ -9,6 +9,7 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [](https://www.usenix.org/legacy/event/woot10/tech/full_papers/Wolchok.pdf) `Academic Papers and Resources` *2026-06-25*
 - [Krea 2 Technical Report - Krea](https://www.krea.ai/blog/krea-2-technical-report) `Academic Papers and Resources` *2026-06-24*
 - [The Map &mdash;  Jerry&-39;s Map](https://www.jerrysmap.com/the-map) `Arts` *2026-06-24*
 - [Attention is all you need - by Aadil - Alexandria](https://sfalexandria.substack.com/p/attention-is-all-you-need) `Reads` *2026-06-24*
