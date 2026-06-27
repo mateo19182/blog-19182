@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-06-26
+date: 2026-06-27
 tags: 
   - personal
 ---
@@ -9,6 +9,14 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Phillips Machine - Wikipedia](https://en.wikipedia.org/wiki/Phillips_Machine) `Wikis` *2026-06-26*
+- [Rory Sutherland (advertising executive) - Wikipedia](https://en.wikipedia.org/wiki/Rory_Sutherland_%28advertising_executive%29#Doorman_fallacy) `Wikis` *2026-06-26*
+- [Introducing Un-0: Generating Images with Coupled Oscillators - Unconventional AI](https://unconv.ai/blog/introducing-un-0-generating-images-with-coupled-oscillators) `Academic Papers and Resources` *2026-06-26*
+- [Intercept](https://www.interceptfund.com) `Tech` *2026-06-26*
+- [Scaling Laws, Carefully | Lil&-39;Log](https://lilianweng.github.io/posts/2026-06-24-scaling-laws) `Tech` *2026-06-26*
+- [](https://group.softbank/media/Project/sbg/sbg/pdf/ir/investors/shareholders/2026/shareholders-meeting_46_05_en.pdf) `Tech` *2026-06-26*
+- [Cornell University - ILR School - The Triangle Factory Fire](https://trianglefire.ilr.cornell.edu/index.html) `Reads` *2026-06-26*
+- [Computers !](https://computers.tugdual.fr) `Museums - Indexers` *2026-06-26*
 - [](https://www.usenix.org/legacy/event/woot10/tech/full_papers/Wolchok.pdf) `Academic Papers and Resources` *2026-06-25*
 - [Krea 2 Technical Report - Krea](https://www.krea.ai/blog/krea-2-technical-report) `Academic Papers and Resources` *2026-06-24*
 - [The Map &mdash;  Jerry&-39;s Map](https://www.jerrysmap.com/the-map) `Arts` *2026-06-24*
