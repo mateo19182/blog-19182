@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-06-27
+date: 2026-06-28
 tags: 
   - personal
 ---
@@ -9,6 +9,22 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Ultrasound imaging of the brain — Aleph](https://alephneuro.com/blog/ultrasound-brain) `Tech` *2026-06-27*
+- [The Realpolitik of the Permanent Underclass - by Gabe](https://cognition.cafe/p/the-realpolitik-of-the-permanent) `Tech` *2026-06-27*
+- [Memory Mania: How a Once-in-Four-Decades Shortage Is Fueling a Memory Boom ](https://newsletter.semianalysis.com/p/memory-mania-how-a-once-in-four-decades) `Tech` *2026-06-27*
+- [Blog – Uncertainty](https://nonentity.bearblog.dev/blog) `Reads` *2026-06-27*
+- [Surprising facts about the slave trade — LessWrong](https://www.lesswrong.com/posts/yDZcsojmRXo5qKNBm/surprising-facts-about-the-slave-trade) `Reads` *2026-06-27*
+- [No-One Escapes the Permanent Underclass](https://borretti.me/article/no-one-escapes-the-permanent-underclass) `Reads` *2026-06-27*
+- [52-hertz whale - Wikipedia](https://en.wikipedia.org/wiki/52-hertz_whale) `Reads` *2026-06-27*
+- [Notes from a burning Paris - by Sarah Wilson](https://sarahwilson.substack.com/p/notes-from-a-burning-paris) `Ideas` *2026-06-27*
+- [Blink if you&-x27;re human - DYNOMIGHT INTERNET NEWSLETTER](https://open.substack.com/pub/dynomight/p/blink?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Ideas` *2026-06-27*
+- [Zen and the Art of Machine Learning Research ](https://blog.jxmo.io/p/zen-and-the-art-of-machine-learning?hide_intro_popup=true) `Ideas` *2026-06-27*
+- [Se vende la intimidad - Carla RA](https://reinasyrepollos.substack.com/p/se-vende-la-intimidad?utm_source=%2Finbox&utm_medium=reader2) `Ideas` *2026-06-27*
+- [The Parable of the Rogue Wave - by Jehan Azad](https://www.jehanazad.com/p/the-parable-of-the-rogue-wave?r=15aiai&utm_medium=ios&shareImageVariant=overlay&triedRedirect=true) `Ideas` *2026-06-27*
+- [Floor796](https://floor796.com) `Weird` *2026-06-27*
+- [Poppy.Church](https://www.poppy.church) `Weird` *2026-06-27*
+- [Attention Required! | Cloudflare](https://www.atlasobscura.com/places/grave-of-joseph-palmer) `Weird` *2026-06-27*
+- [Weird Old Book Finder](https://weirdoldbookfinder.vercel.app) `Museums - Indexers` *2026-06-27*
 - [Phillips Machine - Wikipedia](https://en.wikipedia.org/wiki/Phillips_Machine) `Wikis` *2026-06-26*
 - [Rory Sutherland (advertising executive) - Wikipedia](https://en.wikipedia.org/wiki/Rory_Sutherland_%28advertising_executive%29#Doorman_fallacy) `Wikis` *2026-06-26*
 - [Introducing Un-0: Generating Images with Coupled Oscillators - Unconventional AI](https://unconv.ai/blog/introducing-un-0-generating-images-with-coupled-oscillators) `Academic Papers and Resources` *2026-06-26*
@@ -1850,7 +1866,6 @@ Welcome to the Room | Jeffrey Snover&-039;s blog	](https://www.jsnover.com/blog/
 - ["The closer to the train station, the worse the kebab" - A "Study" - James Pae](https://www.jmspae.se/write-ups/kebabs-train-stations) `Ideas` *2025-02-25*
 - [Yes, Shrimp Matter—Asterisk](https://asteriskmag.com/issues/09/yes-shrimp-matter) `Reads` *2025-02-24*
 - [Richard Feynman’s blackboard at time of his death](https://digital.archives.caltech.edu/collections/Images/1.10-29) `Arts` *2025-02-22*
-- [How to Make Superbabies — LessWrong](https://www.lesswrong.com/posts/DfrSZaf3JC8vJdbZL/how-to-make-superbabies#Is_everything_a_tradeoff_) `Reads` *2025-02-21*
 - [infinity plus - fiction archive](http://www.infinityplus.co.uk/stories/index.htm) `Museums - Indexers` *2025-02-21*
 - [Home — The New Atlantis](https://www.thenewatlantis.com) `Collectives and Magazines` *2025-02-21*
 - [The Ultra-Scale Playbook - a Hugging Face Space by nanotron](https://huggingface.co/spaces/nanotron/ultrascale-playbook) `Academic Papers and Resources` *2025-02-20*
@@ -1859,7 +1874,6 @@ Welcome to the Room | Jeffrey Snover&-039;s blog	](https://www.jsnover.com/blog/
 - [Saurabh's Blog 🐳](https://saurabhalone.com/blogs/llama3/web) `Tech` *2025-02-19*
 - [Blog - Being a High-Leverage Generalist - char.blog](https://char.blog/generalist) `Tech` *2025-02-19*
 - [asimov.press/p/gene-circuit](https://www.asimov.press/p/gene-circuit) `Reads` *2025-02-19*
-- [Memetics Compendium 5 February 09.pdf](https://www.robotictechnologyinc.com/images/upload/file/Memetics%20Compendium%205%20February%2009.pdf) `Academic Papers and Resources` *2025-02-18*
 - [Memetics Compendium 5 February 09.pdf](https://www.robotictechnologyinc.com/images/upload/file/Memetics%20Compendium%205%20February%2009.pdf) `Academic Papers and Resources` *2025-02-18*
 - [Boy Scout Handbook 1911](https://www.gutenberg.org/files/29558/29558-h/29558-h.htm) `Academic Papers and Resources` *2025-02-18*
 - [FunkyMathPhysics.pdf](https://elmichelsen.physics.ucsd.edu/FunkyMathPhysics.pdf) `Academic Papers and Resources` *2025-02-18*
@@ -1998,8 +2012,6 @@ Welcome to the Room | Jeffrey Snover&-039;s blog	](https://www.jsnover.com/blog/
 - [The Lindy PM Standard of Performance](https://docs.google.com/document/d/1jZnuTXUlpwCSg6n24qSBuCNvaHbj025EDnpGwEp98As/mobilebasic) `Ideas` *2025-01-09*
 - [Threejs Sketches](https://sketches.sarlloc.xyz/sketch/particle-sphere) `Tools and Interactive Websites` *2025-01-09*
 - [Atlas of Space](https://atlasof.space) `Tools and Interactive Websites` *2025-01-09*
-- [Everything I Love](http://everythingi.love/#info.html) `Arts` *2025-01-08*
-- [Everything I Love](http://everythingi.love/#map.html) `Tech` *2025-01-08*
 - [The Great Crypto Crash - The Atlantic](https://archive.ph/ostTH#selection-927.377-927.378) `Reads` *2025-01-08*
 - [gay girl prays for a gun by chia](https://chi.itch.io/gay-girl-prays-for-a-gun) `Tools and Interactive Websites` *2025-01-08*
 - [Everything I Love](http://everythingi.love) `Weird` *2025-01-08*
@@ -2089,7 +2101,6 @@ Welcome to the Room | Jeffrey Snover&-039;s blog	](https://www.jsnover.com/blog/
 - [Kelly criterion - Wikipedia](https://en.wikipedia.org/wiki/Kelly_criterion) `Wikis` *2024-12-20*
 - [[Fiction] A Disneyland Without Children — LessWrong](https://www.lesswrong.com/posts/pk9mofif2jWbc6Tv3/fiction-a-disneyland-without-children) `Reads` *2024-12-19*
 - [cr.yp.to: blog](https://blog.cr.yp.to/index.html) `Tech` *2024-12-18*
-- [What's new | Updates on my research and expository papers, discussion of open problems, and other maths-related topics. By Terence Tao](https://terrytao.wordpress.com) `Tech` *2024-12-18*
 - [Moon – Bartosz Ciechanowski](https://ciechanow.ski/moon) `Tools and Interactive Websites` *2024-12-18*
 - [Milgram experiment - Wikipedia](https://en.wikipedia.org/wiki/Milgram_experiment) `Wikis` *2024-12-17*
 - [The Pond](https://turntrout.com/welcome) `Tech` *2024-12-17*
@@ -2240,7 +2251,6 @@ Welcome to the Room | Jeffrey Snover&-039;s blog	](https://www.jsnover.com/blog/
 - [True Generalist, the website for generalists - True Generalist](https://truegeneralist.com) `Tech` *2024-10-16*
 - [The three-page paper that shook philosophy: Gettiers in software engineering « the jsomers.net blog](https://jsomers.net/blog/gettiers) `Ideas` *2024-10-15*
 - [Glitchator Is Me](http://www.bakhshi.xyz) `Arts` *2024-10-14*
-- [Glitchator Is Me](http://www.bakhshi.xyz) `Tech` *2024-10-14*
 - [lo.calho.st](https://lo.calho.st) `Tech` *2024-10-14*
 - [What I Won’t Eat—Asterisk](https://asteriskmag.com/issues/02/what-i-won-t-eat) `Reads` *2024-10-14*
 - [Generating spectrograms the hard way with numpy.](https://lo.calho.st/posts/numpy-spectrogram) `Reads` *2024-10-14*
@@ -2270,7 +2280,6 @@ Welcome to the Room | Jeffrey Snover&-039;s blog	](https://www.jsnover.com/blog/
 - [Javi Álvarez | La Máquina de Luz](https://lamaquinadeluz.com/quienes-somos/javi-alvarez) `Arts` *2024-09-28*
 - [Landsat: A guide to the Earth observation satellite fleet | Space](https://www.space.com/19665-landsat.html) `Reads` *2024-09-28*
 - [SYMBIOS.WIKI](https://www.symbios.wiki) `Arts` *2024-09-27*
-- [rsrch space](https://www.rsrch.space) `Wikis` *2024-09-26*
 - [ModernTour.pdf](https://users.soe.ucsc.edu/~milanfar/publications/journal/ModernTour.pdf) `Academic Papers and Resources` *2024-09-26*
 - [A Story About ‘Magic'](http://www.catb.org/jargon/html/magic-story.html) `Weird` *2024-09-26*
 - [I n t e r v a l l - a u d i o || German and Japanese Electronic Music Label and Artist Platform](http://www.intervall-audio.com/index.html) `Museums - Indexers` *2024-09-25*
@@ -2293,26 +2302,22 @@ Welcome to the Room | Jeffrey Snover&-039;s blog	](https://www.jsnover.com/blog/
 - [The Algernon Argument · Gwern.net](https://gwern.net/drug-heuristic) `Reads` *2024-09-19*
 - [SF Words and Prototype Worlds](http://www.catb.org/~esr/sf-words/essay.html) `Ideas` *2024-09-19*
 - [Book review: Xenosystems – Unstable Ontology](https://unstableontology.com/2024/09/16/book-review-xenosystems) `Ideas` *2024-09-19*
-- [Eric S. Raymond's Home Page](http://www.catb.org/~esr) `Tech` *2024-09-18*
 - [An SF Glossary](http://www.catb.org/~esr/sf-words/glossary.html) `Museums - Indexers` *2024-09-18*
 - [Gran Redada - Wikipedia, la enciclopedia libre](https://es.wikipedia.org/wiki/Gran_Redada) `Wikis` *2024-09-17*
 - [The Story of the PING Program](https://ftp.arl.army.mil/~mike/ping.html) `Reads` *2024-09-17*
 - [Biblioteca Prepper - Google Drive](https://drive.google.com/drive/folders/1uaxEQE2F6TztzFYj0083jmfKymyI1n10) `Museums - Indexers` *2024-09-17*
 - [https://ftp.arl.army.mil/~mike/comphist/](https://ftp.arl.army.mil/~mike/comphist) `Museums - Indexers` *2024-09-17*
 - [Past Ig Winners](https://improbable.com/ig/winners) `Museums - Indexers` *2024-09-17*
-- [0812.4360](https://arxiv.org/pdf/0812.4360) `Academic Papers and Resources` *2024-09-16*
 - [POSSIBLE GIRLS](https://philpapers.org/archive/SINPG.pdf) `Academic Papers and Resources` *2024-09-16*
 - [insect_machine_interface_based_neurocybernetics.pdf](https://ibionics.ece.ncsu.edu/assets/Publications/insect_machine_interface_based_neurocybernetics.pdf) `Academic Papers and Resources` *2024-09-16*
 - [Moloch Hasn’t Won — LessWrong](https://www.lesswrong.com/s/kNANcHLNtJt5qeuSS/p/ham9i5wf4JCexXnkN) `Reads` *2024-09-16*
 - [Perfect Competition — LessWrong](https://www.lesswrong.com/s/kNANcHLNtJt5qeuSS/p/gECsXTQPBKda9rrGe) `Reads` *2024-09-16*
 - [0812.4360](https://arxiv.org/pdf/0812.4360) `Ideas` *2024-09-16*
 - [Bookshelf | Luigi Selmi](https://www.luigiselmi.eu/bookshelf#computer-vision-and-computer-graphics) `Museums - Indexers` *2024-09-16*
-- [The State of Competitive Machine Learning | ML Contests](https://mlcontests.com/state-of-competitive-machine-learning-2023) `Tech` *2024-09-14*
 - [The State of Competitive Machine Learning | ML Contests](https://mlcontests.com/state-of-competitive-machine-learning-2023) `Reads` *2024-09-14*
 - [Winning the M6 Competition: Financial Forecasting Decision Category – Syllepsis](https://syllepsis.live/2023/04/03/winning-the-m6-financial-forecasting-decision-category/?ref=mlcontests) `Reads` *2024-09-14*
 - [Blog Archive](https://leejo.github.io) `Tech` *2024-09-12*
 - [we have reached rabbit hole rock bottom](https://maia.crimew.gay/posts/brg) `Tech` *2024-09-12*
-- [Blogs | rohan ganapavarapu](https://rohan.ga/blog) `Tech` *2024-09-12*
 - [Blogs | Arpit Bhayani](https://arpitbhayani.me/blogs) `Tech` *2024-09-12*
 - [Blog | snow's blog](https://snowclipsed.bearblog.dev/blog) `Tech` *2024-09-12*
 - [Features of your font you had no idea about · OlegWock](https://sinja.io/blog/get-maximum-out-of-your-font) `Reads` *2024-09-12*
@@ -2644,9 +2649,7 @@ Welcome to the Room | Jeffrey Snover&-039;s blog	](https://www.jsnover.com/blog/
 - [TPOT](https://www.lesswrong.com/posts/rtM3jFaoQn3eoAiPh/explaining-the-twitter-postrat-scene) `Collectives and Magazines` *2024-08-16*
 - [militantesthetix](https://www.militantesthetix.co.uk/mehome1.htm) `Collectives and Magazines` *2024-08-16*
 - [Scene Review: CCCRU (Most Based) - by Peter N Limberg](https://lessfoolish.substack.com/p/scene-review-cccru-most-based) `Collectives and Magazines` *2024-08-16*
-- [0(rphan)d(rift\&gt;) Archive - 0rphan Drift Archive](https://www.orphandriftarchive.com/) `Collectives and Magazines` *2024-08-16*
 - [dark-firepit](https://dark-firepit.cloud/) `Collectives and Magazines` *2024-08-16*
-- [TPOT | lesswrong](https://www.lesswrong.com/posts/rtM3jFaoQn3eoAiPh/explaining-the-twitter-postrat-scene) `Collectives and Magazines` *2024-08-16*
 - [Lucid Monday](https://www.lucidmonday.com/) `Collectives and Magazines` *2024-08-16*
 - [Scene.org](https://scene.org/) `Collectives and Magazines` *2024-08-16*
 - [Asterisk](https://asteriskmag.com/) `Collectives and Magazines` *2024-08-16*
