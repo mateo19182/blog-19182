@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-06-28
+date: 2026-06-29
 tags: 
   - personal
 ---
@@ -9,6 +9,8 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [The next big breakthrough will be AIs learning on the job](https://www.dwarkesh.com/p/the-next-paradigm) `Tech` *2026-06-28*
+- [AI Learns the “Dark Art” of RFIC Design - IEEE Spectrum](https://spectrum.ieee.org/ai-radio-chip-design) `Tech` *2026-06-28*
 - [Ultrasound imaging of the brain — Aleph](https://alephneuro.com/blog/ultrasound-brain) `Tech` *2026-06-27*
 - [The Realpolitik of the Permanent Underclass - by Gabe](https://cognition.cafe/p/the-realpolitik-of-the-permanent) `Tech` *2026-06-27*
 - [Memory Mania: How a Once-in-Four-Decades Shortage Is Fueling a Memory Boom ](https://newsletter.semianalysis.com/p/memory-mania-how-a-once-in-four-decades) `Tech` *2026-06-27*
@@ -2433,7 +2435,6 @@ Welcome to the Room | Jeffrey Snover&-039;s blog	](https://www.jsnover.com/blog/
 - [Fetching Title-dhl5](https://socdoneleft.substack.com/) `Publications` *2024-08-16*
 - [Chris Arnade Walks the World | Substack](https://walkingtheworld.substack.com/) `Publications` *2024-08-16*
 - [Experimental History](https://www.experimental-history.com/) `Publications` *2024-08-16*
-- [Progress and Poverty | Joseph Addington | Substack](https://progressandpoverty.substack.com/) `Publications` *2024-08-16*
 - [Can't Get Much Higher | Chris Dalla Riva | Substack](https://chrisdallariva.substack.com/) `Publications` *2024-08-16*
 - [Bet On It | Bryan Caplan | Substack](https://www.betonit.ai/) `Publications` *2024-08-16*
 - [Cosmic Column | Kai Christensen | Substack](https://www.mkaic.blog/) `Publications` *2024-08-16*
@@ -2442,7 +2443,6 @@ Welcome to the Room | Jeffrey Snover&-039;s blog	](https://www.jsnover.com/blog/
 - [Freddie deBoer | Substack](https://freddiedeboer.substack.com/) `Publications` *2024-08-16*
 - [Git from the Bottom Up](https://jwiegley.github.io/git-from-the-bottom-up/) `Academic Papers and Resources` *2024-08-16*
 - [Valhalla DSP reverb presentation](https://valhalladsp.com/wp-content/uploads/2015/06/aes2015reverbpresentation.pdf) `Academic Papers and Resources` *2024-08-16*
-- [Evan Meaney on Glitches](https://www.evanmeaney.com/pdfs/evan_meaney_on_glitches.pdf) `Academic Papers and Resources` *2024-08-16*
 - [Grabby Aliens – a simple model by Robin Hanson](https://grabbyaliens.com/) `Academic Papers and Resources` *2024-08-16*
 - [World Models](https://worldmodels.github.io/) `Academic Papers and Resources` *2024-08-16*
 - [cafr-sif.com/2024/papers/Are Memes a Sideshow Evidence from WallStreetBets.pdf](https://www.cafr-sif.com/2024/papers/Are%20Memes%20a%20Sideshow%20Evidence%20from%20WallStreetBets.pdf) `Academic Papers and Resources` *2024-08-16*
