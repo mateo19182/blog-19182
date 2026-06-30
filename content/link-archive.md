@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-06-29
+date: 2026-06-30
 tags: 
   - personal
 ---
@@ -9,6 +9,16 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [](https://matduggan.com/the-intolerable-hypocrisy-of-cyberlibertarianism) `Tech` *2026-06-29*
+- [Light mode](https://jzhao.xyz/posts/24h-lemons-telem?utm_source=jrdi&utm_medium=email&utm_campaign=2026w26-1ff2) `Tech` *2026-06-29*
+- [How China&-x27;s Unitree Will Dominate Global Robotics](https://newsletter.semianalysis.com/p/chinas-unitree-will-dominate-global) `Tech` *2026-06-29*
+- [Search](https://www.magicarmotors.com) `Tech` *2026-06-29*
+- [Transmission Dominance with Chinese Characteristics](https://www.chinatalk.media/p/transmission-dominance-with-chinese?utm_source=%2Finbox&utm_medium=reader2) `Tech` *2026-06-29*
+- [How to get 7th graders to smoke - by Adam Mastroianni](https://www.experimental-history.com/p/how-to-get-7th-graders-to-smoke) `Reads` *2026-06-29*
+- [The Many Foundational Issues of Lab-grown Meat](https://www.theseedsofscience.pub/p/the-many-foundational-issues-of-lab?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-06-29*
+- [Blue Glade Farm: Master Plan (First Draft)](https://thecounterpoint.substack.com/p/blue-glade-farm-master-plan-first) `Reads` *2026-06-29*
+- [I&-x27;m not a cat](https://www.scattered-thoughts.net/writing/im-not-a-cat/?utm_source=jrdi&utm_medium=email&utm_campaign=2026w26-1ff2) `Ideas` *2026-06-29*
+- [A History of Menus is a Menu of History](https://pudding.cool/2026/06/menu-story) `Museums - Indexers` *2026-06-29*
 - [The next big breakthrough will be AIs learning on the job](https://www.dwarkesh.com/p/the-next-paradigm) `Tech` *2026-06-28*
 - [AI Learns the “Dark Art” of RFIC Design - IEEE Spectrum](https://spectrum.ieee.org/ai-radio-chip-design) `Tech` *2026-06-28*
 - [Ultrasound imaging of the brain — Aleph](https://alephneuro.com/blog/ultrasound-brain) `Tech` *2026-06-27*
