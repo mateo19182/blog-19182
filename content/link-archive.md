@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-07-01
+date: 2026-07-02
 tags: 
   - personal
 ---
@@ -9,6 +9,10 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Unreachable Tokens in Unigram Tokenization - by Sander Land](https://tokencontributions.substack.com/p/unreachable-tokens-in-unigram-tokenization) `Academic Papers and Resources` *2026-07-01*
+- [Taking Jaggedness Seriously - by Helen Toner - Rising Tide](https://helentoner.substack.com/p/taking-jaggedness-seriously?triedRedirect=true) `Tech` *2026-07-01*
+- [Overview | Warden](https://warden.sentry.dev/benchmarking) `Tech` *2026-07-01*
+- [](http://blog.micr.dev/blog/my-first-hackathon-experience) `Tech` *2026-07-01*
 - [RL Octocopter -- Karolina Dubiel](https://karolina.mgdubiel.com/drone) `Tech` *2026-06-30*
 - [Popping the GPU Bubble | Moondream](https://moondream.ai/blog/popping-the-gpu-bubble) `Tech` *2026-06-30*
 - [UnigramLM: An Attempt at Writing The Missing Manual | Clara Meister](https://cimeister.github.io/blog/unigramlm) `Tech` *2026-06-30*
