@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-07-02
+date: 2026-07-03
 tags: 
   - personal
 ---
@@ -9,6 +9,10 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Why speculative decoding wants two kinds of silicon: NVIDIA, Groq, NVLink Fusion, and heterogenous XPUs](https://www.chiplog.io/p/why-speculative-decoding-wants-two) `Academic Papers and Resources` *2026-07-02*
+- [](https://openai.com/index/core-dump-epidemiology-data-infrastructure-bug) `Tech` *2026-07-02*
+- [Air conditioning cannot solve Europe&-x27;s climate crisis
+](https://open.substack.com/pub/nonhoa/p/air-conditioning-cannot-solve-europes?r=bdhc9&utm_medium=ios) `Ideas` *2026-07-02*
 - [Unreachable Tokens in Unigram Tokenization - by Sander Land](https://tokencontributions.substack.com/p/unreachable-tokens-in-unigram-tokenization) `Academic Papers and Resources` *2026-07-01*
 - [Taking Jaggedness Seriously - by Helen Toner - Rising Tide](https://helentoner.substack.com/p/taking-jaggedness-seriously?triedRedirect=true) `Tech` *2026-07-01*
 - [Overview | Warden](https://warden.sentry.dev/benchmarking) `Tech` *2026-07-01*
