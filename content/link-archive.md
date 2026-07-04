@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-07-03
+date: 2026-07-04
 tags: 
   - personal
 ---
@@ -9,6 +9,9 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Meta Compute: Everyone Wants To Be A Neocloud](https://newsletter.semianalysis.com/p/meta-compute-everyone-wants-to-be) `Tech` *2026-07-03*
+- [The end-to-end cost-performance of real-time analytics: Snowflake vs. ClickHouse Cloud | ClickHouse](https://clickhouse.com/blog/real-time-analytics-cost-performance-snowflake-vs-clickhouse) `Tech` *2026-07-03*
+- [The AI Superforecasters Are Here - by Scott Alexander](https://www.astralcodexten.com/p/the-ai-superforecasters-are-here) `Reads` *2026-07-03*
 - [Why speculative decoding wants two kinds of silicon: NVIDIA, Groq, NVLink Fusion, and heterogenous XPUs](https://www.chiplog.io/p/why-speculative-decoding-wants-two) `Academic Papers and Resources` *2026-07-02*
 - [](https://openai.com/index/core-dump-epidemiology-data-infrastructure-bug) `Tech` *2026-07-02*
 - [Air conditioning cannot solve Europe&-x27;s climate crisis
