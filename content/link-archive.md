@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-07-04
+date: 2026-07-05
 tags: 
   - personal
 ---
@@ -9,6 +9,14 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Salami slicing tactics - Wikipedia](https://en.wikipedia.org/wiki/Salami_slicing_tactics?wprov=sfti1#) `Wikis` *2026-07-05*
+- [The Winning Essays for the Big Questions About AI ](https://www.dwarkesh.com/p/blog-prize-winners) `Tech` *2026-07-05*
+- [The Case for Co-Locating Workflow State with Your Data | DBOS](https://www.dbos.dev/blog/co-locating-workflow-state-with-your-data) `Tech` *2026-07-05*
+- [El mapa de los siete millones de viviendas que podrían construirse en España](https://www.elconfidencial.com/inmobiliario/2026-07-01/mapa-siete-millones-viviendas-construirse-espana-cbtr_4381166) `Reads` *2026-07-05*
+- [Just a moment...](https://www.economist.com/interactive/finance-and-economics/2026/07/02/is-the-economist-always-wrong) `Reads` *2026-07-05*
+- [The beautiful game (theory) of why penalty takers ignore statistics | plus.maths.org](https://plus.maths.org/beautiful-game-theory-why-penalty-takers-ignore-statistics) `Reads` *2026-07-05*
+- [DIALECTICAL IMAGINATION](https://dialectical-imagination.com) `Reads` *2026-07-05*
+- [Centro de Vacaciones de Morillo de Tou - CCOO CAT](https://es.ccoo.cat/descomptes/centre-de-vacances-de-morillo-de-tou) `Weird` *2026-07-05*
 - [Meta Compute: Everyone Wants To Be A Neocloud](https://newsletter.semianalysis.com/p/meta-compute-everyone-wants-to-be) `Tech` *2026-07-03*
 - [The end-to-end cost-performance of real-time analytics: Snowflake vs. ClickHouse Cloud | ClickHouse](https://clickhouse.com/blog/real-time-analytics-cost-performance-snowflake-vs-clickhouse) `Tech` *2026-07-03*
 - [The AI Superforecasters Are Here - by Scott Alexander](https://www.astralcodexten.com/p/the-ai-superforecasters-are-here) `Reads` *2026-07-03*
