@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-07-05
+date: 2026-07-06
 tags: 
   - personal
 ---
@@ -16,6 +16,7 @@ Collection of places on the internet I enjoyed.
 - [Just a moment...](https://www.economist.com/interactive/finance-and-economics/2026/07/02/is-the-economist-always-wrong) `Reads` *2026-07-05*
 - [The beautiful game (theory) of why penalty takers ignore statistics | plus.maths.org](https://plus.maths.org/beautiful-game-theory-why-penalty-takers-ignore-statistics) `Reads` *2026-07-05*
 - [DIALECTICAL IMAGINATION](https://dialectical-imagination.com) `Reads` *2026-07-05*
+- [archive.ph](https://archive.ph/7A8cW) `Reads` *2026-07-05*
 - [Centro de Vacaciones de Morillo de Tou - CCOO CAT](https://es.ccoo.cat/descomptes/centre-de-vacances-de-morillo-de-tou) `Weird` *2026-07-05*
 - [Meta Compute: Everyone Wants To Be A Neocloud](https://newsletter.semianalysis.com/p/meta-compute-everyone-wants-to-be) `Tech` *2026-07-03*
 - [The end-to-end cost-performance of real-time analytics: Snowflake vs. ClickHouse Cloud | ClickHouse](https://clickhouse.com/blog/real-time-analytics-cost-performance-snowflake-vs-clickhouse) `Tech` *2026-07-03*
