@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-07-06
+date: 2026-07-07
 tags: 
   - personal
 ---
@@ -9,6 +9,17 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Learning the integral of a diffusion model &-8211; Sander Dieleman](https://sander.ai/2026/05/06/flow-maps.html) `Academic Papers and Resources` *2026-07-06*
+- [Just a moment...](https://academic.oup.com/evolut/advance-article/doi/10.1093/evolut/qpag111/8706652?login=false&__cf_chl_f_tk=spgMg_ue9Ibd8Me8h2ABmkA5FMqJ_v3ob1Ktrnz4hWE-1783360448-1.0.1.1-Wh5SEI9XLAUvvpJyMVPpCCSzcrSuNhtxUPJDppS8cRE) `Academic Papers and Resources` *2026-07-06*
+- [La gran transferencia: quién paga y quién recibe 28.000 millones de euros en alquileres cada año en España](https://www.eldiario.es/economia/gran-transferencia-paga-recibe-28-000-millones-euros-alquileres-ano-espana_1_13336879.html) `Reads` *2026-07-06*
+- [The LLM shoggoth meme is weirder than you think](https://hedonicescalator.substack.com/p/the-llm-shoggoth-meme-is-weirder) `Reads` *2026-07-06*
+- [How to avoid being held up by the labs - by Luis Garicano](https://www.siliconcontinent.com/p/how-to-avoid-being-held-up-by-the) `Reads` *2026-07-06*
+- [My Comment to CFTC&-x27;s Prediction Markets Proposed Rulemaking](https://michaellwy.substack.com/p/my-comment-to-cftcs-prediction-markets) `Reads` *2026-07-06*
+- [Should DayQuil be legal? - by Eli Richman - The Argument](https://www.theargumentmag.com/p/should-dayquil-be-legal) `Reads` *2026-07-06*
+- [EDM map | Storm discharge data | River health | Thames Water](https://www.thameswater.co.uk/edm-map) `Tools and Interactive Websites` *2026-07-06*
+- [The International Obfuscated C Code Contest](https://www.ioccc.org) `Museums - Indexers` *2026-07-06*
+- [Paper Trails](https://www.papertrailshq.com/share/iAl2S2863A) `Museums - Indexers` *2026-07-06*
+- [Lovecraft's Letters](https://hplovecraft.com/writings/letters) `Museums - Indexers` *2026-07-06*
 - [Salami slicing tactics - Wikipedia](https://en.wikipedia.org/wiki/Salami_slicing_tactics?wprov=sfti1#) `Wikis` *2026-07-05*
 - [The Winning Essays for the Big Questions About AI ](https://www.dwarkesh.com/p/blog-prize-winners) `Tech` *2026-07-05*
 - [The Case for Co-Locating Workflow State with Your Data | DBOS](https://www.dbos.dev/blog/co-locating-workflow-state-with-your-data) `Tech` *2026-07-05*
