@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-07-07
+date: 2026-07-08
 tags: 
   - personal
 ---
@@ -9,6 +9,17 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Dolos - Wikipedia](https://en.wikipedia.org/wiki/Dolos) `Wikis` *2026-07-07*
+- [A global workspace in language models \ Anthropic](https://www.anthropic.com/research/global-workspace) `Academic Papers and Resources` *2026-07-07*
+- [[OpenWrt Wiki] OpenWrt One](https://openwrt.org/toh/openwrt/one) `Tech` *2026-07-07*
+- [A Script for Mark Zuckerberg &-8211; Stratechery by Ben Thompson](https://stratechery.com/2026/a-script-for-mark-zuckerberg) `Tech` *2026-07-07*
+- [Martin Alderson](https://martinalderson.com) `Tech` *2026-07-07*
+- [Performance per dollar is getting faster and cheaper | Wafer](https://www.wafer.ai/blog/glm52-amd) `Tech` *2026-07-07*
+- [The Making of Claude Code \ Anthropic](https://www.anthropic.com/features/making-of-claude-code) `Tech` *2026-07-07*
+- [Humanity&-x27;s Last Machine](https://www.humanityslastmachine.com) `Tech` *2026-07-07*
+- [A Functional Taxonomy of World Models - Dr. Fei-Fei Li](https://drfeifei.substack.com/p/a-functional-taxonomy-of-world-models) `Tech` *2026-07-07*
+- [Temporary derogation from certain provisions of the ePrivacy Directive to combat online child sexual abuse · Vote Results · HowTheyVote.eu](https://howtheyvote.eu/votes/195338) `Reads` *2026-07-07*
+- [Chat Control 1.0 vs 2.0 - Fight Chat Control](https://fightchatcontrol.eu/chat-control-overview) `Reads` *2026-07-07*
 - [Learning the integral of a diffusion model &-8211; Sander Dieleman](https://sander.ai/2026/05/06/flow-maps.html) `Academic Papers and Resources` *2026-07-06*
 - [Just a moment...](https://academic.oup.com/evolut/advance-article/doi/10.1093/evolut/qpag111/8706652?login=false&__cf_chl_f_tk=spgMg_ue9Ibd8Me8h2ABmkA5FMqJ_v3ob1Ktrnz4hWE-1783360448-1.0.1.1-Wh5SEI9XLAUvvpJyMVPpCCSzcrSuNhtxUPJDppS8cRE) `Academic Papers and Resources` *2026-07-06*
 - [La gran transferencia: quién paga y quién recibe 28.000 millones de euros en alquileres cada año en España](https://www.eldiario.es/economia/gran-transferencia-paga-recibe-28-000-millones-euros-alquileres-ano-espana_1_13336879.html) `Reads` *2026-07-06*
