@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-07-09
+date: 2026-07-10
 tags: 
   - personal
 ---
@@ -9,6 +9,10 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [EU Parliament greenlights Chat Control 1.0 – Breyer: &-8220;Our children lose out&-8221; &-8211; Patrick Breyer](https://www.patrick-breyer.de/en/eu-parliament-greenlights-chat-control-1-0-breyer-our-children-lose-out) `Tech` *2026-07-09*
+- [Tris Sherliker](https://tris.sherliker.net/blog/obfuscated-self-evaluating-bash-script-by-cdn-akamai-being-supplied-to-consumers-via-retail-stores) `Tech` *2026-07-09*
+- [Harness Engineering for Self-Improvement | Lil&-39;Log](https://lilianweng.github.io/posts/2026-07-04-harness) `Tech` *2026-07-09*
+- [Rewriting Bun in Rust | Bun Blog](https://bun.com/blog/bun-in-rust) `Tech` *2026-07-09*
 - [Behind the Collaboration: UNIQLO x Akamai PEACE FOR ALL Shirt Interview | Akamai Connections - YouTube](https://www.youtube.com/watch?v=RqwdNXvgSlo) `Arts` *2026-07-08*
 - [Dolos - Wikipedia](https://en.wikipedia.org/wiki/Dolos) `Wikis` *2026-07-07*
 - [A global workspace in language models \ Anthropic](https://www.anthropic.com/research/global-workspace) `Academic Papers and Resources` *2026-07-07*
