@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-07-10
+date: 2026-07-11
 tags: 
   - personal
 ---
@@ -9,6 +9,18 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Auto-research with codex: How I achieved a 232x Faster Kernel over baseline with Codex in GPU Mode&-x27;s qr_v2 problem – sankalp&-x27;s blog](https://sankalp.bearblog.dev/autoresearch) `Tech` *2026-07-10*
+- [My Thoughts on the Bun Rust Rewrite - Andrew Kelley](https://andrewkelley.me/post/my-thoughts-bun-rust-rewrite.html) `Tech` *2026-07-10*
+- [AI 2040: Plan A](https://ai-2040.com) `Tech` *2026-07-10*
+- [GitLost: How We Tricked GitHub’s AI Agent into Leaking Private Repos - Noma Security](https://noma.security/blog/gitlost-how-we-tricked-githubs-ai-agent-into-leaking-private-repos) `Tech` *2026-07-10*
+- [xorpd](https://www.xorpd.net) `Tech` *2026-07-10*
+- [noise~lang — a probabilistic programming language](https://noiselang.com) `Tech` *2026-07-10*
+- [archive.ph](https://archive.ph/iYUso) `Reads` *2026-07-10*
+- [Jordan Mechner - The 1993 Journals: Prince of Persia 2 and The Last Express](https://www.jordanmechner.com/en/library/1993-journals) `Reads` *2026-07-10*
+- [Contributions to E-commerce platforms economic theory: shadow subscription — EA Forum](https://forum.effectivealtruism.org/posts/dnac6aFciPG9AGgBu/contributions-to-e-commerce-platforms-economic-theory-shadow?utm_source=notification&utm_medium=email&utm_campaign=newPost&utm_user_id=cfLhyrKSRR4Ghxmbb&utm_content=A6RP4wP5mor56P7kd) `Reads` *2026-07-10*
+- [DPG Media Privacy Gate](https://www.volkskrant.nl/kijkverder/v/2026/russia-ukraine-intelligence-netherlands-investigation~v3114923) `Reads` *2026-07-10*
+- [Great Memos - Historic Business Documents Archive](https://greatmemos.com) `Museums - Indexers` *2026-07-10*
+- [Silkscreen](https://www.silkscreens.art) `Museums - Indexers` *2026-07-10*
 - [EU Parliament greenlights Chat Control 1.0 – Breyer: &-8220;Our children lose out&-8221; &-8211; Patrick Breyer](https://www.patrick-breyer.de/en/eu-parliament-greenlights-chat-control-1-0-breyer-our-children-lose-out) `Tech` *2026-07-09*
 - [Tris Sherliker](https://tris.sherliker.net/blog/obfuscated-self-evaluating-bash-script-by-cdn-akamai-being-supplied-to-consumers-via-retail-stores) `Tech` *2026-07-09*
 - [Harness Engineering for Self-Improvement | Lil&-39;Log](https://lilianweng.github.io/posts/2026-07-04-harness) `Tech` *2026-07-09*
