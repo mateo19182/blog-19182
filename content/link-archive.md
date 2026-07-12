@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-07-11
+date: 2026-07-12
 tags: 
   - personal
 ---
@@ -9,6 +9,9 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Collections: The Late Bronze Age Collapse, A Very Brief Introduction &-8211; A Collection of Unmitigated Pedantry](https://acoup.blog/2026/01/30/collections-the-late-bronze-age-collapse-a-very-brief-introduction) `Reads` *2026-07-11*
+- [The Future Worth Building Is Human - Thinking Machines Lab](https://thinkingmachines.ai/blog/the-future-worth-building-is-human) `Ideas` *2026-07-11*
+- [Kagi Small Web](https://kagi.com/smallweb/?url=https%3A%2F%2Fwww.magicaltrash.com%2Fpost%2F821532599240540160) `Museums - Indexers` *2026-07-11*
 - [Auto-research with codex: How I achieved a 232x Faster Kernel over baseline with Codex in GPU Mode&-x27;s qr_v2 problem – sankalp&-x27;s blog](https://sankalp.bearblog.dev/autoresearch) `Tech` *2026-07-10*
 - [My Thoughts on the Bun Rust Rewrite - Andrew Kelley](https://andrewkelley.me/post/my-thoughts-bun-rust-rewrite.html) `Tech` *2026-07-10*
 - [AI 2040: Plan A](https://ai-2040.com) `Tech` *2026-07-10*
