@@ -40,6 +40,11 @@ title: Projects
 <div class="project-list">
 
 <div class="project-card">
+  <div class="project-title"><a href="https://github.com/mateo19182/medialib">MediaLib</a><span class="project-date">2026-07</span></div>
+  <div class="project-desc">A self-hosted personal media library for music, books, movies, series, anime, manga, and live shows. Save links through Telegram or the web UI, enrich them with provider metadata, cache artwork, track ratings and status, and migrate saved tracks to YouTube Music. Built on Cloudflare Workers, D1, and R2.</div>
+</div>
+
+<div class="project-card">
   <div class="project-title"><a href="https://github.com/mateo19182/ee-bench">ee-bench</a><span class="project-date">2026-04</span></div>
   <div class="project-desc">Explore/exploit benchmark for LLMs. Runs models through 8 environments — stationary and non-stationary bandits, grid search, combinatorial optimization — and measures cumulative regret, exploration ratio, and adaptation speed. Useful for comparing behavior across models, temperatures, and prompt framings.</div>
 </div>
