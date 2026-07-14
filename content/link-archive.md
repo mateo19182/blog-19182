@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-07-13
+date: 2026-07-14
 tags: 
   - personal
 ---
@@ -9,6 +9,24 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [SURAGU](https://web.archive.org/web/20250816022902/https://suragu.net) `Blogs` *2026-07-13*
+- [Vamos a Ber cool fishing spot](https://vamosabercoolspot.blogspot.com) `Blogs` *2026-07-13*
+- [Pàgina de Dusk](https://web.archive.org/web/20250831120123/https://dusk.fai.st) `Blogs` *2026-07-13*
+- [maki.cafe](https://maki.cafe) `Blogs` *2026-07-13*
+- [
+El Cochetril de Lidia | ¡Terror y diversión!	](https://lidiarock.one) `Blogs` *2026-07-13*
+- [aorivoid's site](https://web.archive.org/web/20250816153034/https://aorivoid.net) `Blogs` *2026-07-13*
+- [Inference cost at scale with napkin math](https://injuly.in/blog/napkin-inference-cost/index.html) `Tech` *2026-07-13*
+- [
+Retrospectiva -9 - Duarte O.Carmo        ](https://duarteocarmo.com/blog/retrospectiva-9) `Reads` *2026-07-13*
+- [In Praise of Observational Evidence—Asterisk](https://asteriskmag.com/issues/14/in-praise-of-observational-evidence) `Reads` *2026-07-13*
+- [Count Binface](https://countbinface.com) `Ideas` *2026-07-13*
+- [Investigando la estupidez - blog](https://web.archive.org/web/20240226100956/https://aorivoid.net/blog/6_es.php) `Weird` *2026-07-13*
+- [Straight to hell (Hetera en el infierno)](https://latranacavernalesboinfernal.blogspot.com) `Weird` *2026-07-13*
+- [](https://nitrobear.gay) `Weird` *2026-07-13*
+- [districts off Neocities](https://districts.neocities.org) `Weird` *2026-07-13*
+- [Cyberpunk Comics, Manga and Graphic Novels &-8211; SHELLZINE](https://shellzine.net/cyberpunk-comics) `Museums - Indexers` *2026-07-13*
+- [Billion Dollar PDFs](https://billiondollarpdf.com) `Museums - Indexers` *2026-07-13*
 - [](https://www.cia.gov/library/abbottabad-compound/A9/A9B61854A333CA7CBC949AD221379EB0_BASIC_PRINCIPLES_OF_EXPLOSIVES.pdf) `Reads` *2026-07-12*
 - [archive.ph](https://archive.ph/F8aU2) `Reads` *2026-07-12*
 - [Collections: The Late Bronze Age Collapse, A Very Brief Introduction &-8211; A Collection of Unmitigated Pedantry](https://acoup.blog/2026/01/30/collections-the-late-bronze-age-collapse-a-very-brief-introduction) `Reads` *2026-07-11*
