@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-07-14
+date: 2026-07-15
 tags: 
   - personal
 ---
@@ -9,6 +9,13 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [How we collected 10,000 hours of neuro-language data in our basement - Conduit](https://condu.it/thought/10k-hours) `Tech` *2026-07-14*
+- [The web’s clipboard, and how it stores data of different types](https://alexharri.com/blog/clipboard) `Tech` *2026-07-14*
+- [Jacobin Logo](https://jacobin.com/2026/07/ai-nationalization-sanders-libertarians-property) `Reads` *2026-07-14*
+- [A love letter to the Old World  - Sarah’s Substack](https://longerramblings.substack.com/p/a-love-letter-to-the-old-world?r=969eb&utm_medium=ios&triedRedirect=true) `Reads` *2026-07-14*
+- [15 theses on the optimization crisis - by Daniel Frank](https://notnottalmud.substack.com/p/15-theses-on-the-optimization-crisis) `Reads` *2026-07-14*
+- [Community Radio Index | A map &amp; index of community radio and the culture around it](https://www.community-radio-index.com) `Museums - Indexers` *2026-07-14*
+- [A reading list for generalists — LessWrong](https://www.lesswrong.com/posts/sH4cFDDjRdGrn3p2o/a-reading-list-for-generalists) `Museums - Indexers` *2026-07-14*
 - [SURAGU](https://web.archive.org/web/20250816022902/https://suragu.net) `Blogs` *2026-07-13*
 - [Vamos a Ber cool fishing spot](https://vamosabercoolspot.blogspot.com) `Blogs` *2026-07-13*
 - [Pàgina de Dusk](https://web.archive.org/web/20250831120123/https://dusk.fai.st) `Blogs` *2026-07-13*
