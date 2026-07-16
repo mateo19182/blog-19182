@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-07-15
+date: 2026-07-16
 tags: 
   - personal
 ---
@@ -9,6 +9,8 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Humans are not automatically strategic — LessWrong](https://www.lesswrong.com/posts/PBRWb2Em5SNeWYwwB/humans-are-not-automatically-strategic) `Ideas` *2026-07-15*
+- [The Darwinian Honeymoon - Why I am not as impressed by human progress as I used to be](https://substack.com/home/post/p-196657070) `Ideas` *2026-07-15*
 - [How we collected 10,000 hours of neuro-language data in our basement - Conduit](https://condu.it/thought/10k-hours) `Tech` *2026-07-14*
 - [The web’s clipboard, and how it stores data of different types](https://alexharri.com/blog/clipboard) `Tech` *2026-07-14*
 - [Jacobin Logo](https://jacobin.com/2026/07/ai-nationalization-sanders-libertarians-property) `Reads` *2026-07-14*
