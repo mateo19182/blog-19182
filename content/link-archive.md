@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-07-16
+date: 2026-07-17
 tags: 
   - personal
 ---
@@ -9,6 +9,10 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Inkling: Our open-weights model - Thinking Machines Lab](https://thinkingmachines.ai/news/introducing-inkling) `Tech` *2026-07-16*
+- [Job queues are deceptively tricky](https://typesanitizer.com/blog/job-queues.html) `Tech` *2026-07-16*
+- [The Monkey Supply Chain - by Nick Corvino - ChinaTalk](https://open.substack.com/pub/chinatalk/p/the-monkey-supply-chain?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Reads` *2026-07-16*
+- [The Lost Joy of Music Piracy: WhatCD, Oink, and Spotify | Pigeons and Planes](https://www.pigeonsandplanes.com/read/music-piracy-what-cd-oink-nine-inch-nails-streaming) `Reads` *2026-07-16*
 - [Humans are not automatically strategic — LessWrong](https://www.lesswrong.com/posts/PBRWb2Em5SNeWYwwB/humans-are-not-automatically-strategic) `Ideas` *2026-07-15*
 - [The Darwinian Honeymoon - Why I am not as impressed by human progress as I used to be](https://substack.com/home/post/p-196657070) `Ideas` *2026-07-15*
 - [How we collected 10,000 hours of neuro-language data in our basement - Conduit](https://condu.it/thought/10k-hours) `Tech` *2026-07-14*
