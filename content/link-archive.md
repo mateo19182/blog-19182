@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-07-17
+date: 2026-07-18
 tags: 
   - personal
 ---
@@ -9,6 +9,7 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [More Bounce to the Ounce! - by Maciej Cegłowski](https://mceglowski.substack.com/p/more-bounce-to-the-ounce) `Ideas` *2026-07-17*
 - [Inkling: Our open-weights model - Thinking Machines Lab](https://thinkingmachines.ai/news/introducing-inkling) `Tech` *2026-07-16*
 - [Job queues are deceptively tricky](https://typesanitizer.com/blog/job-queues.html) `Tech` *2026-07-16*
 - [The Monkey Supply Chain - by Nick Corvino - ChinaTalk](https://open.substack.com/pub/chinatalk/p/the-monkey-supply-chain?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Reads` *2026-07-16*
