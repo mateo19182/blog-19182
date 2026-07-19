@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-07-18
+date: 2026-07-19
 tags: 
   - personal
 ---
@@ -9,6 +9,9 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Regressive JPEGs: (Maurycy's blog) ](https://maurycyz.com/projects/bad_jpeg) `Tech` *2026-07-18*
+- [Are.na](https://www.are.na/editorial/an-interview-with-the-people-behind-the-cybernetics-library) `Reads` *2026-07-18*
+- [Are.na](https://www.are.na/editorial/cybernetics-conference?utm_source=aredotna&utm_medium=email&utm_campaign=product-news-cybernetics-library-processing) `Reads` *2026-07-18*
 - [More Bounce to the Ounce! - by Maciej Cegłowski](https://mceglowski.substack.com/p/more-bounce-to-the-ounce) `Ideas` *2026-07-17*
 - [Inkling: Our open-weights model - Thinking Machines Lab](https://thinkingmachines.ai/news/introducing-inkling) `Tech` *2026-07-16*
 - [Job queues are deceptively tricky](https://typesanitizer.com/blog/job-queues.html) `Tech` *2026-07-16*
