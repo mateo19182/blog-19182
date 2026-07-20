@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-07-19
+date: 2026-07-20
 tags: 
   - personal
 ---
@@ -9,6 +9,7 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Scrying the AMD GFX1250 LLVM Tea Leaves - by Aurora Nockert](https://chipsandcheese.com/p/scrying-the-amd-gfx1250-llvm-tea) `Tech` *2026-07-19*
 - [Regressive JPEGs: (Maurycy's blog) ](https://maurycyz.com/projects/bad_jpeg) `Tech` *2026-07-18*
 - [Are.na](https://www.are.na/editorial/an-interview-with-the-people-behind-the-cybernetics-library) `Reads` *2026-07-18*
 - [Are.na](https://www.are.na/editorial/cybernetics-conference?utm_source=aredotna&utm_medium=email&utm_campaign=product-news-cybernetics-library-processing) `Reads` *2026-07-18*
