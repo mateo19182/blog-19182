@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-07-20
+date: 2026-07-22
 tags: 
   - personal
 ---
@@ -9,6 +9,14 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Sarah Guo&-039;s Wager - Colossus](https://colossus.com/article/sarah-guo-conviction) `Reads` *2026-07-21*
+- [](https://www.edge.org/digerati) `Reads` *2026-07-21*
+- [Who&-8217;s Afraid of Chinese Models? &-8211; Stratechery by Ben Thompson](https://stratechery.com/2026/whos-afraid-of-chinese-models) `Reads` *2026-07-21*
+- [](https://gfi.org/wp-content/uploads/2026/06/U.S.-foodservice-market-insights-for-plant-based-foods-2021-2025.pdf) `Reads` *2026-07-21*
+- [Just a moment...](https://dispatch-media.com/palantirs-greatest-enemy/?ref=dispatch-articles-newsletter&action=signin&success=true) `Reads` *2026-07-21*
+- [The Pope and the Antichrist - First Things](https://firstthings.com/the-pope-and-the-antichrist) `Reads` *2026-07-21*
+- [Europe Won’t Live By Deporting | Dark Thoughts](https://dark.ronacher.eu/2026/7/17/live-by-deporting) `Ideas` *2026-07-21*
+- [Edge.org](https://www.edge.org) `Collectives and Magazines` *2026-07-21*
 - [Scrying the AMD GFX1250 LLVM Tea Leaves - by Aurora Nockert](https://chipsandcheese.com/p/scrying-the-amd-gfx1250-llvm-tea) `Tech` *2026-07-19*
 - [Regressive JPEGs: (Maurycy's blog) ](https://maurycyz.com/projects/bad_jpeg) `Tech` *2026-07-18*
 - [Are.na](https://www.are.na/editorial/an-interview-with-the-people-behind-the-cybernetics-library) `Reads` *2026-07-18*
