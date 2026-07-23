@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-07-22
+date: 2026-07-23
 tags: 
   - personal
 ---
@@ -9,6 +9,8 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Agent swarms and the new model economics · Cursor](https://cursor.com/blog/agent-swarm-model-economics) `Tech` *2026-07-22*
+- [Introducing Laguna S 2.1 — Poolside](https://poolside.ai/blog/introducing-laguna-s-2-1) `Tech` *2026-07-22*
 - [Sarah Guo&-039;s Wager - Colossus](https://colossus.com/article/sarah-guo-conviction) `Reads` *2026-07-21*
 - [](https://www.edge.org/digerati) `Reads` *2026-07-21*
 - [Who&-8217;s Afraid of Chinese Models? &-8211; Stratechery by Ben Thompson](https://stratechery.com/2026/whos-afraid-of-chinese-models) `Reads` *2026-07-21*
