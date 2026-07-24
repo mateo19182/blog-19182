@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-07-23
+date: 2026-07-24
 tags: 
   - personal
 ---
@@ -9,6 +9,22 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Freetekno - Wikipedia](https://en.wikipedia.org/wiki/Freetekno) `Wikis` *2026-07-23*
+- [Dot Dot Dot (@dotdottdottt): &quot;Traffic light figures around the world… 
+
+By Maya Barkai &quot;](https://substack.com/@dotdottdottt/note/c-281781315?utm_source=notes-share-action&r=6qjp9o) `Arts` *2026-07-23*
+- [Hatchet · The startup&-x27;s Postgres survival guide](https://hatchet.run/blog/postgres-survival-guide) `Tech` *2026-07-23*
+- [damnlines — NYC Restaurant Line Cameras &amp; Wait Times](https://damnlines.com) `Tech` *2026-07-23*
+- [Scanning for Pangram errors - VeryFinePrint](https://veryfineprint.substack.com/p/scanning-for-pangram-errors) `Tech` *2026-07-23*
+- [Agents need Work Data](https://anjalishriva.com/work-data) `Tech` *2026-07-23*
+- [George Hotz AMD Advancing AI 2026 - YouTube](https://youtu.be/QyrQeeDZUG4) `Tech` *2026-07-23*
+- [New UK Prime Minister Supports Land Value Tax. What’s Next?](https://progressandpoverty.substack.com/p/new-uk-prime-minister-supports-land?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-07-23*
+- [The left’s climate denial problem - by John Robert Thomason](https://www.theargumentmag.com/p/the-lefts-climate-denial-problem?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-07-23*
+- [](https://home.uchicago.edu/~rmyerson/humagnif.pdf) `Reads` *2026-07-23*
+- [Jon Stewart has become his own worst nightmare](https://www.theargumentmag.com/p/jon-stewart-has-become-his-own-worst) `Reads` *2026-07-23*
+- [The myth of medieval childhood](https://www.worksinprogress.news/p/did-medieval-people-love-their-children?utm_source=%2Finbox&utm_medium=reader2) `Ideas` *2026-07-23*
+- [AI Alignment is the Default - by Nicholas Decker](https://nicholasdecker.substack.com/p/ai-alignment-is-the-default?utm_source=%2Finbox&utm_medium=reader2) `Ideas` *2026-07-23*
+- [Grist – Climate and environmental news | Grist](https://grist.org) `Collectives and Magazines` *2026-07-23*
 - [Agent swarms and the new model economics · Cursor](https://cursor.com/blog/agent-swarm-model-economics) `Tech` *2026-07-22*
 - [Introducing Laguna S 2.1 — Poolside](https://poolside.ai/blog/introducing-laguna-s-2-1) `Tech` *2026-07-22*
 - [Sarah Guo&-039;s Wager - Colossus](https://colossus.com/article/sarah-guo-conviction) `Reads` *2026-07-21*
