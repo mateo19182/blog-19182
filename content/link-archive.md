@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-07-24
+date: 2026-07-25
 tags: 
   - personal
 ---
@@ -9,6 +9,9 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Three Months with a Pen Plotter: From Burning 14 Servos to Plotting 115,000 Mona Lisas - nummy](https://nummy.blog/pen-plotter/generative-art/python/creative-coding/2026/02/06/three-months-with-a-pen-plotter.html) `Tech` *2026-07-24*
+- [The Arguments Against Open Source AI are Very Bad | Tom Bedor&-x27;s Blog](https://tombedor.dev/arguments-against-open-source-ai-are-very-bad) `Tech` *2026-07-24*
+- [](http://noumena.com/essays/the-engine-shop-part-1) `Reads` *2026-07-24*
 - [Freetekno - Wikipedia](https://en.wikipedia.org/wiki/Freetekno) `Wikis` *2026-07-23*
 - [Dot Dot Dot (@dotdottdottt): &quot;Traffic light figures around the world… 
 
