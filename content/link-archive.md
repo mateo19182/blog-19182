@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-07-25
+date: 2026-07-27
 tags: 
   - personal
 ---
@@ -9,6 +9,10 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [How a Beam Engine Works — An Interactive Guide](https://glinscott.github.io/beam-engine) `Tech` *2026-07-26*
+- [Everyone Should Know SIMD – Mitchell Hashimoto](https://mitchellh.com/writing/everyone-should-know-simd) `Tech` *2026-07-26*
+- [research review: aella girl - erika milktea](https://substack.com/home/post/p-202263260) `Reads` *2026-07-26*
+- [Weird Museum Map - James Visits Museums - Google My Maps](https://www.google.com/maps/d/u/0/viewer?mid=1LyY2CQJH7CY4zK0NaH9IdItjn8LvTC8&utm_source=ig&utm_medium=social&utm_content=link_in_bio) `Museums - Indexers` *2026-07-26*
 - [Three Months with a Pen Plotter: From Burning 14 Servos to Plotting 115,000 Mona Lisas - nummy](https://nummy.blog/pen-plotter/generative-art/python/creative-coding/2026/02/06/three-months-with-a-pen-plotter.html) `Tech` *2026-07-24*
 - [The Arguments Against Open Source AI are Very Bad | Tom Bedor&-x27;s Blog](https://tombedor.dev/arguments-against-open-source-ai-are-very-bad) `Tech` *2026-07-24*
 - [](http://noumena.com/essays/the-engine-shop-part-1) `Reads` *2026-07-24*
