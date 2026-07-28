@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-07-27
+date: 2026-07-28
 tags: 
   - personal
 ---
@@ -9,6 +9,12 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [PGSimCity · How PostgreSQL Works, in 3D](https://nikolays.github.io/PGSimCity) `Tech` *2026-07-27*
+- [Creating Passionate Users: How to be an expert](https://web.archive.org/web/20221223190207/https://headrush.typepad.com/creating_passionate_users/2006/03/how_to_be_an_ex.html) `Reads` *2026-07-27*
+- [Adiós a la verja. Seis mapas para entender las relaciones entre España y Gibraltar - Mapas de El Orden Mundial - EOM](https://elordenmundial.com/mapas-y-graficos/mapas-relaciones-espana-gibraltar/?utm_campaign=40076808-Bolet%C3%ADn%2520Semanal%2520EOM&utm_medium=email&_hsmi=428845893&utm_content=428845893&utm_source=hs_email) `Reads` *2026-07-27*
+- [Destroying the universe: How hard can it be?](https://www.theseedsofscience.pub/p/destroying-the-universe-how-hard?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-07-27*
+- [Atoms](https://atoms.co/vision) `Ideas` *2026-07-27*
+- [I Was Wrong About Fertilizer in Africa - by Nicholas Decker](https://nicholasdecker.substack.com/p/i-was-wrong-about-fertilizer-in-africa?utm_source=%2Finbox&utm_medium=reader2) `Ideas` *2026-07-27*
 - [How a Beam Engine Works — An Interactive Guide](https://glinscott.github.io/beam-engine) `Tech` *2026-07-26*
 - [Everyone Should Know SIMD – Mitchell Hashimoto](https://mitchellh.com/writing/everyone-should-know-simd) `Tech` *2026-07-26*
 - [research review: aella girl - erika milktea](https://substack.com/home/post/p-202263260) `Reads` *2026-07-26*
