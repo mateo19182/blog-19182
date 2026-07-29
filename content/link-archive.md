@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-07-28
+date: 2026-07-29
 tags: 
   - personal
 ---
@@ -9,6 +9,14 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Just a moment...](https://www.tandfonline.com/doi/full/10.1080/00275514.2026.2670968) `Academic Papers and Resources` *2026-07-28*
+- [Kimi K3 Tech Blog: Open Frontier Intelligence](https://www.kimi.com/blog/kimi-k3) `Tech` *2026-07-28*
+- [Prove You&-x27;re Human - by Zilan Qian - ChinaTalk](https://open.substack.com/pub/chinatalk/p/prove-youre-human?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Reads` *2026-07-28*
+- [On Taste](https://on-taste.xyz) `Reads` *2026-07-28*
+- [Does creatine make you smarter?](https://dynomight.net/creatine) `Reads` *2026-07-28*
+- [Quick Note | Bloom Energy: Questions for the upcoming Q2-2026 earnings](https://open.substack.com/pub/outspokengeek/p/quick-note-bloom-energy-questions?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Ideas` *2026-07-28*
+- [Should you marry her? - by Ajeya Cotra - Good Bones](https://acotra.substack.com/p/should-you-marry-her) `Ideas` *2026-07-28*
+- [Neologisms of Jeremy Bentham | Faculty of Laws](https://www.ucl.ac.uk/laws/research/research-projects/bentham-project/neologisms-jeremy-bentham) `Museums - Indexers` *2026-07-28*
 - [PGSimCity · How PostgreSQL Works, in 3D](https://nikolays.github.io/PGSimCity) `Tech` *2026-07-27*
 - [Creating Passionate Users: How to be an expert](https://web.archive.org/web/20221223190207/https://headrush.typepad.com/creating_passionate_users/2006/03/how_to_be_an_ex.html) `Reads` *2026-07-27*
 - [Adiós a la verja. Seis mapas para entender las relaciones entre España y Gibraltar - Mapas de El Orden Mundial - EOM](https://elordenmundial.com/mapas-y-graficos/mapas-relaciones-espana-gibraltar/?utm_campaign=40076808-Bolet%C3%ADn%2520Semanal%2520EOM&utm_medium=email&_hsmi=428845893&utm_content=428845893&utm_source=hs_email) `Reads` *2026-07-27*
