@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-07-29
+date: 2026-07-30
 tags: 
   - personal
 ---
@@ -9,6 +9,11 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Your Book Review: Breakdown In Pakistan](https://www.astralcodexten.com/p/breakdown-in-pakistan?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-07-29*
+- [Unprompted — speaking practice](https://www.unprompted.cool) `Tools and Interactive Websites` *2026-07-29*
+- [Hall of Fame | Hyprland](https://hypr.land/hall_of_fame) `Museums - Indexers` *2026-07-29*
+- [Sports Tech Startups in Europe | Lifestyle Tech Europe](https://www.lifestyletecheurope.com/ecosystem/vertical/sports) `Museums - Indexers` *2026-07-29*
+- [Cooking For Engineers - Step by Step Recipes and Food for the Analytically Minded](https://www.cookingforengineers.com) `Museums - Indexers` *2026-07-29*
 - [Just a moment...](https://www.tandfonline.com/doi/full/10.1080/00275514.2026.2670968) `Academic Papers and Resources` *2026-07-28*
 - [Kimi K3 Tech Blog: Open Frontier Intelligence](https://www.kimi.com/blog/kimi-k3) `Tech` *2026-07-28*
 - [Prove You&-x27;re Human - by Zilan Qian - ChinaTalk](https://open.substack.com/pub/chinatalk/p/prove-youre-human?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Reads` *2026-07-28*
