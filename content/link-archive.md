@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-07-30
+date: 2026-07-31
 tags: 
   - personal
 ---
@@ -9,6 +9,9 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Why compute might get 10x more expensive in coming years](https://www.dwarkesh.com/p/why-compute-might-get-10x-more-expensive) `Tech` *2026-07-30*
+- [From Cold DM to Owning a Soccer Club](https://zachholman.com/posts/oakland) `Reads` *2026-07-30*
+- [The Cold Email](https://zachholman.com/posts/cold-email) `Ideas` *2026-07-30*
 - [Your Book Review: Breakdown In Pakistan](https://www.astralcodexten.com/p/breakdown-in-pakistan?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-07-29*
 - [Unprompted — speaking practice](https://www.unprompted.cool) `Tools and Interactive Websites` *2026-07-29*
 - [Hall of Fame | Hyprland](https://hypr.land/hall_of_fame) `Museums - Indexers` *2026-07-29*
