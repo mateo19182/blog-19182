@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-07-31
+date: 2026-08-02
 tags: 
   - personal
 ---
@@ -9,6 +9,7 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Elevators](https://john.fun/elevators) `Reads` *2026-08-01*
 - [Why compute might get 10x more expensive in coming years](https://www.dwarkesh.com/p/why-compute-might-get-10x-more-expensive) `Tech` *2026-07-30*
 - [From Cold DM to Owning a Soccer Club](https://zachholman.com/posts/oakland) `Reads` *2026-07-30*
 - [The Cold Email](https://zachholman.com/posts/cold-email) `Ideas` *2026-07-30*
