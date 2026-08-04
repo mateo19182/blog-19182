@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-08-03
+date: 2026-08-04
 tags: 
   - personal
 ---
@@ -9,6 +9,15 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [](https://arxiv.org/pdf/2208.07113) `Academic Papers and Resources` *2026-08-03*
+- [I&-39;m Scared a Stranger Will Call My Novel AI, So I Built GitHub for Words (Meet VellumProof, Formerly WritHub, Lol) - dylan&-39;s blog](https://dylan.blog/2026/08/03/im-scared-a-stranger-will.html) `Blogs` *2026-08-03*
+- [In-House LLM Serving at Netflix. By AI Platform’s Model Runtime team and… | by Netflix Technology Blog | Jul, 2026 | Netflix TechBlog](https://netflixtechblog.com/in-house-llm-serving-at-netflix-a5a8e799ea2c) `Tech` *2026-08-03*
+- [Another Day in Katerradise - by Brian Potter](https://www.construction-physics.com/p/another-day-in-katerradise) `Reads` *2026-08-03*
+- [East Data, West Compute — People &amp; Power in China](https://edwc.vercel.app) `Reads` *2026-08-03*
+- [Why San Francisco isn’t bigger](https://www.worksinprogress.news/p/terraforming-earth?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-08-03*
+- [The Giving Map | Giving Atlas](https://givingatlas.org/giving/map.html) `Ideas` *2026-08-03*
+- [Can We Lower Construction Costs with Cheaper Labor or Materials?](https://www.construction-physics.com/p/can-we-lower-construction-costs-with?utm_source=%2Finbox&utm_medium=reader2) `Ideas` *2026-08-03*
+- [Contra Pritchard On Liberal Happiness - by Scott Alexander](https://www.astralcodexten.com/p/contra-pritchard-on-liberal-happiness?utm_source=%2Finbox&utm_medium=reader2) `Ideas` *2026-08-03*
 - [](https://pangram-public.s3.us-east-1.amazonaws.com/pdf/pangram_4_technical_report.pdf) `Tech` *2026-08-02*
 - [Elevators](https://john.fun/elevators) `Reads` *2026-08-01*
 - [Why compute might get 10x more expensive in coming years](https://www.dwarkesh.com/p/why-compute-might-get-10x-more-expensive) `Tech` *2026-07-30*
