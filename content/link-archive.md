@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-08-04
+date: 2026-08-06
 tags: 
   - personal
 ---
@@ -9,6 +9,16 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Introducing Shieldstral. | Mistral AI](https://mistral.ai/news/shieldstral) `Tech` *2026-08-05*
+- [Pi, Minimal and Performant | EARENDIL](https://earendil.com/posts/pi-autoresearch-and-databricks) `Tech` *2026-08-05*
+- [The Beauty Of Settled Science - by Scott Alexander](https://www.astralcodexten.com/p/the-beauty-of-settled-science) `Reads` *2026-08-05*
+- [](https://writings.stephenwolfram.com/2026/08/in-memory-of-my-wife-elise-cawley-1961-2026-with-thanks-for-36-wonderful-years) `Reads` *2026-08-05*
+- [archive.ph](https://archive.ph/IGj6H) `Reads` *2026-08-05*
+- [Welcome to nginx ](https://archive.ph/VZjL8) `Reads` *2026-08-05*
+- [IPFS Service Worker Gateway | HEAD@4eeddd5](https://bafybeiffhy6rp4j36ttthgtlj7ue7uqxdek4lvkeg5a5z3eany7ujhbpee.ipfs.inbrowser.link) `Reads` *2026-08-05*
+- [Fast · Patrick Collison](https://patrickcollison.com/fast) `Museums - Indexers` *2026-08-05*
+- [](https://www.thehopkinthomasproject.com/TheHopkinThomasProject/TimeLine/Wales/Steam/URochesterCollection/Hero/index-2.html) `Museums - Indexers` *2026-08-05*
+- [The Yale Review | Homepage](https://yalereview.org) `Collectives and Magazines` *2026-08-05*
 - [](https://arxiv.org/pdf/2208.07113) `Academic Papers and Resources` *2026-08-03*
 - [I&-39;m Scared a Stranger Will Call My Novel AI, So I Built GitHub for Words (Meet VellumProof, Formerly WritHub, Lol) - dylan&-39;s blog](https://dylan.blog/2026/08/03/im-scared-a-stranger-will.html) `Blogs` *2026-08-03*
 - [In-House LLM Serving at Netflix. By AI Platform’s Model Runtime team and… | by Netflix Technology Blog | Jul, 2026 | Netflix TechBlog](https://netflixtechblog.com/in-house-llm-serving-at-netflix-a5a8e799ea2c) `Tech` *2026-08-03*
