@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-08-06
+date: 2026-08-07
 tags: 
   - personal
 ---
@@ -9,6 +9,12 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [The Shape of Things to Come, Part 2: Model Welfare for Agentic Engineers — Steve Yegge](https://yegge.ai/essays/model-welfare) `Tech` *2026-08-06*
+- [NVIDIA’s Vera Whitepaper Has a Thread Loose](https://chipsandcheese.com/p/nvidias-vera-whitepaper-has-a-thread) `Tech` *2026-08-06*
+- [Mario meets Pareto](https://www.mayerowitz.io/blog/mario-meets-pareto) `Tools and Interactive Websites` *2026-08-06*
+- [Frontier Wire — AI labs hiring monitor](https://dash.mts.now) `Museums - Indexers` *2026-08-06*
+- [Reading List &mdash; Crime Pays But Botany Doesn&-39;t](https://www.crimepaysbutbotanydoesnt.com/reading-list) `Museums - Indexers` *2026-08-06*
+- [Jamverse — Extended Universe Fiction · Protocolized](https://jamverse.protocolized.io) `Museums - Indexers` *2026-08-06*
 - [Introducing Shieldstral. | Mistral AI](https://mistral.ai/news/shieldstral) `Tech` *2026-08-05*
 - [Pi, Minimal and Performant | EARENDIL](https://earendil.com/posts/pi-autoresearch-and-databricks) `Tech` *2026-08-05*
 - [The Beauty Of Settled Science - by Scott Alexander](https://www.astralcodexten.com/p/the-beauty-of-settled-science) `Reads` *2026-08-05*
