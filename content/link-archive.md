@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-08-07
+date: 2026-08-08
 tags: 
   - personal
 ---
@@ -9,6 +9,10 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Bloomberg - Are you a robot?](https://www.bloomberg.com/graphics/2026-opinion-australia-tungsten-mine-us-war-defense-china) `Reads` *2026-08-07*
+- [Just a moment...](https://defillama.com/earnings) `Museums - Indexers` *2026-08-07*
+- [GitHub - xoreaxeaxeax/asm-hall-of-shame: Racing to the bottom of CPU performance · GitHub](https://github.com/xoreaxeaxeax/asm-hall-of-shame) `Museums - Indexers` *2026-08-07*
+- [Protocolized](https://protocolized.io) `Collectives and Magazines` *2026-08-07*
 - [The Shape of Things to Come, Part 2: Model Welfare for Agentic Engineers — Steve Yegge](https://yegge.ai/essays/model-welfare) `Tech` *2026-08-06*
 - [NVIDIA’s Vera Whitepaper Has a Thread Loose](https://chipsandcheese.com/p/nvidias-vera-whitepaper-has-a-thread) `Tech` *2026-08-06*
 - [Mario meets Pareto](https://www.mayerowitz.io/blog/mario-meets-pareto) `Tools and Interactive Websites` *2026-08-06*
