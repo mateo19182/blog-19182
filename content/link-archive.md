@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-08-08
+date: 2026-08-11
 tags: 
   - personal
 ---
@@ -9,6 +9,8 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Incentives are for losers - by Adam Mastroianni](https://www.experimental-history.com/p/incentives-are-for-losers) `Ideas` *2026-08-10*
+- [FizzWiki](https://fizzwiki.com/Main_Page) `Museums - Indexers` *2026-08-10*
 - [Bloomberg - Are you a robot?](https://www.bloomberg.com/graphics/2026-opinion-australia-tungsten-mine-us-war-defense-china) `Reads` *2026-08-07*
 - [Just a moment...](https://defillama.com/earnings) `Museums - Indexers` *2026-08-07*
 - [GitHub - xoreaxeaxeax/asm-hall-of-shame: Racing to the bottom of CPU performance · GitHub](https://github.com/xoreaxeaxeax/asm-hall-of-shame) `Museums - Indexers` *2026-08-07*
