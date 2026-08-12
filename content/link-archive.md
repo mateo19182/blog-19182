@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-08-11
+date: 2026-08-12
 tags: 
   - personal
 ---
@@ -9,6 +9,9 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Reward Is Not the Optimization Target](https://turntrout.com/reward-is-not-the-optimization-target) `Tech` *2026-08-11*
+- [What just happened? A retrospective of AI alignment — LessWrong](https://www.lesswrong.com/posts/9RL9MuGZjzm4q3gKG/what-just-happened-a-retrospective-of-ai-alignment) `Reads` *2026-08-11*
+- [World Train Map — Interactive Railway Map · 1,247 Train Routes](https://worldtrainmap.com) `Tools and Interactive Websites` *2026-08-11*
 - [Incentives are for losers - by Adam Mastroianni](https://www.experimental-history.com/p/incentives-are-for-losers) `Ideas` *2026-08-10*
 - [FizzWiki](https://fizzwiki.com/Main_Page) `Museums - Indexers` *2026-08-10*
 - [Bloomberg - Are you a robot?](https://www.bloomberg.com/graphics/2026-opinion-australia-tungsten-mine-us-war-defense-china) `Reads` *2026-08-07*
