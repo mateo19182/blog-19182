@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-08-12
+date: 2026-08-13
 tags: 
   - personal
 ---
@@ -9,6 +9,11 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Eclipse of Thales - Wikipedia](https://en.wikipedia.org/wiki/Eclipse_of_Thales) `Wikis` *2026-08-12*
+- [The Last Angel of History (1996) | Full Film | Afrofuturism, Sci-Fi, Music &amp; Culture - YouTube](https://www.youtube.com/watch?v=udtXh2ut7QQ&feature=youtu.be) `Arts` *2026-08-12*
+- [Make invalid states unrepresentable (for your agents) | ⌨️🤷🏻‍♂️📷](https://debugti.me/posts/agents-and-invalid-states) `Tech` *2026-08-12*
+- [More disasters are coming. How should cities respond?
+](https://progressandpoverty.substack.com/p/more-disasters-are-coming-how-should?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-08-12*
 - [Reward Is Not the Optimization Target](https://turntrout.com/reward-is-not-the-optimization-target) `Tech` *2026-08-11*
 - [What just happened? A retrospective of AI alignment — LessWrong](https://www.lesswrong.com/posts/9RL9MuGZjzm4q3gKG/what-just-happened-a-retrospective-of-ai-alignment) `Reads` *2026-08-11*
 - [World Train Map — Interactive Railway Map · 1,247 Train Routes](https://worldtrainmap.com) `Tools and Interactive Websites` *2026-08-11*
