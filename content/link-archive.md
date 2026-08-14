@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-08-13
+date: 2026-08-14
 tags: 
   - personal
 ---
@@ -9,6 +9,11 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [The DeepSeek Thesis - by Irene Zhang - ChinaTalk](https://www.chinatalk.media/p/the-deepseek-thesis?utm_source=%2Finbox&utm_medium=reader2) `Tech` *2026-08-13*
+- [Good Linux Hardware · Omacom · DHH](https://learn.omacom.io/3/omacom/74/good-linux-hardware) `Tech` *2026-08-13*
+- [How Tailscale helped find the SQLite WAL-Reset bug](https://tailscale.com/blog/sqlite-wal-reset-bug?utm_source=twitter&utm_medium=owned-social&utm_campaign=blog) `Tech` *2026-08-13*
+- [China&-x27;s Quantum Flywheel - by Lily Ottinger - ChinaTalk](https://www.chinatalk.media/p/chinas-quantum-flywheel?utm_source=%2Finbox&utm_medium=reader2) `Tech` *2026-08-13*
+- [Pigs vs. democracy](https://www.theargumentmag.com/p/pigs-vs-democracy?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-08-13*
 - [Eclipse of Thales - Wikipedia](https://en.wikipedia.org/wiki/Eclipse_of_Thales) `Wikis` *2026-08-12*
 - [The Last Angel of History (1996) | Full Film | Afrofuturism, Sci-Fi, Music &amp; Culture - YouTube](https://www.youtube.com/watch?v=udtXh2ut7QQ&feature=youtu.be) `Arts` *2026-08-12*
 - [Make invalid states unrepresentable (for your agents) | ⌨️🤷🏻‍♂️📷](https://debugti.me/posts/agents-and-invalid-states) `Tech` *2026-08-12*
