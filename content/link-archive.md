@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-08-14
+date: 2026-08-15
 tags: 
   - personal
 ---
@@ -9,6 +9,8 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Vercel Security Checkpoint](https://www.piratewires.com/p/inside-the-coke-fueled-rise-and-fall) `Reads` *2026-08-14*
+- [Health Insurance is a Big Union - by Nicholas Decker](https://nicholasdecker.substack.com/p/health-insurance-is-a-big-union?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-08-14*
 - [The DeepSeek Thesis - by Irene Zhang - ChinaTalk](https://www.chinatalk.media/p/the-deepseek-thesis?utm_source=%2Finbox&utm_medium=reader2) `Tech` *2026-08-13*
 - [Good Linux Hardware · Omacom · DHH](https://learn.omacom.io/3/omacom/74/good-linux-hardware) `Tech` *2026-08-13*
 - [How Tailscale helped find the SQLite WAL-Reset bug](https://tailscale.com/blog/sqlite-wal-reset-bug?utm_source=twitter&utm_medium=owned-social&utm_campaign=blog) `Tech` *2026-08-13*
