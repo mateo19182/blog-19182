@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-08-15
+date: 2026-08-17
 tags: 
   - personal
 ---
@@ -9,6 +9,11 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [China&-x27;s Best Music in 2026 (So Far) - by Jake - ChinaTalk](https://www.chinatalk.media/p/chinas-best-music-in-2026-so-far?utm_source=%2Finbox&utm_medium=reader2) `Arts` *2026-08-16*
+- [How to ship a database every day](https://turbopuffer.com/blog/control-plane) `Tech` *2026-08-16*
+- [(Some of) The Models, They Just Don&-x27;t Want to Learn | Tilde](https://blog.tilderesearch.com/blog/one-layer-deeper) `Tech` *2026-08-16*
+- [Notes on Egypt - by Nick Corvino - ChinaTalk](https://www.chinatalk.media/p/notes-on-egypt?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-08-16*
+- [Welcome to nginx ](https://archive.ph/rfMAt) `Reads` *2026-08-16*
 - [Vercel Security Checkpoint](https://www.piratewires.com/p/inside-the-coke-fueled-rise-and-fall) `Reads` *2026-08-14*
 - [Health Insurance is a Big Union - by Nicholas Decker](https://nicholasdecker.substack.com/p/health-insurance-is-a-big-union?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-08-14*
 - [The DeepSeek Thesis - by Irene Zhang - ChinaTalk](https://www.chinatalk.media/p/the-deepseek-thesis?utm_source=%2Finbox&utm_medium=reader2) `Tech` *2026-08-13*
