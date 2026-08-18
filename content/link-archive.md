@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-08-17
+date: 2026-08-18
 tags: 
   - personal
 ---
@@ -9,6 +9,9 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [](https://protocolized.io/p/the-big-man) `Reads` *2026-08-17*
+- [](https://protocolized.io/p/all-you-can-do-here-is-leave) `Reads` *2026-08-17*
+- [](https://protocolized.io/p/troll) `Reads` *2026-08-17*
 - [China&-x27;s Best Music in 2026 (So Far) - by Jake - ChinaTalk](https://www.chinatalk.media/p/chinas-best-music-in-2026-so-far?utm_source=%2Finbox&utm_medium=reader2) `Arts` *2026-08-16*
 - [How to ship a database every day](https://turbopuffer.com/blog/control-plane) `Tech` *2026-08-16*
 - [(Some of) The Models, They Just Don&-x27;t Want to Learn | Tilde](https://blog.tilderesearch.com/blog/one-layer-deeper) `Tech` *2026-08-16*
