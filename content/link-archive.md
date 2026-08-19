@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-08-18
+date: 2026-08-19
 tags: 
   - personal
 ---
@@ -9,6 +9,8 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [How things win &mdash; Steph Ango](https://stephango.com/moats) `Tech` *2026-08-18*
+- [Networking and the Internet | Faza](https://fazamhd.com/mental-models/networking) `Tech` *2026-08-18*
 - [](https://protocolized.io/p/the-big-man) `Reads` *2026-08-17*
 - [](https://protocolized.io/p/all-you-can-do-here-is-leave) `Reads` *2026-08-17*
 - [](https://protocolized.io/p/troll) `Reads` *2026-08-17*
