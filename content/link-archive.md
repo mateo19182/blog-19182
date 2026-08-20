@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-08-19
+date: 2026-08-20
 tags: 
   - personal
 ---
@@ -9,6 +9,16 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [ARKIVO](https://arkivo.blog/#) `Blogs` *2026-08-19*
+- [Git at any scale · Cursor](https://cursor.com/blog/git-at-any-scale) `Tech` *2026-08-19*
+- [Attention Required! | Cloudflare](https://cacm.acm.org/research/the-tail-at-scale) `Tech` *2026-08-19*
+- [Fixing a bricked AMD 7040 series Framework 13” laptop with $20 tools | Quantum](https://quantum5.ca/2026/08/16/fixing-bricked-amd-7040-series-framework-13-laptop-with-20-tools/#fnref:quality) `Tech` *2026-08-19*
+- [Where Human Sleep Went Wrong](https://nautil.us/where-human-sleep-went-wrong-1283797) `Reads` *2026-08-19*
+- [The Dark Ages &-8211; About Iceland](https://about.iceland.co.uk/our-story/the-dark-ages) `Reads` *2026-08-19*
+- [Being ambitious and being a dad | Nicholas Charriere](https://nicholascharriere.com/blog/being-ambitious-and-being-a-dad) `Ideas` *2026-08-19*
+- [Norway Should Buy OpenAI - by Zachary Jones](https://www.onethousandmeans.com/p/norway-should-buy-openai) `Ideas` *2026-08-19*
+- [Berd — Less chatting, more building.](https://berd.xyz) `Tools and Interactive Websites` *2026-08-19*
+- [RF Cafe Homepage](https://www.rfcafe.com) `Museums - Indexers` *2026-08-19*
 - [How things win &mdash; Steph Ango](https://stephango.com/moats) `Tech` *2026-08-18*
 - [Networking and the Internet | Faza](https://fazamhd.com/mental-models/networking) `Tech` *2026-08-18*
 - [](https://protocolized.io/p/the-big-man) `Reads` *2026-08-17*
