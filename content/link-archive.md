@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-08-22
+date: 2026-08-23
 tags: 
   - personal
 ---
@@ -9,6 +9,7 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [I accidentally logged hundreds of thousands of phone calls to military bases - lina's blog](https://lina.sh/blog/hijacking-e164-arpa) `Tech` *2026-08-22*
 - [Ultimate Robot Knock-out Legend - Wikipedia](https://en.wikipedia.org/wiki/Ultimate_Robot_Knock-out_Legend) `Wikis` *2026-08-21*
 - [Gisting: Compressing LLM Agent context to ↑ throughput and ↓ cost (2026) - Shopify](https://shopify.engineering/gisting) `Tech` *2026-08-21*
 - [Krackpot: crack Bitcoin Puzzle 71 for 6 BTC](https://krackpot.io) `Tools and Interactive Websites` *2026-08-21*
