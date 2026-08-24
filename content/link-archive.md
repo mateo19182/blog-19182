@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-08-23
+date: 2026-08-24
 tags: 
   - personal
 ---
@@ -9,6 +9,28 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [CARI | Aesthetic | Vectorheart](https://cari.institute/aesthetics/vectorheart) `Arts` *2026-08-23*
+- [](https://vaxry.net) `Blogs` *2026-08-23*
+- [Browser agent bot detection is about to change - Aitor Mato](https://www.reformedot.com/blog/bot-detection) `Tech` *2026-08-23*
+- [The sloppification of peptides - by Henry Stanley](https://henryaj.substack.com/p/the-sloppification-of-peptides) `Tech` *2026-08-23*
+- [ElevenLabs, TwelveLabs, ThirteenLabs, …](https://quantumi.sh/public/labs.html) `Tech` *2026-08-23*
+- [NanoGPT Speedrun Frontier](https://www.primeintellect.ai/research/nanogpt-speedrun) `Tech` *2026-08-23*
+- [I ran Photoshop on a £0.60 computer chip - some thoughts about simpler computers](https://pointinthecloud.com/2026-08-19-144600.html) `Tech` *2026-08-23*
+- [Formally verified distributed locks for sandboxes - Scott Hao](https://scotthao.com/writing/distributed-locks) `Tech` *2026-08-23*
+- [Just a moment...](https://galacodes.hashnode.dev/speculative-decoding) `Tech` *2026-08-23*
+- [You Probably Don’t Get Why Stripe Bought OpenRouter — Research — AMP PBC](https://www.amppublic.com/research/openrouter) `Tech` *2026-08-23*
+- [lyra](https://lyraaaa.dev/blog/weirdest-tokenizer) `Tech` *2026-08-23*
+- [Pushing the Speed-Cost Frontier for Qwen3-TTS | Nari Labs](https://nari-labs.com/blog/qwen3-tts-speed-cost-frontier) `Tech` *2026-08-23*
+- [Welcome to nginx ](https://archive.ph/lPpRz) `Reads` *2026-08-23*
+- [Halvar’s Guide to Entrepreneurship – Thomas Dullien / Halvar Flake](https://thomasdullien.github.io/guides/entrepreneurship) `Reads` *2026-08-23*
+- [The best general advice on earth &laquo;  the jsomers.net blog](https://jsomers.net/blog/william-james-advice) `Ideas` *2026-08-23*
+- [How Complex Systems Fail](https://how.complexsystems.fail/#1) `Ideas` *2026-08-23*
+- [Three important steps in my maturation process – Thomas Dullien / Halvar Flake](https://thomasdullien.github.io/posts/2026-08-21-three-important-steps-in-my-maturation-process) `Ideas` *2026-08-23*
+- [obscurity - by vincent huang - a slice of my mind](https://mindslice.substack.com/p/obscurity) `Ideas` *2026-08-23*
+- [text | typ.ing](https://typ.ing/text) `Tools and Interactive Websites` *2026-08-23*
+- [seventyonelab](https://www.seventyonelab.com/work.html) `Museums - Indexers` *2026-08-23*
+- [RedIRIS - Historia](https://www.rediris.es/rediris/historia/index.html.es) `Museums - Indexers` *2026-08-23*
+- [The Atlantic Community](https://atlantic.community) `Collectives and Magazines` *2026-08-23*
 - [I accidentally logged hundreds of thousands of phone calls to military bases - lina's blog](https://lina.sh/blog/hijacking-e164-arpa) `Tech` *2026-08-22*
 - [Ultimate Robot Knock-out Legend - Wikipedia](https://en.wikipedia.org/wiki/Ultimate_Robot_Knock-out_Legend) `Wikis` *2026-08-21*
 - [Gisting: Compressing LLM Agent context to ↑ throughput and ↓ cost (2026) - Shopify](https://shopify.engineering/gisting) `Tech` *2026-08-21*
