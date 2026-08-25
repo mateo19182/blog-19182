@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-08-24
+date: 2026-08-25
 tags: 
   - personal
 ---
@@ -9,6 +9,7 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [You can design a chip to run Kimi K3 at 87000 tps???](https://www.luoluo.ai/blog/kimi-k3) `Tech` *2026-08-24*
 - [CARI | Aesthetic | Vectorheart](https://cari.institute/aesthetics/vectorheart) `Arts` *2026-08-23*
 - [](https://vaxry.net) `Blogs` *2026-08-23*
 - [Browser agent bot detection is about to change - Aitor Mato](https://www.reformedot.com/blog/bot-detection) `Tech` *2026-08-23*
