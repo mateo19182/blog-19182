@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-08-25
+date: 2026-08-26
 tags: 
   - personal
 ---
@@ -9,6 +9,11 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [AgentX - InferenceXv3: Does CUDA Moat Hold up in Agentic Inferencing?](https://open.substack.com/pub/semianalysis/p/agentx-inferencexv3-does-cuda-moat?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Tech` *2026-08-25*
+- [Was Modern Art Really a CIA Psy-Op? - JSTOR Daily](https://daily.jstor.org/was-modern-art-really-a-cia-psy-op) `Reads` *2026-08-25*
+- [Overcaffeinated in Indonesia - by Irene Zhang - ChinaTalk](https://open.substack.com/pub/chinatalk/p/overcaffeinated-in-indonesia?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Reads` *2026-08-25*
+- [How Europe is killing makers and micro-entrepreneurs ](https://lectronz.com/u/lectronz/articles/how-europe-is-killing-makers-and-micro-entrepreneurs) `Ideas` *2026-08-25*
+- [San Francisco -- The Game](https://sf.thijs.gg) `Tools and Interactive Websites` *2026-08-25*
 - [You can design a chip to run Kimi K3 at 87000 tps???](https://www.luoluo.ai/blog/kimi-k3) `Tech` *2026-08-24*
 - [CARI | Aesthetic | Vectorheart](https://cari.institute/aesthetics/vectorheart) `Arts` *2026-08-23*
 - [](https://vaxry.net) `Blogs` *2026-08-23*
