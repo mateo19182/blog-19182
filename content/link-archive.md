@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-08-26
+date: 2026-08-27
 tags: 
   - personal
 ---
@@ -9,6 +9,8 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [The Decline of Deviance - by Adam Mastroianni](https://www.experimental-history.com/p/the-decline-of-deviance) `Ideas` *2026-08-26*
+- [The Immortality Trap - by Teddy Warner - theodore.net](https://teddywarner.substack.com/p/immortalitytrap) `Ideas` *2026-08-26*
 - [AgentX - InferenceXv3: Does CUDA Moat Hold up in Agentic Inferencing?](https://open.substack.com/pub/semianalysis/p/agentx-inferencexv3-does-cuda-moat?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Tech` *2026-08-25*
 - [Was Modern Art Really a CIA Psy-Op? - JSTOR Daily](https://daily.jstor.org/was-modern-art-really-a-cia-psy-op) `Reads` *2026-08-25*
 - [Overcaffeinated in Indonesia - by Irene Zhang - ChinaTalk](https://open.substack.com/pub/chinatalk/p/overcaffeinated-in-indonesia?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Reads` *2026-08-25*
