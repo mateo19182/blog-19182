@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-08-27
+date: 2026-08-28
 tags: 
   - personal
 ---
@@ -9,6 +9,14 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Surya Narreddi](https://surya.website/rling-qwen-to-paint-with-code) `Tech` *2026-08-27*
+- [2026: The Year of Dataflow - David Dong](https://davidhdong.substack.com/p/2026-the-year-of-dataflow) `Tech` *2026-08-27*
+- [Global Capital Atlas — Company HQ Map](https://capital.theojaffee.net) `Tech` *2026-08-27*
+- [](https://openai.com/index/hugging-face-incident-and-the-road-ahead) `Tech` *2026-08-27*
+- [Measure Up - by Dean W. Ball - Hyperdimensional](https://www.hyperdimensional.co/p/measuring-up) `Reads` *2026-08-27*
+- [Cybernetics I: Time is Work - by Nekosattva](https://nekosattva.substack.com/p/cybernetics-i-time-is-work?r=bdhc9&utm_medium=ios) `Reads` *2026-08-27*
+- [Welcome to nginx ](https://archive.ph/iiDCT) `Reads` *2026-08-27*
+- [EmailOSINT: Reverse email lookups in seconds](https://emailosint.org) `Tools and Interactive Websites` *2026-08-27*
 - [The Decline of Deviance - by Adam Mastroianni](https://www.experimental-history.com/p/the-decline-of-deviance) `Ideas` *2026-08-26*
 - [The Immortality Trap - by Teddy Warner - theodore.net](https://teddywarner.substack.com/p/immortalitytrap) `Ideas` *2026-08-26*
 - [AgentX - InferenceXv3: Does CUDA Moat Hold up in Agentic Inferencing?](https://open.substack.com/pub/semianalysis/p/agentx-inferencexv3-does-cuda-moat?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Tech` *2026-08-25*
