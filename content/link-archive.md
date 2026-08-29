@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-08-28
+date: 2026-08-29
 tags: 
   - personal
 ---
@@ -9,6 +9,7 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Previewing the Model Hardware Standard \ Anthropic](https://www.anthropic.com/news/model-hardware-standard-research-preview) `Tech` *2026-08-28*
 - [Surya Narreddi](https://surya.website/rling-qwen-to-paint-with-code) `Tech` *2026-08-27*
 - [2026: The Year of Dataflow - David Dong](https://davidhdong.substack.com/p/2026-the-year-of-dataflow) `Tech` *2026-08-27*
 - [Global Capital Atlas — Company HQ Map](https://capital.theojaffee.net) `Tech` *2026-08-27*
