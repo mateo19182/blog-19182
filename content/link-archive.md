@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-08-29
+date: 2026-08-30
 tags: 
   - personal
 ---
@@ -9,6 +9,9 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Glacier mice - Wikipedia](https://en.wikipedia.org/wiki/Glacier_mice) `Wikis` *2026-08-29*
+- [Running a Software Factory Efficiently at Uber Scale](https://www.uber.com/jp/en/blog/efficient-software-factory) `Tech` *2026-08-29*
+- [Your Book Review: Thomas Urquhart&-x27;s Translation Of Rabelais ](https://open.substack.com/pub/astralcodexten/p/your-book-review-thomas-urquharts?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Reads` *2026-08-29*
 - [Previewing the Model Hardware Standard \ Anthropic](https://www.anthropic.com/news/model-hardware-standard-research-preview) `Tech` *2026-08-28*
 - [Surya Narreddi](https://surya.website/rling-qwen-to-paint-with-code) `Tech` *2026-08-27*
 - [2026: The Year of Dataflow - David Dong](https://davidhdong.substack.com/p/2026-the-year-of-dataflow) `Tech` *2026-08-27*
