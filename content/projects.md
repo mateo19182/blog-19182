@@ -21,8 +21,33 @@ description: A selection of things I've built, researched, or helped make.
 </div>
 
 <div class="project-card">
+  <div class="project-title"><a href="https://github.com/mateo19182/eres-raro-espana">¿Cómo de raro eres?</a><span class="project-date">2026-06</span></div>
+  <div class="project-desc">An interactive explorer of how common a seven-axis profile is among Spanish adults, built from CIS microdata. It preserves the joint distribution of responses instead of multiplying marginal percentages.</div>
+</div>
+
+<div class="project-card">
+  <div class="project-title"><a href="https://github.com/mateo19182/agame">agame</a><span class="project-date">2026-06</span></div>
+  <div class="project-desc">A two-player couch game with trivia and minigames. One screen shows the board while two phones act as controllers. Runs on Cloudflare Workers with realtime Durable Objects.</div>
+</div>
+
+<div class="project-card">
   <div class="project-title"><a href="https://github.com/mateo19182/arcus-ctf">Arcus CTF</a><span class="project-date">2026-06</span></div>
   <div class="project-desc">Investigation notes and tooling for an LLM-based CTF challenge. Compared model checkpoints, probed token likelihoods, and drove the live grader. The <a href="/writings/Arcus-CTF-Write-up">write-up</a> is on the blog.</div>
+</div>
+
+<div class="project-card">
+  <div class="project-title"><a href="https://github.com/mateo19182/FoxEngineReborn">FoxEngineReborn</a><span class="project-date">2026-05</span></div>
+  <div class="project-desc">A self-hosted PII and breach-data search stack. Ingests normalized leads into ClickHouse, supports tags and a small query DSL, and uses JWT or API-key authentication.</div>
+</div>
+
+<div class="project-card">
+  <div class="project-title"><a href="https://github.com/mateo19182/sqs-inspector">SQS Inspector</a><span class="project-date">2026-04</span></div>
+  <div class="project-desc">A local development tool for inspecting AWS SQS queues. Lists queues, peeks at messages without consuming them, and shows their bodies, attributes, and metadata.</div>
+</div>
+
+<div class="project-card">
+  <div class="project-title"><a href="https://github.com/mateo19182/tribev2">TRIBE v2 Prediction CLI</a><span class="project-date">2026-04</span></div>
+  <div class="project-desc">A small CLI for running TRIBE v2 predictions from an input file, with checkpoint caching and CPU or CUDA support.</div>
 </div>
 
 <div class="project-card">
@@ -46,6 +71,11 @@ description: A selection of things I've built, researched, or helped make.
 </div>
 
 <div class="project-card">
+  <div class="project-title"><a href="https://github.com/mateo19182/linkwarden-cli">Linkwarden CLI</a><span class="project-date">2026-03</span></div>
+  <div class="project-desc">A CLI for saving links to Linkwarden, with fzf collection selection, clipboard input, and a local collection cache.</div>
+</div>
+
+<div class="project-card">
   <div class="project-title"><a href="https://github.com/mateo19182/beancount-ui">beancount-ui</a><span class="project-date">2026-03</span></div>
   <div class="project-desc">App for managing <a href="https://beancount.github.io/">Beancount</a> ledgers, built with NiceGUI. Point it at a <code>.beancount</code> file to visualize asset allocation, stock and crypto holdings, transactions, document attachments, and a bank import flow via the Enable Banking API with automatic payee categorization.</div>
 </div>
@@ -60,6 +90,11 @@ description: A selection of things I've built, researched, or helped make.
   <div class="project-title"><a href="https://solafune.com/competitions/26ff758c-7422-4cd1-bfe0-daecfc40db70?modal=%22%22&tab=&menu=about">Tree Canopy Detection Competition</a><span class="project-date">2025-12</span></div>
   <div class="project-desc">Competed on a tree canopy detection challenge using satellite imagery. Placed top 50 out of 4000+ participants. Explored Yolo, EOMT (DinoV3 backbone) and Mask2Former architectures. <a href="https://github.com/mateo19182/tree_canopy">code repository</a>.
 </div>
+</div>
+
+<div class="project-card">
+  <div class="project-title"><a href="https://github.com/mateo19182/gdpr">GDPR Spain Neural Search Engine</a><span class="project-date">2025-08</span></div>
+  <div class="project-desc">A search prototype for Spanish GDPR and LOPDGDD material. Uses embeddings to search legal and regulatory sources by intent rather than keywords.</div>
 </div>
 
 <div class="project-card">
