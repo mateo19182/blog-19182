@@ -1,47 +1,28 @@
 ---
 title: Projects
+description: A selection of things I've built, researched, or helped make.
 ---
-
-<style>
-.project-list {
-  display: flex;
-  flex-direction: column;
-  gap: 1.2em;
-  margin-bottom: 2em;
-}
-.project-card {
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  padding: 1em;
-  background: var(--light, #fff);
-  transition: box-shadow 0.2s;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
-  overflow-x: auto;
-  max-width: 100%;
-}
-.project-title {
-  font-weight: bold;
-  margin-bottom: 0.3em;
-  word-break: break-word;
-}
-.project-desc {
-  font-size: 0.97em;
-  color: #666;
-  word-break: break-word;
-}
-.project-date {
-  font-size: 0.85em;
-  color: #999;
-  font-weight: normal;
-  margin-left: 0.5em;
-}
-</style>
 
 <div class="project-list">
 
 <div class="project-card">
+  <div class="project-title"><a href="https://datacenters.m19182.dev">Data centres in Spain</a><span class="project-date">2026-08</span></div>
+  <div class="project-desc">A public, source-backed map of data centres in peninsular Spain and their relationship to the electricity transmission grid. It keeps IT load, grid connection capacity, and installed power separate, and leaves gaps and contradictions visible. <a href="https://github.com/mateo19182/mapa-datacenters-espana">code and data</a>.</div>
+</div>
+
+<div class="project-card">
+  <div class="project-title"><a href="https://github.com/mateo19182/fleet">Fleet</a><span class="project-date">2026-08</span></div>
+  <div class="project-desc">A small reference shelf for the agent skills and MCPs I use, with upstream links, inventory notes, and installation instructions.</div>
+</div>
+
+<div class="project-card">
   <div class="project-title"><a href="https://github.com/mateo19182/medialib">MediaLib</a><span class="project-date">2026-07</span></div>
-  <div class="project-desc">A self-hosted personal media library for music, books, movies, series, anime, manga, and live shows. Save links through Telegram or the web UI, enrich them with provider metadata, cache artwork, track ratings and status, and migrate saved tracks to YouTube Music. Built on Cloudflare Workers, D1, and R2.</div>
+  <div class="project-desc">A self-hosted personal media library for music, books, movies, series, anime, manga, webtoons, and live shows. Save links through Telegram or the web UI, enrich them with provider metadata, cache artwork, track ratings and status, and migrate saved tracks to YouTube Music. Built on Cloudflare Workers, D1, and R2.</div>
+</div>
+
+<div class="project-card">
+  <div class="project-title"><a href="https://github.com/mateo19182/arcus-ctf">Arcus CTF</a><span class="project-date">2026-06</span></div>
+  <div class="project-desc">Investigation notes and tooling for an LLM-based CTF challenge. Compared model checkpoints, probed token likelihoods, and drove the live grader. The <a href="/writings/Arcus-CTF-Write-up">write-up</a> is on the blog.</div>
 </div>
 
 <div class="project-card">

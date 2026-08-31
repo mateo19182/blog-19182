@@ -1,9 +1,10 @@
 ---
 title: Now
+description: What I'm working on, reading, watching, and listening to right now.
 tags: 
   # - personal
 ---
-I'm currently working at [TriboSolutions](https://tribosolutions.es) a company I co-founded with 2 friends to bring useful technology to the fitness industry, and on research at [Zepo](https://zepo.ai). 
+I'm currently working at [TriboSolutions](https://tribosolutions.es), a company I co-founded with 2 friends to bring useful technology to the fitness industry, and on research at [Zepo](https://zepo.ai).
 
 Some of the things I'm currently consuming:
 

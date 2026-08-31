@@ -58,6 +58,18 @@ function readingTime(text) {
   return Math.max(1, Math.round(text.split(/\s+/).length / 200))
 }
 
+function ogSubtitle(page) {
+  if (page.isHome) return "Mateo's blog"
+  if (page.isArticle && page.date) return page.date
+  return {
+    now: "what I'm working on",
+    projects: "things I've built",
+    writings: "essays and notes",
+    "link-archive": "a living archive of links",
+    "things-i-like": "books, music, films, and more",
+  }[page.name] || "blog.m19182.dev"
+}
+
 function extractToc(html) {
   const toc = []
   const re = /<h([23])[^>]*\bid="([^"]+)"[^>]*>([\s\S]*?)<\/h\1>/g
@@ -101,10 +113,10 @@ async function loadFile(file, name, section) {
     name, section, slug, url, isHome,
     title: data.title || name,
     date: normalizeDate(data.date),
+    description: data.description || text.slice(0, 160).trim(),
     tags: Array.isArray(data.tags) ? data.tags.filter(Boolean) : [],
     aliases: Array.isArray(data.aliases) ? data.aliases : data.aliases ? [data.aliases] : [],
     rawContent: content,
-    description: text.slice(0, 160).trim(),
     readingTime: readingTime(text),
     isArticle: section === "writings",
   }
@@ -207,7 +219,7 @@ async function build() {
     ogJobs.push({
       path: ogPath,
       title: p.isHome ? "blog-19182" : p.title,
-      subtitle: p.isHome ? "Mateo's blog" : p.isArticle && p.date ? p.date : "blog.m19182.dev",
+      subtitle: ogSubtitle(p),
     })
   }
 
