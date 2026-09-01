@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-08-30
+date: 2026-09-01
 tags: 
   - personal
 ---
@@ -9,6 +9,11 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Vercel Security Checkpoint](https://www.lesswrong.com/posts/sFkYA5CwZCWYQ9nzB/the-whitney-biennial-should-admit-that-emilie-gossiaux-wants) `Arts` *2026-08-31*
+- [The Rise and Fall of Agent Civilizations](https://www.dwarkesh.com/p/openai-huggingface) `Tech` *2026-08-31*
+- [Unmasking TeamPCP: Software Supply Chain Attacks - Flare](https://flare.io/learn/resources/blog/teampcp-software-supply-chain-attacks) `Tech` *2026-08-31*
+- [Redesigning the Inference Chip: From Nvidia GPU's Flaws to OpenAI Jalapeño](https://zartbot.github.io/blog/arch/jalapeno/en.html) `Tech` *2026-08-31*
+- [Human-like Neural Nets by Catapulting · Gwern.net](https://gwern.net/llm-catapult) `Reads` *2026-08-31*
 - [Glacier mice - Wikipedia](https://en.wikipedia.org/wiki/Glacier_mice) `Wikis` *2026-08-29*
 - [Running a Software Factory Efficiently at Uber Scale](https://www.uber.com/jp/en/blog/efficient-software-factory) `Tech` *2026-08-29*
 - [Your Book Review: Thomas Urquhart&-x27;s Translation Of Rabelais ](https://open.substack.com/pub/astralcodexten/p/your-book-review-thomas-urquharts?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Reads` *2026-08-29*
