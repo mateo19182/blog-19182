@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-09-01
+date: 2026-09-02
 tags: 
   - personal
 ---
@@ -9,6 +9,10 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [¿Qué diría Walter Benjamin sobre las batallas de aura en las plazas públicas?](https://reinasyrepollos.substack.com/p/que-diria-walter-benjamin-sobre-las?utm_source=%2Finbox&utm_medium=reader2) `Ideas` *2026-09-01*
+- [Fastpotify](https://fastpotify.rocks) `Tools and Interactive Websites` *2026-09-01*
+- [Dealflow &middot; deal database](https://dealflow-data.netlify.app) `Tools and Interactive Websites` *2026-09-01*
+- [The Restroom Archive – Red Hook Lobster Pound](https://restroomarchive.com/r/2024-10-05-red-hook-lobster-pound) `Museums - Indexers` *2026-09-01*
 - [Vercel Security Checkpoint](https://www.lesswrong.com/posts/sFkYA5CwZCWYQ9nzB/the-whitney-biennial-should-admit-that-emilie-gossiaux-wants) `Arts` *2026-08-31*
 - [The Rise and Fall of Agent Civilizations](https://www.dwarkesh.com/p/openai-huggingface) `Tech` *2026-08-31*
 - [Unmasking TeamPCP: Software Supply Chain Attacks - Flare](https://flare.io/learn/resources/blog/teampcp-software-supply-chain-attacks) `Tech` *2026-08-31*
