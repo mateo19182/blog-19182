@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-09-02
+date: 2026-09-03
 tags: 
   - personal
 ---
@@ -9,6 +9,12 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Introducing Quasar 438B: Europe&-x27;s Leading AI Model](https://multiversecomputing.com/resources/introducing-quasar-438b-europe-s-leading-ai-model) `Tech` *2026-09-02*
+- [Cancelation Terminology](https://matklad.github.io/2026/08/31/cancelation-terminology.html) `Tech` *2026-09-02*
+- [Ardora III-V](https://www.ardora35.com/en) `Tech` *2026-09-02*
+- [Growing up without inherited cool - by Sanj - Tender Logic](https://sanjipam.substack.com/p/growing-up-without-inherited-cool) `Reads` *2026-09-02*
+- [](https://earthprayer.net/library/Starfish-and-Spider-Ori-Brafman-Summary.pdf) `Ideas` *2026-09-02*
+- [Why Are Dissents Rare in the Federal Reserve?](https://nicholasdecker.substack.com/p/why-are-dissents-rare-in-the-federal?utm_source=%2Finbox&utm_medium=reader2) `Ideas` *2026-09-02*
 - [¿Qué diría Walter Benjamin sobre las batallas de aura en las plazas públicas?](https://reinasyrepollos.substack.com/p/que-diria-walter-benjamin-sobre-las?utm_source=%2Finbox&utm_medium=reader2) `Ideas` *2026-09-01*
 - [Fastpotify](https://fastpotify.rocks) `Tools and Interactive Websites` *2026-09-01*
 - [Dealflow &middot; deal database](https://dealflow-data.netlify.app) `Tools and Interactive Websites` *2026-09-01*
