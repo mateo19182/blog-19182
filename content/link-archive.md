@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-09-03
+date: 2026-09-04
 tags: 
   - personal
 ---
@@ -9,6 +9,10 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Scraping TikTok's Mobile API](https://tiktok-api.seeksocial.io) `Tech` *2026-09-03*
+- [Nicholas Decker In Hell - by Scott Alexander](https://www.astralcodexten.com/p/nicholas-decker-in-hell?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-09-03*
+- [GPU World](https://www.gpuworld.org) `Ideas` *2026-09-03*
+- [Just bury your trash](https://www.worksinprogress.news/p/just-bury-your-trash?r=6k752k&utm_medium=ios&triedRedirect=true) `Ideas` *2026-09-03*
 - [Introducing Quasar 438B: Europe&-x27;s Leading AI Model](https://multiversecomputing.com/resources/introducing-quasar-438b-europe-s-leading-ai-model) `Tech` *2026-09-02*
 - [Cancelation Terminology](https://matklad.github.io/2026/08/31/cancelation-terminology.html) `Tech` *2026-09-02*
 - [Ardora III-V](https://www.ardora35.com/en) `Tech` *2026-09-02*
