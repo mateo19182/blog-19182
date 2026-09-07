@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-09-04
+date: 2026-09-07
 tags: 
   - personal
 ---
@@ -9,6 +9,9 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [China&-x27;s Rare Earths Duopoly](https://www.chinatalk.media/p/chinas-rare-earths-duopoly?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-09-06*
+- [After Work, We’ll Have Each Other—Asterisk](https://asteriskmag.com/issues/15/after-work-we-ll-have-each-other?utm_source=Asterisk&utm_campaign=0a05c55e8d-EMAIL_CAMPAIGN_9_2_2025_7_16_COPY_01&utm_medium=email&utm_term=0_e0307a4ab2-0a05c55e8d-585690599&mc_cid=0a05c55e8d) `Reads` *2026-09-06*
+- [Francisco Javier Santiáñez, consignatario histórico: &quot;Apostamos por el tráfico los contenedores en A Coruña, creyendo que podríamos captar a Zara, pero se quedaron en Vigo&quot;](https://www.laopinioncoruna.es/coruna/2026/09/06/francisco-javier-santianez-consignatario-historico-133882868.html) `Reads` *2026-09-06*
 - [Scraping TikTok's Mobile API](https://tiktok-api.seeksocial.io) `Tech` *2026-09-03*
 - [Nicholas Decker In Hell - by Scott Alexander](https://www.astralcodexten.com/p/nicholas-decker-in-hell?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-09-03*
 - [GPU World](https://www.gpuworld.org) `Ideas` *2026-09-03*
