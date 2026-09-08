@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-09-07
+date: 2026-09-08
 tags: 
   - personal
 ---
@@ -9,6 +9,10 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [](https://openai.com/index/an-alien-mind) `Tech` *2026-09-07*
+- [Exploring Speculative Decoding in vLLM on AMD GPUs | vLLM Blog](https://vllm.ai/blog/2026-08-23-speculative-decoding-amd-gpus) `Tech` *2026-09-07*
+- [The Rise and Fall of Crime - by Nicholas Decker](https://nicholasdecker.substack.com/p/the-rise-and-fall-of-crime?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Reads` *2026-09-07*
+- [Contra Benn Jordan, data center (and all) sub-audible infrasound issues are fake](https://blog.andymasley.com/p/contra-benn-jordan-data-center-and) `Reads` *2026-09-07*
 - [China&-x27;s Rare Earths Duopoly](https://www.chinatalk.media/p/chinas-rare-earths-duopoly?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-09-06*
 - [After Work, We’ll Have Each Other—Asterisk](https://asteriskmag.com/issues/15/after-work-we-ll-have-each-other?utm_source=Asterisk&utm_campaign=0a05c55e8d-EMAIL_CAMPAIGN_9_2_2025_7_16_COPY_01&utm_medium=email&utm_term=0_e0307a4ab2-0a05c55e8d-585690599&mc_cid=0a05c55e8d) `Reads` *2026-09-06*
 - [Francisco Javier Santiáñez, consignatario histórico: &quot;Apostamos por el tráfico los contenedores en A Coruña, creyendo que podríamos captar a Zara, pero se quedaron en Vigo&quot;](https://www.laopinioncoruna.es/coruna/2026/09/06/francisco-javier-santianez-consignatario-historico-133882868.html) `Reads` *2026-09-06*
