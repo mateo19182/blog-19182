@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-09-08
+date: 2026-09-09
 tags: 
   - personal
 ---
@@ -9,6 +9,8 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [TPU Inference Externalization Full Steam Ahead - InferenceX](https://open.substack.com/pub/semianalysis/p/tpu-inferencex-full-steam?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Tech` *2026-09-08*
+- [The Decade of Decline in Seattle Public Schools](https://www.educationprogress.org/p/the-decade-of-decline-in-seattle?triedRedirect=true) `Reads` *2026-09-08*
 - [](https://openai.com/index/an-alien-mind) `Tech` *2026-09-07*
 - [Exploring Speculative Decoding in vLLM on AMD GPUs | vLLM Blog](https://vllm.ai/blog/2026-08-23-speculative-decoding-amd-gpus) `Tech` *2026-09-07*
 - [The Rise and Fall of Crime - by Nicholas Decker](https://nicholasdecker.substack.com/p/the-rise-and-fall-of-crime?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Reads` *2026-09-07*
