@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-09-09
+date: 2026-09-10
 tags: 
   - personal
 ---
@@ -9,6 +9,8 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Scenarios for our Economic Future \ Anthropic](https://www.anthropic.com/institute/econ-scenarios) `Reads` *2026-09-09*
+- [On Really Trying · Gwern.net](https://gwern.net/on-really-trying) `Ideas` *2026-09-09*
 - [TPU Inference Externalization Full Steam Ahead - InferenceX](https://open.substack.com/pub/semianalysis/p/tpu-inferencex-full-steam?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Tech` *2026-09-08*
 - [The Decade of Decline in Seattle Public Schools](https://www.educationprogress.org/p/the-decade-of-decline-in-seattle?triedRedirect=true) `Reads` *2026-09-08*
 - [](https://openai.com/index/an-alien-mind) `Tech` *2026-09-07*
