@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-09-10
+date: 2026-09-11
 tags: 
   - personal
 ---
@@ -9,6 +9,11 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Chasing Speed of Light on TPU v6e | Sail Research](https://www.sailresearch.com/blog/tpu-v6e-gemma) `Tech` *2026-09-10*
+- [How We Built Safety Into Muse | Meta AI Research](https://research.meta.ai/blog/security-and-safety-for-ai-agents-our-approach-with-muse#hatch-name-footnote-reference) `Tech` *2026-09-10*
+- [The King of Unitree - ChinaTalk](https://open.substack.com/pub/chinatalk/p/the-king-of-unitree?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Reads` *2026-09-10*
+- [Can Taiwan Build Drones? - by Ethan Kessler - ChinaTalk](https://open.substack.com/pub/chinatalk/p/can-taiwan-build-drones?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Reads` *2026-09-10*
+- [Relativity Park: Walking Speed of Light](https://rivendell.dmitrybrant.com/relativity) `Tools and Interactive Websites` *2026-09-10*
 - [Scenarios for our Economic Future \ Anthropic](https://www.anthropic.com/institute/econ-scenarios) `Reads` *2026-09-09*
 - [On Really Trying · Gwern.net](https://gwern.net/on-really-trying) `Ideas` *2026-09-09*
 - [TPU Inference Externalization Full Steam Ahead - InferenceX](https://open.substack.com/pub/semianalysis/p/tpu-inferencex-full-steam?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Tech` *2026-09-08*
