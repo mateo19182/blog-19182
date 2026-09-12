@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-09-11
+date: 2026-09-12
 tags: 
   - personal
 ---
@@ -9,6 +9,7 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [God Help Us, Let’s Try To Learn About Mechanistic Interpretability Techniques](https://open.substack.com/pub/astralcodexten/p/god-help-us-lets-try-to-learn-about?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Reads` *2026-09-11*
 - [Chasing Speed of Light on TPU v6e | Sail Research](https://www.sailresearch.com/blog/tpu-v6e-gemma) `Tech` *2026-09-10*
 - [How We Built Safety Into Muse | Meta AI Research](https://research.meta.ai/blog/security-and-safety-for-ai-agents-our-approach-with-muse#hatch-name-footnote-reference) `Tech` *2026-09-10*
 - [The King of Unitree - ChinaTalk](https://open.substack.com/pub/chinatalk/p/the-king-of-unitree?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Reads` *2026-09-10*
