@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-09-12
+date: 2026-09-13
 tags: 
   - personal
 ---
@@ -9,6 +9,11 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Smooth Exponentials for Robotics | Eric Jang](https://evjang.com/2026/09/10/smooth-exponential.html) `Tech` *2026-09-12*
+- [5 Years Running Petabyte-Scale ClickHouse® | Tinybird](https://www.tinybird.co/blog/what-i-learned-operating-clickhouse) `Tech` *2026-09-12*
+- [Lessons From 5 Years of ClickHouse® Clusters | Tinybird](https://www.tinybird.co/blog/what-i-learned-operating-clickhouse-part-ii) `Tech` *2026-09-12*
+- [A Severe Misalignment of AI in Mathematics | What&-039;s new](https://terrytao.wordpress.com/2026/09/11/a-severe-misalignment-of-ai-in-mathematics) `Reads` *2026-09-12*
+- [Where Has Construction Automation Been Successful?](https://open.substack.com/pub/constructionphysics/p/where-has-construction-automation?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Reads` *2026-09-12*
 - [God Help Us, Let’s Try To Learn About Mechanistic Interpretability Techniques](https://open.substack.com/pub/astralcodexten/p/god-help-us-lets-try-to-learn-about?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Reads` *2026-09-11*
 - [Chasing Speed of Light on TPU v6e | Sail Research](https://www.sailresearch.com/blog/tpu-v6e-gemma) `Tech` *2026-09-10*
 - [How We Built Safety Into Muse | Meta AI Research](https://research.meta.ai/blog/security-and-safety-for-ai-agents-our-approach-with-muse#hatch-name-footnote-reference) `Tech` *2026-09-10*
