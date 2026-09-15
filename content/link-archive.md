@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-09-13
+date: 2026-09-15
 tags: 
   - personal
 ---
@@ -9,6 +9,8 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Reviewing Signal&-8217;s Cryptography, Part 3 - Dhole Moments](https://soatok.blog/signal-crypto-review-2025-part-3) `Tech` *2026-09-14*
+- [Welcome to nginx ](https://archive.ph/9V8lf) `Reads` *2026-09-14*
 - [Smooth Exponentials for Robotics | Eric Jang](https://evjang.com/2026/09/10/smooth-exponential.html) `Tech` *2026-09-12*
 - [5 Years Running Petabyte-Scale ClickHouse® | Tinybird](https://www.tinybird.co/blog/what-i-learned-operating-clickhouse) `Tech` *2026-09-12*
 - [Lessons From 5 Years of ClickHouse® Clusters | Tinybird](https://www.tinybird.co/blog/what-i-learned-operating-clickhouse-part-ii) `Tech` *2026-09-12*
