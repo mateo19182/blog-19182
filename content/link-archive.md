@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-09-16
+date: 2026-09-19
 tags: 
   - personal
 ---
@@ -9,6 +9,8 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Backups aren't simple](https://filipovski.net/2026/09/16/backups-arent-simple.html) `Tech` *2026-09-18*
+- [neolabs.fyi | Neolab research areas](https://neolabs.fyi) `Tools and Interactive Websites` *2026-09-18*
 - [why I can&-x27;t stop thinking about Papua New Guinea and what I think everyone should know about it](https://notnottalmud.substack.com/p/why-i-cant-stop-thinking-about-papua) `Reads` *2026-09-15*
 - [Reviewing Signal&-8217;s Cryptography, Part 3 - Dhole Moments](https://soatok.blog/signal-crypto-review-2025-part-3) `Tech` *2026-09-14*
 - [Welcome to nginx ](https://archive.ph/9V8lf) `Reads` *2026-09-14*
