@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-09-19
+date: 2026-09-20
 tags: 
   - personal
 ---
@@ -9,6 +9,12 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Saving another 100TB of RAM with math (and Rust) | Cloudflare Blog](https://blog.cloudflare.com/saving-100-tb-of-ram-with-math) `Tech` *2026-09-19*
+- [the senior engineer death spiral • Solving the decision problem](https://sunilpai.dev/posts/the-senior-engineer-death-spiral) `Tech` *2026-09-19*
+- [](https://sgnt.ai/p/jev) `Tech` *2026-09-19*
+- [GPT-6 Astra Solves a WWI German Radio Cipher - prinz](https://www.prinzai.com/p/gpt-6-astra-solves-a-wwi-german-radio) `Reads` *2026-09-19*
+- [How Texas’s &quot;Secret Tax&quot; Hurts Taxpayers - by Lars Doucet](https://open.substack.com/pub/progressandpoverty/p/how-texass-secret-tax-hurts-taxpayers?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Reads` *2026-09-19*
+- [San Francisco Onion Futures Company](https://onionfutures.com) `Ideas` *2026-09-19*
 - [Backups aren't simple](https://filipovski.net/2026/09/16/backups-arent-simple.html) `Tech` *2026-09-18*
 - [neolabs.fyi | Neolab research areas](https://neolabs.fyi) `Tools and Interactive Websites` *2026-09-18*
 - [why I can&-x27;t stop thinking about Papua New Guinea and what I think everyone should know about it](https://notnottalmud.substack.com/p/why-i-cant-stop-thinking-about-papua) `Reads` *2026-09-15*
