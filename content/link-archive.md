@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-09-20
+date: 2026-09-22
 tags: 
   - personal
 ---
@@ -9,6 +9,11 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [
+        The Farnese letter | Simon Klee
+    ](https://simonklee.dk/farnese-letter) `Tech` *2026-09-21*
+- [Michael Noukhovitch - Blog](https://mnoukhov.github.io/posts/ngu) `Tech` *2026-09-21*
+- [PaperTok](https://papertok.app/feed) `Tools and Interactive Websites` *2026-09-21*
 - [Saving another 100TB of RAM with math (and Rust) | Cloudflare Blog](https://blog.cloudflare.com/saving-100-tb-of-ram-with-math) `Tech` *2026-09-19*
 - [the senior engineer death spiral • Solving the decision problem](https://sunilpai.dev/posts/the-senior-engineer-death-spiral) `Tech` *2026-09-19*
 - [](https://sgnt.ai/p/jev) `Tech` *2026-09-19*
