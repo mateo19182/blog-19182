@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-09-22
+date: 2026-09-24
 tags: 
   - personal
 ---
@@ -9,6 +9,13 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [How the pieces of an AI product fit together](https://jaumeivars.com) `Blogs` *2026-09-23*
+- [How SpaceXAI is using Grok Bot to scale customer support | SpaceXAI](https://x.ai/news/grok-bot-customer-support) `Tech` *2026-09-23*
+- [Meet Stripe&-x27;s Knowledge AI Platform | Stripe Dot Dev Blog](https://stripe.dev/blog/meet-stripes-knowledge-ai-platform) `Tech` *2026-09-23*
+- [why you can’t copy palantir - by Ethan Ding - mandates](https://ethanding.substack.com/p/why-you-cant-copy-palantir) `Tech` *2026-09-23*
+- [I don&-39;t want the details | michaelheap.com](https://michaelheap.com/i-dont-want-the-details) `Ideas` *2026-09-23*
+- [Docs Complexity Map](https://ethanding.com/foundry-viz) `Tools and Interactive Websites` *2026-09-23*
+- [ Crypto Cellar Research ](https://cryptocellar.org/index.html) `Museums - Indexers` *2026-09-23*
 - [
         The Farnese letter | Simon Klee
     ](https://simonklee.dk/farnese-letter) `Tech` *2026-09-21*
