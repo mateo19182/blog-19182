@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-09-24
+date: 2026-09-25
 tags: 
   - personal
 ---
@@ -9,6 +9,15 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [
+    The Effect of CRTs on Pixel Art | datagubbe.se
+  ](https://datagubbe.se/crt) `Tech` *2026-09-24*
+- [Pretraining progress is mostly coming from data](https://www.dwarkesh.com/p/pretraining-progress-is-mostly-data) `Tech` *2026-09-24*
+- [Modern Software Factory Architecture and Agentic Workflows | Warp](https://www.warp.dev/articles/modern-software-factory-architecture) `Tech` *2026-09-24*
+- [Literary Hub &raquo; A Necessary History of the Oddest Letter: W](https://lithub.com/a-necessary-history-of-the-oddest-letter-w) `Reads` *2026-09-24*
+- [](https://maskofreason.wordpress.com/wp-content/uploads/2011/02/the-library-of-babel-by-jorge-luis-borges.pdf) `Reads` *2026-09-24*
+- [Welcome to nginx ](https://archive.ph/OMZ9R) `Reads` *2026-09-24*
+- [We&-x27;ve saved the world before: what the ozone hole teaches us about AI — LessWrong](https://www.lesswrong.com/posts/zxXPEtSSSEdwpjopb/we-ve-saved-the-world-before-what-the-ozone-hole-teaches-us) `Reads` *2026-09-24*
 - [How the pieces of an AI product fit together](https://jaumeivars.com) `Blogs` *2026-09-23*
 - [How SpaceXAI is using Grok Bot to scale customer support | SpaceXAI](https://x.ai/news/grok-bot-customer-support) `Tech` *2026-09-23*
 - [Meet Stripe&-x27;s Knowledge AI Platform | Stripe Dot Dev Blog](https://stripe.dev/blog/meet-stripes-knowledge-ai-platform) `Tech` *2026-09-23*
