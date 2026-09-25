@@ -7,7 +7,7 @@ description: A selection of things I've built, researched, or helped make.
 
 <div class="project-card">
   <div class="project-title"><a href="https://github.com/Martinhdeez/trace-it">trace-it</a><span class="project-date">2026-09</span></div>
-  <div class="project-desc">Winner of the HackSpain hackathon. Turns operating policy described in plain language into versioned, deterministic decision processes. Agents read documents in any format, propose the rules and data sources, and compile them to tested Python; every decision is recorded with its evidence, and new versions can be backtested against past cases before publishing. Built with a team of five.</div>
+  <div class="project-desc">Winner of <a href="https://hackspain.com/">HackSpain</a> Maisa track. Turns operating policy described in plain language into versioned, deterministic decision processes. Ingests documents in any format, propose the rules and data sources, compile them to tested Python, backtest against past cases before publishing... Built with a team of five.</div>
 </div>
 
 <div class="project-card">
