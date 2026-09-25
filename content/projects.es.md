@@ -7,7 +7,7 @@ description: Una selección de cosas que he construido, investigado o ayudado a 
 
 <div class="project-card">
   <div class="project-title"><a href="https://github.com/Martinhdeez/trace-it">trace-it</a><span class="project-date">2026-09</span></div>
-  <div class="project-desc">Ganador del hackathon HackSpain. Convierte políticas operativas descritas en lenguaje natural en procesos de decisión deterministas y versionados. Unos agentes leen documentos en cualquier formato, proponen las reglas y las fuentes de datos, y las compilan a Python con tests; cada decisión queda registrada con su evidencia, y las nuevas versiones se pueden probar contra casos pasados antes de publicarlas. Hecho en un equipo de cinco.</div>
+  <div class="project-desc">Ganador de <a href="https://hackspain.com/">HackSpain</a>, track de Maisa. Convierte procersos descriptos en leguage natural en pipelines automáticos, ingests documentos en cualquier formato, propone normal y fuentes de datos, compila a python determinista, backtesting... Built with a team of five.</div>
 </div>
 
 <div class="project-card">
