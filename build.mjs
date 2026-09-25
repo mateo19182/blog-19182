@@ -11,7 +11,7 @@ import matter from "gray-matter"
 import { makeRenderer, initHighlighter, linkKey } from "./lib/markdown.mjs"
 import {
   renderPage, writingsIndexHtml, tagsIndexHtml,
-  tagPageHtml, tagSlug, SITE, esc,
+  tagPageHtml, tagSlug, SITE, esc, t,
 } from "./lib/templates.mjs"
 import { makeOgImage } from "./lib/og.mjs"
 import { buildRss, buildSitemap } from "./lib/feeds.mjs"
@@ -90,13 +90,13 @@ async function loadAll() {
   const pages = []
   // top-level pages
   for (const f of await readdir(CONTENT)) {
-    if (!f.endsWith(".md")) continue
+    if (!f.endsWith(".md") || f.endsWith(".es.md")) continue
     pages.push(await loadFile(path.join(CONTENT, f), f.replace(/\.md$/, ""), null))
   }
   // writings
   const wdir = path.join(CONTENT, "writings")
   for (const f of await readdir(wdir)) {
-    if (!f.endsWith(".md")) continue
+    if (!f.endsWith(".md") || f.endsWith(".es.md")) continue
     pages.push(await loadFile(path.join(wdir, f), f.replace(/\.md$/, ""), "writings"))
   }
   return { pages, dataFiles }
@@ -119,6 +119,18 @@ async function loadFile(file, name, section) {
     rawContent: content,
     readingTime: readingTime(text),
     isArticle: section === "writings",
+    es: await loadTranslation(file.replace(/\.md$/, ".es.md"), data.title || name),
+  }
+}
+
+// Optional Spanish version of a page, written by hand as a sibling `foo.es.md`.
+async function loadTranslation(file, fallbackTitle) {
+  if (!existsSync(file)) return null
+  const { data, content } = matter(await readFile(file, "utf8"))
+  return {
+    title: data.title || fallbackTitle,
+    rawContent: content,
+    readingTime: readingTime(stripToText(content)),
   }
 }
 
@@ -130,6 +142,7 @@ function makeResolver(pages, dataFiles) {
   for (const p of pages) {
     put(p.name, p.url)
     if (p.title) put(p.title, p.url)
+    if (p.es) put(p.es.title, p.url)
   }
   // synthetic pages
   put("writings", "/writings")
@@ -204,12 +217,18 @@ async function build() {
   for (const p of pages) {
     let bodyHtml = md.render(p.rawContent)
     const toc = p.isArticle ? extractToc(bodyHtml) : []
+    let es = null
+    if (p.es) {
+      const html = md.render(p.es.rawContent, { docId: "es" })
+      es = { ...p.es, html, toc: p.isArticle ? extractToc(html) : [] }
+    }
 
     const ogPath = p.isHome ? "/static/og/index.png" : `/static/og${p.url}.png`
     const page = {
       ...p,
       html: bodyHtml,
       toc,
+      es,
       ogImage: ogPath,
       showFilter: p.name === "link-archive",
     }
@@ -225,9 +244,9 @@ async function build() {
 
   // writings index
   {
-    const html = `<p>Essays and notes</p>` + writingsIndexHtml(posts)
+    const html = `<p>${t("Essays and notes", "Ensayos y notas")}</p>` + writingsIndexHtml(posts)
     await emit("/writings", renderPage({
-      title: "Writings", url: "/writings", section: null, html,
+      title: "Writings", url: "/writings", section: null, html, es: { title: "Escritos" },
       ogImage: "/static/og/writings.png", description: "Essays and notes by Mateo.",
     }))
     sitemapUrls.push({ url: "/writings" })
@@ -236,9 +255,9 @@ async function build() {
 
   // tags index
   {
-    const html = `<p>Browse writings by topic.</p>` + tagsIndexHtml(tagMap)
+    const html = `<p>${t("Browse writings by topic.", "Explora los escritos por tema.")}</p>` + tagsIndexHtml(tagMap)
     await emit("/tags", renderPage({
-      title: "Tags", url: "/tags", html, ogImage: "/static/og/tags.png",
+      title: "Tags", url: "/tags", html, es: { title: "Etiquetas" }, ogImage: "/static/og/tags.png",
       description: "Browse writings by tag.",
     }))
     sitemapUrls.push({ url: "/tags" })
@@ -248,9 +267,9 @@ async function build() {
   // per-tag pages
   for (const [tag, tposts] of tagMap) {
     const slug = tagSlug(tag)
-    const html = `<p>Writings tagged <strong>#${esc(tag)}</strong>.</p>` + tagPageHtml(tag, tposts)
+    const html = `<p>${t("Writings tagged", "Escritos con la etiqueta")} <strong>#${esc(tag)}</strong>.</p>` + tagPageHtml(tag, tposts)
     await emit(`/tags/${slug}`, renderPage({
-      title: `#${tag}`, url: `/tags/${slug}`, section: "tags", html,
+      title: `#${tag}`, url: `/tags/${slug}`, section: "tags", html, es: { title: `#${tag}` },
       ogImage: `/static/og/tags-${slug}.png`, description: `Writings tagged ${tag}.`,
     }))
     sitemapUrls.push({ url: `/tags/${slug}` })
@@ -294,7 +313,11 @@ async function build() {
       title: "404",
       url: "/404",
       html: `<p style="font-size:3rem;font-family:var(--font-header);margin:2rem 0 0.5rem">404</p>
-<p>This page doesn't exist (or wandered off). Try the <a href="/">home page</a> or the <a href="/writings">writings</a>.</p>`,
+<p>${t(
+        `This page doesn't exist (or wandered off). Try the <a href="/">home page</a> or the <a href="/writings">writings</a>.`,
+        `Esta página no existe (o se ha perdido). Prueba la <a href="/">página de inicio</a> o los <a href="/writings">escritos</a>.`,
+      )}</p>`,
+      es: { title: "404" },
       ogImage: "/static/og-default.png",
       description: "Page not found.",
     }),

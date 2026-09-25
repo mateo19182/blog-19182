@@ -12,3 +12,19 @@
     } catch (e) {}
   })
 })()
+
+// Language toggle. The pre-paint script sets <html lang> from the saved choice;
+// the button is disabled on pages that only exist in English.
+;(function () {
+  const btn = document.getElementById("lang-toggle")
+  if (!btn || btn.disabled) return
+  btn.addEventListener("click", function () {
+    const root = document.documentElement
+    const next = root.lang === "es" ? "en" : "es"
+    root.lang = next
+    document.title = next === "es" ? root.dataset.esTitle : root.dataset.enTitle
+    try {
+      localStorage.setItem("lang", next)
+    } catch (e) {}
+  })
+})()

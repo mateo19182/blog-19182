@@ -40,7 +40,10 @@
         const article = doc.querySelector("article.prose")
         if (!article) return null
         article.querySelectorAll("script, .archive-filter, iframe").forEach((el) => el.remove())
-        const titleEl = doc.querySelector(".article-title")
+        // Bilingual pages carry both titles; take the one matching this page.
+        const titleEl =
+          doc.querySelector(`.article-title .i18n[lang="${document.documentElement.lang}"]`) ||
+          doc.querySelector(".article-title")
         const title = titleEl ? titleEl.textContent : (doc.querySelector("title")?.textContent || "").split(" · ")[0]
         return { title, body: article.innerHTML }
       })

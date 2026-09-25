@@ -402,6 +402,26 @@ li.archive-hidden { display: none; }
 .footer-right { display: flex; align-items: center; gap: 0.8rem; margin-left: auto; }
 .footer-right .theme-toggle { width: 30px; height: 30px; }
 
+/* ---- language ---- */
+:root:not([lang="es"]) .i18n[lang="es"],
+:root[lang="es"] .i18n[lang="en"] { display: none; }
+
+.lang-toggle {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  font-size: 0.8rem;
+  color: var(--gray);
+  cursor: pointer;
+  display: flex;
+  gap: 0.35rem;
+}
+.lang-toggle:disabled { cursor: default; opacity: 0.5; }
+:root:not([lang="es"]) .lang-toggle [lang="en"],
+:root[lang="es"] .lang-toggle [lang="es"] { color: var(--dark); }
+.lang-toggle:not(:disabled):hover [lang] { color: var(--secondary); }
+
 .sand-details { display: flex; flex-direction: column; align-items: flex-end; }
 .sand-details summary {
   list-style: none;

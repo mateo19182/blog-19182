@@ -31,6 +31,9 @@ npm run serve        # build + serve at http://localhost:8080
 - A raw `.md` copy of every page, served to clients sending `Accept: text/markdown`
   via the Cloudflare Pages middleware
   ([markdown negotiation](https://isitagentready.com/.well-known/agent-skills/markdown-negotiation/)).
+- English/Spanish toggle in the footer. Add a Spanish version of a page as a sibling
+  `foo.es.md` (its frontmatter `title` is used). Both languages go into one HTML page
+  and the choice is saved in localStorage. Pages without an `.es.md` stay English.
 - Footer sand-garden easter egg (fill the canvas to win).
 - Self-hosted Umami analytics.
 

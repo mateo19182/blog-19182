@@ -6,6 +6,11 @@ description: A selection of things I've built, researched, or helped make.
 <div class="project-list">
 
 <div class="project-card">
+  <div class="project-title"><a href="https://github.com/Martinhdeez/trace-it">trace-it</a><span class="project-date">2026-09</span></div>
+  <div class="project-desc">Winner of the HackSpain hackathon. Turns operating policy described in plain language into versioned, deterministic decision processes. Agents read documents in any format, propose the rules and data sources, and compile them to tested Python; every decision is recorded with its evidence, and new versions can be backtested against past cases before publishing. Built with a team of five.</div>
+</div>
+
+<div class="project-card">
   <div class="project-title"><a href="https://datacenters.m19182.dev">Data centres in Spain</a><span class="project-date">2026-08</span></div>
   <div class="project-desc">A public, source-backed map of data centres in peninsular Spain and their relationship to the electricity transmission grid. It keeps IT load, grid connection capacity, and installed power separate, and leaves gaps and contradictions visible. <a href="https://github.com/mateo19182/mapa-datacenters-espana">code and data</a>.</div>
 </div>
