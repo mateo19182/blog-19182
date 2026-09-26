@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-09-25
+date: 2026-09-26
 tags: 
   - personal
 ---
@@ -9,6 +9,10 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Bohemian Grove - Wikipedia](https://en.wikipedia.org/wiki/Bohemian_Grove) `Wikis` *2026-09-25*
+- [Swarm Scaling — LessWrong](https://www.lesswrong.com/posts/6cb7qd3RSkgnviCpf/swarm-scaling) `Tech` *2026-09-25*
+- [Does Georgism Work? Five Years Later - by Scott Alexander](https://www.astralcodexten.com/p/does-georgism-work-five-years-later?utm_source=substack&utm_campaign=post_embed&utm_medium=web&embedding_publication_id=672686) `Reads` *2026-09-25*
+- [Why is the human body so crap except for the liver?](https://dynomight.substack.com/p/liver) `Reads` *2026-09-25*
 - [
     The Effect of CRTs on Pixel Art | datagubbe.se
   ](https://datagubbe.se/crt) `Tech` *2026-09-24*
