@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-09-26
+date: 2026-09-27
 tags: 
   - personal
 ---
@@ -9,6 +9,9 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Wikipedia:Entradas de Gallegos. Quién es quien en la Galicia del siglo XXI - Wikipedia, a enciclopedia libre](https://gl.wikipedia.org/wiki/Wikipedia:Entradas_de_Gallegos._Qui%C3%A9n_es_quien_en_la_Galicia_del_siglo_XXI) `Wikis` *2026-09-26*
+- [Revealing the details of how OpenAI agents hacked Hugging Face](https://swarmtraces.org) `Tech` *2026-09-26*
+- [SciUniverse — C5R](https://c5r.net/sciuniverse) `Tech` *2026-09-26*
 - [Bohemian Grove - Wikipedia](https://en.wikipedia.org/wiki/Bohemian_Grove) `Wikis` *2026-09-25*
 - [Swarm Scaling — LessWrong](https://www.lesswrong.com/posts/6cb7qd3RSkgnviCpf/swarm-scaling) `Tech` *2026-09-25*
 - [Does Georgism Work? Five Years Later - by Scott Alexander](https://www.astralcodexten.com/p/does-georgism-work-five-years-later?utm_source=substack&utm_campaign=post_embed&utm_medium=web&embedding_publication_id=672686) `Reads` *2026-09-25*
