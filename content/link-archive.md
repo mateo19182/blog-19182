@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-09-27
+date: 2026-09-28
 tags: 
   - personal
 ---
@@ -9,6 +9,7 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Typefoundry: Long s](https://typefoundry.blogspot.com/2008/01/long-s.html?utm_source=chatgpt.com) `Reads` *2026-09-27*
 - [Wikipedia:Entradas de Gallegos. Quién es quien en la Galicia del siglo XXI - Wikipedia, a enciclopedia libre](https://gl.wikipedia.org/wiki/Wikipedia:Entradas_de_Gallegos._Qui%C3%A9n_es_quien_en_la_Galicia_del_siglo_XXI) `Wikis` *2026-09-26*
 - [Revealing the details of how OpenAI agents hacked Hugging Face](https://swarmtraces.org) `Tech` *2026-09-26*
 - [SciUniverse — C5R](https://c5r.net/sciuniverse) `Tech` *2026-09-26*
