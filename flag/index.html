@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#171b1b" />
+  <meta name="theme-color" content="#111111" />
   <title>◇</title>
   <link rel="stylesheet" href="./style.css" />
   <script type="module" src="./src/app.js"></script>
@@ -16,7 +16,7 @@
         <div class="stage-center"><div class="flag-surround" id="flagSurround"><svg id="flagSvg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Vista previa de la bandera"></svg></div></div>
         <div class="stage-bottom"><span class="stage-frequency">◁ &nbsp; <span id="ratioLabel">3:2</span> &nbsp; ▷</span><span class="stage-bottom-center">✦ &nbsp; <span id="layerCount">00</span> &nbsp; ✦</span><span class="stage-frequency">◌ &nbsp; ◇ &nbsp; ◌</span></div>
       </section>
-      <aside class="control-panel" aria-label="Instrumento de diseño">
+      <aside class="control-panel" aria-label="Instrumento de diseño" data-deck="shape">
         <div class="plate-top"><span class="plate-mark">⟡</span><span class="plate-glyphs">◌ ─ ◇ ─ ✳ ─ ◌</span><span class="plate-mark">⟡</span></div>
         <div class="plate-tools">
           <button id="undoBtn" class="tool-key" aria-label="Deshacer">↶</button>
@@ -27,6 +27,13 @@
           <button id="shareBtn" class="tool-key" aria-label="Copiar enlace">↗</button>
           <button id="exportBtn" class="tool-key dark-key" aria-label="Exportar">↓</button>
         </div>
+        <nav class="deck-nav" aria-label="Bancos de control">
+          <button data-deck-target="format" aria-label="Formato">▭</button>
+          <button data-deck-target="layers" aria-label="Capas">▤</button>
+          <button data-deck-target="shape" aria-label="Formas">◇</button>
+          <button data-deck-target="geometry" aria-label="Geometría">⌖</button>
+          <button data-deck-target="texture" aria-label="Efectos">⠿</button>
+        </nav>
         <div class="plate-section format-section">
           <div class="section-numeral" aria-hidden="true">Ⅰ</div>
           <div class="ratio-grid" id="ratioSelect" role="group" aria-label="Proporción de la bandera"></div>
@@ -36,7 +43,7 @@
         <div class="plate-section layers-section module-layers">
           <div class="section-numeral" aria-hidden="true">Ⅱ</div>
           <div class="layer-list" id="layerList" role="list"></div>
-          <button class="add-key" id="addLayerBtn" aria-label="Añadir una capa">✚</button>
+          <div class="layer-foot"><button class="page-key" id="prevLayerPage" aria-label="Capas anteriores">◀</button><span id="layerPageLabel" aria-hidden="true">01</span><button class="add-key" id="addLayerBtn" aria-label="Añadir una capa">✚</button><button class="page-key" id="nextLayerPage" aria-label="Capas siguientes">▶</button></div>
           <div class="add-menu" id="addMenu" hidden></div>
         </div>
         <div class="plate-section editor-section">

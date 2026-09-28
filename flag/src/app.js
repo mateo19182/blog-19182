@@ -7,7 +7,8 @@ const refs = {
   inspector: $('#inspector'), addMenu: $('#addMenu'),
   ratio: $('#ratioSelect'), background: $('#backgroundColor'),
   ratioLabel: $('#ratioLabel'), layerCount: $('#layerCount'), toast: $('#toast'),
-  dialog: $('#exportDialog'), undo: $('#undoBtn'), redo: $('#redoBtn')
+  dialog: $('#exportDialog'), undo: $('#undoBtn'), redo: $('#redoBtn'),
+  panel: $('.control-panel'), pagePrev: $('#prevLayerPage'), pageNext: $('#nextLayerPage'), pageLabel: $('#layerPageLabel')
 };
 
 function loadDocument() {
@@ -30,6 +31,9 @@ let historyIndex = 0;
 let toastTimeout;
 let drag = null;
 let knobDrag = null;
+let lastKnobTap = null;
+let layerPage = 0;
+const PAGE_SIZE = 5;
 
 const selectedLayer = () => doc.layers.find(layer => layer.id === selectedId);
 const typeInfo = type => TYPES.find(item => item.id === type);
@@ -70,9 +74,10 @@ function restore(index) {
 
 function layoutPreview() {
   const { width, height } = dimensions(doc.ratio);
-  const availableWidth = refs.stageCenter.clientWidth - 4;
-  const availableHeight = Math.max(170, refs.stageCenter.clientHeight - 12);
-  refs.surround.style.width = `${Math.max(100, Math.min(availableWidth, availableHeight * width / height, 880))}px`;
+  const style = getComputedStyle(refs.stageCenter);
+  const availableWidth = Math.max(40, refs.stageCenter.clientWidth - parseFloat(style.paddingLeft) - parseFloat(style.paddingRight) - 4);
+  const availableHeight = Math.max(40, refs.stageCenter.clientHeight - parseFloat(style.paddingTop) - parseFloat(style.paddingBottom) - 8);
+  refs.surround.style.width = `${Math.max(40, Math.min(availableWidth, availableHeight * width / height, 1100))}px`;
   refs.surround.style.aspectRatio = `${width}/${height}`;
 }
 
@@ -82,15 +87,21 @@ function renderPreview() {
 }
 
 function renderLayers() {
-  refs.layerList.innerHTML = [...doc.layers].reverse().map((layer, index) => `
+  const reversed = [...doc.layers].reverse();
+  const pages = Math.max(1, Math.ceil(reversed.length / PAGE_SIZE));
+  layerPage = clamp(layerPage, 0, pages - 1);
+  refs.layerList.innerHTML = reversed.slice(layerPage * PAGE_SIZE, (layerPage + 1) * PAGE_SIZE).map((layer, index) => `
     <div class="layer-row ${layer.id === selectedId ? 'selected' : ''}" data-row-id="${esc(layer.id)}" role="listitem" tabindex="0" aria-label="Capa ${esc(label(layer.type))}">
-      <span class="layer-index">${String(doc.layers.length - index).padStart(2, '0')}</span>
+      <span class="layer-index">${String(doc.layers.length - layerPage * PAGE_SIZE - index).padStart(2, '0')}</span>
       <span class="layer-icon" aria-hidden="true">${icon(layer.type)}</span>
       <span class="layer-name">${esc(label(layer.type))}</span>
       <span class="layer-color" style="background:${layer.color}"></span>
       <span class="layer-buttons"><button data-action="visibility" aria-label="${layer.visible ? 'Ocultar' : 'Mostrar'} capa" class="${layer.visible ? '' : 'hidden-layer'}">${layer.visible ? '◉' : '◎'}</button><button data-action="up" aria-label="Subir capa">↑</button><button data-action="down" aria-label="Bajar capa">↓</button></span>
     </div>`).join('') || '<div class="inspector-empty" aria-label="Sin capas">◇</div>';
   refs.layerCount.textContent = String(doc.layers.length).padStart(2, '0');
+  refs.pageLabel.textContent = `${String(layerPage + 1).padStart(2, '0')}/${String(pages).padStart(2, '0')}`;
+  refs.pagePrev.disabled = layerPage === 0;
+  refs.pageNext.disabled = layerPage === pages - 1;
 }
 
 function knob(param, name, glyph, min, max, value, unit = '') {
@@ -149,6 +160,8 @@ function renderAll() {
 
 function select(id) {
   selectedId = id;
+  const reverseIndex = [...doc.layers].reverse().findIndex(layer => layer.id === id);
+  if (reverseIndex >= 0) layerPage = Math.floor(reverseIndex / PAGE_SIZE);
   renderPreview(); renderLayers(); renderInspector();
 }
 
@@ -157,6 +170,7 @@ function addLayer(type) {
   const layer = makeLayer(type);
   doc.layers.push(layer);
   selectedId = layer.id;
+  layerPage = 0;
   refs.addMenu.hidden = true;
   commit(); renderAll();
   toast(`${label(type)} añadido`);
@@ -275,12 +289,34 @@ async function exportPng() {
   finally { URL.revokeObjectURL(url); }
 }
 
+function resetKnob(input) {
+  const layer = selectedLayer();
+  if (!layer) return;
+  const param = input.dataset.param;
+  const defaults = makeLayer(layer.type);
+  if (!(param in defaults)) return;
+  layer[param] = defaults[param];
+  knobDrag = null;
+  commit();
+  renderAll();
+}
+
 function init() {
   refs.addMenu.innerHTML = TYPES.map(type => `<button data-add-type="${type.id}" aria-label="Añadir ${type.label}">${type.icon}</button>`).join('');
   renderAll();
   new ResizeObserver(layoutPreview).observe(refs.stageCenter);
 
   $('#addLayerBtn').addEventListener('click', () => { refs.addMenu.hidden = !refs.addMenu.hidden; });
+  refs.pagePrev.addEventListener('click', () => { layerPage--; renderLayers(); });
+  refs.pageNext.addEventListener('click', () => { layerPage++; renderLayers(); });
+  $('.deck-nav').addEventListener('click', event => {
+    const target = event.target.closest('[data-deck-target]');
+    if (!target) return;
+    refs.panel.dataset.deck = target.dataset.deckTarget;
+    for (const button of document.querySelectorAll('[data-deck-target]')) button.setAttribute('aria-pressed', String(button === target));
+    refs.addMenu.hidden = true;
+  });
+  for (const button of document.querySelectorAll('[data-deck-target]')) button.setAttribute('aria-pressed', String(button.dataset.deckTarget === refs.panel.dataset.deck));
   refs.addMenu.addEventListener('click', event => { const button = event.target.closest('[data-add-type]'); if (button) addLayer(button.dataset.addType); });
   document.addEventListener('pointerdown', event => { if (!event.target.closest('.module-layers')) refs.addMenu.hidden = true; });
   refs.layerList.addEventListener('click', event => {
@@ -328,6 +364,16 @@ function init() {
   refs.inspector.addEventListener('pointerdown', event => {
     const input = event.target.closest('.knob-body input');
     if (!input || event.button !== 0) return;
+    if (event.pointerType === 'touch') {
+      const now = performance.now();
+      if (lastKnobTap?.param === input.dataset.param && now - lastKnobTap.time < 350) {
+        event.preventDefault();
+        lastKnobTap = null;
+        resetKnob(input);
+        return;
+      }
+      lastKnobTap = { param: input.dataset.param, time: now };
+    }
     knobDrag = { input, pointerId: event.pointerId, startY: event.clientY, startValue: Number(input.value) };
     input.setPointerCapture(event.pointerId);
     event.preventDefault();
@@ -346,6 +392,10 @@ function init() {
   };
   refs.inspector.addEventListener('pointerup', finishKnob);
   refs.inspector.addEventListener('pointercancel', finishKnob);
+  refs.inspector.addEventListener('dblclick', event => {
+    const input = event.target.closest('.knob-body input');
+    if (input) { event.preventDefault(); resetKnob(input); }
+  });
   refs.ratio.addEventListener('click', event => { const value = event.target.closest('[data-ratio]')?.dataset.ratio; if (value) { doc.ratio = value; commit(); renderAll(); } });
   refs.background.addEventListener('input', () => { doc.background = refs.background.value; renderPreview(); });
   refs.background.addEventListener('change', () => { commit(); renderAll(); });

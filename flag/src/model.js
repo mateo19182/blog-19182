@@ -29,7 +29,7 @@ const color = (value, fallback) => typeof value === 'string' && hex.test(value) 
 export function makeLayer(type, overrides = {}) {
   const defaults = {
     id: crypto.randomUUID(), type, x: .5, y: .5, w: .62, h: .62, rotation: 0,
-    opacity: 1, color: '#253b43', color2: '#e46749', count: 6, detail: .28,
+    opacity: 1, color: '#303030', color2: '#858585', count: 6, detail: .28,
     dither: 0, ditherSize: .5, ditherShape: 'circle', colorMode: 'color', blur: 0, warp: 0, echo: 0,
     text: 'FLAG', visible: true
   };
@@ -48,11 +48,11 @@ export function makeLayer(type, overrides = {}) {
 
 export function initialDocument() {
   return {
-    version: 1, ratio: '3:2', background: '#e9e6da',
+    version: 1, ratio: '3:2', background: '#e7e7e1',
     layers: [
-      makeLayer('band', { x: .16, y: .5, w: .32, h: 1.25, color: '#253b43' }),
-      makeLayer('star', { x: .16, y: .5, w: .17, h: .25, color: '#e9e6da', count: 8, detail: .42 }),
-      makeLayer('circle', { x: .65, y: .5, w: .3, h: .46, color: '#e46749' })
+      makeLayer('band', { x: .16, y: .5, w: .32, h: 1.25, color: '#303030' }),
+      makeLayer('star', { x: .16, y: .5, w: .17, h: .25, color: '#e7e7e1', count: 8, detail: .42 }),
+      makeLayer('circle', { x: .65, y: .5, w: .3, h: .46, color: '#858585' })
     ]
   };
 }
