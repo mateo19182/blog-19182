@@ -52,7 +52,7 @@ export function initialDocument() {
     layers: [
       makeLayer('band', { x: .16, y: .5, w: .32, h: 1.25, color: '#303030' }),
       makeLayer('star', { x: .16, y: .5, w: .17, h: .25, color: '#e7e7e1', count: 8, detail: .42 }),
-      makeLayer('circle', { x: .65, y: .5, w: .3, h: .46, color: '#858585' })
+      makeLayer('circle', { x: .65, y: .5, w: .3, h: .46, color: '#858585', dither: .38, ditherSize: .26 })
     ]
   };
 }

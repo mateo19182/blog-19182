@@ -1,6 +1,7 @@
 import { TYPES, RATIOS, DITHER_SHAPES, COLOR_MODES, initialDocument, normalizeDocument, makeLayer, varyLayer, randomDocument, encodeDocument, decodeDocument } from './model.js';
 import { dimensions, svgMarkup } from './render.js';
 import { hexToHsl, hslToHex } from './color.js';
+import { EFFECT_PORTS, togglePatch, routePatch } from './patch.js';
 
 const $ = selector => document.querySelector(selector);
 const refs = {
@@ -33,6 +34,8 @@ let toastTimeout;
 let drag = null;
 let knobDrag = null;
 let colorDrag = null;
+let patchDrag = null;
+let ignorePatchClickUntil = 0;
 let lastKnobTap = null;
 let layerPage = 0;
 const PAGE_SIZE = 5;
@@ -159,6 +162,50 @@ function moveColorDisc(event, joystick) {
   setJoystickColor(joystick, hslToHex(hue, saturation, l));
 }
 
+function drawPatchBay() {
+  const bay = refs.inspector.querySelector('.patch-bay');
+  const layer = selectedLayer();
+  if (!bay || !layer || !bay.clientWidth) return;
+  const svg = bay.querySelector('.patch-wires');
+  const bounds = bay.getBoundingClientRect();
+  const point = element => {
+    const rect = element.getBoundingClientRect();
+    return { x: rect.left + rect.width / 2 - bounds.left, y: rect.top + rect.height / 2 - bounds.top };
+  };
+  const source = point(bay.querySelector('[data-patch-port="source"]'));
+  const path = (end, index) => {
+    const bend = 17 + index * 4;
+    const dx = end.x - source.x;
+    return `M ${source.x} ${source.y} C ${source.x + dx * .3} ${source.y + bend}, ${source.x + dx * .72} ${end.y + bend}, ${end.x} ${end.y}`;
+  };
+  svg.setAttribute('viewBox', `0 0 ${bounds.width} ${bounds.height}`);
+  let wires = EFFECT_PORTS.map((effect, index) => {
+    const end = point(bay.querySelector(`[data-patch-port="${effect.id}"]`));
+    const route = path(end, index);
+    return `<path class="patch-trace" d="${route}"/>${layer[effect.id] > 0 ? `<path class="patch-cord" d="${route}"/><path class="patch-cord-light" d="${route}"/>` : ''}`;
+  }).join('');
+  if (patchDrag?.moved) {
+    const end = patchDrag.point;
+    const start = point(patchDrag.port);
+    const dx = end.x - start.x;
+    const route = `M ${start.x} ${start.y} C ${start.x + dx * .28} ${start.y + 28}, ${start.x + dx * .75} ${end.y + 28}, ${end.x} ${end.y}`;
+    wires += `<path class="patch-cord patch-cord-live" d="${route}"/>`;
+  }
+  svg.innerHTML = wires;
+}
+
+function syncPatchBay() {
+  const layer = selectedLayer();
+  if (!layer) return;
+  for (const effect of EFFECT_PORTS) {
+    const jack = refs.inspector.querySelector(`[data-patch-port="${effect.id}"]`);
+    if (!jack) continue;
+    jack.classList.toggle('patched', layer[effect.id] > 0);
+    jack.setAttribute('aria-pressed', String(layer[effect.id] > 0));
+  }
+  drawPatchBay();
+}
+
 function renderInspector() {
   const layer = selectedLayer();
   if (!layer) {
@@ -187,7 +234,11 @@ function renderInspector() {
     </div>
     </div>
     <div class="texture-bank">
-    <div class="effect-rail" aria-hidden="true"><span>◌</span><span>╱╲╱╲</span><span>◌</span></div>
+    <div class="patch-bay" role="group" aria-label="Conexiones de efectos">
+      <svg class="patch-wires" aria-hidden="true"></svg>
+      <button class="patch-port patch-source" data-patch-port="source" aria-label="Salida de capa ${esc(label(layer.type))}" title="Arrastra hacia un efecto">${icon(layer.type)}</button>
+      <div class="patch-targets">${EFFECT_PORTS.map(effect => `<button class="patch-port patch-target ${layer[effect.id] > 0 ? 'patched' : ''}" data-patch-port="${effect.id}" aria-label="${effect.name}" aria-pressed="${layer[effect.id] > 0}" title="${effect.name}">${effect.icon}</button>`).join('')}</div>
+    </div>
     <div class="effects-bank" role="group" aria-label="Efectos de capa">
       ${knob('dither', 'Trama', '⠿', 0, 100, Math.round(layer.dither * 100))}
       ${knob('ditherSize', 'Tamaño de trama', '∙', 0, 100, Math.round(layer.ditherSize * 100))}
@@ -197,6 +248,7 @@ function renderInspector() {
     </div>
     <div class="effect-selectors"><div class="pattern-grid" role="group" aria-label="Forma de la trama">${DITHER_SHAPES.map((shape, index) => `<button data-dither-shape="${shape}" class="pattern-key ${layer.ditherShape === shape ? 'active' : ''}" aria-label="${['Círculos', 'Cuadrados', 'Rombos', 'Barras'][index]}" aria-pressed="${layer.ditherShape === shape}">${['●', '■', '◆', '▥'][index]}</button>`).join('')}</div><div class="mode-grid" role="group" aria-label="Modo de color">${COLOR_MODES.map((mode, index) => `<button data-color-mode="${mode}" class="mode-key ${layer.colorMode === mode ? 'active' : ''}" aria-label="${['Color', 'Escala de grises', 'Blanco y negro'][index]}" aria-pressed="${layer.colorMode === mode}">${['◉', '◐', '◑'][index]}</button>`).join('')}</div></div>
     </div>`;
+  requestAnimationFrame(drawPatchBay);
 }
 
 function renderAll() {
@@ -365,6 +417,7 @@ function init() {
     refs.panel.dataset.deck = target.dataset.deckTarget;
     for (const button of document.querySelectorAll('[data-deck-target]')) button.setAttribute('aria-pressed', String(button === target));
     refs.addMenu.hidden = true;
+    drawPatchBay();
   });
   for (const button of document.querySelectorAll('[data-deck-target]')) button.setAttribute('aria-pressed', String(button.dataset.deckTarget === refs.panel.dataset.deck));
   refs.addMenu.addEventListener('click', event => { const button = event.target.closest('[data-add-type]'); if (button) addLayer(button.dataset.addType); });
@@ -399,6 +452,7 @@ function init() {
     if (output) output.textContent = event.target.value + (param === 'rotation' ? '°' : ['x', 'y', 'w', 'h', 'opacity', 'detail'].includes(param) ? '%' : '');
     const body = event.target.closest('.knob-body');
     if (body) body.style.setProperty('--turn', `${-135 + (Number(event.target.value) - Number(event.target.min)) / (Number(event.target.max) - Number(event.target.min)) * 270}deg`);
+    if (EFFECT_PORTS.some(effect => effect.id === param)) syncPatchBay();
     renderPreview();
   });
   refs.inspector.addEventListener('change', event => {
@@ -408,6 +462,12 @@ function init() {
     commit(); renderAll();
   });
   refs.inspector.addEventListener('click', event => {
+    const port = event.target.closest('[data-patch-port]');
+    if (port) {
+      if (event.detail && performance.now() < ignorePatchClickUntil) { event.preventDefault(); return; }
+      if (selectedLayer() && togglePatch(selectedLayer(), port.dataset.patchPort)) { commit(); renderAll(); }
+      return;
+    }
     const ditherShape = event.target.closest('[data-dither-shape]')?.dataset.ditherShape;
     if (ditherShape && selectedLayer()) { selectedLayer().ditherShape = ditherShape; commit(); renderAll(); return; }
     const colorMode = event.target.closest('[data-color-mode]')?.dataset.colorMode;
@@ -419,6 +479,12 @@ function init() {
     if (action === 'delete') removeSelected();
   });
   refs.inspector.addEventListener('pointerdown', event => {
+    const port = event.target.closest('[data-patch-port]');
+    if (port && event.button === 0) {
+      patchDrag = { port, pointerId: event.pointerId, startX: event.clientX, startY: event.clientY, moved: false };
+      port.setPointerCapture(event.pointerId);
+      return;
+    }
     const input = event.target.closest('.knob-body input');
     if (!input || event.button !== 0) return;
     if (event.pointerType === 'touch') {
@@ -436,6 +502,18 @@ function init() {
     event.preventDefault();
   });
   refs.inspector.addEventListener('pointermove', event => {
+    if (patchDrag && event.pointerId === patchDrag.pointerId) {
+      const bay = patchDrag.port.closest('.patch-bay');
+      const bounds = bay.getBoundingClientRect();
+      patchDrag.moved ||= Math.hypot(event.clientX - patchDrag.startX, event.clientY - patchDrag.startY) > 6;
+      patchDrag.point = { x: clamp(event.clientX - bounds.left, 0, bounds.width), y: clamp(event.clientY - bounds.top, 0, bounds.height) };
+      if (patchDrag.moved) {
+        const hover = document.elementFromPoint(event.clientX, event.clientY)?.closest('.patch-target');
+        for (const target of bay.querySelectorAll('.patch-target')) target.classList.toggle('armed', target === hover);
+        drawPatchBay();
+      }
+      return;
+    }
     if (!knobDrag || event.pointerId !== knobDrag.pointerId) return;
     const { input, startY, startValue } = knobDrag;
     const span = Number(input.max) - Number(input.min);
@@ -449,6 +527,25 @@ function init() {
   };
   refs.inspector.addEventListener('pointerup', finishKnob);
   refs.inspector.addEventListener('pointercancel', finishKnob);
+  refs.inspector.addEventListener('pointerup', event => {
+    if (!patchDrag || event.pointerId !== patchDrag.pointerId) return;
+    const { port, moved } = patchDrag;
+    patchDrag = null;
+    if (!moved) return;
+    ignorePatchClickUntil = performance.now() + 100;
+    const target = document.elementFromPoint(event.clientX, event.clientY)?.closest('[data-patch-port]');
+    const destination = target?.closest('.patch-bay') === port.closest('.patch-bay') ? target.dataset.patchPort : null;
+    const changed = routePatch(selectedLayer(), port.dataset.patchPort, destination === 'source' ? null : destination);
+    if (changed) { commit(); renderAll(); }
+    else {
+      for (const target of port.closest('.patch-bay').querySelectorAll('.patch-target')) target.classList.remove('armed');
+      drawPatchBay();
+    }
+  });
+  refs.inspector.addEventListener('pointercancel', event => {
+    if (patchDrag && event.pointerId === patchDrag.pointerId) { patchDrag = null; drawPatchBay(); }
+  });
+  window.addEventListener('resize', drawPatchBay);
   refs.inspector.addEventListener('dblclick', event => {
     const input = event.target.closest('.knob-body input');
     if (input) { event.preventDefault(); resetKnob(input); }
