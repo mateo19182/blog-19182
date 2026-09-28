@@ -1,3 +1,5 @@
+import { defaultLfos, normalizeMotion } from './modulation.js';
+
 export const TYPES = [
   { id: 'band', label: 'Banda', icon: '▰', group: 'campo' },
   { id: 'stripes', label: 'Franjas', icon: '▥', group: 'campo' },
@@ -48,7 +50,7 @@ export function makeLayer(type, overrides = {}) {
 
 export function initialDocument() {
   return {
-    version: 1, ratio: '3:2', background: '#e7e7e1',
+    version: 2, ratio: '3:2', background: '#e7e7e1', lfos: defaultLfos(), routes: [],
     layers: [
       makeLayer('band', { x: .16, y: .5, w: .32, h: 1.25, color: '#303030' }),
       makeLayer('star', { x: .16, y: .5, w: .17, h: .25, color: '#e7e7e1', count: 8, detail: .42 }),
@@ -58,7 +60,7 @@ export function initialDocument() {
 }
 
 export function normalizeDocument(input) {
-  if (!input || typeof input !== 'object' || input.version !== 1 || !Array.isArray(input.layers)) return null;
+  if (!input || typeof input !== 'object' || ![1, 2].includes(input.version) || !Array.isArray(input.layers)) return null;
   const ids = new Set();
   const layers = input.layers.slice(0, 80).filter(layer => layer && typeIds.has(layer.type)).map(layer => {
     let id = typeof layer.id === 'string' && /^[\w-]{1,80}$/.test(layer.id) ? layer.id : crypto.randomUUID();
@@ -78,7 +80,7 @@ export function normalizeDocument(input) {
       text: typeof layer.text === 'string' ? layer.text.slice(0, 50) : 'FLAG', visible: layer.visible !== false
     });
   });
-  return { version: 1, ratio: RATIOS.includes(input.ratio) ? input.ratio : '3:2', background: color(input.background, '#e9e6da'), layers };
+  return { version: 2, ratio: RATIOS.includes(input.ratio) ? input.ratio : '3:2', background: color(input.background, '#e9e6da'), layers, ...normalizeMotion(input, ids) };
 }
 
 export function randomColor(except) {
@@ -104,6 +106,7 @@ export function varyLayer(layer) {
 }
 
 export function randomDocument() {
+  const n = (min, max) => min + Math.random() * (max - min);
   const groups = [['band', 'stripes', 'cross', 'saltire', 'chevron', 'triangle'], ['circle', 'star', 'sun', 'crescent', 'diamond', 'rays'], ['dots', 'checks', 'waves', 'star', 'triangle']];
   const pick = items => items[Math.floor(Math.random() * items.length)];
   const background = randomColor();
@@ -112,7 +115,11 @@ export function randomDocument() {
     layer.color = randomColor(background);
     return layer;
   });
-  return { version: 1, ratio: pick(RATIOS), background, layers };
+  const lfos = defaultLfos().map(lfo => ({ ...lfo, wave: pick(['sine', 'triangle', 'square', 'step']), rate: Math.round(n(.12, 1.2) * 100) / 100, phase: Math.round(n(0, 1) * 100) / 100, seed: Math.floor(n(0, 999999)) }));
+  const targets = ['x', 'y', 'rotation', 'opacity', 'color', 'dither', 'blur', 'warp', 'echo'];
+  const routes = layers.flatMap(layer => Math.random() < .7 ? [{ lfo: pick(lfos).id, layerId: layer.id, target: pick(targets), depth: Math.round(n(.2, .85) * 100) / 100 * (Math.random() < .25 ? -1 : 1) }] : []);
+  if (!routes.length) routes.push({ lfo: pick(lfos).id, layerId: pick(layers).id, target: pick(targets), depth: .5 });
+  return { version: 2, ratio: pick(RATIOS), background, layers, lfos, routes };
 }
 
 export function encodeDocument(doc) {

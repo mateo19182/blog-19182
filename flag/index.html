@@ -14,7 +14,7 @@
       <section class="stage" aria-label="Lienzo de la bandera">
         <div class="stage-top" aria-hidden="true"><span class="sigil">✳</span><span class="stage-coordinates">◌ &nbsp; ╱ &nbsp; ◇</span><span class="stage-pulse"></span></div>
         <div class="stage-center"><div class="flag-surround" id="flagSurround"><svg id="flagSvg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Vista previa de la bandera"></svg></div></div>
-        <div class="stage-bottom"><span class="stage-frequency">◁ &nbsp; <span id="ratioLabel">3:2</span> &nbsp; ▷</span><span class="stage-bottom-center">✦ &nbsp; <span id="layerCount">00</span> &nbsp; ✦</span><span class="stage-frequency">◌ &nbsp; ◇ &nbsp; ◌</span></div>
+        <div class="stage-bottom"><span class="stage-frequency">◁ &nbsp; <span id="ratioLabel">3:2</span> &nbsp; ▷</span><div class="stage-transport"><button id="playBtn" aria-label="Reproducir animación" aria-pressed="false">▷</button><input id="playhead" type="range" min="0" max="800" value="0" aria-label="Posición de reproducción"/><span id="timeReadout" aria-hidden="true">00:00</span></div><span class="stage-bottom-center">✦ &nbsp; <span id="layerCount">00</span> &nbsp; ✦</span></div>
       </section>
       <aside class="control-panel" aria-label="Instrumento de diseño" data-deck="shape">
         <div class="plate-top"><span class="plate-mark">⟡</span><span class="plate-glyphs">◌ ─ ◇ ─ ✳ ─ ◌</span><span class="plate-mark">⟡</span></div>
@@ -22,6 +22,7 @@
           <button id="undoBtn" class="tool-key" aria-label="Deshacer">↶</button>
           <button id="redoBtn" class="tool-key" aria-label="Rehacer">↷</button>
           <span class="tool-spacer"></span>
+          <button id="motionBtn" class="tool-key" aria-label="Osciladores" aria-pressed="false">∿</button>
           <button id="mutateBtn" class="tool-key accent-key" aria-label="Variar capa">✧</button>
           <button id="randomBtn" class="tool-key" aria-label="Variar todo">⤨</button>
           <button id="shareBtn" class="tool-key" aria-label="Copiar enlace">↗</button>
@@ -33,6 +34,7 @@
           <button data-deck-target="shape" aria-label="Formas">◇</button>
           <button data-deck-target="geometry" aria-label="Geometría">⌖</button>
           <button data-deck-target="texture" aria-label="Efectos">⠿</button>
+          <button data-deck-target="motion" aria-label="Osciladores">∿</button>
         </nav>
         <div class="plate-section format-section">
           <div class="section-numeral" aria-hidden="true">Ⅰ</div>
@@ -49,12 +51,13 @@
         <div class="plate-section editor-section">
           <div class="section-numeral" aria-hidden="true">Ⅲ</div>
           <div class="inspector" id="inspector"></div>
+          <div class="motion-bank" id="motionBank" aria-label="Osciladores"></div>
         </div>
         <div class="plate-bottom" aria-hidden="true"><span>◦ ◦ ◦ ◦ ◦ ◦ ◦ ◦</span><span>◈</span><span>◦ ◦ ◦ ◦ ◦ ◦ ◦ ◦</span></div>
       </aside>
     </main>
   </div>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <dialog id="exportDialog" class="export-dialog"><div class="dialog-head"><span>⟡ &nbsp; ◇ &nbsp; ⟡</span><button id="closeDialog" aria-label="Cerrar">×</button></div><div class="dialog-actions"><button id="downloadSvg" aria-label="Descargar SVG">◇ <small>SVG</small> ↓</button><button id="downloadPng" aria-label="Descargar PNG">▧ <small>PNG</small> ↓</button></div></dialog>
+  <dialog id="exportDialog" class="export-dialog"><div class="dialog-head"><span>⟡ &nbsp; ◇ &nbsp; ⟡</span><button id="closeDialog" aria-label="Cerrar">×</button></div><div class="dialog-actions"><button id="downloadSvg" aria-label="Descargar SVG">◇ <small>SVG</small> ↓</button><button id="downloadPng" aria-label="Descargar PNG">▧ <small>PNG</small> ↓</button><button id="downloadWebm" aria-label="Descargar animación WebM">∿ <small>WEBM</small> ↓</button></div></dialog>
 </body>
 </html>

@@ -2,6 +2,7 @@ import { TYPES, RATIOS, DITHER_SHAPES, COLOR_MODES, initialDocument, normalizeDo
 import { dimensions, svgMarkup } from './render.js';
 import { hexToHsl, hslToHex } from './color.js';
 import { EFFECT_PORTS, togglePatch, routePatch } from './patch.js';
+import { WAVES, MOD_TARGETS, frameDocument, waveValue } from './modulation.js';
 
 const $ = selector => document.querySelector(selector);
 const refs = {
@@ -10,7 +11,8 @@ const refs = {
   ratio: $('#ratioSelect'), background: $('#backgroundColor'),
   ratioLabel: $('#ratioLabel'), layerCount: $('#layerCount'), toast: $('#toast'),
   dialog: $('#exportDialog'), undo: $('#undoBtn'), redo: $('#redoBtn'),
-  panel: $('.control-panel'), pagePrev: $('#prevLayerPage'), pageNext: $('#nextLayerPage'), pageLabel: $('#layerPageLabel')
+  panel: $('.control-panel'), pagePrev: $('#prevLayerPage'), pageNext: $('#nextLayerPage'), pageLabel: $('#layerPageLabel'),
+  motion: $('#motionBank'), play: $('#playBtn'), playhead: $('#playhead'), time: $('#timeReadout'), motionButton: $('#motionBtn')
 };
 
 function loadDocument() {
@@ -38,6 +40,15 @@ let patchDrag = null;
 let ignorePatchClickUntil = 0;
 let lastKnobTap = null;
 let layerPage = 0;
+let activeLfo = 'a';
+let activeRoute = null;
+let motionDrag = null;
+let motionKnobDrag = null;
+let ignoreMotionClickUntil = 0;
+let playing = false;
+let playhead = 0;
+let lastFrame = 0;
+let frameHandle = 0;
 const PAGE_SIZE = 5;
 
 const selectedLayer = () => doc.layers.find(layer => layer.id === selectedId);
@@ -71,6 +82,7 @@ function restore(index) {
   if (index < 0 || index >= history.length) return;
   historyIndex = index;
   doc = JSON.parse(history[index]);
+  activeRoute = null;
   if (!doc.layers.some(layer => layer.id === selectedId)) selectedId = doc.layers.at(-1)?.id ?? null;
   renderAll();
   try { localStorage.setItem('flag-lab-document', history[index]); } catch { /* Optional storage. */ }
@@ -87,7 +99,7 @@ function layoutPreview() {
 }
 
 function renderPreview() {
-  refs.surround.innerHTML = svgMarkup(doc, selectedId);
+  refs.surround.innerHTML = svgMarkup(frameDocument(doc, playhead), selectedId);
   layoutPreview();
 }
 
@@ -251,20 +263,118 @@ function renderInspector() {
   requestAnimationFrame(drawPatchBay);
 }
 
+function setPlayhead(seconds) {
+  playhead = Math.max(0, seconds);
+  refs.playhead.value = Math.round(playhead % 8 * 100);
+  const whole = Math.floor(playhead);
+  refs.time.textContent = `${String(Math.floor(whole / 60)).padStart(2, '0')}:${String(whole % 60).padStart(2, '0')}`;
+  renderPreview();
+}
+
+function tick(now) {
+  if (!playing) return;
+  if (lastFrame && now - lastFrame >= 30) {
+    setPlayhead(playhead + Math.min((now - lastFrame) / 1000, .15));
+    lastFrame = now;
+    const needle = refs.motion.querySelector('.mod-scope-needle');
+    if (needle) needle.style.left = `${playhead % 8 / 8 * 100}%`;
+  } else if (!lastFrame) lastFrame = now;
+  frameHandle = requestAnimationFrame(tick);
+}
+
+function setPlaying(value) {
+  playing = value;
+  refs.play.textContent = playing ? 'Ⅱ' : '▷';
+  refs.play.setAttribute('aria-label', playing ? 'Pausar animación' : 'Reproducir animación');
+  refs.play.setAttribute('aria-pressed', String(playing));
+  cancelAnimationFrame(frameHandle);
+  lastFrame = 0;
+  if (playing) frameHandle = requestAnimationFrame(tick);
+}
+
+function drawMotionBay() {
+  const bay = refs.motion.querySelector('.mod-patch-bay');
+  if (!bay || !bay.clientWidth) return;
+  const bounds = bay.getBoundingClientRect();
+  const point = element => {
+    const rect = element.getBoundingClientRect();
+    return { x: rect.left + rect.width / 2 - bounds.left, y: rect.top + rect.height / 2 - bounds.top };
+  };
+  const svg = bay.querySelector('.mod-wires');
+  svg.setAttribute('viewBox', `0 0 ${bounds.width} ${bounds.height}`);
+  let lines = doc.routes.filter(route => route.layerId === selectedId).map(route => {
+    const source = bay.querySelector(`[data-mod-source="${route.lfo}"]`);
+    const target = bay.querySelector(`[data-mod-target="${route.target}"]`);
+    if (!source || !target) return '';
+    const a = point(source), b = point(target), middle = (a.y + b.y) / 2;
+    const d = `M ${a.x} ${a.y} C ${a.x} ${middle}, ${b.x} ${middle}, ${b.x} ${b.y}`;
+    return `<path class="mod-cord ${route.target === activeRoute ? 'selected' : ''}" d="${d}"/><path class="mod-cord-light" d="${d}"/>`;
+  }).join('');
+  if (motionDrag?.moved) {
+    const a = point(motionDrag.port), b = motionDrag.point;
+    const middle = (a.y + b.y) / 2;
+    lines += `<path class="mod-cord live" d="M ${a.x} ${a.y} C ${a.x} ${middle}, ${b.x} ${middle}, ${b.x} ${b.y}"/>`;
+  }
+  svg.innerHTML = lines;
+}
+
+function renderMotion() {
+  const layer = selectedLayer();
+  const routes = doc.routes.filter(route => route.layerId === selectedId);
+  if (!routes.some(route => route.target === activeRoute)) activeRoute = routes[0]?.target ?? null;
+  const route = routes.find(item => item.target === activeRoute);
+  refs.motion.innerHTML = `<div class="mod-patch-bay" role="group" aria-label="Conexiones de osciladores">
+    <svg class="mod-wires" aria-hidden="true"></svg>
+    <div class="mod-sources">${doc.lfos.map(lfo => `<div class="mod-source-card ${activeLfo === lfo.id ? 'active' : ''}" data-lfo-card="${lfo.id}">
+      <button class="mod-port mod-source-port" data-mod-source="${lfo.id}" aria-label="Salida del oscilador ${lfo.id.toUpperCase()}" aria-pressed="${activeLfo === lfo.id}">${lfo.id.toUpperCase()}</button>
+      <div class="mod-wave-keys" role="group" aria-label="Forma del oscilador ${lfo.id.toUpperCase()}">${WAVES.map(wave => `<button data-wave="${wave.id}" data-lfo="${lfo.id}" aria-label="${wave.name}" aria-pressed="${lfo.wave === wave.id}" class="${lfo.wave === wave.id ? 'active' : ''}">${wave.icon}</button>`).join('')}</div>
+      <div class="mod-rate">${knob(`rate-${lfo.id}`, `Velocidad ${lfo.id.toUpperCase()}`, '◷', 2, 400, Math.round(lfo.rate * 100))}${knob(`phase-${lfo.id}`, `Fase ${lfo.id.toUpperCase()}`, '◔', 0, 100, Math.round(lfo.phase * 100))}</div>
+    </div>`).join('')}</div>
+    <div class="mod-scope" aria-hidden="true"><svg viewBox="0 0 400 70" preserveAspectRatio="none">${doc.lfos.map((lfo, index) => {
+      const mid = index ? 51 : 19;
+      const path = Array.from({ length: 121 }, (_, sample) => `${sample ? 'L' : 'M'} ${sample * 400 / 120} ${mid - waveValue(lfo, sample * 8 / 120) * 11}`).join(' ');
+      return `<path d="${path}" class="mod-wave-line mod-wave-${lfo.id}"/>`;
+    }).join('')}</svg><i class="mod-scope-needle" style="left:${playhead % 8 / 8 * 100}%"></i></div>
+    <div class="mod-targets" role="group" aria-label="Destinos de la capa ${layer ? esc(label(layer.type)) : ''}">${MOD_TARGETS.map(target => {
+      const connected = routes.find(item => item.target === target.id);
+      return `<button class="mod-port mod-target-port ${connected ? 'connected' : ''} ${activeRoute === target.id ? 'selected' : ''}" data-mod-target="${target.id}" aria-label="${target.name}${connected ? `, oscilador ${connected.lfo.toUpperCase()}` : ''}" aria-pressed="${!!connected}" ${layer ? '' : 'disabled'}>${target.icon}</button>`;
+    }).join('')}</div>
+  </div><div class="mod-footer"><span class="mod-footer-glyph" aria-hidden="true">${route ? `${route.lfo.toUpperCase()} ─ ${MOD_TARGETS.find(target => target.id === route.target)?.icon}` : '◌ ─ ◌'}</span>${route ? knob('depth', 'Profundidad de modulación', '∿', -100, 100, Math.round(route.depth * 100)) : '<span class="mod-empty" aria-hidden="true">◌ ◌ ◌</span>'}<button class="mod-remove" data-mod-remove aria-label="Desconectar cable" ${route ? '' : 'disabled'}>×</button></div>`;
+  requestAnimationFrame(drawMotionBay);
+}
+
+function connectMotion(lfo, target) {
+  if (!selectedLayer() || !doc.lfos.some(item => item.id === lfo) || !MOD_TARGETS.some(item => item.id === target)) return;
+  doc.routes = doc.routes.filter(route => route.layerId !== selectedId || route.target !== target);
+  doc.routes.push({ lfo, layerId: selectedId, target, depth: .5 });
+  activeLfo = lfo;
+  activeRoute = target;
+  commit(); renderMotion(); renderPreview();
+  setPlaying(true);
+}
+
+function removeMotion(target) {
+  const oldLength = doc.routes.length;
+  doc.routes = doc.routes.filter(route => route.layerId !== selectedId || route.target !== target);
+  if (doc.routes.length === oldLength) return;
+  activeRoute = null;
+  commit(); renderMotion(); renderPreview();
+}
+
 function renderAll() {
   refs.ratio.innerHTML = RATIOS.map(value => { const [w, h] = value.split(':').map(Number); const scale = 25 / Math.max(w, h); return `<button class="ratio-key ${doc.ratio === value ? 'active' : ''}" data-ratio="${value}" aria-label="Proporción ${value}" aria-pressed="${doc.ratio === value}"><span class="ratio-shape" style="--rw:${Math.round(w * scale)}px;--rh:${Math.round(h * scale)}px"></span></button>`; }).join('');
   refs.background.innerHTML = colorJoystick('background', 'Color del fondo', doc.background);
   refs.ratioLabel.textContent = doc.ratio;
   refs.undo.disabled = historyIndex === 0;
   refs.redo.disabled = historyIndex === history.length - 1;
-  renderPreview(); renderLayers(); renderInspector();
+  renderPreview(); renderLayers(); renderInspector(); renderMotion();
 }
 
 function select(id) {
   selectedId = id;
   const reverseIndex = [...doc.layers].reverse().findIndex(layer => layer.id === id);
   if (reverseIndex >= 0) layerPage = Math.floor(reverseIndex / PAGE_SIZE);
-  renderPreview(); renderLayers(); renderInspector();
+  renderPreview(); renderLayers(); renderInspector(); renderMotion();
 }
 
 function addLayer(type) {
@@ -283,6 +393,7 @@ function removeSelected() {
   const index = doc.layers.findIndex(layer => layer.id === selectedId);
   if (index < 0) return;
   doc.layers.splice(index, 1);
+  doc.routes = doc.routes.filter(route => route.layerId !== selectedId);
   selectedId = doc.layers[Math.min(index, doc.layers.length - 1)]?.id ?? null;
   commit(); renderAll();
 }
@@ -293,6 +404,7 @@ function duplicateSelected() {
   const index = doc.layers.indexOf(layer);
   const copy = { ...layer, id: crypto.randomUUID(), x: clamp(layer.x + .055, -2, 3), y: clamp(layer.y + .055, -2, 3) };
   doc.layers.splice(index + 1, 0, copy);
+  doc.routes.push(...doc.routes.filter(route => route.layerId === layer.id).map(route => ({ ...route, layerId: copy.id })));
   selectedId = copy.id;
   commit(); renderAll();
 }
@@ -371,12 +483,12 @@ function download(blob, name) {
 }
 
 function exportSvg() {
-  download(new Blob([svgMarkup(doc)], { type: 'image/svg+xml;charset=utf-8' }), 'flag-lab.svg');
+  download(new Blob([svgMarkup(frameDocument(doc, playhead))], { type: 'image/svg+xml;charset=utf-8' }), 'flag-lab.svg');
   refs.dialog.close(); toast('SVG descargado');
 }
 
 async function exportPng() {
-  const markup = svgMarkup(doc);
+  const markup = svgMarkup(frameDocument(doc, playhead));
   const url = URL.createObjectURL(new Blob([markup], { type: 'image/svg+xml;charset=utf-8' }));
   try {
     const img = new Image();
@@ -391,6 +503,55 @@ async function exportPng() {
   finally { URL.revokeObjectURL(url); }
 }
 
+async function drawVideoFrame(ctx, frame, width, height) {
+  const markup = svgMarkup(frameDocument(doc, frame));
+  const url = URL.createObjectURL(new Blob([markup], { type: 'image/svg+xml;charset=utf-8' }));
+  try {
+    const img = new Image();
+    await new Promise((resolve, reject) => { img.onload = resolve; img.onerror = reject; img.src = url; });
+    ctx.drawImage(img, 0, 0, width, height);
+  } finally { URL.revokeObjectURL(url); }
+}
+
+async function exportWebm() {
+  const button = $('#downloadWebm');
+  if (!window.MediaRecorder || !HTMLCanvasElement.prototype.captureStream) return toast('Vídeo no disponible aquí');
+  const mime = ['video/webm;codecs=vp9', 'video/webm;codecs=vp8', 'video/webm'].find(type => MediaRecorder.isTypeSupported(type));
+  if (!mime) return toast('Vídeo no disponible aquí');
+  button.disabled = true;
+  button.querySelector('small').textContent = '●';
+  const canvas = document.createElement('canvas');
+  const size = dimensions(doc.ratio);
+  canvas.width = 1200;
+  canvas.height = Math.round(1200 * size.height / size.width);
+  const ctx = canvas.getContext('2d');
+  const stream = canvas.captureStream(0);
+  const track = stream.getVideoTracks()[0];
+  const chunks = [];
+  let recorder;
+  try {
+    await drawVideoFrame(ctx, 0, canvas.width, canvas.height);
+    track.requestFrame();
+    recorder = new MediaRecorder(stream, { mimeType: mime, videoBitsPerSecond: 4500000 });
+    const stopped = new Promise((resolve, reject) => { recorder.onstop = resolve; recorder.onerror = reject; });
+    recorder.ondataavailable = event => { if (event.data.size) chunks.push(event.data); };
+    recorder.start();
+    const start = performance.now();
+    for (let frame = 1; frame <= 144; frame++) {
+      const wait = start + frame * 1000 / 24 - performance.now();
+      if (wait > 0) await new Promise(resolve => setTimeout(resolve, wait));
+      await drawVideoFrame(ctx, frame / 24, canvas.width, canvas.height);
+      track.requestFrame();
+    }
+    recorder.stop();
+    await stopped;
+    if (!chunks.length) throw new Error('Empty recording');
+    download(new Blob(chunks, { type: mime }), 'flag-lab.webm');
+    refs.dialog.close(); toast('WEBM descargado');
+  } catch { if (recorder?.state === 'recording') recorder.stop(); toast('No se pudo crear el vídeo'); }
+  finally { stream.getTracks().forEach(item => item.stop()); button.disabled = false; button.querySelector('small').textContent = 'WEBM'; }
+}
+
 function resetKnob(input) {
   const layer = selectedLayer();
   if (!layer) return;
@@ -403,10 +564,39 @@ function resetKnob(input) {
   renderAll();
 }
 
+function resetMotionKnob(input) {
+  const param = input.dataset.param;
+  if (param === 'depth') {
+    const route = doc.routes.find(item => item.layerId === selectedId && item.target === activeRoute);
+    if (!route) return;
+    route.depth = .5;
+  } else {
+    const [key, id] = param.split('-');
+    const lfo = doc.lfos.find(item => item.id === id);
+    if (!lfo) return;
+    lfo[key] = key === 'rate' ? (id === 'a' ? .35 : .21) : (id === 'a' ? 0 : .25);
+  }
+  motionKnobDrag = null;
+  commit(); renderMotion(); renderPreview();
+}
+
 function init() {
   refs.addMenu.innerHTML = TYPES.map(type => `<button data-add-type="${type.id}" aria-label="Añadir ${type.label}">${type.icon}</button>`).join('');
   renderAll();
+  if (doc.routes.length && !matchMedia('(prefers-reduced-motion: reduce)').matches) setPlaying(true);
   new ResizeObserver(layoutPreview).observe(refs.stageCenter);
+
+  function setDeck(deck) {
+    refs.panel.dataset.deck = deck;
+    refs.motionButton.setAttribute('aria-pressed', String(deck === 'motion'));
+    for (const button of document.querySelectorAll('[data-deck-target]')) button.setAttribute('aria-pressed', String(button.dataset.deckTarget === deck));
+    refs.addMenu.hidden = true;
+    requestAnimationFrame(() => { drawPatchBay(); drawMotionBay(); });
+  }
+  refs.motionButton.addEventListener('click', () => setDeck(refs.panel.dataset.deck === 'motion' ? 'shape' : 'motion'));
+  refs.play.addEventListener('click', () => setPlaying(!playing));
+  refs.playhead.addEventListener('input', event => { setPlaying(false); setPlayhead(Number(event.target.value) / 100); });
+  document.addEventListener('visibilitychange', () => { if (document.hidden && playing) setPlaying(false); });
 
   $('#addLayerBtn').addEventListener('click', () => { refs.addMenu.hidden = !refs.addMenu.hidden; });
   refs.pagePrev.addEventListener('click', () => { layerPage--; renderLayers(); });
@@ -414,12 +604,120 @@ function init() {
   $('.deck-nav').addEventListener('click', event => {
     const target = event.target.closest('[data-deck-target]');
     if (!target) return;
-    refs.panel.dataset.deck = target.dataset.deckTarget;
-    for (const button of document.querySelectorAll('[data-deck-target]')) button.setAttribute('aria-pressed', String(button === target));
-    refs.addMenu.hidden = true;
-    drawPatchBay();
+    setDeck(target.dataset.deckTarget);
   });
   for (const button of document.querySelectorAll('[data-deck-target]')) button.setAttribute('aria-pressed', String(button.dataset.deckTarget === refs.panel.dataset.deck));
+  refs.motion.addEventListener('click', event => {
+    if (event.detail && performance.now() < ignoreMotionClickUntil) return;
+    const source = event.target.closest('[data-mod-source]');
+    if (source) { activeLfo = source.dataset.modSource; renderMotion(); return; }
+    const target = event.target.closest('[data-mod-target]');
+    if (target) {
+      const existing = doc.routes.find(route => route.layerId === selectedId && route.target === target.dataset.modTarget);
+      if (existing?.target === activeRoute) removeMotion(existing.target);
+      else if (existing) { activeRoute = existing.target; activeLfo = existing.lfo; renderMotion(); }
+      else connectMotion(activeLfo, target.dataset.modTarget);
+      return;
+    }
+    const wave = event.target.closest('[data-wave]');
+    if (wave) {
+      doc.lfos.find(lfo => lfo.id === wave.dataset.lfo).wave = wave.dataset.wave;
+      commit(); renderMotion(); renderPreview();
+      return;
+    }
+    if (event.target.closest('[data-mod-remove]') && activeRoute) removeMotion(activeRoute);
+  });
+  refs.motion.addEventListener('input', event => {
+    const param = event.target.dataset.param;
+    if (!param) return;
+    const value = Number(event.target.value);
+    if (param === 'depth') {
+      const route = doc.routes.find(item => item.layerId === selectedId && item.target === activeRoute);
+      if (route) route.depth = value / 100;
+    } else {
+      const [key, id] = param.split('-');
+      const lfo = doc.lfos.find(item => item.id === id);
+      if (lfo && key === 'rate') lfo.rate = value / 100;
+      if (lfo && key === 'phase') lfo.phase = value / 100;
+    }
+    const output = refs.motion.querySelector(`[data-output="${param}"]`);
+    if (output) output.textContent = value;
+    const body = event.target.closest('.knob-body');
+    body?.style.setProperty('--turn', `${-135 + (value - Number(event.target.min)) / (Number(event.target.max) - Number(event.target.min)) * 270}deg`);
+    renderPreview();
+  });
+  refs.motion.addEventListener('change', event => { if (event.target.dataset.param) commit(); });
+  refs.motion.addEventListener('pointerdown', event => {
+    if (event.button !== 0) return;
+    const port = event.target.closest('[data-mod-source], [data-mod-target]');
+    if (port) {
+      motionDrag = { port, pointerId: event.pointerId, startX: event.clientX, startY: event.clientY, moved: false };
+      port.setPointerCapture(event.pointerId);
+      return;
+    }
+    const input = event.target.closest('.knob-body input');
+    if (!input) return;
+    if (event.pointerType === 'touch') {
+      const now = performance.now();
+      if (lastKnobTap?.param === input.dataset.param && now - lastKnobTap.time < 350) {
+        event.preventDefault(); lastKnobTap = null;
+        resetMotionKnob(input); return;
+      }
+      lastKnobTap = { param: input.dataset.param, time: now };
+    }
+    motionKnobDrag = { input, pointerId: event.pointerId, startY: event.clientY, startValue: Number(input.value) };
+    input.setPointerCapture(event.pointerId);
+    event.preventDefault();
+  });
+  refs.motion.addEventListener('pointermove', event => {
+    if (motionDrag && event.pointerId === motionDrag.pointerId) {
+      const bay = refs.motion.querySelector('.mod-patch-bay');
+      const bounds = bay.getBoundingClientRect();
+      motionDrag.moved ||= Math.hypot(event.clientX - motionDrag.startX, event.clientY - motionDrag.startY) > 6;
+      motionDrag.point = { x: clamp(event.clientX - bounds.left, 0, bounds.width), y: clamp(event.clientY - bounds.top, 0, bounds.height) };
+      if (motionDrag.moved) {
+        const hover = document.elementFromPoint(event.clientX, event.clientY)?.closest('[data-mod-target]');
+        for (const target of bay.querySelectorAll('[data-mod-target]')) target.classList.toggle('armed', target === hover);
+        drawMotionBay();
+      }
+      return;
+    }
+    if (!motionKnobDrag || event.pointerId !== motionKnobDrag.pointerId) return;
+    const { input, startY, startValue } = motionKnobDrag;
+    const span = Number(input.max) - Number(input.min);
+    const value = Math.round(clamp(startValue + (startY - event.clientY) * span / 180, Number(input.min), Number(input.max)));
+    if (value !== Number(input.value)) { input.value = value; input.dispatchEvent(new Event('input', { bubbles: true })); }
+  });
+  refs.motion.addEventListener('pointerup', event => {
+    if (motionKnobDrag?.pointerId === event.pointerId) { motionKnobDrag = null; commit(); }
+    if (!motionDrag || motionDrag.pointerId !== event.pointerId) return;
+    const { port, moved } = motionDrag;
+    motionDrag = null;
+    if (!moved) return;
+    ignoreMotionClickUntil = performance.now() + 120;
+    const hit = document.elementFromPoint(event.clientX, event.clientY)?.closest('[data-mod-target]');
+    const target = hit?.closest('.mod-patch-bay') === port.closest('.mod-patch-bay') ? hit.dataset.modTarget : null;
+    if (port.dataset.modSource && target) connectMotion(port.dataset.modSource, target);
+    else if (port.dataset.modTarget && target && target !== port.dataset.modTarget) {
+      const route = doc.routes.find(item => item.layerId === selectedId && item.target === port.dataset.modTarget);
+      if (route) {
+        doc.routes = doc.routes.filter(item => item.layerId !== selectedId || item.target !== target);
+        route.target = target;
+        activeRoute = target;
+        activeLfo = route.lfo;
+        commit(); renderMotion(); renderPreview();
+      }
+    } else if (port.dataset.modTarget && !target) removeMotion(port.dataset.modTarget);
+    else renderMotion();
+  });
+  refs.motion.addEventListener('pointercancel', event => {
+    if (motionDrag?.pointerId === event.pointerId) { motionDrag = null; renderMotion(); }
+    if (motionKnobDrag?.pointerId === event.pointerId) { motionKnobDrag = null; commit(); }
+  });
+  refs.motion.addEventListener('dblclick', event => {
+    const input = event.target.closest('.knob-body input');
+    if (input) { event.preventDefault(); resetMotionKnob(input); }
+  });
   refs.addMenu.addEventListener('click', event => { const button = event.target.closest('[data-add-type]'); if (button) addLayer(button.dataset.addType); });
   document.addEventListener('pointerdown', event => { if (!event.target.closest('.module-layers')) refs.addMenu.hidden = true; });
   refs.layerList.addEventListener('click', event => {
@@ -545,7 +843,7 @@ function init() {
   refs.inspector.addEventListener('pointercancel', event => {
     if (patchDrag && event.pointerId === patchDrag.pointerId) { patchDrag = null; drawPatchBay(); }
   });
-  window.addEventListener('resize', drawPatchBay);
+  window.addEventListener('resize', () => { drawPatchBay(); drawMotionBay(); });
   refs.inspector.addEventListener('dblclick', event => {
     const input = event.target.closest('.knob-body input');
     if (input) { event.preventDefault(); resetKnob(input); }
@@ -600,9 +898,11 @@ function init() {
   refs.surround.addEventListener('pointercancel', finishDrag);
   $('#mutateBtn').addEventListener('click', () => {
     const layer = selectedLayer(); if (!layer) return toast('Selecciona una capa');
-    Object.assign(layer, varyLayer(layer)); commit(); renderAll();
+    Object.assign(layer, varyLayer(layer));
+    for (const route of doc.routes.filter(item => item.layerId === layer.id)) route.depth = Math.round((.2 + Math.random() * .65) * 100) / 100 * (Math.random() < .25 ? -1 : 1);
+    commit(); renderAll();
   });
-  $('#randomBtn').addEventListener('click', () => { doc = randomDocument(); selectedId = doc.layers.at(-1)?.id ?? null; commit(); renderAll(); });
+  $('#randomBtn').addEventListener('click', () => { doc = randomDocument(); selectedId = doc.layers.at(-1)?.id ?? null; activeRoute = null; commit(); setPlayhead(0); renderAll(); setPlaying(doc.routes.length > 0 && !matchMedia('(prefers-reduced-motion: reduce)').matches); });
   refs.undo.addEventListener('click', () => restore(historyIndex - 1));
   refs.redo.addEventListener('click', () => restore(historyIndex + 1));
   $('#shareBtn').addEventListener('click', share);
@@ -610,6 +910,7 @@ function init() {
   $('#closeDialog').addEventListener('click', () => refs.dialog.close());
   $('#downloadSvg').addEventListener('click', exportSvg);
   $('#downloadPng').addEventListener('click', exportPng);
+  $('#downloadWebm').addEventListener('click', exportWebm);
   document.addEventListener('keydown', event => {
     const editing = ['INPUT', 'TEXTAREA', 'SELECT'].includes(document.activeElement.tagName);
     if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === 'z') { event.preventDefault(); restore(historyIndex + (event.shiftKey ? 1 : -1)); }
@@ -620,7 +921,7 @@ function init() {
   window.addEventListener('hashchange', () => {
     const value = new URLSearchParams(location.hash.slice(1)).get('d');
     const fromLink = decodeDocument(value);
-    if (fromLink) { doc = fromLink; selectedId = doc.layers.at(-1)?.id ?? null; history = [JSON.stringify(doc)]; historyIndex = 0; renderAll(); }
+    if (fromLink) { doc = fromLink; selectedId = doc.layers.at(-1)?.id ?? null; activeRoute = null; history = [JSON.stringify(doc)]; historyIndex = 0; setPlayhead(0); renderAll(); setPlaying(doc.routes.length > 0 && !matchMedia('(prefers-reduced-motion: reduce)').matches); }
   });
 }
 

@@ -57,3 +57,60 @@
 .texture-bank{gap:5px}.texture-bank .effects-bank{padding-top:5px}.texture-bank .effect-selectors{margin-top:1px}
 @media(max-width:900px){.patch-bay{height:70px;max-width:560px;width:100%;margin:auto}.texture-bank{gap:9px}.texture-bank .effect-selectors{margin-top:2px}}
 @media(max-width:900px) and (max-height:600px){.patch-bay{height:38px;padding:1px 8px}.patch-source{width:25px;height:25px;font-size:15px}.patch-target{width:22px;height:22px;border-width:2px;font-size:11px}.patch-targets{margin-left:12px}.texture-bank{gap:2px}.texture-bank .effects-bank{padding-top:2px}.texture-bank .effect-selectors{margin-top:0}}
+
+/* A separate modulation deck shares the editor's footprint. */
+.stage-transport{display:flex;align-items:center;gap:7px;min-width:100px;width:min(29vw,240px)}
+.stage-transport button{flex:none;width:21px;height:20px;border:1px solid #797973;background:#222;color:#deded8;font:13px 'Courier New',monospace;line-height:1;cursor:pointer}
+.stage-transport button[aria-pressed=true]{background:#d0d0ca;color:#222}
+.stage-transport input{flex:1;min-width:0;height:12px;margin:0;accent-color:#d8d8d0;cursor:ew-resize}
+.stage-transport span{flex:none;min-width:31px;font:9px 'Courier New',monospace;letter-spacing:0}
+#motionBtn[aria-pressed=true]{background:#333;color:#eee;border-color:#333}
+.motion-bank{display:none;height:100%;min-height:0;flex-direction:column;gap:5px}
+.control-panel[data-deck=motion] .inspector{display:none}
+.control-panel[data-deck=motion] .motion-bank{display:flex}
+.mod-patch-bay{position:relative;flex:1;min-height:0;display:flex;flex-direction:column;gap:7px;padding:4px 6px;background:linear-gradient(#d6d6cf,#c7c7c0);border:1px solid #999;box-shadow:inset 0 1px #f5f5ec}
+.mod-wires{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;overflow:hidden}
+.mod-cord,.mod-cord-light{fill:none;stroke-linecap:round}
+.mod-cord{stroke:#282825;stroke-width:4;filter:drop-shadow(0 2px 1px #777)}
+.mod-cord.selected{stroke:#111;stroke-width:6}
+.mod-cord.live{stroke-dasharray:5 4}
+.mod-cord-light{stroke:#dddcd3;stroke-width:1}
+.mod-sources{position:relative;z-index:1;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;flex:none}
+.mod-source-card{min-width:0;display:flex;align-items:center;justify-content:space-around;gap:4px;padding:4px;background:#d8d8d1;border:1px solid #9b9b94;box-shadow:inset 0 1px #f6f6ed}
+.mod-source-card.active{border-color:#31312e}
+.mod-port{position:relative;z-index:1;flex:none;display:grid;place-items:center;width:27px;height:27px;padding:0;border:3px solid #42423f;border-radius:50%;background:radial-gradient(circle at 34% 24%,#777771,#272725 75%);box-shadow:0 0 0 2px #aaa9a1,inset 0 1px 2px #111;color:#ecece4;font:12px 'Courier New',monospace;cursor:grab;touch-action:none}
+.mod-port:hover,.mod-port.armed{box-shadow:0 0 0 3px #555,inset 0 1px 2px #111}
+.mod-source-port{width:31px;height:31px;font-size:15px}
+.mod-wave-keys{display:flex;flex-wrap:wrap;justify-content:center;gap:2px;max-width:116px}
+.mod-wave-keys button{width:23px;height:23px;padding:0;border:1px solid #aaa;background:#e5e5de;color:#555;font:13px 'Courier New',monospace}
+.mod-wave-keys button.active{background:#333;color:#eee;border-color:#333}
+.mod-rate{display:flex;gap:3px}
+.mod-rate .knob-unit{height:48px;width:36px;gap:0}
+.mod-rate .knob-body{width:28px;height:28px;border-width:2px}
+.mod-rate .knob-body:after{height:9px;transform-origin:center 11px}
+.mod-rate .knob-glyph{height:10px;font-size:10px}
+.mod-rate .knob-unit output{font-size:8px}
+.mod-scope{position:relative;z-index:0;flex:1;min-height:20px;margin:0 5px;background:repeating-linear-gradient(0deg,#3737310b 0 1px,transparent 1px 9px),repeating-linear-gradient(90deg,#3737310b 0 1px,transparent 1px 18px),#c2c2ba;border:1px solid #989890;box-shadow:inset 0 1px 3px #6667;overflow:hidden}
+.mod-scope svg{display:block;width:100%;height:100%}
+.mod-wave-line{fill:none;stroke:#343431;stroke-width:1.6;vector-effect:non-scaling-stroke}
+.mod-wave-b{stroke:#77776f;stroke-dasharray:3 2}
+.mod-scope-needle{position:absolute;top:0;bottom:0;width:1px;background:#f4f4ea;box-shadow:0 0 0 1px #3338,0 0 4px #222;pointer-events:none}
+.mod-targets{position:relative;z-index:1;flex:none;min-height:32px;display:grid;grid-template-columns:repeat(13,minmax(0,1fr));align-items:center;justify-items:center;gap:3px;padding:3px 2px}
+.mod-target-port.connected{border-color:#f2f2eb;box-shadow:0 0 0 2px #292926,inset 0 0 0 1px #111;color:#fff}
+.mod-target-port.selected{background:#111}
+.mod-target-port:disabled{opacity:.35;cursor:default}
+.mod-footer{display:flex;align-items:center;justify-content:center;gap:12px;flex:none;height:58px;background:#d3d3cc;border:1px solid #aaa}
+.mod-footer-glyph{min-width:51px;color:#555;font:13px 'Courier New',monospace;text-align:center}
+.mod-footer .knob-unit{height:53px;gap:0}
+.mod-footer .knob-body{width:32px;height:32px}
+.mod-footer .knob-body:after{height:10px;transform-origin:center 13px}
+.mod-empty{height:53px;display:grid;place-items:center;color:#777}
+.mod-remove{width:26px;height:26px;border:1px solid #aaa;background:#e4e4dc;color:#333;font-size:18px}
+.mod-remove:disabled{opacity:.35}
+.export-dialog{width:min(440px,calc(100vw - 25px))}
+.dialog-actions{flex-wrap:wrap}
+.dialog-actions button{min-width:95px}
+@media(max-width:900px){.control-panel[data-deck=motion] .editor-section{display:flex;align-items:center;justify-content:center}.control-panel[data-deck=motion] .motion-bank{width:100%;max-width:650px}.mod-targets{grid-template-columns:repeat(7,minmax(0,1fr));min-height:62px}.mod-patch-bay{gap:4px}.mod-source-card{padding:3px}.mod-footer{height:52px}.mod-footer .knob-unit{height:49px}}
+@media(max-width:520px){.stage-transport{width:44vw;gap:3px}.stage-transport span{font-size:8px;min-width:24px}.mod-sources{gap:4px}.mod-source-card{gap:2px}.mod-wave-keys{max-width:50px}.mod-wave-keys button{width:21px;height:19px;font-size:11px}.mod-rate{gap:0}.mod-rate .knob-unit{width:30px}.mod-rate .knob-body{width:25px;height:25px}.mod-source-port{width:26px;height:26px;font-size:12px}.mod-target-port{width:25px;height:25px;font-size:11px}.mod-footer{height:49px}.mod-footer .knob-unit{height:45px}.mod-footer .knob-body{width:26px;height:26px}}
+@media(max-width:900px) and (max-height:600px){.stage-transport button{height:17px;width:19px}.mod-patch-bay{gap:2px;padding:2px 4px}.mod-source-card{padding:1px}.mod-rate .knob-unit{height:37px}.mod-rate .knob-body{width:21px;height:21px}.mod-rate .knob-body:after{height:7px;transform-origin:center 9px}.mod-wave-keys button{height:17px}.mod-targets{grid-template-columns:repeat(13,minmax(0,1fr));padding:0;min-height:24px}.mod-target-port{width:21px;height:21px;border-width:2px;font-size:10px}.mod-footer{height:37px}.mod-footer .knob-unit{height:35px}.mod-footer .knob-body{width:20px;height:20px}.mod-footer .knob-body:after{height:6px;transform-origin:center 9px}.mod-footer .knob-glyph{height:8px;font-size:9px}}
+@media(max-width:520px) and (max-height:600px) and (orientation:portrait){.mod-targets{grid-template-columns:repeat(7,minmax(0,1fr));min-height:48px}}
