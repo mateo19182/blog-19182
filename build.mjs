@@ -279,6 +279,7 @@ async function build() {
   // static assets
   await copyDir(path.join(ROOT, "assets"), path.join(OUT, "static"))
   await copyDir(path.join(ROOT, "scripts"), path.join(OUT, "scripts"))
+  await copyDir(path.join(ROOT, "flag"), path.join(OUT, "flag"))
   if (dataFiles.length) await copyDir(path.join(CONTENT, "data"), path.join(OUT, "data"))
 
   // alias redirects (frontmatter `aliases`)

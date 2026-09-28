@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#171b1b" />
+  <title>◇</title>
+  <link rel="stylesheet" href="./style.css" />
+  <script type="module" src="./src/app.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <main class="workspace">
+      <section class="stage" aria-label="Lienzo de la bandera">
+        <div class="stage-top" aria-hidden="true"><span class="sigil">✳</span><span class="stage-coordinates">◌ &nbsp; ╱ &nbsp; ◇</span><span class="stage-pulse"></span></div>
+        <div class="stage-center"><div class="flag-surround" id="flagSurround"><svg id="flagSvg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Vista previa de la bandera"></svg></div></div>
+        <div class="stage-bottom"><span class="stage-frequency">◁ &nbsp; <span id="ratioLabel">3:2</span> &nbsp; ▷</span><span class="stage-bottom-center">✦ &nbsp; <span id="layerCount">00</span> &nbsp; ✦</span><span class="stage-frequency">◌ &nbsp; ◇ &nbsp; ◌</span></div>
+      </section>
+      <aside class="control-panel" aria-label="Instrumento de diseño">
+        <div class="plate-top"><span class="plate-mark">⟡</span><span class="plate-glyphs">◌ ─ ◇ ─ ✳ ─ ◌</span><span class="plate-mark">⟡</span></div>
+        <div class="plate-tools">
+          <button id="undoBtn" class="tool-key" aria-label="Deshacer">↶</button>
+          <button id="redoBtn" class="tool-key" aria-label="Rehacer">↷</button>
+          <span class="tool-spacer"></span>
+          <button id="mutateBtn" class="tool-key accent-key" aria-label="Variar capa">✧</button>
+          <button id="randomBtn" class="tool-key" aria-label="Variar todo">⤨</button>
+          <button id="shareBtn" class="tool-key" aria-label="Copiar enlace">↗</button>
+          <button id="exportBtn" class="tool-key dark-key" aria-label="Exportar">↓</button>
+        </div>
+        <div class="plate-section format-section">
+          <div class="section-numeral" aria-hidden="true">Ⅰ</div>
+          <div class="ratio-grid" id="ratioSelect" role="group" aria-label="Proporción de la bandera"></div>
+          <div class="patch-line"><span class="jack"></span><span class="wire"></span><span class="jack"></span></div>
+          <div class="base-color"><span class="base-symbol" aria-hidden="true">▧</span><label class="color-socket"><input type="color" id="backgroundColor" value="#e9e6da" aria-label="Color del fondo"><span class="socket-ring"></span></label><span class="base-symbol" aria-hidden="true">◩</span></div>
+        </div>
+        <div class="plate-section layers-section module-layers">
+          <div class="section-numeral" aria-hidden="true">Ⅱ</div>
+          <div class="layer-list" id="layerList" role="list"></div>
+          <button class="add-key" id="addLayerBtn" aria-label="Añadir una capa">✚</button>
+          <div class="add-menu" id="addMenu" hidden></div>
+        </div>
+        <div class="plate-section editor-section">
+          <div class="section-numeral" aria-hidden="true">Ⅲ</div>
+          <div class="inspector" id="inspector"></div>
+        </div>
+        <div class="plate-bottom" aria-hidden="true"><span>◦ ◦ ◦ ◦ ◦ ◦ ◦ ◦</span><span>◈</span><span>◦ ◦ ◦ ◦ ◦ ◦ ◦ ◦</span></div>
+      </aside>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <dialog id="exportDialog" class="export-dialog"><div class="dialog-head"><span>⟡ &nbsp; ◇ &nbsp; ⟡</span><button id="closeDialog" aria-label="Cerrar">×</button></div><div class="dialog-actions"><button id="downloadSvg" aria-label="Descargar SVG">◇ <small>SVG</small> ↓</button><button id="downloadPng" aria-label="Descargar PNG">▧ <small>PNG</small> ↓</button></div></dialog>
+</body>
+</html>
