@@ -1,5 +1,6 @@
 import { TYPES, RATIOS, DITHER_SHAPES, COLOR_MODES, initialDocument, normalizeDocument, makeLayer, varyLayer, randomDocument, encodeDocument, decodeDocument } from './model.js';
 import { dimensions, svgMarkup } from './render.js';
+import { hexToHsl, hslToHex } from './color.js';
 
 const $ = selector => document.querySelector(selector);
 const refs = {
@@ -31,6 +32,7 @@ let historyIndex = 0;
 let toastTimeout;
 let drag = null;
 let knobDrag = null;
+let colorDrag = null;
 let lastKnobTap = null;
 let layerPage = 0;
 const PAGE_SIZE = 5;
@@ -109,6 +111,54 @@ function knob(param, name, glyph, min, max, value, unit = '') {
   return `<div class="knob-unit"><span class="knob-glyph" aria-hidden="true">${glyph}</span><div class="knob-body" style="--turn:${turn}deg"><input type="range" min="${min}" max="${max}" step="1" value="${value}" data-param="${param}" aria-label="${name}"/></div><output data-output="${param}">${value}${unit}</output></div>`;
 }
 
+function colorJoystick(param, name, color) {
+  const { h, s, l } = hexToHsl(color);
+  const angle = h * Math.PI / 180;
+  const x = Math.sin(angle) * s * 41;
+  const y = -Math.cos(angle) * s * 41;
+  return `<div class="color-joystick" data-color-param="${param}" style="--color:${color};--hue:${h};--x:${x}%;--y:${y}%">
+    <div class="color-disc" role="slider" tabindex="0" aria-label="${name}: tono y saturación" aria-valuemin="0" aria-valuemax="360" aria-valuenow="${Math.round(h)}" aria-valuetext="Tono ${Math.round(h)} grados, saturación ${Math.round(s * 100)} por ciento" title="Arrastra: tono y saturación"><span class="color-puck"></span></div>
+    <input class="color-lightness" type="range" min="0" max="100" value="${Math.round(l * 100)}" aria-label="${name}: luminosidad" title="Luminosidad" style="--level:${l * 100}%"/>
+  </div>`;
+}
+
+function paintJoystick(joystick, color) {
+  const { h, s, l } = hexToHsl(color);
+  const angle = h * Math.PI / 180;
+  joystick.style.setProperty('--color', color);
+  joystick.style.setProperty('--hue', h);
+  joystick.style.setProperty('--x', `${Math.sin(angle) * s * 41}%`);
+  joystick.style.setProperty('--y', `${-Math.cos(angle) * s * 41}%`);
+  const disc = joystick.querySelector('.color-disc');
+  disc.setAttribute('aria-valuenow', String(Math.round(h)));
+  disc.setAttribute('aria-valuetext', `Tono ${Math.round(h)} grados, saturación ${Math.round(s * 100)} por ciento`);
+  const lightness = joystick.querySelector('.color-lightness');
+  lightness.value = Math.round(l * 100);
+  lightness.style.setProperty('--level', `${l * 100}%`);
+}
+
+function setJoystickColor(joystick, color) {
+  const param = joystick.dataset.colorParam;
+  if (param === 'background') doc.background = color;
+  else if (selectedLayer()) selectedLayer()[param] = color;
+  paintJoystick(joystick, color);
+  renderPreview();
+  if (param !== 'background') {
+    const swatch = refs.layerList.querySelector('.layer-row.selected .layer-color');
+    if (swatch && param === 'color') swatch.style.background = color;
+  }
+}
+
+function moveColorDisc(event, joystick) {
+  const bounds = joystick.querySelector('.color-disc').getBoundingClientRect();
+  const dx = (event.clientX - bounds.left - bounds.width / 2) / (bounds.width / 2);
+  const dy = (event.clientY - bounds.top - bounds.height / 2) / (bounds.height / 2);
+  const { h: oldHue, l } = hexToHsl(joystick.style.getPropertyValue('--color'));
+  const saturation = clamp(Math.hypot(dx, dy), 0, 1);
+  const hue = saturation < .03 ? oldHue : (Math.atan2(dx, -dy) * 180 / Math.PI + 360) % 360;
+  setJoystickColor(joystick, hslToHex(hue, saturation, l));
+}
+
 function renderInspector() {
   const layer = selectedLayer();
   if (!layer) {
@@ -121,7 +171,7 @@ function renderInspector() {
     <div class="oscillator-bank">
     <div class="type-grid" role="group" aria-label="Forma de la capa">${TYPES.map(type => `<button class="type-key ${type.id === layer.type ? 'active' : ''}" data-type="${type.id}" aria-label="${type.label}" aria-pressed="${type.id === layer.type}">${type.icon}</button>`).join('')}</div>
     ${layer.type === 'text' ? `<input class="text-socket" type="text" maxlength="50" value="${esc(layer.text)}" data-param="text" aria-label="Texto de la capa"/>` : ''}
-    <div class="color-pair"><label class="color-socket"><input type="color" value="${layer.color}" data-param="color" aria-label="Color principal"/></label><label class="color-socket"><input type="color" value="${layer.color2}" data-param="color2" aria-label="Color secundario"/></label></div>
+    <div class="color-pair">${colorJoystick('color', 'Color principal', layer.color)}${colorJoystick('color2', 'Color secundario', layer.color2)}</div>
     <div class="inspector-actions"><button data-inspector-action="duplicate" aria-label="Duplicar capa">⧉</button><button data-inspector-action="delete" aria-label="Eliminar capa">×</button></div>
     </div>
     <div class="geometry-bank">
@@ -151,7 +201,7 @@ function renderInspector() {
 
 function renderAll() {
   refs.ratio.innerHTML = RATIOS.map(value => { const [w, h] = value.split(':').map(Number); const scale = 25 / Math.max(w, h); return `<button class="ratio-key ${doc.ratio === value ? 'active' : ''}" data-ratio="${value}" aria-label="Proporción ${value}" aria-pressed="${doc.ratio === value}"><span class="ratio-shape" style="--rw:${Math.round(w * scale)}px;--rh:${Math.round(h * scale)}px"></span></button>`; }).join('');
-  refs.background.value = doc.background;
+  refs.background.innerHTML = colorJoystick('background', 'Color del fondo', doc.background);
   refs.ratioLabel.textContent = doc.ratio;
   refs.undo.disabled = historyIndex === 0;
   refs.redo.disabled = historyIndex === history.length - 1;
@@ -333,6 +383,12 @@ function init() {
   });
   refs.layerList.addEventListener('keydown', event => { if (event.key === 'Enter' && event.target.dataset.rowId) select(event.target.dataset.rowId); });
   refs.inspector.addEventListener('input', event => {
+    if (event.target.matches('.color-lightness')) {
+      const joystick = event.target.closest('.color-joystick');
+      const { h, s } = hexToHsl(joystick.style.getPropertyValue('--color'));
+      setJoystickColor(joystick, hslToHex(h, s, Number(event.target.value) / 100));
+      return;
+    }
     const layer = selectedLayer(), param = event.target.dataset.param;
     if (!layer || !param) return;
     if (['x', 'y', 'w', 'h', 'opacity', 'detail', 'dither', 'ditherSize', 'blur', 'warp', 'echo'].includes(param)) layer[param] = Number(event.target.value) / 100;
@@ -346,6 +402,7 @@ function init() {
     renderPreview();
   });
   refs.inspector.addEventListener('change', event => {
+    if (event.target.matches('.color-lightness')) { commit(); return; }
     const layer = selectedLayer(), param = event.target.dataset.param;
     if (!layer || !param) return;
     commit(); renderAll();
@@ -397,8 +454,49 @@ function init() {
     if (input) { event.preventDefault(); resetKnob(input); }
   });
   refs.ratio.addEventListener('click', event => { const value = event.target.closest('[data-ratio]')?.dataset.ratio; if (value) { doc.ratio = value; commit(); renderAll(); } });
-  refs.background.addEventListener('input', () => { doc.background = refs.background.value; renderPreview(); });
-  refs.background.addEventListener('change', () => { commit(); renderAll(); });
+  refs.background.addEventListener('input', event => {
+    if (!event.target.matches('.color-lightness')) return;
+    const joystick = event.target.closest('.color-joystick');
+    const { h, s } = hexToHsl(joystick.style.getPropertyValue('--color'));
+    setJoystickColor(joystick, hslToHex(h, s, Number(event.target.value) / 100));
+  });
+  refs.background.addEventListener('change', event => { if (event.target.matches('.color-lightness')) commit(); });
+  for (const root of [refs.background, refs.inspector]) {
+    root.addEventListener('pointerdown', event => {
+      const disc = event.target.closest('.color-disc');
+      if (!disc || event.button !== 0) return;
+      colorDrag = { disc, pointerId: event.pointerId };
+      disc.setPointerCapture(event.pointerId);
+      moveColorDisc(event, disc.closest('.color-joystick'));
+      event.preventDefault();
+    });
+    root.addEventListener('pointermove', event => {
+      if (colorDrag && event.pointerId === colorDrag.pointerId) moveColorDisc(event, colorDrag.disc.closest('.color-joystick'));
+    });
+    const finishColor = event => {
+      if (!colorDrag || event.pointerId !== colorDrag.pointerId) return;
+      colorDrag = null;
+      commit();
+    };
+    root.addEventListener('pointerup', finishColor);
+    root.addEventListener('pointercancel', finishColor);
+    root.addEventListener('keydown', event => {
+      const disc = event.target.closest('.color-disc');
+      if (!disc) return;
+      const joystick = disc.closest('.color-joystick');
+      const { h, s, l } = hexToHsl(joystick.style.getPropertyValue('--color'));
+      let hue = h, saturation = s;
+      if (event.key === 'ArrowLeft') hue = (h + 355) % 360;
+      else if (event.key === 'ArrowRight') hue = (h + 5) % 360;
+      else if (event.key === 'ArrowUp') saturation = clamp(s + .05, 0, 1);
+      else if (event.key === 'ArrowDown') saturation = clamp(s - .05, 0, 1);
+      else if (event.key === 'Home') saturation = 0;
+      else return;
+      event.preventDefault();
+      setJoystickColor(joystick, hslToHex(hue, saturation, l));
+      commit();
+    });
+  }
   refs.surround.addEventListener('pointerdown', startDrag);
   refs.surround.addEventListener('pointermove', moveDrag);
   refs.surround.addEventListener('pointerup', finishDrag);
