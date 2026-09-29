@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-09-28
+date: 2026-09-29
 tags: 
   - personal
 ---
@@ -9,6 +9,15 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [How far behind Nvidia is Huawei?](https://epochai.substack.com/p/how-far-behind-nvidia-is-huawei?utm_source=%2Finbox&utm_medium=reader2) `Tech` *2026-09-28*
+- [EXTREME SERVER SIDE RENDERING | The Cat House](https://www.scd31.com/posts/extreme-server-side-rendering?utm_source=jrdi&utm_medium=email&utm_campaign=2026w38-622e) `Tech` *2026-09-28*
+- [Secure Acceleration: A Cyberdefense Strategy for Superintelligence](https://secureacceleration.com) `Tech` *2026-09-28*
+- [archive.today is directing a DDOS attack against my blog &-8211; Gyrovague](https://gyrovague.com/2026/02/01/archive-today-is-directing-a-ddos-attack-against-my-blog/#comments) `Tech` *2026-09-28*
+- [](https://www.rand.org/about/history.html) `Reads` *2026-09-28*
+- [How fast escalators move, city by city · The Basin](https://basin.la/articles/ninety-feet-a-minute.html) `Reads` *2026-09-28*
+- [La impublicable historia del rey de los saltadores de ‘paywalls’ | Letras Libres](https://letraslibres.com/ciencia-y-tecnologia/la-impublicable-historia-del-rey-de-los-saltadores-de-paywalls/16/06/2026) `Reads` *2026-09-28*
+- [Owed a billion dollars in NVDA stock](https://colo.to/nvidia-stock-narrative.html#fn3) `Reads` *2026-09-28*
+- [Letras Libres](https://letraslibres.com) `Collectives and Magazines` *2026-09-28*
 - [Typefoundry: Long s](https://typefoundry.blogspot.com/2008/01/long-s.html?utm_source=chatgpt.com) `Reads` *2026-09-27*
 - [Wikipedia:Entradas de Gallegos. Quién es quien en la Galicia del siglo XXI - Wikipedia, a enciclopedia libre](https://gl.wikipedia.org/wiki/Wikipedia:Entradas_de_Gallegos._Qui%C3%A9n_es_quien_en_la_Galicia_del_siglo_XXI) `Wikis` *2026-09-26*
 - [Revealing the details of how OpenAI agents hacked Hugging Face](https://swarmtraces.org) `Tech` *2026-09-26*
