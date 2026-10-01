@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-09-29
+date: 2026-10-01
 tags: 
   - personal
 ---
@@ -9,6 +9,9 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Q2 2026 Drive Stats: Hard Drive Failure Rates](https://www.backblaze.com/blog/backblaze-drive-stats-for-q2-2026) `Tech` *2026-09-30*
+- [Most data centers refusing to say how much water, electricity they use | NL Times](https://nltimes.nl/2026/09/30/data-centers-refusing-say-much-water-electricity-use) `Ideas` *2026-09-30*
+- [Post Capitalism | the singularity is nearer](https://geohot.github.io//blog/jekyll/update/2026/09/29/post-capitalism.html) `Ideas` *2026-09-30*
 - [How far behind Nvidia is Huawei?](https://epochai.substack.com/p/how-far-behind-nvidia-is-huawei?utm_source=%2Finbox&utm_medium=reader2) `Tech` *2026-09-28*
 - [EXTREME SERVER SIDE RENDERING | The Cat House](https://www.scd31.com/posts/extreme-server-side-rendering?utm_source=jrdi&utm_medium=email&utm_campaign=2026w38-622e) `Tech` *2026-09-28*
 - [Secure Acceleration: A Cyberdefense Strategy for Superintelligence](https://secureacceleration.com) `Tech` *2026-09-28*
