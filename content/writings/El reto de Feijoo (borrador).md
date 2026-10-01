@@ -230,9 +230,38 @@ El congreso del tricentenario (Oviedo, 24–25 de junio de 2026, unas 45 ponenci
 
 ---
 
-resultados
+## Resultados
 
-puedo incluso comprar los libros, para ir a buscar a sus herederos y pedirle reembolso:)
+Para el reto de 1729 encontré **nueve pasajes que superan el umbral** y **dos más en el límite**. En ocho casos adicionales hay dependencia posible o probable, pero no suficientes palabras exclusivas de Trévoux para contarlos igual. Feijoo tradujo otros cuatro pasajes citando la revista o el *Journal*; los muestro, pero no los cuento como aciertos de la apuesta. La búsqueda del reto de 1733 añadió **un caso estricto** en el tomo IV. En conjunto, TCU I–V da **10 + 2** con las mismas reglas; Feijoo no repitió en 1733 el umbral de «cuatro líneas».
+
+| Búsqueda | Candidatos juzgados | Estrictos (A) | Dependientes o cortos (B/C) | Traducciones citadas (D) |
+|---|---:|---:|---:|---:|
+| Reto de 1729: TCU I–III frente a Trévoux y el tomo de 1682 del *Journal* | 633 veredictos | 9 + 2 en el límite | 4 B + 4 C | 4 |
+| Ampliación de 1733: TCU IV–V frente a Trévoux hasta 1732 | 237 candidatos | 1 | 1 B + 2 C | 8 |
+
+<details markdown="1">
+<summary>Los doce casos estrictos: pasajes, fuentes y prueba decisiva</summary>
+
+| Caso | Feijoo | Trévoux | Palabras estrictas | Por qué cuenta; qué se sabía |
+|---|---|---|---:|---|
+| C001, manchas solares | II.14, 1728 | Parent, feb. 1716 | ≈128 | Comparte un error sobre el libro de las *Geórgicas* y «Tum caput». Mañer ya señaló la reseña en 1729. |
+| C002, hierro en plantas | II.14, 1728 | Lémery, mar. 1707 | ≈180 | Sigue la sintaxis de la reseña y detalles ausentes de la memoria original. Soto Marne señaló parte del pasaje. |
+| C003, abadesa de Fontevrault | I.16, 1726 | Dic. 1704 | ≈54 | La combinación de reina, rey y versos quemados falta en Moréri. No encontré una identificación anterior. |
+| C004, Filipinas | II.2, 1728 | Taillandier, jul. 1715 | ≈127 | Calcos y el mismo error geográfico: Dapitan pasa a Magallanes. Mañer ya lo denunció. |
+| C005, sectas médicas | I.5, 1726 | Barchusen, nov. 1710 | ≈120 | Sigue el orden y las fusiones de la reseña, no del libro. Feijoo reveló en 1727 que tenía ese extracto de Trévoux. |
+| C009, modos musicales | I.14, 1726 | Bonnet, abr. 1716 | 37–51 | Repite una secuencia de caracterizaciones y «Subphrigio». No encontré una identificación anterior. |
+| C010, longevidad | I.12, 1726 | Temple, jul. 1702 | 43 | Conserva «Nesmond» y el alcance de «toute l'Angleterre» de la reseña. No encontré una identificación anterior. |
+| C017, anillos planetarios | III.2, 1729 | Feb. 1718 | ≈82 | Atribuye la historia a Camilo Leonardo, pero su libro no contiene esos detalles; sigue la reseña francesa. No encontré una identificación anterior. |
+| C020, mano de gigante | I.12, 1726 | Sep.–oct. 1701 | 54 | Feijoo cita las *Transacciones* inglesas, pero sigue el recorte francés, que omite la marsopa. No encontré una identificación anterior. |
+| C012, vidas de santos | III.6, 1729 | Mayo–jun. 1701 | ≈48–51, límite | Una frase sigue la condensación del reseñista; la dependencia de Trévoux queda cerca del umbral. |
+| C038, modas | II.6, 1728 | Henrion, feb. 1702 | 38, mínimo 30 | Frase traducida cláusula a cláusula. Salió de una muestra leída a mano, no de los detectores; queda por comprobar el *Mercure galant*. |
+| D2-C007, Behaim | IV.8, 1730 | Stuvenius, mayo 1716 | ≈98, mínimo 39 | Sigue el orden y detalles de la reseña que no están en el libro latino. Es el caso nuevo del segundo reto; quedan otras revistas por cotejar. |
+
+</details>
+
+Las cifras son un **mínimo**, no una lista cerrada. En una prueba con veinte párrafos que los detectores no habían propuesto apareció C038. El resultado depende además de distinguir una reseña de su libro original y de comprobar que el pasaje existía en la primera edición de Feijoo. Los niveles B y C recogen las dependencias más cortas o compartidas con otras fuentes; las traducciones citadas están en D.
+
+Puedo incluso comprar los libros para buscar a sus herederos y pedir el reembolso :)
 
 
 
