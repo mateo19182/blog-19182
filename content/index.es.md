@@ -10,7 +10,7 @@ title: Inicio
 - [[link-archive|enlaces]]
   - enlaces que he ido guardando con el tiempo.
 - [[projects|proyectos]]
-- [[things i like|cosas que me gustan]]
+- [[things i like|otras cosas]]
 
 Más cosas mías en [GitHub](https://github.com/mateo19182), [SoundCloud](https://soundcloud.com/m19182), [YouTube](https://www.youtube.com/channel/UCEJKcBK7i88Iv3saZy2xuSg) y [faircamp](https://music.m19182.dev/).
 

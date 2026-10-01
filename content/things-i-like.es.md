@@ -1,5 +1,5 @@
 ---
-title: Cosas que me gustan
+title: Otras cosas
 tags: 
   # - personal
 ---
