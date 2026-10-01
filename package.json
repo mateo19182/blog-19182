@@ -7,6 +7,8 @@
   "license": "CC0-1.0",
   "scripts": {
     "build": "node build.mjs",
+    "sync:feijoo": "node tools/sync-feijoo-preview.mjs",
+    "preview:feijoo": "npm run sync:feijoo && npm run serve",
     "serve": "node build.mjs --serve",
     "dev": "node build.mjs --serve --watch"
   },

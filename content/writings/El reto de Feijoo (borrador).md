@@ -76,7 +76,8 @@ A este último responde Feijoo en el prólogo del tercer tomo (1729), donde dice
 
 Ese mismo año, Salvador José Mañer hizo lo que yo presento aquí con pipelines de agentes a mano, y en _Anti-Teatro_ (1729) señaló lugares concretos. Feijoo le respondió, y Mañer volvió en 1731. La pelea siguió durante décadas, con nuevos adversarios y nuevos defensores. En 1750, una insólita Real Orden de Fernando VI prohibió publicar el tercer tomo de uno de los críticos de Feijoo, así como posteriores impugnaciones. Aquí dejo mi intento de reconstrucción de las acusaciones hechas hasta ese momento:
 
-#### Timeline
+<details markdown="1">
+<summary>Cronología completa de la polémica (1726–1750)</summary>
 
 | Date                                | Author (real)                                                                                                     | Side             | Work                                                                                                                                       | What it charged / did                                                                                                                                                                                                                                                                                                                                                                             | Digitized                                                           |
 | ----------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
@@ -116,6 +117,9 @@ Ese mismo año, Salvador José Mañer hizo lo que yo presento aquí con pipeline
 | 23 Sep 1749                         | Feijoo                                                                                                            | —                | ***Justa repulsa*** (approbation: "Es fábula ridícula cuanto del plagio se vocea")                                                         |                                                                                                                                                                                                                                                                                                                                                                                                   | filosofia.org bjfvjr5                                               |
 | 23 Jun 1750                         | Real Orden (Carvajal)                                                                                             | —                | forbids Soto Marne's t. III: "no debe haber quien se atreva a impugnarlos"                                                                  |                                                                                                                                                                                                                                                                                                                                                                                                   | BNE ms. 10.579 ff. 31v–32r                                          |
 | 1750                                | Soto Marne; Ramírez                                                                                               | anti / pro       | *Memorial* to the King; *Marianitas del Molar*; *La derrota de los alanos*                                                                 |                                                                                                                                                                                                                                                                                                                                                                                                   | —                                                                   |
+
+</details>
+
 revisar (Millares Carlo, 1923; Caso González-Cerra, 1981).
 
 
@@ -151,9 +155,35 @@ Esto tiene muchísimos detalles en que exploro por partes:
 
 #### Corpus
 
-Lo primero que necesitaba era acceso a un texto fiable de, a poder ser las primeras ediciones de todas las obras de TCU y relacionadas, así como de las tirada de la revista trevoux y la otra que cuadraran temporalmente.
+Para el reto de 1729 comparé TCU I–III con Trévoux y el tomo del *Journal des Sçavans* que Feijoo decía tener. Después amplié la búsqueda para comprobar el reto de 1733.
 
-No fue tan fácil de conseguir, la mayoría de los sitios donde se guardan no tienen un acceso por api decente, y menos en bulk, y la gran parte de los OCRs que había realizados usaban modelos lejos del estado del arte actual.
+<details markdown="1">
+<summary>Fuentes originales, OCR y uso de cada documento</summary>
+
+| Documento | Original escaneado | OCR / texto usado | Qué hicimos |
+|---|---|---|---|
+| *Teatro crítico universal* I (1726), II (1728), III (1729) | BNE: [I](https://bnedigital.bne.es/bd/es/viewer?id=7b281e29-5af2-4c38-8c17-ec969f487f44), [II](https://bnedigital.bne.es/bd/es/viewer?id=87a094e7-aa8b-4411-aa5e-2fb1081e571a), [III](https://bnedigital.bne.es/bd/es/viewer?id=911fba8d-7ad3-4d7e-9332-a05cb636e5a9) | OCR e imágenes de la BNE | Comprobamos cada candidato en la primera edición; 664 imágenes de dobles páginas. |
+| TCU I–III, reimpresión de 1777–1779 | [Texto de filosofia.org](https://www.filosofia.org/bjf/bjft000.htm); edición indicada en cada tomo | Transcripción descargada → 2.594 párrafos | Texto de búsqueda: 358.547 palabras principales. Marcamos 25.930 palabras de adiciones posteriores; las reescrituras sin marca exigieron cotejo en la primera edición. |
+| *Mémoires de Trévoux* 1701–1729 | [Getty / Internet Archive, ejemplo](https://archive.org/details/memoirespourlhis1701unse); inventario de los 117 tomos | ABBYY de IA y nuevo OCR kraken + PP-OCRv6 | Búsqueda inicial y repetición sobre 66.964 hojas reconocidas de nuevo. |
+| Segundo ejemplar de Trévoux | [BSB/MDZ, ejemplo](https://www.digitale-sammlungen.de/en/view/bsb10539793); inventario | hOCR descargado de 11 tomos; [hOCR por página en MDZ, ejemplo](https://api.digitale-sammlungen.de/ocr/bsb10539793/1) | Cotejo de páginas; 113 tomos, con un hueco en 1727. |
+| Reimpresión de Ámsterdam de Trévoux | [BSB/MDZ, primer tomo](https://www.digitale-sammlungen.de/en/view/bsb11040060) | [hOCR por página en MDZ, ejemplo](https://api.digitale-sammlungen.de/ocr/bsb11040060/1) | Testigo para pasajes de 1701–1704; nueve tomos, con artículos reordenados. |
+| *Journal des Sçavans* de 1682, t. X de Ámsterdam (1683) | [BSB/MDZ](https://www.digitale-sammlungen.de/en/view/bsb10539522) | hOCR de hojas 1–60, Tesseract de 61–482 y texto ensamblado | Buscamos en las 482 hojas del único tomo que Feijoo decía tener. |
+
+| Fuentes de contraste, fuera del reto | Original escaneado | OCR / texto usado | Qué hicimos |
+|---|---|---|---|
+| *Histoire de l'Académie royale des sciences* (1699–1728) | Inventario de ejemplares | 30 volúmenes | Búsqueda separada y control de fuentes comunes. Hay reimpresiones posteriores a Feijoo: cada coincidencia exige cotejo de fecha. |
+| Bayle, *Dictionnaire historique et critique* (1702) | IA: [I](https://archive.org/details/bub_gb_9zPfImQPeQkC), [II](https://archive.org/details/b30456198_0001), [III](https://archive.org/details/bub_gb_Gqo-AAAAcAAJ) | Tres tomos | Búsqueda separada y control de atribuciones. |
+| *Menagiana*; Fontenelle; Moréri | Inventario de los 13 tomos | Menagiana, Fontenelle, Moréri | Tres búsquedas separadas en TCU I–III. |
+| *Dictionnaire de Trévoux* (1721); Montfaucon, *L'Antiquité expliquée* (1719) | Ejemplares y referencias | Diccionario; Montfaucon, diez tomos | Consultas puntuales; sin búsqueda completa. |
+| Libros reseñados por Trévoux | Catálogo por caso e imágenes de cotejo | Textos disponibles por caso | Comprobamos si Feijoo pudo tomar el pasaje del libro reseñado. |
+| Acusaciones y respuestas de la época | *Estrado*, *Tertulia*, Mañer 1731, catálogo completo | *Estrado*, *Tertulia*, Mañer 1729, Mañer 1731, Sarmiento, Soto Marne | Contrastamos las acusaciones anteriores con los casos encontrados. |
+
+| Ampliación para el reto de 1733 | Original escaneado | OCR / texto usado | Qué hicimos |
+|---|---|---|---|
+| TCU IV (1730) y V (1733), primeras ediciones | [USC Minerva, PDF de varios tomos](https://hdl.handle.net/10347/7540); imágenes locales IV–V | Transcripción de trabajo, basada en [filosofia.org](https://www.filosofia.org/bjf/bjft000.htm) | Buscamos 2.062 párrafos y cotejamos los candidatos con los originales. Queda por cotejar un caso rechazado, D2-C004. |
+| Trévoux 1730–1732 | [Getty / IA, ejemplo de 1730](https://archive.org/details/memoirespourlhis1730unse); inventario | ABBYY de IA y kraken + PP-OCRv6 | Añadimos doce tomos, unas 7.034 hojas, y buscamos TCU IV–V contra Trévoux 1701–1732. |
+
+</details>
 
 ##### Benchmark OCR
 
