@@ -33,7 +33,12 @@ npm run serve        # build + serve at http://localhost:8080
   ([markdown negotiation](https://isitagentready.com/.well-known/agent-skills/markdown-negotiation/)).
 - English/Spanish toggle in the footer. Add a Spanish version of a page as a sibling
   `foo.es.md` (its frontmatter `title` is used). Both languages go into one HTML page
-  and the choice is saved in localStorage. Pages without an `.es.md` stay English.
+  and the choice is saved in localStorage. Pages without an `.es.md` use the
+  language set in frontmatter, or English by default.
+- For a Spanish-only page, set `lang: es` in its frontmatter. Its language toggle
+  stays disabled until a translation is added.
+- Set `unlisted: true` to serve a writing at its URL without adding it to the
+  writings index, tags, RSS, or sitemap. The HTML includes a `noindex` meta tag.
 - Footer sand-garden easter egg (fill the canvas to win).
 - Self-hosted Umami analytics.
 

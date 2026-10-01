@@ -112,6 +112,8 @@ async function loadFile(file, name, section) {
   return {
     name, section, slug, url, isHome,
     title: data.title || name,
+    lang: data.lang === "es" ? "es" : "en",
+    unlisted: data.unlisted === true,
     date: normalizeDate(data.date),
     description: data.description || text.slice(0, 160).trim(),
     tags: Array.isArray(data.tags) ? data.tags.filter(Boolean) : [],
@@ -197,7 +199,7 @@ async function build() {
   const md = makeRenderer(resolve)
 
   const posts = pages
-    .filter((p) => p.isArticle)
+    .filter((p) => p.isArticle && !p.unlisted)
     .sort((a, b) => (b.date || "").localeCompare(a.date || ""))
 
   // tag map (writings only)
@@ -234,7 +236,7 @@ async function build() {
     }
     await emit(p.url, renderPage(page))
     await emitMd(p.url, p.title, p.rawContent)
-    sitemapUrls.push({ url: p.url, date: p.date })
+    if (!p.unlisted) sitemapUrls.push({ url: p.url, date: p.date })
     ogJobs.push({
       path: ogPath,
       title: p.isHome ? "blog-19182" : p.title,
