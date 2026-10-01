@@ -186,6 +186,33 @@ body {
 .prose a:hover { color: var(--dark); }
 .prose a.external::after { content: " ↗"; font-size: 0.8em; color: var(--gray); }
 .prose img { max-width: 100%; height: auto; border-radius: 6px; display: block; margin: 1.2rem auto; }
+
+/* Feijoo source comparisons: open a case, then compare both original pages. */
+.prose .feijoo-case {
+  border: 1px solid var(--lightgray);
+  border-radius: 8px;
+  margin: 0.7rem 0;
+}
+.prose .feijoo-case > summary {
+  cursor: pointer;
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+}
+.prose .feijoo-case > summary:hover { background: var(--highlight); }
+.prose .feijoo-case[open] > summary { border-bottom: 1px solid var(--lightgray); }
+.prose .feijoo-compare {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+.prose .feijoo-compare figure { min-width: 0; margin: 0; }
+.prose .feijoo-compare a.scan { display: block; border: 1px solid var(--lightgray); border-radius: 6px; overflow: hidden; }
+.prose .feijoo-compare img { display: block; width: 100%; height: auto; margin: 0; border-radius: 0; }
+.prose .feijoo-compare figcaption { color: var(--darkgray); font-size: 0.82rem; line-height: 1.4; margin-top: 0.45rem; }
+@media (max-width: 700px) {
+  .prose .feijoo-compare { grid-template-columns: 1fr; }
+}
 .prose ul, .prose ol { padding-left: 1.4rem; }
 .prose li { margin: 0.3rem 0; }
 .prose blockquote {

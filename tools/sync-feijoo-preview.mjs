@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Copy the author's working draft into the public, unlisted blog preview.
-import { readFile, writeFile } from "node:fs/promises"
+import { copyFile, mkdir, readFile, writeFile } from "node:fs/promises"
 import path from "node:path"
 import { fileURLToPath } from "node:url"
 
@@ -33,6 +33,14 @@ body = body.replace(/(!?)\[([^\]]+)\]\((<[^>]+>|[^)]+)\)/g, (match, image, label
   throw new Error(`Local file link in draft: ${target}`)
 })
 
+const scanSource = path.resolve(root, "../inv/feijoo/blog/documents/results")
+const scanDest = path.join(root, "content/data/feijoo-results")
+const scanNames = new Set([...body.matchAll(/\/data\/feijoo-results\/([A-Za-z0-9-]+_(?:feijoo|trevoux)\.jpg)/g)].map((match) => match[1]))
+if (scanNames.size > 0) {
+  await mkdir(scanDest, { recursive: true })
+  for (const name of scanNames) await copyFile(path.join(scanSource, name), path.join(scanDest, name))
+}
+
 body = body.split("\n").map((line) => line.trimEnd()).join("\n").trim()
 await writeFile(dest, header + body + "\n")
-console.log(`Synced ${source} -> ${dest}`)
+console.log(`Synced ${source} -> ${dest} (${scanNames.size} document images)`)

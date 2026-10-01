@@ -259,6 +259,178 @@ Para el reto de 1729 encontré **nueve pasajes que superan el umbral** y **dos m
 
 </details>
 
+### Los documentos frente a frente
+
+Abre un caso para comparar los recortes de las primeras ediciones. Pulsa una imagen para leerla a tamaño completo; cuando un pasaje ocupa varias páginas, los recortes aparecen unidos en orden.
+
+<details class="feijoo-case" open>
+<summary>C001 · manchas solares</summary>
+<div class="feijoo-compare">
+<figure>
+<a class="scan" href="/data/feijoo-results/C001_feijoo.jpg" target="_blank" rel="noopener noreferrer" aria-label="Abrir recorte original de Feijoo para C001 a tamaño completo"><img src="/data/feijoo-results/C001_feijoo.jpg" alt="Recorte de Feijoo: manchas solares (C001)" loading="lazy" decoding="async"></a>
+<figcaption><strong>Feijoo</strong> · II (1728), p. 250, n. 23 · <a href="https://bnedigital.bne.es/bd/es/viewer?id=87a094e7-aa8b-4411-aa5e-2fb1081e571a" target="_blank" rel="noopener noreferrer">BNE</a> (CC BY 4.0)</figcaption>
+</figure>
+<figure>
+<a class="scan" href="/data/feijoo-results/C001_trevoux.jpg" target="_blank" rel="noopener noreferrer" aria-label="Abrir recorte original de Trévoux para C001 a tamaño completo"><img src="/data/feijoo-results/C001_trevoux.jpg" alt="Recorte de Trévoux: manchas solares (C001)" loading="lazy" decoding="async"></a>
+<figcaption><strong>Trévoux</strong> · febrero 1716, art. XXIV, p. 331 · <a href="https://www.digitale-sammlungen.de/view/bsb10539854?page=345" target="_blank" rel="noopener noreferrer">BSB</a> (NoC-NC 1.0)</figcaption>
+</figure>
+</div>
+</details>
+
+<details class="feijoo-case">
+<summary>C002 · hierro en plantas</summary>
+<div class="feijoo-compare">
+<figure>
+<a class="scan" href="/data/feijoo-results/C002_feijoo.jpg" target="_blank" rel="noopener noreferrer" aria-label="Abrir recorte original de Feijoo para C002 a tamaño completo"><img src="/data/feijoo-results/C002_feijoo.jpg" alt="Recorte de Feijoo: hierro en plantas (C002)" loading="lazy" decoding="async"></a>
+<figcaption><strong>Feijoo</strong> · II (1728), p. 258, n. 39 · <a href="https://bnedigital.bne.es/bd/es/viewer?id=87a094e7-aa8b-4411-aa5e-2fb1081e571a" target="_blank" rel="noopener noreferrer">BNE</a> (CC BY 4.0)</figcaption>
+</figure>
+<figure>
+<a class="scan" href="/data/feijoo-results/C002_trevoux.jpg" target="_blank" rel="noopener noreferrer" aria-label="Abrir recorte original de Trévoux para C002 a tamaño completo"><img src="/data/feijoo-results/C002_trevoux.jpg" alt="Recorte de Trévoux: hierro en plantas (C002)" loading="lazy" decoding="async"></a>
+<figcaption><strong>Trévoux</strong> · marzo 1707, art. XXXIV, p. 479 · <a href="https://www.digitale-sammlungen.de/view/bsb10539818?page=507" target="_blank" rel="noopener noreferrer">BSB</a> (NoC-NC 1.0)</figcaption>
+</figure>
+</div>
+</details>
+
+<details class="feijoo-case">
+<summary>C003 · abadesa de Fontevrault</summary>
+<div class="feijoo-compare">
+<figure>
+<a class="scan" href="/data/feijoo-results/C003_feijoo.jpg" target="_blank" rel="noopener noreferrer" aria-label="Abrir recorte original de Feijoo para C003 a tamaño completo"><img src="/data/feijoo-results/C003_feijoo.jpg" alt="Recorte de Feijoo: abadesa de Fontevrault (C003)" loading="lazy" decoding="async"></a>
+<figcaption><strong>Feijoo</strong> · I (1726), p. 361, n. 122 · <a href="https://bnedigital.bne.es/bd/es/viewer?id=7b281e29-5af2-4c38-8c17-ec969f487f44" target="_blank" rel="noopener noreferrer">BNE</a> (CC BY 4.0)</figcaption>
+</figure>
+<figure>
+<a class="scan" href="/data/feijoo-results/C003_trevoux.jpg" target="_blank" rel="noopener noreferrer" aria-label="Abrir recorte original de Trévoux para C003 a tamaño completo"><img src="/data/feijoo-results/C003_trevoux.jpg" alt="Recorte de Trévoux: abadesa de Fontevrault (C003)" loading="lazy" decoding="async"></a>
+<figcaption><strong>Trévoux</strong> · diciembre 1704, art. CLXXXIX, p. 2119 · <a href="https://www.digitale-sammlungen.de/view/bsb10539809?page=507" target="_blank" rel="noopener noreferrer">BSB</a> (NoC-NC 1.0)</figcaption>
+</figure>
+</div>
+</details>
+
+<details class="feijoo-case">
+<summary>C004 · Filipinas</summary>
+<div class="feijoo-compare">
+<figure>
+<a class="scan" href="/data/feijoo-results/C004_feijoo.jpg" target="_blank" rel="noopener noreferrer" aria-label="Abrir recorte original de Feijoo para C004 a tamaño completo"><img src="/data/feijoo-results/C004_feijoo.jpg" alt="Recorte de Feijoo: Filipinas (C004)" loading="lazy" decoding="async"></a>
+<figcaption><strong>Feijoo</strong> · II (1728), p. 53, nn. 73–74 · <a href="https://bnedigital.bne.es/bd/es/viewer?id=87a094e7-aa8b-4411-aa5e-2fb1081e571a" target="_blank" rel="noopener noreferrer">BNE</a> (CC BY 4.0)</figcaption>
+</figure>
+<figure>
+<a class="scan" href="/data/feijoo-results/C004_trevoux.jpg" target="_blank" rel="noopener noreferrer" aria-label="Abrir recorte original de Trévoux para C004 a tamaño completo"><img src="/data/feijoo-results/C004_trevoux.jpg" alt="Recorte de Trévoux: Filipinas (C004)" loading="lazy" decoding="async"></a>
+<figcaption><strong>Trévoux</strong> · julio 1715, art. XCVII, pp. 1163–1164 · <a href="https://www.digitale-sammlungen.de/view/bsb10539852?page=71" target="_blank" rel="noopener noreferrer">BSB 1</a>; <a href="https://www.digitale-sammlungen.de/view/bsb10539852?page=72" target="_blank" rel="noopener noreferrer">BSB 2</a> (NoC-NC 1.0)</figcaption>
+</figure>
+</div>
+</details>
+
+<details class="feijoo-case">
+<summary>C005 · sectas médicas</summary>
+<div class="feijoo-compare">
+<figure>
+<a class="scan" href="/data/feijoo-results/C005_feijoo.jpg" target="_blank" rel="noopener noreferrer" aria-label="Abrir recorte original de Feijoo para C005 a tamaño completo"><img src="/data/feijoo-results/C005_feijoo.jpg" alt="Recorte de Feijoo: sectas médicas (C005)" loading="lazy" decoding="async"></a>
+<figcaption><strong>Feijoo</strong> · TCU I (1726), p. 112 · <a href="https://bnedigital.bne.es/bd/es/viewer?id=7b281e29-5af2-4c38-8c17-ec969f487f44" target="_blank" rel="noopener noreferrer">BNE</a> (CC BY 4.0)</figcaption>
+</figure>
+<figure>
+<a class="scan" href="/data/feijoo-results/C005_trevoux.jpg" target="_blank" rel="noopener noreferrer" aria-label="Abrir recorte original de Trévoux para C005 a tamaño completo"><img src="/data/feijoo-results/C005_trevoux.jpg" alt="Recorte de Trévoux: sectas médicas (C005)" loading="lazy" decoding="async"></a>
+<figcaption><strong>Trévoux</strong> · nov. 1710, p. 1954 · <a href="https://archive.org/details/memoirespourlhi1710unse_2/page/n309" target="_blank" rel="noopener noreferrer">Internet Archive</a></figcaption>
+</figure>
+</div>
+</details>
+
+<details class="feijoo-case">
+<summary>C009 · modos musicales</summary>
+<div class="feijoo-compare">
+<figure>
+<a class="scan" href="/data/feijoo-results/C009_feijoo.jpg" target="_blank" rel="noopener noreferrer" aria-label="Abrir recorte original de Feijoo para C009 a tamaño completo"><img src="/data/feijoo-results/C009_feijoo.jpg" alt="Recorte de Feijoo: modos musicales (C009)" loading="lazy" decoding="async"></a>
+<figcaption><strong>Feijoo</strong> · TCU I (1726), p. 274 · <a href="https://bnedigital.bne.es/bd/es/viewer?id=7b281e29-5af2-4c38-8c17-ec969f487f44" target="_blank" rel="noopener noreferrer">BNE</a> (CC BY 4.0)</figcaption>
+</figure>
+<figure>
+<a class="scan" href="/data/feijoo-results/C009_trevoux.jpg" target="_blank" rel="noopener noreferrer" aria-label="Abrir recorte original de Trévoux para C009 a tamaño completo"><img src="/data/feijoo-results/C009_trevoux.jpg" alt="Recorte de Trévoux: modos musicales (C009)" loading="lazy" decoding="async"></a>
+<figcaption><strong>Trévoux</strong> · abr. 1716, p. 597; abr. 1716, p. 598 · <a href="https://archive.org/details/memoirespourlhi1716unse_0/page/n54" target="_blank" rel="noopener noreferrer">Internet Archive 1</a>; <a href="https://archive.org/details/memoirespourlhi1716unse_0/page/n55" target="_blank" rel="noopener noreferrer">Internet Archive 2</a></figcaption>
+</figure>
+</div>
+</details>
+
+<details class="feijoo-case">
+<summary>C010 · longevidad</summary>
+<div class="feijoo-compare">
+<figure>
+<a class="scan" href="/data/feijoo-results/C010_feijoo.jpg" target="_blank" rel="noopener noreferrer" aria-label="Abrir recorte original de Feijoo para C010 a tamaño completo"><img src="/data/feijoo-results/C010_feijoo.jpg" alt="Recorte de Feijoo: longevidad (C010)" loading="lazy" decoding="async"></a>
+<figcaption><strong>Feijoo</strong> · TCU I (1726), p. 234 · <a href="https://bnedigital.bne.es/bd/es/viewer?id=7b281e29-5af2-4c38-8c17-ec969f487f44" target="_blank" rel="noopener noreferrer">BNE</a> (CC BY 4.0)</figcaption>
+</figure>
+<figure>
+<a class="scan" href="/data/feijoo-results/C010_trevoux.jpg" target="_blank" rel="noopener noreferrer" aria-label="Abrir recorte original de Trévoux para C010 a tamaño completo"><img src="/data/feijoo-results/C010_trevoux.jpg" alt="Recorte de Trévoux: longevidad (C010)" loading="lazy" decoding="async"></a>
+<figcaption><strong>Trévoux</strong> · jul. 1702 (portada con errata «1701»), p. 78; sept.–oct. 1701, p. 299 · <a href="https://archive.org/details/memoirespourlhi1702unse_2/page/n81" target="_blank" rel="noopener noreferrer">Internet Archive 1</a>; <a href="https://archive.org/details/memoirespourlhi1701unse_1/page/n302" target="_blank" rel="noopener noreferrer">Internet Archive 2</a></figcaption>
+</figure>
+</div>
+</details>
+
+<details class="feijoo-case">
+<summary>C017 · anillos planetarios</summary>
+<div class="feijoo-compare">
+<figure>
+<a class="scan" href="/data/feijoo-results/C017_feijoo.jpg" target="_blank" rel="noopener noreferrer" aria-label="Abrir recorte original de Feijoo para C017 a tamaño completo"><img src="/data/feijoo-results/C017_feijoo.jpg" alt="Recorte de Feijoo: anillos planetarios (C017)" loading="lazy" decoding="async"></a>
+<figcaption><strong>Feijoo</strong> · TCU III (1729), p. 25 · <a href="https://bnedigital.bne.es/bd/es/viewer?id=911fba8d-7ad3-4d7e-9332-a05cb636e5a9" target="_blank" rel="noopener noreferrer">BNE</a> (CC BY 4.0)</figcaption>
+</figure>
+<figure>
+<a class="scan" href="/data/feijoo-results/C017_trevoux.jpg" target="_blank" rel="noopener noreferrer" aria-label="Abrir recorte original de Trévoux para C017 a tamaño completo"><img src="/data/feijoo-results/C017_trevoux.jpg" alt="Recorte de Trévoux: anillos planetarios (C017)" loading="lazy" decoding="async"></a>
+<figcaption><strong>Trévoux</strong> · feb. 1718, p. 334; feb. 1718, p. 336 · <a href="https://archive.org/details/memoirespourlhis1718unse/page/n342" target="_blank" rel="noopener noreferrer">Internet Archive 1</a>; <a href="https://archive.org/details/memoirespourlhis1718unse/page/n344" target="_blank" rel="noopener noreferrer">Internet Archive 2</a></figcaption>
+</figure>
+</div>
+</details>
+
+<details class="feijoo-case">
+<summary>C020 · mano de gigante</summary>
+<div class="feijoo-compare">
+<figure>
+<a class="scan" href="/data/feijoo-results/C020_feijoo.jpg" target="_blank" rel="noopener noreferrer" aria-label="Abrir recorte original de Feijoo para C020 a tamaño completo"><img src="/data/feijoo-results/C020_feijoo.jpg" alt="Recorte de Feijoo: mano de gigante (C020)" loading="lazy" decoding="async"></a>
+<figcaption><strong>Feijoo</strong> · I.12, §VIII, n. 23, p. 243 · <a href="https://bnedigital.bne.es/bd/es/viewer?id=7b281e29-5af2-4c38-8c17-ec969f487f44" target="_blank" rel="noopener noreferrer">BNE</a> (CC BY 4.0)</figcaption>
+</figure>
+<figure>
+<a class="scan" href="/data/feijoo-results/C020_trevoux.jpg" target="_blank" rel="noopener noreferrer" aria-label="Abrir recorte original de Trévoux para C020 a tamaño completo"><img src="/data/feijoo-results/C020_trevoux.jpg" alt="Recorte de Trévoux: mano de gigante (C020)" loading="lazy" decoding="async"></a>
+<figcaption><strong>Trévoux</strong> · septiembre–octubre 1701, p. 291 · <a href="https://www.digitale-sammlungen.de/view/bsb10539794?page=543" target="_blank" rel="noopener noreferrer">BSB</a> (NoC-NC 1.0)</figcaption>
+</figure>
+</div>
+</details>
+
+<details class="feijoo-case">
+<summary>C012 · vidas de santos (límite)</summary>
+<div class="feijoo-compare">
+<figure>
+<a class="scan" href="/data/feijoo-results/C012_feijoo.jpg" target="_blank" rel="noopener noreferrer" aria-label="Abrir recorte original de Feijoo para C012 a tamaño completo"><img src="/data/feijoo-results/C012_feijoo.jpg" alt="Recorte de Feijoo: vidas de santos (límite) (C012)" loading="lazy" decoding="async"></a>
+<figcaption><strong>Feijoo</strong> · III.6, §I, n. 5, p. 99 · <a href="https://bnedigital.bne.es/bd/es/viewer?id=911fba8d-7ad3-4d7e-9332-a05cb636e5a9" target="_blank" rel="noopener noreferrer">BNE</a> (CC BY 4.0)</figcaption>
+</figure>
+<figure>
+<a class="scan" href="/data/feijoo-results/C012_trevoux.jpg" target="_blank" rel="noopener noreferrer" aria-label="Abrir recorte original de Trévoux para C012 a tamaño completo"><img src="/data/feijoo-results/C012_trevoux.jpg" alt="Recorte de Trévoux: vidas de santos (límite) (C012)" loading="lazy" decoding="async"></a>
+<figcaption><strong>Trévoux</strong> · mayo–junio 1701, p. 62 · <a href="https://www.digitale-sammlungen.de/view/bsb10539793?page=524" target="_blank" rel="noopener noreferrer">BSB</a> (NoC-NC 1.0)</figcaption>
+</figure>
+</div>
+</details>
+
+<details class="feijoo-case">
+<summary>C038 · modas (límite)</summary>
+<div class="feijoo-compare">
+<figure>
+<a class="scan" href="/data/feijoo-results/C038_feijoo.jpg" target="_blank" rel="noopener noreferrer" aria-label="Abrir recorte original de Feijoo para C038 a tamaño completo"><img src="/data/feijoo-results/C038_feijoo.jpg" alt="Recorte de Feijoo: modas (límite) (C038)" loading="lazy" decoding="async"></a>
+<figcaption><strong>Feijoo</strong> · II.6, §II, n. 6, p. 141 · <a href="https://bnedigital.bne.es/bd/es/viewer?id=87a094e7-aa8b-4411-aa5e-2fb1081e571a" target="_blank" rel="noopener noreferrer">BNE</a> (CC BY 4.0)</figcaption>
+</figure>
+<figure>
+<a class="scan" href="/data/feijoo-results/C038_trevoux.jpg" target="_blank" rel="noopener noreferrer" aria-label="Abrir recorte original de Trévoux para C038 a tamaño completo"><img src="/data/feijoo-results/C038_trevoux.jpg" alt="Recorte de Trévoux: modas (límite) (C038)" loading="lazy" decoding="async"></a>
+<figcaption><strong>Trévoux</strong> · febrero 1702, pp. 10–11 · <a href="https://www.digitale-sammlungen.de/view/bsb10539798?page=226" target="_blank" rel="noopener noreferrer">BSB 1</a>; <a href="https://www.digitale-sammlungen.de/view/bsb10539798?page=227" target="_blank" rel="noopener noreferrer">BSB 2</a> (NoC-NC 1.0)</figcaption>
+</figure>
+</div>
+</details>
+
+<details class="feijoo-case">
+<summary>D2-C007 · Behaim (reto de 1733)</summary>
+<div class="feijoo-compare">
+<figure>
+<a class="scan" href="/data/feijoo-results/D2-C007_feijoo.jpg" target="_blank" rel="noopener noreferrer" aria-label="Abrir recorte original de Feijoo para D2-C007 a tamaño completo"><img src="/data/feijoo-results/D2-C007_feijoo.jpg" alt="Recorte de Feijoo: Behaim (reto de 1733) (D2-C007)" loading="lazy" decoding="async"></a>
+<figcaption><strong>Feijoo</strong> · IV.8, §XXXIX, n. 85, p. 210 (concludes on p. 211) · <a href="https://hdl.handle.net/10347/7540" target="_blank" rel="noopener noreferrer">USC Minerva</a></figcaption>
+</figure>
+<figure>
+<a class="scan" href="/data/feijoo-results/D2-C007_trevoux.jpg" target="_blank" rel="noopener noreferrer" aria-label="Abrir recorte original de Trévoux para D2-C007 a tamaño completo"><img src="/data/feijoo-results/D2-C007_trevoux.jpg" alt="Recorte de Trévoux: Behaim (reto de 1733) (D2-C007)" loading="lazy" decoding="async"></a>
+<figcaption><strong>Trévoux</strong> · May 1716, art. LVI, pp. 849–850 · <a href="https://www.digitale-sammlungen.de/view/bsb10539855?page=315" target="_blank" rel="noopener noreferrer">BSB 1</a>; <a href="https://www.digitale-sammlungen.de/view/bsb10539855?page=316" target="_blank" rel="noopener noreferrer">BSB 2</a> (NoC-NC 1.0)</figcaption>
+</figure>
+</div>
+</details>
+
 Las cifras son un **mínimo**, no una lista cerrada. En una prueba con veinte párrafos que los detectores no habían propuesto apareció C038. El resultado depende además de distinguir una reseña de su libro original y de comprobar que el pasaje existía en la primera edición de Feijoo. Los niveles B y C recogen las dependencias más cortas o compartidas con otras fuentes; las traducciones citadas están en D.
 
 Puedo incluso comprar los libros para buscar a sus herederos y pedir el reembolso :)
