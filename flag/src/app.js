@@ -656,7 +656,6 @@ function init() {
   });
   $('#prevEmblems').addEventListener('click', () => { emblemPage--; renderImageLibrary(); });
   $('#nextEmblems').addEventListener('click', () => { emblemPage++; renderImageLibrary(); });
-  renderImageLibrary();
   $('#imagesBtn').addEventListener('click', () => openImages());
   $('#closeImages').addEventListener('click', () => $('#imageDialog').close());
   $('#uploadImage').addEventListener('click', () => $('#imageUpload').click());
