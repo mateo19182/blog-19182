@@ -1,3 +1,4 @@
+import { emblemById, validImageSource } from './emblems.js';
 const esc = value => String(value).replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]);
 const num = value => Number(value.toFixed(3));
 
@@ -69,6 +70,18 @@ function shape(layer, w, h) {
       }
       return `<path d="${path}" fill="none" stroke="${c}" stroke-width="${num(h * .21 / count)}"/>`;
     }).join('');
+    case 'image': {
+      const charge = emblemById(layer.emblem);
+      const source = validImageSource(layer.imageSource) ? layer.imageSource : '';
+      const id = `image-tint-${esc(layer.id)}`;
+      const tint = source && layer.imageTint ? `<defs><filter id="${id}" color-interpolation-filters="sRGB"><feFlood flood-color="${c}"/><feComposite in2="SourceGraphic" operator="in"/></filter></defs>` : '';
+      const content = source ? `<image href="${esc(source)}" width="100" height="100" preserveAspectRatio="none"${layer.imageTint ? ` filter="url(#${id})"` : ''}/>` : `<path d="${charge.path}" fill="${c}" fill-rule="${charge.rule || 'nonzero'}"/>`;
+      const repeat = Math.max(1, Math.min(5, Math.round(layer.repeat || 1)));
+      return tint + Array.from({ length: repeat * repeat }, (_, i) => {
+        const cw = w / repeat, ch = h / repeat;
+        return `<g transform="translate(${num(x + i % repeat * cw + (layer.mirror ? cw : 0))} ${num(y + Math.floor(i / repeat) * ch)}) scale(${num(cw / 100 * (layer.mirror ? -1 : 1))} ${num(ch / 100)})">${content}</g>`;
+      }).join('');
+    }
     case 'text': return `<text x="0" y="0" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-weight="700" font-size="${num(h * .7)}" textLength="${num(w)}" lengthAdjust="spacingAndGlyphs" fill="${c}">${esc(layer.text || 'FLAG')}</text>`;
     default: return '';
   }

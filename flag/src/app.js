@@ -1,3 +1,4 @@
+import { EMBLEMS, emblemById, emblemSvg } from './emblems.js';
 import { TYPES, RATIOS, DITHER_SHAPES, COLOR_MODES, initialDocument, normalizeDocument, makeLayer, varyLayer, randomDocument, encodeDocument, decodeDocument } from './model.js';
 import { dimensions, svgMarkup } from './render.js';
 import { hexToHsl, hslToHex } from './color.js';
@@ -53,6 +54,7 @@ const PAGE_SIZE = 5;
 
 const selectedLayer = () => doc.layers.find(layer => layer.id === selectedId);
 const typeInfo = type => TYPES.find(item => item.id === type);
+let imageReplaceId = null;
 const label = type => typeInfo(type)?.label || type;
 const icon = type => typeInfo(type)?.icon || '□';
 const esc = value => String(value).replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]);
@@ -111,7 +113,7 @@ function renderLayers() {
     <div class="layer-row ${layer.id === selectedId ? 'selected' : ''}" data-row-id="${esc(layer.id)}" role="listitem" tabindex="0" aria-label="Capa ${esc(label(layer.type))}">
       <span class="layer-index">${String(doc.layers.length - layerPage * PAGE_SIZE - index).padStart(2, '0')}</span>
       <span class="layer-icon" aria-hidden="true">${icon(layer.type)}</span>
-      <span class="layer-name">${esc(label(layer.type))}</span>
+      <span class="layer-name">${esc(layer.type === 'image' ? layer.imageName || emblemById(layer.emblem).name : label(layer.type))}</span>
       <span class="layer-color" style="background:${layer.color}"></span>
       <span class="layer-buttons"><button data-action="visibility" aria-label="${layer.visible ? 'Ocultar' : 'Mostrar'} capa" class="${layer.visible ? '' : 'hidden-layer'}">${layer.visible ? '◉' : '◎'}</button><button data-action="up" aria-label="Subir capa">↑</button><button data-action="down" aria-label="Bajar capa">↓</button></span>
     </div>`).join('') || '<div class="inspector-empty" aria-label="Sin capas">◇</div>';
@@ -122,8 +124,9 @@ function renderLayers() {
 }
 
 function knob(param, name, glyph, min, max, value, unit = '') {
+  const cue = { x: 'X', y: 'Y', rotation: 'Rotate', w: 'Width', h: 'Height', opacity: 'Opacity', count: 'Count', detail: 'Detail', dither: 'Dither', ditherSize: 'Grain', blur: 'Blur', warp: 'Warp', echo: 'Echo', depth: 'Depth' }[param] || (param.startsWith('rate-') ? 'Rate' : 'Phase');
   const turn = -135 + (value - min) / (max - min) * 270;
-  return `<div class="knob-unit"><span class="knob-glyph" aria-hidden="true">${glyph}</span><div class="knob-body" style="--turn:${turn}deg"><input type="range" min="${min}" max="${max}" step="1" value="${value}" data-param="${param}" aria-label="${name}"/></div><output data-output="${param}">${value}${unit}</output></div>`;
+  return `<div class="knob-unit" title="${name}. Double click to reset"><span class="knob-glyph" aria-hidden="true">${glyph}<small>${cue}</small></span><div class="knob-body" style="--turn:${turn}deg"><input type="range" min="${min}" max="${max}" step="1" value="${value}" data-param="${param}" aria-label="${name}"/></div><output data-output="${param}">${value}${unit}</output></div>`;
 }
 
 function colorJoystick(param, name, color) {
@@ -229,6 +232,7 @@ function renderInspector() {
   refs.inspector.innerHTML = `
     <div class="oscillator-bank">
     <div class="type-grid" role="group" aria-label="Forma de la capa">${TYPES.map(type => `<button class="type-key ${type.id === layer.type ? 'active' : ''}" data-type="${type.id}" aria-label="${type.label}" aria-pressed="${type.id === layer.type}">${type.icon}</button>`).join('')}</div>
+    ${layer.type === 'image' ? `<div class="image-controls"><button data-image-choose title="Choose symbol or upload">${layer.imageSource ? '▧' : emblemSvg(layer.emblem)}<small>Replace</small></button><button data-image-option="mirror" aria-pressed="${layer.mirror}" title="Mirror">↔<small>Mirror</small></button><button data-image-option="imageTint" ${layer.imageSource ? '' : 'disabled'} aria-pressed="${layer.imageTint}" title="Turn uploaded image into a silhouette">◐<small>Tint</small></button><button data-image-repeat title="Repeat symbol">${layer.repeat}×<small>Repeat</small></button></div>` : ''}
     ${layer.type === 'text' ? `<input class="text-socket" type="text" maxlength="50" value="${esc(layer.text)}" data-param="text" aria-label="Texto de la capa"/>` : ''}
     <div class="color-pair">${colorJoystick('color', 'Color principal', layer.color)}${colorJoystick('color2', 'Color secundario', layer.color2)}</div>
     <div class="inspector-actions"><button data-inspector-action="duplicate" aria-label="Duplicar capa">⧉</button><button data-inspector-action="delete" aria-label="Eliminar capa">×</button></div>
@@ -339,7 +343,7 @@ function renderMotion() {
       const connected = routes.find(item => item.target === target.id);
       return `<button class="mod-port mod-target-port ${connected ? 'connected' : ''} ${activeRoute === target.id ? 'selected' : ''}" data-mod-target="${target.id}" aria-label="${target.name}${connected ? `, oscilador ${connected.lfo.toUpperCase()}` : ''}" aria-pressed="${!!connected}" ${layer ? '' : 'disabled'}>${target.icon}</button>`;
     }).join('')}</div>
-  </div><div class="mod-footer"><span class="mod-footer-glyph" aria-hidden="true">${route ? `${route.lfo.toUpperCase()} ─ ${MOD_TARGETS.find(target => target.id === route.target)?.icon}` : '◌ ─ ◌'}</span>${route ? knob('depth', 'Profundidad de modulación', '∿', -100, 100, Math.round(route.depth * 100)) : '<span class="mod-empty" aria-hidden="true">◌ ◌ ◌</span>'}<button class="mod-remove" data-mod-remove aria-label="Desconectar cable" ${route ? '' : 'disabled'}>×</button></div>`;
+  </div><div class="mod-footer"><span class="mod-footer-glyph" aria-hidden="true">${route ? `${route.lfo.toUpperCase()} ─ ${MOD_TARGETS.find(target => target.id === route.target)?.icon}` : '◌ ─ ◌'}</span>${route ? knob('depth', 'Profundidad de modulación', '∿', -100, 100, Math.round(route.depth * 100)) : '<span class="mod-empty">A / B → parameter</span>'}<button class="mod-remove" data-mod-remove aria-label="Desconectar cable" ${route ? '' : 'disabled'}>×</button></div>`;
   requestAnimationFrame(drawMotionBay);
 }
 
@@ -377,7 +381,53 @@ function select(id) {
   renderPreview(); renderLayers(); renderInspector(); renderMotion();
 }
 
+function openImages(replaceId = null) {
+  if (!replaceId && doc.layers.length >= 80) return toast('Límite de 80 capas');
+  imageReplaceId = replaceId;
+  $('#imageDialog').showModal();
+}
+
+function insertImage(properties) {
+  const existing = doc.layers.find(layer => layer.id === imageReplaceId);
+  if (existing) Object.assign(existing, { type: 'image' }, properties);
+  else {
+    if (doc.layers.length >= 80) return toast('Límite de 80 capas');
+    const layer = makeLayer('image', properties);
+    doc.layers.push(layer); selectedId = layer.id; layerPage = 0;
+  }
+  $('#imageDialog').close(); refs.addMenu.hidden = true;
+  commit(); renderAll();
+}
+
+async function uploadImage(event) {
+  const file = event.target.files[0];
+  event.target.value = '';
+  if (!file) return;
+  if (file.size > 15000000) return toast('Image too large. Maximum 15 MB.');
+  const url = URL.createObjectURL(file);
+  const button = $('#uploadImage'); button.disabled = true;
+  try {
+    const image = new Image(); image.src = url; await image.decode();
+    const side = 384, scale = side / Math.max(image.naturalWidth, image.naturalHeight);
+    const canvas = document.createElement('canvas');
+    canvas.width = Math.max(1, Math.round(image.naturalWidth * scale));
+    canvas.height = Math.max(1, Math.round(image.naturalHeight * scale));
+    canvas.getContext('2d').drawImage(image, 0, 0, canvas.width, canvas.height);
+    // Rasterize uploads so SVG scripts and external references never enter documents.
+    const imageSource = canvas.toDataURL('image/webp', .8);
+    if (imageSource.length > 350000) throw new Error('Image too detailed');
+    const size = .42;
+    const { width, height } = dimensions(doc.ratio);
+    insertImage({ imageSource, imageName: file.name.slice(0, 60), imageTint: false,
+      w: size * canvas.width / Math.max(canvas.width, canvas.height),
+      h: size * width / height * canvas.height / Math.max(canvas.width, canvas.height) });
+    toast('Image added. Saved locally and included in shared links.');
+  } catch { toast('Could not load this image. Try PNG, JPG or WEBP.'); }
+  finally { URL.revokeObjectURL(url); button.disabled = false; }
+}
+
 function addLayer(type) {
+  if (type === 'image') return openImages();
   if (doc.layers.length >= 80) return toast('Límite de 80 capas');
   const layer = makeLayer(type);
   doc.layers.push(layer);
@@ -582,18 +632,31 @@ function resetMotionKnob(input) {
 
 function init() {
   refs.addMenu.innerHTML = TYPES.map(type => `<button data-add-type="${type.id}" aria-label="Añadir ${type.label}">${type.icon}</button>`).join('');
-  renderAll();
+  $('#emblemGrid').innerHTML = EMBLEMS.map(item => `<button data-emblem="${item.id}" title="${item.name}">${emblemSvg(item.id)}<span>${item.name}</span></button>`).join('');
+  $('#imagesBtn').addEventListener('click', () => openImages());
+  $('#closeImages').addEventListener('click', () => $('#imageDialog').close());
+  $('#uploadImage').addEventListener('click', () => $('#imageUpload').click());
+  $('#imageUpload').addEventListener('change', uploadImage);
+  $('#emblemGrid').addEventListener('click', event => {
+    const id = event.target.closest('[data-emblem]')?.dataset.emblem;
+    if (id) insertImage({ emblem: id, imageSource: '', imageName: '' });
+  });
+  const hints = () => document.querySelectorAll('button[aria-label]').forEach(button => { if (!button.title) button.title = button.getAttribute('aria-label'); });
+  new MutationObserver(hints).observe(refs.panel, { childList: true, subtree: true });
+  renderAll(); hints();
   if (doc.routes.length && !matchMedia('(prefers-reduced-motion: reduce)').matches) setPlaying(true);
   new ResizeObserver(layoutPreview).observe(refs.stageCenter);
 
   function setDeck(deck) {
     refs.panel.dataset.deck = deck;
     refs.motionButton.setAttribute('aria-pressed', String(deck === 'motion'));
+    refs.motionButton.setAttribute('aria-expanded', String(deck === 'motion'));
     for (const button of document.querySelectorAll('[data-deck-target]')) button.setAttribute('aria-pressed', String(button.dataset.deckTarget === deck));
     refs.addMenu.hidden = true;
     requestAnimationFrame(() => { drawPatchBay(); drawMotionBay(); });
   }
-  refs.motionButton.addEventListener('click', () => setDeck(refs.panel.dataset.deck === 'motion' ? 'shape' : 'motion'));
+  let previousDeck = 'shape';
+  refs.motionButton.addEventListener('click', () => { if (refs.panel.dataset.deck === 'motion') setDeck(previousDeck); else { previousDeck = refs.panel.dataset.deck; setDeck('motion'); } });
   refs.play.addEventListener('click', () => setPlaying(!playing));
   refs.playhead.addEventListener('input', event => { setPlaying(false); setPlayhead(Number(event.target.value) / 100); });
   document.addEventListener('visibilitychange', () => { if (document.hidden && playing) setPlaying(false); });
@@ -771,7 +834,12 @@ function init() {
     const colorMode = event.target.closest('[data-color-mode]')?.dataset.colorMode;
     if (colorMode && selectedLayer()) { selectedLayer().colorMode = colorMode; commit(); renderAll(); return; }
     const type = event.target.closest('[data-type]')?.dataset.type;
+    if (type === 'image') { openImages(selectedId); return; }
     if (type && selectedLayer()) { selectedLayer().type = type; commit(); renderAll(); return; }
+    if (event.target.closest('[data-image-choose]')) { openImages(selectedId); return; }
+    const imageOption = event.target.closest('[data-image-option]')?.dataset.imageOption;
+    if (imageOption && selectedLayer()) { selectedLayer()[imageOption] = !selectedLayer()[imageOption]; commit(); renderAll(); return; }
+    if (event.target.closest('[data-image-repeat]') && selectedLayer()) { selectedLayer().repeat = selectedLayer().repeat % 5 + 1; commit(); renderAll(); return; }
     const action = event.target.dataset.inspectorAction;
     if (action === 'duplicate') duplicateSelected();
     if (action === 'delete') removeSelected();

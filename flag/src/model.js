@@ -1,3 +1,4 @@
+import { EMBLEMS, validImageSource } from './emblems.js';
 import { defaultLfos, normalizeMotion } from './modulation.js';
 
 export const TYPES = [
@@ -16,6 +17,7 @@ export const TYPES = [
   { id: 'dots', label: 'Puntos', icon: '⠿', group: 'patrón' },
   { id: 'checks', label: 'Cuadrícula', icon: '▦', group: 'patrón' },
   { id: 'waves', label: 'Ondas', icon: '≋', group: 'patrón' },
+  { id: 'image', label: 'Imagen', icon: '♜', group: 'símbolo' },
   { id: 'text', label: 'Texto', icon: 'A', group: 'símbolo' }
 ];
 
@@ -33,7 +35,7 @@ export function makeLayer(type, overrides = {}) {
     id: crypto.randomUUID(), type, x: .5, y: .5, w: .62, h: .62, rotation: 0,
     opacity: 1, color: '#303030', color2: '#858585', count: 6, detail: .28,
     dither: 0, ditherSize: .5, ditherShape: 'circle', colorMode: 'color', blur: 0, warp: 0, echo: 0,
-    text: 'FLAG', visible: true
+    text: 'FLAG', visible: true, emblem: 'lion', imageSource: '', imageName: '', imageTint: false, mirror: false, repeat: 1
   };
   const byType = {
     band: { w: 1.1, h: .26 }, stripes: { w: 1.1, h: 1.1, count: 5 },
@@ -43,7 +45,7 @@ export function makeLayer(type, overrides = {}) {
     star: { w: .38, h: .56, count: 5 }, sun: { w: .46, h: .68, count: 12 },
     crescent: { w: .42, h: .64 }, rays: { w: .9, h: 1.2, count: 12 },
     dots: { w: .72, h: .8, count: 5 }, checks: { w: .8, h: 1, count: 6 },
-    waves: { w: 1.1, h: .8, count: 5 }, text: { w: .7, h: .28 }
+    image: { w: .36, h: .54 }, waves: { w: 1.1, h: .8, count: 5 }, text: { w: .7, h: .28 }
   };
   return { ...defaults, ...(byType[type] || {}), ...overrides };
 }
@@ -77,6 +79,10 @@ export function normalizeDocument(input) {
       ditherSize: limit(layer.ditherSize, 0, 1, .5),
       ditherShape: DITHER_SHAPES.includes(layer.ditherShape) ? layer.ditherShape : 'circle',
       colorMode: COLOR_MODES.includes(layer.colorMode) ? layer.colorMode : 'color',
+      emblem: EMBLEMS.some(item => item.id === layer.emblem) ? layer.emblem : 'lion',
+      imageSource: validImageSource(layer.imageSource) ? layer.imageSource : '',
+      imageName: typeof layer.imageName === 'string' ? layer.imageName.slice(0, 60) : '',
+      imageTint: layer.imageTint === true, mirror: layer.mirror === true, repeat: Math.round(limit(layer.repeat, 1, 5, 1)),
       text: typeof layer.text === 'string' ? layer.text.slice(0, 50) : 'FLAG', visible: layer.visible !== false
     });
   });
@@ -95,6 +101,7 @@ export function varyLayer(layer) {
   if (effects.every(value => value === 0)) effects[Math.floor(n(0, effects.length))] = n(.25, .6);
   return {
     ...layer,
+    ...(layer.type === 'image' && !layer.imageSource ? { emblem: EMBLEMS[Math.floor(n(0, EMBLEMS.length))].id, mirror: Math.random() > .5, repeat: Math.random() > .7 ? 2 : 1 } : {}),
     x: n(.15, .85), y: n(.15, .85), w: n(.18, 1.35), h: n(.18, 1.25),
     rotation: Math.round(n(-180, 180) / 15) * 15,
     color: randomColor(layer.color), count: Math.round(n(3, 17)), detail: n(.12, .55), opacity: n(.65, 1),
@@ -107,7 +114,7 @@ export function varyLayer(layer) {
 
 export function randomDocument() {
   const n = (min, max) => min + Math.random() * (max - min);
-  const groups = [['band', 'stripes', 'cross', 'saltire', 'chevron', 'triangle'], ['circle', 'star', 'sun', 'crescent', 'diamond', 'rays'], ['dots', 'checks', 'waves', 'star', 'triangle']];
+  const groups = [['band', 'stripes', 'cross', 'saltire', 'chevron', 'triangle'], ['circle', 'star', 'sun', 'crescent', 'diamond', 'rays', 'image'], ['dots', 'checks', 'waves', 'star', 'triangle']];
   const pick = items => items[Math.floor(Math.random() * items.length)];
   const background = randomColor();
   const layers = groups.slice(0, Math.random() > .45 ? 3 : 2).map(group => {
@@ -131,7 +138,7 @@ export function encodeDocument(doc) {
 
 export function decodeDocument(value) {
   try {
-    if (!value || value.length > 200000) return null;
+    if (!value || value.length > 40000000) return null;
     const binary = atob(value.replace(/-/g, '+').replace(/_/g, '/'));
     const bytes = Uint8Array.from(binary, char => char.charCodeAt(0));
     return normalizeDocument(JSON.parse(new TextDecoder().decode(bytes)));

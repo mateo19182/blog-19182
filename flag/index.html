@@ -22,19 +22,20 @@
           <button id="undoBtn" class="tool-key" aria-label="Deshacer">↶</button>
           <button id="redoBtn" class="tool-key" aria-label="Rehacer">↷</button>
           <span class="tool-spacer"></span>
-          <button id="motionBtn" class="tool-key" aria-label="Osciladores" aria-pressed="false">∿</button>
+          <button id="motionBtn" class="tool-key" aria-label="Osciladores" aria-pressed="false" aria-expanded="false" aria-controls="motionBank">∿ <small>LFO</small></button>
+          <button id="imagesBtn" class="tool-key" aria-label="Images and heraldic symbols">♜</button>
           <button id="mutateBtn" class="tool-key accent-key" aria-label="Variar capa">✧</button>
           <button id="randomBtn" class="tool-key" aria-label="Variar todo">⤨</button>
           <button id="shareBtn" class="tool-key" aria-label="Copiar enlace">↗</button>
           <button id="exportBtn" class="tool-key dark-key" aria-label="Exportar">↓</button>
         </div>
         <nav class="deck-nav" aria-label="Bancos de control">
-          <button data-deck-target="format" aria-label="Formato">▭</button>
-          <button data-deck-target="layers" aria-label="Capas">▤</button>
-          <button data-deck-target="shape" aria-label="Formas">◇</button>
-          <button data-deck-target="geometry" aria-label="Geometría">⌖</button>
-          <button data-deck-target="texture" aria-label="Efectos">⠿</button>
-          <button data-deck-target="motion" aria-label="Osciladores">∿</button>
+          <button data-deck-target="format" aria-label="Formato">▭<small>Format</small></button>
+          <button data-deck-target="layers" aria-label="Capas">▤<small>Layers</small></button>
+          <button data-deck-target="shape" aria-label="Formas">◇<small>Shape</small></button>
+          <button data-deck-target="geometry" aria-label="Geometría">⌖<small>Position</small></button>
+          <button data-deck-target="texture" aria-label="Efectos">⠿<small>Effects</small></button>
+          
         </nav>
         <div class="plate-section format-section">
           <div class="section-numeral" aria-hidden="true">Ⅰ</div>
@@ -57,6 +58,12 @@
       </aside>
     </main>
   </div>
+  <dialog id="imageDialog" class="image-dialog" aria-label="Images and symbols">
+    <div class="image-drawer-head"><span>Charges / images</span><button id="closeImages" aria-label="Close images">×</button></div>
+    <div id="emblemGrid" class="emblem-grid"></div>
+    <div class="image-drawer-foot"><button id="uploadImage">↑ <span>Upload image</span></button><span>PNG · JPG · WEBP · SVG</span></div>
+    <input id="imageUpload" type="file" accept="image/png,image/jpeg,image/webp,image/svg+xml" hidden/>
+  </dialog>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
   <dialog id="exportDialog" class="export-dialog"><div class="dialog-head"><span>⟡ &nbsp; ◇ &nbsp; ⟡</span><button id="closeDialog" aria-label="Cerrar">×</button></div><div class="dialog-actions"><button id="downloadSvg" aria-label="Descargar SVG">◇ <small>SVG</small> ↓</button><button id="downloadPng" aria-label="Descargar PNG">▧ <small>PNG</small> ↓</button><button id="downloadWebm" aria-label="Descargar animación WebM">∿ <small>WEBM</small> ↓</button></div></dialog>
 </body>
