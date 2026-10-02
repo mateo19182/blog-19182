@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-10-01
+date: 2026-10-02
 tags: 
   - personal
 ---
@@ -9,6 +9,12 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [RIP, vector database](https://turbopuffer.com/blog/rip-vector-database) `Tech` *2026-10-01*
+- [Agentic Hacks, Real Proofs: Inside Google&-x27;s PageBreak Project](https://blog.google/security/agentic-hacks-real-proofs-inside-googles-pagebreak-project) `Tech` *2026-10-01*
+- [On Injuries](https://lindynewsletter.beehiiv.com/p/on-injuries?utm_source=lindynewsletter.beehiiv.com&utm_medium=newsletter&utm_campaign=on-injuries) `Reads` *2026-10-01*
+- [The Specter Of Neuralese - by Scott Alexander](https://www.astralcodexten.com/p/the-specter-of-neuralese?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-10-01*
+- [How Japan’s Geography Determined Its History](https://unchartedterritories.tomaspueyo.com/p/how-japans-geography-determined-its?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-10-01*
+- [Where Do the Children Play?  - Seeds of Science](https://www.theseedsofscience.pub/p/where-do-the-children-play?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-10-01*
 - [Q2 2026 Drive Stats: Hard Drive Failure Rates](https://www.backblaze.com/blog/backblaze-drive-stats-for-q2-2026) `Tech` *2026-09-30*
 - [Most data centers refusing to say how much water, electricity they use | NL Times](https://nltimes.nl/2026/09/30/data-centers-refusing-say-much-water-electricity-use) `Ideas` *2026-09-30*
 - [Post Capitalism | the singularity is nearer](https://geohot.github.io//blog/jekyll/update/2026/09/29/post-capitalism.html) `Ideas` *2026-09-30*
