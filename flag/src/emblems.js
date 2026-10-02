@@ -18,9 +18,25 @@ export const EMBLEMS = [
 export const emblemById = id => [...FLAG_CHARGES, ...EMBLEMS].find(emblem => emblem.id === id) || EMBLEMS[0];
 export function emblemSvg(id) {
   const emblem = emblemById(id);
-  if (emblem.source) return `<img src="${emblem.source}" alt="${emblem.name}"/>`;
+  if (emblem.asset) return `<img src="${new URL('../assets/charges/' + emblem.code + '.png', import.meta.url).href}" alt="${emblem.name}"/>`;
   return `<svg viewBox="0 0 100 100" aria-hidden="true"><path d="${emblem.path}" fill="currentColor" fill-rule="${emblem.rule || 'nonzero'}"/></svg>`;
 }
 export function validImageSource(value) {
   return typeof value === 'string' && value.length <= 350000 && /^data:image\/(png|jpeg|webp);base64,[A-Za-z0-9+/=]+$/.test(value);
+}
+
+const chargeLoads = new Map();
+export function loadCharge(id) {
+  const charge = FLAG_CHARGES.find(item => item.id === id);
+  if (!charge || charge.source) return Promise.resolve(charge);
+  if (!chargeLoads.has(id)) {
+    chargeLoads.set(id, import(`./charge-data/${id}.js`).then(module => {
+      charge.source = module.default;
+      return charge;
+    }).catch(error => { chargeLoads.delete(id); throw error; }));
+  }
+  return chargeLoads.get(id);
+}
+export function prepareCharges(layers) {
+  return Promise.all([...new Set(layers.filter(layer => layer.type === 'image' && !layer.imageSource).map(layer => layer.emblem))].map(loadCharge));
 }

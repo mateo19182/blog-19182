@@ -17,7 +17,7 @@ export const TYPES = [
   { id: 'dots', label: 'Dots', icon: '⠿', group: 'patrón' },
   { id: 'checks', label: 'Checks', icon: '▦', group: 'patrón' },
   { id: 'waves', label: 'Waves', icon: '≋', group: 'patrón' },
-  { id: 'image', label: 'Image', icon: '♜', group: 'símbolo' },
+  { id: 'image', label: 'Image', icon: '▧', group: 'símbolo' },
   { id: 'text', label: 'Text', icon: 'A', group: 'símbolo' }
 ];
 

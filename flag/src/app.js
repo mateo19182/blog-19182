@@ -1,4 +1,4 @@
-import { FLAG_CHARGES, emblemById, emblemSvg } from './emblems.js';
+import { FLAG_CHARGES, emblemById, emblemSvg, prepareCharges } from './emblems.js';
 import { TYPES, RATIOS, DITHER_SHAPES, COLOR_MODES, initialDocument, normalizeDocument, makeLayer, varyLayer, randomDocument, encodeDocument, decodeDocument } from './model.js';
 import { dimensions, svgMarkup } from './render.js';
 import { hexToHsl, hslToHex } from './color.js';
@@ -54,6 +54,9 @@ const PAGE_SIZE = 5;
 const selectedLayer = () => doc.layers.find(layer => layer.id === selectedId);
 const typeInfo = type => TYPES.find(item => item.id === type);
 let imageReplaceId = null;
+let emblemPage = 0;
+let emblemCategory = 'All';
+const EMBLEM_PAGE_SIZE = 12;
 const label = type => typeInfo(type)?.label || type;
 const icon = type => typeInfo(type)?.icon || '□';
 const esc = value => String(value).replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]);
@@ -224,8 +227,8 @@ function renderInspector() {
   const detailTypes = ['cross', 'saltire', 'chevron', 'star', 'sun', 'crescent', 'rays', 'dots', 'waves'];
   refs.inspector.innerHTML = `
     <div class="oscillator-bank"><span class="bank-caption">Shape / color</span>
-    <div class="type-grid" role="group" aria-label="Forma de la capa">${TYPES.map(type => `<button class="type-key ${type.id === layer.type ? 'active' : ''}" data-type="${type.id}" aria-label="${type.label}" aria-pressed="${type.id === layer.type}">${type.icon}</button>`).join('')}</div>
-    ${layer.type === 'image' ? `<div class="image-controls"><button data-image-choose title="Choose symbol or upload">${layer.imageSource ? '▧' : emblemSvg(layer.emblem)}<small>Replace</small></button><button data-image-option="mirror" aria-pressed="${layer.mirror}" title="Mirror">↔<small>Mirror</small></button><button data-image-option="imageTint" ${layer.imageSource || emblemById(layer.emblem).source ? '' : 'disabled'} aria-pressed="${layer.imageTint}" title="Turn uploaded image into a silhouette">◐<small>Tint</small></button><button data-image-repeat title="Repeat symbol">${layer.repeat}×<small>Repeat</small></button></div>` : ''}
+    <div class="type-grid" role="group" aria-label="Forma de la capa">${TYPES.map(type => `<button class="type-key ${type.id === layer.type ? 'active' : ''}" data-type="${type.id}" aria-label="${type.label}" aria-pressed="${type.id === layer.type}">${type.icon}${type.id === 'image' ? '<small>Image</small>' : ''}</button>`).join('')}</div>
+    ${layer.type === 'image' ? `<div class="image-controls"><button data-image-choose title="Choose symbol or upload">${layer.imageSource ? '▧' : emblemSvg(layer.emblem)}<small>Replace</small></button><button data-image-option="mirror" aria-pressed="${layer.mirror}" title="Mirror">↔</button><button data-image-option="imageTint" ${layer.imageSource || emblemById(layer.emblem).asset ? '' : 'disabled'} aria-pressed="${layer.imageTint}" title="Turn uploaded image into a silhouette">◐<small>Tint</small></button><button data-image-repeat title="Repeat symbol">${layer.repeat}×</button></div>` : ''}
     ${layer.type === 'text' ? `<input class="text-socket" type="text" maxlength="50" value="${esc(layer.text)}" data-param="text" aria-label="Texto de la capa"/>` : ''}
     <div class="color-pair" title="${layer.type === 'image' ? 'Enable Tint to recolor this image' : 'Drag the discs for hue and saturation; sliders control brightness'}">${colorJoystick('color', 'Color principal', layer.color)}${colorJoystick('color2', 'Color secundario', layer.color2)}</div>
     <div class="inspector-actions"><button data-inspector-action="duplicate" aria-label="Duplicar capa">⧉</button><button data-inspector-action="delete" aria-label="Eliminar capa">×</button></div>
@@ -359,6 +362,9 @@ function removeMotion(target) {
 }
 
 function renderAll() {
+  if (doc.layers.some(layer => layer.type === 'image' && !layer.imageSource && emblemById(layer.emblem).asset && !emblemById(layer.emblem).source)) {
+    prepareCharges(doc.layers).then(() => { renderPreview(); renderInspector(); }).catch(() => {});
+  }
   refs.ratio.innerHTML = RATIOS.map(value => { const [w, h] = value.split(':').map(Number); const scale = 25 / Math.max(w, h); return `<button class="ratio-key ${doc.ratio === value ? 'active' : ''}" data-ratio="${value}" aria-label="Proporción ${value}" aria-pressed="${doc.ratio === value}"><span class="ratio-shape" style="--rw:${Math.round(w * scale)}px;--rh:${Math.round(h * scale)}px"></span></button>`; }).join('');
   refs.background.innerHTML = colorJoystick('background', 'Color del fondo', doc.background);
   refs.ratioLabel.textContent = doc.ratio;
@@ -374,9 +380,22 @@ function select(id) {
   renderPreview(); renderLayers(); renderInspector(); renderMotion();
 }
 
+function renderImageLibrary() {
+  const query = $('#emblemSearch').value.trim().toLowerCase();
+  const items = FLAG_CHARGES.filter(item => (emblemCategory === 'All' || item.category === emblemCategory) && `${item.name} ${item.country}`.toLowerCase().includes(query));
+  const pages = Math.max(1, Math.ceil(items.length / EMBLEM_PAGE_SIZE));
+  emblemPage = clamp(emblemPage, 0, pages - 1);
+  $('#emblemGrid').innerHTML = items.slice(emblemPage * EMBLEM_PAGE_SIZE, (emblemPage + 1) * EMBLEM_PAGE_SIZE).map(item => `<button data-emblem="${item.id}" title="${item.name} · ${item.country}">${emblemSvg(item.id)}<span>${item.name}</span><small>${item.country}</small></button>`).join('') || '<div class="library-empty">No matching emblems</div>';
+  $('#emblemPage').textContent = `${emblemPage + 1} / ${pages} · ${items.length}`;
+  $('#prevEmblems').disabled = emblemPage === 0;
+  $('#nextEmblems').disabled = emblemPage === pages - 1;
+  for (const button of $('#emblemCategories').querySelectorAll('button')) button.setAttribute('aria-pressed', String(button.dataset.category === emblemCategory));
+}
+
 function openImages(replaceId = null) {
   if (!replaceId && doc.layers.length >= 80) return;
   imageReplaceId = replaceId;
+  renderImageLibrary();
   $('#imageDialog').showModal();
 }
 
@@ -525,12 +544,14 @@ function download(blob, name) {
   setTimeout(() => URL.revokeObjectURL(url), 1000);
 }
 
-function exportSvg() {
+async function exportSvg() {
+  await prepareCharges(doc.layers);
   download(new Blob([svgMarkup(frameDocument(doc, playhead))], { type: 'image/svg+xml;charset=utf-8' }), 'flag-lab.svg');
   refs.dialog.close(); 
 }
 
 async function exportPng() {
+  await prepareCharges(doc.layers);
   const markup = svgMarkup(frameDocument(doc, playhead));
   const url = URL.createObjectURL(new Blob([markup], { type: 'image/svg+xml;charset=utf-8' }));
   try {
@@ -557,6 +578,7 @@ async function drawVideoFrame(ctx, frame, width, height) {
 }
 
 async function exportWebm() {
+  await prepareCharges(doc.layers);
   const button = $('#downloadWebm');
   if (!window.MediaRecorder || !HTMLCanvasElement.prototype.captureStream) return;
   const mime = ['video/webm;codecs=vp9', 'video/webm;codecs=vp8', 'video/webm'].find(type => MediaRecorder.isTypeSupported(type));
@@ -624,8 +646,17 @@ function resetMotionKnob(input) {
 }
 
 function init() {
-  refs.addMenu.innerHTML = TYPES.map(type => `<button data-add-type="${type.id}" aria-label="Añadir ${type.label}">${type.icon}</button>`).join('');
-  $('#emblemGrid').innerHTML = FLAG_CHARGES.map(item => `<button data-emblem="${item.id}" title="${item.name}">${emblemSvg(item.id)}<span>${item.name}</span><small>${item.country}</small></button>`).join('');
+  refs.addMenu.innerHTML = `<div class="add-menu-head"><span>Add layer</span><button data-close-add aria-label="Close add layer">×</button></div><div class="add-shape-grid">${TYPES.filter(type => type.id !== 'image').map(type => `<button data-add-type="${type.id}" aria-label="Add ${type.label}" title="${type.label}">${type.icon}</button>`).join('')}</div><button data-add-type="image" class="add-image-entry" aria-label="Add image or flag emblem"><span aria-hidden="true">▧</span><span>Image / flag emblem</span><span aria-hidden="true">→</span></button>`;
+  const categories = [['All','✳'],['Animals','♞'],['Arms','♜'],['Celestial','☼'],['Plants','❧'],['Weapons','⚔'],['Symbols','◇']];
+  $('#emblemCategories').innerHTML = categories.map(([name, glyph]) => `<button data-category="${name}" aria-label="${name}" title="${name}" aria-pressed="${name === 'All'}">${glyph}</button>`).join('');
+  $('#emblemSearch').addEventListener('input', () => { emblemPage = 0; renderImageLibrary(); });
+  $('#emblemCategories').addEventListener('click', event => {
+    const category = event.target.closest('[data-category]')?.dataset.category;
+    if (category) { emblemCategory = category; emblemPage = 0; renderImageLibrary(); }
+  });
+  $('#prevEmblems').addEventListener('click', () => { emblemPage--; renderImageLibrary(); });
+  $('#nextEmblems').addEventListener('click', () => { emblemPage++; renderImageLibrary(); });
+  renderImageLibrary();
   $('#imagesBtn').addEventListener('click', () => openImages());
   $('#closeImages').addEventListener('click', () => $('#imageDialog').close());
   $('#uploadImage').addEventListener('click', () => $('#imageUpload').click());
@@ -775,7 +806,7 @@ function init() {
     const input = event.target.closest('.knob-body input');
     if (input) { event.preventDefault(); resetMotionKnob(input); }
   });
-  refs.addMenu.addEventListener('click', event => { const button = event.target.closest('[data-add-type]'); if (button) addLayer(button.dataset.addType); });
+  refs.addMenu.addEventListener('click', event => { if (event.target.closest('[data-close-add]')) { refs.addMenu.hidden = true; return; } const button = event.target.closest('[data-add-type]'); if (button) addLayer(button.dataset.addType); });
   document.addEventListener('pointerdown', event => { if (!event.target.closest('.module-layers')) refs.addMenu.hidden = true; });
   refs.layerList.addEventListener('click', event => {
     const row = event.target.closest('[data-row-id]'); if (!row) return;

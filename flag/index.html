@@ -24,11 +24,11 @@
           <span class="tool-spacer"></span>
           <button class="tool-key lfo-deck-key" data-deck-target="shape" aria-label="Layer controls" aria-pressed="true">◇ <small>Layer</small></button>
           <button class="tool-key lfo-deck-key" data-deck-target="motion" aria-label="LFO controls" aria-pressed="false">∿ <small>LFO</small></button>
-          <button id="imagesBtn" class="tool-key" aria-label="Images and heraldic symbols">♜ <small>Images</small></button>
+          <button id="imagesBtn" class="tool-key" aria-label="Images and heraldic symbols">▧ <small>Images</small></button>
           <button id="mutateBtn" class="tool-key accent-key" aria-label="Variar capa">✧</button>
           <button id="randomBtn" class="tool-key" aria-label="Variar todo">⤨</button>
-          <button id="shareBtn" class="tool-key" aria-label="Copy link">↗ <small>Share</small></button>
-          <button id="exportBtn" class="tool-key dark-key" aria-label="Export">↓ <small>Export</small></button>
+          <button id="shareBtn" class="tool-key" aria-label="Copy link">↗</button>
+          <button id="exportBtn" class="tool-key dark-key" aria-label="Export">↓</button>
         </div>
         <nav class="deck-nav" aria-label="Bancos de control">
           <button data-deck-target="format" aria-label="Formato">▭<small>Format</small></button>
@@ -48,7 +48,7 @@
         <div class="plate-section layers-section module-layers">
           <div class="section-numeral" >Layers</div>
           <div class="layer-list" id="layerList" role="list"></div>
-          <div class="layer-foot"><button class="page-key" id="prevLayerPage" aria-label="Capas anteriores">◀</button><span id="layerPageLabel" aria-hidden="true">01</span><button class="add-key" id="addLayerBtn" aria-label="Add layer">✚ <small>Add layer</small></button><button class="page-key" id="nextLayerPage" aria-label="Capas siguientes">▶</button></div>
+          <div class="layer-foot"><button class="page-key" id="prevLayerPage" aria-label="Capas anteriores">◀</button><span id="layerPageLabel" aria-hidden="true">01</span><button class="add-key" id="addLayerBtn" aria-label="Add layer">✚</button><button class="page-key" id="nextLayerPage" aria-label="Capas siguientes">▶</button></div>
           <div class="add-menu" id="addMenu" hidden></div>
         </div>
         <div class="plate-section editor-section">
@@ -62,7 +62,9 @@
   </div>
   <dialog id="imageDialog" class="image-dialog" aria-label="Images and symbols">
     <div class="image-drawer-head"><span>Real flag emblems</span><button id="closeImages" aria-label="Close images">×</button></div>
+    <div class="library-search"><input id="emblemSearch" type="search" placeholder="Search emblems or countries" aria-label="Search emblems or countries"/><div id="emblemCategories" class="library-categories" role="group" aria-label="Emblem categories"></div></div>
     <div id="emblemGrid" class="emblem-grid"></div>
+    <div class="library-pages"><button id="prevEmblems" aria-label="Previous emblems">←</button><span id="emblemPage"></span><button id="nextEmblems" aria-label="Next emblems">→</button></div>
     <div class="image-drawer-foot"><button id="uploadImage">↑ <span>Upload image</span></button><span>PNG · JPG · WEBP · SVG<br/><a href="./assets/charges/SOURCES.md" target="_blank" rel="noopener">Artwork sources</a></span></div>
     <input id="imageUpload" type="file" accept="image/png,image/jpeg,image/webp,image/svg+xml" hidden/>
   </dialog>
