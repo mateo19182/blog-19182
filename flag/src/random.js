@@ -116,7 +116,7 @@ export function composeRandomFlag(makeLayer, defaultLfos, rng = Math.random) {
   // A smaller experimental branch loosens placement and introduces rotation.
   if (rng() < .18) {
     const focal = layers.at(-1);
-    focal.rotation += pick([-30, -15, 15, 30, 90], rng);
+    if (focal.type !== 'image') focal.rotation += pick([-30, -15, 15, 30, 90], rng);
     focal.x += range(-.07, .07, rng);
     focal.y += range(-.06, .06, rng);
 
@@ -126,7 +126,9 @@ export function composeRandomFlag(makeLayer, defaultLfos, rng = Math.random) {
     ...lfo, wave: pick(['sine', 'triangle', 'square', 'step'], rng),
     rate: range(.08, .45, rng), phase: rng(), seed: Math.floor(rng() * 999999)
   }));
-  const targets = ['rotation', 'dither', 'warp', 'echo', 'opacity'];
+  const targets = layers.at(-1).type === 'image'
+    ? ['dither', 'warp', 'echo', 'opacity']
+    : ['rotation', 'dither', 'warp', 'echo', 'opacity'];
   const routes = [{ lfo: pick(lfos, rng).id, layerId: layers.at(-1).id,
     target: pick(targets, rng), depth: range(.12, .32, rng) }];
   return { version: 2, ratio, background, layers, lfos, routes };

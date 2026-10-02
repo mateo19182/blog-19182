@@ -104,7 +104,7 @@ export function varyLayer(layer) {
     ...layer,
     ...(layer.type === 'image' && !layer.imageSource ? { emblem: FLAG_CHARGES[Math.floor(n(0, FLAG_CHARGES.length))].id, mirror: Math.random() > .5, repeat: Math.random() > .7 ? 2 : 1 } : {}),
     x: n(.15, .85), y: n(.15, .85), w: n(.18, 1.35), h: n(.18, 1.25),
-    rotation: Math.round(n(-180, 180) / 15) * 15,
+    rotation: layer.type === 'image' ? 0 : Math.round(n(-180, 180) / 15) * 15,
     color: randomColor(layer.color), count: Math.round(n(3, 17)), detail: n(.12, .55), opacity: n(.65, 1),
     dither: effects[0], ditherSize: Math.round(n(.15, .85) * 100) / 100,
     ditherShape: DITHER_SHAPES[Math.floor(n(0, DITHER_SHAPES.length))],
