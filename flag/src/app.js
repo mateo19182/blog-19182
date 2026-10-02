@@ -10,10 +10,10 @@ const refs = {
   surround: $('#flagSurround'), stageCenter: $('.stage-center'), layerList: $('#layerList'),
   inspector: $('#inspector'), addMenu: $('#addMenu'),
   ratio: $('#ratioSelect'), background: $('#backgroundColor'),
-  ratioLabel: $('#ratioLabel'), layerCount: $('#layerCount'), toast: $('#toast'),
+  ratioLabel: $('#ratioLabel'), layerCount: $('#layerCount'),
   dialog: $('#exportDialog'), undo: $('#undoBtn'), redo: $('#redoBtn'),
   panel: $('.control-panel'), pagePrev: $('#prevLayerPage'), pageNext: $('#nextLayerPage'), pageLabel: $('#layerPageLabel'),
-  motion: $('#motionBank'), play: $('#playBtn'), playhead: $('#playhead'), time: $('#timeReadout'), motionButton: $('#motionBtn')
+  motion: $('#motionBank'), play: $('#playBtn'), playhead: $('#playhead'), time: $('#timeReadout')
 };
 
 function loadDocument() {
@@ -33,7 +33,6 @@ let doc = loadDocument();
 let selectedId = doc.layers.at(-1)?.id ?? null;
 let history = [JSON.stringify(doc)];
 let historyIndex = 0;
-let toastTimeout;
 let drag = null;
 let knobDrag = null;
 let colorDrag = null;
@@ -59,13 +58,6 @@ const label = type => typeInfo(type)?.label || type;
 const icon = type => typeInfo(type)?.icon || '□';
 const esc = value => String(value).replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]);
 const clamp = (value, min, max) => Math.min(max, Math.max(min, value));
-
-function toast(message) {
-  refs.toast.textContent = message;
-  refs.toast.classList.add('visible');
-  clearTimeout(toastTimeout);
-  toastTimeout = setTimeout(() => refs.toast.classList.remove('visible'), 2600);
-}
 
 function commit() {
   const snapshot = JSON.stringify(doc);
@@ -356,7 +348,6 @@ function connectMotion(lfo, target) {
   activeLfo = lfo;
   activeRoute = target;
   commit(); renderMotion(); renderPreview();
-  setPlaying(true);
 }
 
 function removeMotion(target) {
@@ -384,7 +375,7 @@ function select(id) {
 }
 
 function openImages(replaceId = null) {
-  if (!replaceId && doc.layers.length >= 80) return toast('Límite de 80 capas');
+  if (!replaceId && doc.layers.length >= 80) return;
   imageReplaceId = replaceId;
   $('#imageDialog').showModal();
 }
@@ -393,7 +384,7 @@ function insertImage(properties) {
   const existing = doc.layers.find(layer => layer.id === imageReplaceId);
   if (existing) Object.assign(existing, { type: 'image' }, properties);
   else {
-    if (doc.layers.length >= 80) return toast('Límite de 80 capas');
+    if (doc.layers.length >= 80) return;
     const layer = makeLayer('image', properties);
     doc.layers.push(layer); selectedId = layer.id; layerPage = 0;
   }
@@ -405,7 +396,7 @@ async function uploadImage(event) {
   const file = event.target.files[0];
   event.target.value = '';
   if (!file) return;
-  if (file.size > 15000000) return toast('Image too large. Maximum 15 MB.');
+  if (file.size > 15000000) return;
   const url = URL.createObjectURL(file);
   const button = $('#uploadImage'); button.disabled = true;
   try {
@@ -423,21 +414,21 @@ async function uploadImage(event) {
     insertImage({ imageSource, imageName: file.name.slice(0, 60), imageTint: false,
       w: size * canvas.width / Math.max(canvas.width, canvas.height),
       h: size * width / height * canvas.height / Math.max(canvas.width, canvas.height) });
-    toast('Image added. Saved locally and included in shared links.');
-  } catch { toast('Could not load this image. Try PNG, JPG or WEBP.'); }
+    
+  } catch {  }
   finally { URL.revokeObjectURL(url); button.disabled = false; }
 }
 
 function addLayer(type) {
   if (type === 'image') return openImages();
-  if (doc.layers.length >= 80) return toast('Límite de 80 capas');
+  if (doc.layers.length >= 80) return;
   const layer = makeLayer(type);
   doc.layers.push(layer);
   selectedId = layer.id;
   layerPage = 0;
   refs.addMenu.hidden = true;
   commit(); renderAll();
-  toast(`${label(type)} añadido`);
+  
 }
 
 function removeSelected() {
@@ -518,13 +509,13 @@ async function share() {
   try {
     await navigator.clipboard.writeText(url.href);
     window.history.replaceState(null, '', url.href);
-    toast('Enlace copiado');
+    
   } catch {
     const input = document.createElement('textarea');
     input.value = url.href; document.body.append(input); input.select();
     const copied = document.execCommand('copy'); input.remove();
-    if (copied) { window.history.replaceState(null, '', url.href); toast('Enlace copiado'); }
-    else toast('No se pudo copiar el enlace');
+    if (copied) { window.history.replaceState(null, '', url.href);  }
+    
   }
 }
 
@@ -536,7 +527,7 @@ function download(blob, name) {
 
 function exportSvg() {
   download(new Blob([svgMarkup(frameDocument(doc, playhead))], { type: 'image/svg+xml;charset=utf-8' }), 'flag-lab.svg');
-  refs.dialog.close(); toast('SVG descargado');
+  refs.dialog.close(); 
 }
 
 async function exportPng() {
@@ -550,8 +541,8 @@ async function exportPng() {
     canvas.getContext('2d').drawImage(img, 0, 0, canvas.width, canvas.height);
     const blob = await new Promise(resolve => canvas.toBlob(resolve, 'image/png'));
     if (!blob) throw new Error('PNG unavailable');
-    download(blob, 'flag-lab.png'); refs.dialog.close(); toast('PNG descargado');
-  } catch { toast('No se pudo crear el PNG'); }
+    download(blob, 'flag-lab.png'); refs.dialog.close(); 
+  } catch {  }
   finally { URL.revokeObjectURL(url); }
 }
 
@@ -567,9 +558,9 @@ async function drawVideoFrame(ctx, frame, width, height) {
 
 async function exportWebm() {
   const button = $('#downloadWebm');
-  if (!window.MediaRecorder || !HTMLCanvasElement.prototype.captureStream) return toast('Vídeo no disponible aquí');
+  if (!window.MediaRecorder || !HTMLCanvasElement.prototype.captureStream) return;
   const mime = ['video/webm;codecs=vp9', 'video/webm;codecs=vp8', 'video/webm'].find(type => MediaRecorder.isTypeSupported(type));
-  if (!mime) return toast('Vídeo no disponible aquí');
+  if (!mime) return;
   button.disabled = true;
   button.querySelector('small').textContent = '●';
   const canvas = document.createElement('canvas');
@@ -599,8 +590,8 @@ async function exportWebm() {
     await stopped;
     if (!chunks.length) throw new Error('Empty recording');
     download(new Blob(chunks, { type: mime }), 'flag-lab.webm');
-    refs.dialog.close(); toast('WEBM descargado');
-  } catch { if (recorder?.state === 'recording') recorder.stop(); toast('No se pudo crear el vídeo'); }
+    refs.dialog.close(); 
+  } catch { if (recorder?.state === 'recording') recorder.stop();  }
   finally { stream.getTracks().forEach(item => item.stop()); button.disabled = false; button.querySelector('small').textContent = 'WEBM'; }
 }
 
@@ -651,21 +642,15 @@ function init() {
   const hints = () => document.querySelectorAll('button[aria-label]').forEach(button => { if (!button.title) button.title = button.getAttribute('aria-label'); });
   new MutationObserver(hints).observe(refs.panel, { childList: true, subtree: true });
   renderAll(); hints();
-  if (doc.routes.length && !matchMedia('(prefers-reduced-motion: reduce)').matches) setPlaying(true);
   new ResizeObserver(layoutPreview).observe(refs.stageCenter);
 
   function setDeck(deck) {
     refs.panel.dataset.deck = deck;
-    refs.motionButton.setAttribute('aria-pressed', String(deck === 'motion'));
-    refs.motionButton.setAttribute('aria-expanded', String(deck === 'motion'));
-    refs.motionButton.setAttribute('aria-label', deck === 'motion' ? 'Hide animation controls' : 'Show animation controls');
     $('#editorCaption').textContent = deck === 'motion' ? 'Animation / connect A or B to a parameter' : (selectedLayer() ? `${selectedLayer().type === 'image' ? selectedLayer().imageName || emblemById(selectedLayer().emblem).name : label(selectedLayer().type)} / controls` : 'Choose a layer');
     for (const button of document.querySelectorAll('[data-deck-target]')) button.setAttribute('aria-pressed', String(button.dataset.deckTarget === deck));
     refs.addMenu.hidden = true;
     requestAnimationFrame(() => { drawPatchBay(); drawMotionBay(); });
   }
-  let previousDeck = 'shape';
-  refs.motionButton.addEventListener('click', () => { if (refs.panel.dataset.deck === 'motion') setDeck(previousDeck); else { previousDeck = refs.panel.dataset.deck; setDeck('motion'); } });
   refs.play.addEventListener('click', () => setPlaying(!playing));
   refs.playhead.addEventListener('input', event => { setPlaying(false); setPlayhead(Number(event.target.value) / 100); });
   document.addEventListener('visibilitychange', () => { if (document.hidden && playing) setPlaying(false); });
@@ -673,7 +658,7 @@ function init() {
   $('#addLayerBtn').addEventListener('click', () => { refs.addMenu.hidden = !refs.addMenu.hidden; });
   refs.pagePrev.addEventListener('click', () => { layerPage--; renderLayers(); });
   refs.pageNext.addEventListener('click', () => { layerPage++; renderLayers(); });
-  $('.deck-nav').addEventListener('click', event => {
+  refs.panel.addEventListener('click', event => {
     const target = event.target.closest('[data-deck-target]');
     if (!target) return;
     setDeck(target.dataset.deckTarget);
@@ -974,12 +959,12 @@ function init() {
   refs.surround.addEventListener('pointerup', finishDrag);
   refs.surround.addEventListener('pointercancel', finishDrag);
   $('#mutateBtn').addEventListener('click', () => {
-    const layer = selectedLayer(); if (!layer) return toast('Selecciona una capa');
+    const layer = selectedLayer(); if (!layer) return;
     Object.assign(layer, varyLayer(layer));
     for (const route of doc.routes.filter(item => item.layerId === layer.id)) route.depth = Math.round((.2 + Math.random() * .65) * 100) / 100 * (Math.random() < .25 ? -1 : 1);
     commit(); renderAll();
   });
-  $('#randomBtn').addEventListener('click', () => { doc = randomDocument(); selectedId = doc.layers.at(-1)?.id ?? null; activeRoute = null; commit(); setPlayhead(0); renderAll(); setPlaying(doc.routes.length > 0 && !matchMedia('(prefers-reduced-motion: reduce)').matches); });
+  $('#randomBtn').addEventListener('click', () => { doc = randomDocument(); selectedId = doc.layers.at(-1)?.id ?? null; activeRoute = null; commit(); setPlayhead(0); renderAll(); setPlaying(false); });
   refs.undo.addEventListener('click', () => restore(historyIndex - 1));
   refs.redo.addEventListener('click', () => restore(historyIndex + 1));
   $('#shareBtn').addEventListener('click', share);
@@ -998,7 +983,7 @@ function init() {
   window.addEventListener('hashchange', () => {
     const value = new URLSearchParams(location.hash.slice(1)).get('d');
     const fromLink = decodeDocument(value);
-    if (fromLink) { doc = fromLink; selectedId = doc.layers.at(-1)?.id ?? null; activeRoute = null; history = [JSON.stringify(doc)]; historyIndex = 0; setPlayhead(0); renderAll(); setPlaying(doc.routes.length > 0 && !matchMedia('(prefers-reduced-motion: reduce)').matches); }
+    if (fromLink) { doc = fromLink; selectedId = doc.layers.at(-1)?.id ?? null; activeRoute = null; history = [JSON.stringify(doc)]; historyIndex = 0; setPlayhead(0); renderAll(); setPlaying(false); }
   });
 }
 
