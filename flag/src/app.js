@@ -1,4 +1,4 @@
-import { FLAG_CHARGES, emblemById, emblemSvg, prepareCharges } from './emblems.js';
+import { SYMBOL_LIBRARY, emblemById, emblemSvg, prepareCharges } from './emblems.js';
 import { TYPES, RATIOS, DITHER_SHAPES, COLOR_MODES, initialDocument, normalizeDocument, makeLayer, varyLayer, randomDocument, encodeDocument, decodeDocument } from './model.js';
 import { mutateFlag } from './random.js';
 import { dimensions, svgMarkup } from './render.js';
@@ -383,10 +383,10 @@ function select(id) {
 
 function renderImageLibrary() {
   const query = $('#emblemSearch').value.trim().toLowerCase();
-  const items = FLAG_CHARGES.filter(item => (emblemCategory === 'All' || item.category === emblemCategory) && `${item.name} ${item.country}`.toLowerCase().includes(query));
+  const items = SYMBOL_LIBRARY.filter(item => (emblemCategory === 'All' || item.category === emblemCategory) && item.name.toLowerCase().includes(query));
   const pages = Math.max(1, Math.ceil(items.length / EMBLEM_PAGE_SIZE));
   emblemPage = clamp(emblemPage, 0, pages - 1);
-  $('#emblemGrid').innerHTML = items.slice(emblemPage * EMBLEM_PAGE_SIZE, (emblemPage + 1) * EMBLEM_PAGE_SIZE).map(item => `<button data-emblem="${item.id}" title="${item.name} · ${item.country}">${emblemSvg(item.id)}<span>${item.name}</span><small>${item.country}</small></button>`).join('') || '<div class="library-empty">No matching emblems</div>';
+  $('#emblemGrid').innerHTML = items.slice(emblemPage * EMBLEM_PAGE_SIZE, (emblemPage + 1) * EMBLEM_PAGE_SIZE).map(item => `<button data-emblem="${item.id}" title="${item.name}">${emblemSvg(item.id)}<span>${item.name}</span></button>`).join('') || '<div class="library-empty">No matching symbols</div>';
   $('#emblemPage').textContent = `${emblemPage + 1} / ${pages} · ${items.length}`;
   $('#prevEmblems').disabled = emblemPage === 0;
   $('#nextEmblems').disabled = emblemPage === pages - 1;
@@ -647,8 +647,8 @@ function resetMotionKnob(input) {
 }
 
 function init() {
-  refs.addMenu.innerHTML = `<div class="add-menu-head"><span>Add layer</span><button data-close-add aria-label="Close add layer">×</button></div><div class="add-shape-grid">${TYPES.filter(type => type.id !== 'image').map(type => `<button data-add-type="${type.id}" aria-label="Add ${type.label}" title="${type.label}">${type.icon}</button>`).join('')}</div><button data-add-type="image" class="add-image-entry" aria-label="Add image or flag emblem"><span aria-hidden="true">▧</span><span>Image / flag emblem</span><span aria-hidden="true">→</span></button>`;
-  const categories = [['All','✳'],['Animals','♞'],['Arms','♜'],['Celestial','☼'],['Plants','❧'],['Weapons','⚔'],['Symbols','◇']];
+  refs.addMenu.innerHTML = `<div class="add-menu-head"><span>Add layer</span><button data-close-add aria-label="Close add layer">×</button></div><div class="add-shape-grid">${TYPES.filter(type => type.id !== 'image').map(type => `<button data-add-type="${type.id}" aria-label="Add ${type.label}" title="${type.label}">${type.icon}</button>`).join('')}</div><button data-add-type="image" class="add-image-entry" aria-label="Add image or symbol"><span aria-hidden="true">▧</span><span>Image / symbol</span><span aria-hidden="true">→</span></button>`;
+  const categories = [['All','✳'],['Animals','♞'],['Celestial','☼'],['Plants','❧'],['Weapons','⚔'],['Symbols','◇']];
   $('#emblemCategories').innerHTML = categories.map(([name, glyph]) => `<button data-category="${name}" aria-label="${name}" title="${name}" aria-pressed="${name === 'All'}">${glyph}</button>`).join('');
   $('#emblemSearch').addEventListener('input', () => { emblemPage = 0; renderImageLibrary(); });
   $('#emblemCategories').addEventListener('click', event => {
@@ -664,10 +664,10 @@ function init() {
   $('#emblemGrid').addEventListener('click', event => {
     const id = event.target.closest('[data-emblem]')?.dataset.emblem;
     if (id) {
-      const charge = emblemById(id), size = .45;
+      const charge = emblemById(id), size = .45, aspect = charge.ratio || 1;
       const { width, height } = dimensions(doc.ratio);
-      insertImage({ emblem: id, imageSource: '', imageName: '', imageTint: false,
-        w: size * Math.min(1, charge.ratio), h: size * width / height * Math.min(1, 1 / charge.ratio) });
+      insertImage({ emblem: id, imageSource: '', imageName: '', imageTint: true,
+        w: size * Math.min(1, aspect), h: size * width / height * Math.min(1, 1 / aspect) });
     }
   });
   const hints = () => document.querySelectorAll('button[aria-label]').forEach(button => { if (!button.title) button.title = button.getAttribute('aria-label'); });

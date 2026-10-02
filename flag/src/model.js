@@ -1,4 +1,4 @@
-import { EMBLEMS, FLAG_CHARGES, validImageSource } from './emblems.js';
+import { EMBLEMS, FLAG_CHARGES, SYMBOL_LIBRARY, validImageSource } from './emblems.js';
 import { defaultLfos, normalizeMotion } from './modulation.js';
 import { composeRandomFlag } from './random.js';
 
@@ -102,7 +102,7 @@ export function varyLayer(layer) {
   if (effects.every(value => value === 0)) effects[Math.floor(n(0, effects.length))] = n(.25, .6);
   return {
     ...layer,
-    ...(layer.type === 'image' && !layer.imageSource ? { emblem: FLAG_CHARGES[Math.floor(n(0, FLAG_CHARGES.length))].id, mirror: Math.random() > .5, repeat: Math.random() > .7 ? 2 : 1 } : {}),
+    ...(layer.type === 'image' && !layer.imageSource ? { emblem: SYMBOL_LIBRARY[Math.floor(n(0, SYMBOL_LIBRARY.length))].id, mirror: Math.random() > .5, repeat: Math.random() > .7 ? 2 : 1 } : {}),
     x: n(.15, .85), y: n(.15, .85), w: n(.18, 1.35), h: n(.18, 1.25),
     rotation: layer.type === 'image' ? 0 : Math.round(n(-180, 180) / 15) * 15,
     color: randomColor(layer.color), count: Math.round(n(3, 17)), detail: n(.12, .55), opacity: n(.65, 1),

@@ -15,6 +15,23 @@ export const EMBLEMS = [
   { id: 'rose', name: 'Rose', path: 'M50 7C69-4 81 14 75 28C98 23 108 47 89 60C103 80 79 99 64 86C55 107 30 100 30 82C8 93-8 69 10 54C-7 36 13 16 31 25C27 9 40 1 50 7Z M50 32A18 18 0 1 0 50 68A18 18 0 1 0 50 32Z M50 41A9 9 0 1 1 50 59A9 9 0 1 1 50 41Z', rule: 'evenodd' },
   { id: 'bolt', name: 'Thunderbolt', path: 'M48 2H78L57 37H88L25 98 40 57H12Z' }
 ];
+// Only standalone charges belong in the picker or new random flags.
+// The full historical catalog remains available to resolve existing documents.
+const standaloneIds = new Set([
+  'albania', 'sri-lanka', 'bhutan', 'wales', 'canada', 'saudi-arabia', 'hong-kong',
+  'argentina', 'uruguay', 'korea', 'pakistan', 'turkey', 'algeria', 'malaysia',
+  'azerbaijan', 'uganda', 'zimbabwe', 'zambia', 'eswatini', 'lesotho', 'ethiopia',
+  'taiwan', 'philippines', 'papua', 'dominica', 'barbados', 'guernsey', 'isle-of-man'
+]);
+const vectorCategories = {
+  lion: 'Animals', eagle: 'Animals', serpent: 'Animals', stag: 'Animals',
+  swords: 'Weapons', crown: 'Symbols', fleur: 'Plants', laurel: 'Plants',
+  tower: 'Symbols', anchor: 'Symbols', rose: 'Plants', bolt: 'Celestial'
+};
+export const SYMBOL_LIBRARY = [
+  ...EMBLEMS.map(item => ({ ...item, ratio: 1, category: vectorCategories[item.id] })),
+  ...FLAG_CHARGES.filter(item => standaloneIds.has(item.id))
+];
 export const emblemById = id => [...FLAG_CHARGES, ...EMBLEMS].find(emblem => emblem.id === id) || EMBLEMS[0];
 export function emblemSvg(id) {
   const emblem = emblemById(id);
