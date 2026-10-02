@@ -36,7 +36,7 @@ export function makeLayer(type, overrides = {}) {
     id: crypto.randomUUID(), type, x: .5, y: .5, w: .62, h: .62, rotation: 0,
     opacity: 1, color: '#303030', color2: '#858585', count: 6, detail: .28,
     dither: 0, ditherSize: .5, ditherShape: 'circle', colorMode: 'color', blur: 0, warp: 0, echo: 0,
-    text: 'FLAG', visible: true, emblem: 'albania', imageSource: '', imageName: '', imageTint: false, mirror: false, repeat: 1
+    text: 'FLAG', visible: true, locked: false, emblem: 'albania', imageSource: '', imageName: '', imageTint: false, mirror: false, repeat: 1
   };
   const byType = {
     band: { w: 1.1, h: .26 }, stripes: { w: 1.1, h: 1.1, count: 5 },
@@ -84,7 +84,7 @@ export function normalizeDocument(input) {
       imageSource: validImageSource(layer.imageSource) ? layer.imageSource : '',
       imageName: typeof layer.imageName === 'string' ? layer.imageName.slice(0, 60) : '',
       imageTint: layer.imageTint === true, mirror: layer.mirror === true, repeat: Math.round(limit(layer.repeat, 1, 5, 1)),
-      text: typeof layer.text === 'string' ? layer.text.slice(0, 50) : 'FLAG', visible: layer.visible !== false
+      text: typeof layer.text === 'string' ? layer.text.slice(0, 50) : 'FLAG', visible: layer.visible !== false, locked: layer.locked === true
     });
   });
   return { version: 2, ratio: RATIOS.includes(input.ratio) ? input.ratio : '3:2', background: color(input.background, '#e9e6da'), layers, ...normalizeMotion(input, ids) };

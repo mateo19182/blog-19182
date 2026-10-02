@@ -159,3 +159,6 @@
 @media(max-height:600px){.library-search{margin-top:3px;gap:3px;flex-direction:row}.library-search input{height:24px;flex:1;min-width:80px}.library-categories{flex:1;gap:2px}.library-categories button{height:24px;font-size:12px}.library-pages{height:23px;margin-bottom:3px}.emblem-grid{min-height:145px}.emblem-grid button{height:66px}.emblem-grid img{height:32px;width:32px}}
 @media(max-width:520px) and (max-height:600px){.library-search{flex-direction:column}.library-categories button{height:20px}.emblem-grid{min-height:204px}.emblem-grid button{height:66px}}
 @media(max-width:900px) and (max-height:600px){.add-menu{gap:3px;padding:5px}.add-menu-head{height:18px}.add-menu .add-image-entry{height:29px}}
+.layer-buttons .mutation-lock[aria-pressed=true]{background:#333;color:#eee;border-radius:3px}
+#evolveBtn{font-size:13px;letter-spacing:-3px;padding-right:5px}
+@media(max-width:520px){.plate-tools{gap:2px;padding-left:5px;padding-right:5px}.plate-tools .tool-key{min-width:25px;width:25px}.plate-tools .lfo-deck-key,#imagesBtn{width:auto;min-width:25px}.layer-buttons button{width:21px;min-height:28px}}

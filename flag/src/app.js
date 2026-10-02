@@ -1,5 +1,6 @@
 import { FLAG_CHARGES, emblemById, emblemSvg, prepareCharges } from './emblems.js';
 import { TYPES, RATIOS, DITHER_SHAPES, COLOR_MODES, initialDocument, normalizeDocument, makeLayer, varyLayer, randomDocument, encodeDocument, decodeDocument } from './model.js';
+import { mutateFlag } from './random.js';
 import { dimensions, svgMarkup } from './render.js';
 import { hexToHsl, hslToHex } from './color.js';
 import { EFFECT_PORTS, togglePatch, routePatch } from './patch.js';
@@ -110,7 +111,7 @@ function renderLayers() {
       <span class="layer-icon" aria-hidden="true">${icon(layer.type)}</span>
       <span class="layer-name">${esc(layer.type === 'image' ? layer.imageName || emblemById(layer.emblem).name : label(layer.type))}</span>
       <span class="layer-color" style="background:${layer.color}"></span>
-      <span class="layer-buttons"><button data-action="visibility" aria-label="${layer.visible ? 'Ocultar' : 'Mostrar'} capa" class="${layer.visible ? '' : 'hidden-layer'}">${layer.visible ? '◉' : '◎'}</button><button data-action="up" aria-label="Subir capa">↑</button><button data-action="down" aria-label="Bajar capa">↓</button></span>
+      <span class="layer-buttons"><button data-action="lock" title="${layer.locked ? 'Unlock mutation' : 'Lock against mutation'}" aria-label="${layer.locked ? 'Unlock mutation' : 'Lock against mutation'}" aria-pressed="${layer.locked}" class="mutation-lock">${layer.locked ? '▣' : '▢'}</button><button data-action="visibility" aria-label="${layer.visible ? 'Ocultar' : 'Mostrar'} capa" class="${layer.visible ? '' : 'hidden-layer'}">${layer.visible ? '◉' : '◎'}</button><button data-action="up" aria-label="Subir capa">↑</button><button data-action="down" aria-label="Bajar capa">↓</button></span>
     </div>`).join('') || '<div class="inspector-empty" aria-label="Sin capas">◇</div>';
   refs.layerCount.textContent = String(doc.layers.length).padStart(2, '0');
   refs.pageLabel.textContent = `${String(layerPage + 1).padStart(2, '0')}/${String(pages).padStart(2, '0')}`;
@@ -812,7 +813,8 @@ function init() {
     const id = row.dataset.rowId, layer = doc.layers.find(item => item.id === id);
     const action = event.target.closest('[data-action]')?.dataset.action;
     if (!action) return select(id);
-    if (action === 'visibility') layer.visible = !layer.visible;
+    if (action === 'lock') layer.locked = !layer.locked;
+    else if (action === 'visibility') layer.visible = !layer.visible;
     else {
       const index = doc.layers.indexOf(layer), next = action === 'up' ? index + 1 : index - 1;
       if (next >= 0 && next < doc.layers.length) [doc.layers[index], doc.layers[next]] = [doc.layers[next], doc.layers[index]];
@@ -989,11 +991,12 @@ function init() {
   refs.surround.addEventListener('pointerup', finishDrag);
   refs.surround.addEventListener('pointercancel', finishDrag);
   $('#mutateBtn').addEventListener('click', () => {
-    const layer = selectedLayer(); if (!layer) return;
+    const layer = selectedLayer(); if (!layer || layer.locked) return;
     Object.assign(layer, varyLayer(layer));
     for (const route of doc.routes.filter(item => item.layerId === layer.id)) route.depth = Math.round((.2 + Math.random() * .65) * 100) / 100 * (Math.random() < .25 ? -1 : 1);
     commit(); renderAll();
   });
+  $('#evolveBtn').addEventListener('click', () => { doc = mutateFlag(doc); commit(); setPlayhead(0); renderAll(); setPlaying(false); });
   $('#randomBtn').addEventListener('click', () => { doc = randomDocument(); selectedId = doc.layers.at(-1)?.id ?? null; activeRoute = null; commit(); setPlayhead(0); renderAll(); setPlaying(false); });
   refs.undo.addEventListener('click', () => restore(historyIndex - 1));
   refs.redo.addEventListener('click', () => restore(historyIndex + 1));
