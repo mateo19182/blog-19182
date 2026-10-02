@@ -1,5 +1,6 @@
 import { EMBLEMS, FLAG_CHARGES, validImageSource } from './emblems.js';
 import { defaultLfos, normalizeMotion } from './modulation.js';
+import { composeRandomFlag } from './random.js';
 
 export const TYPES = [
   { id: 'band', label: 'Band', icon: '▰', group: 'campo' },
@@ -113,20 +114,7 @@ export function varyLayer(layer) {
 }
 
 export function randomDocument() {
-  const n = (min, max) => min + Math.random() * (max - min);
-  const groups = [['band', 'stripes', 'cross', 'saltire', 'chevron', 'triangle'], ['circle', 'star', 'sun', 'crescent', 'diamond', 'rays', 'image'], ['dots', 'checks', 'waves', 'star', 'triangle']];
-  const pick = items => items[Math.floor(Math.random() * items.length)];
-  const background = randomColor();
-  const layers = groups.slice(0, Math.random() > .45 ? 3 : 2).map(group => {
-    const layer = varyLayer(makeLayer(pick(group)));
-    layer.color = randomColor(background);
-    return layer;
-  });
-  const lfos = defaultLfos().map(lfo => ({ ...lfo, wave: pick(['sine', 'triangle', 'square', 'step']), rate: Math.round(n(.12, 1.2) * 100) / 100, phase: Math.round(n(0, 1) * 100) / 100, seed: Math.floor(n(0, 999999)) }));
-  const targets = ['x', 'y', 'rotation', 'opacity', 'color', 'dither', 'blur', 'warp', 'echo'];
-  const routes = layers.flatMap(layer => Math.random() < .7 ? [{ lfo: pick(lfos).id, layerId: layer.id, target: pick(targets), depth: Math.round(n(.2, .85) * 100) / 100 * (Math.random() < .25 ? -1 : 1) }] : []);
-  if (!routes.length) routes.push({ lfo: pick(lfos).id, layerId: pick(layers).id, target: pick(targets), depth: .5 });
-  return { version: 2, ratio: pick(RATIOS), background, layers, lfos, routes };
+  return composeRandomFlag(makeLayer, defaultLfos);
 }
 
 export function encodeDocument(doc) {
