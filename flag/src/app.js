@@ -1,4 +1,4 @@
-import { EMBLEMS, emblemById, emblemSvg } from './emblems.js';
+import { FLAG_CHARGES, emblemById, emblemSvg } from './emblems.js';
 import { TYPES, RATIOS, DITHER_SHAPES, COLOR_MODES, initialDocument, normalizeDocument, makeLayer, varyLayer, randomDocument, encodeDocument, decodeDocument } from './model.js';
 import { dimensions, svgMarkup } from './render.js';
 import { hexToHsl, hslToHex } from './color.js';
@@ -223,6 +223,7 @@ function syncPatchBay() {
 
 function renderInspector() {
   const layer = selectedLayer();
+  $('#editorCaption').textContent = layer ? `${layer.type === 'image' ? layer.imageName || emblemById(layer.emblem).name : label(layer.type)} / controls` : 'Choose a layer';
   if (!layer) {
     refs.inspector.innerHTML = '<div class="inspector-empty" aria-label="Selecciona una capa">✳ ◇ ✳</div>';
     return;
@@ -230,14 +231,14 @@ function renderInspector() {
   const countTypes = ['stripes', 'star', 'sun', 'rays', 'dots', 'checks', 'waves'];
   const detailTypes = ['cross', 'saltire', 'chevron', 'star', 'sun', 'crescent', 'rays', 'dots', 'waves'];
   refs.inspector.innerHTML = `
-    <div class="oscillator-bank">
+    <div class="oscillator-bank"><span class="bank-caption">Shape / color</span>
     <div class="type-grid" role="group" aria-label="Forma de la capa">${TYPES.map(type => `<button class="type-key ${type.id === layer.type ? 'active' : ''}" data-type="${type.id}" aria-label="${type.label}" aria-pressed="${type.id === layer.type}">${type.icon}</button>`).join('')}</div>
-    ${layer.type === 'image' ? `<div class="image-controls"><button data-image-choose title="Choose symbol or upload">${layer.imageSource ? '▧' : emblemSvg(layer.emblem)}<small>Replace</small></button><button data-image-option="mirror" aria-pressed="${layer.mirror}" title="Mirror">↔<small>Mirror</small></button><button data-image-option="imageTint" ${layer.imageSource ? '' : 'disabled'} aria-pressed="${layer.imageTint}" title="Turn uploaded image into a silhouette">◐<small>Tint</small></button><button data-image-repeat title="Repeat symbol">${layer.repeat}×<small>Repeat</small></button></div>` : ''}
+    ${layer.type === 'image' ? `<div class="image-controls"><button data-image-choose title="Choose symbol or upload">${layer.imageSource ? '▧' : emblemSvg(layer.emblem)}<small>Replace</small></button><button data-image-option="mirror" aria-pressed="${layer.mirror}" title="Mirror">↔<small>Mirror</small></button><button data-image-option="imageTint" ${layer.imageSource || emblemById(layer.emblem).source ? '' : 'disabled'} aria-pressed="${layer.imageTint}" title="Turn uploaded image into a silhouette">◐<small>Tint</small></button><button data-image-repeat title="Repeat symbol">${layer.repeat}×<small>Repeat</small></button></div>` : ''}
     ${layer.type === 'text' ? `<input class="text-socket" type="text" maxlength="50" value="${esc(layer.text)}" data-param="text" aria-label="Texto de la capa"/>` : ''}
-    <div class="color-pair">${colorJoystick('color', 'Color principal', layer.color)}${colorJoystick('color2', 'Color secundario', layer.color2)}</div>
+    <div class="color-pair" title="${layer.type === 'image' ? 'Enable Tint to recolor this image' : 'Drag the discs for hue and saturation; sliders control brightness'}">${colorJoystick('color', 'Color principal', layer.color)}${colorJoystick('color2', 'Color secundario', layer.color2)}</div>
     <div class="inspector-actions"><button data-inspector-action="duplicate" aria-label="Duplicar capa">⧉</button><button data-inspector-action="delete" aria-label="Eliminar capa">×</button></div>
     </div>
-    <div class="geometry-bank">
+    <div class="geometry-bank"><span class="bank-caption">Position / size</span>
     <div class="knob-grid">
       ${knob('x', 'Posición horizontal', '↔', -50, 150, Math.round(layer.x * 100), '%')}
       ${knob('y', 'Posición vertical', '↕', -50, 150, Math.round(layer.y * 100), '%')}
@@ -249,7 +250,7 @@ function renderInspector() {
       ${detailTypes.includes(layer.type) ? knob('detail', 'Detalle', '✳', 2, 95, Math.round(layer.detail * 100), '%') : ''}
     </div>
     </div>
-    <div class="texture-bank">
+    <div class="texture-bank"><span class="bank-caption">Effects / drag a cable to connect</span>
     <div class="patch-bay" role="group" aria-label="Conexiones de efectos">
       <svg class="patch-wires" aria-hidden="true"></svg>
       <button class="patch-port patch-source" data-patch-port="source" aria-label="Salida de capa ${esc(label(layer.type))}" title="Arrastra hacia un efecto">${icon(layer.type)}</button>
@@ -262,7 +263,7 @@ function renderInspector() {
       ${knob('warp', 'Distorsión', '≋', 0, 100, Math.round(layer.warp * 100))}
       ${knob('echo', 'Eco', '◈', 0, 100, Math.round(layer.echo * 100))}
     </div>
-    <div class="effect-selectors"><div class="pattern-grid" role="group" aria-label="Forma de la trama">${DITHER_SHAPES.map((shape, index) => `<button data-dither-shape="${shape}" class="pattern-key ${layer.ditherShape === shape ? 'active' : ''}" aria-label="${['Círculos', 'Cuadrados', 'Rombos', 'Barras'][index]}" aria-pressed="${layer.ditherShape === shape}">${['●', '■', '◆', '▥'][index]}</button>`).join('')}</div><div class="mode-grid" role="group" aria-label="Modo de color">${COLOR_MODES.map((mode, index) => `<button data-color-mode="${mode}" class="mode-key ${layer.colorMode === mode ? 'active' : ''}" aria-label="${['Color', 'Escala de grises', 'Blanco y negro'][index]}" aria-pressed="${layer.colorMode === mode}">${['◉', '◐', '◑'][index]}</button>`).join('')}</div></div>
+    <div class="effect-selectors"><div class="pattern-grid" title="Dither shape" role="group" aria-label="Forma de la trama">${DITHER_SHAPES.map((shape, index) => `<button data-dither-shape="${shape}" class="pattern-key ${layer.ditherShape === shape ? 'active' : ''}" aria-label="${['Círculos', 'Cuadrados', 'Rombos', 'Barras'][index]}" aria-pressed="${layer.ditherShape === shape}">${['●', '■', '◆', '▥'][index]}</button>`).join('')}</div><div class="mode-grid" role="group" aria-label="Modo de color">${COLOR_MODES.map((mode, index) => `<button data-color-mode="${mode}" class="mode-key ${layer.colorMode === mode ? 'active' : ''}" aria-label="${['Color', 'Escala de grises', 'Blanco y negro'][index]}" aria-pressed="${layer.colorMode === mode}">${['◉', '◐', '◑'][index]}<small>${['Color', 'Gray', 'B/W'][index]}</small></button>`).join('')}</div></div>
     </div>`;
   requestAnimationFrame(drawPatchBay);
 }
@@ -341,9 +342,10 @@ function renderMotion() {
     }).join('')}</svg><i class="mod-scope-needle" style="left:${playhead % 8 / 8 * 100}%"></i></div>
     <div class="mod-targets" role="group" aria-label="Destinos de la capa ${layer ? esc(label(layer.type)) : ''}">${MOD_TARGETS.map(target => {
       const connected = routes.find(item => item.target === target.id);
-      return `<button class="mod-port mod-target-port ${connected ? 'connected' : ''} ${activeRoute === target.id ? 'selected' : ''}" data-mod-target="${target.id}" aria-label="${target.name}${connected ? `, oscilador ${connected.lfo.toUpperCase()}` : ''}" aria-pressed="${!!connected}" ${layer ? '' : 'disabled'}>${target.icon}</button>`;
+      const cue = {x:'X',y:'Y',rotation:'Rotate',w:'Width',h:'Height',opacity:'Opacity',color:'Hue 1',color2:'Hue 2',dither:'Dither',ditherSize:'Grain',blur:'Blur',warp:'Warp',echo:'Echo'}[target.id];
+      return `<span class="mod-target-cell"><button class="mod-port mod-target-port ${connected ? 'connected' : ''} ${activeRoute === target.id ? 'selected' : ''}" data-mod-target="${target.id}" title="${target.name}" aria-label="${target.name}${connected ? `, oscilador ${connected.lfo.toUpperCase()}` : ''}" aria-pressed="${!!connected}" ${layer ? '' : 'disabled'}>${target.icon}</button><small>${cue}</small></span>`;
     }).join('')}</div>
-  </div><div class="mod-footer"><span class="mod-footer-glyph" aria-hidden="true">${route ? `${route.lfo.toUpperCase()} ─ ${MOD_TARGETS.find(target => target.id === route.target)?.icon}` : '◌ ─ ◌'}</span>${route ? knob('depth', 'Profundidad de modulación', '∿', -100, 100, Math.round(route.depth * 100)) : '<span class="mod-empty">A / B → parameter</span>'}<button class="mod-remove" data-mod-remove aria-label="Desconectar cable" ${route ? '' : 'disabled'}>×</button></div>`;
+  </div><div class="mod-footer"><span class="mod-footer-glyph" aria-hidden="true">${route ? `${route.lfo.toUpperCase()} ─ ${MOD_TARGETS.find(target => target.id === route.target)?.icon}` : 'A / B →'}</span>${route ? knob('depth', 'Profundidad de modulación', '∿', -100, 100, Math.round(route.depth * 100)) : '<span class="mod-empty">Drag A or B to a parameter below</span>'}<button class="mod-remove" data-mod-remove aria-label="Desconectar cable" ${route ? '' : 'disabled'}>×</button></div>`;
   requestAnimationFrame(drawMotionBay);
 }
 
@@ -632,14 +634,19 @@ function resetMotionKnob(input) {
 
 function init() {
   refs.addMenu.innerHTML = TYPES.map(type => `<button data-add-type="${type.id}" aria-label="Añadir ${type.label}">${type.icon}</button>`).join('');
-  $('#emblemGrid').innerHTML = EMBLEMS.map(item => `<button data-emblem="${item.id}" title="${item.name}">${emblemSvg(item.id)}<span>${item.name}</span></button>`).join('');
+  $('#emblemGrid').innerHTML = FLAG_CHARGES.map(item => `<button data-emblem="${item.id}" title="${item.name}">${emblemSvg(item.id)}<span>${item.name}</span><small>${item.country}</small></button>`).join('');
   $('#imagesBtn').addEventListener('click', () => openImages());
   $('#closeImages').addEventListener('click', () => $('#imageDialog').close());
   $('#uploadImage').addEventListener('click', () => $('#imageUpload').click());
   $('#imageUpload').addEventListener('change', uploadImage);
   $('#emblemGrid').addEventListener('click', event => {
     const id = event.target.closest('[data-emblem]')?.dataset.emblem;
-    if (id) insertImage({ emblem: id, imageSource: '', imageName: '' });
+    if (id) {
+      const charge = emblemById(id), size = .45;
+      const { width, height } = dimensions(doc.ratio);
+      insertImage({ emblem: id, imageSource: '', imageName: '', imageTint: false,
+        w: size * Math.min(1, charge.ratio), h: size * width / height * Math.min(1, 1 / charge.ratio) });
+    }
   });
   const hints = () => document.querySelectorAll('button[aria-label]').forEach(button => { if (!button.title) button.title = button.getAttribute('aria-label'); });
   new MutationObserver(hints).observe(refs.panel, { childList: true, subtree: true });
@@ -651,6 +658,8 @@ function init() {
     refs.panel.dataset.deck = deck;
     refs.motionButton.setAttribute('aria-pressed', String(deck === 'motion'));
     refs.motionButton.setAttribute('aria-expanded', String(deck === 'motion'));
+    refs.motionButton.setAttribute('aria-label', deck === 'motion' ? 'Hide animation controls' : 'Show animation controls');
+    $('#editorCaption').textContent = deck === 'motion' ? 'Animation / connect A or B to a parameter' : (selectedLayer() ? `${selectedLayer().type === 'image' ? selectedLayer().imageName || emblemById(selectedLayer().emblem).name : label(selectedLayer().type)} / controls` : 'Choose a layer');
     for (const button of document.querySelectorAll('[data-deck-target]')) button.setAttribute('aria-pressed', String(button.dataset.deckTarget === deck));
     refs.addMenu.hidden = true;
     requestAnimationFrame(() => { drawPatchBay(); drawMotionBay(); });

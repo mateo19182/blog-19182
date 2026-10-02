@@ -1,3 +1,5 @@
+import { FLAG_CHARGES } from './flag-charges.js';
+export { FLAG_CHARGES };
 // Original vector charges. All geometry stays local and exports with the flag.
 export const EMBLEMS = [
   { id: 'lion', name: 'Lion', path: 'M28 86L38 64 28 55 19 64 10 58 22 43 38 46 48 32 43 23 48 10 62 7 74 18 68 32 57 37 66 48 78 40 87 24 94 28 86 48 69 59 64 72 80 82 76 92 58 84 51 65 45 72 44 89Z M35 49C9 40 4 24 17 15L24 19C14 29 20 37 39 39Z' },
@@ -13,9 +15,10 @@ export const EMBLEMS = [
   { id: 'rose', name: 'Rose', path: 'M50 7C69-4 81 14 75 28C98 23 108 47 89 60C103 80 79 99 64 86C55 107 30 100 30 82C8 93-8 69 10 54C-7 36 13 16 31 25C27 9 40 1 50 7Z M50 32A18 18 0 1 0 50 68A18 18 0 1 0 50 32Z M50 41A9 9 0 1 1 50 59A9 9 0 1 1 50 41Z', rule: 'evenodd' },
   { id: 'bolt', name: 'Thunderbolt', path: 'M48 2H78L57 37H88L25 98 40 57H12Z' }
 ];
-export const emblemById = id => EMBLEMS.find(emblem => emblem.id === id) || EMBLEMS[0];
+export const emblemById = id => [...FLAG_CHARGES, ...EMBLEMS].find(emblem => emblem.id === id) || EMBLEMS[0];
 export function emblemSvg(id) {
   const emblem = emblemById(id);
+  if (emblem.source) return `<img src="${emblem.source}" alt="${emblem.name}"/>`;
   return `<svg viewBox="0 0 100 100" aria-hidden="true"><path d="${emblem.path}" fill="currentColor" fill-rule="${emblem.rule || 'nonzero'}"/></svg>`;
 }
 export function validImageSource(value) {

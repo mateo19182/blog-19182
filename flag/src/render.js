@@ -72,7 +72,7 @@ function shape(layer, w, h) {
     }).join('');
     case 'image': {
       const charge = emblemById(layer.emblem);
-      const source = validImageSource(layer.imageSource) ? layer.imageSource : '';
+      const source = validImageSource(layer.imageSource) ? layer.imageSource : charge.source || '';
       const id = `image-tint-${esc(layer.id)}`;
       const tint = source && layer.imageTint ? `<defs><filter id="${id}" color-interpolation-filters="sRGB"><feFlood flood-color="${c}"/><feComposite in2="SourceGraphic" operator="in"/></filter></defs>` : '';
       const content = source ? `<image href="${esc(source)}" width="100" height="100" preserveAspectRatio="none"${layer.imageTint ? ` filter="url(#${id})"` : ''}/>` : `<path d="${charge.path}" fill="${c}" fill-rule="${charge.rule || 'nonzero'}"/>`;

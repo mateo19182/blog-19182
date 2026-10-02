@@ -1,24 +1,24 @@
-import { EMBLEMS, validImageSource } from './emblems.js';
+import { EMBLEMS, FLAG_CHARGES, validImageSource } from './emblems.js';
 import { defaultLfos, normalizeMotion } from './modulation.js';
 
 export const TYPES = [
-  { id: 'band', label: 'Banda', icon: '▰', group: 'campo' },
-  { id: 'stripes', label: 'Franjas', icon: '▥', group: 'campo' },
-  { id: 'cross', label: 'Cruz', icon: '✚', group: 'campo' },
-  { id: 'saltire', label: 'Aspa', icon: '╳', group: 'campo' },
+  { id: 'band', label: 'Band', icon: '▰', group: 'campo' },
+  { id: 'stripes', label: 'Stripes', icon: '▥', group: 'campo' },
+  { id: 'cross', label: 'Cross', icon: '✚', group: 'campo' },
+  { id: 'saltire', label: 'Saltire', icon: '╳', group: 'campo' },
   { id: 'chevron', label: 'Chevron', icon: '⌄', group: 'campo' },
-  { id: 'triangle', label: 'Triángulo', icon: '△', group: 'forma' },
-  { id: 'diamond', label: 'Rombo', icon: '◇', group: 'forma' },
-  { id: 'circle', label: 'Círculo', icon: '○', group: 'forma' },
-  { id: 'star', label: 'Estrella', icon: '✳', group: 'símbolo' },
-  { id: 'sun', label: 'Sol', icon: '☼', group: 'símbolo' },
-  { id: 'crescent', label: 'Luna', icon: '☾', group: 'símbolo' },
-  { id: 'rays', label: 'Rayos', icon: '✺', group: 'patrón' },
-  { id: 'dots', label: 'Puntos', icon: '⠿', group: 'patrón' },
-  { id: 'checks', label: 'Cuadrícula', icon: '▦', group: 'patrón' },
-  { id: 'waves', label: 'Ondas', icon: '≋', group: 'patrón' },
-  { id: 'image', label: 'Imagen', icon: '♜', group: 'símbolo' },
-  { id: 'text', label: 'Texto', icon: 'A', group: 'símbolo' }
+  { id: 'triangle', label: 'Triangle', icon: '△', group: 'forma' },
+  { id: 'diamond', label: 'Diamond', icon: '◇', group: 'forma' },
+  { id: 'circle', label: 'Circle', icon: '○', group: 'forma' },
+  { id: 'star', label: 'Star', icon: '✳', group: 'símbolo' },
+  { id: 'sun', label: 'Sun', icon: '☼', group: 'símbolo' },
+  { id: 'crescent', label: 'Crescent', icon: '☾', group: 'símbolo' },
+  { id: 'rays', label: 'Rays', icon: '✺', group: 'patrón' },
+  { id: 'dots', label: 'Dots', icon: '⠿', group: 'patrón' },
+  { id: 'checks', label: 'Checks', icon: '▦', group: 'patrón' },
+  { id: 'waves', label: 'Waves', icon: '≋', group: 'patrón' },
+  { id: 'image', label: 'Image', icon: '♜', group: 'símbolo' },
+  { id: 'text', label: 'Text', icon: 'A', group: 'símbolo' }
 ];
 
 export const PALETTE = ['#e9e6da', '#253b43', '#e46749', '#e2b458', '#8c9d8b', '#593f53', '#f8f5ea', '#151f28', '#647eae', '#cf735e'];
@@ -35,7 +35,7 @@ export function makeLayer(type, overrides = {}) {
     id: crypto.randomUUID(), type, x: .5, y: .5, w: .62, h: .62, rotation: 0,
     opacity: 1, color: '#303030', color2: '#858585', count: 6, detail: .28,
     dither: 0, ditherSize: .5, ditherShape: 'circle', colorMode: 'color', blur: 0, warp: 0, echo: 0,
-    text: 'FLAG', visible: true, emblem: 'lion', imageSource: '', imageName: '', imageTint: false, mirror: false, repeat: 1
+    text: 'FLAG', visible: true, emblem: 'albania', imageSource: '', imageName: '', imageTint: false, mirror: false, repeat: 1
   };
   const byType = {
     band: { w: 1.1, h: .26 }, stripes: { w: 1.1, h: 1.1, count: 5 },
@@ -79,7 +79,7 @@ export function normalizeDocument(input) {
       ditherSize: limit(layer.ditherSize, 0, 1, .5),
       ditherShape: DITHER_SHAPES.includes(layer.ditherShape) ? layer.ditherShape : 'circle',
       colorMode: COLOR_MODES.includes(layer.colorMode) ? layer.colorMode : 'color',
-      emblem: EMBLEMS.some(item => item.id === layer.emblem) ? layer.emblem : 'lion',
+      emblem: [...FLAG_CHARGES, ...EMBLEMS].some(item => item.id === layer.emblem) ? layer.emblem : 'lion',
       imageSource: validImageSource(layer.imageSource) ? layer.imageSource : '',
       imageName: typeof layer.imageName === 'string' ? layer.imageName.slice(0, 60) : '',
       imageTint: layer.imageTint === true, mirror: layer.mirror === true, repeat: Math.round(limit(layer.repeat, 1, 5, 1)),
@@ -101,7 +101,7 @@ export function varyLayer(layer) {
   if (effects.every(value => value === 0)) effects[Math.floor(n(0, effects.length))] = n(.25, .6);
   return {
     ...layer,
-    ...(layer.type === 'image' && !layer.imageSource ? { emblem: EMBLEMS[Math.floor(n(0, EMBLEMS.length))].id, mirror: Math.random() > .5, repeat: Math.random() > .7 ? 2 : 1 } : {}),
+    ...(layer.type === 'image' && !layer.imageSource ? { emblem: FLAG_CHARGES[Math.floor(n(0, FLAG_CHARGES.length))].id, mirror: Math.random() > .5, repeat: Math.random() > .7 ? 2 : 1 } : {}),
     x: n(.15, .85), y: n(.15, .85), w: n(.18, 1.35), h: n(.18, 1.25),
     rotation: Math.round(n(-180, 180) / 15) * 15,
     color: randomColor(layer.color), count: Math.round(n(3, 17)), detail: n(.12, .55), opacity: n(.65, 1),
