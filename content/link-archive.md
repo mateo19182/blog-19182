@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-10-02
+date: 2026-10-03
 tags: 
   - personal
 ---
@@ -9,6 +9,9 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Using Opus 5.5 to discover a new eyewitness record of the dodo](https://resobscura.substack.com/p/using-opus-55-to-discover-a-new-eyewitness) `Reads` *2026-10-02*
+- [Coming to America: Nubank&-039;s David Vélez - Colossus](https://colossus.com/article/david-velez-nubank) `Reads` *2026-10-02*
+- [Just a moment...](https://dispatch-media.com/the-ugliest-face-in-britain/?ref=dispatch-articles-newsletter) `Reads` *2026-10-02*
 - [RIP, vector database](https://turbopuffer.com/blog/rip-vector-database) `Tech` *2026-10-01*
 - [Agentic Hacks, Real Proofs: Inside Google&-x27;s PageBreak Project](https://blog.google/security/agentic-hacks-real-proofs-inside-googles-pagebreak-project) `Tech` *2026-10-01*
 - [On Injuries](https://lindynewsletter.beehiiv.com/p/on-injuries?utm_source=lindynewsletter.beehiiv.com&utm_medium=newsletter&utm_campaign=on-injuries) `Reads` *2026-10-01*
