@@ -37,6 +37,8 @@ En el [_Prólogo apologético_](https://www.filosofia.org/bjf/bjft3p6.htm) del [
 
 > «Lector mío, si estás en Madrid, y entiendes el Francés, ruégote que busques las Memorias de Trevoux, y el Journal des Sçavans, que no pueden faltar en la Biblioteca Real, y en otras; que unos, y otros libros vuelvas, y revuelvas bien; y cuando halles ni un párrafo sólo, ni aun cuatro líneas, que sean traslado, o traducción de ellos, o en este Tomo, o en alguno de los antecedentes, quiero que todos tres los des al fuego, y me obligo a restituirte el dinero que te han costado.»
 
+*Pasa el ratón por los escaneos para ver el pasaje subrayado. En móvil, toca la imagen o «Ver pasaje».*
+
 ![El reto de Feijoo en el prólogo del tomo III, primera edición de 1729, con el pasaje subrayado](/data/feijoo-preview/blog/documents/web/01_reto_tcu3_1729_ni_aun_quatro_lineas.jpg)
 [Fuente: Biblioteca Nacional de España, primera edición del tomo III (1729), imagen 18, CC BY 4.0.](https://bnedigital.bne.es/bd/es/viewer?id=911fba8d-7ad3-4d7e-9332-a05cb636e5a9).
 
@@ -49,7 +51,7 @@ En 1733 volvió a lanzar el reto, esta vez proponiendo que cuatro personas de Ov
 > «Solo me resta un recurso; y es el que propondré ahora. Desafío al Anónimo Autor de la Carta, (sea el que se fuere) y a todos los demás que quieran conspirar con él, para que en una o muchas hojas volantes den al público señalados los lugares de las Memorias de Trevoux, de donde pretenden que haya sacado yo lo mejor que he empleado para el fondo de mi Obra. En vista de las citas ofrezco exhibir las Memorias de Trevoux, (ciento y veinte y cuatro tomos son los que tengo) ante dos Caballeros de los principales de esta Ciudad, y dos Eclesiásticos de la primera distinción, que unos y otros entienden bien el Francés, los cuales, leídos con exactitud los lugares señalados, darán certificación pública, firmada de sus nombres, de que es falsa la acusación, y fingido el robo que me imputan.»
 
 ![Segundo reto de Feijoo, tomo V, primera edición de 1733, página 388, número 44](/data/feijoo-preview/blog/documents/web/06_segundo_reto_1733_p388.jpg)
-*TCU V, discurso XVII, n.º 44, p. 388. [Primera edición, Universidade de Santiago de Compostela](https://hdl.handle.net/10347/7540); [transcripción](https://www.filosofia.org/bjf/bjft517.htm). Ortografía modernizada; «propondré» sigue la edición de 1733.*
+*TCU V, discurso XVII, n.º 44, p. 388. Haz clic para ampliar. [Primera edición, Universidade de Santiago de Compostela](https://hdl.handle.net/10347/7540); [transcripción](https://www.filosofia.org/bjf/bjft517.htm). Ortografía modernizada; «propondré» sigue la edición de 1733.*
 
 ---
 
@@ -196,12 +198,10 @@ Todo este debate es bastante injusto con Feijoó, era común no citar referencia
 - [*Contradefensa crítica a favor de los hombres*](https://digibuo.uniovi.es/dspace/bitstream/handle/10651/78468/1b-Ediciones-Feijoo-Obras-completas-t-I-Bibliografia-o.pdf?sequence=1)
 - [*Cantáridas amigables para remedio de sueños desvariados*](https://cervantesvirtual.com/obra/cantaridas-amigables-para-remedio-de-suenos-desvariados-i-consejos-de-coromias-a-torres-dormido-sobre-le-montante-que-manejo-en-la-pendencia-musica-sonada-988743/)
 - [*Blanda, suave y melosa curación del Escrupuloso y de sus flatos espirituales*](https://liburutegibiltegi.bizkaia.eus/handle/20.500.11938/76327)
-- [*Montante christiano, y político, en pendencia Música-Médica-Diabólica*](https://digibuo.uniovi.es/dspace/bitstream/handle/10651/78468/ 1b-Ediciones-Feijoo-Obras-completas-t-I-Bibliografia-o.pdf?sequence=1)
+- [*Montante christiano, y político, en pendencia Música-Médica-Diabólica*](https://digibuo.uniovi.es/dspace/bitstream/handle/10651/78468/1b-Ediciones-Feijoo-Obras-completas-t-I-Bibliografia-o.pdf?sequence=1)
 - [*Templador médico de la furia vulgar*](https://wellcomecollection.org/works/mupc5k65)
 
 Ojalá más posts se titularan de esta forma!
-
----
 
 ## Proceso
 
@@ -245,7 +245,6 @@ Hice un benchmark con unas páginas de cada año donde tenía transcripción de 
 ![Error de caracteres de los motores OCR en la muestra de Trévoux](/data/feijoo-preview/blog/figures/fig7_ocr.png)
 
 ![Comparación del pasaje subrayado de Trévoux con el OCR antiguo y el nuevo](/data/feijoo-preview/blog/documents/web/ocr_1716_comparacion.png)
-*Montaje anotado con IA. [Escaneo original](/data/feijoo-preview/blog/documents/web/ocr_1716_p331.jpg), [salida exacta de ABBYY](/data/feijoo-preview/data/ocr_bench/pages/memoirespourlhis1716unse_0345.ia.txt) y [salida exacta de Kraken](/data/feijoo-preview/data/ocr_bench/pages/memoirespourlhis1716unse_0345.kraken.txt). Para comprobar letras y ligaduras, consultar esos originales.*
 
 
 <details markdown="1">
@@ -261,13 +260,23 @@ Hice un benchmark con unas páginas de cada año donde tenía transcripción de 
 
 ### Juntar
 
-Con los textos disponibles, lo siguiente era encontrar dónde mirar. El [trabajo de Hinderks, Ledins, Ginter y Tolonen sobre «translation mining»](https://doi.org/10.1080/01615440.2026.2675558) es muy cercano a esto. La idea es calcular embeddings de los fragmentos, que representan su contenido como vectores y permiten comparar textos en distintos idiomas. Dos frases que dicen algo parecido deberían estar cerca, aunque una esté en castellano y la otra en francés. Hay otros precedentes, como [Roe, Olsen y Morrissey](https://hal.science/hal-03740005), que buscaron traducciones de la *Cyclopaedia* en la *Encyclopédie* usando traducción automática y alineación de textos.
+Con los textos disponibles, hay que buscar pasajes copiados y verificarlos. El [trabajo de Hinderks, Ledins, Ginter y Tolonen sobre «translation mining»](https://doi.org/10.1080/01615440.2026.2675558) es muy cercano a esto. La idea es calcular embeddings de los fragmentos, que representan su contenido como vectores y permiten comparar textos en distintos idiomas. Dos frases que dicen algo parecido deberían estar cerca independientemente del idioma. Hay otros precedentes, como [Roe, Olsen y Morrissey](https://hal.science/hal-03740005), que buscaron traducciones de la *Cyclopaedia* en la *Encyclopédie* usando traducción automática y alineación de textos.
 
-Aplicar esto de forma naive da muchísimos falsos positivos. Feijoo y las revistas francesas hablaban constantemente de los mismos temas, citaban a los mismos autores y discutían las mismas historias. Probé varios modelos con una frase, su traducción y otra del mismo tema. LaBSE, entrenado para encontrar pares de traducciones, separaba bastante bien las dos; otros daban puntuaciones muy altas a casi todo. Me quedé con LaBSE para la primera búsqueda.
+Aplicar esto de forma naive da muchísimos falsos positivos. Feijoo y las revistas francesas hablaban constantemente de los mismos temas, citaban a los mismos autores y discutían las mismas obras. Probé varios modelos con una frase, su traducción y otra del mismo tema. LaBSE, entrenado para encontrar pares de traducciones, separaba bastante bien las dos; otros daban puntuaciones muy altas a casi todo. Me quedé con LaBSE para la primera búsqueda.
+
+Bajando un poco de nivel, usé [LaBSE a través de Sentence Transformers](https://huggingface.co/sentence-transformers/LaBSE). Cada frase se divide en tokens y pasa por un encoder BERT; la representación del token `[CLS]` pasa por una capa de 768 dimensiones con activación `tanh`, y se normaliza a longitud 1. El resultado son 768 números por frase. El modelo se [entrenó para acercar traducciones y separarlas de otros textos](https://aclanthology.org/2022.acl-long.62/), así que podía meter el español y el francés directamente, sin traducir primero. No lo reentrené con Feijoo.
+
+Con los vectores normalizados, la similitud coseno es simplemente su producto escalar: `cos(x, y) = x · y`. Comparaba bloques de vectores con multiplicaciones de matrices y guardaba los vecinos con mayor puntuación. Los embeddings se calculaban en CPU, en lotes de 32 frases, y quedaban en una caché por tomo y hash del texto, en `float16`. Si cambiaba el OCR de un tomo, solo había que recalcular ese tomo. Para juntar dos o tres frases sumaba sus vectores y volvía a normalizar, en vez de pasar el texto concatenado otra vez por el modelo. Es una aproximación, pero ahorraba bastante procesamiento.
 
 Aun así, una puntuación alta por sí sola decía poco. Usé *margin scoring*, que compara cuánto se parecen dos fragmentos con cuánto se parecen a sus otros vecinos. Si una frase de Feijoo se parece a veinte pasajes franceses por igual, probablemente solo hablan de lo mismo. Si uno destaca bastante sobre los demás, merece más atención. Es una forma de quitar ruido antes de poner a un agente a leerlo todo, porque por mucho que los tokens sean baratos, revisar miles de historias sobre medicina no era mi idea de pasar el finde.
 
-Empecé comparando frases y luego parejas de frases. Feijoo podía condensar varias frases francesas en una sola, o repartir una idea entre dos, así que comparar unidades demasiado pequeñas dejaba cosas fuera. En la tercera versión primero buscaba regiones prometedoras de los artículos y después comparaba las frases dentro de ellas. También usaba nombres propios y números, que suelen sobrevivir a una traducción. Las citas latinas ayudaron mucho menos de lo que esperaba: aparecían en demasiados sitios. Les bajé el peso, junto a otras fórmulas repetidas.
+En la alineación de frases, el margen era `cos(x, y) / ((r_x + r_y) / 2)`, donde `r_x` y `r_y` son las similitudes medias con los ocho vecinos más cercanos del otro idioma. Un margen de 1 significa que el par se parece tanto como esos vecinos, y uno mayor destaca sobre ese fondo. No es una probabilidad de que haya copia. Para buscar regiones más grandes usé otra corrección, CSLS: `2 · cos(x, y) − r_x − r_y`, esta vez con diez vecinos. Las dos intentan rebajar los fragmentos que se parecen a demasiadas cosas.
+
+Empecé comparando frases y luego agrupaciones de frases. Feijoo podía condensar varias frases francesas en una sola, o repartir una idea entre dos, así que comparar unidades demasiado pequeñas dejaba cosas fuera. En la tercera versión primero buscaba regiones prometedoras de los artículos y después comparaba las frases dentro de ellas. También usaba nombres propios y números, que suelen sobrevivir a una traducción. Las citas latinas ayudaron mucho menos de lo que esperaba: aparecían en demasiados sitios. Les bajé el peso, junto a otras fórmulas repetidas.
+
+En esa tercera versión, los bloques franceses tenían ocho frases y avanzaban de cuatro en cuatro. Del lado de Feijoo usaba el párrafo, dividido en bloques si era largo. Sumaba los vectores de las frases después de quitar la dirección media de cada idioma, y normalizaba de nuevo. Por consulta conservaba los doce bloques con mejor puntuación semántica y seis por nombres y números poco frecuentes; añadía también las coincidencias fuertes de frases sueltas para no perder una traducción breve escondida en un párrafo largo. Juntaba las regiones cercanas y añadía doce frases de contexto a cada lado antes de alinearlas.
+
+El orden final combinaba el margen, la proporción de frases alineadas, si conservaban el orden del original y los nombres o números compartidos. Las citas repetidas en muchos artículos contaban menos. Una regresión logística ajustada con los pasajes artificiales que cuento abajo reunía esas señales en una puntuación para decidir qué leer primero. Tampoco esa puntuación era el dictamen: una buena alineación podía seguir viniendo de una fuente común.
 
 Para tener otra forma de buscar, traduje automáticamente el texto de Feijoo al francés y comparé palabras poco frecuentes y su orden con Trévoux. Este detector tenía errores distintos al de embeddings, y encontró el caso de los anillos planetarios que mostraré luego. Juntaba los resultados de ambos, agrupaba los fragmentos próximos y quitaba los duplicados antes de revisarlos. Mientras terminaba el nuevo OCR, repetía la búsqueda sobre los tomos que iban estando listos.
 
@@ -298,6 +307,10 @@ El congreso del tricentenario (Oviedo, 24–25 de junio de 2026, unas 45 ponenci
 - articulo cutre repetido al respecto: [https://www.vozpopuli.com/historia/padre-feijoo-300-anos-del-primer-fact-checker-de-espana.html](https://www.vozpopuli.com/historia/padre-feijoo-300-anos-del-primer-fact-checker-de-espana.html)
 
 </details>
+
+El proceso completo quedó así. La evaluación de recuperación va por su lado: sirve para comparar versiones del detector, mientras que los casos se deciden volviendo a los documentos.
+
+![Pipeline completo: descarga, OCR, preparación de textos, dos vías de búsqueda, evaluación, revisión de fuentes y clasificación de los casos](/data/feijoo-preview/blog/figures/fig6_pipeline.png)
 
 ### Trabajar con agentes
 
@@ -346,7 +359,7 @@ Para el reto de 1729 encontré **nueve pasajes que superan el umbral** y **dos m
 
 ### Los documentos frente a frente
 
-Abre un caso para comparar los recortes de las primeras ediciones. Cuando un pasaje ocupa varias páginas, los recortes aparecen unidos en orden.
+Abre un caso para comparar los recortes de las primeras ediciones. Pulsa una imagen para leerla a tamaño completo; cuando un pasaje ocupa varias páginas, los recortes aparecen unidos en orden.
 
 <details class="feijoo-case" open>
 <summary>C001 · manchas solares</summary>
@@ -518,14 +531,8 @@ Abre un caso para comparar los recortes de las primeras ediciones. Cuando un pas
 
 Las cifras son un **mínimo**, no una lista cerrada. En una prueba con veinte párrafos que los detectores no habían propuesto apareció C038. El resultado depende además de distinguir una reseña de su libro original y de comprobar que el pasaje existía en la primera edición de Feijoo. Los niveles B y C recogen las dependencias más cortas o compartidas con otras fuentes; las traducciones citadas están en D.
 
-Puedo incluso comprar los libros para buscar a sus herederos y pedir el reembolso :)
 
-
-
-
-
-
----
+## Conclusiones
 
 primer post que escribo originalmente en inglés, con miedo a dejar a un LLM traducirlo
 
