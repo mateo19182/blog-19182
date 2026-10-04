@@ -40,8 +40,8 @@ npm run serve        # build + serve at http://localhost:8080
 - Set `unlisted: true` to serve a writing at its URL without adding it to the
   writings index, tags, RSS, or sitemap. The HTML includes a `noindex` meta tag.
 - The Feijoo preview is copied from `../inv/feijoo/blog/post/draft.md` with
-  `npm run sync:feijoo`. The command maps its two images to `/data/`, rejects
-  local document links, and leaves the source untouched. Run `npm run build`
+  `npm run sync:feijoo`. The command copies referenced images, PDFs and text files to `/data/`,
+  keeps repository-only Markdown links as plain labels, and leaves the source untouched. Run `npm run build`
   after syncing, or `npm run preview:feijoo` to sync and serve locally.
 - Footer sand-garden easter egg (fill the canvas to win).
 - Self-hosted Umami analytics.

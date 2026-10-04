@@ -2,6 +2,7 @@
 // Copy the author's working draft into the public, unlisted blog preview.
 import { copyFile, mkdir, readFile, writeFile } from "node:fs/promises"
 import path from "node:path"
+import { existsSync, statSync } from "node:fs"
 import { fileURLToPath } from "node:url"
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..")
@@ -22,15 +23,30 @@ body = body.replace(/^<!--[\s\S]*?-->\s*/, "")
 body = body.replace(/^TODO:\n(?:- .*\n)+\n*/, "")
 body = body.replace(/<!--[\s\S]*?-->\n?/g, "")
 
-const images = new Map([
-  ["images/diffusion-gap.png", "/data/feijoo-diffusion-gap.png"],
-  ["../documents/web/01_reto_tcu3_1729_ni_aun_quatro_lineas.jpg", "/data/feijoo-reto-1729.jpg"],
-])
-body = body.replace(/(!?)\[([^\]]+)\]\((<[^>]+>|[^)]+)\)/g, (match, image, label, rawTarget) => {
+const assets = new Map()
+const localLinks = /(!?)\[([^\]]+)\]\((<[^>]+>|[^)]+)\)/g
+for (const [, image, , rawTarget] of body.matchAll(localLinks)) {
   const target = rawTarget.replace(/^<|>$/g, "")
-  if (images.has(target)) return `${image}[${label}](${images.get(target)})`
+  if (/^(https?:\/\/|mailto:|#|\/data\/)/.test(target)) continue
+  const file = path.resolve(path.dirname(source), target.split("#")[0])
+  // Research notes stay in the working repository; retain their labels in the preview.
+  if (!image && (/\.md(?:#|$)/.test(target) || target.endsWith("/"))) continue
+  if (!existsSync(file) || !statSync(file).isFile()) throw new Error(`Missing draft asset: ${target}`)
+  const relative = path.relative(path.resolve(root, "../inv/feijoo"), file)
+  if (relative.startsWith("..")) throw new Error(`Asset outside Feijoo: ${target}`)
+  const publicTarget = `/data/feijoo-preview/${relative.split(path.sep).join("/")}`
+  assets.set(target, { file, publicTarget })
+}
+for (const { file, publicTarget } of assets.values()) {
+  const assetDest = path.join(root, "content", publicTarget)
+  await mkdir(path.dirname(assetDest), { recursive: true })
+  await copyFile(file, assetDest)
+}
+body = body.replace(localLinks, (match, image, label, rawTarget) => {
+  const target = rawTarget.replace(/^<|>$/g, "")
+  if (assets.has(target)) return `${image}[${label}](${assets.get(target).publicTarget})`
   if (/^(https?:\/\/|mailto:|#|\/data\/)/.test(target)) return match
-  throw new Error(`Local file link in draft: ${target}`)
+  return label
 })
 
 const scanSource = path.resolve(root, "../inv/feijoo/blog/documents/results")
@@ -43,4 +59,4 @@ if (scanNames.size > 0) {
 
 body = body.split("\n").map((line) => line.trimEnd()).join("\n").trim()
 await writeFile(dest, header + body + "\n")
-console.log(`Synced ${source} -> ${dest} (${scanNames.size} document images)`)
+console.log(`Synced ${source} -> ${dest} (${assets.size} local assets, ${scanNames.size} document images)`)
