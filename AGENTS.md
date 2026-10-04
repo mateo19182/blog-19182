@@ -25,3 +25,10 @@ links and directory links become plain labels. It removes author-only comments
 and TODOs from the published copy. Prefer public sources in the draft. The page uses
 `unlisted: true`: it has a public URL but stays out of listings, feeds, and the
 sitemap, with `noindex` in the HTML.
+
+Public research materials are generated from the explicit selection in
+`../inv/feijoo/blog/materials/`. When changing that selection or its case sheets,
+run `python ../inv/feijoo/blog/materials/build_public_materials.py` before sync.
+Sync copies the generated HTML, CSV, source metadata and ZIP into
+`content/data/feijoo-evidence/`. Keep the private research notes and agent
+transcripts out of this public selection.

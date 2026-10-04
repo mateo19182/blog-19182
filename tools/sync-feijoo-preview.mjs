@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Copy the author's working draft into the public, unlisted blog preview.
-import { copyFile, mkdir, readFile, writeFile } from "node:fs/promises"
+import { copyFile, cp, mkdir, readFile, writeFile } from "node:fs/promises"
 import path from "node:path"
 import { existsSync, statSync } from "node:fs"
 import { fileURLToPath } from "node:url"
@@ -50,6 +50,11 @@ body = body.replace(localLinks, (match, image, label, rawTarget) => {
   if (/^(https?:\/\/|mailto:|#|\/data\/)/.test(target)) return match
   return label
 })
+
+const materialsSource = path.resolve(root, "../inv/feijoo/blog/materials/public")
+if (existsSync(materialsSource)) {
+  await cp(materialsSource, path.join(root, "content/data/feijoo-evidence"), { recursive: true })
+}
 
 const scanSource = path.resolve(root, "../inv/feijoo/blog/documents/results")
 const scanDest = path.join(root, "content/data/feijoo-results")

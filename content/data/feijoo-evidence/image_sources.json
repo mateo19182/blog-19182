@@ -1,0 +1,572 @@
+{
+  "C001": {
+    "feijoo": {
+      "file": "C001_feijoo.jpg",
+      "source_path": "feijoo/data/feijoo/firsted_scans/II/148.jpg",
+      "source_pixels": [
+        1816,
+        1340
+      ],
+      "crop_xyxy": [
+        280,
+        148,
+        870,
+        425
+      ],
+      "output_pixels": [
+        590,
+        277
+      ],
+      "printed_page": "II (1728), p. 250, n. 23",
+      "repository": "Biblioteca Nacional de España, BNE Digital",
+      "source_url": "https://bnedigital.bne.es/bd/es/pdf?id=db5822c2-805c-498e-83ea-b7fdbddfab79",
+      "viewer_url": "https://bnedigital.bne.es/bd/es/viewer?id=87a094e7-aa8b-4411-aa5e-2fb1081e571a",
+      "rights": "BNE scans marked CC BY 4.0 in feijoo/notes/05-first-editions.md; credit Biblioteca Nacional de España"
+    },
+    "trevoux": {
+      "file": "C001_trevoux.jpg",
+      "source_path": "feijoo/blog/documents/trevoux_bsb/C001_trevoux1716-02_p331_recorte_Plutarco_Virgilio.jpg",
+      "source_pixels": [
+        929,
+        711
+      ],
+      "crop_xyxy": [
+        45,
+        20,
+        780,
+        685
+      ],
+      "output_pixels": [
+        735,
+        665
+      ],
+      "printed_page": "February 1716, article XXIV, p. 331",
+      "repository": "Bayerische Staatsbibliothek, Münchener DigitalisierungsZentrum",
+      "source_url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb10539854_00345/full/full/0/default.jpg",
+      "object_url": "https://www.digitale-sammlungen.de/en/view/bsb10539854",
+      "scan_number": 345,
+      "rights": "Historical printed text is public domain; scan credit Bayerische Staatsbibliothek/MDZ. Reuse terms for BSB digitization not independently verified."
+    },
+    "comparison_note": "Shared wrong Georgics book number and Tum caput reading."
+  },
+  "C002": {
+    "feijoo": {
+      "file": "C002_feijoo.jpg",
+      "source_path": "feijoo/data/feijoo/firsted_scans/II/152.jpg",
+      "source_pixels": [
+        1821,
+        1328
+      ],
+      "crop_xyxy": [
+        296,
+        140,
+        875,
+        520
+      ],
+      "output_pixels": [
+        579,
+        380
+      ],
+      "printed_page": "II (1728), p. 258, n. 39",
+      "repository": "Biblioteca Nacional de España, BNE Digital",
+      "source_url": "https://bnedigital.bne.es/bd/es/pdf?id=9e1602a2-9df9-4de7-99ee-1b2775312710",
+      "viewer_url": "https://bnedigital.bne.es/bd/es/viewer?id=87a094e7-aa8b-4411-aa5e-2fb1081e571a",
+      "rights": "BNE scans marked CC BY 4.0 in feijoo/notes/05-first-editions.md; credit Biblioteca Nacional de España"
+    },
+    "trevoux": {
+      "file": "C002_trevoux.jpg",
+      "source_path": "feijoo/blog/documents/trevoux_bsb/C002_trevoux1707-03_p0479_bsb10539818-0507.jpg",
+      "source_pixels": [
+        894,
+        1659
+      ],
+      "crop_xyxy": [
+        95,
+        550,
+        800,
+        1140
+      ],
+      "output_pixels": [
+        705,
+        590
+      ],
+      "printed_page": "March 1707, article XXXIV, p. 479",
+      "repository": "Bayerische Staatsbibliothek, Münchener DigitalisierungsZentrum",
+      "source_url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb10539818_00507/full/full/0/default.jpg",
+      "object_url": "https://www.digitale-sammlungen.de/en/view/bsb10539818",
+      "scan_number": 507,
+      "rights": "Historical printed text is public domain; scan credit Bayerische Staatsbibliothek/MDZ. Reuse terms for BSB digitization not independently verified."
+    },
+    "comparison_note": "Burning glass, sparks, and metallic ball. This account also closely follows Lemery’s Academy memoir; the image alone does not isolate Trévoux as the conduit."
+  },
+  "C003": {
+    "feijoo": {
+      "file": "C003_feijoo.jpg",
+      "source_path": "feijoo/data/feijoo/firsted_scans/I/197.jpg",
+      "source_pixels": [
+        1698,
+        1284
+      ],
+      "crop_xyxy": [
+        880,
+        325,
+        1515,
+        870
+      ],
+      "output_pixels": [
+        635,
+        545
+      ],
+      "printed_page": "I (1726), p. 361, n. 122",
+      "repository": "Biblioteca Nacional de España, BNE Digital",
+      "source_url": "https://bnedigital.bne.es/bd/es/pdf?id=96d4307e-503f-44ad-a5ef-0205f591cba9",
+      "viewer_url": "https://bnedigital.bne.es/bd/es/viewer?id=7b281e29-5af2-4c38-8c17-ec969f487f44",
+      "rights": "BNE scans marked CC BY 4.0 in feijoo/notes/05-first-editions.md; credit Biblioteca Nacional de España"
+    },
+    "trevoux": {
+      "file": "C003_trevoux.jpg",
+      "source_path": "feijoo/blog/documents/trevoux_bsb/C003_trevoux1704-12_p2119_recorte_lenguas_Reina.jpg",
+      "source_pixels": [
+        890,
+        1150
+      ],
+      "crop_xyxy": [
+        50,
+        65,
+        750,
+        710
+      ],
+      "output_pixels": [
+        700,
+        645
+      ],
+      "printed_page": "December 1704, article CLXXXIX, p. 2119",
+      "repository": "Bayerische Staatsbibliothek, Münchener DigitalisierungsZentrum",
+      "source_url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb10539809_00507/full/full/0/default.jpg",
+      "object_url": "https://www.digitale-sammlungen.de/en/view/bsb10539809",
+      "scan_number": 507,
+      "rights": "Historical printed text is public domain; scan credit Bayerische Staatsbibliothek/MDZ. Reuse terms for BSB digitization not independently verified."
+    },
+    "comparison_note": "Languages and Queen Marie Thérèse anecdote, absent from the checked Moréri abridgement. This pair displays one part of the longer dispersed sequence."
+  },
+  "C004": {
+    "feijoo": {
+      "file": "C004_feijoo.jpg",
+      "source_path": "feijoo/data/feijoo/firsted_scans/II/049.jpg",
+      "source_pixels": [
+        1762,
+        1286
+      ],
+      "crop_xyxy": [
+        930,
+        180,
+        1520,
+        800
+      ],
+      "output_pixels": [
+        590,
+        620
+      ],
+      "printed_page": "II (1728), p. 53, nn. 73–74",
+      "repository": "Biblioteca Nacional de España, BNE Digital",
+      "source_url": "https://bnedigital.bne.es/bd/es/pdf?id=40533f3b-7529-4088-b2d1-535480304714",
+      "viewer_url": "https://bnedigital.bne.es/bd/es/viewer?id=87a094e7-aa8b-4411-aa5e-2fb1081e571a",
+      "rights": "BNE scans marked CC BY 4.0 in feijoo/notes/05-first-editions.md; credit Biblioteca Nacional de España"
+    },
+    "trevoux": {
+      "file": "C004_trevoux.jpg",
+      "source_path": "feijoo/blog/documents/trevoux_bsb/C004_trevoux1715-07_pp1163-1164_recorte_Magallanes_Pampanga.jpg",
+      "source_pixels": [
+        934,
+        1637
+      ],
+      "crop_xyxy": "entire pre-existing documentary crop",
+      "output_pixels": [
+        934,
+        1637
+      ],
+      "printed_page": "July 1715, article XCVII, pp. 1163–1164",
+      "repository": "Bayerische Staatsbibliothek, Münchener DigitalisierungsZentrum",
+      "source_url": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb10539852_00071/full/full/0/default.jpg",
+      "object_url": "https://www.digitale-sammlungen.de/en/view/bsb10539852",
+      "scan_number": [
+        71,
+        72
+      ],
+      "rights": "Historical printed text is public domain; scan credit Bayerische Staatsbibliothek/MDZ. Reuse terms for BSB digitization not independently verified."
+    },
+    "comparison_note": "Two Philippine anecdotes in the same order. Trévoux reprints Taillandier’s Lettres édifiantes XI verbatim; Feijoo cites this Trévoux article earlier in the discourse."
+  },
+  "C005": {
+    "case": "TCU I.5 §III nn. 15–17; strongest shared formulation: Athenaeus and Archigenes",
+    "feijoo": {
+      "file": "C005_feijoo.jpg",
+      "pixel_size": [
+        648,
+        313
+      ],
+      "construction": "single exact crop",
+      "parts": [
+        {
+          "repository_path": "data/feijoo/firsted_scans/I/073.jpg",
+          "bounds_xyxy": [
+            185,
+            286,
+            833,
+            599
+          ],
+          "source_url": "https://bnedigital.bne.es/bd/es/viewer?id=7b281e29-5af2-4c38-8c17-ec969f487f44",
+          "printed_page": "TCU I (1726), p. 112",
+          "credit": "Biblioteca Nacional de España, BNE Digital, CC BY 4.0"
+        }
+      ]
+    },
+    "trevoux": {
+      "file": "C005_trevoux.jpg",
+      "pixel_size": [
+        930,
+        1480
+      ],
+      "construction": "single exact crop",
+      "parts": [
+        {
+          "repository_path": "data/evidence/C005/trevoux_1710-11_p1954.jpg",
+          "bounds_xyxy": [
+            210,
+            405,
+            1140,
+            1885
+          ],
+          "source_url": "https://archive.org/details/memoirespourlhi1710unse_2/page/n309",
+          "printed_page": "Nov. 1710, p. 1954",
+          "credit": "Internet Archive scan; original print public domain; check item page for scan reuse terms"
+        }
+      ]
+    }
+  },
+  "C009": {
+    "case": "TCU I.14 n. 2; musical modes",
+    "feijoo": {
+      "file": "C009_feijoo.jpg",
+      "pixel_size": [
+        627,
+        360
+      ],
+      "construction": "single exact crop",
+      "parts": [
+        {
+          "repository_path": "data/feijoo/firsted_scans/I/154.jpg",
+          "bounds_xyxy": [
+            215,
+            108,
+            842,
+            468
+          ],
+          "source_url": "https://bnedigital.bne.es/bd/es/viewer?id=7b281e29-5af2-4c38-8c17-ec969f487f44",
+          "printed_page": "TCU I (1726), p. 274",
+          "credit": "Biblioteca Nacional de España, BNE Digital, CC BY 4.0"
+        }
+      ]
+    },
+    "trevoux": {
+      "file": "C009_trevoux.jpg",
+      "pixel_size": [
+        693,
+        774
+      ],
+      "construction": "vertical stack of exact crops; 24-pixel white gaps mark different printed pages",
+      "parts": [
+        {
+          "repository_path": "data/evidence/C009/trevoux1716_n54.jpg",
+          "bounds_xyxy": [
+            5,
+            778,
+            698,
+            1394
+          ],
+          "source_url": "https://archive.org/details/memoirespourlhi1716unse_0/page/n54",
+          "printed_page": "Apr. 1716, p. 597",
+          "credit": "Internet Archive scan; original print public domain; check item page for scan reuse terms"
+        },
+        {
+          "repository_path": "data/evidence/C009/trevoux1716_n55.jpg",
+          "bounds_xyxy": [
+            80,
+            25,
+            692,
+            159
+          ],
+          "source_url": "https://archive.org/details/memoirespourlhi1716unse_0/page/n55",
+          "printed_page": "Apr. 1716, p. 598",
+          "credit": "Internet Archive scan; original print public domain; check item page for scan reuse terms"
+        }
+      ]
+    }
+  },
+  "C010": {
+    "case": "TCU I.12 n. 5; longevity examples from two Trévoux articles",
+    "feijoo": {
+      "file": "C010_feijoo.jpg",
+      "pixel_size": [
+        634,
+        416
+      ],
+      "construction": "single exact crop",
+      "parts": [
+        {
+          "repository_path": "data/feijoo/firsted_scans/I/134.jpg",
+          "bounds_xyxy": [
+            197,
+            216,
+            831,
+            632
+          ],
+          "source_url": "https://bnedigital.bne.es/bd/es/viewer?id=7b281e29-5af2-4c38-8c17-ec969f487f44",
+          "printed_page": "TCU I (1726), p. 234",
+          "credit": "Biblioteca Nacional de España, BNE Digital, CC BY 4.0"
+        }
+      ]
+    },
+    "trevoux": {
+      "file": "C010_trevoux.jpg",
+      "pixel_size": [
+        1050,
+        1762
+      ],
+      "construction": "vertical stack of exact crops; 24-pixel white gaps mark different printed pages",
+      "parts": [
+        {
+          "repository_path": "data/evidence/C010/trevoux_1701-07_p078.jpg",
+          "bounds_xyxy": [
+            195,
+            170,
+            1117,
+            1395
+          ],
+          "source_url": "https://archive.org/details/memoirespourlhi1702unse_2/page/n81",
+          "printed_page": "Jul. 1702 (misprinted 1701 on title), p. 78",
+          "credit": "Internet Archive scan; original print public domain; check item page for scan reuse terms"
+        },
+        {
+          "repository_path": "data/evidence/C010/trevoux_1701-09_p299.jpg",
+          "bounds_xyxy": [
+            80,
+            65,
+            1130,
+            578
+          ],
+          "source_url": "https://archive.org/details/memoirespourlhi1701unse_1/page/n302",
+          "printed_page": "Sep.–Oct. 1701, p. 299",
+          "credit": "Internet Archive scan; original print public domain; check item page for scan reuse terms"
+        }
+      ]
+    }
+  },
+  "C017": {
+    "case": "TCU III.2 n. 18; planetary ring and Saturn recipe. Seven-pair list is context, not the diagnostic evidence.",
+    "feijoo": {
+      "file": "C017_feijoo.jpg",
+      "pixel_size": [
+        703,
+        603
+      ],
+      "construction": "single exact crop",
+      "parts": [
+        {
+          "repository_path": "data/feijoo/firsted_scans/III/045.jpg",
+          "bounds_xyxy": [
+            974,
+            567,
+            1677,
+            1170
+          ],
+          "source_url": "https://bnedigital.bne.es/bd/es/viewer?id=911fba8d-7ad3-4d7e-9332-a05cb636e5a9",
+          "printed_page": "TCU III (1729), p. 25",
+          "credit": "Biblioteca Nacional de España, BNE Digital, CC BY 4.0"
+        }
+      ]
+    },
+    "trevoux": {
+      "file": "C017_trevoux.jpg",
+      "pixel_size": [
+        1235,
+        2254
+      ],
+      "construction": "vertical stack of exact crops; 24-pixel white gaps mark different printed pages",
+      "parts": [
+        {
+          "repository_path": "data/evidence/C017/trevoux_1718feb_p334_leaf343.jpg",
+          "bounds_xyxy": [
+            120,
+            310,
+            1355,
+            835
+          ],
+          "source_url": "https://archive.org/details/memoirespourlhis1718unse/page/n342",
+          "printed_page": "Feb. 1718, p. 334",
+          "credit": "Internet Archive scan; original print public domain; check item page for scan reuse terms"
+        },
+        {
+          "repository_path": "data/evidence/C017/trevoux_1718feb_p336_leaf345.jpg",
+          "bounds_xyxy": [
+            125,
+            475,
+            1355,
+            2180
+          ],
+          "source_url": "https://archive.org/details/memoirespourlhis1718unse/page/n344",
+          "printed_page": "Feb. 1718, p. 336",
+          "credit": "Internet Archive scan; original print public domain; check item page for scan reuse terms"
+        }
+      ]
+    }
+  },
+  "C020": {
+    "feijoo": {
+      "file": "C020_feijoo.jpg",
+      "source": "../../../data/feijoo/firsted_scans/I/138.jpg",
+      "url": "https://bnedigital.bne.es/bd/es/viewer?id=7b281e29-5af2-4c38-8c17-ec969f487f44",
+      "scan": "image 138, opening pp. 242–243",
+      "printed_page": "I.12, §VIII, n. 23, p. 243",
+      "crop_xywh": [
+        858,
+        122,
+        650,
+        335
+      ],
+      "credit": "Biblioteca Nacional de España, 2/58677 V.1; CC BY 4.0"
+    },
+    "trevoux": {
+      "file": "C020_trevoux.jpg",
+      "source": "../trevoux_bsb/C020_trevoux1701-09_p0291_bsb10539794-0543.jpg",
+      "url": "https://www.digitale-sammlungen.de/view/bsb10539794?page=543",
+      "iiif": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb10539794_00543/full/full/0/default.jpg",
+      "printed_page": "September–October 1701, p. 291",
+      "crop_xywh": [
+        90,
+        70,
+        720,
+        1090
+      ],
+      "credit": "Bayerische Staatsbibliothek München, Eph.lit. 143-1701,2; NoC-NC 1.0"
+    }
+  },
+  "C012": {
+    "feijoo": {
+      "file": "C012_feijoo.jpg",
+      "source": "../../../data/feijoo/firsted_scans/III/082.jpg",
+      "url": "https://bnedigital.bne.es/bd/es/viewer?id=911fba8d-7ad3-4d7e-9332-a05cb636e5a9",
+      "scan": "image 82, opening pp. 98–99",
+      "printed_page": "III.6, §I, n. 5, p. 99",
+      "crop_xywh": [
+        935,
+        625,
+        635,
+        380
+      ],
+      "credit": "Biblioteca Nacional de España, 2/58679 V.3; CC BY 4.0"
+    },
+    "trevoux": {
+      "file": "C012_trevoux.jpg",
+      "source": "../trevoux_bsb/C012_trevoux1701-05_p0062_bsb10539793-0524.jpg",
+      "url": "https://www.digitale-sammlungen.de/view/bsb10539793?page=524",
+      "iiif": "https://api.digitale-sammlungen.de/iiif/image/v2/bsb10539793_00524/full/full/0/default.jpg",
+      "printed_page": "May–June 1701, p. 62",
+      "crop_xywh": [
+        105,
+        52,
+        740,
+        855
+      ],
+      "credit": "Bayerische Staatsbibliothek München, Eph.lit. 143-1701,1; NoC-NC 1.0"
+    }
+  },
+  "C038": {
+    "feijoo": {
+      "file": "C038_feijoo.jpg",
+      "source": "../../../data/feijoo/firsted_scans/II/093.jpg",
+      "url": "https://bnedigital.bne.es/bd/es/viewer?id=87a094e7-aa8b-4411-aa5e-2fb1081e571a",
+      "scan": "image 93, opening pp. 140–141",
+      "printed_page": "II.6, §II, n. 6, p. 141",
+      "crop_xywh": [
+        950,
+        307,
+        640,
+        245
+      ],
+      "credit": "Biblioteca Nacional de España, 2/58678 V.2; CC BY 4.0"
+    },
+    "trevoux": {
+      "file": "C038_trevoux.jpg",
+      "source": [
+        "../trevoux_bsb/C038_trevoux1702-02_p0010_bsb10539798-0226.jpg",
+        "../trevoux_bsb/C038_trevoux1702-02_p0011_bsb10539798-0227.jpg"
+      ],
+      "url": [
+        "https://www.digitale-sammlungen.de/view/bsb10539798?page=226",
+        "https://www.digitale-sammlungen.de/view/bsb10539798?page=227"
+      ],
+      "printed_page": "February 1702, pp. 10–11",
+      "crop_xywh": [
+        [
+          195,
+          1075,
+          690,
+          445
+        ],
+        [
+          70,
+          65,
+          690,
+          140
+        ]
+      ],
+      "layout": "Two source page crops stacked in reading order; visible join",
+      "credit": "Bayerische Staatsbibliothek München, Eph.lit. 143-1702,1; NoC-NC 1.0"
+    }
+  },
+  "D2-C007": {
+    "feijoo": {
+      "file": "D2-C007_feijoo.jpg",
+      "source": "../../../data/evidence/D2-C007/usc_pdf2517_TCUIV1730_p210.jpg",
+      "url": "https://hdl.handle.net/10347/7540",
+      "scan": "USC Minerva composite PDF, page 2517",
+      "printed_page": "IV.8, §XXXIX, n. 85, p. 210 (concludes on p. 211)",
+      "crop_xywh": [
+        250,
+        705,
+        630,
+        510
+      ],
+      "credit": "Universidade de Santiago de Compostela, Biblioteca Universitaria; reuse terms not verified"
+    },
+    "trevoux": {
+      "file": "D2-C007_trevoux.jpg",
+      "source": [
+        "../trevoux_bsb/D2-C007_trevoux1716-05_p0849_bsb10539855-0315.jpg",
+        "../trevoux_bsb/D2-C007_trevoux1716-05_p0850_bsb10539855-0316.jpg"
+      ],
+      "url": [
+        "https://www.digitale-sammlungen.de/view/bsb10539855?page=315",
+        "https://www.digitale-sammlungen.de/view/bsb10539855?page=316"
+      ],
+      "printed_page": "May 1716, art. LVI, pp. 849–850",
+      "crop_xywh": [
+        [
+          90,
+          935,
+          740,
+          560
+        ],
+        [
+          125,
+          60,
+          740,
+          755
+        ]
+      ],
+      "layout": "Two source page crops stacked in reading order; visible join",
+      "credit": "Bayerische Staatsbibliothek München, Eph.lit. 143-1716,2; NoC-NC 1.0"
+    }
+  }
+}

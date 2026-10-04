@@ -37,8 +37,6 @@ En el [_Prólogo apologético_](https://www.filosofia.org/bjf/bjft3p6.htm) del [
 
 > «Lector mío, si estás en Madrid, y entiendes el Francés, ruégote que busques las Memorias de Trevoux, y el Journal des Sçavans, que no pueden faltar en la Biblioteca Real, y en otras; que unos, y otros libros vuelvas, y revuelvas bien; y cuando halles ni un párrafo sólo, ni aun cuatro líneas, que sean traslado, o traducción de ellos, o en este Tomo, o en alguno de los antecedentes, quiero que todos tres los des al fuego, y me obligo a restituirte el dinero que te han costado.»
 
-*Pasa el ratón por los escaneos para ver el pasaje subrayado. En móvil, toca la imagen o «Ver pasaje».*
-
 ![El reto de Feijoo en el prólogo del tomo III, primera edición de 1729, con el pasaje subrayado](/data/feijoo-preview/blog/documents/web/01_reto_tcu3_1729_ni_aun_quatro_lineas.jpg)
 [Fuente: Biblioteca Nacional de España, primera edición del tomo III (1729), imagen 18, CC BY 4.0.](https://bnedigital.bne.es/bd/es/viewer?id=911fba8d-7ad3-4d7e-9332-a05cb636e5a9).
 
@@ -51,7 +49,7 @@ En 1733 volvió a lanzar el reto, esta vez proponiendo que cuatro personas de Ov
 > «Solo me resta un recurso; y es el que propondré ahora. Desafío al Anónimo Autor de la Carta, (sea el que se fuere) y a todos los demás que quieran conspirar con él, para que en una o muchas hojas volantes den al público señalados los lugares de las Memorias de Trevoux, de donde pretenden que haya sacado yo lo mejor que he empleado para el fondo de mi Obra. En vista de las citas ofrezco exhibir las Memorias de Trevoux, (ciento y veinte y cuatro tomos son los que tengo) ante dos Caballeros de los principales de esta Ciudad, y dos Eclesiásticos de la primera distinción, que unos y otros entienden bien el Francés, los cuales, leídos con exactitud los lugares señalados, darán certificación pública, firmada de sus nombres, de que es falsa la acusación, y fingido el robo que me imputan.»
 
 ![Segundo reto de Feijoo, tomo V, primera edición de 1733, página 388, número 44](/data/feijoo-preview/blog/documents/web/06_segundo_reto_1733_p388.jpg)
-*TCU V, discurso XVII, n.º 44, p. 388. Haz clic para ampliar. [Primera edición, Universidade de Santiago de Compostela](https://hdl.handle.net/10347/7540); [transcripción](https://www.filosofia.org/bjf/bjft517.htm). Ortografía modernizada; «propondré» sigue la edición de 1733.*
+*TCU V, discurso XVII, n.º 44, p. 388. [Primera edición, Universidade de Santiago de Compostela](https://hdl.handle.net/10347/7540); [transcripción](https://www.filosofia.org/bjf/bjft517.htm). Ortografía modernizada; «propondré» sigue la edición de 1733.*
 
 ---
 
@@ -332,17 +330,19 @@ Como casi todos los consejos en este campo, es complicado de probar, pero a mi s
 
 Para el reto de 1729 encontré **nueve pasajes que superan el umbral** y **dos más en el límite**. En ocho casos adicionales hay dependencia posible o probable, pero no suficientes palabras exclusivas de Trévoux para contarlos igual. Feijoo tradujo otros cuatro pasajes citando la revista o el *Journal*; los muestro, pero no los cuento como aciertos de la apuesta. La búsqueda del reto de 1733 añadió **un caso estricto** en el tomo IV. En conjunto, TCU I–V da **10 + 2** con las mismas reglas; Feijoo no repitió en 1733 el umbral de «cuatro líneas».
 
+Los dos casos fronterizos se mantienen separados. En las modas, el recuento baja de 38 a 30 palabras si excluyo el marco de atribución a Henrion y a la Academia; además siguen sin cotejarse íntegramente dos entregas del *Mercure galant*. En el caso de las vidas de santos, solo cuenta una frase, después de retirar lo que podía venir del libro reseñado. Por eso los muestro aparte de los otros diez. [Comprobaciones y criterios](/data/feijoo-evidence/checks.html).
+
 | Búsqueda | Candidatos juzgados | Estrictos (A) | Dependientes o cortos (B/C) | Traducciones citadas (D) |
 |---|---:|---:|---:|---:|
 | Reto de 1729: TCU I–III frente a Trévoux y el tomo de 1682 del *Journal* | 633 veredictos | 9 + 2 en el límite | 4 B + 4 C | 4 |
 | Ampliación de 1733: TCU IV–V frente a Trévoux hasta 1732 | 237 candidatos | 1 | 1 B + 2 C | 8 |
 
 <details markdown="1">
-<summary>Los doce casos estrictos: pasajes, fuentes y prueba decisiva</summary>
+<summary>Diez casos estrictos y dos fronterizos: pasajes, fuentes y prueba decisiva</summary>
 
 | Caso | Feijoo | Trévoux | Palabras estrictas | Por qué cuenta; qué se sabía |
 |---|---|---|---:|---|
-| C001, manchas solares | II.14, 1728 | Parent, feb. 1716 | ≈128 | Comparte un error sobre el libro de las *Geórgicas* y «Tum caput». Mañer ya señaló la reseña en 1729. |
+| C001, manchas solares | II.14, 1728 | Parent, feb. 1716 | ≈128 | Comparte un error sobre el libro de las *Geórgicas* y «Tum caput». Mañer ya señaló el artículo en 1729. |
 | C002, hierro en plantas | II.14, 1728 | Lémery, mar. 1707 | ≈180 | Sigue la sintaxis de la reseña y detalles ausentes de la memoria original. Soto Marne señaló parte del pasaje. |
 | C003, abadesa de Fontevrault | I.16, 1726 | Dic. 1704 | ≈54 | La combinación de reina, rey y versos quemados falta en Moréri. No encontré una identificación anterior. |
 | C004, Filipinas | II.2, 1728 | Taillandier, jul. 1715 | ≈127 | Calcos y el mismo error geográfico: Dapitan pasa a Magallanes. Mañer ya lo denunció. |
@@ -353,13 +353,44 @@ Para el reto de 1729 encontré **nueve pasajes que superan el umbral** y **dos m
 | C020, mano de gigante | I.12, 1726 | Sep.–oct. 1701 | 54 | Feijoo cita las *Transacciones* inglesas, pero sigue el recorte francés, que omite la marsopa. No encontré una identificación anterior. |
 | C012, vidas de santos | III.6, 1729 | Mayo–jun. 1701 | ≈48–51, límite | Una frase sigue la condensación del reseñista; la dependencia de Trévoux queda cerca del umbral. |
 | C038, modas | II.6, 1728 | Henrion, feb. 1702 | 38, mínimo 30 | Frase traducida cláusula a cláusula. Salió de una muestra leída a mano, no de los detectores; queda por comprobar el *Mercure galant*. |
-| D2-C007, Behaim | IV.8, 1730 | Stuvenius, mayo 1716 | ≈98, mínimo 39 | Sigue el orden y detalles de la reseña que no están en el libro latino. Es el caso nuevo del segundo reto; quedan otras revistas por cotejar. |
+| D2-C007, Behaim | IV.8, 1730 | Stuvenius, mayo 1716 | ≈98, mínimo 39 | Sigue el orden y detalles de la reseña que no están en el libro latino. Sin identificación previa localizada. Las búsquedas en el Journal y las Acta, incluidos los suplementos revisados, no encontraron otra reseña equivalente. |
+
+</details>
+
+<details markdown="1">
+<summary>Borrador: dos casos para contar en el post</summary>
+
+### Las manchas solares y un error bastante útil
+
+Uno de los primeros casos salió en las [*Paradojas físicas*](https://www.filosofia.org/bjf/bjft214.htm), donde Feijoo habla de las manchas del Sol. Reúne historias de los antiguos, observaciones de manchas enormes y testimonios de épocas en las que el Sol habría perdido buena parte de su luz. La misma combinación aparece en un artículo de Antoine Parent publicado en Trévoux en febrero de 1716, doce años antes del tomo II.
+
+Hasta aquí podía haber leído las mismas fuentes. Pero al llegar a Virgilio los dos sitúan unos versos en el segundo libro de las *Geórgicas*. Están en [el primero, versos 466–468](https://www.thelatinlibrary.com/vergil/geo1.shtml). La revista dice «le second livre» y Feijoo escribe «libro segundo». También comparten «Tum caput» donde el texto latino consultado pone «cum caput», aunque una variante de una edición antigua podría explicar eso último por su cuenta.
+
+El error del libro viene acompañado de la misma selección de autoridades y de detalles como una mancha observada en 1706 cuya superficie sería treinta y seis veces la de la Tierra. Feijoo reorganiza parte de la explicación y corrige quién habla en el pasaje de Job. Parece que iba trabajando sobre el texto francés, añadiendo y corrigiendo cosas, y la referencia equivocada a Virgilio se le quedó dentro. Los pasajes están en las imágenes de la primera edición de 1728, así que tampoco es una adición posterior.
+
+Lo gracioso es que este préstamo ya lo había señalado Mañer en 1729, al que uno se acostumbra a leer como el pesado de la historia. Cita precisamente las autoridades de Mayolo, Plutarco y Virgilio y acusa a Feijoo de reproducirlas con las mismas palabras. Él también repite lo del segundo libro! La coincidencia general ya estaba denunciada; el error compartido ayuda a ver por qué la acusación tenía fundamento.
+
+[Pasajes y fuentes del caso C001](/data/feijoo-evidence/cases/C001.html).
+
+### Un anillo para hacerse rico y leer pensamientos
+
+Este caso apareció por la otra vía de búsqueda, después de traducir el texto de Feijoo al francés. En [*Secretos de Naturaleza*](https://www.filosofia.org/bjf/bjft302.htm), Feijoo atribuye a Camilo Leonardo una lista de siete piedras, siete metales y sus planetas correspondientes. Después cuenta cómo fabricar un anillo de plomo y turquesa que, preparado bajo Saturno, daría riquezas y permitiría conocer los pensamientos de las personas con quienes tratase su dueño. Bastante buen retorno para un anillo de plomo.
+
+La reseña de Trévoux de febrero de 1718 cuenta lo mismo, pero está hablando de tres autores. El primero es Camilo Leonardo; la lista de correspondencias viene del segundo, Pierre d'Arleu; el ejemplo del anillo, del tercero, Albinius. Feijoo se queda con el nombre que aparece al principio y le atribuye todo el bloque.
+
+Había que abrir los libros originales, porque los tres tratados también circulaban juntos. El libro de Leonardo tiene la dedicatoria a César Borgia que menciona Feijoo, pero no esa lista ni ese anillo. D'Arleu sí da las correspondencias, aunque separa piedras y metales en dos listas. La revista las junta en parejas y Feijoo sigue ese orden. Para el Sol, el original pone primero el zafiro y añade el diamante; Trévoux invierte la preferencia y Feijoo conserva solo el diamante.
+
+El anillo deja otras pistas. El latín de Albinius habla de que la gente revele secretos; la reseña lo convierte en conocer los pensamientos de aquellos con quienes uno trate. Esa reformulación pasa al español, junto con «signo Astronómico» y «viciado de rayos nocivos», que siguen el francés más de cerca que el latín. La atribución equivocada podría explicarse por una lectura rápida del volumen conjunto; estas elecciones de palabras y la forma de ordenar la lista apuntan a la reseña francesa.
+
+Con el recuento más estricto quedan unas 82 palabras dependientes de Trévoux, por encima de las cuatro líneas. No encontré este pasaje identificado en la bibliografía consultada. La novedad queda limitada a esa revisión bibliográfica.
+
+[Pasajes, libros originales y fuentes del caso C017](/data/feijoo-evidence/cases/C017.html).
 
 </details>
 
 ### Los documentos frente a frente
 
-Abre un caso para comparar los recortes de las primeras ediciones. Pulsa una imagen para leerla a tamaño completo; cuando un pasaje ocupa varias páginas, los recortes aparecen unidos en orden.
+Abre un caso para comparar los recortes de las primeras ediciones. Cuando un pasaje ocupa varias páginas, los recortes aparecen unidos en orden.
 
 <details class="feijoo-case" open>
 <summary>C001 · manchas solares</summary>
@@ -530,6 +561,9 @@ Abre un caso para comparar los recortes de las primeras ediciones. Pulsa una ima
 </details>
 
 Las cifras son un **mínimo**, no una lista cerrada. En una prueba con veinte párrafos que los detectores no habían propuesto apareció C038. El resultado depende además de distinguir una reseña de su libro original y de comprobar que el pasaje existía en la primera edición de Feijoo. Los niveles B y C recogen las dependencias más cortas o compartidas con otras fuentes; las traducciones citadas están en D.
+
+
+El [código, las fichas y los datos de esta búsqueda](/data/feijoo-evidence/index.html) están disponibles para consultar y descargar. Las fichas reúnen los pasajes, sus fuentes, el recuento adoptado y las reservas; la descarga incluye una muestra de entrada para ejecutar el detector y los textos del benchmark OCR.
 
 
 ## Conclusiones
