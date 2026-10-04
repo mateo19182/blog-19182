@@ -10,7 +10,7 @@ const source = path.resolve(root, "../inv/feijoo/blog/post/draft.md")
 const dest = path.join(root, "content/writings/El reto de Feijoo (borrador).md")
 
 const header = `---
-title: El reto de Feijoo (borrador)
+title: El reto de Feijoo
 lang: es
 unlisted: true
 description: Borrador en curso sobre Feijoo, Trévoux y los retos de 1729 y 1733.

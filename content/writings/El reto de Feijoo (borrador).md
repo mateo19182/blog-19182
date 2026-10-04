@@ -1,5 +1,5 @@
 ---
-title: El reto de Feijoo (borrador)
+title: El reto de Feijoo
 lang: es
 unlisted: true
 description: Borrador en curso sobre Feijoo, Trévoux y los retos de 1729 y 1733.
@@ -227,11 +227,9 @@ La mayor parte de la dificultad vino en obtener los documentos con un buen OCR. 
 
 ### OCR
 
-La mayoría del procesamiento lo hice en [mi servidor](https://blog.m19182.dev/writings/Building-my-Homelab/) con una RTX 3090. El OCR corrió en la GPU y en la CPU para parelelizar durante unos tres días. Inicialmente calculaba que iba a necesitar más de una semana pero varias optimizaciones wpor el camino permitieron bajar el tiempo.
+La mayoría de los documentos tienen versiones en línea, pero suelen tener correciones de ediciones posteriores y cambios para hacer más legible, y para esto necesitamos la primera edición. La mayoría del procesamiento lo hice en [mi servidor](https://blog.m19182.dev/writings/Building-my-Homelab/) con una RTX 3090. El OCR corrió en la GPU y en la CPU para parelelizar durante unos tres días. Inicialmente calculaba que iba a necesitar más de una semana pero varias optimizaciones wpor el camino permitieron bajar el tiempo.
 
-Era importante tener en cuenta las particularidades de las imprentas de la époce que mencioné antes.
-
-El texto de Internet Archive ya tenía OCR, pero con bastantes problems (s larga -> f, muchas palabras partidas...).
+Era importante tener en cuenta las particularidades de las imprentas de la époce que mencioné antes. El texto de Internet Archive ya tenía OCR, pero con bastantes problems (s larga -> f, muchas palabras partidas...).
 
 Hice un benchmark con unas páginas de cada año donde tenía transcripción de referencia para comparar.Los LLMs multimodales funcionaban todos muy mal (gpt6, moondreamV2, Gemini 3.8).
 
@@ -252,34 +250,35 @@ Hice un benchmark con unas páginas de cada año donde tenía transcripción de 
 
 </details>
 
-<details markdown="1">
-<summary>Draft de trabajo: qué añadir sobre el OCR</summary>
-
 ### Juntar
 
-Un precedente cercano de este proyecto es el [trabajo de Hinderks, Ledins, Ginter & Tolonen, "Translation mining"](https://doi.org/10.1080/01615440.2026.2675558) (_Historical Methods_, June 2026). En resumen, puedes encontrar similitudes entre textos de distintos idiomas calculando embeddings sobre todo el corpus, y revisar aquellos que estén muy cerca. Esto funciona porque los embeddings representan el significado de una frase o fragmento, de una forma que permite comparar distintos idiomas. Others: Roe, Olsen & Morrissey (ARTFL, 2021/22) did Chambers → _Encyclopédie_ with MT + sequence alignment. Bamman & Crane (2009) did multilingual reuse (Vergil → Milton).
+Con los textos disponibles, lo siguiente era encontrar dónde mirar. El [trabajo de Hinderks, Ledins, Ginter y Tolonen sobre «translation mining»](https://doi.org/10.1080/01615440.2026.2675558) es muy cercano a esto. La idea es calcular embeddings de los fragmentos, que representan su contenido como vectores y permiten comparar textos en distintos idiomas. Dos frases que dicen algo parecido deberían estar cerca, aunque una esté en castellano y la otra en francés. Hay otros precedentes, como [Roe, Olsen y Morrissey](https://hal.science/hal-03740005), que buscaron traducciones de la *Cyclopaedia* en la *Encyclopédie* usando traducción automática y alineación de textos.
 
-Aplicar esto de forma naive da muchísimos falsos positivos. Feijoo y las revistas francesas tenían muchísimo overlap temático,  LaBSE + margin scoring [explicar] (entrenado para minar pares de traducción) fue lo que mejor funcionó empíricamente en este caso.
+Aplicar esto de forma naive da muchísimos falsos positivos. Feijoo y las revistas francesas hablaban constantemente de los mismos temas, citaban a los mismos autores y discutían las mismas historias. Probé varios modelos con una frase, su traducción y otra del mismo tema. LaBSE, entrenado para encontrar pares de traducciones, separaba bastante bien las dos; otros daban puntuaciones muy altas a casi todo. Me quedé con LaBSE para la primera búsqueda.
 
-Las citas latinas fueron poco útiles para encontrar casos nuevos; el cruce de nombres propios y números sí ayudó en la tercera versión del detector.
+Aun así, una puntuación alta por sí sola decía poco. Usé *margin scoring*, que compara cuánto se parecen dos fragmentos con cuánto se parecen a sus otros vecinos. Si una frase de Feijoo se parece a veinte pasajes franceses por igual, probablemente solo hablan de lo mismo. Si uno destaca bastante sobre los demás, merece más atención. Es una forma de quitar ruido antes de poner a un agente a leerlo todo, porque por mucho que los tokens sean baratos, revisar miles de historias sobre medicina no era mi idea de pasar el finde.
+
+Empecé comparando frases y luego parejas de frases. Feijoo podía condensar varias frases francesas en una sola, o repartir una idea entre dos, así que comparar unidades demasiado pequeñas dejaba cosas fuera. En la tercera versión primero buscaba regiones prometedoras de los artículos y después comparaba las frases dentro de ellas. También usaba nombres propios y números, que suelen sobrevivir a una traducción. Las citas latinas ayudaron mucho menos de lo que esperaba: aparecían en demasiados sitios. Les bajé el peso, junto a otras fórmulas repetidas.
+
+Para tener otra forma de buscar, traduje automáticamente el texto de Feijoo al francés y comparé palabras poco frecuentes y su orden con Trévoux. Este detector tenía errores distintos al de embeddings, y encontró el caso de los anillos planetarios que mostraré luego. Juntaba los resultados de ambos, agrupaba los fragmentos próximos y quitaba los duplicados antes de revisarlos. Mientras terminaba el nuevo OCR, repetía la búsqueda sobre los tomos que iban estando listos.
+
+También quería saber cuánto se estaba escapando. Además de probar con casos que ya conocíamos, preparé 200 pasajes artificiales a partir de 50 fragmentos de Trévoux, traducidos y recortados de distintas formas, y los inserté entre texto de Feijoo. En los ejemplos más difíciles, la tercera versión recuperaba 42 de 50 dentro del presupuesto de lectura elegido, frente a 27 de la anterior. Es útil para comparar detectores, aunque unas paráfrasis hechas por traducción automática no se comportan necesariamente como un escritor del XVIII. De hecho, uno de los casos finales salió de una muestra leída a mano y ningún detector lo había propuesto.
 
 ### Comprobar las coincidencias
 
-Los candidatos T/P pasaron por un verificador a ciegas; los más prometedores tuvieron además una revisión adversarial, y solo un pequeño porcentaje sobrevivía al escrutinio.
+Aquí estaba la mayor parte del trabajo. Los detectores podían decirme dónde había parecido, pero cada candidato traía preguntas bastante más incómodas. ¿Había traducido Feijoo ese pasaje? ¿Podía haber leído el libro que la revista reseñaba? ¿La historia circulaba ya por otros sitios? Y, antes de todo eso, ¿estaba comparando el texto que publicó en 1726 con un artículo anterior, o una adición de cincuenta años después?
 
-<details markdown="1">
-<summary>Apuntes para completar la comprobación</summary>
+Un primer agente leía los dos fragmentos con su contexto y los clasificaba como traducción, paráfrasis cercana, dato compartido o ruido. Tenía que señalar las frases concretas que justificaban la decisión, posibles fuentes comunes y si Feijoo reconocía de dónde lo había sacado. Las traducciones y paráfrasis pasaban a otro agente que hacía su propio dictamen sin ver el del primero. Los casos más prometedores recibían además una revisión adversarial, buscando razones para descartarlos. Si el segundo agente discrepaba, tocaba volver a los documentos y resolver qué estaba viendo cada uno.
 
-- Definir T/P si mantienes esas siglas: traducción y paráfrasis.
-- Explicar el orden: primer juez, verificador a ciegas y revisión adversarial. Qué información tenía cada uno y qué intentaba descartar.
-- Cotejar el candidato con la primera edición de Feijoo: las transcripciones posteriores incorporan adiciones y reescrituras.
-- Comprobar que la fuente francesa es anterior al pasaje de Feijoo.
-- Buscar el libro reseñado y otras fuentes posibles. Un dato compartido no demuestra que Feijoo lo tomase de la revista.
-- Separar palabras dependientes de la reseña de las que también aparecen en otra fuente; explicar cómo aplicaste el umbral y qué hiciste con los casos fronterizos.
-- Distinguir reconocimiento explícito de la fuente y traducción sin reconocimiento.
-- Revisar qué identificaron ya los críticos de la época y los investigadores posteriores. Aquí encajan los apuntes de Xaime y el congreso, si decides desarrollarlos.
+La primera comprobación era en las imágenes de las primeras ediciones. La transcripción de Feijoo que usé para buscar viene de las ediciones de 1777–1779, que incorporan adiciones posteriores y algunas reescrituras sin marcar. Encontramos pasajes que parecían muy buenos hasta que comprobábamos que no estaban en el libro original. Tampoco podía contar una revista publicada después del tomo de Feijoo correspondiente. Son comprobaciones bastante básicas, pero fáciles de saltarse cuando un agente acaba de anunciar un descubrimiento espectacular.
 
-</details>
+Después venía comprobar las fuentes alternativas. Trévoux era en gran parte una revista de reseñas, así que un paralelo podía venir del libro reseñado. Para distinguirlo buscábamos detalles propios de la revista: un error que el original no tenía, varios ejemplos elegidos en el mismo orden, una cita recortada por los mismos puntos... En el caso de las manchas solares, Feijoo y Trévoux sitúan unos versos de Virgilio en el segundo libro de las *Geórgicas*, cuando están en el primero. Ese tipo de error compartido dice mucho más que dos textos hablando de manchas solares.
+
+Esto también complicaba lo de las cuatro líneas. Podía tener un párrafo largo que siguiese a Trévoux, pero compartir buena parte de su contenido con otro libro disponible. Para el recuento estricto solo conté las palabras del tramo que podía atribuirse específicamente a la revista. Un caso de mujeres artistas cayó por debajo del umbral al comprobar que parte de la lista ya estaba en un libro español de 1633. Los casos cortos o con otra fuente posible los conservé aparte, y los que quedaban cerca de las 35–40 palabras los marqué como fronterizos.
+
+Otra decisión fue qué hacer con las traducciones reconocidas. La frase del reto, leída literalmente, tampoco las excluye, pero está respondiendo a una acusación de copia oculta. Decidí mostrarlas por separado y dejarlas fuera del recuento principal. Estas decisiones sobre cómo contar quedaron registradas después de la primera búsqueda; las categorías de traducción, paráfrasis y fuente común sí se habían fijado antes de revisar los resultados del corpus completo.
+
+Por último, encontrar una coincidencia no significaba haber descubierto algo nuevo. Había que leer a Mañer, Sarmiento, Soto Marne y la bibliografía posterior para ver qué se sabía ya. Algunas de las mejores pruebas estaban señaladas desde el XVIII! Para cada caso dejé los pasajes enfrentados, la referencia de las páginas, el motivo para contarlo o descartarlo y lo que quedaba por comprobar. La cifra final depende de esas decisiones; los documentos permiten discutirlas.
 
 <details markdown="1">
 <summary>Apuntes pendientes: investigadores y contexto del proyecto</summary>

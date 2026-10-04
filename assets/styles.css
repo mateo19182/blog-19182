@@ -173,7 +173,7 @@ body {
 .tag:hover { background: var(--lightgray); }
 
 /* ---- prose ---- */
-.prose { font-size: 1.02rem; }
+.prose { font-size: 1.02rem; overflow-wrap: anywhere; }
 .prose h1, .prose h2, .prose h3, .prose h4 {
   font-family: var(--font-header);
   line-height: 1.25;
@@ -185,6 +185,7 @@ body {
 .prose a { color: var(--secondary); text-decoration: underline; text-underline-offset: 2px; text-decoration-thickness: 1px; }
 .prose a:hover { color: var(--dark); }
 .prose a.external::after { content: " ↗"; font-size: 0.8em; color: var(--gray); }
+.prose .image-link img { cursor: zoom-in; }
 .prose img { max-width: 100%; height: auto; border-radius: 6px; display: block; margin: 1.2rem auto; }
 
 /* Feijoo source comparisons: open a case, then compare both original pages. */
@@ -254,8 +255,8 @@ body {
 .prose pre code span { color: var(--shiki-light); }
 :root[data-theme="dark"] .prose pre code span { color: var(--shiki-dark); }
 
-.prose table { border-collapse: collapse; width: 100%; margin: 1.2rem 0; font-size: 0.92rem; display: block; overflow-x: auto; }
-.prose th, .prose td { border: 1px solid var(--lightgray); padding: 0.4rem 0.6rem; text-align: left; vertical-align: top; }
+.prose table { border-collapse: collapse; width: 100%; max-width: 100%; margin: 1.2rem 0; font-size: 0.92rem; display: block; overflow-x: auto; overflow-wrap: normal; }
+.prose th, .prose td { min-width: 10rem; border: 1px solid var(--lightgray); padding: 0.4rem 0.6rem; text-align: left; vertical-align: top; }
 .prose th { background: var(--highlight); font-family: var(--font-body); }
 
 .prose iframe { width: 100%; border: 1px solid var(--lightgray); border-radius: 8px; margin: 1rem 0; }
