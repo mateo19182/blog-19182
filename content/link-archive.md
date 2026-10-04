@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-10-03
+date: 2026-10-04
 tags: 
   - personal
 ---
@@ -9,6 +9,10 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Context Language Models](https://arxiv.org/html/2609.37725v1) `Academic Papers and Resources` *2026-10-03*
+- [Just a moment...](https://www.smithsonianmag.com/history/who-wrote-elizabeth-is-most-scathing-letters-new-research-suggests-the-tudor-queens-male-secretaries-revised-her-correspondence-to-emphasize-her-temper-180989565) `Reads` *2026-10-03*
+- [The Arena for Accountable Predictions - Long Bets](https://longbets.org) `Tools and Interactive Websites` *2026-10-03*
+- [EXTRA BIG ASS INTELLIGENCE™ — Federally Mandated Super Intelligence (SI)](https://www.extrabigassintelligence.com) `Weird` *2026-10-03*
 - [Using Opus 5.5 to discover a new eyewitness record of the dodo](https://resobscura.substack.com/p/using-opus-55-to-discover-a-new-eyewitness) `Reads` *2026-10-02*
 - [Coming to America: Nubank&-039;s David Vélez - Colossus](https://colossus.com/article/david-velez-nubank) `Reads` *2026-10-02*
 - [Just a moment...](https://dispatch-media.com/the-ugliest-face-in-britain/?ref=dispatch-articles-newsletter) `Reads` *2026-10-02*
