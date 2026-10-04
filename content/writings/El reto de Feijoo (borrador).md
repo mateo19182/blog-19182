@@ -37,6 +37,8 @@ En el [_Prólogo apologético_](https://www.filosofia.org/bjf/bjft3p6.htm) del [
 
 > «Lector mío, si estás en Madrid, y entiendes el Francés, ruégote que busques las Memorias de Trevoux, y el Journal des Sçavans, que no pueden faltar en la Biblioteca Real, y en otras; que unos, y otros libros vuelvas, y revuelvas bien; y cuando halles ni un párrafo sólo, ni aun cuatro líneas, que sean traslado, o traducción de ellos, o en este Tomo, o en alguno de los antecedentes, quiero que todos tres los des al fuego, y me obligo a restituirte el dinero que te han costado.»
 
+*Haz clic en las imágenes para abrirlas a tamaño completo.*
+
 ![El reto de Feijoo en el prólogo del tomo III, primera edición de 1729, con el pasaje subrayado](/data/feijoo-preview/blog/documents/web/01_reto_tcu3_1729_subrayado.png)
 [Fuente: Biblioteca Nacional de España, primera edición del tomo III (1729), imagen 18, CC BY 4.0.](https://bnedigital.bne.es/bd/es/viewer?id=911fba8d-7ad3-4d7e-9332-a05cb636e5a9).
 
@@ -44,7 +46,16 @@ Si te llama la atención que la "s" parece una "f", se conoce como la S larga y 
 
 La idea original es comparar los tomos I–V (el propio Feijoo amipló el reto [en 1733](https://www.filosofia.org/bjf/bjft517.htm) a sus nuevas obras) del _Teatro crítico universal_ (TCU de aquí en adelante) con las _Memorias de Trévoux_ y el tomo del _Journal des Sçavans_ que Feijoo decía tener, y ver si encontramos pasajes copiados.
 
+En 1733 volvió a lanzar el reto, esta vez proponiendo que cuatro personas de Oviedo cotejasen los pasajes señalados con los 124 tomos de Trévoux que tenía:
+
+> «Solo me resta un recurso; y es el que propondré ahora. Desafío al Anónimo Autor de la Carta, (sea el que se fuere) y a todos los demás que quieran conspirar con él, para que en una o muchas hojas volantes den al público señalados los lugares de las Memorias de Trevoux, de donde pretenden que haya sacado yo lo mejor que he empleado para el fondo de mi Obra. En vista de las citas ofrezco exhibir las Memorias de Trevoux, (ciento y veinte y cuatro tomos son los que tengo) ante dos Caballeros de los principales de esta Ciudad, y dos Eclesiásticos de la primera distinción, que unos y otros entienden bien el Francés, los cuales, leídos con exactitud los lugares señalados, darán certificación pública, firmada de sus nombres, de que es falsa la acusación, y fingido el robo que me imputan.»
+
+![Segundo reto de Feijoo, tomo V, primera edición de 1733, página 388, número 44](/data/feijoo-preview/blog/documents/web/06_segundo_reto_1733_p388.jpg)
+*TCU V, discurso XVII, n.º 44, p. 388. Haz clic para ampliar. [Primera edición, Universidade de Santiago de Compostela](https://hdl.handle.net/10347/7540); [transcripción](https://www.filosofia.org/bjf/bjft517.htm). Ortografía modernizada; «propondré» sigue la edición de 1733.*
+
 ---
+
+## Contexto histórico
 
 Benito Jerónimo Feijoo nace en 1676 en Casdemiro, cerca de Ourense, primogénito de una familia acomodada de la nobleza media gallega. Entró pronto al monasterio benedictino de Samos, contradiciendo el camino natural del primer hijo (dentro del matrimonio;). Estudió y ejerció de profesor en Galicia, Salamanca y León, y llegó a San Vicente de Oviedo en 1709, donde permaneció el resto de su vida (pese a múltiples invitaciones de moverse ciudades más relevantes). Allí compaginó su estudio y docencia universitaria con su carrera eclesiástica hasta su muerte a los 87 años. Su velatorio y entierro [fueron multitudinarios](https://musarqourense.xunta.gal/sites/default/files/doc/peza_mes/pm_2025_04_esp_0.pdf). Su fama atrajo a numerosos visitantes y, muchos años después de su muerte, [seguían visitándose los lugares donde había residido](https://www.cervantesvirtual.com/portales/benito_jeronimo_feijoo/autor_biografia/).
 
