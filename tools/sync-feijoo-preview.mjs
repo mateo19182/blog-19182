@@ -18,6 +18,8 @@ description: Borrador en curso sobre Feijoo, Trévoux y los retos de 1729 y 1733
 
 `
 
+await copyFile(path.resolve(root, "../inv/feijoo/blog/documents/scan_annotations.json"), path.join(root, "content/data/feijoo-scan-annotations.json"))
+
 let body = await readFile(source, "utf8")
 body = body.replace(/^<!--[\s\S]*?-->\s*/, "")
 body = body.replace(/^TODO:\n(?:- .*\n)+\n*/, "")

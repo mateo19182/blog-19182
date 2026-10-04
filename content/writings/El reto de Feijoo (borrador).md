@@ -37,9 +37,9 @@ En el [_Prólogo apologético_](https://www.filosofia.org/bjf/bjft3p6.htm) del [
 
 > «Lector mío, si estás en Madrid, y entiendes el Francés, ruégote que busques las Memorias de Trevoux, y el Journal des Sçavans, que no pueden faltar en la Biblioteca Real, y en otras; que unos, y otros libros vuelvas, y revuelvas bien; y cuando halles ni un párrafo sólo, ni aun cuatro líneas, que sean traslado, o traducción de ellos, o en este Tomo, o en alguno de los antecedentes, quiero que todos tres los des al fuego, y me obligo a restituirte el dinero que te han costado.»
 
-*Haz clic en las imágenes para abrirlas a tamaño completo.*
+*Pasa el ratón por los escaneos para ver el pasaje subrayado. En móvil, toca la imagen o «Ver pasaje».*
 
-![El reto de Feijoo en el prólogo del tomo III, primera edición de 1729, con el pasaje subrayado](/data/feijoo-preview/blog/documents/web/01_reto_tcu3_1729_subrayado.png)
+![El reto de Feijoo en el prólogo del tomo III, primera edición de 1729, con el pasaje subrayado](/data/feijoo-preview/blog/documents/web/01_reto_tcu3_1729_ni_aun_quatro_lineas.jpg)
 [Fuente: Biblioteca Nacional de España, primera edición del tomo III (1729), imagen 18, CC BY 4.0.](https://bnedigital.bne.es/bd/es/viewer?id=911fba8d-7ad3-4d7e-9332-a05cb636e5a9).
 
 Si te llama la atención que la "s" parece una "f", se conoce como la S larga y tiene una [historia fascinante](https://typefoundry.blogspot.com/2008/01/long-s.html), relacionada con las imprentas de la época, pero si me paro en cada detalle así no acabaría esto nunca. Lo sé porque cometí ese error en un [post anterior](https://blog.m19182.dev/writings/Consciousness-is-hard/) que nunca llegué a acabar.
@@ -79,8 +79,8 @@ La publicación de estos tomos venía en gran parte instada por sus superiores e
 ![Preliminares del tomo I, con la licencia de la orden benedictina](/data/feijoo-preview/data/feijoo/firsted_scans/I/009.jpg)
 La licencia de la orden autorizaba a Feijoo a imprimir el libro tras su examen.
 
-![Aprobación de Francisco de Losada en los preliminares del tomo I](/data/feijoo-preview/data/feijoo/firsted_scans/I/011.jpg)
-Una de las aprobaciones, escrita por Francisco de Losada. Además del juicio sobre el libro, contiene elogios del autor.
+![Aprobación de Domingo de Lossada en los preliminares del tomo I](/data/feijoo-preview/data/feijoo/firsted_scans/I/011.jpg)
+Una de las aprobaciones, escrita por Domingo de Lossada. Además del juicio sobre el libro, contiene elogios del autor.
 
 ![Preliminares del tomo I, con la suma de la licencia del Consejo](/data/feijoo-preview/data/feijoo/firsted_scans/I/013.jpg)
 La suma de la licencia recoge la autorización del Consejo para imprimirlo conforme al original aprobado.
