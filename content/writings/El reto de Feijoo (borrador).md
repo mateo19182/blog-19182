@@ -260,53 +260,22 @@ Hice un benchmark con unas páginas de cada año donde tenía transcripción de 
 
 Con los textos disponibles, hay que buscar pasajes copiados y verificarlos. El [trabajo de Hinderks, Ledins, Ginter y Tolonen sobre «translation mining»](https://doi.org/10.1080/01615440.2026.2675558) es muy cercano a esto. La idea es calcular embeddings de los fragmentos, que representan su contenido como vectores y permiten comparar textos en distintos idiomas. Dos frases que dicen algo parecido deberían estar cerca independientemente del idioma. Hay otros precedentes, como [Roe, Olsen y Morrissey](https://hal.science/hal-03740005), que buscaron traducciones de la *Cyclopaedia* en la *Encyclopédie* usando traducción automática y alineación de textos.
 
-Aplicar esto de forma naive da muchísimos falsos positivos. Feijoo y las revistas francesas hablaban constantemente de los mismos temas, citaban a los mismos autores y discutían las mismas obras. Probé varios modelos con una frase, su traducción y otra del mismo tema. LaBSE, entrenado para encontrar pares de traducciones, separaba bastante bien las dos; otros daban puntuaciones muy altas a casi todo. Me quedé con LaBSE para la primera búsqueda.
+Aplicar esto de forma naive da muchísimos falsos positivos. Feijoo y las revistas francesas hablaban constantemente de los mismos temas, citaban a los mismos autores y discutían las mismas obras. Probé varios modelos y el que mejor resultados daba con diferencia era [LaBSE](https://huggingface.co/sentence-transformers/LaBSE). Este modelo se [entrenó para específicamente para traducciones](https://aclanthology.org/2022.acl-long.62/). Valoré reentrenar con datos específicos de Feijoó, pero queda como posible trabajo futuro, no creo que valga la pena.
 
-Bajando un poco de nivel, usé [LaBSE a través de Sentence Transformers](https://huggingface.co/sentence-transformers/LaBSE). Cada frase se divide en tokens y pasa por un encoder BERT; la representación del token `[CLS]` pasa por una capa de 768 dimensiones con activación `tanh`, y se normaliza a longitud 1. El resultado son 768 números por frase. El modelo se [entrenó para acercar traducciones y separarlas de otros textos](https://aclanthology.org/2022.acl-long.62/), así que podía meter el español y el francés directamente, sin traducir primero. No lo reentrené con Feijoo.
+Una puntuación alta por sí sola decía poco, y desarrollé una fórmula ad-hoc, que tenía en cuenta si estos casos se parecían en solo una frase en concreto o todo el texto alreadedor tambien era parecido. En caso de que muchas frases vecinas tambien se parecieran, la puntuación bajaba ya que es probable que estuviesen hablando del mismo tema.
+Comparé tanto frases como agrupaciones de frases. Me fijé en nombres propios y números, que suelen sobrevivir a una traducción para encontrar regiones de interés. Las citas en latín no fueron útiles ya que tendían a repetirse en muchos sitios.
 
-Con los vectores normalizados, la similitud coseno es simplemente su producto escalar: `cos(x, y) = x · y`. Comparaba bloques de vectores con multiplicaciones de matrices y guardaba los vecinos con mayor puntuación. Los embeddings se calculaban en CPU, en lotes de 32 frases, y quedaban en una caché por tomo y hash del texto, en `float16`. Si cambiaba el OCR de un tomo, solo había que recalcular ese tomo. Para juntar dos o tres frases sumaba sus vectores y volvía a normalizar, en vez de pasar el texto concatenado otra vez por el modelo. Es una aproximación, pero ahorraba bastante procesamiento.
+Para complementar esta búsqueda, también traduje automáticamente el texto de Feijoo al francés y comparé palabras poco frecuentes y su orden con Trévoux. El tipo de falsos positivos que encontraba eran distintos de embeddings, y encontró el caso de los planetas que detallo luego. Hubo que limpiar muchos duplicados, debido a que iba haciendo el análisis al mismo tiempo que procesaba los datos.
 
-Aun así, una puntuación alta por sí sola decía poco. Usé *margin scoring*, que compara cuánto se parecen dos fragmentos con cuánto se parecen a sus otros vecinos. Si una frase de Feijoo se parece a veinte pasajes franceses por igual, probablemente solo hablan de lo mismo. Si uno destaca bastante sobre los demás, merece más atención. Es una forma de quitar ruido antes de poner a un agente a leerlo todo, porque por mucho que los tokens sean baratos, revisar miles de historias sobre medicina no era mi idea de pasar el finde.
-
-En la alineación de frases, el margen era `cos(x, y) / ((r_x + r_y) / 2)`, donde `r_x` y `r_y` son las similitudes medias con los ocho vecinos más cercanos del otro idioma. Un margen de 1 significa que el par se parece tanto como esos vecinos, y uno mayor destaca sobre ese fondo. No es una probabilidad de que haya copia. Para buscar regiones más grandes usé otra corrección, CSLS: `2 · cos(x, y) − r_x − r_y`, esta vez con diez vecinos. Las dos intentan rebajar los fragmentos que se parecen a demasiadas cosas.
-
-Empecé comparando frases y luego agrupaciones de frases. Feijoo podía condensar varias frases francesas en una sola, o repartir una idea entre dos, así que comparar unidades demasiado pequeñas dejaba cosas fuera. En la tercera versión primero buscaba regiones prometedoras de los artículos y después comparaba las frases dentro de ellas. También usaba nombres propios y números, que suelen sobrevivir a una traducción. Las citas latinas ayudaron mucho menos de lo que esperaba: aparecían en demasiados sitios. Les bajé el peso, junto a otras fórmulas repetidas.
-
-En esa tercera versión, los bloques franceses tenían ocho frases y avanzaban de cuatro en cuatro. Del lado de Feijoo usaba el párrafo, dividido en bloques si era largo. Sumaba los vectores de las frases después de quitar la dirección media de cada idioma, y normalizaba de nuevo. Por consulta conservaba los doce bloques con mejor puntuación semántica y seis por nombres y números poco frecuentes; añadía también las coincidencias fuertes de frases sueltas para no perder una traducción breve escondida en un párrafo largo. Juntaba las regiones cercanas y añadía doce frases de contexto a cada lado antes de alinearlas.
-
-El orden final combinaba el margen, la proporción de frases alineadas, si conservaban el orden del original y los nombres o números compartidos. Las citas repetidas en muchos artículos contaban menos. Una regresión logística ajustada con los pasajes artificiales que cuento abajo reunía esas señales en una puntuación para decidir qué leer primero. Tampoco esa puntuación era el dictamen: una buena alineación podía seguir viniendo de una fuente común.
-
-Para tener otra forma de buscar, traduje automáticamente el texto de Feijoo al francés y comparé palabras poco frecuentes y su orden con Trévoux. Este detector tenía errores distintos al de embeddings, y encontró el caso de los anillos planetarios que mostraré luego. Juntaba los resultados de ambos, agrupaba los fragmentos próximos y quitaba los duplicados antes de revisarlos. Mientras terminaba el nuevo OCR, repetía la búsqueda sobre los tomos que iban estando listos.
-
-También quería saber cuánto se estaba escapando. Además de probar con casos que ya conocíamos, preparé 200 pasajes artificiales a partir de 50 fragmentos de Trévoux, traducidos y recortados de distintas formas, y los inserté entre texto de Feijoo. En los ejemplos más difíciles, la tercera versión recuperaba 42 de 50 dentro del presupuesto de lectura elegido, frente a 27 de la anterior. Es útil para comparar detectores, aunque unas paráfrasis hechas por traducción automática no se comportan necesariamente como un escritor del XVIII. De hecho, uno de los casos finales salió de una muestra leída a mano y ningún detector lo había propuesto.
+Por último, para comprobar cómo de bien funcionaba este proceso, planté casos artificiales entre texto de Feijoo. En los ejemplos más difíciles, llegaba a recuperar 42 de 50, los que no eran sobre todo paráfrasis de la traducción automática. Es muy probable que existan varios casos que no llegué a detectar.
 
 ### Comprobar las coincidencias
 
-Aquí estaba la mayor parte del trabajo. Los detectores podían decirme dónde había parecido, pero cada candidato traía preguntas bastante más incómodas. ¿Había traducido Feijoo ese pasaje? ¿Podía haber leído el libro que la revista reseñaba? ¿La historia circulaba ya por otros sitios? Y, antes de todo eso, ¿estaba comparando el texto que publicó en 1726 con un artículo anterior, o una adición de cincuenta años después?
+Aquí quedó la mayor parte del trabajo. Los detectores sacaban muchos casos pero cada candidato era bastante abierto a la interpretación.
 
-Un primer agente leía los dos fragmentos con su contexto y los clasificaba como traducción, paráfrasis cercana, dato compartido o ruido. Tenía que señalar las frases concretas que justificaban la decisión, posibles fuentes comunes y si Feijoo reconocía de dónde lo había sacado. Las traducciones y paráfrasis pasaban a otro agente que hacía su propio dictamen sin ver el del primero. Los casos más prometedores recibían además una revisión adversarial, buscando razones para descartarlos. Si el segundo agente discrepaba, tocaba volver a los documentos y resolver qué estaba viendo cada uno.
+Un primer agente leía los fragmentos y los clasificaba como traducción, paráfrasis cercana, dato compartido o ruido. Los casos más prometedores recibían una revisión adversarial, y cualquier discrepancia volvía al primer paso para reclasificar. Si pasaba este primer filtro, se comparaba de nuevo con las primeras ediciones y demás fuentes mencionadas. Trévoux era una revista de reseñas, el paralelo solía venir del libro que se comentaba, y quería indentificar esos casos cómo tal. Lo mismo con las traducciones ya identificadas, Mañer, Sarmiento, Soto Marne y la bibliografía posterior validaron muchos de los casos que encontré.
 
-La primera comprobación era en las imágenes de las primeras ediciones. La transcripción de Feijoo que usé para buscar viene de las ediciones de 1777–1779, que incorporan adiciones posteriores y algunas reescrituras sin marcar. Encontramos pasajes que parecían muy buenos hasta que comprobábamos que no estaban en el libro original. Tampoco podía contar una revista publicada después del tomo de Feijoo correspondiente. Son comprobaciones bastante básicas, pero fáciles de saltarse cuando un agente acaba de anunciar un descubrimiento espectacular.
-
-Después venía comprobar las fuentes alternativas. Trévoux era en gran parte una revista de reseñas, así que un paralelo podía venir del libro reseñado. Para distinguirlo buscábamos detalles propios de la revista: un error que el original no tenía, varios ejemplos elegidos en el mismo orden, una cita recortada por los mismos puntos... En el caso de las manchas solares, Feijoo y Trévoux sitúan unos versos de Virgilio en el segundo libro de las *Geórgicas*, cuando están en el primero. Ese tipo de error compartido dice mucho más que dos textos hablando de manchas solares.
-
-Esto también complicaba lo de las cuatro líneas. Podía tener un párrafo largo que siguiese a Trévoux, pero compartir buena parte de su contenido con otro libro disponible. Para el recuento estricto solo conté las palabras del tramo que podía atribuirse específicamente a la revista. Un caso de mujeres artistas cayó por debajo del umbral al comprobar que parte de la lista ya estaba en un libro español de 1633. Los casos cortos o con otra fuente posible los conservé aparte, y los que quedaban cerca de las 35–40 palabras los marqué como fronterizos.
-
-Otra decisión fue qué hacer con las traducciones reconocidas. La frase del reto, leída literalmente, tampoco las excluye, pero está respondiendo a una acusación de copia oculta. Decidí mostrarlas por separado y dejarlas fuera del recuento principal. Estas decisiones sobre cómo contar quedaron registradas después de la primera búsqueda; las categorías de traducción, paráfrasis y fuente común sí se habían fijado antes de revisar los resultados del corpus completo.
-
-Por último, encontrar una coincidencia no significaba haber descubierto algo nuevo. Había que leer a Mañer, Sarmiento, Soto Marne y la bibliografía posterior para ver qué se sabía ya. Algunas de las mejores pruebas estaban señaladas desde el XVIII! Para cada caso dejé los pasajes enfrentados, la referencia de las páginas, el motivo para contarlo o descartarlo y lo que quedaba por comprobar. La cifra final depende de esas decisiones; los documentos permiten discutirlas.
-
-<details markdown="1">
-<summary>Apuntes pendientes: investigadores y contexto del proyecto</summary>
-
-También entré en contacto con Xaime, artículo ## «Murió en el asalto»... gran dureza!!!
-
-El congreso del tricentenario (Oviedo, 24–25 de junio de 2026, unas 45 ponencias)
-- articulo cutre repetido al respecto: [https://www.vozpopuli.com/historia/padre-feijoo-300-anos-del-primer-fact-checker-de-espana.html](https://www.vozpopuli.com/historia/padre-feijoo-300-anos-del-primer-fact-checker-de-espana.html)
-
-</details>
-
-El proceso completo quedó así. La evaluación de recuperación va por su lado: sirve para comparar versiones del detector, mientras que los casos se deciden volviendo a los documentos.
+Finalmente, comprobé a mano todas las que pasaban el proceso entero, lo cúal llevo un buen tiempo, a cambio me llevo la capacidad de leer libros del siglo XVIII de forma relativamente fluída. La realidad es que cada caso es un mundo, y muy pocos de ellos tengo la certeza de que sean realmente copias, pero aprendí todo tipo de anécdotas históricas por el camino.
 
 ![Pipeline completo: descarga, OCR, preparación de textos, dos vías de búsqueda, evaluación, revisión de fuentes y clasificación de los casos](/data/feijoo-preview/blog/figures/fig6_pipeline.png)
 
@@ -324,13 +293,12 @@ Otra cosa a tener en cuenta en un set-up como este, es que va a sobreindexar sob
 
 Como casi todos los consejos en este campo, es complicado de probar, pero a mi sensación es que ayudó bastante, antes de proponer una nueva dirección de investigación o revisar una parte del trabajo, discutir primero la situación con un agente sin el mismo contexto. Lo mismo para todas las revisiones, a ciegas y con modelos diferentes.
 
----
+Fueron bastante inútiles para escribir este post, pero para corregir errores y proponer sitios donde la prosa es mejorable si que ayudaron bastante. A medida que escribía más, las sugerencias se fueron afinando bastante. Tener un corpus de texto tuyo es útil para mantener una voz parecida, sin embargo si que encuentro que en ocasiones, mi forma de escribir (incluso de hablar!) empieza a parecerse a como lo hacen los agentes. Esto ya lo había observado en compañeros anteriormente pero escribiendo aquí me encontré corrigiendome a mi mismo en varias ocasiones. Me preocupa que esto esté ocurriendo a gran escala.
 
 ## Resultados
 
-Para el reto de 1729 encontré **nueve pasajes que superan el umbral** y **dos más en el límite**. En ocho casos adicionales hay dependencia posible o probable, pero no suficientes palabras exclusivas de Trévoux para contarlos igual. Feijoo tradujo otros cuatro pasajes citando la revista o el *Journal*; los muestro, pero no los cuento como aciertos de la apuesta. La búsqueda del reto de 1733 añadió **un caso estricto** en el tomo IV. En conjunto, TCU I–V da **10 + 2** con las mismas reglas; Feijoo no repitió en 1733 el umbral de «cuatro líneas».
-
-Los dos casos fronterizos se mantienen separados. En las modas, el recuento baja de 38 a 30 palabras si excluyo el marco de atribución a Henrion y a la Academia; además siguen sin cotejarse íntegramente dos entregas del *Mercure galant*. En el caso de las vidas de santos, solo cuenta una frase, después de retirar lo que podía venir del libro reseñado. Por eso los muestro aparte de los otros diez. [Comprobaciones y criterios](/data/feijoo-evidence/checks.html).
+Hasta ahora encontré unos 10 sitios donde estoy bastante seguro que resuleven el reto, con múltiple adicionales que probablemente cuenten pero no tengo la certeza.
+[Comprobaciones y criterios](/data/feijoo-evidence/checks.html).
 
 | Búsqueda | Candidatos juzgados | Estrictos (A) | Dependientes o cortos (B/C) | Traducciones citadas (D) |
 |---|---:|---:|---:|---:|
@@ -357,32 +325,184 @@ Los dos casos fronterizos se mantienen separados. En las modas, el recuento baja
 
 </details>
 
+### Copias de otros libros
+
+El reto solo mencionaba a Trévoux y el Journal, pero ya que tenía montado esto lo paso por otras fuentes francesas (la *Histoire* de la Académie des sciences, el *Dictionnaire* de Bayle, Moréri, la *Menagiana* y Fontenelle). Salen unos 17 pasajes, casi todos de Moréri. No es de extrañar, Feijoó tiene citadas estas obras en varios de sus escritos, pero estos son los sitios que no citó:
+
+| Caso | Feijoo | Libro | Palabras sin citar | Qué lo delata |
+|---|---|---|---:|---|
+| [O153, el caballero Borri](/data/feijoo-evidence/cases/O153.html) | III.2, 1729 | Bayle 1702 (Moréri reimprime el texto principal) | ≈800 | Sigue el artículo y sus notas en el mismo orden. En todo el discurso solo cita a Moréri, y para otra cosa. |
+| [O508, las sabias italianas](/data/feijoo-evidence/cases/O508.html) | I.16, 1726 | Moréri, siete artículos | ≈585 | Bucca, Nogarola, Cereti, Fidele, Cibo, Marchina y Cornaro. Moréri es el único texto revisado que trae a las siete. |
+| [O526, Apolonio de Tiana](/data/feijoo-evidence/cases/O526.html) | II.5, 1728 | Du Pin 1705 | ≈420 | «Ciento y veinte años», como el «six vingt ans» de Du Pin; Trévoux dice 110. Cita a Filóstrato y a Luciano, no a Du Pin. |
+| [O475, las Sibilas](/data/feijoo-evidence/cases/O475.html) | II.4, 1728 | Moréri | ≈330 | Los «trescientos escudos» de Tarquino y un error de cuenta («Eliano cuatro») que es de Moréri. |
+| [O471, Delfos](/data/feijoo-evidence/cases/O471.html) | II.4, 1728 | Moréri | ≈320 | Equécrates y las doncellas «consagradas a Diana», que no están en Van Dale ni en Fontenelle. |
+| [O481, las mujeres de Curzolari](/data/feijoo-evidence/cases/O481.html) | I.16, 1726 | Moréri | ≈75 | Dos errores de Moréri: lleva la historia de Korčula a las islas de Lepanto y la fecha «el año antecedente». |
+| [O474, la Pobreza](/data/feijoo-evidence/cases/O474.html) | I.3, 1726 | Moréri, edición de París | ≈48 | «Curio, y de Camila» por Camilo, que viene del francés «Camille». |
+
+Los errores que copia también desvelan qué ejemplar tenía. Por ejemplo, yo descargara el Moréri de Ámsterdam (1716–17), pero «Camila» y la frase de Aristófanes de la Pobreza solo están en las ediciones de París (1707 y 1718).
+
 <details markdown="1">
-<summary>Borrador: dos casos para contar en el post</summary>
+<summary>Copias de otros libros</summary>
 
-### Las manchas solares y un error bastante útil
+<details class="feijoo-case" open>
+<summary>O153 · el caballero Borri</summary>
+<div class="feijoo-compare">
+<figure>
+<img src="/data/feijoo-results/O153_feijoo.jpg" alt="Recorte de Feijoo: el caballero Borri (O153)" loading="lazy" decoding="async">
+<figcaption><strong>Feijoo</strong> · III (1729), p. 37, n. 38 · <a href="https://bnedigital.bne.es/bd/es/viewer?id=911fba8d-7ad3-4d7e-9332-a05cb636e5a9" target="_blank" rel="noopener noreferrer">BNE</a> (CC BY 4.0)</figcaption>
+</figure>
+<figure>
+<img src="/data/feijoo-results/O153_fuente.jpg" alt="Recorte de Bayle: el caballero Borri (O153)" loading="lazy" decoding="async">
+<figcaption><strong>Bayle</strong> · <i>Dictionaire</i>, 1702, t. I, p. 654, BORRI · <a href="https://archive.org/details/bub_gb_9zPfImQPeQkC/page/n693/mode/1up" target="_blank" rel="noopener noreferrer">Internet Archive</a></figcaption>
+</figure>
+</div>
+<p><a href="/data/feijoo-evidence/cases/O153.html">Ficha del caso O153</a></p>
+</details>
 
-Uno de los primeros casos salió en las [*Paradojas físicas*](https://www.filosofia.org/bjf/bjft214.htm), donde Feijoo habla de las manchas del Sol. Reúne historias de los antiguos, observaciones de manchas enormes y testimonios de épocas en las que el Sol habría perdido buena parte de su luz. La misma combinación aparece en un artículo de Antoine Parent publicado en Trévoux en febrero de 1716, doce años antes del tomo II.
+<details class="feijoo-case">
+<summary>O508 · las sabias italianas (Casandra Fidele)</summary>
+<div class="feijoo-compare">
+<figure>
+<img src="/data/feijoo-results/O508_feijoo.jpg" alt="Recorte de Feijoo: las sabias italianas (Casandra Fidele) (O508)" loading="lazy" decoding="async">
+<figcaption><strong>Feijoo</strong> · I (1726), p. 364, n. 128 · <a href="https://bnedigital.bne.es/bd/es/viewer?id=7b281e29-5af2-4c38-8c17-ec969f487f44" target="_blank" rel="noopener noreferrer">BNE</a> (CC BY 4.0)</figcaption>
+</figure>
+<figure>
+<img src="/data/feijoo-results/O508_fuente.jpg" alt="Recorte de Moréri: las sabias italianas (Casandra Fidele) (O508)" loading="lazy" decoding="async">
+<figcaption><strong>Moréri</strong> · 1717, t. II, p. 71, FIDELE · <a href="https://archive.org/details/legranddictionai02mor/page/n78/mode/1up" target="_blank" rel="noopener noreferrer">Internet Archive</a></figcaption>
+</figure>
+</div>
+<p><a href="/data/feijoo-evidence/cases/O508.html">Ficha del caso O508</a></p>
+</details>
 
-Hasta aquí podía haber leído las mismas fuentes. Pero al llegar a Virgilio los dos sitúan unos versos en el segundo libro de las *Geórgicas*. Están en [el primero, versos 466–468](https://www.thelatinlibrary.com/vergil/geo1.shtml). La revista dice «le second livre» y Feijoo escribe «libro segundo». También comparten «Tum caput» donde el texto latino consultado pone «cum caput», aunque una variante de una edición antigua podría explicar eso último por su cuenta.
+<details class="feijoo-case">
+<summary>O526 · Apolonio de Tiana</summary>
+<div class="feijoo-compare">
+<figure>
+<img src="/data/feijoo-results/O526_feijoo.jpg" alt="Recorte de Feijoo: Apolonio de Tiana (O526)" loading="lazy" decoding="async">
+<figcaption><strong>Feijoo</strong> · II (1728), p. 110, n. 13 · <a href="https://bnedigital.bne.es/bd/es/viewer?id=87a094e7-aa8b-4411-aa5e-2fb1081e571a" target="_blank" rel="noopener noreferrer">BNE</a> (CC BY 4.0)</figcaption>
+</figure>
+<figure>
+<img src="/data/feijoo-results/O526_fuente.jpg" alt="Recorte de Du Pin: Apolonio de Tiana (O526)" loading="lazy" decoding="async">
+<figcaption><strong>Du Pin</strong> · <i>L'Histoire d'Apollone</i>, 1705, pp. 6–7 · <a href="https://www.digitale-sammlungen.de/view/bsb10773200?page=42" target="_blank" rel="noopener noreferrer">BSB</a></figcaption>
+</figure>
+</div>
+<p><a href="/data/feijoo-evidence/cases/O526.html">Ficha del caso O526</a></p>
+</details>
 
-El error del libro viene acompañado de la misma selección de autoridades y de detalles como una mancha observada en 1706 cuya superficie sería treinta y seis veces la de la Tierra. Feijoo reorganiza parte de la explicación y corrige quién habla en el pasaje de Job. Parece que iba trabajando sobre el texto francés, añadiendo y corrigiendo cosas, y la referencia equivocada a Virgilio se le quedó dentro. Los pasajes están en las imágenes de la primera edición de 1728, así que tampoco es una adición posterior.
+<details class="feijoo-case">
+<summary>O475 · las Sibilas</summary>
+<div class="feijoo-compare">
+<figure>
+<img src="/data/feijoo-results/O475_feijoo.jpg" alt="Recorte de Feijoo: las Sibilas (O475)" loading="lazy" decoding="async">
+<figcaption><strong>Feijoo</strong> · II (1728), p. 78, n. 3 · <a href="https://bnedigital.bne.es/bd/es/viewer?id=87a094e7-aa8b-4411-aa5e-2fb1081e571a" target="_blank" rel="noopener noreferrer">BNE</a> (CC BY 4.0)</figcaption>
+</figure>
+<figure>
+<img src="/data/feijoo-results/O475_fuente.jpg" alt="Recorte de Moréri: las Sibilas (O475)" loading="lazy" decoding="async">
+<figcaption><strong>Moréri</strong> · 1717, t. IV, p. 386, SIBYLLES · <a href="https://archive.org/details/legranddictionai04mor/page/n393/mode/1up" target="_blank" rel="noopener noreferrer">Internet Archive</a></figcaption>
+</figure>
+</div>
+<p><a href="/data/feijoo-evidence/cases/O475.html">Ficha del caso O475</a></p>
+</details>
 
-Lo gracioso es que este préstamo ya lo había señalado Mañer en 1729, al que uno se acostumbra a leer como el pesado de la historia. Cita precisamente las autoridades de Mayolo, Plutarco y Virgilio y acusa a Feijoo de reproducirlas con las mismas palabras. Él también repite lo del segundo libro! La coincidencia general ya estaba denunciada; el error compartido ayuda a ver por qué la acusación tenía fundamento.
+<details class="feijoo-case">
+<summary>O471 · el oráculo de Delfos</summary>
+<div class="feijoo-compare">
+<figure>
+<img src="/data/feijoo-results/O471_feijoo.jpg" alt="Recorte de Feijoo: el oráculo de Delfos (O471)" loading="lazy" decoding="async">
+<figcaption><strong>Feijoo</strong> · II (1728), p. 82, n. 11 · <a href="https://bnedigital.bne.es/bd/es/viewer?id=87a094e7-aa8b-4411-aa5e-2fb1081e571a" target="_blank" rel="noopener noreferrer">BNE</a> (CC BY 4.0)</figcaption>
+</figure>
+<figure>
+<img src="/data/feijoo-results/O471_fuente.jpg" alt="Recorte de Moréri: el oráculo de Delfos (O471)" loading="lazy" decoding="async">
+<figcaption><strong>Moréri</strong> · 1717, t. II, p. 335, DELPHES · <a href="https://archive.org/details/legranddictionai02mor/page/n342/mode/1up" target="_blank" rel="noopener noreferrer">Internet Archive</a></figcaption>
+</figure>
+</div>
+<p><a href="/data/feijoo-evidence/cases/O471.html">Ficha del caso O471</a></p>
+</details>
+
+<details class="feijoo-case">
+<summary>O481 · las mujeres de Curzolari</summary>
+<div class="feijoo-compare">
+<figure>
+<img src="/data/feijoo-results/O481_feijoo.jpg" alt="Recorte de Feijoo: las mujeres de Curzolari (O481)" loading="lazy" decoding="async">
+<figcaption><strong>Feijoo</strong> · I (1726), p. 332, n. 47 · <a href="https://bnedigital.bne.es/bd/es/viewer?id=7b281e29-5af2-4c38-8c17-ec969f487f44" target="_blank" rel="noopener noreferrer">BNE</a> (CC BY 4.0)</figcaption>
+</figure>
+<figure>
+<img src="/data/feijoo-results/O481_fuente.jpg" alt="Recorte de Moréri: las mujeres de Curzolari (O481)" loading="lazy" decoding="async">
+<figcaption><strong>Moréri</strong> · 1717, t. II, p. 311, CURSOLAIRES · <a href="https://archive.org/details/legranddictionai02mor/page/n318/mode/1up" target="_blank" rel="noopener noreferrer">Internet Archive</a></figcaption>
+</figure>
+</div>
+<p><a href="/data/feijoo-evidence/cases/O481.html">Ficha del caso O481</a></p>
+</details>
+
+<details class="feijoo-case">
+<summary>O474 · la Pobreza</summary>
+<div class="feijoo-compare">
+<figure>
+<img src="/data/feijoo-results/O474_feijoo.jpg" alt="Recorte de Feijoo: la Pobreza (O474)" loading="lazy" decoding="async">
+<figcaption><strong>Feijoo</strong> · I (1726), p. 65, n. 38 · <a href="https://bnedigital.bne.es/bd/es/viewer?id=7b281e29-5af2-4c38-8c17-ec969f487f44" target="_blank" rel="noopener noreferrer">BNE</a> (CC BY 4.0)</figcaption>
+</figure>
+<figure>
+<img src="/data/feijoo-results/O474_fuente.jpg" alt="Recorte de Moréri: la Pobreza (O474)" loading="lazy" decoding="async">
+<figcaption><strong>Moréri</strong> · París, 1707, p. 181, PAUVRETÉ · <a href="https://archive.org/details/bub_gb_FEmV5fxZ9FQC/page/n193/mode/1up" target="_blank" rel="noopener noreferrer">Internet Archive</a></figcaption>
+</figure>
+</div>
+<p><a href="/data/feijoo-evidence/cases/O474.html">Ficha del caso O474</a></p>
+</details>
+
+</details>
+
+<details markdown="1">
+<summary>Todos los casos de otros libros: sin citar, bajo el umbral y citados</summary>
+
+| Caso | Feijoo | Libro | Sin citar | Solo de ese libro | Cita |
+|---|---|---|---:|---:|---|
+| O153, el caballero Borri | III.2 §XI, nn. 37–40, 1729 | Bayle 1702, BORRI; Moréri *Suppl.* 1716 | ≈800 | ≈80 | ninguna |
+| O508, las sabias italianas | I.16 §XVIII, nn. 124–131, 1726 | Moréri 1717, siete artículos | ≈585 | ≈150 | ninguna |
+| O526, Apolonio de Tiana | II.5 §V, nn. 12–13, 1728 | Du Pin 1705 | ≈420 | ≈60 | heredada |
+| C022, Elena Cornaro Piscopia | I.16, n. 131, 1726 | Moréri 1716, Trévoux oct. 1713 y Leti | ≈355 | ≈35 | Leti, solo para sus elogios |
+| O475, las Sibilas | II.4 §I, nn. 3–5, 1728 | Moréri 1717 y *Suppl.* 1716 | ≈330 | ≈60 | heredada |
+| O471, Delfos | II.4 §II, nn. 9–11, 1728 | Moréri 1717, dos artículos DELPHES | ≈320 | ≈80 | heredada |
+| C007 + C021, las pintoras y Madame Le Hay | I.16 §XXII, nn. 142–145, 1726 | Trévoux 1706 y 1713, Moréri 1716, Carducho 1633, Palomino 1715, Leti | ≈290 | 24 de Trévoux | ninguna |
+| O466, Sitti Maani | I.16 §XX, n. 135, 1726 | Moréri 1717 (Thévenot 1663, Rocchi 1627) | ≈280 | ≈15 | ninguna |
+| O467, los cumplidos persas | II.15, n. 11, 1728 | Moréri 1717, que abrevia a Olearius | ≈116 | ≈19 | ninguna |
+| O510, el ave Anca y Chederles | I.1 §VII, n. 20, 1726 | Moréri *Suppl.* 1716 (Bochart, Busbecq por Bayle) | ≈115 | 0–6 | ninguna |
+| C006, lo que comen los pueblos | III.10, n. 10, 1729 | Lémery 1702 o su extracto en Trévoux | ≈79 | | heredada |
+| O481, las mujeres de Curzolari | I.16 §VII, n. 47, 1726 | Moréri 1717 (Graziani 1624) | ≈75 | ≈25 | ninguna |
+| O476, el tallado del diamante | II.2, n. 66, 1728 | R. de Berquen 1661, Moréri *Suppl.* 1716 | ≈70 | 0–5 | ninguna |
+| O478, Ami Perrin | I.4, n. 41, 1726 | Moréri, que abrevia a Maimbourg 1682 | ≈58 | ≈20 | heredada (Maimbourg) |
+| O474, la Pobreza | I.3, n. 38, 1726 | Moréri, edición de París | ≈48 | ≈40 | heredada |
+| O472, el dios Término | I.4, n. 2, 1726 | Moréri | 44 | ≈14 | heredada |
+| O017, los cometas de Villemot | I.10 §IV, n. 15, 1726 | Fontenelle, *Histoire* de la Académie 1707 | 35 (≈130–155 con nn. 13–14) | 35 | ninguna |
+| O512, concilios contra la magia | II.5, nn. 63–64, 1728 | Thiers 1697, Moréri | ≈31 | 0 | bajo el umbral |
+| C034, las sectas médicas modernas | I.5, nn. 18–21, 1726 | Barchusen 1710 | ≈30 | | bajo el umbral |
+| O469, los lemas de san Malaquías | II.4 §VI, nn. 37–40, 1728 | Moréri *Suppl.* 1716 | ≈455 | | cita la obra en el n. 41, para criticarla |
+| O234, la vara de Jacques Aymar | III.5, nn. 17–18, 1729 | Bayle, ABARIS, y *Mercure galant* 1693 | ≈118 del *Mercure* | | cita a Bayle |
+| O490, la isla de Pines | I.12, nn. 20–22, 1726 | Moréri *Suppl.* 1716 | ≈230 | | cita la obra |
+| O157, Agrippa | II.5, nn. 23–27, 1728 | Bayle | ≈250 | | cita la obra |
+| O496, Nicolas Flamel | III.8, n. 30, 1729 | Moréri | ≈110 | | cita la obra |
+| O255, Gómez Pereira | III.9, nn. 11–12, 1729 | Bayle | ≈110 | | cita al autor |
+| C032, el oro de Homberg | II.14, nn. 4–5, 1728 | *Histoire* de la Académie 1702 y 1707 | ≈120 | | cita al autor |
+| C033, la trituración de Hecquet | I.6, n. 11, 1726 | Hecquet 1709 | ≈110–130 | | cita al autor |
+| C018, Duncan y el café | I.6, n. 13, 1726 | Duncan 1705 | ≈50 | | cita al autor |
+
+«Heredada» quiere decir que Feijoo nombra solo a las autoridades que ya citaba el libro que copia (Suidas, Maimbourg, Lucano…).
+
+</details>
+
+<details markdown="1">
+<summary>Detalle de algún caso</summary>
+
+### Las manchas solares
+
+Este caso lo había señalado Mañer en 1729. En las [*Paradojas físicas*](https://www.filosofia.org/bjf/bjft214.htm), Feijoo habla de las manchas del Sol, reuniendo historias y observaciones de manchas enormes. Este mismo tema aparece en un artículo de Antoine Parent en Trévoux 1716, doce años antes del segundo tomo de TCU.
+
+Cuando menciona a Virgilio, ambos escritos sitúan unos versos en el segundo libro de las *Geórgicas*, cuando realemnte están en [el primero, versos 466–468](https://www.thelatinlibrary.com/vergil/geo1.shtml). Feijoo reorganiza parte de la explicación y corrige algún otro detalle, pero es uno de los ejemplos más claros de como probablemente iba trabajando sobre el texto francés adaptándolo a medida.
 
 [Pasajes y fuentes del caso C001](/data/feijoo-evidence/cases/C001.html).
 
 ### Un anillo para hacerse rico y leer pensamientos
 
-Este caso apareció por la otra vía de búsqueda, después de traducir el texto de Feijoo al francés. En [*Secretos de Naturaleza*](https://www.filosofia.org/bjf/bjft302.htm), Feijoo atribuye a Camilo Leonardo una lista de siete piedras, siete metales y sus planetas correspondientes. Después cuenta cómo fabricar un anillo de plomo y turquesa que, preparado bajo Saturno, daría riquezas y permitiría conocer los pensamientos de las personas con quienes tratase su dueño. Bastante buen retorno para un anillo de plomo.
-
-La reseña de Trévoux de febrero de 1718 cuenta lo mismo, pero está hablando de tres autores. El primero es Camilo Leonardo; la lista de correspondencias viene del segundo, Pierre d'Arleu; el ejemplo del anillo, del tercero, Albinius. Feijoo se queda con el nombre que aparece al principio y le atribuye todo el bloque.
-
-Había que abrir los libros originales, porque los tres tratados también circulaban juntos. El libro de Leonardo tiene la dedicatoria a César Borgia que menciona Feijoo, pero no esa lista ni ese anillo. D'Arleu sí da las correspondencias, aunque separa piedras y metales en dos listas. La revista las junta en parejas y Feijoo sigue ese orden. Para el Sol, el original pone primero el zafiro y añade el diamante; Trévoux invierte la preferencia y Feijoo conserva solo el diamante.
-
-El anillo deja otras pistas. El latín de Albinius habla de que la gente revele secretos; la reseña lo convierte en conocer los pensamientos de aquellos con quienes uno trate. Esa reformulación pasa al español, junto con «signo Astronómico» y «viciado de rayos nocivos», que siguen el francés más de cerca que el latín. La atribución equivocada podría explicarse por una lectura rápida del volumen conjunto; estas elecciones de palabras y la forma de ordenar la lista apuntan a la reseña francesa.
-
-Con el recuento más estricto quedan unas 82 palabras dependientes de Trévoux, por encima de las cuatro líneas. No encontré este pasaje identificado en la bibliografía consultada. La novedad queda limitada a esa revisión bibliográfica.
+Este caso apareció por la otra vía de búsqueda, después de traducir el texto de Feijoo al francés. En [*Secretos de Naturaleza*](https://www.filosofia.org/bjf/bjft302.htm), Feijoo atribuye a Camilo Leonardo una lista de siete piedras, siete metales y sus planetas correspondientes. Después cuenta cómo fabricar un daría riquezas. La reseña de Trévoux de febrero de 1718 cuenta lo mismo, pero está hablando de tres autores. El primero es Camilo Leonardo; la lista de correspondencias viene del segundo, Pierre d'Arleu; el ejemplo del anillo, del tercero, Albinius. Feijoo se queda con el nombre que aparece al principio y le atribuye todo el bloque.
 
 [Pasajes, libros originales y fuentes del caso C017](/data/feijoo-evidence/cases/C017.html).
 
@@ -390,7 +510,7 @@ Con el recuento más estricto quedan unas 82 palabras dependientes de Trévoux, 
 
 ### Los documentos frente a frente
 
-Abre un caso para comparar los recortes de las primeras ediciones. Cuando un pasaje ocupa varias páginas, los recortes aparecen unidos en orden.
+Abre un caso para comparar los recortes de las primeras ediciones.
 
 <details class="feijoo-case" open>
 <summary>C001 · manchas solares</summary>
@@ -560,20 +680,17 @@ Abre un caso para comparar los recortes de las primeras ediciones. Cuando un pas
 </div>
 </details>
 
-Las cifras son un **mínimo**, no una lista cerrada. En una prueba con veinte párrafos que los detectores no habían propuesto apareció C038. El resultado depende además de distinguir una reseña de su libro original y de comprobar que el pasaje existía en la primera edición de Feijoo. Los niveles B y C recogen las dependencias más cortas o compartidas con otras fuentes; las traducciones citadas están en D.
-
-
-El [código, las fichas y los datos de esta búsqueda](/data/feijoo-evidence/index.html) están disponibles para consultar y descargar. Las fichas reúnen los pasajes, sus fuentes, el recuento adoptado y las reservas; la descarga incluye una muestra de entrada para ejecutar el detector y los textos del benchmark OCR.
-
-
 ## Conclusiones
 
-primer post que escribo originalmente en inglés, con miedo a dejar a un LLM traducirlo
+Este es el primer post que escribo en español, todos los anteriores fueron en inglés pero no tenía sentido aquí. Las traducciones de LLM mejoraron bastante, en su momento creé una [herramienta para traducir Latex](https://github.com/mateo19182/latex-translate) y los resultados (gpt-4o si no me equivoco) con mi TFG eran apenas pasables, con múltiples errores graves. Para este post, usé gemini flash 3.8 y fueron pocas las correcciones que tuve que hacer, aún así me da la sensación de que parte de la intencionalidad cambia.
 
-mejor resultado es inspirar a peña pa que haga lo mismo !
+Nada de lo que hice aquí es técnicamente complejo o complicado. Mi mayor aspiración con esto es motivar a más gente a dedicar una parte de su tiempo y tokens a esto, si te interesa por favor contáctame:). No obstante, si me preocupa que si atosigamos a historiadores con slop de baja calidad, haya una respuesta de rechazo como ya ocurrió con las matemáticas. Durante el desarrollo de este trabajo, intenté ponerme en contacto con varias personas expertas del tema, la mayoría sin respuesta, y algunos interesados con los que mantengo contacto pero queda como un frente abierto, ya que quería sacar el post lo antes posible y los tiempos de respuesta eran demasiado elevados.
 
-digitalizar mas docuemnts!! datos de cuanto hay
+Otro punto importante es que este trabajo depende de poder acceder a escaneos de los documentos relevantes. Queda muchísimo por digitalizar! Una [encuesta europea de 2017](https://pro.europeana.eu/files/Europeana_Professional/Projects/Project_list/Europeana_DSI-2/Deliverables/d4.4-report-on-enumerate-core-survey-4.pdf#page=28) estimaba que los archivos digitalizaran un 10% de sus fondos, y las bibliotecas un 17%. Queda mucho por hacer y descubrir!
 
+Google Books hizo mucho por la digitalización. Los labs están en una carrera por conseguir más datos con incentivos muy fuertes, con proyectos como la [digitalización de fondos de la Biblioteca Pública de Boston](https://www.bpl.org/news/boston-public-library-expands-access-to-collections-through-ai-enhanced-digitization/), al mismo tiempo que Anthropic es condenado por [comprar millones de libros, escanearlos y deshechar los originales](https://cases.justia.com/federal/district-courts/california/candce/3%3A2024cv05417/434709/231/0.pdf#page=4), dan idea de a donde nos dirigimos. Como ya expuse en [cómo la IA puede ayudar a salvar el copyright](https://blog.m19182.dev/writings/How-AI-might-help-save-copyright/) hace 3 años, las leyes de propiedad intelectual necesitan una reforma urgente, la información merece ser libre y las consecuencias de segundo orden son enormes!
+
+Esto es todo, aquí está [el código y archivos relevantes](https://github.com/mateo19182/feijoo), editaré el post si encuentro algo más relaccionado con este reto. Gracias por leer.
 
 ---
 
@@ -591,3 +708,7 @@ digitalizar mas docuemnts!! datos de cuanto hay
 [^7]: desde su celda de San Vicente midió el calor de Oviedo con un termómetro en el balcón, vigiló el hielo que se formaba dentro de los cristales, experimentó con la conservación del tabaco y el chocolate y usaba un microscopio traído de Holanda. Convenció a la comunidad de que Bartolín, ayudante de cocina a quien intentaban exorcizar, sufría epilepsia. En la hambruna de 1741–42, como no podía salir de la clausura, tiraba por la ventana dinero envuelto en papeles a los pobres.
 
     Fuente: Dongil 2017 (preprint [https://doi.org/10.5281/zenodo.8105802](https://doi.org/10.5281/zenodo.8105802), pp. 7–9), que remite a biografías anteriores (Otero Pedrayo, Canella); conviene verificar en ellas antes de citar.
+
+
+El congreso del tricentenario (Oviedo, 24–25 de junio de 2026, unas 45 ponencias)
+- articulo cutre repetido al respecto: [https://www.vozpopuli.com/historia/padre-feijoo-300-anos-del-primer-fact-checker-de-espana.html](https://www.vozpopuli.com/historia/padre-feijoo-300-anos-del-primer-fact-checker-de-espana.html)

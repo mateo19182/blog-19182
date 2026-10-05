@@ -568,5 +568,369 @@
       "layout": "Two source page crops stacked in reading order; visible join",
       "credit": "Bayerische Staatsbibliothek München, Eph.lit. 143-1716,2; NoC-NC 1.0"
     }
+  },
+  "O508": {
+    "feijoo": {
+      "file": "O508_feijoo.jpg",
+      "source_path": "../../../data/feijoo/firsted_scans/I/199.jpg",
+      "source_pixels": [
+        1649,
+        1277
+      ],
+      "crop_xyxy": [
+        175,
+        190,
+        815,
+        446
+      ],
+      "output_pixels": [
+        640,
+        256
+      ],
+      "printed_page": "TCU I (1726), Disc. XVI §XVIII, n. 128, p. 364 (image 199, opening pp. 364–365)",
+      "repository": "Biblioteca Nacional de España",
+      "viewer_url": "https://bnedigital.bne.es/bd/es/viewer?id=7b281e29-5af2-4c38-8c17-ec969f487f44",
+      "rights": "CC BY 4.0"
+    },
+    "fuente": {
+      "file": "O508_fuente.jpg",
+      "source_path": "../../../data/evidence/O508/moreri1717_t2_p71_FIDELE.jpg",
+      "source_url": "https://archive.org/download/legranddictionai02mor/page/n78",
+      "crop_xyxy": [
+        [
+          1070,
+          1856,
+          2062,
+          2322
+        ],
+        [
+          1070,
+          2742,
+          2062,
+          2850
+        ]
+      ],
+      "output_pixels": [
+        700,
+        415
+      ],
+      "layout": "Two crops from the same column stacked in reading order (entry opening to the princes; the death at 102); visible grey join; scaled from 992 px to 700 px wide",
+      "printed_page": "t. II, p. 71, col. b, CASSANDRE FIDELE",
+      "edition": "Moréri, Le grand dictionaire historique, Amsterdam/La Haye 1717 (10th ed.)",
+      "repository": "Internet Archive (legranddictionai02mor)",
+      "object_url": "https://archive.org/details/legranddictionai02mor/page/n78/mode/1up",
+      "rights": "Internet Archive scan; public domain (1717)"
+    },
+    "comparison_note": "Compare Feijoo's admirers (Julio II, León X, 'el Rey Luis XI.' [sic], Fernando and Isabel) and 'murió de ciento y dos años en el de 1567' with Moréri's 'les Papes Jule II. & Leon X, le Roi Louis XII, Ferdinand Roi d'Aragon, Elizabeth Reine de Castille' and 'mourut âgée de 102. ans, vers 1567'; Hilarion de Coste 1630, Moréri's credited source, has neither."
+  },
+  "O475": {
+    "feijoo": {
+      "file": "O475_feijoo.jpg",
+      "source_path": "../../../data/feijoo/firsted_scans/II/062.jpg",
+      "source_pixels": [
+        1816,
+        1341
+      ],
+      "crop_xyxy": [
+        255,
+        562,
+        870,
+        1045
+      ],
+      "output_pixels": [
+        615,
+        483
+      ],
+      "printed_page": "TCU II (1728), Disc. IV §I, n. 3, p. 78 (image 62, opening pp. 78–79)",
+      "repository": "Biblioteca Nacional de España",
+      "viewer_url": "https://bnedigital.bne.es/bd/es/viewer?id=87a094e7-aa8b-4411-aa5e-2fb1081e571a",
+      "rights": "CC BY 4.0"
+    },
+    "fuente": {
+      "file": "O475_fuente.jpg",
+      "source_path": "../../../data/evidence/O475/moreri1717_t4_p386_leaf_n393.jpg",
+      "source_url": "https://archive.org/download/legranddictionai04mor/page/n393",
+      "crop_xyxy": [
+        60,
+        3308,
+        1330,
+        3880
+      ],
+      "output_pixels": [
+        700,
+        315
+      ],
+      "layout": "Single crop, scaled from 1270 px to 700 px wide",
+      "printed_page": "t. IV, p. 386, col. a, first SIBYLLES article",
+      "edition": "Moréri, Le grand dictionaire historique, Amsterdam/La Haye 1717 (10th ed.)",
+      "repository": "Internet Archive (legranddictionai04mor)",
+      "object_url": "https://archive.org/details/legranddictionai04mor/page/n393/mode/1up",
+      "rights": "Internet Archive scan; public domain (1717)"
+    },
+    "comparison_note": "Compare 'La historia Romana cuenta… pidiendo por ellos trecientos escudos… la misma cantidad… dió los trecientos escudos… debaxo de la custodia de dos Patricios… eran consultados… en alguna grande afliccion' with 'L'Histoire Romaine parle… trois cens écus… la même somme… les trois cens écus… sous la garde de deux Patrices… les consultoient dans leurs malheurs'; Feijoo adds the 'excessive' price and the threat from the classical story."
+  },
+  "O471": {
+    "feijoo": {
+      "file": "O471_feijoo.jpg",
+      "source_path": "../../../data/feijoo/firsted_scans/II/064.jpg",
+      "source_pixels": [
+        1867,
+        1341
+      ],
+      "crop_xyxy": [
+        265,
+        372,
+        865,
+        690
+      ],
+      "output_pixels": [
+        600,
+        318
+      ],
+      "printed_page": "TCU II (1728), Disc. IV §II, n. 11, p. 82 (image 64, opening pp. 82–83)",
+      "repository": "Biblioteca Nacional de España",
+      "viewer_url": "https://bnedigital.bne.es/bd/es/viewer?id=87a094e7-aa8b-4411-aa5e-2fb1081e571a",
+      "rights": "CC BY 4.0"
+    },
+    "fuente": {
+      "file": "O471_fuente.jpg",
+      "source_path": "../../../data/evidence/O471/moreri1717_t2_n342_full.jpg",
+      "source_url": "https://archive.org/download/legranddictionai02mor/page/n342",
+      "crop_xyxy": [
+        55,
+        610,
+        1060,
+        1036
+      ],
+      "output_pixels": [
+        700,
+        297
+      ],
+      "layout": "Single crop, scaled from 1005 px to 700 px wide",
+      "printed_page": "t. II, p. 335, col. a, end of the first DELPHES article (the ☞ paragraph); page number read from the leaf header",
+      "edition": "Moréri, Le grand dictionaire historique, Amsterdam/La Haye 1717 (10th ed.)",
+      "repository": "Internet Archive (legranddictionai02mor)",
+      "object_url": "https://archive.org/details/legranddictionai02mor/page/n342/mode/1up",
+      "rights": "Internet Archive scan; public domain (1717)"
+    },
+    "comparison_note": "Compare 'que afirman Suidas, Cedreno, y Nicephoro… Augusto admirado… recibió por respuesta, que un niño Hebreo, Dios de los Dioses… volver al infierno' and the three verses with 'ce que Suidas, Cedrene, Nicephore… rapportent… Auguste étonné… reçut pour réponse, qu'un enfant Hebreu, Dieu des Dieux… descendre dans les enfers' and the same three verses (Van Dale gives a different Latin). Feijoo's 'instándole para que le revelasse la causa del silencio' is not in Moréri."
+  },
+  "O153": {
+    "feijoo": {
+      "file": "O153_feijoo.jpg",
+      "source_path": "../../../data/feijoo/firsted_scans/III/051.jpg",
+      "source_pixels": [
+        1794,
+        1341
+      ],
+      "crop_xyxy": [
+        965,
+        553,
+        1560,
+        800
+      ],
+      "output_pixels": [
+        595,
+        247
+      ],
+      "printed_page": "TCU III (1729), Disc. II §XI, n. 38, p. 37 (image 051, opening pp. 36–37)",
+      "repository": "Biblioteca Nacional de España",
+      "viewer_url": "https://bnedigital.bne.es/bd/es/viewer?id=911fba8d-7ad3-4d7e-9332-a05cb636e5a9",
+      "rights": "CC BY 4.0"
+    },
+    "fuente": {
+      "file": "O153_fuente.jpg",
+      "source_path": "../../../data/evidence/O153/bayle1702_t1_n693_p654.jpg",
+      "source_url": "https://archive.org/download/bub_gb_9zPfImQPeQkC/page/n693_w2500.jpg",
+      "source_pixels": [
+        2500,
+        4103
+      ],
+      "crop_xyxy": [
+        605,
+        1964,
+        2210,
+        2252
+      ],
+      "output_pixels": [
+        750,
+        135
+      ],
+      "layout": "Body text (full-width, above the remarks); scaled from 1605 px to 750 px wide",
+      "printed_page": "t. I, p. 654, BORRI (body text)",
+      "edition": "Bayle, Dictionaire historique et critique, 2nd ed., Rotterdam 1702",
+      "repository": "Internet Archive (bub_gb_9zPfImQPeQkC, Google Books scan)",
+      "object_url": "https://archive.org/details/bub_gb_9zPfImQPeQkC/page/n693/mode/1up",
+      "rights": "Internet Archive scan; public domain (1702)"
+    },
+    "comparison_note": "Compare 'Médico universal de todos los males… hacíase tratar de Excelencia… casamiento con mugeres de la primera calidad… una noche, llevando gran suma de dinero, y pedrería' with Bayle's 'médecin universel de toutes sortes de maladies… traitter d'Excellence… le marier aux plus grans partis… une belle nuit… plusieurs pierreries, & plusieurs sommes d'argent'. This body text is also verbatim in Moréri Suppl. 1716; the Bayle-only proof is rem. F (not shown)."
+  },
+  "O474": {
+    "feijoo": {
+      "file": "O474_feijoo.jpg",
+      "source_path": "../../../data/feijoo/firsted_scans/I/049.jpg",
+      "source_pixels": [
+        1690,
+        1282
+      ],
+      "crop_xyxy": [
+        880,
+        825,
+        1515,
+        1130
+      ],
+      "output_pixels": [
+        635,
+        305
+      ],
+      "printed_page": "TCU I (1726), Disc. III, n. 38, p. 65 (image 049, opening pp. 64–65)",
+      "repository": "Biblioteca Nacional de España",
+      "viewer_url": "https://bnedigital.bne.es/bd/es/viewer?id=7b281e29-5af2-4c38-8c17-ec969f487f44",
+      "rights": "CC BY 4.0"
+    },
+    "fuente": {
+      "file": "O474_fuente.jpg",
+      "source_path": "../../../data/evidence/O474/moreri_paris1707_PAUVRETE_n193.jpg",
+      "source_url": "https://archive.org/download/bub_gb_FEmV5fxZ9FQC/page/n193",
+      "source_pixels": [
+        2500,
+        3909
+      ],
+      "crop_xyxy": [
+        150,
+        2814,
+        1180,
+        3135
+      ],
+      "output_pixels": [
+        720,
+        224
+      ],
+      "printed_page": "p. 181, col. a, PAUVRETÉ (volume with P; tome number not checked)",
+      "edition": "Moréri, Le grand dictionaire historique, Paris: Denys Mariette 1707 (Paris line; Paris 1718 t. IV p. 633b has the same text, data/evidence/O474/moreri_paris1718_PAUVRETE_n639.jpg)",
+      "repository": "Internet Archive (bub_gb_FEmV5fxZ9FQC, Universidad Complutense de Madrid copy via Google Books)",
+      "object_url": "https://archive.org/details/bub_gb_FEmV5fxZ9FQC/page/n193/mode/1up",
+      "rights": "Internet Archive scan; public domain (1707)"
+    },
+    "comparison_note": "Compare 'Curio, y de Camila' with Moréri's 'Curius & de Camille' (Horace has Camillus), and 'una furia, feroz, y prompta à desesperarse' with 'une Furie, pâle, farouche, affamée, & prête à se desesperer. C'est ainsi qu'en parle Aristophanes' (sentence absent from Amsterdam 1717)."
+  },
+  "O481": {
+    "feijoo": {
+      "file": "O481_feijoo.jpg",
+      "source_path": "../../../data/feijoo/firsted_scans/I/183.jpg",
+      "source_pixels": [
+        1697,
+        1292
+      ],
+      "crop_xyxy": [
+        180,
+        728,
+        820,
+        1030
+      ],
+      "output_pixels": [
+        640,
+        302
+      ],
+      "printed_page": "TCU I (1726), Disc. XVI §VII, n. 47, p. 332 (image 183, opening pp. 332–333)",
+      "repository": "Biblioteca Nacional de España",
+      "viewer_url": "https://bnedigital.bne.es/bd/es/viewer?id=7b281e29-5af2-4c38-8c17-ec969f487f44",
+      "rights": "CC BY 4.0"
+    },
+    "fuente": {
+      "file": "O481_fuente.jpg",
+      "source_path": "../../../data/evidence/O481/moreri1717_t2_p311_CURSOLAIRES.jpg",
+      "source_url": "https://archive.org/download/legranddictionai02mor/page/n318",
+      "source_pixels": [
+        2384,
+        4195
+      ],
+      "crop_xyxy": [
+        40,
+        2150,
+        1020,
+        2643
+      ],
+      "output_pixels": [
+        740,
+        372
+      ],
+      "printed_page": "t. II, p. 311, col. a, CURSOLAIRES (SUP.)",
+      "edition": "Moréri, Le grand dictionaire historique, Amsterdam/La Haye 1717",
+      "repository": "Internet Archive (legranddictionai02mor)",
+      "object_url": "https://archive.org/details/legranddictionai02mor/page/n318/mode/1up",
+      "rights": "Internet Archive scan; public domain (1717)"
+    },
+    "comparison_note": "Compare 'Islas Echinadas, oy llamadas Cur-Solares, célebres por la victoria de Lepanto… El año antecedente à esta famosa batalla' with Moréri's 'que les Latins appelloient Echinades… Ce fut auprès de ces Isles… bataille, nommée de Lepante… L'année précédente': both errors (Curzola made the Echinades; the raid put a year before Lepanto) are Moréri's, not Graziani's."
+  },
+  "O526": {
+    "feijoo": {
+      "file": "O526_feijoo.jpg",
+      "source_path": "../../../data/feijoo/firsted_scans/II/078.jpg",
+      "source_pixels": [
+        1810,
+        1315
+      ],
+      "crop_xyxy": [
+        262,
+        412,
+        862,
+        591
+      ],
+      "output_pixels": [
+        600,
+        179
+      ],
+      "printed_page": "TCU II (1728), Disc. V §V, n. 13, p. 110 (image 078, opening pp. 110–111)",
+      "repository": "Biblioteca Nacional de España",
+      "viewer_url": "https://bnedigital.bne.es/bd/es/viewer?id=87a094e7-aa8b-4411-aa5e-2fb1081e571a",
+      "rights": "CC BY 4.0"
+    },
+    "fuente": {
+      "file": "O526_fuente.jpg",
+      "source_path": [
+        "../../../data/evidence/O526/dupin1705_MDZ_bsb10773200_c042_p6.jpg",
+        "../../../data/evidence/O526/dupin1705_MDZ_bsb10773200_c043_p7.jpg"
+      ],
+      "source_url": [
+        "https://api.digitale-sammlungen.de/iiif/image/v2/bsb10773200_00042/full/full/0/default.jpg",
+        "https://api.digitale-sammlungen.de/iiif/image/v2/bsb10773200_00043/full/full/0/default.jpg"
+      ],
+      "source_pixels": [
+        [
+          1038,
+          1781
+        ],
+        [
+          1058,
+          1806
+        ]
+      ],
+      "crop_xyxy": [
+        [
+          160,
+          1030,
+          1050,
+          1495
+        ],
+        [
+          140,
+          186,
+          1030,
+          420
+        ]
+      ],
+      "output_pixels": [
+        640,
+        508
+      ],
+      "layout": "Two page crops stacked in reading order (foot of p. 6, head of p. 7); visible grey join",
+      "printed_page": "ch. I, pp. 6–7",
+      "edition": "[L. E. Du Pin], L'Histoire d'Apollone de Tyane convaincue de fausseté et d'imposture, Paris: Giffart 1705",
+      "repository": "Bayerische Staatsbibliothek, Münchener DigitalisierungsZentrum (Polem. 774)",
+      "object_url": "https://www.digitale-sammlungen.de/view/bsb10773200?page=42",
+      "rights": "Historical printed text is public domain; scan credit Bayerische Staatsbibliothek/MDZ. Reuse terms for BSB digitization not independently verified."
+    },
+    "comparison_note": "Compare 'escriviò su vida ciento y veinte años despues de muerto su heroe' with Du Pin's 'il y avoit plus de six vingt ans d'écoulez depuis la mort de ce Philosophe' (Trévoux's review has 110 years; Moréri Suppl. has no figure)."
   }
 }

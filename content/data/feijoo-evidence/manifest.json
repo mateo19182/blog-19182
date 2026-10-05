@@ -1,11 +1,11 @@
 {
-  "date": "2026-10-04",
-  "scope": "10 strict cases + 2 threshold cases; 61 tracking records; search code, OCR benchmark and one example journal volume",
+  "date": "2026-10-05",
+  "scope": "10 strict cases + 2 threshold cases; 7 uncredited copies from other books (outside the dare); 73 tracking records; search code, OCR benchmark and one example journal volume",
   "files": [
     {
       "path": "README.md",
-      "bytes": 5439,
-      "sha256": "0e222319d2bd06fea7e7566ebd61d55a46a3225d4004cf222fb14dc2aa65716f"
+      "bytes": 5588,
+      "sha256": "9459d2779fe5d18aa67c2a16b78fc1f3f2402430665eef720ec08a0d7e636d1b"
     },
     {
       "path": "cases/C001.md",
@@ -68,6 +68,41 @@
       "sha256": "9e78ec88b3f2b7eee37a29cd61d1c03f20cb5f02b577889431f0c9d7ac0a7ab8"
     },
     {
+      "path": "cases/O153.md",
+      "bytes": 4752,
+      "sha256": "da751a72f5c68f12534c2ab03fc68f9654d705fa219b42536eb31f0023eab609"
+    },
+    {
+      "path": "cases/O471.md",
+      "bytes": 6430,
+      "sha256": "2e40c392a5dbdfe970ea620ca4755f1535e3cd7e39f0c328b311b025dcef12d1"
+    },
+    {
+      "path": "cases/O474.md",
+      "bytes": 2460,
+      "sha256": "8a5d8c563d4fed5463fa996d8cbbd70016bb476f428eda820f332ecfdb4f49c9"
+    },
+    {
+      "path": "cases/O475.md",
+      "bytes": 3238,
+      "sha256": "82a7ff4bd532f522d237dcb3db5d948ee5da2125312f3a3c65a049710654901f"
+    },
+    {
+      "path": "cases/O481.md",
+      "bytes": 3355,
+      "sha256": "3ab3ccd514c9ea024102c015e5879747df0af30cc73d8eaac3818257750074e0"
+    },
+    {
+      "path": "cases/O508.md",
+      "bytes": 6151,
+      "sha256": "16568fe66ab4992c15be7ddcd1143af2f110be4e8d464442b1c7d91d38c16f70"
+    },
+    {
+      "path": "cases/O526.md",
+      "bytes": 5142,
+      "sha256": "b31469b6008e31f9830511f991eed91d39702e3f659e06358e43abc1725f35f3"
+    },
+    {
       "path": "checks.md",
       "bytes": 5369,
       "sha256": "a7f26af8adb474a45f97125f8d29839f5a84106376e0ffb4697c54bc0c311842"
@@ -79,8 +114,8 @@
     },
     {
       "path": "data/cases.csv",
-      "bytes": 22261,
-      "sha256": "f60d9ffccef5c5ce337279f01c3d82d27368a78d1f06c3f7f2276a5cb815571b"
+      "bytes": 26180,
+      "sha256": "3e32a0e274c9960e8936efb73eb3ddd595d95c67bc2835dfef81b0fd8002692d"
     },
     {
       "path": "data/eval/planted.jsonl",
@@ -344,33 +379,33 @@
     },
     {
       "path": "figures/fig6_pipeline.png",
-      "bytes": 1061140,
-      "sha256": "9e4e3b05beeb04abc7fe20928e21d2c953e0bfadd7cf470ac0a2716eeb94a89d"
+      "bytes": 75021,
+      "sha256": "01d29553ed7f2f0f5ef4cf68e872204ef81b85ccb7d1e377620e8aaedcbe0c84"
     },
     {
       "path": "figures/fig7_ocr.png",
-      "bytes": 80782,
-      "sha256": "586484d3d80382fd4b2c771307dc59ffae312f2f9fb4b4e6a3b0b446b20adad1"
+      "bytes": 57766,
+      "sha256": "0078bf9e0b41c0638d79a0271ce799c5d3b09032eeec8c0aeeb0121eb09c62b6"
     },
     {
       "path": "figures/src/fig6_pipeline.py",
-      "bytes": 6496,
-      "sha256": "eb50c9b956f7746886ef3c96fa50fe36a1995e9c2bce1b4eb5ca9892531da3fe"
+      "bytes": 2531,
+      "sha256": "673b66048fabeea84b65b0fa0b18d7d5538e6b2912810315b0034396f312c740"
     },
     {
       "path": "figures/src/fig7_ocr.py",
-      "bytes": 1019,
-      "sha256": "ca5d21857fd6de73887991518eddaee006171056a206571724d7b705c9fca21e"
+      "bytes": 1055,
+      "sha256": "a7d82ad40ec31a5385b47cfd4f84cb124e6620921bc89482404130f33ffc2c68"
     },
     {
       "path": "figures/src/style.py",
-      "bytes": 8286,
-      "sha256": "42d0c9ccc08beb3c8fd2398602ac9b0148b02476ac47f733ce60236326175bc4"
+      "bytes": 8322,
+      "sha256": "d05771939a1e33b412b5b15c62589d9d89b5fcbf489e6b7a1f85b5f35cd163f5"
     },
     {
       "path": "image_sources.json",
-      "bytes": 19070,
-      "sha256": "ac8c3f767131a6658ebae1bec82cda27c69667471cb6e0a1639135ac25407c05"
+      "bytes": 33284,
+      "sha256": "738dc386d983388c66e9145f395d54373787fc5e58cb476fccd669194c4b2d02"
     },
     {
       "path": "images/C001_feijoo.jpg",
@@ -491,6 +526,76 @@
       "path": "images/D2-C007_trevoux.jpg",
       "bytes": 263321,
       "sha256": "c31f670bfa365dedb687afdec524afc80eb4a375c12355c2d2bbd0a592d3239d"
+    },
+    {
+      "path": "images/O153_feijoo.jpg",
+      "bytes": 71569,
+      "sha256": "e28c06e6d26a9a89ff8ef951773a079e144b7d24f512bb32243decb607a811e6"
+    },
+    {
+      "path": "images/O153_fuente.jpg",
+      "bytes": 42130,
+      "sha256": "fcb8cb64af56029f2161a81b4a3082b09c9f427ef191d98d50b35a7a65f48ead"
+    },
+    {
+      "path": "images/O471_feijoo.jpg",
+      "bytes": 90796,
+      "sha256": "c833e67da5670d2bac5e21a8bced12961a07fad803ff6e24bbf7095a70e3c37d"
+    },
+    {
+      "path": "images/O471_fuente.jpg",
+      "bytes": 103236,
+      "sha256": "6533876bf9b1f2fb850dd6b0dda32116cc3b3a8e20a1164b6952b1047c3add15"
+    },
+    {
+      "path": "images/O474_feijoo.jpg",
+      "bytes": 81690,
+      "sha256": "7f1b5345ee049e30d5a149806a6e9487ccae79a813909f5be9ea634ec1694fb6"
+    },
+    {
+      "path": "images/O474_fuente.jpg",
+      "bytes": 61770,
+      "sha256": "1b94b914cbc88dde2352029e8f6695c0be857f25c0b8f837822ca266f6fccd72"
+    },
+    {
+      "path": "images/O475_feijoo.jpg",
+      "bytes": 147306,
+      "sha256": "e9944e030b02dbc213e5086eecb96c56f89c43a862c48bfa079b845cfc845ddd"
+    },
+    {
+      "path": "images/O475_fuente.jpg",
+      "bytes": 101660,
+      "sha256": "80f7ce6da9b2bb752c3d54d6e191efe1afb223911ed7d648777ad8dd262167b8"
+    },
+    {
+      "path": "images/O481_feijoo.jpg",
+      "bytes": 82765,
+      "sha256": "e3aa92cf62e45eab4eba8f10516dcc5699c8daa7ad6152b6ee74f3287fe96997"
+    },
+    {
+      "path": "images/O481_fuente.jpg",
+      "bytes": 128963,
+      "sha256": "3b117be2ff9e4fd4b2dc6be80b145bd715dc07f8d0e4ab99ab4c873ee6aaa82a"
+    },
+    {
+      "path": "images/O508_feijoo.jpg",
+      "bytes": 67379,
+      "sha256": "c05bb55c1524c88ec464dd2461ec8a182f2b2361fbcd7e71370099fd29f3ea85"
+    },
+    {
+      "path": "images/O508_fuente.jpg",
+      "bytes": 152921,
+      "sha256": "80021ade4b37ed6f923361d74127240e91aa8c681fad02e03d8cd06d5ff022c3"
+    },
+    {
+      "path": "images/O526_feijoo.jpg",
+      "bytes": 50200,
+      "sha256": "61d00b8540351feda64cc643eaecc596d47a3834fb2ded3cfd76723fb01fe8be"
+    },
+    {
+      "path": "images/O526_fuente.jpg",
+      "bytes": 100549,
+      "sha256": "6109e34e4b0660e3c6a93e32a801430d1f83ba8abac8149a5b09f5dbae4aeb39"
     },
     {
       "path": "out/v3/model.json",

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Copy the author's working draft into the public, unlisted blog preview.
-import { copyFile, cp, mkdir, readFile, writeFile } from "node:fs/promises"
+import { copyFile, cp, mkdir, readdir, readFile, writeFile } from "node:fs/promises"
 import path from "node:path"
 import { existsSync, statSync } from "node:fs"
 import { fileURLToPath } from "node:url"
@@ -58,7 +58,16 @@ if (existsSync(materialsSource)) {
 
 const scanSource = path.resolve(root, "../inv/feijoo/blog/documents/results")
 const scanDest = path.join(root, "content/data/feijoo-results")
-const scanNames = new Set([...body.matchAll(/\/data\/feijoo-results\/([A-Za-z0-9-]+_(?:feijoo|trevoux)\.jpg)/g)].map((match) => match[1]))
+const scanPattern = /\/data\/feijoo-results\/([A-Za-z0-9-]+_(?:feijoo|trevoux|fuente)\.jpg)/g
+const scanNames = new Set([...body.matchAll(scanPattern)].map((match) => match[1]))
+// Evidence case sheets reference their own crops, including cases the post does not show inline.
+const materialsCases = path.join(materialsSource, "cases")
+if (existsSync(materialsCases)) {
+  for (const name of await readdir(materialsCases)) {
+    const sheet = await readFile(path.join(materialsCases, name), "utf8")
+    for (const match of sheet.matchAll(scanPattern)) scanNames.add(match[1])
+  }
+}
 if (scanNames.size > 0) {
   await mkdir(scanDest, { recursive: true })
   for (const name of scanNames) await copyFile(path.join(scanSource, name), path.join(scanDest, name))
