@@ -587,7 +587,7 @@ li.archive-hidden { display: none; }
 .prose .post-tldr p { margin: 0.7rem 0 0.2rem; }
 
 /* Shorter reading lines for the Feijoo essay; evidence keeps the full width. */
-.prose.feijoo-post > :is(p, h2, h3, h4, ul, ol, blockquote, .post-tldr) {
+.prose.feijoo-post > :is(p:not(:has(img, .scan-surface)), h2, h3, h4, ul, ol, blockquote, .post-tldr) {
   max-width: 70ch;
   margin-inline: auto;
 }
