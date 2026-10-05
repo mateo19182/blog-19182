@@ -314,7 +314,7 @@ Hasta ahora encontré unos 10 sitios donde estoy bastante seguro de que resuelve
 | Ampliación de 1733: TCU IV–V frente a Trévoux hasta 1732 | 237 | 1 | 1 B + 2 C | 8 |
 
 <details markdown="1">
-<summary>Tabla de casos</summary>
+<summary>Tabla de casos del reto</summary>
 
 | Caso | Feijoo | Trévoux | Palabras estrictas | Por qué cuenta; qué se sabía |
 |---|---|---|---:|---|
@@ -523,6 +523,9 @@ Estos son los recortes de las primeras ediciones. Abre cada caso para compararlo
 
 El reto solo mencionaba a Trévoux y el Journal, pero ya que tenía montado esto lo paso por otras fuentes francesas (la *Histoire* de la Académie des sciences, el *Dictionnaire* de Bayle, Moréri, la *Menagiana* y Fontenelle). Salen unos 17 pasajes, casi todos de Moréri. No es de extrañar, Feijoo tiene citadas estas obras en varios de sus escritos, pero estos son los sitios que no citó:
 
+<details markdown="1">
+<summary>Tabla de ejemplos de otros libros</summary>
+
 | Caso | Feijoo | Libro | Palabras sin citar | Qué lo delata |
 |---|---|---|---:|---|
 | [O153, el caballero Borri](/data/feijoo-evidence/cases/O153.html) | III.2, 1729 | Bayle 1702 (Moréri reimprime el texto principal) | ≈800 | Sigue el artículo y sus notas en el mismo orden. En todo el discurso solo cita a Moréri, y para otra cosa. |
@@ -533,10 +536,12 @@ El reto solo mencionaba a Trévoux y el Journal, pero ya que tenía montado esto
 | [O481, las mujeres de Curzolari](/data/feijoo-evidence/cases/O481.html) | I.16, 1726 | Moréri | ≈75 | Dos errores de Moréri: lleva la historia de Korčula a las islas de Lepanto y la fecha «el año antecedente». |
 | [O474, la Pobreza](/data/feijoo-evidence/cases/O474.html) | I.3, 1726 | Moréri, edición de París | ≈48 | «Curio, y de Camila» por Camilo, que viene del francés «Camille». |
 
+</details>
+
 Los errores que copia también desvelan qué ejemplar tenía. Por ejemplo, yo descargara el Moréri de Ámsterdam (1716–17), pero «Camila» y la frase de Aristófanes de la Pobreza solo están en las ediciones de París (1707 y 1718).
 
 <details markdown="1">
-<summary>Copias de otros libros</summary>
+<summary>Documentos de los ejemplos de otros libros</summary>
 
 <details class="feijoo-case" open>
 <summary>O153 · el caballero Borri</summary>
@@ -646,7 +651,7 @@ Los errores que copia también desvelan qué ejemplar tenía. Por ejemplo, yo de
 </details>
 
 <details markdown="1">
-<summary>Tabla de casos</summary>
+<summary>Tabla completa de otros libros</summary>
 
 | Caso | Feijoo | Libro | Sin citar | Solo de ese libro | Cita |
 |---|---|---|---:|---:|---|
