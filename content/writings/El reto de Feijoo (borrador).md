@@ -7,7 +7,7 @@ description: Borrador en curso sobre Feijoo, Trévoux y los retos de 1729 y 1733
 
 ## TL;DR
 
-Feijoo retó a sus lectores a encontrar cuatro líneas traducidas de dos revistas francesas y prometió devolverles el dinero de sus libros si lo conseguían. Casi tres siglos después, usé OCR, búsqueda entre idiomas y agentes para comparar los textos, y revisé a mano las coincidencias más prometedoras. Encontré diez casos que considero que resuelven sus retos de 1729 y 1733, además de dos fronterizos. Algunos ya los habían señalado sus contemporáneos; en seis de los diez no encontré una identificación anterior. La búsqueda automática ayudó mucho, pero comprobar las fuentes llevó la mayor parte del trabajo.
+El padre Feijoo retó a sus lectores a encontrar líneas traducidas de revistas francesas en sus obras. Casi tres siglos después, encontré unos diez casos que cumplen sus condiciones.
 
 ## Intro
 
@@ -277,7 +277,7 @@ Para complementar esta búsqueda, también traduje automáticamente el texto de 
 
 Por último, para comprobar cómo de bien funcionaba este proceso, planté casos artificiales entre texto de Feijoo. En los ejemplos más difíciles, llegaba a recuperar 42 de 50, los que no eran sobre todo paráfrasis de la traducción automática. Es muy probable que existan varios casos que no llegué a detectar.
 
-### Comprobar las coincidencias
+### Verificar
 
 Aquí quedó la mayor parte del trabajo. Los detectores sacaban muchos casos pero cada candidato era bastante abierto a la interpretación.
 
@@ -306,12 +306,11 @@ Fueron bastante inútiles para escribir este post, pero para corregir errores y 
 ## Resultados
 
 Hasta ahora encontré unos 10 sitios donde estoy bastante seguro de que resuelven el reto, con múltiples adicionales que probablemente cuenten pero no tengo la certeza.
-[Comprobaciones y criterios](/data/feijoo-evidence/checks.html).
 
 | Búsqueda | Candidatos juzgados | Estrictos (A) | Dependientes o cortos (B/C) | Traducciones citadas (D) |
 |---|---:|---:|---:|---:|
-| Reto de 1729: TCU I–III frente a Trévoux y el tomo de 1682 del *Journal* | 633 veredictos | 9 + 2 en el límite | 4 B + 4 C | 4 |
-| Ampliación de 1733: TCU IV–V frente a Trévoux hasta 1732 | 237 candidatos | 1 | 1 B + 2 C | 8 |
+| Reto de 1729: TCU I–III frente a Trévoux y el tomo de 1682 del *Journal* | 633 | 9 + 2 en el límite | 4 B + 4 C | 4 |
+| Ampliación de 1733: TCU IV–V frente a Trévoux hasta 1732 | 237 | 1 | 1 B + 2 C | 8 |
 
 <details markdown="1">
 <summary>Diez casos estrictos y dos fronterizos: pasajes, fuentes y prueba decisiva</summary>
@@ -331,6 +330,190 @@ Hasta ahora encontré unos 10 sitios donde estoy bastante seguro de que resuelve
 | C038, modas | II.6, 1728 | Henrion, feb. 1702 | 38, mínimo 30 | Frase traducida cláusula a cláusula. Salió de una muestra leída a mano, no de los detectores; queda por comprobar el *Mercure galant*. |
 | D2-C007, Behaim | IV.8, 1730 | Stuvenius, mayo 1716 | ≈98, mínimo 39 | Sigue el orden y detalles de la reseña que no están en el libro latino. Sin identificación previa localizada. Las búsquedas en el Journal y las Acta, incluidos los suplementos revisados, no encontraron otra reseña equivalente. |
 
+</details>
+
+### Las manchas solares
+
+Este caso lo había señalado Mañer en 1729. En las [*Paradojas físicas*](https://www.filosofia.org/bjf/bjft214.htm), Feijoo habla de las manchas del Sol, reuniendo historias y observaciones de manchas enormes. Este mismo tema aparece en un artículo de Antoine Parent en Trévoux 1716, doce años antes del segundo tomo de TCU.
+
+Cuando menciona a Virgilio, ambos escritos sitúan unos versos en el segundo libro de las *Geórgicas*, cuando realmente están en [el primero, versos 466–468](https://www.thelatinlibrary.com/vergil/geo1.shtml). Feijoo reorganiza parte de la explicación y corrige algún otro detalle, pero es uno de los ejemplos más claros de cómo probablemente iba trabajando sobre el texto francés adaptándolo a medida.
+
+[Pasajes y fuentes del caso C001](/data/feijoo-evidence/cases/C001.html).
+
+### Un anillo para hacerse rico y leer pensamientos
+
+Este caso apareció por la otra vía de búsqueda, después de traducir el texto de Feijoo al francés. En [*Secretos de Naturaleza*](https://www.filosofia.org/bjf/bjft302.htm), Feijoo atribuye a Camilo Leonardo una lista de siete piedras, siete metales y sus planetas correspondientes. Después cuenta cómo fabricar un anillo que daría riquezas. La reseña de Trévoux de febrero de 1718 cuenta lo mismo, pero está hablando de tres autores. El primero es Camilo Leonardo; la lista de correspondencias viene del segundo, Pierre d'Arleu; el ejemplo del anillo, del tercero, Albinius. Feijoo se queda con el nombre que aparece al principio y le atribuye todo el bloque.
+
+[Pasajes, libros originales y fuentes del caso C017](/data/feijoo-evidence/cases/C017.html).
+
+### Los documentos frente a frente
+
+Estos son los recortes de las primeras ediciones. Las manchas solares y los anillos están a la vista; abre los demás casos para compararlos.
+
+#### C001 · manchas solares
+
+<div class="feijoo-compare">
+<figure>
+<img src="/data/feijoo-results/C001_feijoo.jpg" alt="Recorte de Feijoo: manchas solares (C001)" loading="lazy" decoding="async">
+<figcaption><strong>Feijoo</strong> · II (1728), p. 250, n. 23 · <a href="https://bnedigital.bne.es/bd/es/viewer?id=87a094e7-aa8b-4411-aa5e-2fb1081e571a" target="_blank" rel="noopener noreferrer">BNE</a> (CC BY 4.0)</figcaption>
+</figure>
+<figure>
+<img src="/data/feijoo-results/C001_trevoux.jpg" alt="Recorte de Trévoux: manchas solares (C001)" loading="lazy" decoding="async">
+<figcaption><strong>Trévoux</strong> · febrero 1716, art. XXIV, p. 331 · <a href="https://www.digitale-sammlungen.de/view/bsb10539854?page=345" target="_blank" rel="noopener noreferrer">BSB</a> (NoC-NC 1.0)</figcaption>
+</figure>
+</div>
+
+<details class="feijoo-case">
+<summary>C002 · hierro en plantas</summary>
+<div class="feijoo-compare">
+<figure>
+<img src="/data/feijoo-results/C002_feijoo.jpg" alt="Recorte de Feijoo: hierro en plantas (C002)" loading="lazy" decoding="async">
+<figcaption><strong>Feijoo</strong> · II (1728), p. 258, n. 39 · <a href="https://bnedigital.bne.es/bd/es/viewer?id=87a094e7-aa8b-4411-aa5e-2fb1081e571a" target="_blank" rel="noopener noreferrer">BNE</a> (CC BY 4.0)</figcaption>
+</figure>
+<figure>
+<img src="/data/feijoo-results/C002_trevoux.jpg" alt="Recorte de Trévoux: hierro en plantas (C002)" loading="lazy" decoding="async">
+<figcaption><strong>Trévoux</strong> · marzo 1707, art. XXXIV, p. 479 · <a href="https://www.digitale-sammlungen.de/view/bsb10539818?page=507" target="_blank" rel="noopener noreferrer">BSB</a> (NoC-NC 1.0)</figcaption>
+</figure>
+</div>
+</details>
+
+<details class="feijoo-case">
+<summary>C003 · abadesa de Fontevrault</summary>
+<div class="feijoo-compare">
+<figure>
+<img src="/data/feijoo-results/C003_feijoo.jpg" alt="Recorte de Feijoo: abadesa de Fontevrault (C003)" loading="lazy" decoding="async">
+<figcaption><strong>Feijoo</strong> · I (1726), p. 361, n. 122 · <a href="https://bnedigital.bne.es/bd/es/viewer?id=7b281e29-5af2-4c38-8c17-ec969f487f44" target="_blank" rel="noopener noreferrer">BNE</a> (CC BY 4.0)</figcaption>
+</figure>
+<figure>
+<img src="/data/feijoo-results/C003_trevoux.jpg" alt="Recorte de Trévoux: abadesa de Fontevrault (C003)" loading="lazy" decoding="async">
+<figcaption><strong>Trévoux</strong> · diciembre 1704, art. CLXXXIX, p. 2119 · <a href="https://www.digitale-sammlungen.de/view/bsb10539809?page=507" target="_blank" rel="noopener noreferrer">BSB</a> (NoC-NC 1.0)</figcaption>
+</figure>
+</div>
+</details>
+
+<details class="feijoo-case">
+<summary>C004 · Filipinas</summary>
+<div class="feijoo-compare">
+<figure>
+<img src="/data/feijoo-results/C004_feijoo.jpg" alt="Recorte de Feijoo: Filipinas (C004)" loading="lazy" decoding="async">
+<figcaption><strong>Feijoo</strong> · II (1728), p. 53, nn. 73–74 · <a href="https://bnedigital.bne.es/bd/es/viewer?id=87a094e7-aa8b-4411-aa5e-2fb1081e571a" target="_blank" rel="noopener noreferrer">BNE</a> (CC BY 4.0)</figcaption>
+</figure>
+<figure>
+<img src="/data/feijoo-results/C004_trevoux.jpg" alt="Recorte de Trévoux: Filipinas (C004)" loading="lazy" decoding="async">
+<figcaption><strong>Trévoux</strong> · julio 1715, art. XCVII, pp. 1163–1164 · <a href="https://www.digitale-sammlungen.de/view/bsb10539852?page=71" target="_blank" rel="noopener noreferrer">BSB 1</a>; <a href="https://www.digitale-sammlungen.de/view/bsb10539852?page=72" target="_blank" rel="noopener noreferrer">BSB 2</a> (NoC-NC 1.0)</figcaption>
+</figure>
+</div>
+</details>
+
+<details class="feijoo-case">
+<summary>C005 · sectas médicas</summary>
+<div class="feijoo-compare">
+<figure>
+<img src="/data/feijoo-results/C005_feijoo.jpg" alt="Recorte de Feijoo: sectas médicas (C005)" loading="lazy" decoding="async">
+<figcaption><strong>Feijoo</strong> · TCU I (1726), p. 112 · <a href="https://bnedigital.bne.es/bd/es/viewer?id=7b281e29-5af2-4c38-8c17-ec969f487f44" target="_blank" rel="noopener noreferrer">BNE</a> (CC BY 4.0)</figcaption>
+</figure>
+<figure>
+<img src="/data/feijoo-results/C005_trevoux.jpg" alt="Recorte de Trévoux: sectas médicas (C005)" loading="lazy" decoding="async">
+<figcaption><strong>Trévoux</strong> · nov. 1710, p. 1954 · <a href="https://archive.org/details/memoirespourlhi1710unse_2/page/n309" target="_blank" rel="noopener noreferrer">Internet Archive</a></figcaption>
+</figure>
+</div>
+</details>
+
+<details class="feijoo-case">
+<summary>C009 · modos musicales</summary>
+<div class="feijoo-compare">
+<figure>
+<img src="/data/feijoo-results/C009_feijoo.jpg" alt="Recorte de Feijoo: modos musicales (C009)" loading="lazy" decoding="async">
+<figcaption><strong>Feijoo</strong> · TCU I (1726), p. 274 · <a href="https://bnedigital.bne.es/bd/es/viewer?id=7b281e29-5af2-4c38-8c17-ec969f487f44" target="_blank" rel="noopener noreferrer">BNE</a> (CC BY 4.0)</figcaption>
+</figure>
+<figure>
+<img src="/data/feijoo-results/C009_trevoux.jpg" alt="Recorte de Trévoux: modos musicales (C009)" loading="lazy" decoding="async">
+<figcaption><strong>Trévoux</strong> · abr. 1716, p. 597; abr. 1716, p. 598 · <a href="https://archive.org/details/memoirespourlhi1716unse_0/page/n54" target="_blank" rel="noopener noreferrer">Internet Archive 1</a>; <a href="https://archive.org/details/memoirespourlhi1716unse_0/page/n55" target="_blank" rel="noopener noreferrer">Internet Archive 2</a></figcaption>
+</figure>
+</div>
+</details>
+
+<details class="feijoo-case">
+<summary>C010 · longevidad</summary>
+<div class="feijoo-compare">
+<figure>
+<img src="/data/feijoo-results/C010_feijoo.jpg" alt="Recorte de Feijoo: longevidad (C010)" loading="lazy" decoding="async">
+<figcaption><strong>Feijoo</strong> · TCU I (1726), p. 234 · <a href="https://bnedigital.bne.es/bd/es/viewer?id=7b281e29-5af2-4c38-8c17-ec969f487f44" target="_blank" rel="noopener noreferrer">BNE</a> (CC BY 4.0)</figcaption>
+</figure>
+<figure>
+<img src="/data/feijoo-results/C010_trevoux.jpg" alt="Recorte de Trévoux: longevidad (C010)" loading="lazy" decoding="async">
+<figcaption><strong>Trévoux</strong> · jul. 1702 (portada con errata «1701»), p. 78; sept.–oct. 1701, p. 299 · <a href="https://archive.org/details/memoirespourlhi1702unse_2/page/n81" target="_blank" rel="noopener noreferrer">Internet Archive 1</a>; <a href="https://archive.org/details/memoirespourlhi1701unse_1/page/n302" target="_blank" rel="noopener noreferrer">Internet Archive 2</a></figcaption>
+</figure>
+</div>
+</details>
+
+#### C017 · anillos planetarios
+
+<div class="feijoo-compare">
+<figure>
+<img src="/data/feijoo-results/C017_feijoo.jpg" alt="Recorte de Feijoo: anillos planetarios (C017)" loading="lazy" decoding="async">
+<figcaption><strong>Feijoo</strong> · TCU III (1729), p. 25 · <a href="https://bnedigital.bne.es/bd/es/viewer?id=911fba8d-7ad3-4d7e-9332-a05cb636e5a9" target="_blank" rel="noopener noreferrer">BNE</a> (CC BY 4.0)</figcaption>
+</figure>
+<figure>
+<img src="/data/feijoo-results/C017_trevoux.jpg" alt="Recorte de Trévoux: anillos planetarios (C017)" loading="lazy" decoding="async">
+<figcaption><strong>Trévoux</strong> · feb. 1718, p. 334; feb. 1718, p. 336 · <a href="https://archive.org/details/memoirespourlhis1718unse/page/n342" target="_blank" rel="noopener noreferrer">Internet Archive 1</a>; <a href="https://archive.org/details/memoirespourlhis1718unse/page/n344" target="_blank" rel="noopener noreferrer">Internet Archive 2</a></figcaption>
+</figure>
+</div>
+
+<details class="feijoo-case">
+<summary>C020 · mano de gigante</summary>
+<div class="feijoo-compare">
+<figure>
+<img src="/data/feijoo-results/C020_feijoo.jpg" alt="Recorte de Feijoo: mano de gigante (C020)" loading="lazy" decoding="async">
+<figcaption><strong>Feijoo</strong> · I.12, §VIII, n. 23, p. 243 · <a href="https://bnedigital.bne.es/bd/es/viewer?id=7b281e29-5af2-4c38-8c17-ec969f487f44" target="_blank" rel="noopener noreferrer">BNE</a> (CC BY 4.0)</figcaption>
+</figure>
+<figure>
+<img src="/data/feijoo-results/C020_trevoux.jpg" alt="Recorte de Trévoux: mano de gigante (C020)" loading="lazy" decoding="async">
+<figcaption><strong>Trévoux</strong> · septiembre–octubre 1701, p. 291 · <a href="https://www.digitale-sammlungen.de/view/bsb10539794?page=543" target="_blank" rel="noopener noreferrer">BSB</a> (NoC-NC 1.0)</figcaption>
+</figure>
+</div>
+</details>
+
+<details class="feijoo-case">
+<summary>C012 · vidas de santos (límite)</summary>
+<div class="feijoo-compare">
+<figure>
+<img src="/data/feijoo-results/C012_feijoo.jpg" alt="Recorte de Feijoo: vidas de santos (límite) (C012)" loading="lazy" decoding="async">
+<figcaption><strong>Feijoo</strong> · III.6, §I, n. 5, p. 99 · <a href="https://bnedigital.bne.es/bd/es/viewer?id=911fba8d-7ad3-4d7e-9332-a05cb636e5a9" target="_blank" rel="noopener noreferrer">BNE</a> (CC BY 4.0)</figcaption>
+</figure>
+<figure>
+<img src="/data/feijoo-results/C012_trevoux.jpg" alt="Recorte de Trévoux: vidas de santos (límite) (C012)" loading="lazy" decoding="async">
+<figcaption><strong>Trévoux</strong> · mayo–junio 1701, p. 62 · <a href="https://www.digitale-sammlungen.de/view/bsb10539793?page=524" target="_blank" rel="noopener noreferrer">BSB</a> (NoC-NC 1.0)</figcaption>
+</figure>
+</div>
+</details>
+
+<details class="feijoo-case">
+<summary>C038 · modas (límite)</summary>
+<div class="feijoo-compare">
+<figure>
+<img src="/data/feijoo-results/C038_feijoo.jpg" alt="Recorte de Feijoo: modas (límite) (C038)" loading="lazy" decoding="async">
+<figcaption><strong>Feijoo</strong> · II.6, §II, n. 6, p. 141 · <a href="https://bnedigital.bne.es/bd/es/viewer?id=87a094e7-aa8b-4411-aa5e-2fb1081e571a" target="_blank" rel="noopener noreferrer">BNE</a> (CC BY 4.0)</figcaption>
+</figure>
+<figure>
+<img src="/data/feijoo-results/C038_trevoux.jpg" alt="Recorte de Trévoux: modas (límite) (C038)" loading="lazy" decoding="async">
+<figcaption><strong>Trévoux</strong> · febrero 1702, pp. 10–11 · <a href="https://www.digitale-sammlungen.de/view/bsb10539798?page=226" target="_blank" rel="noopener noreferrer">BSB 1</a>; <a href="https://www.digitale-sammlungen.de/view/bsb10539798?page=227" target="_blank" rel="noopener noreferrer">BSB 2</a> (NoC-NC 1.0)</figcaption>
+</figure>
+</div>
+</details>
+
+<details class="feijoo-case">
+<summary>D2-C007 · Behaim (reto de 1733)</summary>
+<div class="feijoo-compare">
+<figure>
+<img src="/data/feijoo-results/D2-C007_feijoo.jpg" alt="Recorte de Feijoo: Behaim (reto de 1733) (D2-C007)" loading="lazy" decoding="async">
+<figcaption><strong>Feijoo</strong> · IV.8, §XXXIX, n. 85, p. 210 (continúa en p. 211) · <a href="https://hdl.handle.net/10347/7540" target="_blank" rel="noopener noreferrer">USC Minerva</a></figcaption>
+</figure>
+<figure>
+<img src="/data/feijoo-results/D2-C007_trevoux.jpg" alt="Recorte de Trévoux: Behaim (reto de 1733) (D2-C007)" loading="lazy" decoding="async">
+<figcaption><strong>Trévoux</strong> · mayo 1716, art. LVI, pp. 849–850 · <a href="https://www.digitale-sammlungen.de/view/bsb10539855?page=315" target="_blank" rel="noopener noreferrer">BSB 1</a>; <a href="https://www.digitale-sammlungen.de/view/bsb10539855?page=316" target="_blank" rel="noopener noreferrer">BSB 2</a> (NoC-NC 1.0)</figcaption>
+</figure>
+</div>
 </details>
 
 ### Copias de otros libros
@@ -460,7 +643,7 @@ Los errores que copia también desvelan qué ejemplar tenía. Por ejemplo, yo de
 </details>
 
 <details markdown="1">
-<summary>Todos los casos de otros libros: sin citar, bajo el umbral y citados</summary>
+<summary>Tabla casos de otros libros</summary>
 
 | Caso | Feijoo | Libro | Sin citar | Solo de ese libro | Cita |
 |---|---|---|---:|---:|---|
@@ -497,197 +680,6 @@ Los errores que copia también desvelan qué ejemplar tenía. Por ejemplo, yo de
 
 </details>
 
-<details markdown="1">
-<summary>Detalle de algún caso</summary>
-
-### Las manchas solares
-
-Este caso lo había señalado Mañer en 1729. En las [*Paradojas físicas*](https://www.filosofia.org/bjf/bjft214.htm), Feijoo habla de las manchas del Sol, reuniendo historias y observaciones de manchas enormes. Este mismo tema aparece en un artículo de Antoine Parent en Trévoux 1716, doce años antes del segundo tomo de TCU.
-
-Cuando menciona a Virgilio, ambos escritos sitúan unos versos en el segundo libro de las *Geórgicas*, cuando realmente están en [el primero, versos 466–468](https://www.thelatinlibrary.com/vergil/geo1.shtml). Feijoo reorganiza parte de la explicación y corrige algún otro detalle, pero es uno de los ejemplos más claros de cómo probablemente iba trabajando sobre el texto francés adaptándolo a medida.
-
-[Pasajes y fuentes del caso C001](/data/feijoo-evidence/cases/C001.html).
-
-### Un anillo para hacerse rico y leer pensamientos
-
-Este caso apareció por la otra vía de búsqueda, después de traducir el texto de Feijoo al francés. En [*Secretos de Naturaleza*](https://www.filosofia.org/bjf/bjft302.htm), Feijoo atribuye a Camilo Leonardo una lista de siete piedras, siete metales y sus planetas correspondientes. Después cuenta cómo fabricar un anillo que daría riquezas. La reseña de Trévoux de febrero de 1718 cuenta lo mismo, pero está hablando de tres autores. El primero es Camilo Leonardo; la lista de correspondencias viene del segundo, Pierre d'Arleu; el ejemplo del anillo, del tercero, Albinius. Feijoo se queda con el nombre que aparece al principio y le atribuye todo el bloque.
-
-[Pasajes, libros originales y fuentes del caso C017](/data/feijoo-evidence/cases/C017.html).
-
-</details>
-
-### Los documentos frente a frente
-
-Abre un caso para comparar los recortes de las primeras ediciones.
-
-<details class="feijoo-case" open>
-<summary>C001 · manchas solares</summary>
-<div class="feijoo-compare">
-<figure>
-<img src="/data/feijoo-results/C001_feijoo.jpg" alt="Recorte de Feijoo: manchas solares (C001)" loading="lazy" decoding="async">
-<figcaption><strong>Feijoo</strong> · II (1728), p. 250, n. 23 · <a href="https://bnedigital.bne.es/bd/es/viewer?id=87a094e7-aa8b-4411-aa5e-2fb1081e571a" target="_blank" rel="noopener noreferrer">BNE</a> (CC BY 4.0)</figcaption>
-</figure>
-<figure>
-<img src="/data/feijoo-results/C001_trevoux.jpg" alt="Recorte de Trévoux: manchas solares (C001)" loading="lazy" decoding="async">
-<figcaption><strong>Trévoux</strong> · febrero 1716, art. XXIV, p. 331 · <a href="https://www.digitale-sammlungen.de/view/bsb10539854?page=345" target="_blank" rel="noopener noreferrer">BSB</a> (NoC-NC 1.0)</figcaption>
-</figure>
-</div>
-</details>
-
-<details class="feijoo-case">
-<summary>C002 · hierro en plantas</summary>
-<div class="feijoo-compare">
-<figure>
-<img src="/data/feijoo-results/C002_feijoo.jpg" alt="Recorte de Feijoo: hierro en plantas (C002)" loading="lazy" decoding="async">
-<figcaption><strong>Feijoo</strong> · II (1728), p. 258, n. 39 · <a href="https://bnedigital.bne.es/bd/es/viewer?id=87a094e7-aa8b-4411-aa5e-2fb1081e571a" target="_blank" rel="noopener noreferrer">BNE</a> (CC BY 4.0)</figcaption>
-</figure>
-<figure>
-<img src="/data/feijoo-results/C002_trevoux.jpg" alt="Recorte de Trévoux: hierro en plantas (C002)" loading="lazy" decoding="async">
-<figcaption><strong>Trévoux</strong> · marzo 1707, art. XXXIV, p. 479 · <a href="https://www.digitale-sammlungen.de/view/bsb10539818?page=507" target="_blank" rel="noopener noreferrer">BSB</a> (NoC-NC 1.0)</figcaption>
-</figure>
-</div>
-</details>
-
-<details class="feijoo-case">
-<summary>C003 · abadesa de Fontevrault</summary>
-<div class="feijoo-compare">
-<figure>
-<img src="/data/feijoo-results/C003_feijoo.jpg" alt="Recorte de Feijoo: abadesa de Fontevrault (C003)" loading="lazy" decoding="async">
-<figcaption><strong>Feijoo</strong> · I (1726), p. 361, n. 122 · <a href="https://bnedigital.bne.es/bd/es/viewer?id=7b281e29-5af2-4c38-8c17-ec969f487f44" target="_blank" rel="noopener noreferrer">BNE</a> (CC BY 4.0)</figcaption>
-</figure>
-<figure>
-<img src="/data/feijoo-results/C003_trevoux.jpg" alt="Recorte de Trévoux: abadesa de Fontevrault (C003)" loading="lazy" decoding="async">
-<figcaption><strong>Trévoux</strong> · diciembre 1704, art. CLXXXIX, p. 2119 · <a href="https://www.digitale-sammlungen.de/view/bsb10539809?page=507" target="_blank" rel="noopener noreferrer">BSB</a> (NoC-NC 1.0)</figcaption>
-</figure>
-</div>
-</details>
-
-<details class="feijoo-case">
-<summary>C004 · Filipinas</summary>
-<div class="feijoo-compare">
-<figure>
-<img src="/data/feijoo-results/C004_feijoo.jpg" alt="Recorte de Feijoo: Filipinas (C004)" loading="lazy" decoding="async">
-<figcaption><strong>Feijoo</strong> · II (1728), p. 53, nn. 73–74 · <a href="https://bnedigital.bne.es/bd/es/viewer?id=87a094e7-aa8b-4411-aa5e-2fb1081e571a" target="_blank" rel="noopener noreferrer">BNE</a> (CC BY 4.0)</figcaption>
-</figure>
-<figure>
-<img src="/data/feijoo-results/C004_trevoux.jpg" alt="Recorte de Trévoux: Filipinas (C004)" loading="lazy" decoding="async">
-<figcaption><strong>Trévoux</strong> · julio 1715, art. XCVII, pp. 1163–1164 · <a href="https://www.digitale-sammlungen.de/view/bsb10539852?page=71" target="_blank" rel="noopener noreferrer">BSB 1</a>; <a href="https://www.digitale-sammlungen.de/view/bsb10539852?page=72" target="_blank" rel="noopener noreferrer">BSB 2</a> (NoC-NC 1.0)</figcaption>
-</figure>
-</div>
-</details>
-
-<details class="feijoo-case">
-<summary>C005 · sectas médicas</summary>
-<div class="feijoo-compare">
-<figure>
-<img src="/data/feijoo-results/C005_feijoo.jpg" alt="Recorte de Feijoo: sectas médicas (C005)" loading="lazy" decoding="async">
-<figcaption><strong>Feijoo</strong> · TCU I (1726), p. 112 · <a href="https://bnedigital.bne.es/bd/es/viewer?id=7b281e29-5af2-4c38-8c17-ec969f487f44" target="_blank" rel="noopener noreferrer">BNE</a> (CC BY 4.0)</figcaption>
-</figure>
-<figure>
-<img src="/data/feijoo-results/C005_trevoux.jpg" alt="Recorte de Trévoux: sectas médicas (C005)" loading="lazy" decoding="async">
-<figcaption><strong>Trévoux</strong> · nov. 1710, p. 1954 · <a href="https://archive.org/details/memoirespourlhi1710unse_2/page/n309" target="_blank" rel="noopener noreferrer">Internet Archive</a></figcaption>
-</figure>
-</div>
-</details>
-
-<details class="feijoo-case">
-<summary>C009 · modos musicales</summary>
-<div class="feijoo-compare">
-<figure>
-<img src="/data/feijoo-results/C009_feijoo.jpg" alt="Recorte de Feijoo: modos musicales (C009)" loading="lazy" decoding="async">
-<figcaption><strong>Feijoo</strong> · TCU I (1726), p. 274 · <a href="https://bnedigital.bne.es/bd/es/viewer?id=7b281e29-5af2-4c38-8c17-ec969f487f44" target="_blank" rel="noopener noreferrer">BNE</a> (CC BY 4.0)</figcaption>
-</figure>
-<figure>
-<img src="/data/feijoo-results/C009_trevoux.jpg" alt="Recorte de Trévoux: modos musicales (C009)" loading="lazy" decoding="async">
-<figcaption><strong>Trévoux</strong> · abr. 1716, p. 597; abr. 1716, p. 598 · <a href="https://archive.org/details/memoirespourlhi1716unse_0/page/n54" target="_blank" rel="noopener noreferrer">Internet Archive 1</a>; <a href="https://archive.org/details/memoirespourlhi1716unse_0/page/n55" target="_blank" rel="noopener noreferrer">Internet Archive 2</a></figcaption>
-</figure>
-</div>
-</details>
-
-<details class="feijoo-case">
-<summary>C010 · longevidad</summary>
-<div class="feijoo-compare">
-<figure>
-<img src="/data/feijoo-results/C010_feijoo.jpg" alt="Recorte de Feijoo: longevidad (C010)" loading="lazy" decoding="async">
-<figcaption><strong>Feijoo</strong> · TCU I (1726), p. 234 · <a href="https://bnedigital.bne.es/bd/es/viewer?id=7b281e29-5af2-4c38-8c17-ec969f487f44" target="_blank" rel="noopener noreferrer">BNE</a> (CC BY 4.0)</figcaption>
-</figure>
-<figure>
-<img src="/data/feijoo-results/C010_trevoux.jpg" alt="Recorte de Trévoux: longevidad (C010)" loading="lazy" decoding="async">
-<figcaption><strong>Trévoux</strong> · jul. 1702 (portada con errata «1701»), p. 78; sept.–oct. 1701, p. 299 · <a href="https://archive.org/details/memoirespourlhi1702unse_2/page/n81" target="_blank" rel="noopener noreferrer">Internet Archive 1</a>; <a href="https://archive.org/details/memoirespourlhi1701unse_1/page/n302" target="_blank" rel="noopener noreferrer">Internet Archive 2</a></figcaption>
-</figure>
-</div>
-</details>
-
-<details class="feijoo-case">
-<summary>C017 · anillos planetarios</summary>
-<div class="feijoo-compare">
-<figure>
-<img src="/data/feijoo-results/C017_feijoo.jpg" alt="Recorte de Feijoo: anillos planetarios (C017)" loading="lazy" decoding="async">
-<figcaption><strong>Feijoo</strong> · TCU III (1729), p. 25 · <a href="https://bnedigital.bne.es/bd/es/viewer?id=911fba8d-7ad3-4d7e-9332-a05cb636e5a9" target="_blank" rel="noopener noreferrer">BNE</a> (CC BY 4.0)</figcaption>
-</figure>
-<figure>
-<img src="/data/feijoo-results/C017_trevoux.jpg" alt="Recorte de Trévoux: anillos planetarios (C017)" loading="lazy" decoding="async">
-<figcaption><strong>Trévoux</strong> · feb. 1718, p. 334; feb. 1718, p. 336 · <a href="https://archive.org/details/memoirespourlhis1718unse/page/n342" target="_blank" rel="noopener noreferrer">Internet Archive 1</a>; <a href="https://archive.org/details/memoirespourlhis1718unse/page/n344" target="_blank" rel="noopener noreferrer">Internet Archive 2</a></figcaption>
-</figure>
-</div>
-</details>
-
-<details class="feijoo-case">
-<summary>C020 · mano de gigante</summary>
-<div class="feijoo-compare">
-<figure>
-<img src="/data/feijoo-results/C020_feijoo.jpg" alt="Recorte de Feijoo: mano de gigante (C020)" loading="lazy" decoding="async">
-<figcaption><strong>Feijoo</strong> · I.12, §VIII, n. 23, p. 243 · <a href="https://bnedigital.bne.es/bd/es/viewer?id=7b281e29-5af2-4c38-8c17-ec969f487f44" target="_blank" rel="noopener noreferrer">BNE</a> (CC BY 4.0)</figcaption>
-</figure>
-<figure>
-<img src="/data/feijoo-results/C020_trevoux.jpg" alt="Recorte de Trévoux: mano de gigante (C020)" loading="lazy" decoding="async">
-<figcaption><strong>Trévoux</strong> · septiembre–octubre 1701, p. 291 · <a href="https://www.digitale-sammlungen.de/view/bsb10539794?page=543" target="_blank" rel="noopener noreferrer">BSB</a> (NoC-NC 1.0)</figcaption>
-</figure>
-</div>
-</details>
-
-<details class="feijoo-case">
-<summary>C012 · vidas de santos (límite)</summary>
-<div class="feijoo-compare">
-<figure>
-<img src="/data/feijoo-results/C012_feijoo.jpg" alt="Recorte de Feijoo: vidas de santos (límite) (C012)" loading="lazy" decoding="async">
-<figcaption><strong>Feijoo</strong> · III.6, §I, n. 5, p. 99 · <a href="https://bnedigital.bne.es/bd/es/viewer?id=911fba8d-7ad3-4d7e-9332-a05cb636e5a9" target="_blank" rel="noopener noreferrer">BNE</a> (CC BY 4.0)</figcaption>
-</figure>
-<figure>
-<img src="/data/feijoo-results/C012_trevoux.jpg" alt="Recorte de Trévoux: vidas de santos (límite) (C012)" loading="lazy" decoding="async">
-<figcaption><strong>Trévoux</strong> · mayo–junio 1701, p. 62 · <a href="https://www.digitale-sammlungen.de/view/bsb10539793?page=524" target="_blank" rel="noopener noreferrer">BSB</a> (NoC-NC 1.0)</figcaption>
-</figure>
-</div>
-</details>
-
-<details class="feijoo-case">
-<summary>C038 · modas (límite)</summary>
-<div class="feijoo-compare">
-<figure>
-<img src="/data/feijoo-results/C038_feijoo.jpg" alt="Recorte de Feijoo: modas (límite) (C038)" loading="lazy" decoding="async">
-<figcaption><strong>Feijoo</strong> · II.6, §II, n. 6, p. 141 · <a href="https://bnedigital.bne.es/bd/es/viewer?id=87a094e7-aa8b-4411-aa5e-2fb1081e571a" target="_blank" rel="noopener noreferrer">BNE</a> (CC BY 4.0)</figcaption>
-</figure>
-<figure>
-<img src="/data/feijoo-results/C038_trevoux.jpg" alt="Recorte de Trévoux: modas (límite) (C038)" loading="lazy" decoding="async">
-<figcaption><strong>Trévoux</strong> · febrero 1702, pp. 10–11 · <a href="https://www.digitale-sammlungen.de/view/bsb10539798?page=226" target="_blank" rel="noopener noreferrer">BSB 1</a>; <a href="https://www.digitale-sammlungen.de/view/bsb10539798?page=227" target="_blank" rel="noopener noreferrer">BSB 2</a> (NoC-NC 1.0)</figcaption>
-</figure>
-</div>
-</details>
-
-<details class="feijoo-case">
-<summary>D2-C007 · Behaim (reto de 1733)</summary>
-<div class="feijoo-compare">
-<figure>
-<img src="/data/feijoo-results/D2-C007_feijoo.jpg" alt="Recorte de Feijoo: Behaim (reto de 1733) (D2-C007)" loading="lazy" decoding="async">
-<figcaption><strong>Feijoo</strong> · IV.8, §XXXIX, n. 85, p. 210 (continúa en p. 211) · <a href="https://hdl.handle.net/10347/7540" target="_blank" rel="noopener noreferrer">USC Minerva</a></figcaption>
-</figure>
-<figure>
-<img src="/data/feijoo-results/D2-C007_trevoux.jpg" alt="Recorte de Trévoux: Behaim (reto de 1733) (D2-C007)" loading="lazy" decoding="async">
-<figcaption><strong>Trévoux</strong> · mayo 1716, art. LVI, pp. 849–850 · <a href="https://www.digitale-sammlungen.de/view/bsb10539855?page=315" target="_blank" rel="noopener noreferrer">BSB 1</a>; <a href="https://www.digitale-sammlungen.de/view/bsb10539855?page=316" target="_blank" rel="noopener noreferrer">BSB 2</a> (NoC-NC 1.0)</figcaption>
-</figure>
-</div>
-</details>
-
 ## Conclusiones
 
 Este es el primer post que escribo en español, todos los anteriores fueron en inglés pero no tenía sentido aquí. Las traducciones de LLM mejoraron bastante, en su momento creé una [herramienta para traducir LaTeX](https://github.com/mateo19182/latex-translate) y los resultados (GPT-4o si no me equivoco) con mi TFG eran apenas pasables, con múltiples errores graves. Para este post, usé Gemini Flash 3.8 y fueron pocas las correcciones que tuve que hacer, aun así me da la sensación de que parte de la intencionalidad cambia.
@@ -699,8 +691,6 @@ Otro punto importante es que este trabajo depende de poder acceder a escaneos de
 Google Books hizo mucho por la digitalización. Los labs están en una carrera por conseguir más datos con incentivos muy fuertes. Proyectos como la [digitalización de fondos de la Biblioteca Pública de Boston](https://www.bpl.org/news/boston-public-library-expands-access-to-collections-through-ai-enhanced-digitization/), o el hecho de que Anthropic [comprase millones de libros, los escanease y desechase los originales](https://cases.justia.com/federal/district-courts/california/candce/3%3A2024cv05417/434709/231/0.pdf#page=4), dan una idea de adónde nos dirigimos. Como ya expuse en [cómo la IA puede ayudar a salvar el copyright](https://blog.m19182.dev/writings/How-AI-might-help-save-copyright/) hace 3 años, las leyes de propiedad intelectual necesitan una reforma urgente, ¡la información merece ser libre y las consecuencias de segundo orden son enormes!
 
 Esto es todo, aquí está [el código y archivos relevantes](https://github.com/mateo19182/feijoo), editaré el post si encuentro algo más relacionado con este reto. Gracias por leer.
-
----
 
 [^1]: La razón es una mezcla entre [Reality has a surprising amount of detail](https://johnsalvatier.org/blog/2017/reality-has-a-surprising-amount-of-detail) e infravalorar la fricción del mundo real. Que algo sea técnicamente posible no significa que todo el mundo vaya a hacerlo mañana. Llevo con un draft atascado sobre esto varios meses, ¡háblame si te interesa el tema! También viene al caso [Del rigor en la ciencia, de Borges](https://ciudadseva.com/texto/del-rigor-en-la-ciencia/), donde un mapa termina ocupando tanto como el territorio que representa.
 
