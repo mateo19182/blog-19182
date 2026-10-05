@@ -132,6 +132,7 @@ body {
 .site-title:hover svg { transform: scale(1.08); }
 .site-nav { display: flex; gap: 0.9rem; flex: 1; flex-wrap: nowrap; }
 .site-nav a { white-space: nowrap; }
+.site-header .lang-toggle { flex-shrink: 0; min-height: 32px; }
 .site-nav a {
   color: var(--secondary);
   text-decoration: none;
@@ -514,6 +515,7 @@ li.archive-hidden { display: none; }
 @media (max-width: 600px) {
   body { font-size: 16px; }
   .article-title { font-size: 1.7rem; }
+  .site-header .desktop-only, .site-header .lang-toggle { display: none; }
   .site-header .wrap { gap: 0.6rem; padding: 0.5rem 0.65rem; }
   .site-title svg { width: 16px; height: 16px; }
   .site-nav { gap: 0.55rem; justify-content: space-between; }
