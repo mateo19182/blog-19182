@@ -10,7 +10,7 @@ description: OCR, búsqueda entre idiomas y revisión de fuentes para comprobar 
 <div class="post-tldr" markdown="1">
 <p class="post-tldr-label">TL;DR</p>
 
-Feijoo retó a sus lectores a encontrar siquiera cuatro líneas traducidas de revistas francesas en sus libros. Casi tres siglos después, encontré diez casos que considero sólidos y dos fronterizos. Algunos préstamos ya eran conocidos; para seis de los diez casos sólidos no encontré una identificación anterior en la bibliografía consultada.
+El padre Feijoo retó a sus lectores a encontrar líneas traducidas de revistas francesas en sus obras. Casi tres siglos después, encontré unos diez casos que cumplen sus condiciones.
 
 </div>
 
@@ -340,7 +340,7 @@ Este caso apareció por la otra vía de búsqueda, después de traducir el texto
 
 [Pasajes, libros originales y fuentes del caso C017](/data/feijoo-evidence/cases/C017.html).
 
-### Comparación de documentos
+### Ejemplos
 
 Estos son los recortes de las primeras ediciones. Abre cada caso para compararlos.
 

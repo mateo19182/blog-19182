@@ -5,7 +5,7 @@ title: Feijoo's Challenge
 <div class="post-tldr" markdown="1">
 <p class="post-tldr-label">TL;DR</p>
 
-Feijoo challenged his readers to find even four lines translated from French journals in his books. Almost three centuries later, I found ten cases I consider solid and two borderline ones. Some of the borrowings were already known; for six of the ten solid cases I found no earlier identification in the literature I checked.
+Father Feijoo challenged his readers to find lines translated from French journals in his works. Almost three centuries later, I found about ten cases that meet his conditions.
 
 </div>
 
@@ -335,7 +335,7 @@ This case came up through the other search path, after translating Feijoo's text
 
 [Passages, original books and sources for case C017](/data/feijoo-evidence/cases/C017.html).
 
-### Document comparison
+### Examples
 
 These are the clippings from the first editions. Open each case to compare them.
 
