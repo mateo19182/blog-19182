@@ -555,13 +555,13 @@ li.archive-hidden { display: none; }
 
 /* Compact summary, separate from the article heading hierarchy. */
 .prose .post-tldr {
-  width: fit-content;
-  max-width: min(100%, 38rem);
+  width: 100%;
+  max-width: 100%;
   margin: 0 0 1.5rem;
   padding: 0.6rem 0.9rem;
   border: 1px solid var(--lightgray);
   border-radius: 8px;
-  background: var(--highlight);
+  background: transparent;
   font-size: 0.9rem;
 }
 .prose .post-tldr summary { cursor: pointer; font-family: var(--font-mono); font-size: 0.8rem; }
