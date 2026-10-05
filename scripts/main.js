@@ -16,9 +16,7 @@
 // Language toggle. The pre-paint script sets <html lang> from the saved choice;
 // the button is disabled on pages that only exist in English.
 ;(function () {
-  const btn = document.getElementById("lang-toggle")
-  if (!btn || btn.disabled) return
-  btn.addEventListener("click", function () {
+  document.querySelectorAll(".lang-toggle:not(:disabled)").forEach(btn => btn.addEventListener("click", function () {
     const root = document.documentElement
     const next = root.lang === "es" ? "en" : "es"
     root.lang = next
@@ -26,5 +24,28 @@
     try {
       localStorage.setItem("lang", next)
     } catch (e) {}
-  })
+  }))
+})()
+
+// Hide after deliberate downward scrolling, reveal on upward scrolling.
+;(function () {
+  const header = document.querySelector(".site-header")
+  if (!header) return
+  let previous = Math.max(0, scrollY)
+  let travel = 0
+  let queued = false
+  addEventListener("scroll", () => {
+    if (queued) return
+    queued = true
+    requestAnimationFrame(() => {
+      const current = Math.max(0, scrollY)
+      const delta = current - previous
+      travel = Math.sign(delta) === Math.sign(travel) ? travel + delta : delta
+      if (current < 80 || travel < -12) header.classList.remove("is-hidden")
+      else if (travel > 24 && !header.contains(document.activeElement)) header.classList.add("is-hidden")
+      previous = current
+      queued = false
+    })
+  }, { passive: true })
+  header.addEventListener("focusin", () => header.classList.remove("is-hidden"))
 })()
