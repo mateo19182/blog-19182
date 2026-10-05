@@ -14,9 +14,10 @@
 })()
 
 // Language toggle. The pre-paint script sets <html lang> from the saved choice;
-// the button is disabled on pages that only exist in English.
+// the button is disabled on pages that only exist in one language. A translated
+// article's notice has its own button back to the original.
 ;(function () {
-  document.querySelectorAll(".lang-toggle:not(:disabled)").forEach(btn => btn.addEventListener("click", function () {
+  document.querySelectorAll(".lang-toggle:not(:disabled), .lang-switch").forEach(btn => btn.addEventListener("click", function () {
     const root = document.documentElement
     const next = root.lang === "es" ? "en" : "es"
     root.lang = next

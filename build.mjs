@@ -130,7 +130,7 @@ async function loadTranslations(file, name, data, content) {
     if (!en) return { es: null }
     return {
       en,
-      es: { title, rawContent: content, readingTime: readingTime(stripToText(content)) },
+      es: { title, rawContent: content },
       translated: "en",
     }
   }

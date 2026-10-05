@@ -25,9 +25,21 @@ links and directory links become plain labels. It removes author-only comments
 and TODOs from the published copy. Prefer public sources in the draft. The post is published normally, with date `2026-10-05`, and appears in listings,
 feeds, and the sitemap. Its former draft URL redirects to the published URL.
 
+`content/writings/El reto de Feijoo.en.md` is a hand-made English translation of
+the synced copy. Sync does not touch it, so update it whenever the draft changes.
+
 Public research materials are generated from the explicit selection in
 `../inv/feijoo/blog/materials/`. When changing that selection or its case sheets,
 run `python ../inv/feijoo/blog/materials/build_public_materials.py` before sync.
 Sync copies the generated HTML, CSV, source metadata and ZIP into
 `content/data/feijoo-evidence/`. Keep the private research notes and agent
 transcripts out of this public selection.
+
+## Translations
+
+An English post can have a Spanish sibling `Name.es.md`; a Spanish post
+(`lang: es`) can have an English sibling `Name.en.md`. Each holds only a `title:`
+frontmatter and the translated body, with the same links, footnote labels and
+markup as the original. Translated articles show a one-line notice linking back to
+the original. Update the translation when you change the original.
+`link-archive.es.md` only translates the intro; the build appends the link list.

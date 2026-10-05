@@ -1,0 +1,95 @@
+---
+title: Música favorita de 2024
+---
+
+Un año más, voy a recopilar mis álbumes y EPs favoritos publicados este año. Los proyectos están ordenados más o menos de más a menos disfrutados. [Aquí está la lista de 2022](/data/2022.jpeg) y [[Favourite music of 2023]].
+
+Este año fue un poco especial, porque también lancé un blog para hablar de música con unos amigos. Se llama [no-cosign](https://no-cosign.m19182.dev/) y está escrito en español. Ya he sacado 3 posts ahí y estoy un poco orgulloso de ellos, así que échales un ojo si te va el tema y suscríbete a la newsletter.
+
+- [I LAY DOWN MY LIFE FOR YOU - JPEGMAFIA](https://youtu.be/iStiV1eBiV8)
+  - mi artista más escuchado con diferencia, no para de hacer la música más interesante que hay...
+- [Municipal Dreams- Low End Activist](https://lowendactivist.bandcamp.com/album/municipal-dreams)
+  - [review](https://no-cosign.m19182.dev/low-end-activist-municipal-dreams/), uno de los que más he escuchado este año
+- [The New Sound - Geordie Greep](https://youtu.be/A4EU_0vFzuU)
+  - del frontman de Black Midi, estuve obsesionado con este durante un tiempo...
+- [Player of the year - Tay Jordan](https://open.spotify.com/album/0zwdMUp2ELrIMdmDGY9xj5)
+  - [review](https://no-cosign.m19182.dev/tay-jordan-player-of-the-year/)
+- [Blue Indigo - Darius C](https://open.spotify.com/album/2KPBMw16wZv7aGrZY1LKQ6?si=4HshgAY-QIaKiEpNBANLMQ)
+  - este lo produje y lo grabé yo, así que igual no soy muy objetivo, pero de verdad creo que es de los buenos.
+- [Thank You, Dream Girl, Various Artists](https://tabula-rasa-records.bandcamp.com/album/thank-you-dream-girl)
+  - [review](https://no-cosign.m19182.dev/thank-you-dream-girl-2/), este fue especial porque va de un género nuevo creado en internet...
+- Dot - Vulfmon
+  - Vulfpeck es uno de mis favoritos de todos los tiempos, así que cualquier spin-off siempre es bienvenido.
+- Mid Spiral - BADBADNOTGOOD
+  - 3 álbumes distintos en uno, igual escribo una review algún día, pero merece la pena seguro
+- Why Lawd - NxWorries, Anderson .Paak, Knxwledge
+  - la nostalgia tuvo mucho que ver con este  
+- Professional Existing - Gideo
+  - mi productor favorito de España
+- Hyperdrama - Justice
+  - una vuelta poco habitual que cumplió las expectativas
+- YHWH is LOVE - Karriem Riggins, Madlib
+- Path of 6
+  - ese momento en el que encuentras a alguien trans random por internet que está a otro nivel que todos los demás
+- Bad with names (remixes) - corto.alto
+  - de alguna forma los remixes fueron mejores que el original, y ese estaba en la lista del año pasado
+- NO HANDS - Joey Valence & Brae
+  - usé el acapella de 'like a punk' para un [bootleg](https://on.soundcloud.com/yyPtJwrnYHdWLr758)
+- Grush - μ-Ziq
+  - lo vi en directo en el MIRA fest de Barcelona y me voló la cabeza
+- Harri Poter - Mainline Magic Orchestra
+- Pound & Dolla - Capo Lee, bullet tooth
+- todos los lanzamientos de [ATW Records](https://atwrecords.bandcamp.com/) de este año
+  - la escena garage/bassline de UK tuvo un año increíble
+- bass bins - efan
+- flight fm - Joy Orbison
+  - ya sé que es un single peeeeero
+- Dance, no one's watching - Ezra Collective
+- Supercluster - sub lumen
+- i wanna be a sniperrrr - sniper2004
+  - el mejor proyecto de sniper que he escuchado nunca
+- Loss of life - MGMT
+- boy - 2hollis
+- Pinball - MIKE, Tony Seltzer
+- || - Sleepnet
+- Shamane - Subkut
+- Two Stars & the Dream Police - Mk.Gee
+- BCM - Baby Pantera
+- Diamond collection - YL, Starker
+- Dennis - Sega Bodega
+- Disobey vol.1 - disobey
+- Basspunk - Bassvictim
+- Ciudad de cultura 2002 - RNA BOIS, SUOB, King Kasta
+- Tidel Memory Exo - Iglooghost
+- God loves to sin but hates the sinner - superreservao
+- You are here, start - kaelin ellis
+- Valedictorian - ian
+- Alligator Bites Never Heal - Doechii
+- Three+ - Four Tet
+- Britpop - A.G. Cook
+- Fearless Movement - Kamasi Washington
+- they can hate but we still swinging - New Jazz Underground
+- Machine - The Bug
+- BRAT - Charlie XCX
+- Lungu Boy - Asake
+- Truest - Anysia Kym
+- Cascade - Floating Points
+- ACCELERATOR - greek
+- BouQ - Blawan
+- Maybe in nirvana - Smino
+- Amour - Babymorocco
+- In my dreams... - Auntie Flo
+- Meaning's edge - DjRUM
+- Come Ahead - Primal Scream
+- Illicit Trade - Lokal
+- TEK.USB* - CONNIE
+- QWERTY II - Saya Gray
+- Baggy$$ - Fcukers
+- Get the message - Kokoroko
+- Heavier Yet... - Sean Kuti and Egypt 80
+- CHROMAKOPIA - Tyler the Creator
+- GNX - Kendrick Lamar
+- ÊCCLABÔ DE LIBERTÁ - CALIFATO ¾
+- Endlessness - Nala Sinephro
+
+Si te has molestado en bajar hasta aquí, puedes escuchar mi música en [Soundcloud](https://soundcloud.com/m19182) (acabo de publicar el 9º volumen de bootlegs...) y [Youtube](https://www.youtube.com/channel/UCEJKcBK7i88Iv3saZy2xuSg).
