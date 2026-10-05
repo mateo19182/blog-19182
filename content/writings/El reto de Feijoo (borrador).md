@@ -5,15 +5,19 @@ unlisted: true
 description: Borrador en curso sobre Feijoo, Trévoux y los retos de 1729 y 1733.
 ---
 
+## TL;DR
+
+Feijoo retó a sus lectores a encontrar cuatro líneas traducidas de dos revistas francesas y prometió devolverles el dinero de sus libros si lo conseguían. Casi tres siglos después, usé OCR, búsqueda entre idiomas y agentes para comparar los textos, y revisé a mano las coincidencias más prometedoras. Encontré diez casos que considero que resuelven sus retos de 1729 y 1733, además de dos fronterizos. Algunos ya los habían señalado sus contemporáneos; en seis de los diez no encontré una identificación anterior. La búsqueda automática ayudó mucho, pero comprobar las fuentes llevó la mayor parte del trabajo.
+
 ## Intro
 
 Estamos en un momento único en la historia, pero no por las razones obvias. Casi todo el mundo está enterado de la importancia de la IA, pero hay una serie de circunstancias que se dan desde principios de 2024 hasta dentro de no mucho tiempo que son especialmente únicas.
 
-Este período es lo más cerca que una persona de a pie va a estar a la frontera de los modelos, y la distancia se acrecentará con el tiempo. La culpa de esto es en gran parte de las [scaling laws](https://arxiv.org/abs/2001.08361), agravado el hecho de que los frontier labs son actores geopolíticos y la entrada de los riesgos existenciales de la IA en el discurso mainstream.
+Este período es lo más cerca que una persona de a pie va a estar a la frontera de los modelos, y la distancia se acrecentará con el tiempo. La culpa de esto es en gran parte de las [scaling laws](https://arxiv.org/abs/2001.08361), agravada por el hecho de que los frontier labs son actores geopolíticos y la entrada de los riesgos existenciales de la IA en el discurso mainstream.
 
-Coincide a su vez con la transición social y económica que estas tecnologías van a provocar, sobre las cuales he cambiado mucho de opinión en los últimos años (leía bastante LessWrong en 2023, imagina). Esto da lugar a multitud de [arbitrajes](https://en.wikipedia.org/wiki/Arbitrage) que seguramente sobrevivan mucho más tiempo de lo que una persona técnica piense [^1].
+Coincide a su vez con la transición social y económica que estas tecnologías van a provocar, sobre la cual he cambiado mucho de opinión en los últimos años (leía bastante LessWrong en 2023, imagina). Esto da lugar a multitud de [arbitrajes](https://en.wikipedia.org/wiki/Arbitrage) que seguramente sobrevivan mucho más tiempo de lo que una persona técnica piense [^1].
 
-El más obvio de esos arbitrajes está en el desarrollo de software. Cualquiera tiene acceso a herramientas que, bien usadas, pueden ahorrarte una parte enorme del trabajo[^productividad], sin embargo, tus jefes esperan una cantidad de trabajo similar de ti! Esto lleva ocurriendo un buen tiempo, y aún a día de hoy sigue siendo posible aprovecharse de eso...
+El más obvio de esos arbitrajes está en el desarrollo de software. Cualquiera tiene acceso a herramientas que, bien usadas, pueden ahorrarte una parte enorme del trabajo[^productividad], sin embargo, ¡tus jefes esperan una cantidad de trabajo similar de ti! Esto lleva ocurriendo un buen tiempo, y aún a día de hoy sigue siendo posible aprovecharse de eso...
 
 Fundamos Tribosolutions.es en parte bajo esta tesis, y si algo me ha enseñado es que el software no va a ser un moat válido por mucho tiempo[^2]. Como alguien que se considera técnico, y con cierto [rechazo hacia las ventas](https://blog.m19182.dev/writings/The-Case-Against-Marketing/), es una lección que me ha costado digerir.
 
@@ -21,15 +25,15 @@ Fundamos Tribosolutions.es en parte bajo esta tesis, y si algo me ha enseñado e
 
 ---
 
-Este post es para hablar de uno de estos arbitrajes, que ocupa gran parte de mi atención desde que leí [AI labs need to start funding historical research](https://resobscura.substack.com/p/ai-labs-need-to-start-funding-historical), En resumen, los modelos frontier actuales han llegado al punto en que pueden producir conocimiento histórico original por si mismos, y la concusión del autor del post es que los labs deberían financiar colaboraciones con historiadores y archivistas.
+Este post es para hablar de uno de estos arbitrajes, que ocupa gran parte de mi atención desde que leí [AI labs need to start funding historical research](https://resobscura.substack.com/p/ai-labs-need-to-start-funding-historical). En resumen, los modelos frontier actuales han llegado al punto en que pueden producir conocimiento histórico original por sí mismos, y la conclusión del autor del post es que los labs deberían financiar colaboraciones con historiadores y archivistas.
 
-Si miras por detrás de los incentivos (quién escribe esto es historiador de profesión), lo que a mi me queda es que estamos en un momento único donde cualquiera con el suficiente nivel de espabilado puede conseguir hacer descubrimientos nóveles, antes de que los labs utilicen parte de su capacidad para peinar todos los documentos digitalizados existentes y cerrar todos los cabos restantes.
+Si miras por detrás de los incentivos (quien escribe esto es historiador de profesión), lo que a mí me queda es que estamos en un momento único donde cualquiera con el suficiente nivel de espabilado puede conseguir hacer descubrimientos novedosos, antes de que los labs utilicen parte de su capacidad para peinar todos los documentos digitalizados existentes y cerrar todos los cabos restantes.
 
-No soy el primero en pesar esto, está muy inspirado en el proyecto de [Daniel Bourdeau](https://dbourdeau.github.io/cyphersolver/index.html) (perdonarle el slop de web...) que está [descrifrando mensajes de la segunda guerra mundial](https://www.cryptocellar.org/bgac/the-mvueh-break.html) [más rápido de lo que los pueden comprobar](https://cryptiana.web.fc2.com/code/unsolved.htm), y [un nuevo testimonio presencial sobre el dodo](https://resobscura.substack.com/p/using-opus-55-to-discover-a-new-eyewitness) entre otros.
+No soy el primero en pensar esto, está muy inspirado en el proyecto de [Daniel Bourdeau](https://dbourdeau.github.io/cyphersolver/index.html) (perdonadle el slop de web...) que está [descifrando mensajes de la Segunda Guerra Mundial](https://www.cryptocellar.org/bgac/the-mvueh-break.html) [más rápido de lo que los pueden comprobar](https://cryptiana.web.fc2.com/code/unsolved.htm), y [un nuevo testimonio presencial sobre el dodo](https://resobscura.substack.com/p/using-opus-55-to-discover-a-new-eyewitness) entre otros.
 
-De forma similar a lo que está pasando en las matemáticas, hay cierta incertidumbre a la hora de verificar que los descubrimientos son correctos y nóveles. Los primeros Erdős que solucionó la IA solían basarse en trabajo que no se había ligado al problema, más que en una nueva idea. Precisamente esta habilidad parece especialmente valiosa para el estudio de la historia, debido en gran parte a la gran cantidad de documentos digitalizados (y los muchos que faltan). Al igual que en el software, el cuallo de botella se mueve a la verificación.
+De forma similar a lo que está pasando en las matemáticas, hay cierta incertidumbre a la hora de verificar que los descubrimientos son correctos y novedosos. Los primeros Erdős que solucionó la IA solían basarse en trabajo que no se había ligado al problema, más que en una nueva idea. Precisamente esta habilidad parece especialmente valiosa para el estudio de la historia, debido en gran parte a la gran cantidad de documentos digitalizados (y los muchos que faltan). Al igual que en el software, el cuello de botella se mueve a la verificación.
 
-Para encontrar temas que explorar, busqué opcines relacionadas con Galicia / España y que sean razonablemente verificables por mi cuenta. Llegué a una lista de unos cuantos que me gustaría intentar afrontar cuanto antes. En este post presento los resultados del primero de ellos, al cúal dediqué un par de decenas de horas mías y varios cientos de horas de agentes. Este es un post algo largo, ya que intento hablar de todas las cosas que me parcen interesantes, incentivo el uso del índice para saltarse todo lo que no te interese!
+Para encontrar temas que explorar, busqué opciones relacionadas con Galicia / España y que sean razonablemente verificables por mi cuenta. Llegué a una lista de unos cuantos que me gustaría intentar afrontar cuanto antes. En este post presento los resultados del primero de ellos, al cual dediqué un par de decenas de horas mías y varios cientos de horas de agentes. Este es un post algo largo, ya que intento hablar de todas las cosas que me parecen interesantes. ¡Incentivo el uso del índice para saltarse todo lo que no te interese!
 
 ### El reto
 
@@ -42,7 +46,7 @@ En el [_Prólogo apologético_](https://www.filosofia.org/bjf/bjft3p6.htm) del [
 
 Si te llama la atención que la "s" parece una "f", se conoce como la S larga y tiene una [historia fascinante](https://typefoundry.blogspot.com/2008/01/long-s.html), relacionada con las imprentas de la época, pero si me paro en cada detalle así no acabaría esto nunca. Lo sé porque cometí ese error en un [post anterior](https://blog.m19182.dev/writings/Consciousness-is-hard/) que nunca llegué a acabar.
 
-La idea original es comparar los tomos I–V (el propio Feijoo amipló el reto [en 1733](https://www.filosofia.org/bjf/bjft517.htm) a sus nuevas obras) del _Teatro crítico universal_ (TCU de aquí en adelante) con las _Memorias de Trévoux_ y el tomo del _Journal des Sçavans_ que Feijoo decía tener, y ver si encontramos pasajes copiados.
+La idea original es comparar los tomos I–V (el propio Feijoo amplió el reto [en 1733](https://www.filosofia.org/bjf/bjft517.htm) a sus nuevas obras) del _Teatro crítico universal_ (TCU de aquí en adelante) con las _Memorias de Trévoux_ y el tomo del _Journal des Sçavans_ que Feijoo decía tener, y ver si encontramos pasajes copiados.
 
 En 1733 volvió a lanzar el reto, esta vez proponiendo que cuatro personas de Oviedo cotejasen los pasajes señalados con los 124 tomos de Trévoux que tenía:
 
@@ -55,12 +59,12 @@ En 1733 volvió a lanzar el reto, esta vez proponiendo que cuatro personas de Ov
 
 ## Contexto histórico
 
-Benito Jerónimo Feijoo nace en 1676 en Casdemiro, cerca de Ourense, primogénito de una familia acomodada de la nobleza media gallega. Entró pronto al monasterio benedictino de Samos, contradiciendo el camino natural del primer hijo (dentro del matrimonio;). Estudió y ejerció de profesor en Galicia, Salamanca y León, y llegó a San Vicente de Oviedo en 1709, donde permaneció el resto de su vida (pese a múltiples invitaciones de moverse ciudades más relevantes). Allí compaginó su estudio y docencia universitaria con su carrera eclesiástica hasta su muerte a los 87 años. Su velatorio y entierro [fueron multitudinarios](https://musarqourense.xunta.gal/sites/default/files/doc/peza_mes/pm_2025_04_esp_0.pdf). Su fama atrajo a numerosos visitantes y, muchos años después de su muerte, [seguían visitándose los lugares donde había residido](https://www.cervantesvirtual.com/portales/benito_jeronimo_feijoo/autor_biografia/).
+Benito Jerónimo Feijoo nace en 1676 en Casdemiro, cerca de Ourense, primogénito de una familia acomodada de la nobleza media gallega. Entró pronto al monasterio benedictino de Samos, contradiciendo el camino natural del primer hijo (dentro del matrimonio). Estudió y ejerció de profesor en Galicia, Salamanca y León, y llegó a San Vicente de Oviedo en 1709, donde permaneció el resto de su vida (pese a múltiples invitaciones a moverse a ciudades más relevantes). Allí compaginó su estudio y docencia universitaria con su carrera eclesiástica hasta su muerte a los 87 años. Su velatorio y entierro [fueron multitudinarios](https://musarqourense.xunta.gal/sites/default/files/doc/peza_mes/pm_2025_04_esp_0.pdf). Su fama atrajo a numerosos visitantes y, muchos años después de su muerte, [seguían visitándose los lugares donde había residido](https://www.cervantesvirtual.com/portales/benito_jeronimo_feijoo/autor_biografia/).
 
 ![Retrato de Feijoo grabado por Juan Bernabé Palomino](https://www.cervantesvirtual.com/images/portales/benito_jeronimo_feijoo/graf/retratos/01_benito_jeronimo_feijoo_s.jpg)
 [Fuente: Biblioteca Virtual Miguel de Cervantes. Palomino lo grabó a partir de un retrato realizado hacia 1733–1734.](https://www.cervantesvirtual.com/portales/benito_jeronimo_feijoo/imagenes_retratos/imagen/01_benito_jeronimo_feijoo/)
 
-Hay bastante información sobre su vida al ser una de las personas más célebres de su época. Escribió una breve autobiografía, a petición de un barón alemán, que junto con las honras fúnebres y testimonios como la [*Noticia de la vida de Feijoo* de Campomanes](https://www.filosofia.org/bjf/bjft1p1.htm), así como correspondecia y noticias, ayuda a que tengamos una buena idea de la vida que vivía[^7]. Aún así, gran parte de sus papeles se perdieron con la desamortización, y muchos de los que quedaban en el monasterio de Samos ardieron en un incendio en 1951.
+Hay bastante información sobre su vida al ser una de las personas más célebres de su época. Escribió una breve autobiografía, a petición de un barón alemán, que junto con las honras fúnebres y testimonios como la [*Noticia de la vida de Feijoo* de Campomanes](https://www.filosofia.org/bjf/bjft1p1.htm), así como correspondencia y noticias, ayuda a que tengamos una buena idea de la vida que vivía[^7]. Aun así, gran parte de sus papeles se perdieron con la desamortización, y muchos de los que quedaban en el monasterio de Samos ardieron en un incendio en 1951.
 
 Los monasterios y universidades formaban una red de transmisión de conocimiento inigualable en esos momentos, se prestaban libros entre sí y se ayudaban a conseguir novedades. Feijoo leía latín y francés. A menudo conocía las ideas inglesas o alemanas por su versión francesa. En esta época (finales del siglo XVII) comienza una suerte de ilustración española, médicos, matemáticos y filósofos (llamados [«novatores»](https://revistas.usal.es/uno/index.php/Studia_Historica/article/view/2729)) que instaban a atender a la observación y a los conocimientos llegados de Europa.[^3] Feijoo no fue de los primeros en discutir estas ideas, pero ayudó a llevarlas a un público mucho más amplio.
 
@@ -69,7 +73,7 @@ El primer tomo de TCU, su primer gran ensayo, se publica en 1726, con 49 años y
 ![Portadas de los tres primeros tomos del Teatro crítico universal](/data/feijoo-preview/blog/documents/web/05_portadas_tcu_I-III_triptico.jpg)
 [Primeras ediciones de la BNE: tomo I, 1726](https://bnedigital.bne.es/bd/es/viewer?id=7b281e29-5af2-4c38-8c17-ec969f487f44), [II, 1728](https://bnedigital.bne.es/bd/es/viewer?id=87a094e7-aa8b-4411-aa5e-2fb1081e571a) y [III, 1729](https://bnedigital.bne.es/bd/es/viewer?id=911fba8d-7ad3-4d7e-9332-a05cb636e5a9).
 
-La publicación de estos tomos venía en gran parte instada por sus superiores eclesiásticos, lo cual es especialmente relevante ya que los impresos necesitaban de aprobaciones y licencias, las cúales a su vez son útiles para reconstruir su carácter y estatus en esos momentos.[^censura]
+La publicación de estos tomos venía en gran parte instada por sus superiores eclesiásticos, lo cual es especialmente relevante ya que los impresos necesitaban de aprobaciones y licencias, las cuales a su vez son útiles para reconstruir su carácter y estatus en esos momentos.[^censura]
 
 <details markdown="1">
 <summary>aprobaciones y permisos del tomo I</summary>
@@ -94,7 +98,7 @@ Este año se celebró en Oviedo un [congreso por los tres siglos del primer tomo
 
 ### Polémica
 
-Viviendo en Oviedo, obtener novedades extranjeras era muy complicado. Uno contacto importante era [Martín Sarmiento](https://consellodacultura.gal/album-de-galicia/detalle.php?persoa=1331), tambien benedictino gallego que le proporcionaba materiales desde Madrid, corregía sus textos y defendía sus posiciones. Eran especialmente relvantes revistas como las [*Memorias de Trévoux*](https://catalogue.bnf.fr/ark%3A/12148/cb32813492j), que desde 1701 recogían reseñas y noticias de distintas materias.
+Viviendo en Oviedo, obtener novedades extranjeras era muy complicado. Un contacto importante era [Martín Sarmiento](https://consellodacultura.gal/album-de-galicia/detalle.php?persoa=1331), también benedictino gallego que le proporcionaba materiales desde Madrid, corregía sus textos y defendía sus posiciones. Eran especialmente relevantes revistas como las [*Memorias de Trévoux*](https://catalogue.bnf.fr/ark%3A/12148/cb32813492j), que desde 1701 recogían reseñas y noticias de distintas materias.
 
 Pocas semanas tras la publicación, ya circulaban escritos de distintos autores respondiendo a sus escritos, a los que varios de sus amigos salieron en defensa. Ya hay alguna acusación, pero no es [hasta 1728](https://www.filosofia.org/bjf/bjft1p1.htm) en la _Tertulia histórica y apologética_, un canónigo que asegura haber estudiado en París dice que el TCU es una traducción de varias obras francesas, sin muchos más detalles.
 
@@ -201,7 +205,7 @@ Todo este debate es bastante injusto con Feijoo, que [dejaba claro que leía y s
 - [*Montante christiano, y político, en pendencia Música-Médica-Diabólica*](https://digibuo.uniovi.es/dspace/bitstream/handle/10651/78468/1b-Ediciones-Feijoo-Obras-completas-t-I-Bibliografia-o.pdf?sequence=1)
 - [*Templador médico de la furia vulgar*](https://wellcomecollection.org/works/mupc5k65)
 
-Ojalá más posts se titularan de esta forma!
+¡Ojalá más posts se titularan de esta forma!
 
 ## Proceso
 
@@ -211,7 +215,7 @@ Hay una infinidad de coincidencias temáticas, pero para contar un pasaje tiene 
 
 ### Corpus
 
-La mayor parte de la dificultad vino en obtener los documentos con un buen OCR. El [Centro de Digitalización de Múnich (MDZ)](https://www.digitale-sammlungen.de/en/contact) amablemente me dió acceso a sus archivos, pero acabé rehaciendo el OCR de escaneos de Internet Archive.
+La mayor parte de la dificultad vino en obtener los documentos con un buen OCR. El [Centro de Digitalización de Múnich (MDZ)](https://www.digitale-sammlungen.de/en/contact) amablemente me dio acceso a sus archivos, pero acabé rehaciendo el OCR de escaneos de Internet Archive.
 
 <details markdown="1">
 <summary>Documentos descargados y OCR</summary>
@@ -236,13 +240,13 @@ La mayor parte de la dificultad vino en obtener los documentos con un buen OCR. 
 
 ### OCR
 
-La mayoría de los documentos tienen versiones en línea, pero suelen tener correciones de ediciones posteriores y cambios para hacer más legible, y para esto necesitamos la primera edición. La mayoría del procesamiento lo hice en [mi servidor](https://blog.m19182.dev/writings/Building-my-Homelab/) con una RTX 3090. El OCR corrió en la GPU y en la CPU para parelelizar durante unos tres días. Inicialmente calculaba que iba a necesitar más de una semana pero varias optimizaciones wpor el camino permitieron bajar el tiempo.
+La mayoría de los documentos tienen versiones en línea, pero suelen tener correcciones de ediciones posteriores y cambios para hacerlos más legibles, y para esto necesitamos la primera edición. La mayoría del procesamiento lo hice en [mi servidor](https://blog.m19182.dev/writings/Building-my-Homelab/) con una RTX 3090. El OCR corrió en la GPU y en la CPU para paralelizar durante unos tres días. Inicialmente calculaba que iba a necesitar más de una semana pero varias optimizaciones por el camino permitieron bajar el tiempo.
 
 Para rehacer el OCR usé [Kraken](https://dh-abstracts.library.virginia.edu/works/9912) para localizar las líneas de cada página y PP-OCRv6-medium para reconocer el texto. La [documentación de Kraken](https://kraken.re/main/index.html) explica las dos etapas.
 
-Era importante tener en cuenta las particularidades de las imprentas de la époce que mencioné antes. El texto de Internet Archive ya tenía OCR, pero con bastantes problems (s larga -> f, muchas palabras partidas...).
+Era importante tener en cuenta las particularidades de las imprentas de la época que mencioné antes. El texto de Internet Archive ya tenía OCR, pero con bastantes problemas (s larga -> f, muchas palabras partidas...).
 
-Hice un benchmark con unas páginas de cada año donde tenía transcripción de referencia para comparar.Los LLMs multimodales funcionaban todos muy mal (gpt6, moondreamV2, Gemini 3.8).
+Hice un benchmark con unas páginas de cada año donde tenía transcripción de referencia para comparar. Los LLMs multimodales funcionaban todos muy mal (gpt6, moondreamV2, Gemini 3.8).
 
 ![Error de caracteres de los motores OCR en la muestra de Trévoux](/data/feijoo-preview/blog/figures/fig7_ocr.png)
 
@@ -264,12 +268,12 @@ Hice un benchmark con unas páginas de cada año donde tenía transcripción de 
 
 Con los textos disponibles, hay que buscar pasajes copiados y verificarlos. El [trabajo de Hinderks, Ledins, Ginter y Tolonen sobre «translation mining»](https://doi.org/10.1080/01615440.2026.2675558) es muy cercano a esto. La idea es calcular embeddings de los fragmentos, que representan su contenido como vectores y permiten comparar textos en distintos idiomas. Dos frases que dicen algo parecido deberían estar cerca independientemente del idioma. Hay otros precedentes, como [Roe, Olsen y Morrissey](https://hal.science/hal-03740005), que buscaron traducciones de la *Cyclopaedia* en la *Encyclopédie* usando traducción automática y alineación de textos.
 
-Aplicar esto de forma naive da muchísimos falsos positivos. Feijoo y las revistas francesas hablaban constantemente de los mismos temas, citaban a los mismos autores y discutían las mismas obras. Probé varios modelos y el que mejor resultados daba con diferencia era [LaBSE](https://huggingface.co/sentence-transformers/LaBSE). Este modelo se [entrenó para específicamente para traducciones](https://aclanthology.org/2022.acl-long.62/). Valoré reentrenar con datos específicos de Feijoó, pero queda como posible trabajo futuro, no creo que valga la pena.
+Aplicar esto de forma naive da muchísimos falsos positivos. Feijoo y las revistas francesas hablaban constantemente de los mismos temas, citaban a los mismos autores y discutían las mismas obras. Probé varios modelos y el que mejor resultados daba con diferencia era [LaBSE](https://huggingface.co/sentence-transformers/LaBSE). Este modelo se [entrenó específicamente para traducciones](https://aclanthology.org/2022.acl-long.62/). Valoré reentrenar con datos específicos de Feijoo, pero queda como posible trabajo futuro, no creo que valga la pena.
 
 Una puntuación alta por sí sola decía poco, así que usé [margin scoring](https://aclanthology.org/P19-1309/). Comparaba la similitud de cada pareja con la que ambos fragmentos tenían con sus ocho alternativas más parecidas del otro idioma. Si se parecían mucho entre sí, pero también a muchos otros, la puntuación bajaba. Si esa pareja destacaba, subía. Aquí las alternativas podían estar en cualquier parte del corpus, no tenían que ser frases contiguas. Esto ayudaba a elegir qué coincidencias merecía la pena revisar.
 Comparé tanto frases como agrupaciones de frases. Me fijé en nombres propios y números, que suelen sobrevivir a una traducción para encontrar regiones de interés. Las citas en latín no fueron útiles ya que tendían a repetirse en muchos sitios.
 
-Para complementar esta búsqueda, también traduje automáticamente el texto de Feijoo al francés y comparé palabras poco frecuentes y su orden con Trévoux. El tipo de falsos positivos que encontraba eran distintos de embeddings, y encontró el caso de los planetas que detallo luego. Hubo que limpiar muchos duplicados, debido a que iba haciendo el análisis al mismo tiempo que procesaba los datos.
+Para complementar esta búsqueda, también traduje automáticamente el texto de Feijoo al francés y comparé palabras poco frecuentes y su orden con Trévoux. El tipo de falsos positivos que encontraba era distinto del de los embeddings, y encontró el caso de los planetas que detallo luego. Hubo que limpiar muchos duplicados, debido a que iba haciendo el análisis al mismo tiempo que procesaba los datos.
 
 Por último, para comprobar cómo de bien funcionaba este proceso, planté casos artificiales entre texto de Feijoo. En los ejemplos más difíciles, llegaba a recuperar 42 de 50, los que no eran sobre todo paráfrasis de la traducción automática. Es muy probable que existan varios casos que no llegué a detectar.
 
@@ -277,9 +281,9 @@ Por último, para comprobar cómo de bien funcionaba este proceso, planté casos
 
 Aquí quedó la mayor parte del trabajo. Los detectores sacaban muchos casos pero cada candidato era bastante abierto a la interpretación.
 
-Un primer agente leía los fragmentos y los clasificaba como traducción, paráfrasis cercana, dato compartido o ruido. Los casos más prometedores recibían una revisión adversarial, y cualquier discrepancia volvía al primer paso para reclasificar. Si pasaba este primer filtro, se comparaba de nuevo con las primeras ediciones y demás fuentes mencionadas. Trévoux era una revista de reseñas, el paralelo solía venir del libro que se comentaba, y quería indentificar esos casos cómo tal. Lo mismo con las traducciones ya identificadas, Mañer, Sarmiento, Soto Marne y la bibliografía posterior validaron muchos de los casos que encontré.
+Un primer agente leía los fragmentos y los clasificaba como traducción, paráfrasis cercana, dato compartido o ruido. Los casos más prometedores recibían una revisión adversarial, y cualquier discrepancia volvía al primer paso para reclasificar. Si pasaba este primer filtro, se comparaba de nuevo con las primeras ediciones y demás fuentes mencionadas. Trévoux era una revista de reseñas, el paralelo solía venir del libro que se comentaba, y quería identificar esos casos como tales. Lo mismo con las traducciones ya identificadas, Mañer, Sarmiento, Soto Marne y la bibliografía posterior validaron muchos de los casos que encontré.
 
-Finalmente, comprobé a mano todas las que pasaban el proceso entero, lo cúal llevo un buen tiempo, a cambio me llevo la capacidad de leer libros del siglo XVIII de forma relativamente fluída. La realidad es que cada caso es un mundo, y muy pocos de ellos tengo la certeza de que sean realmente copias, pero aprendí todo tipo de anécdotas históricas por el camino.
+Finalmente, comprobé a mano todas las que pasaban el proceso entero, lo cual llevó un buen tiempo, a cambio me llevo la capacidad de leer libros del siglo XVIII de forma relativamente fluida. La realidad es que cada caso es un mundo, y en muy pocos de ellos tengo la certeza de que sean realmente copias, pero aprendí todo tipo de anécdotas históricas por el camino.
 
 ![Pipeline completo: descarga, OCR, preparación de textos, dos vías de búsqueda, evaluación, revisión de fuentes y clasificación de los casos](/data/feijoo-preview/blog/figures/fig6_pipeline.png)
 
@@ -287,21 +291,21 @@ Finalmente, comprobé a mano todas las que pasaban el proceso entero, lo cúal l
 
 Al contrario de muchos de mis amigos, aún mantengo cierta reticencia a lanzar swarms de agentes contra una tarea con poca supervisión. La única razón es que, para mí, no funcionan igual de bien que llevándolos un poco de la mano.[^4] La tendencia es clara a que cada vez necesitan menor supervisión y son capaces de acometer tareas de mayor longitud, no me extrañaría que en unos meses este mismo blog lo pudiese replicar un prompt relativamente sencillo.
 
-Una de las cosas que encuentro es que se centran y malgastan ingentes cantidades de tiempo y tokens en detalles, que a la primera revisión humana dejan de tener sentido. Pero sin duda el mayor problema fue lidiar con la pérdida de contexto a lo largo del tiempo. La forma en que acabé funcionando era con una agente principal que orquestaba múltiples subagentes (comúnmente unos 10) que eran los que hacían el trabajo real (revisar casos prometedores, monitorizar las runs de OCR, revisar literatura...). Usé tanto Opus5.5 como GPT-6Astra (ambos medium effort), con anecdóticamente mejores resultados con Opus.
+Una de las cosas que encuentro es que se centran y malgastan ingentes cantidades de tiempo y tokens en detalles, que a la primera revisión humana dejan de tener sentido. Pero sin duda el mayor problema fue lidiar con la pérdida de contexto a lo largo del tiempo. La forma en que acabé funcionando era con un agente principal que orquestaba múltiples subagentes (comúnmente unos 10) que eran los que hacían el trabajo real (revisar casos prometedores, monitorizar las runs de OCR, revisar literatura...). Usé tanto Opus5.5 como GPT-6Astra (ambos medium effort), con anecdóticamente mejores resultados con Opus.
 
-El otro gran problema era la documentación, ya que la mayoría de los subagentes tenían una tarea definida y luego desaparecían, e intentaba evitar rellenar el contexto del los orquestadores con cosas no relevantes, documentaba casi todos los hechos relevantes en mds. Esto tuvo como consecuencia que tenía cientos de documentos, escritos en una prosa extremadamente incómoda de digerir, y gran parte de ellos con preguntas ya resueltas, hipótesis que ya probadas, datos que ya descubrimos como incorrectos...
+El otro gran problema era la documentación, ya que la mayoría de los subagentes tenían una tarea definida y luego desaparecían, e intentaba evitar rellenar el contexto de los orquestadores con cosas no relevantes, documentaba casi todos los hechos relevantes en mds. Esto tuvo como consecuencia que tenía cientos de documentos, escritos en una prosa extremadamente incómoda de digerir, y gran parte de ellos con preguntas ya resueltas, hipótesis ya probadas, datos que ya descubrimos como incorrectos...
 
 La solución fue una mezcla de agentes que se encargaban de revisar rutinariamente la documentación, y mucha más revisión manual de la que está de moda admitir. Me hacen falta manos para contar la de veces que un subagente saltaba con un "descubrimiento rompedor" que se hundía al más mínimo escrutinio. Los LLMs tienden a sobreestimar su trabajo y a infravalorar sus capacidades al mismo tiempo.
 
-Otra cosa a tener en cuenta en un set-up como este, es que va a sobreindexar sobre tus palabras de sobremanera, y es importante tenerlo en cuenta cada vez que hablas con el orquestador. Más de una ocasión comenzó a steerear a múltiples subagentes con instrucciones dirigidas a una tarea concreta. Al mismo tiempo, el tono que utilizas para hablar con el tiene un efecto enorme, el ejemplo más claro son los chats de Terence Tao, donde, sin hacer prompts realmente complejos, y con acceso a los mismos modelos que yo, consigue unos resultados increíbles.
+Otra cosa a tener en cuenta en un set-up como este, es que va a sobreindexar sobre tus palabras de sobremanera, y es importante tenerlo en cuenta cada vez que hablas con el orquestador. Más de una ocasión comenzó a steerear a múltiples subagentes con instrucciones dirigidas a una tarea concreta. Al mismo tiempo, el tono que utilizas para hablar con él tiene un efecto enorme, el ejemplo más claro son los chats de Terence Tao, donde, sin hacer prompts realmente complejos, y con acceso a los mismos modelos que yo, consigue unos resultados increíbles.
 
-Como casi todos los consejos en este campo, es complicado de probar, pero a mi sensación es que ayudó bastante, antes de proponer una nueva dirección de investigación o revisar una parte del trabajo, discutir primero la situación con un agente sin el mismo contexto. Lo mismo para todas las revisiones, a ciegas y con modelos diferentes.
+Como casi todos los consejos en este campo, es complicado de probar, pero mi sensación es que ayudó bastante, antes de proponer una nueva dirección de investigación o revisar una parte del trabajo, discutir primero la situación con un agente sin el mismo contexto. Lo mismo para todas las revisiones, a ciegas y con modelos diferentes.
 
-Fueron bastante inútiles para escribir este post, pero para corregir errores y proponer sitios donde la prosa es mejorable si que ayudaron bastante. A medida que escribía más, las sugerencias se fueron afinando bastante. Tener un corpus de texto tuyo es útil para mantener una voz parecida, sin embargo si que encuentro que en ocasiones, mi forma de escribir (incluso de hablar!) empieza a parecerse a como lo hacen los agentes. Esto ya lo había observado en compañeros anteriormente pero escribiendo aquí me encontré corrigiendome a mi mismo en varias ocasiones. Me preocupa que esto esté ocurriendo a gran escala.
+Fueron bastante inútiles para escribir este post, pero para corregir errores y proponer sitios donde la prosa es mejorable sí que ayudaron bastante. A medida que escribía más, las sugerencias se fueron afinando bastante. Tener un corpus de texto tuyo es útil para mantener una voz parecida, sin embargo sí que encuentro que en ocasiones, mi forma de escribir (¡incluso de hablar!) empieza a parecerse a como lo hacen los agentes. Esto ya lo había observado en compañeros anteriormente pero escribiendo aquí me encontré corrigiéndome a mí mismo en varias ocasiones. Me preocupa que esto esté ocurriendo a gran escala.
 
 ## Resultados
 
-Hasta ahora encontré unos 10 sitios donde estoy bastante seguro que resuelven el reto, con múltiple adicionales que probablemente cuenten pero no tengo la certeza.
+Hasta ahora encontré unos 10 sitios donde estoy bastante seguro de que resuelven el reto, con múltiples adicionales que probablemente cuenten pero no tengo la certeza.
 [Comprobaciones y criterios](/data/feijoo-evidence/checks.html).
 
 | Búsqueda | Candidatos juzgados | Estrictos (A) | Dependientes o cortos (B/C) | Traducciones citadas (D) |
@@ -331,7 +335,7 @@ Hasta ahora encontré unos 10 sitios donde estoy bastante seguro que resuelven e
 
 ### Copias de otros libros
 
-El reto solo mencionaba a Trévoux y el Journal, pero ya que tenía montado esto lo paso por otras fuentes francesas (la *Histoire* de la Académie des sciences, el *Dictionnaire* de Bayle, Moréri, la *Menagiana* y Fontenelle). Salen unos 17 pasajes, casi todos de Moréri. No es de extrañar, Feijoó tiene citadas estas obras en varios de sus escritos, pero estos son los sitios que no citó:
+El reto solo mencionaba a Trévoux y el Journal, pero ya que tenía montado esto lo paso por otras fuentes francesas (la *Histoire* de la Académie des sciences, el *Dictionnaire* de Bayle, Moréri, la *Menagiana* y Fontenelle). Salen unos 17 pasajes, casi todos de Moréri. No es de extrañar, Feijoo tiene citadas estas obras en varios de sus escritos, pero estos son los sitios que no citó:
 
 | Caso | Feijoo | Libro | Palabras sin citar | Qué lo delata |
 |---|---|---|---:|---|
@@ -500,7 +504,7 @@ Los errores que copia también desvelan qué ejemplar tenía. Por ejemplo, yo de
 
 Este caso lo había señalado Mañer en 1729. En las [*Paradojas físicas*](https://www.filosofia.org/bjf/bjft214.htm), Feijoo habla de las manchas del Sol, reuniendo historias y observaciones de manchas enormes. Este mismo tema aparece en un artículo de Antoine Parent en Trévoux 1716, doce años antes del segundo tomo de TCU.
 
-Cuando menciona a Virgilio, ambos escritos sitúan unos versos en el segundo libro de las *Geórgicas*, cuando realmente están en [el primero, versos 466–468](https://www.thelatinlibrary.com/vergil/geo1.shtml). Feijoo reorganiza parte de la explicación y corrige algún otro detalle, pero es uno de los ejemplos más claros de como probablemente iba trabajando sobre el texto francés adaptándolo a medida.
+Cuando menciona a Virgilio, ambos escritos sitúan unos versos en el segundo libro de las *Geórgicas*, cuando realmente están en [el primero, versos 466–468](https://www.thelatinlibrary.com/vergil/geo1.shtml). Feijoo reorganiza parte de la explicación y corrige algún otro detalle, pero es uno de los ejemplos más claros de cómo probablemente iba trabajando sobre el texto francés adaptándolo a medida.
 
 [Pasajes y fuentes del caso C001](/data/feijoo-evidence/cases/C001.html).
 
@@ -686,19 +690,19 @@ Abre un caso para comparar los recortes de las primeras ediciones.
 
 ## Conclusiones
 
-Este es el primer post que escribo en español, todos los anteriores fueron en inglés pero no tenía sentido aquí. Las traducciones de LLM mejoraron bastante, en su momento creé una [herramienta para traducir Latex](https://github.com/mateo19182/latex-translate) y los resultados (gpt-4o si no me equivoco) con mi TFG eran apenas pasables, con múltiples errores graves. Para este post, usé gemini flash 3.8 y fueron pocas las correcciones que tuve que hacer, aún así me da la sensación de que parte de la intencionalidad cambia.
+Este es el primer post que escribo en español, todos los anteriores fueron en inglés pero no tenía sentido aquí. Las traducciones de LLM mejoraron bastante, en su momento creé una [herramienta para traducir LaTeX](https://github.com/mateo19182/latex-translate) y los resultados (GPT-4o si no me equivoco) con mi TFG eran apenas pasables, con múltiples errores graves. Para este post, usé Gemini Flash 3.8 y fueron pocas las correcciones que tuve que hacer, aun así me da la sensación de que parte de la intencionalidad cambia.
 
-Nada de lo que hice aquí es técnicamente complejo o complicado. Mi mayor aspiración con esto es motivar a más gente a dedicar una parte de su tiempo y tokens a esto, si te interesa por favor contáctame:). No obstante, si me preocupa que si atosigamos a historiadores con slop de baja calidad, haya una respuesta de rechazo como ya ocurrió con las matemáticas. Durante el desarrollo de este trabajo, intenté ponerme en contacto con varias personas expertas del tema, la mayoría sin respuesta, y algunos interesados con los que mantengo contacto pero queda como un frente abierto, ya que quería sacar el post lo antes posible y los tiempos de respuesta eran demasiado elevados.
+Nada de lo que hice aquí es técnicamente complejo o complicado. Mi mayor aspiración con esto es motivar a más gente a dedicar una parte de su tiempo y tokens a esto, si te interesa por favor contáctame:). No obstante, sí me preocupa que si atosigamos a historiadores con slop de baja calidad, haya una respuesta de rechazo como ya ocurrió con las matemáticas. Durante el desarrollo de este trabajo, intenté ponerme en contacto con varias personas expertas del tema, la mayoría sin respuesta, y algunos interesados con los que mantengo contacto pero queda como un frente abierto, ya que quería sacar el post lo antes posible y los tiempos de respuesta eran demasiado elevados.
 
-Otro punto importante es que este trabajo depende de poder acceder a escaneos de los documentos relevantes. Queda muchísimo por digitalizar! Una [encuesta europea de 2017](https://pro.europeana.eu/files/Europeana_Professional/Projects/Project_list/Europeana_DSI-2/Deliverables/d4.4-report-on-enumerate-core-survey-4.pdf#page=28) estimaba que los archivos habían digitalizado un 10% de sus fondos, y las bibliotecas un 17%. Queda mucho por hacer y descubrir! Además, lo digitalizado tampoco es una muestra neutral de lo que se publicó. [Riddell y Bassett](https://arxiv.org/abs/2009.00513) estudiaron novelas de 1836 y 1838 de las islas británicas y encontraron diferencias en su disponibilidad digital según características como el género del autor y el formato de publicación.
+Otro punto importante es que este trabajo depende de poder acceder a escaneos de los documentos relevantes. ¡Queda muchísimo por digitalizar! Una [encuesta europea de 2017](https://pro.europeana.eu/files/Europeana_Professional/Projects/Project_list/Europeana_DSI-2/Deliverables/d4.4-report-on-enumerate-core-survey-4.pdf#page=28) estimaba que los archivos habían digitalizado un 10 % de sus fondos, y las bibliotecas un 17 %. ¡Queda mucho por hacer y descubrir! Además, lo digitalizado tampoco es una muestra neutral de lo que se publicó. [Riddell y Bassett](https://arxiv.org/abs/2009.00513) estudiaron novelas de 1836 y 1838 de las islas británicas y encontraron diferencias en su disponibilidad digital según características como el género del autor y el formato de publicación.
 
-Google Books hizo mucho por la digitalización. Los labs están en una carrera por conseguir más datos con incentivos muy fuertes. Proyectos como la [digitalización de fondos de la Biblioteca Pública de Boston](https://www.bpl.org/news/boston-public-library-expands-access-to-collections-through-ai-enhanced-digitization/), o el hecho de que Anthropic [comprase millones de libros, los escanease y desechase los originales](https://cases.justia.com/federal/district-courts/california/candce/3%3A2024cv05417/434709/231/0.pdf#page=4), dan una idea de adónde nos dirigimos. Como ya expuse en [cómo la IA puede ayudar a salvar el copyright](https://blog.m19182.dev/writings/How-AI-might-help-save-copyright/) hace 3 años, las leyes de propiedad intelectual necesitan una reforma urgente, la información merece ser libre y las consecuencias de segundo orden son enormes!
+Google Books hizo mucho por la digitalización. Los labs están en una carrera por conseguir más datos con incentivos muy fuertes. Proyectos como la [digitalización de fondos de la Biblioteca Pública de Boston](https://www.bpl.org/news/boston-public-library-expands-access-to-collections-through-ai-enhanced-digitization/), o el hecho de que Anthropic [comprase millones de libros, los escanease y desechase los originales](https://cases.justia.com/federal/district-courts/california/candce/3%3A2024cv05417/434709/231/0.pdf#page=4), dan una idea de adónde nos dirigimos. Como ya expuse en [cómo la IA puede ayudar a salvar el copyright](https://blog.m19182.dev/writings/How-AI-might-help-save-copyright/) hace 3 años, las leyes de propiedad intelectual necesitan una reforma urgente, ¡la información merece ser libre y las consecuencias de segundo orden son enormes!
 
 Esto es todo, aquí está [el código y archivos relevantes](https://github.com/mateo19182/feijoo), editaré el post si encuentro algo más relacionado con este reto. Gracias por leer.
 
 ---
 
-[^1]: La razón es una mezcla entre [Reality has a surprising amount of detail](https://johnsalvatier.org/blog/2017/reality-has-a-surprising-amount-of-detail) e infravalorar la fricción del mundo real. Que algo sea técnicamente posible no significa que todo el mundo vaya a hacerlo mañana. Llevo con un draft atascado sobre esto varios meses, háblame si te interesa el tema! También viene al caso [Del rigor en la ciencia, de Borges](https://ciudadseva.com/texto/del-rigor-en-la-ciencia/), donde un mapa termina ocupando tanto como el territorio que representa.
+[^1]: La razón es una mezcla entre [Reality has a surprising amount of detail](https://johnsalvatier.org/blog/2017/reality-has-a-surprising-amount-of-detail) e infravalorar la fricción del mundo real. Que algo sea técnicamente posible no significa que todo el mundo vaya a hacerlo mañana. Llevo con un draft atascado sobre esto varios meses, ¡háblame si te interesa el tema! También viene al caso [Del rigor en la ciencia, de Borges](https://ciudadseva.com/texto/del-rigor-en-la-ciencia/), donde un mapa termina ocupando tanto como el territorio que representa.
 
 [^2]: Por mucho que me joda, cada vez me cuesta más encontrar excepciones... En todos los ejemplos que se me ocurren, el diferenciador es una idea, un diseño de producto, un algoritmo o algo que rodea al software. Es posible que esto ya pasara antes de la IA y yo estuviese empanado.
 
