@@ -342,12 +342,14 @@ body {
 .toc a:hover { color: var(--dark); background: var(--highlight); }
 .toc a[aria-current="location"] { color: var(--dark); border-left-color: var(--secondary); background: var(--highlight); }
 .prose :is(h2, h3, h4) { scroll-margin-top: 6rem; }
-@media (min-width: 1520px) {
-  /* Extend only into the right margin; the article keeps its centered width. */
-  .with-toc .article-layout { display: grid; width: calc(100% + 280px); grid-template-columns: minmax(0, 1fr) 240px; gap: 40px; align-items: start; }
+@media (min-width: 1200px) {
+  .wrap.with-toc { max-width: 1232px; }
+  .with-toc .article-layout { display: grid; grid-template-columns: minmax(0, 1fr) 200px; gap: 32px; align-items: start; }
   .with-toc .article-toc { grid-column: 2; grid-row: 1; position: sticky; top: 5.5rem; max-height: calc(100dvh - 7rem); overflow-y: auto; scrollbar-width: thin; }
   .with-toc .prose { grid-column: 1; grid-row: 1; }
-  .with-toc .toc { border: 0; padding: 0; margin: 0; }
+  .with-toc .toc { border: 0; padding: 0; margin: 0; overflow-wrap: anywhere; }
+  .with-toc .toc .toc-h2 a { font-size: 0.8rem; }
+  .with-toc .toc .toc-h3 a { font-size: 0.74rem; padding-left: 1rem; }
   .with-toc .toc summary { list-style: none; cursor: default; pointer-events: none; }
   .with-toc .toc summary::-webkit-details-marker { display: none; }
 }
@@ -626,31 +628,4 @@ li.archive-hidden { display: none; }
   font-size: 0.82rem;
   line-height: 1.45;
   text-align: left;
-}
-/* Use the right margin for tables while keeping them clear of the sidebar. */
-@media (min-width: 1100px) {
-  .prose.feijoo-post table {
-    width: calc(100% + min(160px, (100vw - 960px) / 2 - 24px));
-    max-width: none;
-  }
-}
-@media (min-width: 1840px) {
-  .with-toc:has(.feijoo-post) .article-layout {
-    width: calc(100% + 440px);
-    grid-template-columns: minmax(0, 1fr) 240px;
-    gap: 200px;
-  }
-  .prose.feijoo-post table { width: calc(100% + 160px); }
-}
-
-@media (min-width: 1520px) and (max-width: 1839px) {
-  .with-toc:has(.feijoo-post) .article-layout { display: block; width: 100%; }
-  .with-toc:has(.feijoo-post) .article-toc { position: static; max-height: none; overflow: visible; }
-  .with-toc:has(.feijoo-post) .toc {
-    border: 1px solid var(--lightgray);
-    padding: 0.6rem 1rem;
-    margin-bottom: 2rem;
-  }
-  .with-toc:has(.feijoo-post) .toc summary { cursor: pointer; pointer-events: auto; list-style: revert; }
-  .with-toc:has(.feijoo-post) .toc summary::-webkit-details-marker { display: revert; }
 }
