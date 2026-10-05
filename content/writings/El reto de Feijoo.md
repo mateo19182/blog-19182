@@ -243,7 +243,7 @@ La mayor parte de la dificultad vino en obtener los documentos con un buen OCR. 
 
 La mayoría de los documentos tienen versiones en línea, pero suelen tener correcciones de ediciones posteriores y cambios para hacerlos más legibles, y para esto necesitamos la primera edición. La mayoría del procesamiento lo hice en [mi servidor](https://blog.m19182.dev/writings/Building-my-Homelab/) con una RTX 3090. El OCR corrió en la GPU y en la CPU para paralelizar durante unos tres días. Inicialmente calculaba que iba a necesitar más de una semana pero varias optimizaciones por el camino permitieron bajar el tiempo.
 
-Para rehacer el OCR usé [Kraken](https://dh-abstracts.library.virginia.edu/works/9912) para localizar las líneas de cada página y PP-OCRv6-medium para reconocer el texto. La [documentación de Kraken](https://kraken.re/main/index.html) explica las dos etapas.
+Para rehacer el OCR usé [Kraken](https://dh-abstracts.library.virginia.edu/works/9912), un modelo para textos históricos muy flexible, para localizar las líneas de cada página y PP-OCRv6-medium para reconocer el texto. La [documentación de Kraken](https://kraken.re/main/index.html) explica las dos etapas.
 
 Era importante tener en cuenta las particularidades de las imprentas de la época que mencioné antes. El texto de Internet Archive ya tenía OCR, pero con bastantes problemas (s larga -> f, muchas palabras partidas...).
 
@@ -306,7 +306,7 @@ Fueron bastante inútiles para escribir este post, pero para corregir errores y 
 
 ## Resultados
 
-Hasta ahora encontré unos 10 sitios donde estoy bastante seguro de que resuelven el reto, con múltiples adicionales que probablemente cuenten pero no tengo la certeza.
+Hasta ahora encontré unos 10 sitios donde estoy bastante seguro de que resuelven el reto, con múltiples adicionales que pueden contar según la interpretación de las normas.
 
 | Búsqueda | Candidatos juzgados | Estrictos (A) | Dependientes o cortos (B/C) | Traducciones citadas (D) |
 |---|---:|---:|---:|---:|
@@ -314,7 +314,7 @@ Hasta ahora encontré unos 10 sitios donde estoy bastante seguro de que resuelve
 | Ampliación de 1733: TCU IV–V frente a Trévoux hasta 1732 | 237 | 1 | 1 B + 2 C | 8 |
 
 <details markdown="1">
-<summary>Diez casos estrictos y dos fronterizos: pasajes, fuentes y prueba decisiva</summary>
+<summary>Tabla de casos</summary>
 
 | Caso | Feijoo | Trévoux | Palabras estrictas | Por qué cuenta; qué se sabía |
 |---|---|---|---:|---|
@@ -347,12 +347,12 @@ Este caso apareció por la otra vía de búsqueda, después de traducir el texto
 
 [Pasajes, libros originales y fuentes del caso C017](/data/feijoo-evidence/cases/C017.html).
 
-### Los documentos frente a frente
+### Comparación de documentos
 
-Estos son los recortes de las primeras ediciones. Las manchas solares y los anillos están a la vista; abre los demás casos para compararlos.
+Estos son los recortes de las primeras ediciones. Abre cada caso para compararlos.
 
-#### C001 · manchas solares
-
+<details class="feijoo-case">
+<summary>C001 · manchas solares</summary>
 <div class="feijoo-compare">
 <figure>
 <img src="/data/feijoo-results/C001_feijoo.jpg" alt="Recorte de Feijoo: manchas solares (C001)" loading="lazy" decoding="async">
@@ -363,6 +363,7 @@ Estos son los recortes de las primeras ediciones. Las manchas solares y los anil
 <figcaption><strong>Trévoux</strong> · febrero 1716, art. XXIV, p. 331 · <a href="https://www.digitale-sammlungen.de/view/bsb10539854?page=345" target="_blank" rel="noopener noreferrer">BSB</a> (NoC-NC 1.0)</figcaption>
 </figure>
 </div>
+</details>
 
 <details class="feijoo-case">
 <summary>C002 · hierro en plantas</summary>
@@ -448,8 +449,8 @@ Estos son los recortes de las primeras ediciones. Las manchas solares y los anil
 </div>
 </details>
 
-#### C017 · anillos planetarios
-
+<details class="feijoo-case">
+<summary>C017 · anillos planetarios</summary>
 <div class="feijoo-compare">
 <figure>
 <img src="/data/feijoo-results/C017_feijoo.jpg" alt="Recorte de Feijoo: anillos planetarios (C017)" loading="lazy" decoding="async">
@@ -460,6 +461,7 @@ Estos son los recortes de las primeras ediciones. Las manchas solares y los anil
 <figcaption><strong>Trévoux</strong> · feb. 1718, p. 334; feb. 1718, p. 336 · <a href="https://archive.org/details/memoirespourlhis1718unse/page/n342" target="_blank" rel="noopener noreferrer">Internet Archive 1</a>; <a href="https://archive.org/details/memoirespourlhis1718unse/page/n344" target="_blank" rel="noopener noreferrer">Internet Archive 2</a></figcaption>
 </figure>
 </div>
+</details>
 
 <details class="feijoo-case">
 <summary>C020 · mano de gigante</summary>
@@ -644,7 +646,7 @@ Los errores que copia también desvelan qué ejemplar tenía. Por ejemplo, yo de
 </details>
 
 <details markdown="1">
-<summary>Tabla casos de otros libros</summary>
+<summary>Tabla de casos</summary>
 
 | Caso | Feijoo | Libro | Sin citar | Solo de ese libro | Cita |
 |---|---|---|---:|---:|---|
