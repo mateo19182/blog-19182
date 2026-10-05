@@ -1,8 +1,10 @@
 ---
 title: El reto de Feijoo
 lang: es
-unlisted: true
-description: Borrador en curso sobre Feijoo, Trévoux y los retos de 1729 y 1733.
+date: 2026-10-05
+aliases:
+  - writings/El-reto-de-Feijoo-borrador
+description: OCR, búsqueda entre idiomas y revisión de fuentes para comprobar los retos de Feijoo de 1729 y 1733.
 ---
 
 ## TL;DR
@@ -27,11 +29,11 @@ Fundamos Tribosolutions.es en parte bajo esta tesis, y si algo me ha enseñado e
 
 Este post es para hablar de uno de estos arbitrajes, que ocupa gran parte de mi atención desde que leí [AI labs need to start funding historical research](https://resobscura.substack.com/p/ai-labs-need-to-start-funding-historical). En resumen, los modelos frontier actuales han llegado al punto en que pueden producir conocimiento histórico original por sí mismos, y la conclusión del autor del post es que los labs deberían financiar colaboraciones con historiadores y archivistas.
 
-Si miras por detrás de los incentivos (quien escribe esto es historiador de profesión), lo que a mí me queda es que estamos en un momento único donde cualquiera con el suficiente nivel de espabilado puede conseguir hacer descubrimientos novedosos, antes de que los labs utilicen parte de su capacidad para peinar todos los documentos digitalizados existentes y cerrar todos los cabos restantes.
+Si miras por detrás de los incentivos (quien escribe esto es historiador de profesión), lo que a mí me queda es que estamos en un momento único donde cualquiera con el suficiente nivel de espabilado puede conseguir hacer descubrimientos novedosos, antes de que los labs se pongan a cerrar todos los cabos restantes por un poco de promo.
 
 No soy el primero en pensar esto, está muy inspirado en el proyecto de [Daniel Bourdeau](https://dbourdeau.github.io/cyphersolver/index.html) (perdonadle el slop de web...) que está [descifrando mensajes de la Segunda Guerra Mundial](https://www.cryptocellar.org/bgac/the-mvueh-break.html) [más rápido de lo que los pueden comprobar](https://cryptiana.web.fc2.com/code/unsolved.htm), y [un nuevo testimonio presencial sobre el dodo](https://resobscura.substack.com/p/using-opus-55-to-discover-a-new-eyewitness) entre otros.
 
-De forma similar a lo que está pasando en las matemáticas, hay cierta incertidumbre a la hora de verificar que los descubrimientos son correctos y novedosos. Los primeros Erdős que solucionó la IA solían basarse en trabajo que no se había ligado al problema, más que en una nueva idea. Precisamente esta habilidad parece especialmente valiosa para el estudio de la historia, debido en gran parte a la gran cantidad de documentos digitalizados (y los muchos que faltan). Al igual que en el software, el cuello de botella se mueve a la verificación.
+De forma similar a lo que está pasando en las matemáticas, hay cierta incertidumbre a la hora de verificar que los descubrimientos son correctos y novedosos. Varios de los primeros problemas de Erdős que se dieron por resueltos con IA [ya tenían soluciones en la literatura que no se habían ligado al problema](https://github.com/teorth/erdosproblems/wiki/AI-contributions-to-Erd%C5%91s-problems), más que una nueva idea detrás. Precisamente esta habilidad parece especialmente valiosa para el estudio de la historia, debido en gran parte a la gran cantidad de documentos digitalizados (y los muchos que faltan). Al igual que en el software, el cuello de botella se mueve a la verificación.
 
 Para encontrar temas que explorar, busqué opciones relacionadas con Galicia / España y que sean razonablemente verificables por mi cuenta. Llegué a una lista de unos cuantos que me gustaría intentar afrontar cuanto antes. En este post presento los resultados del primero de ellos, al cual dediqué un par de decenas de horas mías y varios cientos de horas de agentes. Este es un post algo largo, ya que intento hablar de todas las cosas que me parecen interesantes. ¡Incentivo el uso del índice para saltarse todo lo que no te interese!
 
@@ -48,14 +50,10 @@ Si te llama la atención que la "s" parece una "f", se conoce como la S larga y 
 
 La idea original es comparar los tomos I–V (el propio Feijoo amplió el reto [en 1733](https://www.filosofia.org/bjf/bjft517.htm) a sus nuevas obras) del _Teatro crítico universal_ (TCU de aquí en adelante) con las _Memorias de Trévoux_ y el tomo del _Journal des Sçavans_ que Feijoo decía tener, y ver si encontramos pasajes copiados.
 
-En 1733 volvió a lanzar el reto, esta vez proponiendo que cuatro personas de Oviedo cotejasen los pasajes señalados con los 124 tomos de Trévoux que tenía:
-
 > «Solo me resta un recurso; y es el que propondré ahora. Desafío al Anónimo Autor de la Carta, (sea el que se fuere) y a todos los demás que quieran conspirar con él, para que en una o muchas hojas volantes den al público señalados los lugares de las Memorias de Trevoux, de donde pretenden que haya sacado yo lo mejor que he empleado para el fondo de mi Obra. En vista de las citas ofrezco exhibir las Memorias de Trevoux, (ciento y veinte y cuatro tomos son los que tengo) ante dos Caballeros de los principales de esta Ciudad, y dos Eclesiásticos de la primera distinción, que unos y otros entienden bien el Francés, los cuales, leídos con exactitud los lugares señalados, darán certificación pública, firmada de sus nombres, de que es falsa la acusación, y fingido el robo que me imputan.»
 
 ![Segundo reto de Feijoo, tomo V, primera edición de 1733, página 388, número 44](/data/feijoo-preview/blog/documents/web/06_segundo_reto_1733_p388.jpg)
-*TCU V, discurso XVII, n.º 44, p. 388. [Primera edición, Universidade de Santiago de Compostela](https://hdl.handle.net/10347/7540); [transcripción](https://www.filosofia.org/bjf/bjft517.htm). Ortografía modernizada; «propondré» sigue la edición de 1733.*
-
----
+*TCU V, discurso XVII, n.º 44, p. 388. [Primera edición, Universidade de Santiago de Compostela](https://hdl.handle.net/10347/7540); [transcripción](https://www.filosofia.org/bjf/bjft517.htm).
 
 ## Contexto histórico
 

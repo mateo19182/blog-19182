@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Copy the author's working draft into the public, unlisted blog preview.
+// Sync the author's working draft into the published Feijoo post.
 import { copyFile, cp, mkdir, readdir, readFile, writeFile } from "node:fs/promises"
 import path from "node:path"
 import { existsSync, statSync } from "node:fs"
@@ -7,13 +7,15 @@ import { fileURLToPath } from "node:url"
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..")
 const source = path.resolve(root, "../inv/feijoo/blog/post/draft.md")
-const dest = path.join(root, "content/writings/El reto de Feijoo (borrador).md")
+const dest = path.join(root, "content/writings/El reto de Feijoo.md")
 
 const header = `---
 title: El reto de Feijoo
 lang: es
-unlisted: true
-description: Borrador en curso sobre Feijoo, Trévoux y los retos de 1729 y 1733.
+date: 2026-10-05
+aliases:
+  - writings/El-reto-de-Feijoo-borrador
+description: OCR, búsqueda entre idiomas y revisión de fuentes para comprobar los retos de Feijoo de 1729 y 1733.
 ---
 
 `
