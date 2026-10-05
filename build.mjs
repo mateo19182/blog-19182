@@ -54,10 +54,6 @@ function stripToText(md) {
     .trim()
 }
 
-function readingTime(text) {
-  return Math.max(1, Math.round(text.split(/\s+/).length / 200))
-}
-
 function ogSubtitle(page) {
   if (page.isHome) return "Mateo's blog"
   if (page.isArticle && page.date) return page.date
@@ -90,13 +86,13 @@ async function loadAll() {
   const pages = []
   // top-level pages
   for (const f of await readdir(CONTENT)) {
-    if (!f.endsWith(".md") || f.endsWith(".es.md")) continue
+    if (!f.endsWith(".md") || /\.(es|en)\.md$/.test(f)) continue
     pages.push(await loadFile(path.join(CONTENT, f), f.replace(/\.md$/, ""), null))
   }
   // writings
   const wdir = path.join(CONTENT, "writings")
   for (const f of await readdir(wdir)) {
-    if (!f.endsWith(".md") || f.endsWith(".es.md")) continue
+    if (!f.endsWith(".md") || /\.(es|en)\.md$/.test(f)) continue
     pages.push(await loadFile(path.join(wdir, f), f.replace(/\.md$/, ""), "writings"))
   }
   return { pages, dataFiles }
@@ -119,10 +115,29 @@ async function loadFile(file, name, section) {
     tags: Array.isArray(data.tags) ? data.tags.filter(Boolean) : [],
     aliases: Array.isArray(data.aliases) ? data.aliases : data.aliases ? [data.aliases] : [],
     rawContent: content,
-    readingTime: readingTime(text),
     isArticle: section === "writings",
-    es: await loadTranslation(file.replace(/\.md$/, ".es.md"), data.title || name),
+    ...(await loadTranslations(file, name, data, content)),
   }
+}
+
+// The default slot is English and `es` is Spanish, whichever was written first.
+// An English-original page may have a sibling `foo.es.md`; a Spanish-original one
+// (`lang: es`) may have `foo.en.md`. `translated` names the slot that is a translation.
+async function loadTranslations(file, name, data, content) {
+  const title = data.title || name
+  if (data.lang === "es") {
+    const en = await loadTranslation(file.replace(/\.md$/, ".en.md"), title)
+    if (!en) return { es: null }
+    return {
+      en,
+      es: { title, rawContent: content, readingTime: readingTime(stripToText(content)) },
+      translated: "en",
+    }
+  }
+  const es = await loadTranslation(file.replace(/\.md$/, ".es.md"), title)
+  // The link list is regenerated weekly, so the Spanish page only translates the intro.
+  if (es && name === "link-archive") es.rawContent += "\n" + content.slice(content.indexOf("\n- ["))
+  return { es, translated: es ? "es" : null }
 }
 
 // Optional Spanish version of a page, written by hand as a sibling `foo.es.md`.
@@ -132,7 +147,6 @@ async function loadTranslation(file, fallbackTitle) {
   return {
     title: data.title || fallbackTitle,
     rawContent: content,
-    readingTime: readingTime(stripToText(content)),
   }
 }
 
@@ -217,11 +231,12 @@ async function build() {
 
   // render each content page
   for (const p of pages) {
-    let bodyHtml = md.render(p.rawContent, { imageCaptions: p.name === "El reto de Feijoo" })
+    const imageCaptions = p.name === "El reto de Feijoo"
+    let bodyHtml = md.render(p.en ? p.en.rawContent : p.rawContent, { imageCaptions })
     const toc = p.isArticle ? extractToc(bodyHtml) : []
     let es = null
     if (p.es) {
-      const html = md.render(p.es.rawContent, { docId: "es" })
+      const html = md.render(p.es.rawContent, { docId: "es", imageCaptions })
       es = { ...p.es, html, toc: p.isArticle ? extractToc(html) : [] }
     }
 

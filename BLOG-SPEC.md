@@ -133,7 +133,7 @@ dropped) on a new stack.
 
 - **Header (top bar):** page title · search · dark-mode toggle (mobile adds a spacer).
 - **beforeBody:** breadcrumbs (spacer `->`, current page hidden) · article title ·
-  content meta (date/reading time) · tag list · *[link-archive filter on that page only]*.
+  content meta (date) · tag list · *[link-archive filter on that page only]*.
 - **Left sidebar:** Recent Notes (limit 3) — **home page only**.
 - **Right sidebar:** table of contents (desktop only).
 - **Footer:** custom footer (§4.2), desktop only.
@@ -148,7 +148,7 @@ Search (full-text), tags pages, and folder listing pages are standard Quartz fea
 - GitHub-flavored markdown.
 - **LaTeX** via KaTeX.
 - Syntax highlighting (`github-light` / `github-dark`, no background box).
-- Table of contents, breadcrumbs, reading time, descriptions/excerpts.
+- Table of contents, breadcrumbs, descriptions/excerpts.
 - **Footnotes**: standard `[^n]` markers + `[^n]: …` definitions (`markdown-it-footnote`). Don't add a manual `---` or `## Footnotes` heading — the plugin emits its own `<hr class="footnotes-sep">` and list. `scripts/footnotes.js` adds hover-preview popovers on hover-capable screens; otherwise plain `:target`-highlighted bottom notes.
 - Link crawling with `shortest` markdown-link resolution.
 - Drafts removed from output (`RemoveDrafts`).
