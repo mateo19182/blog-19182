@@ -585,3 +585,14 @@ li.archive-hidden { display: none; }
 }
 .prose .post-tldr summary { cursor: pointer; font-family: var(--font-mono); font-size: 0.8rem; }
 .prose .post-tldr p { margin: 0.7rem 0 0.2rem; }
+
+/* Shorter reading lines for the Feijoo essay; evidence keeps the full width. */
+.prose.feijoo-post > :is(p, h2, h3, h4, ul, ol, blockquote, .post-tldr) {
+  max-width: 70ch;
+  margin-inline: auto;
+}
+.prose .post-tldr .post-tldr-label {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+}

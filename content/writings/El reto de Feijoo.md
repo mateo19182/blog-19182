@@ -7,12 +7,12 @@ aliases:
 description: OCR, búsqueda entre idiomas y revisión de fuentes para comprobar los retos de Feijoo de 1729 y 1733.
 ---
 
-<details class="post-tldr" markdown="1">
-<summary>TL;DR</summary>
+<div class="post-tldr" markdown="1">
+<p class="post-tldr-label">TL;DR</p>
 
-El padre Feijoo retó a sus lectores a encontrar líneas traducidas de revistas francesas en sus obras. Casi tres siglos después, encontré unos diez casos que cumplen sus condiciones.
+Feijoo retó a sus lectores a encontrar siquiera cuatro líneas traducidas de revistas francesas en sus libros. Casi tres siglos después, encontré diez casos que considero sólidos y dos fronterizos. Algunos préstamos ya eran conocidos; para seis de los diez casos sólidos no encontré una identificación anterior en la bibliografía consultada.
 
-</details>
+</div>
 
 ## Intro
 
