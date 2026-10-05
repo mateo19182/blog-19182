@@ -2,7 +2,7 @@
 ;(() => {
   const sidebar = document.querySelector('.article-toc')
   if (!sidebar) return
-  const wide = matchMedia('(min-width: 1280px)')
+  const wide = matchMedia('(min-width: 1520px)')
   const links = [...sidebar.querySelectorAll('.toc a')]
   const entries = links.map(link => ({
     link,

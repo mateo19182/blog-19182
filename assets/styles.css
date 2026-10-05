@@ -322,13 +322,17 @@ body {
 .toc ul { list-style: none; padding: 0; margin: 0.7rem 0 0; }
 .toc li { margin: 0; }
 .toc a { display: block; padding: 0.35rem 0.6rem; border-left: 2px solid var(--lightgray); color: var(--darkgray); text-decoration: none; }
-.toc .toc-h3 a { padding-left: 1.4rem; font-size: 0.8rem; }
+.toc .toc-h2 { margin-top: 0.8rem; }
+.toc .toc-h2:first-child { margin-top: 0; }
+.toc .toc-h2 a { color: var(--dark); font-size: 0.88rem; font-weight: 700; }
+.toc .toc-h3 a { padding-left: 1.5rem; font-size: 0.78rem; color: var(--darkgray); }
+.toc .toc-h3 + .toc-h3 a { padding-top: 0.25rem; padding-bottom: 0.25rem; }
 .toc a:hover { color: var(--dark); background: var(--highlight); }
-.toc a[aria-current="location"] { color: var(--dark); border-left-color: var(--secondary); background: var(--highlight); font-weight: 500; }
+.toc a[aria-current="location"] { color: var(--dark); border-left-color: var(--secondary); background: var(--highlight); }
 .prose :is(h2, h3, h4) { scroll-margin-top: 6rem; }
-@media (min-width: 1280px) {
-  .wrap.with-toc { max-width: 1260px; }
-  .with-toc .article-layout { display: grid; grid-template-columns: minmax(0, 920px) 240px; gap: 40px; align-items: start; }
+@media (min-width: 1520px) {
+  /* Extend only into the right margin; the article keeps its centered width. */
+  .with-toc .article-layout { display: grid; width: calc(100% + 280px); grid-template-columns: minmax(0, 1fr) 240px; gap: 40px; align-items: start; }
   .with-toc .article-toc { grid-column: 2; grid-row: 1; position: sticky; top: 5.5rem; max-height: calc(100dvh - 7rem); overflow-y: auto; scrollbar-width: thin; }
   .with-toc .prose { grid-column: 1; grid-row: 1; }
   .with-toc .toc { border: 0; padding: 0; margin: 0; }
@@ -548,3 +552,17 @@ li.archive-hidden { display: none; }
   .prose .feijoo-compare img { max-height: 420px; }
   .prose .feijoo-compare { padding: 0.75rem; gap: 0.85rem; }
 }
+
+/* Compact summary, separate from the article heading hierarchy. */
+.prose .post-tldr {
+  width: fit-content;
+  max-width: min(100%, 38rem);
+  margin: 0 0 1.5rem;
+  padding: 0.6rem 0.9rem;
+  border: 1px solid var(--lightgray);
+  border-radius: 8px;
+  background: var(--highlight);
+  font-size: 0.9rem;
+}
+.prose .post-tldr summary { cursor: pointer; font-family: var(--font-mono); font-size: 0.8rem; }
+.prose .post-tldr p { margin: 0.7rem 0 0.2rem; }
