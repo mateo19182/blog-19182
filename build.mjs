@@ -225,7 +225,7 @@ async function build() {
       es = { ...p.es, html, toc: p.isArticle ? extractToc(html) : [] }
     }
 
-    const ogPath = p.name === "El reto de Feijoo" ? "/static/og/feijoo-documentos.png" : p.isHome ? "/static/og/index.png" : `/static/og${p.url}.png`
+    const ogPath = p.name === "El reto de Feijoo" ? "/static/og/feijoo-documentos-sin-texto.png" : p.isHome ? "/static/og/index.png" : `/static/og${p.url}.png`
     const page = {
       ...p,
       html: bodyHtml,
