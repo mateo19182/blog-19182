@@ -42,7 +42,7 @@
       const delta = current - previous
       travel = Math.sign(delta) === Math.sign(travel) ? travel + delta : delta
       if (current < 80 || travel < -12) header.classList.remove("is-hidden")
-      else if (travel > 24 && !header.contains(document.activeElement)) header.classList.add("is-hidden")
+      else if (travel > 24) header.classList.add("is-hidden")
       previous = current
       queued = false
     })
