@@ -6,6 +6,21 @@ description: Una selección de cosas que he construido, investigado o ayudado a 
 <div class="project-list">
 
 <div class="project-card">
+  <div class="project-title"><a href="/writings/El-reto-de-Feijoo">El reto de Feijoo</a><span class="project-date">2026-10</span></div>
+  <div class="project-desc">En 1729 y 1733 Feijoo retó a sus lectores a encontrar siquiera cuatro líneas traducidas de revistas francesas en sus libros. Con OCR y búsqueda entre idiomas encontré diez casos sólidos y dos fronterizos; para seis no encontré una identificación anterior en la bibliografía. El <a href="/writings/El-reto-de-Feijoo">artículo</a> está en el blog; <a href="/data/feijoo-evidence/index.html">materiales</a> y <a href="https://github.com/mateo19182/feijoo">código y datos</a>.</div>
+</div>
+
+<div class="project-card">
+  <div class="project-title"><a href="https://flag.m19182.dev">◇ diseñador de banderas</a><span class="project-date">2026-10</span></div>
+  <div class="project-desc">Un instrumento en el navegador para diseñar banderas, hecho para el lanzamiento del disco de mi amigo <a href="https://soundcloud.com/alexoalexo">alexoalexo</a>. Capas, símbolos heráldicos, efectos conectados con cables y dos LFO para animar; exporta a SVG, PNG, WebM o un enlace para compartir. <a href="https://github.com/mateo19182/alexoflag">código</a>.</div>
+</div>
+
+<div class="project-card">
+  <div class="project-title"><a href="https://github.com/mateo19182/music-stack">music-stack</a><span class="project-date">2026-10</span></div>
+  <div class="project-desc">Mi montaje de música autoalojado. Una app de adquisición busca en Soulseek y yt-dlp, prepara copias etiquetadas con Beets, FFmpeg y Essentia y las retiene para revisión manual, con consejos de metadatos de un LLM, antes de pasar a Navidrome. Incluye herramientas MCP para que un agente busque y encole música desde Telegram, pero nunca la apruebe.</div>
+</div>
+
+<div class="project-card">
   <div class="project-title"><a href="https://github.com/Martinhdeez/trace-it">trace-it</a><span class="project-date">2026-09</span></div>
   <div class="project-desc">Ganador de <a href="https://hackspain.com/">HackSpain</a>, track de Maisa. Convierte procersos descriptos en leguage natural en pipelines automáticos, ingests documentos en cualquier formato, propone normal y fuentes de datos, compila a python determinista, backtesting... Built with a team of five.</div>
 </div>

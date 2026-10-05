@@ -6,6 +6,21 @@ description: A selection of things I've built, researched, or helped make.
 <div class="project-list">
 
 <div class="project-card">
+  <div class="project-title"><a href="/writings/El-reto-de-Feijoo">El reto de Feijoo</a><span class="project-date">2026-10</span></div>
+  <div class="project-desc">In 1729 and 1733 Feijoo dared his readers to find even four lines in his books translated from French journals. Using OCR and cross-language search, I found ten solid cases and two borderline ones, six of which I couldn't find identified in earlier scholarship. The <a href="/writings/El-reto-de-Feijoo">write-up</a> is on the blog (in Spanish); <a href="/data/feijoo-evidence/index.html">materials</a> and <a href="https://github.com/mateo19182/feijoo">code and data</a>.</div>
+</div>
+
+<div class="project-card">
+  <div class="project-title"><a href="https://flag.m19182.dev">◇ flag designer</a><span class="project-date">2026-10</span></div>
+  <div class="project-desc">A browser instrument for designing flags, made for the album release of my friend <a href="https://soundcloud.com/alexoalexo">alexoalexo</a>. Layers, heraldic symbols, patch-cable effects and two LFOs for animation; exports to SVG, PNG, WebM or a shareable link. <a href="https://github.com/mateo19182/alexoflag">code</a>.</div>
+</div>
+
+<div class="project-card">
+  <div class="project-title"><a href="https://github.com/mateo19182/music-stack">music-stack</a><span class="project-date">2026-10</span></div>
+  <div class="project-desc">My self-hosted music setup. An acquisition app searches Soulseek and yt-dlp, prepares tagged copies with Beets, FFmpeg and Essentia, and holds them for manual review, with LLM metadata advice, before they reach Navidrome. Includes MCP tools so an agent can search and queue music from Telegram, but never approve it.</div>
+</div>
+
+<div class="project-card">
   <div class="project-title"><a href="https://github.com/Martinhdeez/trace-it">trace-it</a><span class="project-date">2026-09</span></div>
   <div class="project-desc">Winner of <a href="https://hackspain.com/">HackSpain</a> Maisa track. Turns operating policy described in plain language into versioned, deterministic decision processes. Ingests documents in any format, propose the rules and data sources, compile them to tested Python, backtest against past cases before publishing... Built with a team of five.</div>
 </div>
