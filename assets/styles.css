@@ -308,19 +308,34 @@ body {
 .tag-index li { display: flex; align-items: center; gap: 0.3rem; }
 
 /* ---- table of contents ---- */
+.article-layout, .article-layout > .prose { min-width: 0; }
+.article-toc:empty { display: none; }
 .toc {
   border: 1px solid var(--lightgray);
   border-radius: 8px;
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1rem;
   margin-bottom: 2rem;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
+  line-height: 1.45;
 }
-.toc summary { cursor: pointer; color: var(--secondary); font-family: var(--font-mono); font-size: 0.82rem; }
-.toc ul { list-style: none; padding-left: 0; margin: 0.6rem 0 0.2rem; }
-.toc li { margin: 0.25rem 0; }
-.toc .toc-h3 { padding-left: 1rem; }
-.toc a { color: var(--darkgray); text-decoration: none; }
-.toc a:hover { color: var(--secondary); }
+.toc summary { cursor: pointer; color: var(--dark); font-family: var(--font-mono); font-size: 0.82rem; }
+.toc ul { list-style: none; padding: 0; margin: 0.7rem 0 0; }
+.toc li { margin: 0; }
+.toc a { display: block; padding: 0.35rem 0.6rem; border-left: 2px solid var(--lightgray); color: var(--darkgray); text-decoration: none; }
+.toc .toc-h3 a { padding-left: 1.4rem; font-size: 0.8rem; }
+.toc a:hover { color: var(--dark); background: var(--highlight); }
+.toc a[aria-current="location"] { color: var(--dark); border-left-color: var(--secondary); background: var(--highlight); font-weight: 500; }
+.prose :is(h2, h3, h4) { scroll-margin-top: 6rem; }
+@media (min-width: 1280px) {
+  .wrap.with-toc { max-width: 1260px; }
+  .with-toc .article-layout { display: grid; grid-template-columns: minmax(0, 920px) 240px; gap: 40px; align-items: start; }
+  .with-toc .article-toc { grid-column: 2; grid-row: 1; position: sticky; top: 5.5rem; max-height: calc(100dvh - 7rem); overflow-y: auto; scrollbar-width: thin; }
+  .with-toc .prose { grid-column: 1; grid-row: 1; }
+  .with-toc .toc { border: 0; padding: 0; margin: 0; }
+  .with-toc .toc summary { list-style: none; cursor: default; pointer-events: none; }
+  .with-toc .toc summary::-webkit-details-marker { display: none; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 
 /* ---- link archive filter ---- */
 .archive-filter {
