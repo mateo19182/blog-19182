@@ -217,7 +217,7 @@ async function build() {
 
   // render each content page
   for (const p of pages) {
-    let bodyHtml = md.render(p.rawContent)
+    let bodyHtml = md.render(p.rawContent, { imageCaptions: p.name === "El reto de Feijoo" })
     const toc = p.isArticle ? extractToc(bodyHtml) : []
     let es = null
     if (p.es) {

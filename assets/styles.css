@@ -596,3 +596,49 @@ li.archive-hidden { display: none; }
   font-family: var(--font-mono);
   font-size: 0.8rem;
 }
+
+/* Captions wrap to the image width, rather than the prose column. */
+.prose.feijoo-post .post-figure {
+  display: table;
+  width: fit-content;
+  max-width: 100%;
+  margin: 1.5rem auto;
+}
+.prose.feijoo-post .post-figure > img { margin: 0 auto; }
+.prose.feijoo-post .post-figure .scan-surface { margin: 0 auto; }
+.prose.feijoo-post .post-figure figcaption {
+  display: table-caption;
+  caption-side: bottom;
+  padding-top: 0.6rem;
+  color: var(--darkgray);
+  font-size: 0.82rem;
+  line-height: 1.45;
+  text-align: left;
+}
+/* Use the right margin for tables while keeping them clear of the sidebar. */
+@media (min-width: 1100px) {
+  .prose.feijoo-post table {
+    width: calc(100% + min(160px, (100vw - 960px) / 2 - 24px));
+    max-width: none;
+  }
+}
+@media (min-width: 1840px) {
+  .with-toc:has(.feijoo-post) .article-layout {
+    width: calc(100% + 440px);
+    grid-template-columns: minmax(0, 1fr) 240px;
+    gap: 200px;
+  }
+  .prose.feijoo-post table { width: calc(100% + 160px); }
+}
+
+@media (min-width: 1520px) and (max-width: 1839px) {
+  .with-toc:has(.feijoo-post) .article-layout { display: block; width: 100%; }
+  .with-toc:has(.feijoo-post) .article-toc { position: static; max-height: none; overflow: visible; }
+  .with-toc:has(.feijoo-post) .toc {
+    border: 1px solid var(--lightgray);
+    padding: 0.6rem 1rem;
+    margin-bottom: 2rem;
+  }
+  .with-toc:has(.feijoo-post) .toc summary { cursor: pointer; pointer-events: auto; list-style: revert; }
+  .with-toc:has(.feijoo-post) .toc summary::-webkit-details-marker { display: revert; }
+}
