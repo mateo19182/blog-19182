@@ -9,11 +9,11 @@ description: Borrador en curso sobre Feijoo, Trévoux y los retos de 1729 y 1733
 
 Estamos en un momento único en la historia, pero no por las razones obvias. Casi todo el mundo está enterado de la importancia de la IA, pero hay una serie de circunstancias que se dan desde principios de 2024 hasta dentro de no mucho tiempo que son especialmente únicas.
 
-Este período es lo más cerca que una persona de a pie va a estar a la frontera de los modelos, y la distancia se acrecentará con el tiempo. La culpa de esto es en gran parte de las scaling laws, agravado por labs cada día están más cerca de ser actores geopolíticos y la entrada de los riesgos existenciales de la IA en el discurso mainstream.
+Este período es lo más cerca que una persona de a pie va a estar a la frontera de los modelos, y la distancia se acrecentará con el tiempo. La culpa de esto es en gran parte de las [scaling laws](https://arxiv.org/abs/2001.08361), agravado el hecho de que los frontier labs son actores geopolíticos y la entrada de los riesgos existenciales de la IA en el discurso mainstream.
 
 Coincide a su vez con la transición social y económica que estas tecnologías van a provocar, sobre las cuales he cambiado mucho de opinión en los últimos años (leía bastante LessWrong en 2023, imagina). Esto da lugar a multitud de [arbitrajes](https://en.wikipedia.org/wiki/Arbitrage) que seguramente sobrevivan mucho más tiempo de lo que una persona técnica piense [^1].
 
-El más obvio de esos arbitrajes está en el desarrollo de software. Cualquiera tiene acceso a una herramienta que te hace un 50% más productivo, sin embargo, tus jefes esperan una cantidad de trabajo similar de ti! Esto lleva ocurriendo un buen tiempo, y aún a día de hoy sigue siendo posible aprovecharse de eso...
+El más obvio de esos arbitrajes está en el desarrollo de software. Cualquiera tiene acceso a herramientas que, bien usadas, pueden ahorrarte una parte enorme del trabajo[^productividad], sin embargo, tus jefes esperan una cantidad de trabajo similar de ti! Esto lleva ocurriendo un buen tiempo, y aún a día de hoy sigue siendo posible aprovecharse de eso...
 
 Fundamos Tribosolutions.es en parte bajo esta tesis, y si algo me ha enseñado es que el software no va a ser un moat válido por mucho tiempo[^2]. Como alguien que se considera técnico, y con cierto [rechazo hacia las ventas](https://blog.m19182.dev/writings/The-Case-Against-Marketing/), es una lección que me ha costado digerir.
 
@@ -62,14 +62,14 @@ Benito Jerónimo Feijoo nace en 1676 en Casdemiro, cerca de Ourense, primogénit
 
 Hay bastante información sobre su vida al ser una de las personas más célebres de su época. Escribió una breve autobiografía, a petición de un barón alemán, que junto con las honras fúnebres y testimonios como la [*Noticia de la vida de Feijoo* de Campomanes](https://www.filosofia.org/bjf/bjft1p1.htm), así como correspondecia y noticias, ayuda a que tengamos una buena idea de la vida que vivía[^7]. Aún así, gran parte de sus papeles se perdieron con la desamortización, y muchos de los que quedaban en el monasterio de Samos ardieron en un incendio en 1951.
 
-Los monasterios y universidades formaban una red de transmisión de conocimiento inigualable en esos momentos, se prestaban libros entre sí y se ayudaban a conseguir novedades. Feijoo leía latín y francés. A menudo conocía las ideas inglesas o alemanas por su versión francesa. En esta época (finales del siglo XVII) comienza una suerte de ilustración española, médicos, matemáticos y filósofos (llamados [«novatores»](https://www.cervantesvirtual.com/portales/benito_jeronimo_feijoo/autor_biografia/)) que instaban a atender a la observación y a los conocimientos llegados de Europa.[^3] Mientras que no fue de los primeros en discutir estas ideas "racionalistas", se le considera el líder intelectual dada su enorme influencia.
+Los monasterios y universidades formaban una red de transmisión de conocimiento inigualable en esos momentos, se prestaban libros entre sí y se ayudaban a conseguir novedades. Feijoo leía latín y francés. A menudo conocía las ideas inglesas o alemanas por su versión francesa. En esta época (finales del siglo XVII) comienza una suerte de ilustración española, médicos, matemáticos y filósofos (llamados [«novatores»](https://revistas.usal.es/uno/index.php/Studia_Historica/article/view/2729)) que instaban a atender a la observación y a los conocimientos llegados de Europa.[^3] Feijoo no fue de los primeros en discutir estas ideas, pero ayudó a llevarlas a un público mucho más amplio.
 
-El primer tomo de TCU, su primer gran ensayo, se publica en 1726, con 49 años y España con un cuarto de siglo de dinastía borbónica. El nombre del título engaña, no tiene nada que ver con el teatro, eran «discursos varios en todo género de materias, para desengaño de errores comunes». Medicina, astrología, música de iglesia, lenguas... uno de los más polémicos fue la [*Defensa de las mujeres*](https://www.filosofia.org/bjf/bjft116.htm).
+El primer tomo de TCU, su primer gran ensayo, se publica en 1726, con 49 años y España con un cuarto de siglo de dinastía borbónica. El nombre del título engaña, no tiene nada que ver con el teatro, eran «discursos varios en todo género de materias, para desengaño de errores comunes». Medicina, astrología, música de iglesia, lenguas... En [*Paralelo de las lenguas*](https://www.filosofia.org/bjf/bjft115.htm) defendía que el gallego y el portugués eran en realidad una misma lengua. Uno de los más polémicos fue la [*Defensa de las mujeres*](https://www.filosofia.org/bjf/bjft116.htm).
 
 ![Portadas de los tres primeros tomos del Teatro crítico universal](/data/feijoo-preview/blog/documents/web/05_portadas_tcu_I-III_triptico.jpg)
 [Primeras ediciones de la BNE: tomo I, 1726](https://bnedigital.bne.es/bd/es/viewer?id=7b281e29-5af2-4c38-8c17-ec969f487f44), [II, 1728](https://bnedigital.bne.es/bd/es/viewer?id=87a094e7-aa8b-4411-aa5e-2fb1081e571a) y [III, 1729](https://bnedigital.bne.es/bd/es/viewer?id=911fba8d-7ad3-4d7e-9332-a05cb636e5a9).
 
-La publicación de estos tomos venía en gran parte instada por sus superiores eclesiásticos, lo cual es especialmente relevante ya que los impresos necesitaban de aprobaciones y licencias, las cúales a su vez son útiles para reconstruir su carácter y estatus en esos momentos.
+La publicación de estos tomos venía en gran parte instada por sus superiores eclesiásticos, lo cual es especialmente relevante ya que los impresos necesitaban de aprobaciones y licencias, las cúales a su vez son útiles para reconstruir su carácter y estatus en esos momentos.[^censura]
 
 <details markdown="1">
 <summary>aprobaciones y permisos del tomo I</summary>
@@ -88,7 +88,9 @@ La suma de la licencia recoge la autorización del Consejo para imprimirlo confo
 
 </details>
 
-Hasta ocho tomos se publicaron entre 1726 y 1739. Una estimación cifra la difusión de su obra en unos 440 000 volúmenes.[^6] Probablemente mi descripción aquí se quede corta para dar a entender su importancia, debía ser el escritor español más reconocido dentro y fuera de España en el momento, y escribía en castellano, cuando este tipo de contenido solía estar en latín y sus ideas fueron extremadamente polémicas.
+Hasta ocho tomos se publicaron entre 1726 y 1739. Después continuó con las [*Cartas eruditas y curiosas*](https://www.filosofia.org/bjf/bjfc000.htm), publicadas en cinco tomos entre 1742 y 1760. Una estimación cifra la difusión de su obra en unos 440 000 volúmenes.[^6] Probablemente mi descripción aquí se quede corta para dar a entender su importancia, debía ser el escritor español más reconocido dentro y fuera de España en el momento, y escribía en castellano, cuando este tipo de contenido solía estar en latín y sus ideas fueron extremadamente polémicas.
+
+Este año se celebró en Oviedo un [congreso por los tres siglos del primer tomo](https://ifesxviii.uniovi.es/actividades/congresos).
 
 ### Polémica
 
@@ -188,7 +190,7 @@ Fuentes: [Caso González y Cerra Suárez, *Bibliografía feijoniana* (1981)](htt
 
 </details>
 
-Todo este debate es bastante injusto con Feijoó, era común no citar referencias, y en este contexto Feijoó ya citaba más que la mayoría, y siempre dejó muy claro que leía y se inspiraba de estos textos. Igualmente dejo algunos de mis títulos increíbles como:
+Todo este debate es bastante injusto con Feijoo, que [dejaba claro que leía y se inspiraba en estos textos](https://www.filosofia.org/bjf/bjft3p6.htm), aunque distinguía entre aprovechar un libro y traducirlo. Igualmente dejo algunos de mis títulos increíbles como:
 
 - [*Crítico y cortés castigo de pluma*](https://digibuo.uniovi.es/dspace/bitstream/handle/10651/78468/1b-Ediciones-Feijoo-Obras-completas-t-I-Bibliografia-o.pdf?sequence=1)
 - [*Justa repulsa de inicuas acusaciones*](https://www.filosofia.org/bjf/bjfvjr5.htm) (1749)
@@ -236,6 +238,8 @@ La mayor parte de la dificultad vino en obtener los documentos con un buen OCR. 
 
 La mayoría de los documentos tienen versiones en línea, pero suelen tener correciones de ediciones posteriores y cambios para hacer más legible, y para esto necesitamos la primera edición. La mayoría del procesamiento lo hice en [mi servidor](https://blog.m19182.dev/writings/Building-my-Homelab/) con una RTX 3090. El OCR corrió en la GPU y en la CPU para parelelizar durante unos tres días. Inicialmente calculaba que iba a necesitar más de una semana pero varias optimizaciones wpor el camino permitieron bajar el tiempo.
 
+Para rehacer el OCR usé [Kraken](https://dh-abstracts.library.virginia.edu/works/9912) para localizar las líneas de cada página y PP-OCRv6-medium para reconocer el texto. La [documentación de Kraken](https://kraken.re/main/index.html) explica las dos etapas.
+
 Era importante tener en cuenta las particularidades de las imprentas de la époce que mencioné antes. El texto de Internet Archive ya tenía OCR, pero con bastantes problems (s larga -> f, muchas palabras partidas...).
 
 Hice un benchmark con unas páginas de cada año donde tenía transcripción de referencia para comparar.Los LLMs multimodales funcionaban todos muy mal (gpt6, moondreamV2, Gemini 3.8).
@@ -262,7 +266,7 @@ Con los textos disponibles, hay que buscar pasajes copiados y verificarlos. El [
 
 Aplicar esto de forma naive da muchísimos falsos positivos. Feijoo y las revistas francesas hablaban constantemente de los mismos temas, citaban a los mismos autores y discutían las mismas obras. Probé varios modelos y el que mejor resultados daba con diferencia era [LaBSE](https://huggingface.co/sentence-transformers/LaBSE). Este modelo se [entrenó para específicamente para traducciones](https://aclanthology.org/2022.acl-long.62/). Valoré reentrenar con datos específicos de Feijoó, pero queda como posible trabajo futuro, no creo que valga la pena.
 
-Una puntuación alta por sí sola decía poco, y desarrollé una fórmula ad-hoc, que tenía en cuenta si estos casos se parecían en solo una frase en concreto o todo el texto alreadedor tambien era parecido. En caso de que muchas frases vecinas tambien se parecieran, la puntuación bajaba ya que es probable que estuviesen hablando del mismo tema.
+Una puntuación alta por sí sola decía poco, así que usé [margin scoring](https://aclanthology.org/P19-1309/). Comparaba la similitud de cada pareja con la que ambos fragmentos tenían con sus ocho alternativas más parecidas del otro idioma. Si se parecían mucho entre sí, pero también a muchos otros, la puntuación bajaba. Si esa pareja destacaba, subía. Aquí las alternativas podían estar en cualquier parte del corpus, no tenían que ser frases contiguas. Esto ayudaba a elegir qué coincidencias merecía la pena revisar.
 Comparé tanto frases como agrupaciones de frases. Me fijé en nombres propios y números, que suelen sobrevivir a una traducción para encontrar regiones de interés. Las citas en latín no fueron útiles ya que tendían a repetirse en muchos sitios.
 
 Para complementar esta búsqueda, también traduje automáticamente el texto de Feijoo al francés y comparé palabras poco frecuentes y su orden con Trévoux. El tipo de falsos positivos que encontraba eran distintos de embeddings, y encontró el caso de los planetas que detallo luego. Hubo que limpiar muchos duplicados, debido a que iba haciendo el análisis al mismo tiempo que procesaba los datos.
@@ -297,7 +301,7 @@ Fueron bastante inútiles para escribir este post, pero para corregir errores y 
 
 ## Resultados
 
-Hasta ahora encontré unos 10 sitios donde estoy bastante seguro que resuleven el reto, con múltiple adicionales que probablemente cuenten pero no tengo la certeza.
+Hasta ahora encontré unos 10 sitios donde estoy bastante seguro que resuelven el reto, con múltiple adicionales que probablemente cuenten pero no tengo la certeza.
 [Comprobaciones y criterios](/data/feijoo-evidence/checks.html).
 
 | Búsqueda | Candidatos juzgados | Estrictos (A) | Dependientes o cortos (B/C) | Traducciones citadas (D) |
@@ -496,13 +500,13 @@ Los errores que copia también desvelan qué ejemplar tenía. Por ejemplo, yo de
 
 Este caso lo había señalado Mañer en 1729. En las [*Paradojas físicas*](https://www.filosofia.org/bjf/bjft214.htm), Feijoo habla de las manchas del Sol, reuniendo historias y observaciones de manchas enormes. Este mismo tema aparece en un artículo de Antoine Parent en Trévoux 1716, doce años antes del segundo tomo de TCU.
 
-Cuando menciona a Virgilio, ambos escritos sitúan unos versos en el segundo libro de las *Geórgicas*, cuando realemnte están en [el primero, versos 466–468](https://www.thelatinlibrary.com/vergil/geo1.shtml). Feijoo reorganiza parte de la explicación y corrige algún otro detalle, pero es uno de los ejemplos más claros de como probablemente iba trabajando sobre el texto francés adaptándolo a medida.
+Cuando menciona a Virgilio, ambos escritos sitúan unos versos en el segundo libro de las *Geórgicas*, cuando realmente están en [el primero, versos 466–468](https://www.thelatinlibrary.com/vergil/geo1.shtml). Feijoo reorganiza parte de la explicación y corrige algún otro detalle, pero es uno de los ejemplos más claros de como probablemente iba trabajando sobre el texto francés adaptándolo a medida.
 
 [Pasajes y fuentes del caso C001](/data/feijoo-evidence/cases/C001.html).
 
 ### Un anillo para hacerse rico y leer pensamientos
 
-Este caso apareció por la otra vía de búsqueda, después de traducir el texto de Feijoo al francés. En [*Secretos de Naturaleza*](https://www.filosofia.org/bjf/bjft302.htm), Feijoo atribuye a Camilo Leonardo una lista de siete piedras, siete metales y sus planetas correspondientes. Después cuenta cómo fabricar un daría riquezas. La reseña de Trévoux de febrero de 1718 cuenta lo mismo, pero está hablando de tres autores. El primero es Camilo Leonardo; la lista de correspondencias viene del segundo, Pierre d'Arleu; el ejemplo del anillo, del tercero, Albinius. Feijoo se queda con el nombre que aparece al principio y le atribuye todo el bloque.
+Este caso apareció por la otra vía de búsqueda, después de traducir el texto de Feijoo al francés. En [*Secretos de Naturaleza*](https://www.filosofia.org/bjf/bjft302.htm), Feijoo atribuye a Camilo Leonardo una lista de siete piedras, siete metales y sus planetas correspondientes. Después cuenta cómo fabricar un anillo que daría riquezas. La reseña de Trévoux de febrero de 1718 cuenta lo mismo, pero está hablando de tres autores. El primero es Camilo Leonardo; la lista de correspondencias viene del segundo, Pierre d'Arleu; el ejemplo del anillo, del tercero, Albinius. Feijoo se queda con el nombre que aparece al principio y le atribuye todo el bloque.
 
 [Pasajes, libros originales y fuentes del caso C017](/data/feijoo-evidence/cases/C017.html).
 
@@ -671,11 +675,11 @@ Abre un caso para comparar los recortes de las primeras ediciones.
 <div class="feijoo-compare">
 <figure>
 <img src="/data/feijoo-results/D2-C007_feijoo.jpg" alt="Recorte de Feijoo: Behaim (reto de 1733) (D2-C007)" loading="lazy" decoding="async">
-<figcaption><strong>Feijoo</strong> · IV.8, §XXXIX, n. 85, p. 210 (concludes on p. 211) · <a href="https://hdl.handle.net/10347/7540" target="_blank" rel="noopener noreferrer">USC Minerva</a></figcaption>
+<figcaption><strong>Feijoo</strong> · IV.8, §XXXIX, n. 85, p. 210 (continúa en p. 211) · <a href="https://hdl.handle.net/10347/7540" target="_blank" rel="noopener noreferrer">USC Minerva</a></figcaption>
 </figure>
 <figure>
 <img src="/data/feijoo-results/D2-C007_trevoux.jpg" alt="Recorte de Trévoux: Behaim (reto de 1733) (D2-C007)" loading="lazy" decoding="async">
-<figcaption><strong>Trévoux</strong> · May 1716, art. LVI, pp. 849–850 · <a href="https://www.digitale-sammlungen.de/view/bsb10539855?page=315" target="_blank" rel="noopener noreferrer">BSB 1</a>; <a href="https://www.digitale-sammlungen.de/view/bsb10539855?page=316" target="_blank" rel="noopener noreferrer">BSB 2</a> (NoC-NC 1.0)</figcaption>
+<figcaption><strong>Trévoux</strong> · mayo 1716, art. LVI, pp. 849–850 · <a href="https://www.digitale-sammlungen.de/view/bsb10539855?page=315" target="_blank" rel="noopener noreferrer">BSB 1</a>; <a href="https://www.digitale-sammlungen.de/view/bsb10539855?page=316" target="_blank" rel="noopener noreferrer">BSB 2</a> (NoC-NC 1.0)</figcaption>
 </figure>
 </div>
 </details>
@@ -686,29 +690,27 @@ Este es el primer post que escribo en español, todos los anteriores fueron en i
 
 Nada de lo que hice aquí es técnicamente complejo o complicado. Mi mayor aspiración con esto es motivar a más gente a dedicar una parte de su tiempo y tokens a esto, si te interesa por favor contáctame:). No obstante, si me preocupa que si atosigamos a historiadores con slop de baja calidad, haya una respuesta de rechazo como ya ocurrió con las matemáticas. Durante el desarrollo de este trabajo, intenté ponerme en contacto con varias personas expertas del tema, la mayoría sin respuesta, y algunos interesados con los que mantengo contacto pero queda como un frente abierto, ya que quería sacar el post lo antes posible y los tiempos de respuesta eran demasiado elevados.
 
-Otro punto importante es que este trabajo depende de poder acceder a escaneos de los documentos relevantes. Queda muchísimo por digitalizar! Una [encuesta europea de 2017](https://pro.europeana.eu/files/Europeana_Professional/Projects/Project_list/Europeana_DSI-2/Deliverables/d4.4-report-on-enumerate-core-survey-4.pdf#page=28) estimaba que los archivos digitalizaran un 10% de sus fondos, y las bibliotecas un 17%. Queda mucho por hacer y descubrir!
+Otro punto importante es que este trabajo depende de poder acceder a escaneos de los documentos relevantes. Queda muchísimo por digitalizar! Una [encuesta europea de 2017](https://pro.europeana.eu/files/Europeana_Professional/Projects/Project_list/Europeana_DSI-2/Deliverables/d4.4-report-on-enumerate-core-survey-4.pdf#page=28) estimaba que los archivos habían digitalizado un 10% de sus fondos, y las bibliotecas un 17%. Queda mucho por hacer y descubrir! Además, lo digitalizado tampoco es una muestra neutral de lo que se publicó. [Riddell y Bassett](https://arxiv.org/abs/2009.00513) estudiaron novelas de 1836 y 1838 de las islas británicas y encontraron diferencias en su disponibilidad digital según características como el género del autor y el formato de publicación.
 
-Google Books hizo mucho por la digitalización. Los labs están en una carrera por conseguir más datos con incentivos muy fuertes, con proyectos como la [digitalización de fondos de la Biblioteca Pública de Boston](https://www.bpl.org/news/boston-public-library-expands-access-to-collections-through-ai-enhanced-digitization/), al mismo tiempo que Anthropic es condenado por [comprar millones de libros, escanearlos y deshechar los originales](https://cases.justia.com/federal/district-courts/california/candce/3%3A2024cv05417/434709/231/0.pdf#page=4), dan idea de a donde nos dirigimos. Como ya expuse en [cómo la IA puede ayudar a salvar el copyright](https://blog.m19182.dev/writings/How-AI-might-help-save-copyright/) hace 3 años, las leyes de propiedad intelectual necesitan una reforma urgente, la información merece ser libre y las consecuencias de segundo orden son enormes!
+Google Books hizo mucho por la digitalización. Los labs están en una carrera por conseguir más datos con incentivos muy fuertes. Proyectos como la [digitalización de fondos de la Biblioteca Pública de Boston](https://www.bpl.org/news/boston-public-library-expands-access-to-collections-through-ai-enhanced-digitization/), o el hecho de que Anthropic [comprase millones de libros, los escanease y desechase los originales](https://cases.justia.com/federal/district-courts/california/candce/3%3A2024cv05417/434709/231/0.pdf#page=4), dan una idea de adónde nos dirigimos. Como ya expuse en [cómo la IA puede ayudar a salvar el copyright](https://blog.m19182.dev/writings/How-AI-might-help-save-copyright/) hace 3 años, las leyes de propiedad intelectual necesitan una reforma urgente, la información merece ser libre y las consecuencias de segundo orden son enormes!
 
-Esto es todo, aquí está [el código y archivos relevantes](https://github.com/mateo19182/feijoo), editaré el post si encuentro algo más relaccionado con este reto. Gracias por leer.
+Esto es todo, aquí está [el código y archivos relevantes](https://github.com/mateo19182/feijoo), editaré el post si encuentro algo más relacionado con este reto. Gracias por leer.
 
 ---
 
-[^1]: la razón es una mezcla entre [Reality has a surprising amount of detail](https://johnsalvatier.org/blog/2017/reality-has-a-surprising-amount-of-detail) y infravalorar la fricción del mundo real. Llevo con un draft atascado sobre esto varios meses, háblame si te interesa el tema! el mapa no es el territorio, borges map guy thing
+[^1]: La razón es una mezcla entre [Reality has a surprising amount of detail](https://johnsalvatier.org/blog/2017/reality-has-a-surprising-amount-of-detail) e infravalorar la fricción del mundo real. Que algo sea técnicamente posible no significa que todo el mundo vaya a hacerlo mañana. Llevo con un draft atascado sobre esto varios meses, háblame si te interesa el tema! También viene al caso [Del rigor en la ciencia, de Borges](https://ciudadseva.com/texto/del-rigor-en-la-ciencia/), donde un mapa termina ocupando tanto como el territorio que representa.
 
-[^2]: por mucho que me joda, ni siquiera creo que haya excepciones... todos los ejemplos que se me ocurren no es el software en si mismo el diferenciador, si no una idea / diseño de producto / algoritmo... Es posible que esto ya pasara antes de la IA y yo estaba empanado.
+[^2]: Por mucho que me joda, cada vez me cuesta más encontrar excepciones... En todos los ejemplos que se me ocurren, el diferenciador es una idea, un diseño de producto, un algoritmo o algo que rodea al software. Es posible que esto ya pasara antes de la IA y yo estuviese empanado.
 
-[^3]: otros nombres relevantes incluyen a Martín Martínez o Tomás Vicente Tosca. Comenzaba a circular las ideas de Descartes, Newton, el atomismo, los nuevos métodos médicos...
+[^3]: Otros nombres relevantes incluyen a Martín Martínez o Tomás Vicente Tosca. La renovación ya estaba en marcha antes de Feijoo y de la llegada de los Borbones. Para situarla, [Antonio Mestre Sanchís, *Los novatores como etapa histórica*](https://revistas.usal.es/uno/index.php/Studia_Historica/article/view/2729).
 
-[^4]: (Por referencia, Opus5.5 salió hace una semana de cuando escribo esto, y para mi fue un salto notable en capacidades. No estoy seguro si podría replicar este experimento con Opus 5.)
+[^4]: Cuando hice este trabajo, Opus 5.5 acababa de salir y para mí fue un salto notable en capacidades. No estoy seguro de que pudiese replicar este experimento con Opus 5. Es una impresión de estas sesiones, no una comparación controlada entre modelos.
 
+[^6]: Es una estimación de difusión acumulada de su obra, atribuida a Rodríguez Cepeda de 2008 en la [biografía de Feijoo de Inmaculada Urzainqui](https://www.cervantesvirtual.com/portales/benito_jeronimo_feijoo/autor_biografia/). Habla de volúmenes, no de lectores ni de ejemplares vendidos de un solo título.
 
-[^6]: estimación de Rodríguez Cepeda (2008), citada en la [biografía de Feijoo de la Biblioteca Virtual Miguel de Cervantes](https://www.cervantesvirtual.com/portales/benito_jeronimo_feijoo/autor_biografia/).
-
-[^7]: desde su celda de San Vicente midió el calor de Oviedo con un termómetro en el balcón, vigiló el hielo que se formaba dentro de los cristales, experimentó con la conservación del tabaco y el chocolate y usaba un microscopio traído de Holanda. Convenció a la comunidad de que Bartolín, ayudante de cocina a quien intentaban exorcizar, sufría epilepsia. En la hambruna de 1741–42, como no podía salir de la clausura, tiraba por la ventana dinero envuelto en papeles a los pobres.
-
-    Fuente: Dongil 2017 (preprint [https://doi.org/10.5281/zenodo.8105802](https://doi.org/10.5281/zenodo.8105802), pp. 7–9), que remite a biografías anteriores (Otero Pedrayo, Canella); conviene verificar en ellas antes de citar.
+[^7]: Desde su celda medía el calor de Oviedo con un termómetro en el balcón, experimentaba con la conservación del tabaco y el chocolate y usaba un microscopio traído de Holanda. También defendió que un ayudante de cocina al que intentaban exorcizar sufría epilepsia. Lo cuenta Miguel Dongil y Sánchez en [*Vida del Padre Feijoo en la comunidad monástica de San Vicente de Oviedo*](https://doi.org/10.5281/zenodo.8105802), 2017, pp. 7–9 del preprint.
 
 
-El congreso del tricentenario (Oviedo, 24–25 de junio de 2026, unas 45 ponencias)
-- articulo cutre repetido al respecto: [https://www.vozpopuli.com/historia/padre-feijoo-300-anos-del-primer-fact-checker-de-espana.html](https://www.vozpopuli.com/historia/padre-feijoo-300-anos-del-primer-fact-checker-de-espana.html)
+[^productividad]: El efecto depende mucho de la tarea y de quién use la herramienta. En un estudio de principios de 2025, METR encontró que desarrolladores expertos tardaban un 19 % más con IA en tareas de sus propios proyectos. Su [actualización de febrero de 2026](https://metr.org/blog/2026-02-24-uplift-update/) explica las dificultades para medir el efecto con herramientas más recientes.
+
+[^censura]: No se libró siempre de la censura. En 1739 la Inquisición [ordenó tachar dos párrafos del tomo VIII](https://doi.org/10.3989/revliteratura.2022.02.025).
