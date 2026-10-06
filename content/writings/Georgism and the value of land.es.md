@@ -1,5 +1,6 @@
 ---
 title: El georgismo y el valor del suelo
+summary: "Por qué poseer suelo no es como poseer cosas, y qué arregla un impuesto sobre el valor del suelo."
 ---
 
 Este post es más bien un ejercicio, para intentar entender mejor la importancia del suelo en nuestra sociedad antes, ahora y en el futuro. Para ello voy a explorar la ideología del georgismo y me voy a permitir irme por las ramas en temas relacionados. No voy a hablar de temas que se alejen demasiado de eso, como si perseguir la máxima productividad es el camino a seguir o si esto se soluciona más fácilmente nacionalizando todos los recursos naturales.

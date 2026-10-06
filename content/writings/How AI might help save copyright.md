@@ -1,8 +1,9 @@
 ---
 title: How AI might help save copyright
+summary: "Why copyright works badly for creators, and how AI could force us to rethink it."
 date: 2023-09-22
-tags: 
-  - writing
+tags:
+  - ai
   - policy
 ---
 

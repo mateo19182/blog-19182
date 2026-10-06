@@ -1,5 +1,6 @@
 ---
 title: saca la cabeza del estanque
+summary: "Una pequeña charla sobre sintetizadores modulares me recordó que hay que arriesgarse y buscar gente afín."
 ---
 
 Quiero escribir este post para recordarme a mí mismo y a cualquiera que lo lea que hay que arriesgarse. Es el consejo más genérico que se da, sobre todo a la gente joven, pero es porque es verdad. El fin de semana pasado fui a una charla organizada por [modulartec](https://modulartec.gal/es/inicio_es/) sobre una pequeña empresa llamada [befaco](https://www.befaco.org/), la única empresa en España (que yo sepa) que hace módulos para sintetizadores modulares.

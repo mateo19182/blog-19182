@@ -1,9 +1,10 @@
 ---
 title: Mapping music's search space pt.1
+summary: "Trying to pin down a working definition of what counts as music."
 date: 2025-01-27
-tags: 
-  - writing
+tags:
   - music
+  - philosophy
 ---
 
 Where I attempt to find a way to determine what is or isn't music and explore some ways of mapping it. In this first part I will try to answer the first question.

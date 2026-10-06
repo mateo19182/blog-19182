@@ -1,8 +1,9 @@
 ---
 title: Arcus CTF Write-up
+summary: "My attempt at the Arcus CTF, a nanoGPT model trained on Pessoa that hides a flag."
 date: 2026-06-12
 tags:
-  - writing
+  - ai
   - computers
 ---
 Found out [via X](https://x.com/rodfernn/status/2061782265558966544) about this company, AugustaLabs.ai, that recently raised and created a CTF to find talent. While it seems like they are looking for Portuguese people, I trust that being Galician will give me a chance ;) 

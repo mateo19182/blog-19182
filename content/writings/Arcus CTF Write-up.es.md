@@ -1,5 +1,6 @@
 ---
 title: Write-up del Arcus CTF
+summary: "Mi intento con el Arcus CTF, un modelo nanoGPT entrenado con Pessoa que esconde una flag."
 ---
 Me enteré [por X](https://x.com/rodfernn/status/2061782265558966544) de esta empresa, AugustaLabs.ai, que acaba de levantar ronda y ha creado un CTF para buscar talento. Aunque parece que buscan gente portuguesa, confío en que ser gallego me dé alguna opción ;) 
 

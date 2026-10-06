@@ -1,9 +1,10 @@
 ---
 title: Mapping music's search space pt.2
+summary: "Mapping sounds by their features so that similar music ends up close together."
 date: 2025-03-31
-tags: 
-  - writing
+tags:
   - music
+  - ai
 ---
 
 In part [[Mapping music's search space pt.1]] I tried my best to formalize a definition of "music". In this second installment we will focus on the best way of representing this space, making it easier for humans to interpret and dissecting some of the tools we can use to do it.

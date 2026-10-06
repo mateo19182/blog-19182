@@ -1,5 +1,6 @@
 ---
 title: Las enfermedades mentales y el efecto bucle
+summary: "Si una mayor concienciación sobre las enfermedades mentales acaba produciendo más casos."
 ---
 
 Mi intención con este blog, entre otras, es obligarme a investigar mejor los temas que me interesan. Escribir las cosas con mis propias palabras demuestra un nivel de comprensión más profundo, y me ayuda a darle vueltas a las ideas durante un par de días para asentar mi opinión. Mi [post anterior sobre el georgismo](https://19182.bearblog.dev/georgism-and-the-value-of-land/) fue mi primer intento de verdad, y, aunque ahora controlo bien todos los conceptos importantes, mis explicaciones me parecieron flojas y demasiado enrevesadas comparadas con las de otros.

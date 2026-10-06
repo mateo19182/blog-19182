@@ -1,9 +1,11 @@
 ---
 title: On the growing importance of cogsec
+summary: "Why protecting your mind from manipulation will matter more as information keeps growing."
 date: 2024-10-23
-tags: 
- - writing
- - rambling
+tags:
+  - mind
+  - society
+  - ai
 ---
 
 > **Cogsec**: Cognitive security refers to the protection of cognitive processes from manipulation, misinformation, and other forms of psychological influence that can affect decision-making and perception.

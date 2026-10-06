@@ -1,5 +1,6 @@
 ---
 title: Lo que aprendí registrando mi tiempo durante 6 meses
+summary: "Notas de seis meses registrando cada hora de mi día."
 ---
 
 A principios de 2023 decidí registrar en qué usaba mi tiempo, hora a hora. Me inspiré en [este post de reddit](https://www.reddit.com/r/dataisbeautiful/comments/101hvnv/oc_i_tracked_every_hour_of_my_life_for_5_years/), que además me dio una [plantilla](https://docs.google.com/spreadsheets/d/1W79a98wLeuMjDbJuy0IYDeQYZSVaWjTUCPUpXj24MHs/edit#gid=0) muy útil.

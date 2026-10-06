@@ -1,5 +1,6 @@
 ---
 title: Montando mi homelab
+summary: "Elegir piezas y configurar Proxmox para mi primer servidor casero."
 ---
 
 

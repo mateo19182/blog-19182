@@ -1,5 +1,6 @@
 ---
 title: Feijoo's Challenge
+summary: "Using OCR and AI to find the French journal passages Feijoo dared readers to spot."
 ---
 
 <div class="post-tldr" markdown="1">

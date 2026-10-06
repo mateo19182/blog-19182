@@ -1,9 +1,10 @@
 ---
 title: On models
+summary: "Everyone has a model of how the world works, and this blog is where I lay out mine."
 date: 2023-09-25
-tags: 
-  - writing
-  - complex systems
+tags:
+  - philosophy
+  - systems
 ---
 
 For the longest time, I´ve been trying to understand other people's model of reality. A model is a representation of a system and we use them everywhere, in science, in computers, in politics, in economics... A model rarely correlates with reality but is often the best way we have to understand it. Some are simple and some are extremely complex, the latter one not necessarily being better. Take for example the ["Standard Model of particle physics"](https://en.wikipedia.org/wiki/Standard_Model), while it is a great model and allows us to make a lot of assumptions about the world that usually turn out to be true, no one has found a way to fit antimatter inside it. So, even though we know that the model is not perfect, it´s still really useful for most cases since it´s close to [the real way our system works](https://en.wikipedia.org/wiki/Theory_of_everything).

@@ -1,5 +1,6 @@
 ---
 title: La consciencia es difícil
+summary: "Una colección creciente de teorías y notas sobre el problema difícil de la consciencia."
 ---
 
 Esto es un trabajo en curso, la mayoría de las ideas no están bien desarrolladas y probablemente tendré que reordenarlo en algún momento para mantener algo parecido a una narrativa.

@@ -1,11 +1,11 @@
 ---
 
 title: Some ideas on (anti)memetics
+summary: "Notes on how ideas spread, and why some resist spreading, after reading Antimemetics."
 date: 2025-07-24
 tags:
-  - writing
-  - complex systems
-
+  - systems
+  - society
 ---
 
 

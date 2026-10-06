@@ -1,9 +1,10 @@
 ---
 title: Cybernetics
+summary: "An introduction to cybernetics, the study of feedback loops, and its history."
 date: 2024-01-22
-tags: 
-  - writing
-  - complex systems
+tags:
+  - systems
+  - history
 ---
 
 For some time now, there has been a page of Wikipedia that I keep finding myself in [Complex Systems](https://en.wikipedia.org/wiki/Complex_system). But complex systems is an enormous field, so, for this post, I will be talking about one "branch" of systems theory, Cybernetics.

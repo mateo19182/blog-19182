@@ -1,5 +1,6 @@
 ---
 title: Determinando la loss function de la humanidad
+summary: "Un intento de averiguar qué debería optimizar la humanidad en su conjunto."
 ---
 
 Una loss function (función de pérdida) es un método para evaluar lo bien que un algoritmo de machine learning modela los datos que se le dan. Se usa en el contexto de la optimización matemática y la teoría de la decisión, y hace poco se convirtió en un concepto ampliamente conocido gracias a la llegada de la IA. Una forma intuitiva de entenderla es que es el término que intentamos minimizar en un problema de optimización.

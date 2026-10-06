@@ -1,8 +1,8 @@
 ---
 title: Favourite music of 2025
+summary: "My favourite albums, EPs and live shows of 2025."
 date: 2025-12-06
-tags: 
-  - writing
+tags:
   - music
 ---
 

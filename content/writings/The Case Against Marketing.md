@@ -1,9 +1,10 @@
 ---
 title: The Case Against Marketing
+summary: "Why I think marketing costs society more than it gives back."
 date: 2024-05-04
-tags: 
-  - writing
-  - policy
+tags:
+  - economics
+  - society
 ---
 
 ---

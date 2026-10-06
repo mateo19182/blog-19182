@@ -16,6 +16,10 @@ date: 2026-10-05
 aliases:
   - writings/El-reto-de-Feijoo-borrador
 description: OCR, búsqueda entre idiomas y revisión de fuentes para comprobar los retos de Feijoo de 1729 y 1733.
+summary: "Con OCR e IA, busco los pasajes de revistas francesas que Feijoo retó a sus lectores a encontrar."
+tags:
+  - history
+  - ai
 ---
 
 `

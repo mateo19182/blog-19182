@@ -1,8 +1,8 @@
 ---
 title: Favourite music of 2023
+summary: "My favourite albums and EPs released in 2023."
 date: 2023-11-16
-tags: 
-  - writing
+tags:
   - music
 ---
 

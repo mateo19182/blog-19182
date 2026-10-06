@@ -1,5 +1,6 @@
 ---
 title: Sobre la creciente importancia de la cogsec
+summary: "Por qué proteger tu mente de la manipulación importará cada vez más con el aumento de información."
 ---
 
 > **Cogsec**: La seguridad cognitiva se refiere a la protección de los procesos cognitivos frente a la manipulación, la desinformación y otras formas de influencia psicológica que pueden afectar a la toma de decisiones y a la percepción.

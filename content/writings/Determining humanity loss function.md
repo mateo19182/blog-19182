@@ -1,9 +1,10 @@
 ---
 title: Determining humanity loss function
+summary: "An attempt to work out what humanity as a whole should be optimizing for."
 date: 2023-12-20
-tags: 
-  - writing
-  - complex systems
+tags:
+  - philosophy
+  - systems
 ---
 
 A loss function is a method of evaluating how well a machine learning algorithm models the given data. It is used in the context of mathematical optimization and decision theory and recently became a widely known concept thanks to the advent of AI. An intuitive way of understanding is that it is the term that we are trying to minimize in an optimization problem.

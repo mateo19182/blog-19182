@@ -43,6 +43,15 @@ npm run serve        # build + serve at http://localhost:8080
   `npm run sync:feijoo`. The command copies referenced images, PDFs and text files to `/data/`,
   keeps repository-only Markdown links as plain labels, and leaves the source untouched. Run `npm run build`
   after syncing, or `npm run preview:feijoo` to sync and serve locally.
+- Writings frontmatter: `title`, `date`, `tags` (topical, 1–3 per post), and a
+  one-line `summary` shown under the title in the writings list (also the fallback
+  meta/RSS description). A translation file may carry its own `summary`.
+- Rename a writing's file and list the old URL under `aliases:` (e.g.
+  `writings/Old-Slug`); the build emits a redirect page there.
+- Projects live in `content/projects.yml` (`title`, `title_es`, `url`, `date`,
+  `desc`, `desc_es` as inline Markdown, `hidden: true` to keep an entry off the page).
+  `projects.md` / `projects.es.md` only hold the page frontmatter.
+- `flag/` is copied verbatim to `/flag/`.
 - Footer sand-garden easter egg (fill the canvas to win).
 - Self-hosted Umami analytics.
 

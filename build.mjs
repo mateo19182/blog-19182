@@ -11,7 +11,7 @@ import matter from "gray-matter"
 import { makeRenderer, initHighlighter, linkKey } from "./lib/markdown.mjs"
 import {
   renderPage, writingsIndexHtml, tagsIndexHtml,
-  tagPageHtml, tagSlug, SITE, esc, t,
+  tagPageHtml, tagSlug, SITE, esc, t, projectListHtml, projectListMd,
 } from "./lib/templates.mjs"
 import { makeOgImage } from "./lib/og.mjs"
 import { buildRss, buildSitemap } from "./lib/feeds.mjs"
@@ -111,7 +111,8 @@ async function loadFile(file, name, section) {
     lang: data.lang === "es" ? "es" : "en",
     unlisted: data.unlisted === true,
     date: normalizeDate(data.date),
-    description: data.description || text.slice(0, 160).trim(),
+    summary: data.summary || "",
+    description: data.description || data.summary || text.slice(0, 160).trim(),
     tags: Array.isArray(data.tags) ? data.tags.filter(Boolean) : [],
     aliases: Array.isArray(data.aliases) ? data.aliases : data.aliases ? [data.aliases] : [],
     rawContent: content,
@@ -130,7 +131,7 @@ async function loadTranslations(file, name, data, content) {
     if (!en) return { es: null }
     return {
       en,
-      es: { title, rawContent: content },
+      es: { title, summary: data.summary || "", rawContent: content },
       translated: "en",
     }
   }
@@ -146,8 +147,17 @@ async function loadTranslation(file, fallbackTitle) {
   const { data, content } = matter(await readFile(file, "utf8"))
   return {
     title: data.title || fallbackTitle,
+    summary: data.summary || "",
     rawContent: content,
   }
+}
+
+// Project cards live in content/projects.yml; `hidden: true` entries are kept but not shown.
+async function loadProjects() {
+  const file = path.join(CONTENT, "projects.yml")
+  if (!existsSync(file)) return []
+  const list = matter.engines.yaml.parse(await readFile(file, "utf8")) || []
+  return list.filter((p) => !p.hidden)
 }
 
 // ---- resolver for wikilinks -------------------------------------------------
@@ -211,6 +221,7 @@ async function build() {
   const { pages, dataFiles } = await loadAll()
   const resolve = makeResolver(pages, dataFiles)
   const md = makeRenderer(resolve)
+  const projects = await loadProjects()
 
   const posts = pages
     .filter((p) => p.isArticle && !p.unlisted)
@@ -220,7 +231,6 @@ async function build() {
   const tagMap = new Map()
   for (const p of posts) {
     for (const t of p.tags) {
-      if (t === "writing") continue
       if (!tagMap.has(t)) tagMap.set(t, [])
       tagMap.get(t).push(p)
     }
@@ -240,6 +250,12 @@ async function build() {
       es = { ...p.es, html, toc: p.isArticle ? extractToc(html) : [] }
     }
 
+    if (p.name === "projects") {
+      const inline = (s) => md.renderInline(s)
+      bodyHtml += projectListHtml(projects, inline)
+      if (es) es.html += projectListHtml(projects, inline, "es")
+    }
+
     const ogPath = p.name === "El reto de Feijoo" ? "/static/og/feijoo-documentos-sin-texto.png" : p.isHome ? "/static/og/index.png" : `/static/og${p.url}.png`
     const page = {
       ...p,
@@ -250,7 +266,7 @@ async function build() {
       showFilter: p.name === "link-archive",
     }
     await emit(p.url, renderPage(page))
-    await emitMd(p.url, p.title, p.rawContent)
+    await emitMd(p.url, p.title, p.name === "projects" ? p.rawContent + "\n" + projectListMd(projects) : p.rawContent)
     if (!p.unlisted) sitemapUrls.push({ url: p.url, date: p.date })
     ogJobs.push({
       path: ogPath,
@@ -261,7 +277,7 @@ async function build() {
 
   // writings index
   {
-    const html = `<p>${t("Essays and notes", "Ensayos y notas")}</p>` + writingsIndexHtml(posts)
+    const html = `<p>${t("Essays and notes.", "Ensayos y notas.")} ${t("Follow new ones via", "Puedes seguirlos por")} <a href="/index.xml">RSS</a>.</p>` + writingsIndexHtml(posts)
     await emit("/writings", renderPage({
       title: "Writings", url: "/writings", section: null, html, es: { title: "Escritos" },
       ogImage: "/static/og/writings.png", description: "Essays and notes by Mateo.",
@@ -305,6 +321,11 @@ async function build() {
       const aslug = String(a).replace(/^\/+/, "")
       await emit(`/${aslug}`, redirectHtml(p.url))
     }
+  }
+
+  // retired tags
+  for (const [from, to] of [["writing", "/writings"], ["complex-systems", "/tags/systems"], ["rambling", "/tags/personal"]]) {
+    await emit(`/tags/${from}`, redirectHtml(to))
   }
 
   // OG images

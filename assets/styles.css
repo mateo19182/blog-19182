@@ -295,21 +295,21 @@ body {
 
 /* ---- entry lists ---- */
 .entry-list { list-style: none; padding: 0; }
-.entry-list li {
+.entry-list li { padding: 0.45rem 0; border-bottom: 1px solid var(--lightgray); }
+.entry-row {
   display: flex;
   align-items: baseline;
   gap: 0.6rem;
-  padding: 0.45rem 0;
-  border-bottom: 1px solid var(--lightgray);
   flex-wrap: nowrap;
 }
+.entry-list .entry-summary { margin: 0.15rem 0 0; color: var(--darkgray); font-size: 0.88rem; line-height: 1.45; }
 /* title takes the left, shrinking with an ellipsis instead of wrapping to a 2nd line */
-.entry-list li a:first-child {
+.entry-row a:first-child {
   font-weight: 500; color: var(--dark); text-decoration: none;
   min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
-.entry-list li a:first-child:hover { color: var(--secondary); }
-.entry-list li .tag { flex-shrink: 0; }
+.entry-row a:first-child:hover { color: var(--secondary); }
+.entry-row .tag { flex-shrink: 0; }
 /* date is always the last item, pinned to the far right, never wraps/shrinks */
 .entry-date {
   color: var(--gray); font-size: 0.82rem; font-family: var(--font-mono);
@@ -545,11 +545,11 @@ li.archive-hidden { display: none; }
   #sand-canvas { display: none; }
   .sand-details { display: none; }
   /* show full titles instead of truncating them on narrow screens */
-  .entry-list li a:first-child {
+  .entry-row a:first-child {
     flex: 1; white-space: normal; overflow: visible; text-overflow: clip;
   }
   /* hide tags on mobile so titles can wrap without overlap */
-  .entry-list li .tag { display: none; }
+  .entry-row .tag { display: none; }
 }
 
 /* hide sand garden on coarse pointers / small screens (desktop-only easter egg) */

@@ -1,5 +1,6 @@
 ---
 title: Mapeando el espacio de búsqueda de la música pt.2
+summary: "Mapear sonidos según sus características para que la música parecida quede cerca."
 ---
 
 En la parte [[Mapping music's search space pt.1]] intenté lo mejor que pude formalizar una definición de "música". En esta segunda entrega nos centraremos en la mejor forma de representar este espacio, haciéndolo más fácil de interpretar para los humanos y diseccionando algunas de las herramientas que podemos usar para ello.

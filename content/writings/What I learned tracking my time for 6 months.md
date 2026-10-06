@@ -1,8 +1,10 @@
 ---
-title: What I learned traking my time for 6 months
+title: What I learned tracking my time for 6 months
+summary: "Notes from six months of logging every hour of my day."
+aliases:
+  - writings/What-I-learned-traking-my-time-for-6-months
 date: 2023-08-14
-tags: 
-  - writing
+tags:
   - personal
 ---
 

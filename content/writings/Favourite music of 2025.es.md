@@ -1,5 +1,6 @@
 ---
 title: Música favorita de 2025
+summary: "Mis álbumes, EPs y conciertos favoritos de 2025."
 ---
 
 Un año más, voy a recopilar mis álbumes y EPs favoritos que han salido este año. También he añadido una sección nueva con los conciertos que vi. Están ordenados más o menos de más a menos disfrute.

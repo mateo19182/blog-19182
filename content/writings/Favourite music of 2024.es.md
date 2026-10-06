@@ -1,5 +1,6 @@
 ---
 title: Música favorita de 2024
+summary: "Mis álbumes y EPs favoritos de 2024, con algunas notas y reseñas."
 ---
 
 Un año más, voy a recopilar mis álbumes y EPs favoritos publicados este año. Los proyectos están ordenados más o menos de más a menos disfrutados. [Aquí está la lista de 2022](/data/2022.jpeg) y [[Favourite music of 2023]].

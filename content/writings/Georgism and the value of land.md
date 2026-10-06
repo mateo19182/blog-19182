@@ -1,8 +1,9 @@
 ---
 title: Georgism and the value of land
+summary: "Why owning land is different from owning things, and what a land value tax fixes."
 date: 2023-10-31
-tags: 
-  - writing
+tags:
+  - economics
   - policy
 ---
 

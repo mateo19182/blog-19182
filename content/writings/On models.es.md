@@ -1,5 +1,6 @@
 ---
 title: Sobre los modelos
+summary: "Todos tenemos un modelo de cómo funciona el mundo, y este blog es donde explico el mío."
 ---
 
 Desde hace muchísimo tiempo he intentado entender el modelo de la realidad de otras personas. Un modelo es una representación de un sistema y los usamos en todas partes: en la ciencia, en los ordenadores, en la política, en la economía... Un modelo rara vez se corresponde con la realidad, pero a menudo es la mejor forma que tenemos de entenderla. Algunos son simples y otros extremadamente complejos, y los segundos no son necesariamente mejores. Por ejemplo, el ["modelo estándar de la física de partículas"](https://en.wikipedia.org/wiki/Standard_Model): aunque es un gran modelo y nos permite hacer muchas suposiciones sobre el mundo que suelen resultar ciertas, nadie ha encontrado la forma de meter la antimateria dentro. Así que, aunque sabemos que el modelo no es perfecto, sigue siendo muy útil en la mayoría de casos, ya que se acerca a [la forma real en que funciona nuestro sistema](https://en.wikipedia.org/wiki/Theory_of_everything).

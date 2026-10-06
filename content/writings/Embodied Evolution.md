@@ -1,9 +1,10 @@
 ---
 title: Embodied Evolution
+summary: "My robotics class paper on robots that evolve on their own while doing their task."
 date: 2024-04-01
-tags: 
-  - writing
-  - computers
+tags:
+  - ai
+  - systems
 ---
 
 Wrote this for the final presentation on my Robotics subject, kind of proud of it so I'm uploading it here. I feel like embodiment is a pre-requisite for consciousness so this kind of research is fascinating to me.

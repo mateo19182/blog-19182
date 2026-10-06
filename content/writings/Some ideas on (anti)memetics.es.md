@@ -1,5 +1,6 @@
 ---
 title: Algunas ideas sobre (anti)memética
+summary: "Notas sobre cómo se difunden las ideas, y por qué algunas se resisten, tras leer Antimemetics."
 ---
 
 

@@ -1,5 +1,6 @@
 ---
 title: Cómo la IA podría ayudar a salvar el copyright
+summary: "Por qué el copyright funciona mal para los creadores y cómo la IA podría obligarnos a replantearlo."
 ---
 
 El copyright es un tipo de propiedad intelectual que da a su titular el derecho exclusivo a copiar, distribuir, adaptar, exhibir e interpretar una obra *creativa*, normalmente durante un tiempo limitado. Se creó como respuesta directa al desarrollo de la imprenta, ya que el coste de producir libros nuevos bajó tanto que los autores apenas tenían incentivos para seguir escribiendo obras nuevas, porque la competencia las copiaba casi al instante. Aunque la historia del copyright es muy interesante y determina muchas de las leyes que seguimos teniendo hoy, lo que quiero tratar aquí es cómo los valores fundamentales de la protección del copyright están mal planteados y cómo la IA puede ayudarnos a redefinirlo.

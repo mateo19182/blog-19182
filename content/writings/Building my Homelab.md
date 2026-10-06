@@ -1,8 +1,8 @@
 ---
 title: Building my Homelab
+summary: "Choosing parts and setting up Proxmox for my first home server."
 date: 2024-05-24
-tags: 
-  - writing
+tags:
   - computers
 ---
 

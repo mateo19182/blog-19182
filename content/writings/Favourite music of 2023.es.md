@@ -1,5 +1,6 @@
 ---
 title: Música favorita de 2023
+summary: "Mis álbumes y EPs favoritos publicados en 2023."
 ---
 
 Estoy intentando recopilar una lista de mis proyectos favoritos que salen cada año. Incluyo álbumes y EPs sin ningún orden en particular. Los proyectos que quiero destacar especialmente irán marcados con un (*). [Aquí está la lista del año pasado.](/data/2022.jpeg)

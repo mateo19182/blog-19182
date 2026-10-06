@@ -1,5 +1,6 @@
 ---
 title: Alegato contra el marketing
+summary: "Por qué creo que el marketing le cuesta a la sociedad más de lo que le aporta."
 ---
 
 ---

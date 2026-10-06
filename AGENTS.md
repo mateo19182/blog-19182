@@ -39,7 +39,14 @@ transcripts out of this public selection.
 
 An English post can have a Spanish sibling `Name.es.md`; a Spanish post
 (`lang: es`) can have an English sibling `Name.en.md`. Each holds only a `title:`
-frontmatter and the translated body, with the same links, footnote labels and
-markup as the original. Translated articles show a one-line notice linking back to
+frontmatter (plus a translated `summary:` for writings) and the translated body,
+with the same links, footnote labels and markup as the original. Translated articles show a one-line notice linking back to
 the original. Update the translation when you change the original.
 `link-archive.es.md` only translates the intro; the build appends the link list.
+
+## Writings and projects
+
+Every writing has a one-line `summary:` shown in the writings list, and 1–3
+topical `tags:` (no catch-all `writing` tag). Add both when you add a post.
+Projects are data in `content/projects.yml`, with English and Spanish fields side
+by side; edit that file, not `projects.md`.

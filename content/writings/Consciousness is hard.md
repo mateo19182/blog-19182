@@ -1,9 +1,10 @@
 ---
 title: Consciousness is hard
+summary: "A growing collection of theories and notes on the hard problem of consciousness."
 date: 2024-09-03
-tags: 
-  - writing
-  - complex systems
+tags:
+  - mind
+  - philosophy
 ---
 
 This is a work in progess, most ideas aren't well fleshed out and will probably have to reorder it at some point to mantain some sort of narrative.

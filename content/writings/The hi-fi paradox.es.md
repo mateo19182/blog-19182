@@ -1,5 +1,6 @@
 ---
 title: La paradoja del hi-fi
+summary: "Una visita a una sala de escucha hi-fi, y cuánto del buen sonido ocurre en nuestra cabeza."
 ---
 
 En mi último viaje a Londres visité la Lisson Gallery, donde tenían montado el ["HiFi listening Room Dream No.1"](https://www.lissongallery.com/exhibitions/devon-turnbull-ojas-hifi-listening-room-dream-no-1). El evento lo organizó [Devon Turnbull](https://ojas.nyc/)  (alias OJAS) y era totalmente gratis. Mi amigo y yo pillamos a [Mo Yasin](https://www.instagram.com/_moyasin_/?hl=en) en residencia (8–11 de agosto). También vale la pena mencionar que la mayor parte del sistema lo construyeron desde cero OJAS y su equipo.

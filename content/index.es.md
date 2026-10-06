@@ -4,11 +4,8 @@ title: Inicio
 ¡Hola! Soy Mateo. Ya que estás por aquí, puede que te interese:
 
 - [[now|ahora]]
-  - lo que estoy haciendo en este momento.
-- [[writings|escritos]] (por [[tags|etiquetas]])
-  - un intento vago de ordenar mis ideas en palabras. Creo que es una de las mejores formas de aprender sobre distintos temas.
+- [[writings|escritos]] (por [[tags|etiquetas]], o síguelos por [RSS](/index.xml))
 - [[link-archive|enlaces]]
-  - enlaces que he ido guardando con el tiempo.
 - [[projects|proyectos]]
 - [[things i like|otras cosas]]
 

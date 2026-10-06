@@ -1,5 +1,6 @@
 ---
 title: Mapeando el espacio de búsqueda de la música pt.1
+summary: "Intentando dar con una definición útil de qué cuenta como música."
 ---
 
 Donde intento encontrar una forma de determinar qué es música y qué no, y exploro algunas formas de mapearla. En esta primera parte intentaré responder a la primera pregunta.

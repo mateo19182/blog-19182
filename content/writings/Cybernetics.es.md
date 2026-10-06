@@ -1,5 +1,6 @@
 ---
 title: Cibernética
+summary: "Una introducción a la cibernética, el estudio de los bucles de retroalimentación, y su historia."
 ---
 
 Desde hace un tiempo hay una página de Wikipedia en la que no paro de acabar: [Complex Systems](https://en.wikipedia.org/wiki/Complex_system). Pero los sistemas complejos son un campo enorme, así que en este post voy a hablar de una "rama" de la teoría de sistemas, la cibernética.

@@ -3,12 +3,9 @@ title: Home
 ---
 Hey! I'm Mateo. Since you are here, you might be interested in:
 
-- [[now]] 
-  - what I'm doing at the moment.
-- [[writings]] (by [[tags]])
-  - a vague attempt to sort my thoughts into words. I find that is one of the best ways to learn about different topics.
+- [[now]]
+- [[writings]] (by [[tags]], or follow via [RSS](/index.xml))
 - [[link-archive]]
-  - links I've collected over time.
 - [[projects]]
 - [[things i like]]
 
@@ -40,5 +37,5 @@ Reach me at admin (@) m19182.dev (preferred), [X](https://x.com/mateo19182) or [
 - 29 Sep, 2023: [[On the amount of hobbies]]
 - 25 Sep, 2023: [[On models]]
 - 22 Sep, 2023: [[How AI might help save copyright]]
-- 14 Aug, 2023: [[What I learned traking my time for 6 months]]
+- 14 Aug, 2023: [[What I learned tracking my time for 6 months]]
 - 14 Aug, 2023: [[The hi-fi paradox]] -->
