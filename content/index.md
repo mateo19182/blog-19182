@@ -4,7 +4,7 @@ title: Home
 Hey! I'm Mateo. Since you are here, you might be interested in:
 
 - [[now]]
-- [[writings]] (by [[tags]], or follow via [RSS](/index.xml))
+- [[writings]] ([[tags]], [RSS](/index.xml))
 - [[link-archive]]
 - [[projects]]
 - [[things i like]]

@@ -277,7 +277,7 @@ async function build() {
 
   // writings index
   {
-    const html = `<p>${t("Essays and notes.", "Ensayos y notas.")} ${t("Follow new ones via", "Puedes seguirlos por")} <a href="/index.xml">RSS</a>.</p>` + writingsIndexHtml(posts)
+    const html = `<p>${t("Essays and notes", "Ensayos y notas")}<span class="dot">·</span><a href="/index.xml">RSS</a></p>` + writingsIndexHtml(posts)
     await emit("/writings", renderPage({
       title: "Writings", url: "/writings", section: null, html, es: { title: "Escritos" },
       ogImage: "/static/og/writings.png", description: "Essays and notes by Mateo.",
