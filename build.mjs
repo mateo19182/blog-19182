@@ -312,7 +312,6 @@ async function build() {
   // static assets
   await copyDir(path.join(ROOT, "assets"), path.join(OUT, "static"))
   await copyDir(path.join(ROOT, "scripts"), path.join(OUT, "scripts"))
-  await copyDir(path.join(ROOT, "flag"), path.join(OUT, "flag"))
   if (dataFiles.length) await copyDir(path.join(CONTENT, "data"), path.join(OUT, "data"))
 
   // alias redirects (frontmatter `aliases`)
@@ -322,6 +321,9 @@ async function build() {
       await emit(`/${aslug}`, redirectHtml(p.url))
     }
   }
+
+  // the flag designer moved to its own repo and site
+  await emit("/flag", redirectHtml("https://flag.m19182.dev/"))
 
   // retired tags
   for (const [from, to] of [["writing", "/writings"], ["complex-systems", "/tags/systems"], ["rambling", "/tags/personal"]]) {

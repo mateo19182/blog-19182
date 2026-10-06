@@ -51,7 +51,6 @@ npm run serve        # build + serve at http://localhost:8080
 - Projects live in `content/projects.yml` (`title`, `title_es`, `url`, `date`,
   `desc`, `desc_es` as inline Markdown, `hidden: true` to keep an entry off the page).
   `projects.md` / `projects.es.md` only hold the page frontmatter.
-- `flag/` is copied verbatim to `/flag/`.
 - Footer sand-garden easter egg (fill the canvas to win).
 - Self-hosted Umami analytics.
 
