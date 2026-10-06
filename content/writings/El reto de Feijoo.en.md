@@ -11,25 +11,13 @@ Father Feijoo challenged his readers to find lines translated from French journa
 
 ## Intro
 
-We're at a unique moment in history, but not for the obvious reasons. There's a set of circumstances, from early 2024 until not too long from now, that are especially unique.
-
-This period is the closest a regular person is going to get to the frontier of models, and the gap will probably widen over time, a consequence of [scaling laws](https://arxiv.org/abs/2001.08361),  frontier labs being geopolitical actors and AI existential risk entering mainstream discourse.
-
-It also coincides with the social and economic transition that technological acceleration is going to cause, which I've completely changed my mind about in the last few years (I read quite a lot of LessWrong in 2023, imagine), but the effects will be significant anyway. This gives rise to a bunch of [arbitrages](https://en.wikipedia.org/wiki/Arbitrage) that will probably survive much longer than a technical person would think [^1].
-
-We founded Tribosolutions.es partly on this thesis, and if it's taught me anything it's that software isn't going to be a valid moat for much longer[^2]. As someone who considers himself technical, and with a certain [aversion to sales](https://blog.m19182.dev/writings/The-Case-Against-Marketing/), it's a lesson that has been hard for me to digest.
-
-![The Diffusion Gap: AI capabilities, adoption and opportunity](/data/feijoo-preview/blog/post/images/diffusion-gap.png)
-
----
-
-This post is about one of these arbitrages, which has taken up a big part of my attention since I read [AI labs need to start funding historical research](https://resobscura.substack.com/p/ai-labs-need-to-start-funding-historical). In short, current frontier models have reached the point where they can produce original historical knowledge on their own, and the author's conclusion is that labs should fund collaborations with historians and archivists.
+Ever since I read [AI labs need to start funding historical research](https://resobscura.substack.com/p/ai-labs-need-to-start-funding-historical) a few days ago, I've been obsessed with the implications. In short, current frontier models have reached the point where they can produce original historical knowledge on their own, and the author's conclusion is that labs should fund collaborations with historians and archivists to push the frontier.
 
 If you look past the incentives (the person writing it is a historian by profession), what I take from it is that we're at a unique moment where anyone sharp enough can make novel discoveries, before the labs start tying up all the remaining loose ends for a bit of promo.
 
 I'm not the first to think this, it's heavily inspired by the project of [Daniel Bourdeau](https://dbourdeau.github.io/cyphersolver/index.html) (forgive him the slop website...) who is [deciphering WWII messages](https://www.cryptocellar.org/bgac/the-mvueh-break.html) [faster than they can be checked](https://cryptiana.web.fc2.com/code/unsolved.htm), and [a new eyewitness account of the dodo](https://resobscura.substack.com/p/using-opus-55-to-discover-a-new-eyewitness) among others.
 
-Similar to what's happening in mathematics, there's some uncertainty when it comes to verifying that the discoveries are correct. Several of the first Erdős problems solved by LLMs [already had solutions in the literature that hadn't been linked to the problem](https://github.com/teorth/erdosproblems/wiki/AI-contributions-to-Erd%C5%91s-problems), rather than a new idea behind them. This exact skill seems especially valuable for the study of history, largely because of the huge amount of digitized documents (and the many still missing). Just like in software, the bottleneck moves to verification.
+Similar to what's happening in mathematics, there's some uncertainty when it comes to verifying that the discoveries are correct. Several of the first Erdős problems solved by LLMs [already had solutions in the literature that hadn't been linked to the problem](https://github.com/teorth/erdosproblems/wiki/AI-contributions-to-Erd%C5%91s-problems), rather than a new idea behind them. This exact skill seems especially valuable for the study of history, because of the huge amount of digitized documents (and the many still missing). Just like in software, the bottleneck moves to verification.
 
 To find topics to explore, I looked for options related to Galicia / Spain that I could reasonably verify on my own. I ended up with a list of a few that I'd like to tackle as soon as possible. In this post I present the results of the first one, to which I devoted a couple dozen hours of my own and several hundred hours of agents. This is a somewhat long post, since I try to talk about everything I find interesting. I encourage using the table of contents to skip anything you're not interested in.
 
@@ -678,12 +666,17 @@ The errors he copies also give away which copy he had. For example, I had downlo
 
 ## Conclusions
 
+We're at a unique moment in history. This is probably the closest a regular person is going to get to the frontier of models, and the gap will widen over time, a consequence of [scaling laws](https://arxiv.org/abs/2001.08361), frontier labs as [geopolitical actors](https://thezvi.substack.com/p/anthropic-officially-arbitrarily) and [AI existential risks](https://intelligence.org/2026/09/16/if-anyone-builds-it-everyone-dies-one-year-closer/) entering mainstream discourse.
 
+This whole post is an arbitrage between what models can actually do and what most people think they can do. There are many more arbitrages like this with much greater financial returns, and contrary to what I thought in 2023 (I was an avid LessWrong reader lol), they'll last much longer than a technical person would think [^1].
+
+![The Diffusion Gap: AI capabilities, adoption and opportunity](/data/feijoo-preview/blog/post/images/diffusion-gap.png)
+
+---
 
 Nothing I did here is technically complex or complicated. My biggest hope with this is to get more people to put some of their time and tokens into this, if you're interested please get in touch:) That said, I do worry that swamping historians with low-quality slop could trigger a backlash, like already happened with mathematics. While working on this, I tried to get in touch with several experts on the subject, most of them didn't reply, and with some interested ones I'm still in contact, but it's still an open front, since I wanted to get the post out as soon as possible.
 
 Another important point is that this work depends on being able to access scans of the relevant documents. There's so much left to digitize! A [2017 European survey](https://pro.europeana.eu/files/Europeana_Professional/Projects/Project_list/Europeana_DSI-2/Deliverables/d4.4-report-on-enumerate-core-survey-4.pdf#page=28) estimated that archives had digitized 10% of their holdings, and libraries 17%.
-
 
 Google Books did a lot for digitization. The labs are in a race to get more data, with very strong incentives. Projects like the [digitization of the Boston Public Library's collections](https://www.bpl.org/news/boston-public-library-expands-access-to-collections-through-ai-enhanced-digitization/), or the fact that Anthropic [bought millions of books, scanned them and threw away the originals](https://cases.justia.com/federal/district-courts/california/candce/3%3A2024cv05417/434709/231/0.pdf#page=4), give an idea of where we're headed. As I already argued in [how AI might help save copyright](https://blog.m19182.dev/writings/How-AI-might-help-save-copyright/) 3 years ago, intellectual property laws urgently need reform, information deserves to be free and the second-order consequences are huge.
 

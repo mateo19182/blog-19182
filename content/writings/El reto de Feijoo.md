@@ -16,25 +16,13 @@ El padre Feijoo retó a sus lectores a encontrar líneas traducidas de revistas 
 
 ## Intro
 
-Estamos en un momento único en la historia, pero no por las razones obvias. Hay una serie de circunstancias que se dan desde principios de 2024 hasta dentro de no mucho tiempo que son especialmente únicas.
-
-Este período es lo más cerca que una persona de a pie va a estar a la frontera de los modelos, y la distancia probablemente se acrecentará con el tiempo, consecuencia de las [scaling laws](https://arxiv.org/abs/2001.08361),  los frontier labs son actores geopolíticos y la entrada de los riesgos existenciales de la IA en el discurso mainstream.
-
-Coincide a su vez con la transición social y económica que la aceleración tecnológica va a provocar, sobre la cual he cambiado por completo de opinión en los últimos años (leía bastante LessWrong en 2023, imagina), pero los efectos serán significativos igual. Esto da lugar a multitud de [arbitrajes](https://en.wikipedia.org/wiki/Arbitrage) que seguramente sobrevivan mucho más tiempo de lo que una persona técnica piense [^1].
-
-Fundamos Tribosolutions.es en parte bajo esta tesis, y si algo me ha enseñado es que el software no va a ser un moat válido por mucho tiempo[^2]. Como alguien que se considera técnico, y con cierto [rechazo hacia las ventas](https://blog.m19182.dev/writings/The-Case-Against-Marketing/), es una lección que me ha costado digerir.
-
-![The Diffusion Gap: capacidades de la IA, adopción y oportunidad](/data/feijoo-preview/blog/post/images/diffusion-gap.png)
-
----
-
-Este post es para hablar de uno de estos arbitrajes, que ocupa gran parte de mi atención desde que leí [AI labs need to start funding historical research](https://resobscura.substack.com/p/ai-labs-need-to-start-funding-historical). En resumen, los modelos frontier actuales han llegado al punto en que pueden producir conocimiento histórico original por sí mismos, y la conclusión del autor del post es que los labs deberían financiar colaboraciones con historiadores y archivistas.
+Llevo varios días, desde que leí [AI labs need to start funding historical research](https://resobscura.substack.com/p/ai-labs-need-to-start-funding-historical), obsesianado con las implicaciones. En resumen, los modelos frontier actuales han llegado al punto en que pueden producir conocimiento histórico original por sí mismos, y la conclusión del autor del post es que los labs deberían financiar colaboraciones con historiadores y archivistas para expandir la frontera.
 
 Si miras por detrás de los incentivos (quien escribe esto es historiador de profesión), lo que a mí me queda es que estamos en un momento único donde cualquiera con el suficiente nivel de espabilado puede conseguir hacer descubrimientos novedosos, antes de que los labs se pongan a cerrar todos los cabos restantes por un poco de promo.
 
 No soy el primero en pensar esto, está muy inspirado en el proyecto de [Daniel Bourdeau](https://dbourdeau.github.io/cyphersolver/index.html) (perdonadle el slop de web...) que está [descifrando mensajes de la Segunda Guerra Mundial](https://www.cryptocellar.org/bgac/the-mvueh-break.html) [más rápido de lo que los pueden comprobar](https://cryptiana.web.fc2.com/code/unsolved.htm), y [un nuevo testimonio presencial sobre el dodo](https://resobscura.substack.com/p/using-opus-55-to-discover-a-new-eyewitness) entre otros.
 
-De forma similar a lo que está pasando en las matemáticas, hay cierta incertidumbre a la hora de verificar que los descubrimientos sean correctos. Varios de los primeros problemas de Erdős que resolvieron los LLMs [ya tenían soluciones en la literatura que no se habían ligado al problema](https://github.com/teorth/erdosproblems/wiki/AI-contributions-to-Erd%C5%91s-problems), más que una nueva idea detrás. Precisamente esta habilidad parece especialmente valiosa para el estudio de la historia, debido en gran parte a la gran cantidad de documentos digitalizados (y los muchos que faltan). Al igual que en el software, el cuello de botella se mueve a la verificación.
+De forma similar a lo que está pasando en las matemáticas, hay cierta incertidumbre a la hora de verificar que los descubrimientos sean correctos. Varios de los primeros problemas de Erdős que resolvieron los LLMs [ya tenían soluciones en la literatura que no se habían ligado al problema](https://github.com/teorth/erdosproblems/wiki/AI-contributions-to-Erd%C5%91s-problems), más que una nueva idea detrás. Precisamente esta habilidad parece especialmente valiosa para el estudio de la historia, debido a la gran cantidad de documentos digitalizados (y los muchos que faltan). Al igual que en el software, el cuello de botella se mueve a la verificación.
 
 Para encontrar temas que explorar, busqué opciones relacionadas con Galicia / España y que sean razonablemente verificables por mi cuenta. Llegué a una lista de unos cuantos que me gustaría intentar afrontar cuanto antes. En este post presento los resultados del primero de ellos, al cual dediqué un par de decenas de horas mías y varios cientos de horas de agentes. Este es un post algo largo, ya que intento hablar de todas las cosas que me parecen interesantes. Incentivo el uso del índice para saltarse todo lo que no te interese.
 
@@ -683,12 +671,17 @@ Los errores que copia también desvelan qué ejemplar tenía. Por ejemplo, yo de
 
 ## Conclusiones
 
+Estamos en un momento único en la historia, es probablemente lo más cerca que una persona de a pie va a estar a la frontera de los modelos, y la distancia se acrecentará con el tiempo, consecuencia de las [scaling laws](https://arxiv.org/abs/2001.08361), los frontier labs como [actores geopolíticos](https://thezvi.substack.com/p/anthropic-officially-arbitrarily) y la entrada de los [riesgos existenciales de la IA](https://intelligence.org/2026/09/16/if-anyone-builds-it-everyone-dies-one-year-closer/) en el discurso mainstream.
 
+Todo este post no deja de ser un arbitraje entre la capacidad real de los modelos y lo que la mayoría de la gente piensa que pueden hacer. Hay muchos más arbitrajes similares a estos con mucho más retorno económico, y contrario a lo que pensaba en 2023 (era lector asiduo de LessWrong xd), van a durar mucho más timepo de una persona técnica piense [^1].
+
+![The Diffusion Gap: capacidades de la IA, adopción y oportunidad](/data/feijoo-preview/blog/post/images/diffusion-gap.png)
+
+---
 
 Nada de lo que hice aquí es técnicamente complejo o complicado. Mi mayor aspiración con esto es motivar a más gente a dedicar una parte de su tiempo y tokens a esto, si te interesa por favor contáctame:) No obstante, sí me preocupa que atosigar a historiadores con slop de baja calidad, pueda provocar una respuesta de rechazo como ya ocurrió con las matemáticas. Durante el desarrollo de este trabajo, intenté ponerme en contacto con varias personas expertas del tema, la mayoría sin respuesta, y algunos interesados con los que mantengo contacto pero queda como un frente abierto, ya que quería sacar el post lo antes posible.
 
 Otro punto importante es que este trabajo depende de poder acceder a escaneos de los documentos relevantes. ¡Queda muchísimo por digitalizar! Una [encuesta europea de 2017](https://pro.europeana.eu/files/Europeana_Professional/Projects/Project_list/Europeana_DSI-2/Deliverables/d4.4-report-on-enumerate-core-survey-4.pdf#page=28) estimaba que los archivos habían digitalizado un 10 % de sus fondos, y las bibliotecas un 17 %.
-
 
 Google Books hizo mucho por la digitalización. Los labs están en una carrera por conseguir más datos con incentivos muy fuertes. Proyectos como la [digitalización de fondos de la Biblioteca Pública de Boston](https://www.bpl.org/news/boston-public-library-expands-access-to-collections-through-ai-enhanced-digitization/), o el hecho de que Anthropic [comprase millones de libros, los escanease y desechase los originales](https://cases.justia.com/federal/district-courts/california/candce/3%3A2024cv05417/434709/231/0.pdf#page=4), dan una idea de adónde nos dirigimos. Como ya expuse en [cómo la IA puede ayudar a salvar el copyright](https://blog.m19182.dev/writings/How-AI-might-help-save-copyright/) hace 3 años, las leyes de propiedad intelectual necesitan una reforma urgente, la información merece ser libre y las consecuencias de segundo orden son enormes.
 
