@@ -19,6 +19,7 @@ Hay un archivo actualizado de los enlaces que guardo en [[link-archive|enlaces]]
 - [Mullvad](https://mullvad.net/en)
 - [0x0.st](https://0x0.st/)
 - [Tailscale](https://tailscale.com/)
+- [slskd](https://github.com/slskd/slskd)
 
 ## Sitios de la web
 
