@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-10-04
+date: 2026-10-06
 tags: 
   - personal
 ---
@@ -9,6 +9,9 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [](http://www.taobackup.com/index.html) `Tech` *2026-10-05*
+- [On Social Reality in China — LessWrong](https://www.lesswrong.com/posts/b5cSYh4emQb2qrGmK/on-social-reality-in-china) `Reads` *2026-10-05*
+- [](https://mcmansionhell.com/post/829127919552151552/what-is-going-on-with-ceiling-fans) `Ideas` *2026-10-05*
 - [Context Language Models](https://arxiv.org/html/2609.37725v1) `Academic Papers and Resources` *2026-10-03*
 - [Just a moment...](https://www.smithsonianmag.com/history/who-wrote-elizabeth-is-most-scathing-letters-new-research-suggests-the-tudor-queens-male-secretaries-revised-her-correspondence-to-emphasize-her-temper-180989565) `Reads` *2026-10-03*
 - [The Arena for Accountable Predictions - Long Bets](https://longbets.org) `Tools and Interactive Websites` *2026-10-03*
