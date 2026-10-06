@@ -52,6 +52,19 @@ if (!TOKEN) {
   process.exit(1)
 }
 
+// Manual titles for links Linkwarden saved empty or as a bot-check page
+// ("Just a moment...", "Checking your browser..."). Keyed by exact URL.
+const TITLE_OVERRIDES = JSON.parse(await readFile(path.join(ROOT, "scripts", "link-titles.json"), "utf8"))
+
+// Linkwarden stores titles with raw HTML entities (&#039;, &#x27;, &amp;).
+const ENTITIES = { amp: "&", lt: "<", gt: ">", quot: '"', apos: "'", nbsp: " " }
+function decodeEntities(s) {
+  return s.replace(/&(#x[0-9a-f]+|#[0-9]+|[a-z]+);/gi, (m, e) => {
+    if (e[0] === "#") return String.fromCodePoint(e[1] === "x" || e[1] === "X" ? parseInt(e.slice(2), 16) : parseInt(e.slice(1), 10))
+    return ENTITIES[e.toLowerCase()] ?? m
+  })
+}
+
 const today = new Date().toISOString().slice(0, 10)
 
 console.log(`Fetching migration export from ${API_BASE} ...`)
@@ -71,7 +84,7 @@ for (const collection of data.collections || []) {
   if (!COLLECTION_NAMES.has(collection.name)) continue
   for (const link of collection.links || []) {
     links.push({
-      name: (link.name || "").replaceAll("#", "-"),
+      name: (TITLE_OVERRIDES[link.url] ?? decodeEntities(link.name || "")).replaceAll("#", "-").replace(/\s+/g, " ").trim(),
       url: link.url,
       date: (link.createdAt || "").split("T")[0],
       collection: collection.name,

@@ -9,30 +9,30 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
-- [](http://www.taobackup.com/index.html) `Tech` *2026-10-05*
+- [The Tao Of Backup](http://www.taobackup.com/index.html) `Tech` *2026-10-05*
 - [On Social Reality in China — LessWrong](https://www.lesswrong.com/posts/b5cSYh4emQb2qrGmK/on-social-reality-in-china) `Reads` *2026-10-05*
-- [](https://mcmansionhell.com/post/829127919552151552/what-is-going-on-with-ceiling-fans) `Ideas` *2026-10-05*
+- [What Is Going On With Ceiling Fans? — McMansion Hell](https://mcmansionhell.com/post/829127919552151552/what-is-going-on-with-ceiling-fans) `Ideas` *2026-10-05*
 - [Context Language Models](https://arxiv.org/html/2609.37725v1) `Academic Papers and Resources` *2026-10-03*
-- [Just a moment...](https://www.smithsonianmag.com/history/who-wrote-elizabeth-is-most-scathing-letters-new-research-suggests-the-tudor-queens-male-secretaries-revised-her-correspondence-to-emphasize-her-temper-180989565) `Reads` *2026-10-03*
+- [Who Wrote Elizabeth I’s Most Scathing Letters? — Smithsonian](https://www.smithsonianmag.com/history/who-wrote-elizabeth-is-most-scathing-letters-new-research-suggests-the-tudor-queens-male-secretaries-revised-her-correspondence-to-emphasize-her-temper-180989565) `Reads` *2026-10-03*
 - [The Arena for Accountable Predictions - Long Bets](https://longbets.org) `Tools and Interactive Websites` *2026-10-03*
 - [EXTRA BIG ASS INTELLIGENCE™ — Federally Mandated Super Intelligence (SI)](https://www.extrabigassintelligence.com) `Weird` *2026-10-03*
 - [Using Opus 5.5 to discover a new eyewitness record of the dodo](https://resobscura.substack.com/p/using-opus-55-to-discover-a-new-eyewitness) `Reads` *2026-10-02*
-- [Coming to America: Nubank&-039;s David Vélez - Colossus](https://colossus.com/article/david-velez-nubank) `Reads` *2026-10-02*
-- [Just a moment...](https://dispatch-media.com/the-ugliest-face-in-britain/?ref=dispatch-articles-newsletter) `Reads` *2026-10-02*
+- [Coming to America: Nubank's David Vélez - Colossus](https://colossus.com/article/david-velez-nubank) `Reads` *2026-10-02*
+- [The ugliest face in Britain — Dispatch](https://dispatch-media.com/the-ugliest-face-in-britain/?ref=dispatch-articles-newsletter) `Reads` *2026-10-02*
 - [RIP, vector database](https://turbopuffer.com/blog/rip-vector-database) `Tech` *2026-10-01*
-- [Agentic Hacks, Real Proofs: Inside Google&-x27;s PageBreak Project](https://blog.google/security/agentic-hacks-real-proofs-inside-googles-pagebreak-project) `Tech` *2026-10-01*
+- [Agentic Hacks, Real Proofs: Inside Google's PageBreak Project](https://blog.google/security/agentic-hacks-real-proofs-inside-googles-pagebreak-project) `Tech` *2026-10-01*
 - [On Injuries](https://lindynewsletter.beehiiv.com/p/on-injuries?utm_source=lindynewsletter.beehiiv.com&utm_medium=newsletter&utm_campaign=on-injuries) `Reads` *2026-10-01*
 - [The Specter Of Neuralese - by Scott Alexander](https://www.astralcodexten.com/p/the-specter-of-neuralese?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-10-01*
 - [How Japan’s Geography Determined Its History](https://unchartedterritories.tomaspueyo.com/p/how-japans-geography-determined-its?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-10-01*
-- [Where Do the Children Play?  - Seeds of Science](https://www.theseedsofscience.pub/p/where-do-the-children-play?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-10-01*
+- [Where Do the Children Play? - Seeds of Science](https://www.theseedsofscience.pub/p/where-do-the-children-play?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-10-01*
 - [Q2 2026 Drive Stats: Hard Drive Failure Rates](https://www.backblaze.com/blog/backblaze-drive-stats-for-q2-2026) `Tech` *2026-09-30*
 - [Most data centers refusing to say how much water, electricity they use | NL Times](https://nltimes.nl/2026/09/30/data-centers-refusing-say-much-water-electricity-use) `Ideas` *2026-09-30*
 - [Post Capitalism | the singularity is nearer](https://geohot.github.io//blog/jekyll/update/2026/09/29/post-capitalism.html) `Ideas` *2026-09-30*
 - [How far behind Nvidia is Huawei?](https://epochai.substack.com/p/how-far-behind-nvidia-is-huawei?utm_source=%2Finbox&utm_medium=reader2) `Tech` *2026-09-28*
 - [EXTREME SERVER SIDE RENDERING | The Cat House](https://www.scd31.com/posts/extreme-server-side-rendering?utm_source=jrdi&utm_medium=email&utm_campaign=2026w38-622e) `Tech` *2026-09-28*
 - [Secure Acceleration: A Cyberdefense Strategy for Superintelligence](https://secureacceleration.com) `Tech` *2026-09-28*
-- [archive.today is directing a DDOS attack against my blog &-8211; Gyrovague](https://gyrovague.com/2026/02/01/archive-today-is-directing-a-ddos-attack-against-my-blog/#comments) `Tech` *2026-09-28*
-- [](https://www.rand.org/about/history.html) `Reads` *2026-09-28*
+- [archive.today is directing a DDOS attack against my blog – Gyrovague](https://gyrovague.com/2026/02/01/archive-today-is-directing-a-ddos-attack-against-my-blog/#comments) `Tech` *2026-09-28*
+- [A Brief History of the RAND Corporation | RAND](https://www.rand.org/about/history.html) `Reads` *2026-09-28*
 - [How fast escalators move, city by city · The Basin](https://basin.la/articles/ninety-feet-a-minute.html) `Reads` *2026-09-28*
 - [La impublicable historia del rey de los saltadores de ‘paywalls’ | Letras Libres](https://letraslibres.com/ciencia-y-tecnologia/la-impublicable-historia-del-rey-de-los-saltadores-de-paywalls/16/06/2026) `Reads` *2026-09-28*
 - [Owed a billion dollars in NVDA stock](https://colo.to/nvidia-stock-narrative.html#fn3) `Reads` *2026-09-28*
@@ -45,42 +45,38 @@ Collection of places on the internet I enjoyed.
 - [Swarm Scaling — LessWrong](https://www.lesswrong.com/posts/6cb7qd3RSkgnviCpf/swarm-scaling) `Tech` *2026-09-25*
 - [Does Georgism Work? Five Years Later - by Scott Alexander](https://www.astralcodexten.com/p/does-georgism-work-five-years-later?utm_source=substack&utm_campaign=post_embed&utm_medium=web&embedding_publication_id=672686) `Reads` *2026-09-25*
 - [Why is the human body so crap except for the liver?](https://dynomight.substack.com/p/liver) `Reads` *2026-09-25*
-- [
-    The Effect of CRTs on Pixel Art | datagubbe.se
-  ](https://datagubbe.se/crt) `Tech` *2026-09-24*
+- [The Effect of CRTs on Pixel Art | datagubbe.se](https://datagubbe.se/crt) `Tech` *2026-09-24*
 - [Pretraining progress is mostly coming from data](https://www.dwarkesh.com/p/pretraining-progress-is-mostly-data) `Tech` *2026-09-24*
 - [Modern Software Factory Architecture and Agentic Workflows | Warp](https://www.warp.dev/articles/modern-software-factory-architecture) `Tech` *2026-09-24*
 - [Literary Hub &raquo; A Necessary History of the Oddest Letter: W](https://lithub.com/a-necessary-history-of-the-oddest-letter-w) `Reads` *2026-09-24*
-- [](https://maskofreason.wordpress.com/wp-content/uploads/2011/02/the-library-of-babel-by-jorge-luis-borges.pdf) `Reads` *2026-09-24*
-- [Welcome to nginx ](https://archive.ph/OMZ9R) `Reads` *2026-09-24*
-- [We&-x27;ve saved the world before: what the ozone hole teaches us about AI — LessWrong](https://www.lesswrong.com/posts/zxXPEtSSSEdwpjopb/we-ve-saved-the-world-before-what-the-ozone-hole-teaches-us) `Reads` *2026-09-24*
+- [The Library of Babel — Jorge Luis Borges (PDF)](https://maskofreason.wordpress.com/wp-content/uploads/2011/02/the-library-of-babel-by-jorge-luis-borges.pdf) `Reads` *2026-09-24*
+- [Welcome to nginx](https://archive.ph/OMZ9R) `Reads` *2026-09-24*
+- [We've saved the world before: what the ozone hole teaches us about AI — LessWrong](https://www.lesswrong.com/posts/zxXPEtSSSEdwpjopb/we-ve-saved-the-world-before-what-the-ozone-hole-teaches-us) `Reads` *2026-09-24*
 - [How the pieces of an AI product fit together](https://jaumeivars.com) `Blogs` *2026-09-23*
 - [How SpaceXAI is using Grok Bot to scale customer support | SpaceXAI](https://x.ai/news/grok-bot-customer-support) `Tech` *2026-09-23*
-- [Meet Stripe&-x27;s Knowledge AI Platform | Stripe Dot Dev Blog](https://stripe.dev/blog/meet-stripes-knowledge-ai-platform) `Tech` *2026-09-23*
+- [Meet Stripe's Knowledge AI Platform | Stripe Dot Dev Blog](https://stripe.dev/blog/meet-stripes-knowledge-ai-platform) `Tech` *2026-09-23*
 - [why you can’t copy palantir - by Ethan Ding - mandates](https://ethanding.substack.com/p/why-you-cant-copy-palantir) `Tech` *2026-09-23*
-- [I don&-39;t want the details | michaelheap.com](https://michaelheap.com/i-dont-want-the-details) `Ideas` *2026-09-23*
+- [I don't want the details | michaelheap.com](https://michaelheap.com/i-dont-want-the-details) `Ideas` *2026-09-23*
 - [Docs Complexity Map](https://ethanding.com/foundry-viz) `Tools and Interactive Websites` *2026-09-23*
-- [ Crypto Cellar Research ](https://cryptocellar.org/index.html) `Museums - Indexers` *2026-09-23*
-- [
-        The Farnese letter | Simon Klee
-    ](https://simonklee.dk/farnese-letter) `Tech` *2026-09-21*
+- [Crypto Cellar Research](https://cryptocellar.org/index.html) `Museums - Indexers` *2026-09-23*
+- [The Farnese letter | Simon Klee](https://simonklee.dk/farnese-letter) `Tech` *2026-09-21*
 - [Michael Noukhovitch - Blog](https://mnoukhov.github.io/posts/ngu) `Tech` *2026-09-21*
 - [PaperTok](https://papertok.app/feed) `Tools and Interactive Websites` *2026-09-21*
 - [Saving another 100TB of RAM with math (and Rust) | Cloudflare Blog](https://blog.cloudflare.com/saving-100-tb-of-ram-with-math) `Tech` *2026-09-19*
 - [the senior engineer death spiral • Solving the decision problem](https://sunilpai.dev/posts/the-senior-engineer-death-spiral) `Tech` *2026-09-19*
-- [](https://sgnt.ai/p/jev) `Tech` *2026-09-19*
+- [You could have built Jev | sgnt.ai](https://sgnt.ai/p/jev) `Tech` *2026-09-19*
 - [GPT-6 Astra Solves a WWI German Radio Cipher - prinz](https://www.prinzai.com/p/gpt-6-astra-solves-a-wwi-german-radio) `Reads` *2026-09-19*
-- [How Texas’s &quot;Secret Tax&quot; Hurts Taxpayers - by Lars Doucet](https://open.substack.com/pub/progressandpoverty/p/how-texass-secret-tax-hurts-taxpayers?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Reads` *2026-09-19*
+- [How Texas’s "Secret Tax" Hurts Taxpayers - by Lars Doucet](https://open.substack.com/pub/progressandpoverty/p/how-texass-secret-tax-hurts-taxpayers?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Reads` *2026-09-19*
 - [San Francisco Onion Futures Company](https://onionfutures.com) `Ideas` *2026-09-19*
 - [Backups aren't simple](https://filipovski.net/2026/09/16/backups-arent-simple.html) `Tech` *2026-09-18*
 - [neolabs.fyi | Neolab research areas](https://neolabs.fyi) `Tools and Interactive Websites` *2026-09-18*
-- [why I can&-x27;t stop thinking about Papua New Guinea and what I think everyone should know about it](https://notnottalmud.substack.com/p/why-i-cant-stop-thinking-about-papua) `Reads` *2026-09-15*
-- [Reviewing Signal&-8217;s Cryptography, Part 3 - Dhole Moments](https://soatok.blog/signal-crypto-review-2025-part-3) `Tech` *2026-09-14*
-- [Welcome to nginx ](https://archive.ph/9V8lf) `Reads` *2026-09-14*
+- [why I can't stop thinking about Papua New Guinea and what I think everyone should know about it](https://notnottalmud.substack.com/p/why-i-cant-stop-thinking-about-papua) `Reads` *2026-09-15*
+- [Reviewing Signal’s Cryptography, Part 3 - Dhole Moments](https://soatok.blog/signal-crypto-review-2025-part-3) `Tech` *2026-09-14*
+- [Welcome to nginx](https://archive.ph/9V8lf) `Reads` *2026-09-14*
 - [Smooth Exponentials for Robotics | Eric Jang](https://evjang.com/2026/09/10/smooth-exponential.html) `Tech` *2026-09-12*
 - [5 Years Running Petabyte-Scale ClickHouse® | Tinybird](https://www.tinybird.co/blog/what-i-learned-operating-clickhouse) `Tech` *2026-09-12*
 - [Lessons From 5 Years of ClickHouse® Clusters | Tinybird](https://www.tinybird.co/blog/what-i-learned-operating-clickhouse-part-ii) `Tech` *2026-09-12*
-- [A Severe Misalignment of AI in Mathematics | What&-039;s new](https://terrytao.wordpress.com/2026/09/11/a-severe-misalignment-of-ai-in-mathematics) `Reads` *2026-09-12*
+- [A Severe Misalignment of AI in Mathematics | What's new](https://terrytao.wordpress.com/2026/09/11/a-severe-misalignment-of-ai-in-mathematics) `Reads` *2026-09-12*
 - [Where Has Construction Automation Been Successful?](https://open.substack.com/pub/constructionphysics/p/where-has-construction-automation?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Reads` *2026-09-12*
 - [God Help Us, Let’s Try To Learn About Mechanistic Interpretability Techniques](https://open.substack.com/pub/astralcodexten/p/god-help-us-lets-try-to-learn-about?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Reads` *2026-09-11*
 - [Chasing Speed of Light on TPU v6e | Sail Research](https://www.sailresearch.com/blog/tpu-v6e-gemma) `Tech` *2026-09-10*
@@ -92,22 +88,22 @@ Collection of places on the internet I enjoyed.
 - [On Really Trying · Gwern.net](https://gwern.net/on-really-trying) `Ideas` *2026-09-09*
 - [TPU Inference Externalization Full Steam Ahead - InferenceX](https://open.substack.com/pub/semianalysis/p/tpu-inferencex-full-steam?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Tech` *2026-09-08*
 - [The Decade of Decline in Seattle Public Schools](https://www.educationprogress.org/p/the-decade-of-decline-in-seattle?triedRedirect=true) `Reads` *2026-09-08*
-- [](https://openai.com/index/an-alien-mind) `Tech` *2026-09-07*
+- [An alien mind | OpenAI](https://openai.com/index/an-alien-mind) `Tech` *2026-09-07*
 - [Exploring Speculative Decoding in vLLM on AMD GPUs | vLLM Blog](https://vllm.ai/blog/2026-08-23-speculative-decoding-amd-gpus) `Tech` *2026-09-07*
 - [The Rise and Fall of Crime - by Nicholas Decker](https://nicholasdecker.substack.com/p/the-rise-and-fall-of-crime?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Reads` *2026-09-07*
 - [Contra Benn Jordan, data center (and all) sub-audible infrasound issues are fake](https://blog.andymasley.com/p/contra-benn-jordan-data-center-and) `Reads` *2026-09-07*
-- [China&-x27;s Rare Earths Duopoly](https://www.chinatalk.media/p/chinas-rare-earths-duopoly?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-09-06*
+- [China's Rare Earths Duopoly](https://www.chinatalk.media/p/chinas-rare-earths-duopoly?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-09-06*
 - [After Work, We’ll Have Each Other—Asterisk](https://asteriskmag.com/issues/15/after-work-we-ll-have-each-other?utm_source=Asterisk&utm_campaign=0a05c55e8d-EMAIL_CAMPAIGN_9_2_2025_7_16_COPY_01&utm_medium=email&utm_term=0_e0307a4ab2-0a05c55e8d-585690599&mc_cid=0a05c55e8d) `Reads` *2026-09-06*
-- [Francisco Javier Santiáñez, consignatario histórico: &quot;Apostamos por el tráfico los contenedores en A Coruña, creyendo que podríamos captar a Zara, pero se quedaron en Vigo&quot;](https://www.laopinioncoruna.es/coruna/2026/09/06/francisco-javier-santianez-consignatario-historico-133882868.html) `Reads` *2026-09-06*
+- [Francisco Javier Santiáñez, consignatario histórico: "Apostamos por el tráfico los contenedores en A Coruña, creyendo que podríamos captar a Zara, pero se quedaron en Vigo"](https://www.laopinioncoruna.es/coruna/2026/09/06/francisco-javier-santianez-consignatario-historico-133882868.html) `Reads` *2026-09-06*
 - [Scraping TikTok's Mobile API](https://tiktok-api.seeksocial.io) `Tech` *2026-09-03*
 - [Nicholas Decker In Hell - by Scott Alexander](https://www.astralcodexten.com/p/nicholas-decker-in-hell?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-09-03*
 - [GPU World](https://www.gpuworld.org) `Ideas` *2026-09-03*
 - [Just bury your trash](https://www.worksinprogress.news/p/just-bury-your-trash?r=6k752k&utm_medium=ios&triedRedirect=true) `Ideas` *2026-09-03*
-- [Introducing Quasar 438B: Europe&-x27;s Leading AI Model](https://multiversecomputing.com/resources/introducing-quasar-438b-europe-s-leading-ai-model) `Tech` *2026-09-02*
+- [Introducing Quasar 438B: Europe's Leading AI Model](https://multiversecomputing.com/resources/introducing-quasar-438b-europe-s-leading-ai-model) `Tech` *2026-09-02*
 - [Cancelation Terminology](https://matklad.github.io/2026/08/31/cancelation-terminology.html) `Tech` *2026-09-02*
 - [Ardora III-V](https://www.ardora35.com/en) `Tech` *2026-09-02*
 - [Growing up without inherited cool - by Sanj - Tender Logic](https://sanjipam.substack.com/p/growing-up-without-inherited-cool) `Reads` *2026-09-02*
-- [](https://earthprayer.net/library/Starfish-and-Spider-Ori-Brafman-Summary.pdf) `Ideas` *2026-09-02*
+- [The Starfish and the Spider — Ori Brafman, summary (PDF)](https://earthprayer.net/library/Starfish-and-Spider-Ori-Brafman-Summary.pdf) `Ideas` *2026-09-02*
 - [Why Are Dissents Rare in the Federal Reserve?](https://nicholasdecker.substack.com/p/why-are-dissents-rare-in-the-federal?utm_source=%2Finbox&utm_medium=reader2) `Ideas` *2026-09-02*
 - [¿Qué diría Walter Benjamin sobre las batallas de aura en las plazas públicas?](https://reinasyrepollos.substack.com/p/que-diria-walter-benjamin-sobre-las?utm_source=%2Finbox&utm_medium=reader2) `Ideas` *2026-09-01*
 - [Fastpotify](https://fastpotify.rocks) `Tools and Interactive Websites` *2026-09-01*
@@ -120,22 +116,22 @@ Collection of places on the internet I enjoyed.
 - [Human-like Neural Nets by Catapulting · Gwern.net](https://gwern.net/llm-catapult) `Reads` *2026-08-31*
 - [Glacier mice - Wikipedia](https://en.wikipedia.org/wiki/Glacier_mice) `Wikis` *2026-08-29*
 - [Running a Software Factory Efficiently at Uber Scale](https://www.uber.com/jp/en/blog/efficient-software-factory) `Tech` *2026-08-29*
-- [Your Book Review: Thomas Urquhart&-x27;s Translation Of Rabelais ](https://open.substack.com/pub/astralcodexten/p/your-book-review-thomas-urquharts?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Reads` *2026-08-29*
+- [Your Book Review: Thomas Urquhart's Translation Of Rabelais](https://open.substack.com/pub/astralcodexten/p/your-book-review-thomas-urquharts?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Reads` *2026-08-29*
 - [Previewing the Model Hardware Standard \ Anthropic](https://www.anthropic.com/news/model-hardware-standard-research-preview) `Tech` *2026-08-28*
 - [Surya Narreddi](https://surya.website/rling-qwen-to-paint-with-code) `Tech` *2026-08-27*
 - [2026: The Year of Dataflow - David Dong](https://davidhdong.substack.com/p/2026-the-year-of-dataflow) `Tech` *2026-08-27*
 - [Global Capital Atlas — Company HQ Map](https://capital.theojaffee.net) `Tech` *2026-08-27*
-- [](https://openai.com/index/hugging-face-incident-and-the-road-ahead) `Tech` *2026-08-27*
+- [The Hugging Face incident and the road ahead | OpenAI](https://openai.com/index/hugging-face-incident-and-the-road-ahead) `Tech` *2026-08-27*
 - [Measure Up - by Dean W. Ball - Hyperdimensional](https://www.hyperdimensional.co/p/measuring-up) `Reads` *2026-08-27*
 - [Cybernetics I: Time is Work - by Nekosattva](https://nekosattva.substack.com/p/cybernetics-i-time-is-work?r=bdhc9&utm_medium=ios) `Reads` *2026-08-27*
-- [Welcome to nginx ](https://archive.ph/iiDCT) `Reads` *2026-08-27*
+- [Welcome to nginx](https://archive.ph/iiDCT) `Reads` *2026-08-27*
 - [EmailOSINT: Reverse email lookups in seconds](https://emailosint.org) `Tools and Interactive Websites` *2026-08-27*
 - [The Decline of Deviance - by Adam Mastroianni](https://www.experimental-history.com/p/the-decline-of-deviance) `Ideas` *2026-08-26*
 - [The Immortality Trap - by Teddy Warner - theodore.net](https://teddywarner.substack.com/p/immortalitytrap) `Ideas` *2026-08-26*
 - [AgentX - InferenceXv3: Does CUDA Moat Hold up in Agentic Inferencing?](https://open.substack.com/pub/semianalysis/p/agentx-inferencexv3-does-cuda-moat?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Tech` *2026-08-25*
 - [Was Modern Art Really a CIA Psy-Op? - JSTOR Daily](https://daily.jstor.org/was-modern-art-really-a-cia-psy-op) `Reads` *2026-08-25*
 - [Overcaffeinated in Indonesia - by Irene Zhang - ChinaTalk](https://open.substack.com/pub/chinatalk/p/overcaffeinated-in-indonesia?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Reads` *2026-08-25*
-- [How Europe is killing makers and micro-entrepreneurs ](https://lectronz.com/u/lectronz/articles/how-europe-is-killing-makers-and-micro-entrepreneurs) `Ideas` *2026-08-25*
+- [How Europe is killing makers and micro-entrepreneurs](https://lectronz.com/u/lectronz/articles/how-europe-is-killing-makers-and-micro-entrepreneurs) `Ideas` *2026-08-25*
 - [San Francisco -- The Game](https://sf.thijs.gg) `Tools and Interactive Websites` *2026-08-25*
 - [You can design a chip to run Kimi K3 at 87000 tps???](https://www.luoluo.ai/blog/kimi-k3) `Tech` *2026-08-24*
 - [CARI | Aesthetic | Vectorheart](https://cari.institute/aesthetics/vectorheart) `Arts` *2026-08-23*
@@ -150,9 +146,9 @@ Collection of places on the internet I enjoyed.
 - [You Probably Don’t Get Why Stripe Bought OpenRouter — Research — AMP PBC](https://www.amppublic.com/research/openrouter) `Tech` *2026-08-23*
 - [lyra](https://lyraaaa.dev/blog/weirdest-tokenizer) `Tech` *2026-08-23*
 - [Pushing the Speed-Cost Frontier for Qwen3-TTS | Nari Labs](https://nari-labs.com/blog/qwen3-tts-speed-cost-frontier) `Tech` *2026-08-23*
-- [Welcome to nginx ](https://archive.ph/lPpRz) `Reads` *2026-08-23*
+- [Welcome to nginx](https://archive.ph/lPpRz) `Reads` *2026-08-23*
 - [Halvar’s Guide to Entrepreneurship – Thomas Dullien / Halvar Flake](https://thomasdullien.github.io/guides/entrepreneurship) `Reads` *2026-08-23*
-- [The best general advice on earth &laquo;  the jsomers.net blog](https://jsomers.net/blog/william-james-advice) `Ideas` *2026-08-23*
+- [The best general advice on earth &laquo; the jsomers.net blog](https://jsomers.net/blog/william-james-advice) `Ideas` *2026-08-23*
 - [How Complex Systems Fail](https://how.complexsystems.fail/#1) `Ideas` *2026-08-23*
 - [Three important steps in my maturation process – Thomas Dullien / Halvar Flake](https://thomasdullien.github.io/posts/2026-08-21-three-important-steps-in-my-maturation-process) `Ideas` *2026-08-23*
 - [obscurity - by vincent huang - a slice of my mind](https://mindslice.substack.com/p/obscurity) `Ideas` *2026-08-23*
@@ -169,7 +165,7 @@ Collection of places on the internet I enjoyed.
 - [Attention Required! | Cloudflare](https://cacm.acm.org/research/the-tail-at-scale) `Tech` *2026-08-19*
 - [Fixing a bricked AMD 7040 series Framework 13” laptop with $20 tools | Quantum](https://quantum5.ca/2026/08/16/fixing-bricked-amd-7040-series-framework-13-laptop-with-20-tools/#fnref:quality) `Tech` *2026-08-19*
 - [Where Human Sleep Went Wrong](https://nautil.us/where-human-sleep-went-wrong-1283797) `Reads` *2026-08-19*
-- [The Dark Ages &-8211; About Iceland](https://about.iceland.co.uk/our-story/the-dark-ages) `Reads` *2026-08-19*
+- [The Dark Ages – About Iceland](https://about.iceland.co.uk/our-story/the-dark-ages) `Reads` *2026-08-19*
 - [Being ambitious and being a dad | Nicholas Charriere](https://nicholascharriere.com/blog/being-ambitious-and-being-a-dad) `Ideas` *2026-08-19*
 - [Norway Should Buy OpenAI - by Zachary Jones](https://www.onethousandmeans.com/p/norway-should-buy-openai) `Ideas` *2026-08-19*
 - [Berd — Less chatting, more building.](https://berd.xyz) `Tools and Interactive Websites` *2026-08-19*
@@ -179,23 +175,22 @@ Collection of places on the internet I enjoyed.
 - [](https://protocolized.io/p/the-big-man) `Reads` *2026-08-17*
 - [](https://protocolized.io/p/all-you-can-do-here-is-leave) `Reads` *2026-08-17*
 - [](https://protocolized.io/p/troll) `Reads` *2026-08-17*
-- [China&-x27;s Best Music in 2026 (So Far) - by Jake - ChinaTalk](https://www.chinatalk.media/p/chinas-best-music-in-2026-so-far?utm_source=%2Finbox&utm_medium=reader2) `Arts` *2026-08-16*
+- [China's Best Music in 2026 (So Far) - by Jake - ChinaTalk](https://www.chinatalk.media/p/chinas-best-music-in-2026-so-far?utm_source=%2Finbox&utm_medium=reader2) `Arts` *2026-08-16*
 - [How to ship a database every day](https://turbopuffer.com/blog/control-plane) `Tech` *2026-08-16*
-- [(Some of) The Models, They Just Don&-x27;t Want to Learn | Tilde](https://blog.tilderesearch.com/blog/one-layer-deeper) `Tech` *2026-08-16*
+- [(Some of) The Models, They Just Don't Want to Learn | Tilde](https://blog.tilderesearch.com/blog/one-layer-deeper) `Tech` *2026-08-16*
 - [Notes on Egypt - by Nick Corvino - ChinaTalk](https://www.chinatalk.media/p/notes-on-egypt?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-08-16*
-- [Welcome to nginx ](https://archive.ph/rfMAt) `Reads` *2026-08-16*
+- [Welcome to nginx](https://archive.ph/rfMAt) `Reads` *2026-08-16*
 - [Vercel Security Checkpoint](https://www.piratewires.com/p/inside-the-coke-fueled-rise-and-fall) `Reads` *2026-08-14*
 - [Health Insurance is a Big Union - by Nicholas Decker](https://nicholasdecker.substack.com/p/health-insurance-is-a-big-union?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-08-14*
 - [The DeepSeek Thesis - by Irene Zhang - ChinaTalk](https://www.chinatalk.media/p/the-deepseek-thesis?utm_source=%2Finbox&utm_medium=reader2) `Tech` *2026-08-13*
 - [Good Linux Hardware · Omacom · DHH](https://learn.omacom.io/3/omacom/74/good-linux-hardware) `Tech` *2026-08-13*
 - [How Tailscale helped find the SQLite WAL-Reset bug](https://tailscale.com/blog/sqlite-wal-reset-bug?utm_source=twitter&utm_medium=owned-social&utm_campaign=blog) `Tech` *2026-08-13*
-- [China&-x27;s Quantum Flywheel - by Lily Ottinger - ChinaTalk](https://www.chinatalk.media/p/chinas-quantum-flywheel?utm_source=%2Finbox&utm_medium=reader2) `Tech` *2026-08-13*
+- [China's Quantum Flywheel - by Lily Ottinger - ChinaTalk](https://www.chinatalk.media/p/chinas-quantum-flywheel?utm_source=%2Finbox&utm_medium=reader2) `Tech` *2026-08-13*
 - [Pigs vs. democracy](https://www.theargumentmag.com/p/pigs-vs-democracy?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-08-13*
 - [Eclipse of Thales - Wikipedia](https://en.wikipedia.org/wiki/Eclipse_of_Thales) `Wikis` *2026-08-12*
-- [The Last Angel of History (1996) | Full Film | Afrofuturism, Sci-Fi, Music &amp; Culture - YouTube](https://www.youtube.com/watch?v=udtXh2ut7QQ&feature=youtu.be) `Arts` *2026-08-12*
+- [The Last Angel of History (1996) | Full Film | Afrofuturism, Sci-Fi, Music & Culture - YouTube](https://www.youtube.com/watch?v=udtXh2ut7QQ&feature=youtu.be) `Arts` *2026-08-12*
 - [Make invalid states unrepresentable (for your agents) | ⌨️🤷🏻‍♂️📷](https://debugti.me/posts/agents-and-invalid-states) `Tech` *2026-08-12*
-- [More disasters are coming. How should cities respond?
-](https://progressandpoverty.substack.com/p/more-disasters-are-coming-how-should?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-08-12*
+- [More disasters are coming. How should cities respond?](https://progressandpoverty.substack.com/p/more-disasters-are-coming-how-should?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-08-12*
 - [Reward Is Not the Optimization Target](https://turntrout.com/reward-is-not-the-optimization-target) `Tech` *2026-08-11*
 - [What just happened? A retrospective of AI alignment — LessWrong](https://www.lesswrong.com/posts/9RL9MuGZjzm4q3gKG/what-just-happened-a-retrospective-of-ai-alignment) `Reads` *2026-08-11*
 - [World Train Map — Interactive Railway Map · 1,247 Train Routes](https://worldtrainmap.com) `Tools and Interactive Websites` *2026-08-11*
@@ -209,23 +204,23 @@ Collection of places on the internet I enjoyed.
 - [NVIDIA’s Vera Whitepaper Has a Thread Loose](https://chipsandcheese.com/p/nvidias-vera-whitepaper-has-a-thread) `Tech` *2026-08-06*
 - [Mario meets Pareto](https://www.mayerowitz.io/blog/mario-meets-pareto) `Tools and Interactive Websites` *2026-08-06*
 - [Frontier Wire — AI labs hiring monitor](https://dash.mts.now) `Museums - Indexers` *2026-08-06*
-- [Reading List &mdash; Crime Pays But Botany Doesn&-39;t](https://www.crimepaysbutbotanydoesnt.com/reading-list) `Museums - Indexers` *2026-08-06*
+- [Reading List &mdash; Crime Pays But Botany Doesn't](https://www.crimepaysbutbotanydoesnt.com/reading-list) `Museums - Indexers` *2026-08-06*
 - [Jamverse — Extended Universe Fiction · Protocolized](https://jamverse.protocolized.io) `Museums - Indexers` *2026-08-06*
 - [Introducing Shieldstral. | Mistral AI](https://mistral.ai/news/shieldstral) `Tech` *2026-08-05*
 - [Pi, Minimal and Performant | EARENDIL](https://earendil.com/posts/pi-autoresearch-and-databricks) `Tech` *2026-08-05*
 - [The Beauty Of Settled Science - by Scott Alexander](https://www.astralcodexten.com/p/the-beauty-of-settled-science) `Reads` *2026-08-05*
 - [](https://writings.stephenwolfram.com/2026/08/in-memory-of-my-wife-elise-cawley-1961-2026-with-thanks-for-36-wonderful-years) `Reads` *2026-08-05*
 - [archive.ph](https://archive.ph/IGj6H) `Reads` *2026-08-05*
-- [Welcome to nginx ](https://archive.ph/VZjL8) `Reads` *2026-08-05*
+- [Welcome to nginx](https://archive.ph/VZjL8) `Reads` *2026-08-05*
 - [IPFS Service Worker Gateway | HEAD@4eeddd5](https://bafybeiffhy6rp4j36ttthgtlj7ue7uqxdek4lvkeg5a5z3eany7ujhbpee.ipfs.inbrowser.link) `Reads` *2026-08-05*
 - [Fast · Patrick Collison](https://patrickcollison.com/fast) `Museums - Indexers` *2026-08-05*
 - [](https://www.thehopkinthomasproject.com/TheHopkinThomasProject/TimeLine/Wales/Steam/URochesterCollection/Hero/index-2.html) `Museums - Indexers` *2026-08-05*
 - [The Yale Review | Homepage](https://yalereview.org) `Collectives and Magazines` *2026-08-05*
 - [](https://arxiv.org/pdf/2208.07113) `Academic Papers and Resources` *2026-08-03*
-- [I&-39;m Scared a Stranger Will Call My Novel AI, So I Built GitHub for Words (Meet VellumProof, Formerly WritHub, Lol) - dylan&-39;s blog](https://dylan.blog/2026/08/03/im-scared-a-stranger-will.html) `Blogs` *2026-08-03*
+- [I'm Scared a Stranger Will Call My Novel AI, So I Built GitHub for Words (Meet VellumProof, Formerly WritHub, Lol) - dylan's blog](https://dylan.blog/2026/08/03/im-scared-a-stranger-will.html) `Blogs` *2026-08-03*
 - [In-House LLM Serving at Netflix. By AI Platform’s Model Runtime team and… | by Netflix Technology Blog | Jul, 2026 | Netflix TechBlog](https://netflixtechblog.com/in-house-llm-serving-at-netflix-a5a8e799ea2c) `Tech` *2026-08-03*
 - [Another Day in Katerradise - by Brian Potter](https://www.construction-physics.com/p/another-day-in-katerradise) `Reads` *2026-08-03*
-- [East Data, West Compute — People &amp; Power in China](https://edwc.vercel.app) `Reads` *2026-08-03*
+- [East Data, West Compute — People & Power in China](https://edwc.vercel.app) `Reads` *2026-08-03*
 - [Why San Francisco isn’t bigger](https://www.worksinprogress.news/p/terraforming-earth?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-08-03*
 - [The Giving Map | Giving Atlas](https://givingatlas.org/giving/map.html) `Ideas` *2026-08-03*
 - [Can We Lower Construction Costs with Cheaper Labor or Materials?](https://www.construction-physics.com/p/can-we-lower-construction-costs-with?utm_source=%2Finbox&utm_medium=reader2) `Ideas` *2026-08-03*
@@ -242,7 +237,7 @@ Collection of places on the internet I enjoyed.
 - [Cooking For Engineers - Step by Step Recipes and Food for the Analytically Minded](https://www.cookingforengineers.com) `Museums - Indexers` *2026-07-29*
 - [Just a moment...](https://www.tandfonline.com/doi/full/10.1080/00275514.2026.2670968) `Academic Papers and Resources` *2026-07-28*
 - [Kimi K3 Tech Blog: Open Frontier Intelligence](https://www.kimi.com/blog/kimi-k3) `Tech` *2026-07-28*
-- [Prove You&-x27;re Human - by Zilan Qian - ChinaTalk](https://open.substack.com/pub/chinatalk/p/prove-youre-human?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Reads` *2026-07-28*
+- [Prove You're Human - by Zilan Qian - ChinaTalk](https://open.substack.com/pub/chinatalk/p/prove-youre-human?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Reads` *2026-07-28*
 - [On Taste](https://on-taste.xyz) `Reads` *2026-07-28*
 - [Does creatine make you smarter?](https://dynomight.net/creatine) `Reads` *2026-07-28*
 - [Quick Note | Bloom Energy: Questions for the upcoming Q2-2026 earnings](https://open.substack.com/pub/outspokengeek/p/quick-note-bloom-energy-questions?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Ideas` *2026-07-28*
@@ -259,14 +254,12 @@ Collection of places on the internet I enjoyed.
 - [research review: aella girl - erika milktea](https://substack.com/home/post/p-202263260) `Reads` *2026-07-26*
 - [Weird Museum Map - James Visits Museums - Google My Maps](https://www.google.com/maps/d/u/0/viewer?mid=1LyY2CQJH7CY4zK0NaH9IdItjn8LvTC8&utm_source=ig&utm_medium=social&utm_content=link_in_bio) `Museums - Indexers` *2026-07-26*
 - [Three Months with a Pen Plotter: From Burning 14 Servos to Plotting 115,000 Mona Lisas - nummy](https://nummy.blog/pen-plotter/generative-art/python/creative-coding/2026/02/06/three-months-with-a-pen-plotter.html) `Tech` *2026-07-24*
-- [The Arguments Against Open Source AI are Very Bad | Tom Bedor&-x27;s Blog](https://tombedor.dev/arguments-against-open-source-ai-are-very-bad) `Tech` *2026-07-24*
+- [The Arguments Against Open Source AI are Very Bad | Tom Bedor's Blog](https://tombedor.dev/arguments-against-open-source-ai-are-very-bad) `Tech` *2026-07-24*
 - [](http://noumena.com/essays/the-engine-shop-part-1) `Reads` *2026-07-24*
 - [Freetekno - Wikipedia](https://en.wikipedia.org/wiki/Freetekno) `Wikis` *2026-07-23*
-- [Dot Dot Dot (@dotdottdottt): &quot;Traffic light figures around the world… 
-
-By Maya Barkai &quot;](https://substack.com/@dotdottdottt/note/c-281781315?utm_source=notes-share-action&r=6qjp9o) `Arts` *2026-07-23*
-- [Hatchet · The startup&-x27;s Postgres survival guide](https://hatchet.run/blog/postgres-survival-guide) `Tech` *2026-07-23*
-- [damnlines — NYC Restaurant Line Cameras &amp; Wait Times](https://damnlines.com) `Tech` *2026-07-23*
+- [Dot Dot Dot (@dotdottdottt): &quot;Traffic light figures around the world… By Maya Barkai &quot;](https://substack.com/@dotdottdottt/note/c-281781315?utm_source=notes-share-action&r=6qjp9o) `Arts` *2026-07-23*
+- [Hatchet · The startup's Postgres survival guide](https://hatchet.run/blog/postgres-survival-guide) `Tech` *2026-07-23*
+- [damnlines — NYC Restaurant Line Cameras & Wait Times](https://damnlines.com) `Tech` *2026-07-23*
 - [Scanning for Pangram errors - VeryFinePrint](https://veryfineprint.substack.com/p/scanning-for-pangram-errors) `Tech` *2026-07-23*
 - [Agents need Work Data](https://anjalishriva.com/work-data) `Tech` *2026-07-23*
 - [George Hotz AMD Advancing AI 2026 - YouTube](https://youtu.be/QyrQeeDZUG4) `Tech` *2026-07-23*
@@ -279,16 +272,16 @@ By Maya Barkai &quot;](https://substack.com/@dotdottdottt/note/c-281781315?utm_s
 - [Grist – Climate and environmental news | Grist](https://grist.org) `Collectives and Magazines` *2026-07-23*
 - [Agent swarms and the new model economics · Cursor](https://cursor.com/blog/agent-swarm-model-economics) `Tech` *2026-07-22*
 - [Introducing Laguna S 2.1 — Poolside](https://poolside.ai/blog/introducing-laguna-s-2-1) `Tech` *2026-07-22*
-- [Sarah Guo&-039;s Wager - Colossus](https://colossus.com/article/sarah-guo-conviction) `Reads` *2026-07-21*
+- [Sarah Guo's Wager - Colossus](https://colossus.com/article/sarah-guo-conviction) `Reads` *2026-07-21*
 - [](https://www.edge.org/digerati) `Reads` *2026-07-21*
-- [Who&-8217;s Afraid of Chinese Models? &-8211; Stratechery by Ben Thompson](https://stratechery.com/2026/whos-afraid-of-chinese-models) `Reads` *2026-07-21*
+- [Who’s Afraid of Chinese Models? – Stratechery by Ben Thompson](https://stratechery.com/2026/whos-afraid-of-chinese-models) `Reads` *2026-07-21*
 - [](https://gfi.org/wp-content/uploads/2026/06/U.S.-foodservice-market-insights-for-plant-based-foods-2021-2025.pdf) `Reads` *2026-07-21*
 - [Just a moment...](https://dispatch-media.com/palantirs-greatest-enemy/?ref=dispatch-articles-newsletter&action=signin&success=true) `Reads` *2026-07-21*
 - [The Pope and the Antichrist - First Things](https://firstthings.com/the-pope-and-the-antichrist) `Reads` *2026-07-21*
 - [Europe Won’t Live By Deporting | Dark Thoughts](https://dark.ronacher.eu/2026/7/17/live-by-deporting) `Ideas` *2026-07-21*
 - [Edge.org](https://www.edge.org) `Collectives and Magazines` *2026-07-21*
 - [Scrying the AMD GFX1250 LLVM Tea Leaves - by Aurora Nockert](https://chipsandcheese.com/p/scrying-the-amd-gfx1250-llvm-tea) `Tech` *2026-07-19*
-- [Regressive JPEGs: (Maurycy's blog) ](https://maurycyz.com/projects/bad_jpeg) `Tech` *2026-07-18*
+- [Regressive JPEGs: (Maurycy's blog)](https://maurycyz.com/projects/bad_jpeg) `Tech` *2026-07-18*
 - [Are.na](https://www.are.na/editorial/an-interview-with-the-people-behind-the-cybernetics-library) `Reads` *2026-07-18*
 - [Are.na](https://www.are.na/editorial/cybernetics-conference?utm_source=aredotna&utm_medium=email&utm_campaign=product-news-cybernetics-library-processing) `Reads` *2026-07-18*
 - [More Bounce to the Ounce! - by Maciej Cegłowski](https://mceglowski.substack.com/p/more-bounce-to-the-ounce) `Ideas` *2026-07-17*
@@ -301,34 +294,32 @@ By Maya Barkai &quot;](https://substack.com/@dotdottdottt/note/c-281781315?utm_s
 - [How we collected 10,000 hours of neuro-language data in our basement - Conduit](https://condu.it/thought/10k-hours) `Tech` *2026-07-14*
 - [The web’s clipboard, and how it stores data of different types](https://alexharri.com/blog/clipboard) `Tech` *2026-07-14*
 - [Jacobin Logo](https://jacobin.com/2026/07/ai-nationalization-sanders-libertarians-property) `Reads` *2026-07-14*
-- [A love letter to the Old World  - Sarah’s Substack](https://longerramblings.substack.com/p/a-love-letter-to-the-old-world?r=969eb&utm_medium=ios&triedRedirect=true) `Reads` *2026-07-14*
+- [A love letter to the Old World - Sarah’s Substack](https://longerramblings.substack.com/p/a-love-letter-to-the-old-world?r=969eb&utm_medium=ios&triedRedirect=true) `Reads` *2026-07-14*
 - [15 theses on the optimization crisis - by Daniel Frank](https://notnottalmud.substack.com/p/15-theses-on-the-optimization-crisis) `Reads` *2026-07-14*
-- [Community Radio Index | A map &amp; index of community radio and the culture around it](https://www.community-radio-index.com) `Museums - Indexers` *2026-07-14*
+- [Community Radio Index | A map & index of community radio and the culture around it](https://www.community-radio-index.com) `Museums - Indexers` *2026-07-14*
 - [A reading list for generalists — LessWrong](https://www.lesswrong.com/posts/sH4cFDDjRdGrn3p2o/a-reading-list-for-generalists) `Museums - Indexers` *2026-07-14*
 - [SURAGU](https://web.archive.org/web/20250816022902/https://suragu.net) `Blogs` *2026-07-13*
 - [Vamos a Ber cool fishing spot](https://vamosabercoolspot.blogspot.com) `Blogs` *2026-07-13*
 - [Pàgina de Dusk](https://web.archive.org/web/20250831120123/https://dusk.fai.st) `Blogs` *2026-07-13*
 - [maki.cafe](https://maki.cafe) `Blogs` *2026-07-13*
-- [
-El Cochetril de Lidia | ¡Terror y diversión!	](https://lidiarock.one) `Blogs` *2026-07-13*
+- [El Cochetril de Lidia | ¡Terror y diversión!](https://lidiarock.one) `Blogs` *2026-07-13*
 - [aorivoid's site](https://web.archive.org/web/20250816153034/https://aorivoid.net) `Blogs` *2026-07-13*
 - [Inference cost at scale with napkin math](https://injuly.in/blog/napkin-inference-cost/index.html) `Tech` *2026-07-13*
-- [
-Retrospectiva -9 - Duarte O.Carmo        ](https://duarteocarmo.com/blog/retrospectiva-9) `Reads` *2026-07-13*
+- [Retrospectiva -9 - Duarte O.Carmo](https://duarteocarmo.com/blog/retrospectiva-9) `Reads` *2026-07-13*
 - [In Praise of Observational Evidence—Asterisk](https://asteriskmag.com/issues/14/in-praise-of-observational-evidence) `Reads` *2026-07-13*
 - [Count Binface](https://countbinface.com) `Ideas` *2026-07-13*
 - [Investigando la estupidez - blog](https://web.archive.org/web/20240226100956/https://aorivoid.net/blog/6_es.php) `Weird` *2026-07-13*
 - [Straight to hell (Hetera en el infierno)](https://latranacavernalesboinfernal.blogspot.com) `Weird` *2026-07-13*
 - [](https://nitrobear.gay) `Weird` *2026-07-13*
 - [districts off Neocities](https://districts.neocities.org) `Weird` *2026-07-13*
-- [Cyberpunk Comics, Manga and Graphic Novels &-8211; SHELLZINE](https://shellzine.net/cyberpunk-comics) `Museums - Indexers` *2026-07-13*
+- [Cyberpunk Comics, Manga and Graphic Novels – SHELLZINE](https://shellzine.net/cyberpunk-comics) `Museums - Indexers` *2026-07-13*
 - [Billion Dollar PDFs](https://billiondollarpdf.com) `Museums - Indexers` *2026-07-13*
 - [](https://www.cia.gov/library/abbottabad-compound/A9/A9B61854A333CA7CBC949AD221379EB0_BASIC_PRINCIPLES_OF_EXPLOSIVES.pdf) `Reads` *2026-07-12*
 - [archive.ph](https://archive.ph/F8aU2) `Reads` *2026-07-12*
-- [Collections: The Late Bronze Age Collapse, A Very Brief Introduction &-8211; A Collection of Unmitigated Pedantry](https://acoup.blog/2026/01/30/collections-the-late-bronze-age-collapse-a-very-brief-introduction) `Reads` *2026-07-11*
+- [Collections: The Late Bronze Age Collapse, A Very Brief Introduction – A Collection of Unmitigated Pedantry](https://acoup.blog/2026/01/30/collections-the-late-bronze-age-collapse-a-very-brief-introduction) `Reads` *2026-07-11*
 - [The Future Worth Building Is Human - Thinking Machines Lab](https://thinkingmachines.ai/blog/the-future-worth-building-is-human) `Ideas` *2026-07-11*
 - [Kagi Small Web](https://kagi.com/smallweb/?url=https%3A%2F%2Fwww.magicaltrash.com%2Fpost%2F821532599240540160) `Museums - Indexers` *2026-07-11*
-- [Auto-research with codex: How I achieved a 232x Faster Kernel over baseline with Codex in GPU Mode&-x27;s qr_v2 problem – sankalp&-x27;s blog](https://sankalp.bearblog.dev/autoresearch) `Tech` *2026-07-10*
+- [Auto-research with codex: How I achieved a 232x Faster Kernel over baseline with Codex in GPU Mode's qr_v2 problem – sankalp's blog](https://sankalp.bearblog.dev/autoresearch) `Tech` *2026-07-10*
 - [My Thoughts on the Bun Rust Rewrite - Andrew Kelley](https://andrewkelley.me/post/my-thoughts-bun-rust-rewrite.html) `Tech` *2026-07-10*
 - [AI 2040: Plan A](https://ai-2040.com) `Tech` *2026-07-10*
 - [GitLost: How We Tricked GitHub’s AI Agent into Leaking Private Repos - Noma Security](https://noma.security/blog/gitlost-how-we-tricked-githubs-ai-agent-into-leaking-private-repos) `Tech` *2026-07-10*
@@ -340,35 +331,35 @@ Retrospectiva -9 - Duarte O.Carmo        ](https://duarteocarmo.com/blog/retrosp
 - [DPG Media Privacy Gate](https://www.volkskrant.nl/kijkverder/v/2026/russia-ukraine-intelligence-netherlands-investigation~v3114923) `Reads` *2026-07-10*
 - [Great Memos - Historic Business Documents Archive](https://greatmemos.com) `Museums - Indexers` *2026-07-10*
 - [Silkscreen](https://www.silkscreens.art) `Museums - Indexers` *2026-07-10*
-- [EU Parliament greenlights Chat Control 1.0 – Breyer: &-8220;Our children lose out&-8221; &-8211; Patrick Breyer](https://www.patrick-breyer.de/en/eu-parliament-greenlights-chat-control-1-0-breyer-our-children-lose-out) `Tech` *2026-07-09*
+- [EU Parliament greenlights Chat Control 1.0 – Breyer: “Our children lose out” – Patrick Breyer](https://www.patrick-breyer.de/en/eu-parliament-greenlights-chat-control-1-0-breyer-our-children-lose-out) `Tech` *2026-07-09*
 - [Tris Sherliker](https://tris.sherliker.net/blog/obfuscated-self-evaluating-bash-script-by-cdn-akamai-being-supplied-to-consumers-via-retail-stores) `Tech` *2026-07-09*
-- [Harness Engineering for Self-Improvement | Lil&-39;Log](https://lilianweng.github.io/posts/2026-07-04-harness) `Tech` *2026-07-09*
+- [Harness Engineering for Self-Improvement | Lil'Log](https://lilianweng.github.io/posts/2026-07-04-harness) `Tech` *2026-07-09*
 - [Rewriting Bun in Rust | Bun Blog](https://bun.com/blog/bun-in-rust) `Tech` *2026-07-09*
 - [Behind the Collaboration: UNIQLO x Akamai PEACE FOR ALL Shirt Interview | Akamai Connections - YouTube](https://www.youtube.com/watch?v=RqwdNXvgSlo) `Arts` *2026-07-08*
 - [Dolos - Wikipedia](https://en.wikipedia.org/wiki/Dolos) `Wikis` *2026-07-07*
 - [A global workspace in language models \ Anthropic](https://www.anthropic.com/research/global-workspace) `Academic Papers and Resources` *2026-07-07*
 - [[OpenWrt Wiki] OpenWrt One](https://openwrt.org/toh/openwrt/one) `Tech` *2026-07-07*
-- [A Script for Mark Zuckerberg &-8211; Stratechery by Ben Thompson](https://stratechery.com/2026/a-script-for-mark-zuckerberg) `Tech` *2026-07-07*
+- [A Script for Mark Zuckerberg – Stratechery by Ben Thompson](https://stratechery.com/2026/a-script-for-mark-zuckerberg) `Tech` *2026-07-07*
 - [Martin Alderson](https://martinalderson.com) `Tech` *2026-07-07*
 - [Performance per dollar is getting faster and cheaper | Wafer](https://www.wafer.ai/blog/glm52-amd) `Tech` *2026-07-07*
 - [The Making of Claude Code \ Anthropic](https://www.anthropic.com/features/making-of-claude-code) `Tech` *2026-07-07*
-- [Humanity&-x27;s Last Machine](https://www.humanityslastmachine.com) `Tech` *2026-07-07*
+- [Humanity's Last Machine](https://www.humanityslastmachine.com) `Tech` *2026-07-07*
 - [A Functional Taxonomy of World Models - Dr. Fei-Fei Li](https://drfeifei.substack.com/p/a-functional-taxonomy-of-world-models) `Tech` *2026-07-07*
 - [Temporary derogation from certain provisions of the ePrivacy Directive to combat online child sexual abuse · Vote Results · HowTheyVote.eu](https://howtheyvote.eu/votes/195338) `Reads` *2026-07-07*
 - [Chat Control 1.0 vs 2.0 - Fight Chat Control](https://fightchatcontrol.eu/chat-control-overview) `Reads` *2026-07-07*
-- [Learning the integral of a diffusion model &-8211; Sander Dieleman](https://sander.ai/2026/05/06/flow-maps.html) `Academic Papers and Resources` *2026-07-06*
+- [Learning the integral of a diffusion model – Sander Dieleman](https://sander.ai/2026/05/06/flow-maps.html) `Academic Papers and Resources` *2026-07-06*
 - [Just a moment...](https://academic.oup.com/evolut/advance-article/doi/10.1093/evolut/qpag111/8706652?login=false&__cf_chl_f_tk=spgMg_ue9Ibd8Me8h2ABmkA5FMqJ_v3ob1Ktrnz4hWE-1783360448-1.0.1.1-Wh5SEI9XLAUvvpJyMVPpCCSzcrSuNhtxUPJDppS8cRE) `Academic Papers and Resources` *2026-07-06*
 - [La gran transferencia: quién paga y quién recibe 28.000 millones de euros en alquileres cada año en España](https://www.eldiario.es/economia/gran-transferencia-paga-recibe-28-000-millones-euros-alquileres-ano-espana_1_13336879.html) `Reads` *2026-07-06*
 - [The LLM shoggoth meme is weirder than you think](https://hedonicescalator.substack.com/p/the-llm-shoggoth-meme-is-weirder) `Reads` *2026-07-06*
 - [How to avoid being held up by the labs - by Luis Garicano](https://www.siliconcontinent.com/p/how-to-avoid-being-held-up-by-the) `Reads` *2026-07-06*
-- [My Comment to CFTC&-x27;s Prediction Markets Proposed Rulemaking](https://michaellwy.substack.com/p/my-comment-to-cftcs-prediction-markets) `Reads` *2026-07-06*
+- [My Comment to CFTC's Prediction Markets Proposed Rulemaking](https://michaellwy.substack.com/p/my-comment-to-cftcs-prediction-markets) `Reads` *2026-07-06*
 - [Should DayQuil be legal? - by Eli Richman - The Argument](https://www.theargumentmag.com/p/should-dayquil-be-legal) `Reads` *2026-07-06*
 - [EDM map | Storm discharge data | River health | Thames Water](https://www.thameswater.co.uk/edm-map) `Tools and Interactive Websites` *2026-07-06*
 - [The International Obfuscated C Code Contest](https://www.ioccc.org) `Museums - Indexers` *2026-07-06*
 - [Paper Trails](https://www.papertrailshq.com/share/iAl2S2863A) `Museums - Indexers` *2026-07-06*
 - [Lovecraft's Letters](https://hplovecraft.com/writings/letters) `Museums - Indexers` *2026-07-06*
 - [Salami slicing tactics - Wikipedia](https://en.wikipedia.org/wiki/Salami_slicing_tactics?wprov=sfti1#) `Wikis` *2026-07-05*
-- [The Winning Essays for the Big Questions About AI ](https://www.dwarkesh.com/p/blog-prize-winners) `Tech` *2026-07-05*
+- [The Winning Essays for the Big Questions About AI](https://www.dwarkesh.com/p/blog-prize-winners) `Tech` *2026-07-05*
 - [The Case for Co-Locating Workflow State with Your Data | DBOS](https://www.dbos.dev/blog/co-locating-workflow-state-with-your-data) `Tech` *2026-07-05*
 - [El mapa de los siete millones de viviendas que podrían construirse en España](https://www.elconfidencial.com/inmobiliario/2026-07-01/mapa-siete-millones-viviendas-construirse-espana-cbtr_4381166) `Reads` *2026-07-05*
 - [Just a moment...](https://www.economist.com/interactive/finance-and-economics/2026/07/02/is-the-economist-always-wrong) `Reads` *2026-07-05*
@@ -381,8 +372,7 @@ Retrospectiva -9 - Duarte O.Carmo        ](https://duarteocarmo.com/blog/retrosp
 - [The AI Superforecasters Are Here - by Scott Alexander](https://www.astralcodexten.com/p/the-ai-superforecasters-are-here) `Reads` *2026-07-03*
 - [Why speculative decoding wants two kinds of silicon: NVIDIA, Groq, NVLink Fusion, and heterogenous XPUs](https://www.chiplog.io/p/why-speculative-decoding-wants-two) `Academic Papers and Resources` *2026-07-02*
 - [](https://openai.com/index/core-dump-epidemiology-data-infrastructure-bug) `Tech` *2026-07-02*
-- [Air conditioning cannot solve Europe&-x27;s climate crisis
-](https://open.substack.com/pub/nonhoa/p/air-conditioning-cannot-solve-europes?r=bdhc9&utm_medium=ios) `Ideas` *2026-07-02*
+- [Air conditioning cannot solve Europe's climate crisis](https://open.substack.com/pub/nonhoa/p/air-conditioning-cannot-solve-europes?r=bdhc9&utm_medium=ios) `Ideas` *2026-07-02*
 - [Unreachable Tokens in Unigram Tokenization - by Sander Land](https://tokencontributions.substack.com/p/unreachable-tokens-in-unigram-tokenization) `Academic Papers and Resources` *2026-07-01*
 - [Taking Jaggedness Seriously - by Helen Toner - Rising Tide](https://helentoner.substack.com/p/taking-jaggedness-seriously?triedRedirect=true) `Tech` *2026-07-01*
 - [Overview | Warden](https://warden.sentry.dev/benchmarking) `Tech` *2026-07-01*
@@ -393,26 +383,26 @@ Retrospectiva -9 - Duarte O.Carmo        ](https://duarteocarmo.com/blog/retrosp
 - [Should People Avoid Whole-Body Screening Info?](https://www.astralcodexten.com/p/should-people-avoid-whole-body-screening?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-06-30*
 - [](https://matduggan.com/the-intolerable-hypocrisy-of-cyberlibertarianism) `Tech` *2026-06-29*
 - [Light mode](https://jzhao.xyz/posts/24h-lemons-telem?utm_source=jrdi&utm_medium=email&utm_campaign=2026w26-1ff2) `Tech` *2026-06-29*
-- [How China&-x27;s Unitree Will Dominate Global Robotics](https://newsletter.semianalysis.com/p/chinas-unitree-will-dominate-global) `Tech` *2026-06-29*
+- [How China's Unitree Will Dominate Global Robotics](https://newsletter.semianalysis.com/p/chinas-unitree-will-dominate-global) `Tech` *2026-06-29*
 - [Search](https://www.magicarmotors.com) `Tech` *2026-06-29*
 - [Transmission Dominance with Chinese Characteristics](https://www.chinatalk.media/p/transmission-dominance-with-chinese?utm_source=%2Finbox&utm_medium=reader2) `Tech` *2026-06-29*
 - [How to get 7th graders to smoke - by Adam Mastroianni](https://www.experimental-history.com/p/how-to-get-7th-graders-to-smoke) `Reads` *2026-06-29*
 - [The Many Foundational Issues of Lab-grown Meat](https://www.theseedsofscience.pub/p/the-many-foundational-issues-of-lab?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-06-29*
 - [Blue Glade Farm: Master Plan (First Draft)](https://thecounterpoint.substack.com/p/blue-glade-farm-master-plan-first) `Reads` *2026-06-29*
-- [I&-x27;m not a cat](https://www.scattered-thoughts.net/writing/im-not-a-cat/?utm_source=jrdi&utm_medium=email&utm_campaign=2026w26-1ff2) `Ideas` *2026-06-29*
+- [I'm not a cat](https://www.scattered-thoughts.net/writing/im-not-a-cat/?utm_source=jrdi&utm_medium=email&utm_campaign=2026w26-1ff2) `Ideas` *2026-06-29*
 - [A History of Menus is a Menu of History](https://pudding.cool/2026/06/menu-story) `Museums - Indexers` *2026-06-29*
 - [The next big breakthrough will be AIs learning on the job](https://www.dwarkesh.com/p/the-next-paradigm) `Tech` *2026-06-28*
 - [AI Learns the “Dark Art” of RFIC Design - IEEE Spectrum](https://spectrum.ieee.org/ai-radio-chip-design) `Tech` *2026-06-28*
 - [Ultrasound imaging of the brain — Aleph](https://alephneuro.com/blog/ultrasound-brain) `Tech` *2026-06-27*
 - [The Realpolitik of the Permanent Underclass - by Gabe](https://cognition.cafe/p/the-realpolitik-of-the-permanent) `Tech` *2026-06-27*
-- [Memory Mania: How a Once-in-Four-Decades Shortage Is Fueling a Memory Boom ](https://newsletter.semianalysis.com/p/memory-mania-how-a-once-in-four-decades) `Tech` *2026-06-27*
+- [Memory Mania: How a Once-in-Four-Decades Shortage Is Fueling a Memory Boom](https://newsletter.semianalysis.com/p/memory-mania-how-a-once-in-four-decades) `Tech` *2026-06-27*
 - [Blog – Uncertainty](https://nonentity.bearblog.dev/blog) `Reads` *2026-06-27*
 - [Surprising facts about the slave trade — LessWrong](https://www.lesswrong.com/posts/yDZcsojmRXo5qKNBm/surprising-facts-about-the-slave-trade) `Reads` *2026-06-27*
 - [No-One Escapes the Permanent Underclass](https://borretti.me/article/no-one-escapes-the-permanent-underclass) `Reads` *2026-06-27*
 - [52-hertz whale - Wikipedia](https://en.wikipedia.org/wiki/52-hertz_whale) `Reads` *2026-06-27*
 - [Notes from a burning Paris - by Sarah Wilson](https://sarahwilson.substack.com/p/notes-from-a-burning-paris) `Ideas` *2026-06-27*
-- [Blink if you&-x27;re human - DYNOMIGHT INTERNET NEWSLETTER](https://open.substack.com/pub/dynomight/p/blink?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Ideas` *2026-06-27*
-- [Zen and the Art of Machine Learning Research ](https://blog.jxmo.io/p/zen-and-the-art-of-machine-learning?hide_intro_popup=true) `Ideas` *2026-06-27*
+- [Blink if you're human - DYNOMIGHT INTERNET NEWSLETTER](https://open.substack.com/pub/dynomight/p/blink?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Ideas` *2026-06-27*
+- [Zen and the Art of Machine Learning Research](https://blog.jxmo.io/p/zen-and-the-art-of-machine-learning?hide_intro_popup=true) `Ideas` *2026-06-27*
 - [Se vende la intimidad - Carla RA](https://reinasyrepollos.substack.com/p/se-vende-la-intimidad?utm_source=%2Finbox&utm_medium=reader2) `Ideas` *2026-06-27*
 - [The Parable of the Rogue Wave - by Jehan Azad](https://www.jehanazad.com/p/the-parable-of-the-rogue-wave?r=15aiai&utm_medium=ios&shareImageVariant=overlay&triedRedirect=true) `Ideas` *2026-06-27*
 - [Floor796](https://floor796.com) `Weird` *2026-06-27*
@@ -423,13 +413,13 @@ Retrospectiva -9 - Duarte O.Carmo        ](https://duarteocarmo.com/blog/retrosp
 - [Rory Sutherland (advertising executive) - Wikipedia](https://en.wikipedia.org/wiki/Rory_Sutherland_%28advertising_executive%29#Doorman_fallacy) `Wikis` *2026-06-26*
 - [Introducing Un-0: Generating Images with Coupled Oscillators - Unconventional AI](https://unconv.ai/blog/introducing-un-0-generating-images-with-coupled-oscillators) `Academic Papers and Resources` *2026-06-26*
 - [Intercept](https://www.interceptfund.com) `Tech` *2026-06-26*
-- [Scaling Laws, Carefully | Lil&-39;Log](https://lilianweng.github.io/posts/2026-06-24-scaling-laws) `Tech` *2026-06-26*
+- [Scaling Laws, Carefully | Lil'Log](https://lilianweng.github.io/posts/2026-06-24-scaling-laws) `Tech` *2026-06-26*
 - [](https://group.softbank/media/Project/sbg/sbg/pdf/ir/investors/shareholders/2026/shareholders-meeting_46_05_en.pdf) `Tech` *2026-06-26*
 - [Cornell University - ILR School - The Triangle Factory Fire](https://trianglefire.ilr.cornell.edu/index.html) `Reads` *2026-06-26*
 - [Computers !](https://computers.tugdual.fr) `Museums - Indexers` *2026-06-26*
 - [](https://www.usenix.org/legacy/event/woot10/tech/full_papers/Wolchok.pdf) `Academic Papers and Resources` *2026-06-25*
 - [Krea 2 Technical Report - Krea](https://www.krea.ai/blog/krea-2-technical-report) `Academic Papers and Resources` *2026-06-24*
-- [The Map &mdash;  Jerry&-39;s Map](https://www.jerrysmap.com/the-map) `Arts` *2026-06-24*
+- [The Map &mdash; Jerry's Map](https://www.jerrysmap.com/the-map) `Arts` *2026-06-24*
 - [Attention is all you need - by Aadil - Alexandria](https://sfalexandria.substack.com/p/attention-is-all-you-need) `Reads` *2026-06-24*
 - [YOLO26: Key Architectural Enhancements and Performance Benchmarking for Real-Time Object Detection](https://arxiv.org/html/2509.25164v5) `Academic Papers and Resources` *2026-06-23*
 - [Vincent Huang](https://www.vvhuang.com) `Tech` *2026-06-23*
@@ -450,25 +440,25 @@ Retrospectiva -9 - Duarte O.Carmo        ](https://duarteocarmo.com/blog/retrosp
 - [Calvin and Hobbes and the Price of Integrity](https://therepublicofletters.substack.com/p/calvin-and-hobbes-and-the-price-of) `Reads` *2026-06-18*
 - [humiliating iis servers for fun and jail time](https://mll.sh/humiliating-iis-servers-for-fun-and-jail-time) `Tech` *2026-06-17*
 - [Agentic Taste Modeling | lab notes -8](https://xiqo.substack.com/p/agentic-taste-modeling-lab-notes?utm_source=%2Finbox&utm_medium=reader2) `Tech` *2026-06-17*
-- [surf&-x27;s up! - by visakan veerasamy](https://visakanv.substack.com/p/surfs-up?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-06-17*
+- [surf's up! - by visakan veerasamy](https://visakanv.substack.com/p/surfs-up?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-06-17*
 - [Will China, Inc. be zombified? - by Noah Smith - Noahpinion](https://www.noahpinion.blog/p/will-china-inc-be-zombified?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-06-17*
 - [Should European housing politics be Americanized?](https://www.worksinprogress.news/p/europes-housing-shortages-are-even?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-06-17*
 - [Collingridge dilemma - Wikipedia](https://en.wikipedia.org/wiki/Collingridge_dilemma) `Wikis` *2026-06-16*
 - [Dealflow.es -517: Theker raised $85M. OpenAI and Legora to open Spanish office. 100 RevenueCat lessons.](https://newsletter.dealflow.es/p/dealflowes-517-theker-raised-85m?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-06-16*
-- [Dario Amodei — Policy on the AI Exponential](https://darioamodei.com/post/policy-on-the-ai-exponential) `Reads` *2026-06-16*
-- [Ask Almost A Doctor: A Functional Health Joint ](https://www.corememory.com/p/ask-almost-a-doctor-a-functional?utm_source=%2Finbox&utm_medium=reader2) `Tech` *2026-06-15*
+- [Dario Amodei — Policy on the AI Exponential](https://darioamodei.com/post/policy-on-the-ai-exponential) `Reads` *2026-06-16*
+- [Ask Almost A Doctor: A Functional Health Joint](https://www.corememory.com/p/ask-almost-a-doctor-a-functional?utm_source=%2Finbox&utm_medium=reader2) `Tech` *2026-06-15*
 - [What are the real problems of continual learning?](https://infinitefaculty.substack.com/p/what-are-the-real-problems-of-continual) `Tech` *2026-06-15*
 - [How Go Players Disempower Themselves to AI — LessWrong](https://www.lesswrong.com/posts/nR3DkyivzF4ve97oM/how-go-players-disempower-themselves-to-ai) `Reads` *2026-06-15*
 - [you should probably eat oatmeal sometimes — LessWrong](https://www.lesswrong.com/posts/FEc5SfjCbAyJgRkhR/you-should-probably-eat-oatmeal-sometimes) `Reads` *2026-06-15*
-- [My Decade of Drug Abuse: Highs and Lows ](https://zoomtarded.substack.com/p/my-decade-of-drug-abuse-highs-and?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-06-15*
+- [My Decade of Drug Abuse: Highs and Lows](https://zoomtarded.substack.com/p/my-decade-of-drug-abuse-highs-and?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-06-15*
 - [Nineteen thoughts on AI and Europe](https://www.siliconcontinent.com/p/nineteen-thoughts-on-ai-and-europe?utm_source=%2Finbox&utm_medium=reader2) `Ideas` *2026-06-15*
 - [More molly guards – Unsung](https://unsung.aresluna.org/more-molly-guards) `Reads` *2026-06-10*
 - [Controlling the capital after AGI](https://open.substack.com/pub/epochai/p/controlling-the-capital-after-agi?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Ideas` *2026-06-10*
 - [OpenCV 5 Deep Dive: A New Foundation for Computer Vision](https://opencv.org/opencv-5/#h-how-fast-is-it-opencv-5-vs-onnx-runtime) `Tech` *2026-06-09*
-- [thi.ng - Open source building blocks for computational design &amp; art. Est. 2006 (TypeScript, Zig, GLSL, Clojure, C, SideFX Houdini)](https://thi.ng) `Museums - Indexers` *2026-06-09*
+- [thi.ng - Open source building blocks for computational design & art. Est. 2006 (TypeScript, Zig, GLSL, Clojure, C, SideFX Houdini)](https://thi.ng) `Museums - Indexers` *2026-06-09*
 - [Old'aVista: Home](https://oldavista.com) `Museums - Indexers` *2026-06-09*
 - [Reasons to be pessimistic (and optimistic) on the future of biosecurity](https://www.theseedsofscience.pub/p/reasons-to-be-pessimistic-and-optimistic?utm_source=%2Finbox&utm_medium=reader2) `Tech` *2026-06-08*
-- [How the hell is Groq raising more money? - zach&-x27;s tech blog](https://www.zach.be/p/how-the-hell-is-groq-raising-more) `Tech` *2026-06-08*
+- [How the hell is Groq raising more money? - zach's tech blog](https://www.zach.be/p/how-the-hell-is-groq-raising-more) `Tech` *2026-06-08*
 - [RefusaLLM](https://refusallm.rachel.systems) `Tech` *2026-06-08*
 - [Patching my guitar amp's firmware - mforney.org](https://mforney.org/blog/2026-05-28-patching-my-guitar-amps-firmware.html) `Tech` *2026-06-08*
 - [archive.ph](https://archive.ph/rvxtf) `Reads` *2026-06-08*
@@ -485,24 +475,24 @@ Retrospectiva -9 - Duarte O.Carmo        ](https://duarteocarmo.com/blog/retrosp
 - [Attention Required! | Cloudflare](https://doble.io) `Tech` *2026-06-04*
 - [PlayStation Architecture | A Practical Analysis](https://www.copetti.org/writings/consoles/playstation) `Tech` *2026-06-03*
 - [Is Frontier Asynchronous RL Solved? — Luke J. Huang](https://luk-huang.github.io/personal-website/blog/is-frontier-asynchronous-rl-solved.html) `Tech` *2026-06-03*
-- [1-Click GitHub Token Stealing via a VSCode Bug &-8211; Ammar's Blog](https://blog.ammaraskar.com/github-token-stealing) `Tech` *2026-06-03*
+- [1-Click GitHub Token Stealing via a VSCode Bug – Ammar's Blog](https://blog.ammaraskar.com/github-token-stealing) `Tech` *2026-06-03*
 - [If you let AI do your writing, I will come to your house and kill you](https://samkriss.substack.com/p/if-you-let-ai-do-your-writing-i-will) `Reads` *2026-06-03*
 - [](http://purplepill.vision) `Ideas` *2026-06-03*
 - [The Bloomberg terminal for AI research · Sophon](https://sophon.at/homepage) `Museums - Indexers` *2026-06-03*
 - [Long march through the institutions - Wikipedia](https://en.wikipedia.org/wiki/Long_march_through_the_institutions) `Wikis` *2026-06-02*
-- [Fernando Pessoa &amp; His Heteronyms](https://poetrysociety.org/poems-essays/tributes/fernando-pessoa-his-heteronyms) `Reads` *2026-06-02*
+- [Fernando Pessoa & His Heteronyms](https://poetrysociety.org/poems-essays/tributes/fernando-pessoa-his-heteronyms) `Reads` *2026-06-02*
 - [](https://x.com/joeschmidtiv/status/2059642470334677472) `Tech` *2026-06-01*
 - [Book Review: The Dialectical Imagination](https://open.substack.com/pub/astralcodexten/p/book-review-the-dialectical-imagination?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Reads` *2026-06-01*
 - [archive.ph](https://archive.ph/7XytV) `Ideas` *2026-06-01*
 - [Towards a New Aesthetic - by Megan Gafford](https://www.fashionablylatetakes.com/p/towards-a-new-aesthetic) `Ideas` *2026-06-01*
 - [Letterform Archive](https://letterformarchive.org) `Collectives and Magazines` *2026-06-01*
 - [Domain Expertise Has Always Been the Real Moat | Aaron Brethorst](https://www.brethorsting.com/blog/2026/05/domain-expertise-has-always-been-the-real-moat) `Tech` *2026-05-31*
-- [When AI Starts Writing Systems Code | Core Automation](https://www.coreauto.com/blog/when-ai-starts-writing-systems-code) `Tech` *2026-05-30*
+- [When AI Starts Writing Systems Code | Core Automation](https://www.coreauto.com/blog/when-ai-starts-writing-systems-code) `Tech` *2026-05-30*
 - [Snowboard Kids 2 is 100% Decompiled | Chris' Blog](https://blog.chrislewis.au/snowboard-kids-2-is-100-decompiled) `Tech` *2026-05-30*
 - [On Rendering Diffs :: Pierre Computer Company](https://pierre.computer/writing/on-rendering-diffs) `Tech` *2026-05-30*
 - [Just a moment...](https://steve-yegge.medium.com/the-last-technical-interview-bc13ddcf4564) `Reads` *2026-05-30*
 - [DEMON: Diffusion Engine for Musical Orchestrated Noise](https://daydreamlive.github.io/DEMON) `Academic Papers and Resources` *2026-05-29*
-- [China&-x27;s Robotics Dream Began in 1972 - by Irene Zhang](https://open.substack.com/pub/chinatalk/p/chinas-father-of-robotics?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Reads` *2026-05-29*
+- [China's Robotics Dream Began in 1972 - by Irene Zhang](https://open.substack.com/pub/chinatalk/p/chinas-father-of-robotics?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Reads` *2026-05-29*
 - [The Criminal, Socialm and Economic Cost of Immigrants in the EU](https://open.substack.com/pub/unchartedterritories/p/the-criminal-socialm-and-economic?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Reads` *2026-05-29*
 - [1.2M Messages to Obsidian - Building a Relationship Map from 20 Years of Chat History](https://drobinin.com/posts/am-i-a-bad-friend/#fn1) `Tech` *2026-05-28*
 - [Epicure Flavour Explorer](https://epicure.kaikaku.ai/about) `Academic Papers and Resources` *2026-05-27*
@@ -527,7 +517,7 @@ Retrospectiva -9 - Duarte O.Carmo        ](https://duarteocarmo.com/blog/retrosp
 - [Why Japanese companies do so many different things](https://davidoks.blog/p/why-japanese-companies-do-so-many) `Reads` *2026-05-23*
 - [EVERY SUPPLY CHAIN IN THE WORLD - by vincent huang](https://mindslice.substack.com/p/every-supply-chain-in-the-world) `Reads` *2026-05-23*
 - [](https://openai.com/index/model-disproves-discrete-geometry-conjecture) `Tech` *2026-05-21*
-- [A data driven study of a large scale micro component architecture   Niklas Gustavsson   -GSAS23 - YouTube](https://www.youtube.com/watch?v=sfCQmjRJ7TI) `Tech` *2026-05-21*
+- [A data driven study of a large scale micro component architecture Niklas Gustavsson -GSAS23 - YouTube](https://www.youtube.com/watch?v=sfCQmjRJ7TI) `Tech` *2026-05-21*
 - [Map of Metal](https://mapofmetal.com) `Tools and Interactive Websites` *2026-05-21*
 - [The Types Of Candidate You Find In The California Gubernatorial Race](https://open.substack.com/pub/astralcodexten/p/the-types-of-candidate-you-find-in?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Reads` *2026-05-19*
 - [](https://gpu.audio/newsfeed/soundscape-zone-multi-zone-separation-demo-78) `Tech` *2026-05-18*
@@ -535,8 +525,8 @@ Retrospectiva -9 - Duarte O.Carmo        ](https://duarteocarmo.com/blog/retrosp
 - [how to enter side doors - by maja - velvet noise](https://velvetnoise.substack.com/p/how-to-enter-side-doors?r=1gcxb&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true&triedRedirect=true&_src_ref=t.co) `Ideas` *2026-05-17*
 - [Autonomous AI research for nanogpt speedrun](https://www.primeintellect.ai/auto-nanogpt) `Tech` *2026-05-15*
 - [Mullvad exit IPs as a fingerprinting vector | tmctmt](https://tmctmt.com/posts/mullvad-exit-ips-as-a-fingerprinting-vector) `Tech` *2026-05-15*
-- [What&-x27;s with all the slide decks?](https://open.substack.com/pub/dynomight/p/slides?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Ideas` *2026-05-15*
-- [hydrogen jukeboxes: on the crammed poetics of &quot;creative writing&quot; LLMs – @nostalgebraist on Tumblr](https://www.tumblr.com/nostalgebraist/778041178124926976/hydrogen-jukeboxes) `Ideas` *2026-05-15*
+- [What's with all the slide decks?](https://open.substack.com/pub/dynomight/p/slides?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Ideas` *2026-05-15*
+- [hydrogen jukeboxes: on the crammed poetics of "creative writing" LLMs – @nostalgebraist on Tumblr](https://www.tumblr.com/nostalgebraist/778041178124926976/hydrogen-jukeboxes) `Ideas` *2026-05-15*
 - [Funding Charity After AGI - by Nicholas Decker](https://open.substack.com/pub/nicholasdecker/p/funding-charity-after-agi?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Ideas` *2026-05-15*
 - [European stagnation is real](https://open.substack.com/pub/siliconcontinent/p/european-stagnation-is-real?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Ideas` *2026-05-15*
 - [Shame them, shun them, ban them, beat them!](https://open.substack.com/pub/experimentalhistory/p/shame-them-shun-them-ban-them-beat?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Ideas` *2026-05-15*
@@ -559,26 +549,26 @@ Retrospectiva -9 - Duarte O.Carmo        ](https://duarteocarmo.com/blog/retrosp
 - [All In On Fusion - by Caleb Harding - ChinaTalk](https://www.chinatalk.media/p/all-in-on-fusion?utm_source=%2Finbox&utm_medium=reader2) `Tech` *2026-05-09*
 - [How to Buy Cheap Claude Tokens in China - by Zilan Qian](https://www.chinatalk.media/p/how-to-buy-cheap-claude-tokens-in?utm_source=%2Finbox&utm_medium=reader2) `Tech` *2026-05-09*
 - [How to Score Economic Security - ChinaTalk](https://www.chinatalk.media/p/measuring-americas-chokepoints?utm_source=%2Finbox&utm_medium=reader2) `Tech` *2026-05-09*
-- [Notes from inside China&-x27;s AI labs - by Nathan Lambert](https://www.interconnects.ai/p/notes-from-inside-chinas-ai-labs?hide_intro_popup=true) `Tech` *2026-05-09*
-- [My Internet: Sam Kriss - by Nick  Catucci - Embedded](https://substack.com/home/post/p-196423817) `Reads` *2026-05-09*
+- [Notes from inside China's AI labs - by Nathan Lambert](https://www.interconnects.ai/p/notes-from-inside-chinas-ai-labs?hide_intro_popup=true) `Tech` *2026-05-09*
+- [My Internet: Sam Kriss - by Nick Catucci - Embedded](https://substack.com/home/post/p-196423817) `Reads` *2026-05-09*
 - [Notes on Jensen v Dwarkesh - by Jordan Schneider](https://www.chinatalk.media/p/notes-on-jensen-v-dwarkesh?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-05-09*
-- [The Magical Methane Machine  - by Brendan Borrell](https://www.corememory.com/p/the-magical-methane-machine-casey-handmer-terraform?hide_intro_popup=true) `Reads` *2026-05-09*
+- [The Magical Methane Machine - by Brendan Borrell](https://www.corememory.com/p/the-magical-methane-machine-casey-handmer-terraform?hide_intro_popup=true) `Reads` *2026-05-09*
 - [Notes on the Hantavirus Outbreak](https://borretti.me/article/notes-on-the-hantavirus-outbreak) `Reads` *2026-05-09*
 - [The anti-market delusion at the heart of the housing crisis](https://www.theargumentmag.com/p/the-anti-market-delusion-at-the-heart?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-05-09*
 - [The AI Becker problem - by Luis Garicano](https://www.siliconcontinent.com/p/the-ai-becker-problem) `Reads` *2026-05-09*
 - [UBI advocates should watch South Korea - by Lars Doucet](https://progressandpoverty.substack.com/p/ubi-advocates-should-watch-south?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-05-09*
 - [The Bad Econ Takes Bracket 2026 - by Jack Whitcomb](https://jackonomics.substack.com/p/the-bad-econ-takes-bracket-2026) `Reads` *2026-05-09*
-- [Feynman&-x27;s Razor  - Defender’s Corner](https://defenderofthebasic.substack.com/p/feynmans-razor) `Ideas` *2026-05-09*
+- [Feynman's Razor - Defender’s Corner](https://defenderofthebasic.substack.com/p/feynmans-razor) `Ideas` *2026-05-09*
 - [moloch and the machines - by Adam Aleksic](https://etymology.substack.com/p/moloch-and-the-machines?utm_source=%2Finbox&utm_medium=reader2) `Ideas` *2026-05-09*
 - [Contra Everyone On Taste - by Scott Alexander](https://www.astralcodexten.com/p/contra-everyone-on-taste?utm_source=%2Finbox&utm_medium=reader2) `Ideas` *2026-05-09*
 - [Where Are You in the Context Supply Chain?](https://educatedguesser.substack.com/p/where-are-you-in-the-context-supply?triedRedirect=true) `Ideas` *2026-05-09*
 - [Just a moment...](https://www.economist.com/united-states/2026/05/06/city-parenting-has-become-a-financial-flex?giftId=NTBmYTQxN2EtNTU5OC00ZTg1LTg2ZjktNGRjYjFjNDcwODE5&utm_campaign=gifted_article) `Ideas` *2026-05-09*
 - [Evidence — Musk v. Altman](https://evidence.mts.now) `Tools and Interactive Websites` *2026-05-09*
-- [My Dad Is Gay For Pussy  - by Thailand Strip Club Reviewer](https://zoomtarded.substack.com/p/my-dad-is-gay-for-pussy?utm_source=%2Finbox&utm_medium=reader2) `Weird` *2026-05-09*
+- [My Dad Is Gay For Pussy - by Thailand Strip Club Reviewer](https://zoomtarded.substack.com/p/my-dad-is-gay-for-pussy?utm_source=%2Finbox&utm_medium=reader2) `Weird` *2026-05-09*
 - [ACX Review Archive](https://acxreviews.robennals.org) `Museums - Indexers` *2026-05-09*
 - [](https://arxiv.org/pdf/2605.00864) `Academic Papers and Resources` *2026-05-08*
 - [The map that keeps Burning Man honest](https://www.not-ship.com/burning-man-moop) `Reads` *2026-05-08*
-- [Trouble in YIMBYLand: What Can We Learn from Singapore&-x27;s Housing Miracle?](https://www.global-developments.org/p/trouble-in-yimbyland-singapores-housing?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-05-08*
+- [Trouble in YIMBYLand: What Can We Learn from Singapore's Housing Miracle?](https://www.global-developments.org/p/trouble-in-yimbyland-singapores-housing?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-05-08*
 - [Africa is Doing Worse Than You Think - by Nicholas Decker](https://nicholasdecker.substack.com/p/africa-is-doing-worse-than-you-think?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-05-08*
 - [What will be scarce? - by Alex Imas - Ghosts of Electricity](https://aleximas.substack.com/p/what-will-be-scarce) `Reads` *2026-05-08*
 - [Don’t Reject Data Centers. Negotiate Harder.](https://progressandpoverty.substack.com/p/dont-reject-data-centers-negotiate?utm_source=%2Finbox&utm_medium=reader2) `Ideas` *2026-05-08*
@@ -589,11 +579,11 @@ Retrospectiva -9 - Duarte O.Carmo        ](https://duarteocarmo.com/blog/retrosp
 - [Why shoplifting is bad - by Noah Smith - Noahpinion](https://www.noahpinion.blog/p/why-shoplifting-is-bad?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-05-06*
 - [Your Power Tools Got Worse On Purpose | Who Really Owns DeWalt, Craftsman, and Milwaukee?](https://www.worseonpurpose.com/p/your-power-tools-got-worse-on-purpose) `Reads` *2026-05-06*
 - [Pope Leo on AI: new generations must be helped, not hindered](https://0x0.st/Pjmb.html) `Ideas` *2026-05-06*
-- [No Jensen, Not All Compute is Created Equal ](https://www.chinatalk.media/p/no-jensen-not-all-compute-is-created?utm_source=%2Finbox&utm_medium=reader2) `Tech` *2026-05-05*
+- [No Jensen, Not All Compute is Created Equal](https://www.chinatalk.media/p/no-jensen-not-all-compute-is-created?utm_source=%2Finbox&utm_medium=reader2) `Tech` *2026-05-05*
 - [Lying for a Climate Crusade - Cremieux Recueil](https://www.cremieux.xyz/p/lying-for-climate-crusading) `Reads` *2026-05-05*
-- [Epistemic Fences - Theory &amp; Practice - Defender’s Corner](https://defenderofthebasic.substack.com/p/epistemic-fences-theory-and-practice?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-05-05*
+- [Epistemic Fences - Theory & Practice - Defender’s Corner](https://defenderofthebasic.substack.com/p/epistemic-fences-theory-and-practice?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-05-05*
 - [So, why is this game getting so much ATTENTION? (Part V)](https://vidhvat.substack.com/p/so-why-is-this-game-getting-so-much-326) `Reads` *2026-05-05*
-- [Asociación  Amigos de los Relojes de Sol (AARS) | "Defecit sol, nemo respicit" (G175)](https://relojesdesol.info) `Collectives and Magazines` *2026-05-05*
+- [Asociación Amigos de los Relojes de Sol (AARS) | "Defecit sol, nemo respicit" (G175)](https://relojesdesol.info) `Collectives and Magazines` *2026-05-05*
 - [Inicio - Barcelona Zettascale Lab](https://bzl.es) `Tech` *2026-05-04*
 - [magecart injection on evilcontrollers](https://blog.spin.rip/evilcontrollers-magecart-injection) `Tech` *2026-05-04*
 - [Talking to Transformers — Mira Blog](https://miraos.org/blog/2026/05/02/talking-to-transformers) `Tech` *2026-05-04*
@@ -618,10 +608,7 @@ Retrospectiva -9 - Duarte O.Carmo        ](https://duarteocarmo.com/blog/retrosp
 - [Pavlov's List: A List of RL Environment Startups](https://pavlovslist.com) `Tech` *2026-05-02*
 - [The Coding Assistant Breakdown: More Tokens Please](https://newsletter.semianalysis.com/p/the-coding-assistant-breakdown-more?utm_source=%2Finbox&utm_medium=reader2&hide_intro_popup=true) `Tech` *2026-05-02*
 - [The Mystery in the Medicine Cabinet—Asterisk](https://asteriskmag.com/issues/14/the-mystery-in-the-medicine-cabinet) `Reads` *2026-05-02*
-- [
-            
-    Notes on a non-profit indicted for bank fraud
-    ](https://www.bitsaboutmoney.com/archive/nonprofit-indicted-bank-fraud) `Reads` *2026-05-02*
+- [Notes on a non-profit indicted for bank fraud](https://www.bitsaboutmoney.com/archive/nonprofit-indicted-bank-fraud) `Reads` *2026-05-02*
 - [A promised land of esperanto and zinc - by Jonn Elledge](https://open.substack.com/pub/jonn/p/a-promised-land-of-esperanto-and?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Reads` *2026-05-02*
 - [openai burns the boats - by Ethan Ding - mandates](https://ethanding.substack.com/p/openai-burns-the-boats) `Reads` *2026-05-02*
 - [What Deontological Bars? - by Scott Alexander](https://open.substack.com/pub/astralcodexten/p/what-deontological-bars?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Reads` *2026-05-02*
@@ -629,7 +616,7 @@ Retrospectiva -9 - Duarte O.Carmo        ](https://duarteocarmo.com/blog/retrosp
 - [Cloud Labs and the Floodlight Effect - by William H. Bragg](https://open.substack.com/pub/partialagonism/p/cloud-labs-and-the-floodlight-effect?r=bdhc9&utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Ideas` *2026-05-02*
 - [Social Credit - by Nicholas Decker - Homo Economicus](https://nicholasdecker.substack.com/p/social-credit?utm_source=%2Finbox&utm_medium=reader2) `Ideas` *2026-05-02*
 - [Ourensec - Asociación de Ciberseguridad de Ourense](https://ourensec.org) `Collectives and Magazines` *2026-05-02*
-- [Peeking into VALORANT&-x27;s Netcode | Riot Games](https://www.riotgames.com/en/news/peeking-valorants-netcode) `Tech` *2026-05-01*
+- [Peeking into VALORANT's Netcode | Riot Games](https://www.riotgames.com/en/news/peeking-valorants-netcode) `Tech` *2026-05-01*
 - [Articles - Toni López](https://www.tonilopezmr.com/articles) `Tech` *2026-05-01*
 - [Apocalypse Early Warning System](https://ews.kylemcdonald.net) `Tools and Interactive Websites` *2026-05-01*
 - [Reiner Pope on Dwarkesh Podcast — Practice Questions](https://reiner-flashcards.vercel.app) `Academic Papers and Resources` *2026-04-30*
@@ -653,16 +640,16 @@ Retrospectiva -9 - Duarte O.Carmo        ](https://duarteocarmo.com/blog/retrosp
 - [MeshCore Blog](https://blog.meshcore.io) `Tech` *2026-04-24*
 - [American Diner Gothic &mdash; The New Atlantis](https://www.thenewatlantis.com/publications/american-diner-gothic) `Reads` *2026-04-24*
 - [](https://counterfeitsunset.neocities.org/Schizoposting.pdf) `Reads` *2026-04-24*
-- [Fragments: April  2](https://martinfowler.com/fragments/2026-04-02.html) `Ideas` *2026-04-24*
+- [Fragments: April 2](https://martinfowler.com/fragments/2026-04-02.html) `Ideas` *2026-04-24*
 - [Ink & Switch](https://www.inkandswitch.com) `Collectives and Magazines` *2026-04-24*
 - [Si... (Kipling) - Wikipedia, la enciclopedia libre](https://es.wikipedia.org/wiki/Si..._(Kipling)) `Wikis` *2026-04-22*
-- [Tim Cook&-8217;s Impeccable Timing &-8211; Stratechery by Ben Thompson](https://stratechery.com/2026/tim-cooks-impeccable-timing) `Reads` *2026-04-22*
+- [Tim Cook’s Impeccable Timing – Stratechery by Ben Thompson](https://stratechery.com/2026/tim-cooks-impeccable-timing) `Reads` *2026-04-22*
 - [Random thoughts while gazing at the misty AI Frontier](https://blog.eladgil.com/p/random-thoughts-while-gazing-at-the?publication_id=1119759&post_id=194229552&isFreemail=true&r=4vq35&triedRedirect=true) `Ideas` *2026-04-22*
 - [Bans on highly toxic pesticides could be an effective way to save lives from suicide - Our World in Data](https://ourworldindata.org/pesticide-bans-suicide-prevention?utm_source=OWID+Newsletter&utm_campaign=64f4828aba-RSS_EMAIL_CAMPAIGN&utm_medium=email&utm_term=0_2e166c1fc1-77833dd717-599516816) `Ideas` *2026-04-22*
 - [Home | TimZaman.com](https://timzaman.com) `Tech` *2026-04-21*
 - [There are only four skills: design, technical, management and physical — LessWrong](https://www.lesswrong.com/posts/KRLGxCaqdgrotyB8z/there-are-only-four-skills-design-technical-management-and) `Ideas` *2026-04-19*
 - [Byte Magazine Volume 00 Number 01 - The Worlds Greatest Toy : Free Download, Borrow, and Streaming : Internet Archive](https://archive.org/details/byte-magazine-1975-09/mode/2up) `Museums - Indexers` *2026-04-19*
-- [ Category Theory Illustrated - Orders](https://abuseofnotation.github.io/category-theory-illustrated/04_order) `Academic Papers and Resources` *2026-04-18*
+- [Category Theory Illustrated - Orders](https://abuseofnotation.github.io/category-theory-illustrated/04_order) `Academic Papers and Resources` *2026-04-18*
 - [Migrating from DigitalOcean to Hetzner: From $1,432 to $233/month With Zero Downtime :: Isa Yeter](https://isayeter.com/posts/digitalocean-to-hetzner-migration) `Tech` *2026-04-18*
 - [Sumida Penguins Relationship Chart 2026｜Sumida Aquarium](https://www.sumida-aquarium.com/special/sokanzu/en/2026) `Ideas` *2026-04-18*
 - [Notion](https://www.notion.so/Join-our-Polycule-339ce84f25648043922be9551ed5b846) `Weird` *2026-04-17*
@@ -677,7 +664,7 @@ Retrospectiva -9 - Duarte O.Carmo        ](https://duarteocarmo.com/blog/retrosp
 - [Igor Girkin - Wikipedia](https://en.wikipedia.org/wiki/Igor_Girkin) `Wikis` *2026-04-12*
 - [WeakC4](https://2swap.github.io/WeakC4/explanation) `Tech` *2026-04-12*
 - [Agent Orange Did Not Cause Diabetes - by Nicholas Decker](https://open.substack.com/pub/nicholasdecker/p/agent-orange-did-not-cause-diabetes?r=bdhc9&utm_medium=ios) `Reads` *2026-04-12*
-- [YOU DON&-x27;T ACTUALLY LIKE THE BAND &quot;GEESE™&quot; - by TONY PRICE](https://open.substack.com/pub/maximumexposureinc/p/you-dont-actually-like-the-band-geese?r=bdhc9&utm_medium=ios) `Reads` *2026-04-12*
+- [YOU DON'T ACTUALLY LIKE THE BAND "GEESE™" - by TONY PRICE](https://open.substack.com/pub/maximumexposureinc/p/you-dont-actually-like-the-band-geese?r=bdhc9&utm_medium=ios) `Reads` *2026-04-12*
 - [Take the Money and Run - Cremieux Recueil](https://open.substack.com/pub/cremieux/p/take-the-money-and-run?utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Ideas` *2026-04-12*
 - [Project Chariot - Wikipedia](https://en.wikipedia.org/wiki/Project_Chariot) `Wikis` *2026-04-11*
 - [On neural scaling and the quanta hypothesis](https://ericjmichaud.com/quanta/?referrer=luma) `Academic Papers and Resources` *2026-04-11*
@@ -698,17 +685,13 @@ Retrospectiva -9 - Duarte O.Carmo        ](https://duarteocarmo.com/blog/retrosp
 - [nytimes.com](https://www.nytimes.com/2026/04/08/business/bitcoin-satoshi-nakamoto-identity-adam-back.html?unlocked_article_code=1.ZVA.5_s8.hTKeCkV97kow&smid=tw-share) `Reads` *2026-04-08*
 - [Cyc - Wikipedia](https://en.wikipedia.org/wiki/Cyc) `Wikis` *2026-04-07*
 - [All Roads Lead to Robotics | Eric Jang](https://evjang.com/2024/03/03/all-roads-robots.html) `Tech` *2026-04-07*
-- [It&-x27;s just money. It&-x27;s made up. - Irrational Analysis](https://irrationalanalysis.substack.com/p/its-just-money-its-made-up?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-04-07*
+- [It's just money. It's made up. - Irrational Analysis](https://irrationalanalysis.substack.com/p/its-just-money-its-made-up?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-04-07*
 - [The Henry Family Endowed Speaker Series in Economics - Jesús Fernandez-Villaverde - YouTube](https://youtu.be/Fk8nLKhb_h0?is=ZW5F9nKSqR4cNVTG) `Ideas` *2026-04-07*
 - [EUROPEAN UNION, SEVENTY YEARS LATER - by Slavoj Žižek](https://slavoj.substack.com/p/european-union-70-years-later?utm_source=%2Finbox&utm_medium=reader2) `Ideas` *2026-04-07*
 - [Perma | Snowflake: An update and some very important information](https://perma.cc/8UBV-MZ3D) `Tech` *2026-04-06*
 - [](https://archive.ph/YHRcU) `Reads` *2026-04-06*
-- [
-    
-    When Imperfect Systems are Good, Actually: Bluesky's Lossy Timelines &middot; Jaz's Blog
-    
-  ](https://jazco.dev/2025/02/19/imperfection) `Tech` *2026-04-05*
-- [The machines are fine. I&-x27;m worried about us.](https://ergosphere.blog/posts/the-machines-are-fine) `Ideas` *2026-04-05*
+- [When Imperfect Systems are Good, Actually: Bluesky's Lossy Timelines &middot; Jaz's Blog](https://jazco.dev/2025/02/19/imperfection) `Tech` *2026-04-05*
+- [The machines are fine. I'm worried about us.](https://ergosphere.blog/posts/the-machines-are-fine) `Ideas` *2026-04-05*
 - [](https://xpl0itrs.github.io) `Tech` *2026-04-04*
 - [Welcome to the Technocracy](https://donotresearch.substack.com/p/welcome-to-the-technocracy) `Reads` *2026-04-04*
 - [Information Asymmetry](https://sdan.io/blog/information-asymmetry) `Ideas` *2026-04-04*
@@ -736,7 +719,7 @@ Retrospectiva -9 - Duarte O.Carmo        ](https://duarteocarmo.com/blog/retrosp
 - [WindowSwap - the calmest place on the internet](https://www.window-swap.com/Window) `Tools and Interactive Websites` *2026-03-24*
 - [](https://alachuacounty.us/Depts/epd/EPAC/Future%20Strategic%20Issues%20-%20Future%20Warfare%20Circa%202025%20-%20NASA.pdf) `Ideas` *2026-03-22*
 - [[2201.06387] The free energy principle made simpler but not too simple](https://arxiv.org/abs/2201.06387) `Academic Papers and Resources` *2026-03-21*
-- [How We Scaled Kimi K2.5 | Zhilin Yang&-39;s full GTC 2026 Keynote - YouTube](https://youtu.be/CwePo4847ho) `Academic Papers and Resources` *2026-03-21*
+- [How We Scaled Kimi K2.5 | Zhilin Yang's full GTC 2026 Keynote - YouTube](https://youtu.be/CwePo4847ho) `Academic Papers and Resources` *2026-03-21*
 - [The Incredible Story of the Cartel Olympics - The Atlantic](https://www.theatlantic.com/magazine/2026/05/mexico-cartel-la-union-tepito/686453/?gift=66OeTwjwIWd7-zlTK2lFDpLE4sFDmL9yxwzGt6-C2JE&utm_source=copy-link&utm_medium=social&utm_campaign=share) `Reads` *2026-03-21*
 - [Iran: The Kharg Fantasy and How This Ends](https://open.substack.com/pub/chinatalk/p/the-kharg-fantasy-lethalitymaxxing?utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Reads` *2026-03-21*
 - [On Beautiful Code](https://www.emptysetmag.com/articles/on-beautiful-code) `Reads` *2026-03-20*
@@ -745,15 +728,15 @@ Retrospectiva -9 - Duarte O.Carmo        ](https://duarteocarmo.com/blog/retrosp
 - [6,000 AWS accounts, three people, one platform: Lessons learned | AWS Architecture Blog](https://aws.amazon.com/blogs/architecture/6000-aws-accounts-three-people-one-platform-lessons-learned) `Tech` *2026-03-19*
 - [College as an incubator of Girardian terror | Dan Wang](https://danwang.co/college-girardian-terror) `Reads` *2026-03-19*
 - [AttnRes](https://www.k-a.in/AttnRes.html) `Academic Papers and Resources` *2026-03-18*
-- [ Mamba-3 Part 1 | Goomba Lab ](https://goombalab.github.io/blog/2026/mamba3-part1) `Academic Papers and Resources` *2026-03-18*
+- [Mamba-3 Part 1 | Goomba Lab](https://goombalab.github.io/blog/2026/mamba3-part1) `Academic Papers and Resources` *2026-03-18*
 - [That's How I Roll - A Scientific Analysis of Dice - Articles - DakkaDakka](https://www.dakkadakka.com/wiki/en/That%27s_How_I_Roll_-_A_Scientific_Analysis_of_Dice) `Reads` *2026-03-18*
-- [The case against conversational interfaces &laquo;  julian.digital](https://julian.digital/2025/03/27/the-case-against-conversational-interfaces) `Ideas` *2026-03-18*
+- [The case against conversational interfaces &laquo; julian.digital](https://julian.digital/2025/03/27/the-case-against-conversational-interfaces) `Ideas` *2026-03-18*
 - [Leanstral: Open-Source foundation for trustworthy vibe-coding | Mistral AI](https://mistral.ai/news/leanstral) `Tech` *2026-03-17*
 - [3000 Autists vs the World - by Rxmeen - RDX Written](https://open.substack.com/pub/rxmeen4201738/p/3000-autists-vs-the-world?utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Reads` *2026-03-17*
 - [Why every cavity in your teeth leads to irreparable brain damage](https://open.substack.com/pub/lukasxp/p/why-every-cavity-in-your-teeth-leads?utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Reads` *2026-03-16*
 - [Why poor countries stopped catching up - David Oks](https://open.substack.com/pub/davidoks/p/why-poor-countries-stopped-catching-690?utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Reads` *2026-03-16*
 - [How far back in time can you understand English?](https://open.substack.com/pub/colingorrie/p/how-far-back-in-time-understand-english?utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Reads` *2026-03-16*
-- [It&-x27;s Time - by Jordan Schneider - ChinaTalk](https://open.substack.com/pub/chinatalk/p/its-time?utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Ideas` *2026-03-16*
+- [It's Time - by Jordan Schneider - ChinaTalk](https://open.substack.com/pub/chinatalk/p/its-time?utm_campaign=post-expanded-share&utm_medium=post%20viewer) `Ideas` *2026-03-16*
 - [Littlewood’s Law and the Global Media · Gwern.net](https://gwern.net/littlewood) `Ideas` *2026-03-16*
 - [The (Searchable) Whole Earth](https://searchwhole.earth) `Museums - Indexers` *2026-03-16*
 - [Research | Noumena Network](https://noumena.com/research) `Tech` *2026-03-15*
@@ -761,12 +744,12 @@ Retrospectiva -9 - Duarte O.Carmo        ](https://duarteocarmo.com/blog/retrosp
 - [Library of Short Stories](https://www.libraryofshortstories.com) `Museums - Indexers` *2026-03-15*
 - [Scaling Postgres connections with PgBouncer — PlanetScale](https://planetscale.com/blog/scaling-postgres-connections-with-pgbouncer) `Tech` *2026-03-14*
 - [Sophie Wang](https://www.sophielwang.com/blog/jpeg) `Tech` *2026-03-14*
-- [How Stripe’s document databases supported 99.999% uptime with zero-downtime data migrations ](https://stripe.com/blog/how-stripes-document-databases-supported-99.999-uptime-with-zero-downtime-data-migrations?utm_source=perplexity) `Tech` *2026-03-14*
+- [How Stripe’s document databases supported 99.999% uptime with zero-downtime data migrations](https://stripe.com/blog/how-stripes-document-databases-supported-99.999-uptime-with-zero-downtime-data-migrations?utm_source=perplexity) `Tech` *2026-03-14*
 - [](http://xahlee.info) `Tech` *2026-03-14*
 - [ARTÍCULOS | radiohacking](https://www.davidmarugan.es/articulos) `Tech` *2026-03-13*
 - [Can LLMs Be Computers? | Percepta](https://www.percepta.ai/blog/can-llms-be-computers) `Tech` *2026-03-13*
 - [SEÑALES CURIOSAS | radiohacking](https://www.davidmarugan.es/senales-curiosas) `Reads` *2026-03-13*
-- [Digest | Jan&-x2F;Feb 2026 | kipply&-x27;s blog](https://kipp.ly/jan-feb-2026) `Reads` *2026-03-13*
+- [Digest | Jan/Feb 2026 | kipply's blog](https://kipp.ly/jan-feb-2026) `Reads` *2026-03-13*
 - [Willingness to look stupid is a genuine moat in creative work](https://sharif.io/looking-stupid) `Ideas` *2026-03-13*
 - [](https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3-Super-Technical-Report.pdf) `Academic Papers and Resources` *2026-03-12*
 - [Search The Collection - The Metropolitan Museum of Art](https://www.metmuseum.org/art/collection/search?showOnly=has3d&offset=120) `Arts` *2026-03-12*
@@ -785,14 +768,14 @@ Retrospectiva -9 - Duarte O.Carmo        ](https://duarteocarmo.com/blog/retrosp
 - [RealTuner.online - Tune on a real Boss TU-3](https://realtuner.online) `Arts` *2026-03-10*
 - [Blog | Confer Blog](https://confer.to/blog) `Tech` *2026-03-10*
 - [AMI Labs: Real World. Real Intelligence.](https://amilabs.xyz) `Tech` *2026-03-10*
-- [RFC 3514:  The Security Flag in the IPv4 Header ](https://www.rfc-editor.org/rfc/rfc3514) `Tech` *2026-03-10*
-- [No, it doesn&-39;t cost Anthropic $5k per Claude Code user - Martin Alderson](https://martinalderson.com/posts/no-it-doesnt-cost-anthropic-5k-per-claude-code-user) `Tech` *2026-03-10*
+- [RFC 3514: The Security Flag in the IPv4 Header](https://www.rfc-editor.org/rfc/rfc3514) `Tech` *2026-03-10*
+- [No, it doesn't cost Anthropic $5k per Claude Code user - Martin Alderson](https://martinalderson.com/posts/no-it-doesnt-cost-anthropic-5k-per-claude-code-user) `Tech` *2026-03-10*
 - [ciberia.org | Flickr](https://www.flickr.com/photos/ciberia_org/with/26111710015) `Museums - Indexers` *2026-03-10*
 - [Last Statements](https://walzr.com/last-statements) `Museums - Indexers` *2026-03-09*
 - [Eval awareness in Claude Opus 4.6’s BrowseComp performance \ Anthropic](https://www.anthropic.com/engineering/eval-awareness-browsecomp) `Tech` *2026-03-08*
 - [sam kriss syllabus](https://docs.google.com/document/d/1QJE7HqqLXaQgE3kv7_16RnDkw8ar007EBbrgFlkUbSo/mobilebasic) `Museums - Indexers` *2026-03-08*
 - [Are AI Datacenters Increasing Electric Bills for American Households?](https://newsletter.semianalysis.com/p/are-ai-datacenters-increasing-electric) `Tech` *2026-03-05*
-- [Maybe there&-x27;s a pattern here?](https://dynomight.substack.com/p/pattern?utm_source=%2Finbox&utm_medium=reader2) `Ideas` *2026-03-05*
+- [Maybe there's a pattern here?](https://dynomight.substack.com/p/pattern?utm_source=%2Finbox&utm_medium=reader2) `Ideas` *2026-03-05*
 - [A Dream of Spring for Open-Weight LLMs: 10 Architectures from Jan-Feb 2026](https://magazine.sebastianraschka.com/p/a-dream-of-spring-for-open-weight) `Academic Papers and Resources` *2026-03-04*
 - [The Lazy Tyranny of the Wait Calculation - by Ethan Mollick](https://www.oneusefulthing.org/p/the-lazy-tyranny-of-the-wait-calculation) `Tech` *2026-03-04*
 - [Does Data Really Have Weight? Exploring SSD Insights](https://cubiclenate.com/2026/03/04/data-has-weight-but-only-on-ssds-blathering) `Tech` *2026-03-04*
@@ -807,19 +790,17 @@ Retrospectiva -9 - Duarte O.Carmo        ](https://duarteocarmo.com/blog/retrosp
 - [More cows, more wives - The Works in Progress Newsletter](https://www.worksinprogress.news/p/more-cows-more-wives) `Reads` *2026-02-27*
 - [The Last Gasps of the Rent Seeking Class | the singularity is nearer](https://geohot.github.io//blog/jekyll/update/2026/02/26/the-last-gasps-of-the-rent-seeking-class.html) `Tech` *2026-02-26*
 - [Jimi Hendrix's Analog Wizardry Explained - IEEE Spectrum](https://spectrum.ieee.org/jimi-hendrix-systems-engineer) `Reads` *2026-02-26*
-- [A rent-seeking economy? &-8211; Michael Roberts Blog](https://thenextrecession.wordpress.com/2019/09/27/a-rent-seeking-economy) `Reads` *2026-02-26*
+- [A rent-seeking economy? – Michael Roberts Blog](https://thenextrecession.wordpress.com/2019/09/27/a-rent-seeking-economy) `Reads` *2026-02-26*
 - [Large-Scale Online Deanonymization with LLMs](https://simonlermen.substack.com/p/large-scale-online-deanonymization) `Ideas` *2026-02-26*
 - [Optophone - Wikipedia](https://en.wikipedia.org/wiki/Optophone) `Wikis` *2026-02-25*
-- [
-The First Fully General Computer Action Model | blog
-](https://si.inc/posts/fdm1) `Tech` *2026-02-25*
+- [The First Fully General Computer Action Model | blog](https://si.inc/posts/fdm1) `Tech` *2026-02-25*
 - [How to build a distributed queue in a single JSON file on object storage](https://turbopuffer.com/blog/object-storage-queue) `Tech` *2026-02-25*
 - [I Taught My Dog to Vibe Code Games | Caleb Leak](https://www.calebleak.com/posts/dog-game) `Reads` *2026-02-25*
 - [Four Years at Tinybird - Jordi Villar](https://jordivillar.com/blog/tinybird) `Tech` *2026-02-24*
 - [Baguettotron Feature Explorer](https://lyramakesmusic.github.io/bread-slicer) `Tech` *2026-02-24*
-- [Inside Europe&-x27;s busiest domestic abuse court](https://dispatch-media.com/inside-europes-busiest-domestic-abuse-court/?ref=dispatch-articles-newsletter) `Reads` *2026-02-24*
+- [Inside Europe's busiest domestic abuse court](https://dispatch-media.com/inside-europes-busiest-domestic-abuse-court/?ref=dispatch-articles-newsletter) `Reads` *2026-02-24*
 - [FT ranking: Europe’s leading start-up hubs 2026](https://www.ft.com/content/ab05487c-72f9-4c1c-9acf-07768693b105?utm_source=Comunicaci%C3%B3n+Dozen&utm_campaign=ee321ab803-EMAIL_CAMPAIGN_2025_11_11_10_52_COPY_01&utm_medium=email&utm_term=0_-72c1a24e3a-461485423) `Reads` *2026-02-24*
-- [The Hunt for Dark Breakfast &-8211; Ryan Moulton&-039;s Articles](https://moultano.wordpress.com/2026/02/22/the-hunt-for-dark-breakfast) `Ideas` *2026-02-24*
+- [The Hunt for Dark Breakfast – Ryan Moulton's Articles](https://moultano.wordpress.com/2026/02/22/the-hunt-for-dark-breakfast) `Ideas` *2026-02-24*
 - [Eric Slesinger | ericsles](https://ericslesinger.com) `Blogs` *2026-02-23*
 - [How I Use Claude Code | Boris Tane](https://boristane.com/blog/how-i-use-claude-code) `Tech` *2026-02-23*
 - [Look Ma, No Bubbles! Designing a Low-Latency Megakernel for Llama-1B · Hazy Research](https://hazyresearch.stanford.edu/blog/2025-05-27-no-bubbles) `Tech` *2026-02-23*
@@ -831,13 +812,13 @@ The First Fully General Computer Action Model | blog
 - [GitHub - anomalyco/opencode: The open source coding agent.](https://github.com/anomalyco/opencode) `Tech` *2026-02-23*
 - [Agent Skills | OpenCode](https://opencode.ai/docs/skills) `Tech` *2026-02-23*
 - [My journey to the microwave alternate timeline — LessWrong](https://www.lesswrong.com/posts/8m6AM5qtPMjgTkEeD/my-journey-to-the-microwave-alternate-timeline) `Reads` *2026-02-23*
-- [On Craft in an Age of Abundance  - by Sophie](https://www.inevitabilityresearch.com/p/on-craft-in-an-age-of-abundance?publication_id=1501680&utm_campaign=email-post-title&r=hjfy1&utm_medium=email) `Reads` *2026-02-23*
+- [On Craft in an Age of Abundance - by Sophie](https://www.inevitabilityresearch.com/p/on-craft-in-an-age-of-abundance?publication_id=1501680&utm_campaign=email-post-title&r=hjfy1&utm_medium=email) `Reads` *2026-02-23*
 - [Conviction](https://www.conviction.com/startups) `Ideas` *2026-02-23*
 - [Welcome • freemediaheckyeah](https://fmhy.net) `Museums - Indexers` *2026-02-23*
 - [La Bonilista — ¿Y si ardiera la Administración? 🔥](https://app.supermo.no/share/fe3cef7bf85b86e0/47d4a492b1) `Tech` *2026-02-22*
 - [](https://iep.unibocconi.eu/sites/default/files/media/attach/WP_Cost%20of%20Failure%2C%20Disruptive%20Innovation%20and%20Targeted%20Flexicurity_0.pdf) `Academic Papers and Resources` *2026-02-20*
-- [Chinese Peptides ](https://www.chinatalk.media/p/chinese-peptides) `Reads` *2026-02-20*
-- [The Kaggle Grandmasters Playbook: 7 Battle&-x2d;Tested Modeling Techniques for Tabular Data | NVIDIA Technical Blog](https://developer.nvidia.com/blog/the-kaggle-grandmasters-playbook-7-battle-tested-modeling-techniques-for-tabular-data) `Reads` *2026-02-20*
+- [Chinese Peptides](https://www.chinatalk.media/p/chinese-peptides) `Reads` *2026-02-20*
+- [The Kaggle Grandmasters Playbook: 7 Battle-Tested Modeling Techniques for Tabular Data | NVIDIA Technical Blog](https://developer.nvidia.com/blog/the-kaggle-grandmasters-playbook-7-battle-tested-modeling-techniques-for-tabular-data) `Reads` *2026-02-20*
 - [Cosmologically Unique IDs | Jason Fantl](https://jasonfantl.com/posts/Universal-Unique-IDs) `Reads` *2026-02-20*
 - [Child’s Play, by Sam Kriss](https://harpers.org/archive/2026/03/childs-play-sam-kriss-ai-startup-roy-lee) `Reads` *2026-02-20*
 - [Crime As Proxy For Disorder - by Scott Alexander](https://www.astralcodexten.com/p/crime-as-proxy-for-disorder) `Reads` *2026-02-20*
@@ -854,21 +835,21 @@ The First Fully General Computer Action Model | blog
 - [microgpt](https://karpathy.github.io/2026/02/12/microgpt) `Tech` *2026-02-14*
 - [The Story of Wall Street Raider - A 40-Year Odyssey from Harvard Law to Steam](https://www.wallstreetraider.com/story.html) `Reads` *2026-02-14*
 - [discord/twitch/kick/snapchat age verifier](https://age-verifier.kibty.town) `Tech` *2026-02-13*
-- [Why the SpaceX &amp; xAI Merger, IPO, and Pivot to the Moon?](https://unchartedterritories.tomaspueyo.com/p/spacex-xai) `Tech` *2026-02-13*
+- [Why the SpaceX & xAI Merger, IPO, and Pivot to the Moon?](https://unchartedterritories.tomaspueyo.com/p/spacex-xai) `Tech` *2026-02-13*
 - [What Happened With Bio Anchors? - by Scott Alexander](https://www.astralcodexten.com/p/what-happened-with-bio-anchors) `Reads` *2026-02-13*
 - [Hard is Not Defensible &mdash; Alex Crompton](https://www.alexcrompton.com/blog/2017/05/26/hard-is-not-defensible) `Ideas` *2026-02-13*
-- [ Pascual Merita ](https://www.pascualmerita.com) `Blogs` *2026-02-12*
+- [Pascual Merita](https://www.pascualmerita.com) `Blogs` *2026-02-12*
 - [Text classification with Python 3.14's zstd module • Max Halford](https://maxhalford.github.io/blog/text-classification-zstd) `Tech` *2026-02-12*
-- [ blog | Pascual Merita ](https://www.pascualmerita.com/blog) `Tech` *2026-02-12*
+- [blog | Pascual Merita](https://www.pascualmerita.com/blog) `Tech` *2026-02-12*
 - [Is China Cooking Waymo? - by Nick Corvino - ChinaTalk](https://www.chinatalk.media/p/is-china-cooking-waymo) `Tech` *2026-02-12*
-- [Kanchipuram Saris &amp; Thinking Machines | Alter Magazine](https://altermag.com/articles/kanchipuram-saris-and-thinking-machines) `Reads` *2026-02-12*
-- [New Literary Writing on Science, Technology &amp; Progress.](https://altermag.com) `Collectives and Magazines` *2026-02-12*
-- [ ](https://www.cesalberca.com/es/blog/2025-reflexiones-en-profundidad) `Tech` *2026-02-11*
+- [Kanchipuram Saris & Thinking Machines | Alter Magazine](https://altermag.com/articles/kanchipuram-saris-and-thinking-machines) `Reads` *2026-02-12*
+- [New Literary Writing on Science, Technology & Progress.](https://altermag.com) `Collectives and Magazines` *2026-02-12*
+- [](https://www.cesalberca.com/es/blog/2025-reflexiones-en-profundidad) `Tech` *2026-02-11*
 - [No Toilet, No Bride - Wikipedia](https://en.wikipedia.org/wiki/No_Toilet,_No_Bride) `Wikis` *2026-02-10*
 - [America has a tungsten problem](https://www.noleary.com/blog/posts/1) `Tech` *2026-02-10*
-- [We&-x27;re Are All Wall Dancers Now  - by afra - ChinaTalk](https://www.chinatalk.media/p/were-are-all-wall-dancers-now) `Reads` *2026-02-10*
+- [We're Are All Wall Dancers Now - by afra - ChinaTalk](https://www.chinatalk.media/p/were-are-all-wall-dancers-now) `Reads` *2026-02-10*
 - [Review: How Africa Works - by Oliver Kim](https://www.global-developments.org/p/how-africa-works) `Reads` *2026-02-10*
-- [Ranking Everyone I&-x27;ve Fucked, Numerically ](https://zoomtarded.substack.com/p/ranking-everyone-ive-fucked-numerically) `Weird` *2026-02-10*
+- [Ranking Everyone I've Fucked, Numerically](https://zoomtarded.substack.com/p/ranking-everyone-ive-fucked-numerically) `Weird` *2026-02-10*
 - [AI Explorables | PAIR](https://pair.withgoogle.com/explorables) `Academic Papers and Resources` *2026-02-08*
 - [Notion](https://harmless-keeper-948.notion.site/SUPERNOVA-ac34169297104947a752841a0345ab6f) `Tech` *2026-02-08*
 - [Libtard Intifada - by Marcus Flavinius](https://lettersfromtheprovinces.substack.com/p/libtard-intifada?utm_campaign=post-expanded-share&utm_medium=web&triedRedirect=true) `Reads` *2026-02-08*
@@ -877,8 +858,7 @@ The First Fully General Computer Action Model | blog
 - [The Waymo World Model: A New Frontier For Autonomous Driving Simulation](https://waymo.com/blog/2026/02/the-waymo-world-model-a-new-frontier-for-autonomous-driving-simulation) `Tech` *2026-02-07*
 - [As Rocks May Think | Eric Jang](https://evjang.com/2026/02/04/rocks.html) `Tech` *2026-02-06*
 - [Notes on Space GPUs - by Dwarkesh Patel - Dwarkesh Podcast](https://www.dwarkesh.com/p/notes-on-space-gpus) `Tech` *2026-02-06*
-- [
-Welcome to the Room | Jeffrey Snover&-039;s blog	](https://www.jsnover.com/blog/2026/02/01/welcome-to-the-room) `Ideas` *2026-02-06*
+- [Welcome to the Room | Jeffrey Snover's blog](https://www.jsnover.com/blog/2026/02/01/welcome-to-the-room) `Ideas` *2026-02-06*
 - [Owning a $5M data center - comma.ai blog](https://blog.comma.ai/datacenter) `Tech` *2026-02-05*
 - [Staring into the abyss as a core life skill | benkuhn.net](https://www.benkuhn.net/abyss) `Ideas` *2026-02-05*
 - [Illegal number - Wikipedia](https://en.wikipedia.org/wiki/Illegal_number) `Wikis` *2026-02-04*
@@ -886,7 +866,7 @@ Welcome to the Room | Jeffrey Snover&-039;s blog	](https://www.jsnover.com/blog/
 - [Tax – Visualize and compare taxes worldwide](https://www.howmuch.tax) `Tools and Interactive Websites` *2026-02-04*
 - [The Universe of Discourse : About me](https://blog.plover.com/meta/about-me.html) `Blogs` *2026-02-03*
 - [queck⠶cog](https://cog.spin.systems) `Tech` *2026-02-03*
-- [Direct Current Data Centers &-8211; Terraform Industries Blog](https://terraformindustries.wordpress.com/2026/01/30/direct-current-data-centers) `Tech` *2026-02-03*
+- [Direct Current Data Centers – Terraform Industries Blog](https://terraformindustries.wordpress.com/2026/01/30/direct-current-data-centers) `Tech` *2026-02-03*
 - [minichord](https://minichord.com) `Tech` *2026-02-03*
 - [💎 ONNX](https://ocu.spin.systems/onnx) `Tech` *2026-02-03*
 - [Ian's Shoelace Site](https://www.fieggen.com/shoelace) `Museums - Indexers` *2026-02-03*
@@ -913,10 +893,10 @@ Welcome to the Room | Jeffrey Snover&-039;s blog	](https://www.jsnover.com/blog/
 - [Yabir's blog](https://yabirgb.com/posts/dark-age) `Tech` *2026-01-26*
 - [GitHub · Where software is built](https://github.com/zartbot/blog/issues) `Tech` *2026-01-26*
 - [The Possessed Machines: Dostoevsky's Demons and the Coming AGI Catastrophe](https://possessedmachines.com) `Reads` *2026-01-26*
-- [Dario Amodei — The Adolescence of Technology](https://www.darioamodei.com/essay/the-adolescence-of-technology) `Reads` *2026-01-26*
+- [Dario Amodei — The Adolescence of Technology](https://www.darioamodei.com/essay/the-adolescence-of-technology) `Reads` *2026-01-26*
 - [Blog - Igor Babuschkin](https://babuschk.in/blog.html) `Blogs` *2026-01-25*
 - [DSHR's Blog: Internet Archive's Storage](https://blog.dshr.org/2026/01/internet-archives-storage.html) `Tech` *2026-01-25*
-- [Booting from a vinyl record &-8211; BOGIN, JR.](https://boginjr.com/it/sw/dev/vinyl-boot) `Tech` *2026-01-25*
+- [Booting from a vinyl record – BOGIN, JR.](https://boginjr.com/it/sw/dev/vinyl-boot) `Tech` *2026-01-25*
 - [Gas Town’s Agent Patterns, Design Bottlenecks, and Vibecoding at Scale](https://maggieappleton.com/gastown) `Tech` *2026-01-25*
 - [Ronald Fisher - Wikipedia](https://en.wikipedia.org/wiki/Ronald_Fisher) `Wikis` *2026-01-24*
 - [phase8 - ACOUSTIC SYNTHESIZER | KORG (USA)](https://www.korg.com/us/products/dj/phase8/index.php) `Arts` *2026-01-24*
@@ -926,7 +906,7 @@ Welcome to the Room | Jeffrey Snover&-039;s blog	](https://www.jsnover.com/blog/
 - [The Story | Proof of Corn](https://proofofcorn.com/story) `Tech` *2026-01-24*
 - [Sixteen thoughts on Greenland](https://www.siliconcontinent.com/p/sixteen-thoughts-on-greenland?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-01-24*
 - [Longing for the Cultural Revolution in China Today](https://www.chinatalk.media/p/longing-for-the-cultural-revolution?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-01-24*
-- [Does Pentagon Pizza Theory Work? ](https://goflaw.substack.com/p/does-pentagon-pizza-theory-work) `Reads` *2026-01-24*
+- [Does Pentagon Pizza Theory Work?](https://goflaw.substack.com/p/does-pentagon-pizza-theory-work) `Reads` *2026-01-24*
 - [Video Games as Art · Gwern.net](https://gwern.net/video-game-art) `Reads` *2026-01-24*
 - [A manifesto on shower temperature control](https://benholmen.com/blog/shower-temperature-control) `Reads` *2026-01-24*
 - [The CIA Poisoned My Dog - Never the Same River Twice](https://neverthesamerivertwice.substack.com/p/the-cia-poisoned-my-dog) `Reads` *2026-01-24*
@@ -949,7 +929,7 @@ Welcome to the Room | Jeffrey Snover&-039;s blog	](https://www.jsnover.com/blog/
 - [Thinking vs Unfolding — LessWrong](https://www.lesswrong.com/posts/N7QtcqrN5hQwkjpGg/thinking-vs-unfolding) `Reads` *2026-01-15*
 - [Solving the Electroporation Bottleneck](https://www.asimov.press/p/electroporation) `Reads` *2026-01-15*
 - [ASCII Clouds](https://caidan.dev/portfolio/ascii_clouds) `Tools and Interactive Websites` *2026-01-15*
-- [REVIEW: McDonald&-x27;s Sprite - donald boat](https://donaldboat.substack.com/p/review-mcdonalds-sprite-b8f) `Weird` *2026-01-15*
+- [REVIEW: McDonald's Sprite - donald boat](https://donaldboat.substack.com/p/review-mcdonalds-sprite-b8f) `Weird` *2026-01-15*
 - [List of prematurely reported obituaries - Wikipedia](https://en.wikipedia.org/wiki/List_of_prematurely_reported_obituaries?ref=dispatch-media.com) `Wikis` *2026-01-11*
 - [Spite house - Wikipedia](https://en.wikipedia.org/wiki/Spite_house?ref=dispatch-media.com) `Wikis` *2026-01-11*
 - [The State of European Tech 2025](https://www.stateofeuropeantech.com) `Tech` *2026-01-11*
@@ -957,27 +937,27 @@ Welcome to the Room | Jeffrey Snover&-039;s blog	](https://www.jsnover.com/blog/
 - [a16z: The Power Brokers - Not Boring by Packy McCormick](https://www.notboring.co/p/a16z-the-power-brokers) `Reads` *2026-01-11*
 - [Venezuela’s Excrement - by Tomas Pueyo](https://unchartedterritories.tomaspueyo.com/p/venezuelas-excrement) `Reads` *2026-01-11*
 - [How Did TVs Get So Cheap? - by Brian Potter](https://www.construction-physics.com/p/how-did-tvs-get-so-cheap) `Reads` *2026-01-11*
-- [Why I&-x27;m a Quaker - by Ozy Brennan - Thing of Things](https://thingofthings.substack.com/p/why-im-a-quaker) `Reads` *2026-01-11*
-- [China&-x27;s Rare Earths Chokehold: A Primer - ChinaTalk](https://www.chinatalk.media/p/chinas-rare-earths-chokehold-a-primer) `Reads` *2026-01-11*
+- [Why I'm a Quaker - by Ozy Brennan - Thing of Things](https://thingofthings.substack.com/p/why-im-a-quaker) `Reads` *2026-01-11*
+- [China's Rare Earths Chokehold: A Primer - ChinaTalk](https://www.chinatalk.media/p/chinas-rare-earths-chokehold-a-primer) `Reads` *2026-01-11*
 - [archive.is](https://archive.is/Y1xcB) `Reads` *2026-01-11*
 - [Is morality relative? - Optimally Irrational](https://www.optimallyirrational.com/p/is-morality-relative) `Reads` *2026-01-11*
 - [Georgism through Land Leasing - by Jeff Fong](https://progressandpoverty.substack.com/p/georgism-through-land-leasing) `Reads` *2026-01-11*
 - [Highlights From The Comments On Boomers](https://www.astralcodexten.com/p/highlights-from-the-comments-on-boomers) `Reads` *2026-01-11*
 - [Is morality relative? - Optimally Irrational](https://www.optimallyirrational.com/p/is-morality-relative?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-01-11*
-- [What I&-x27;ve been reading recently - Jan 10, 2026](https://www.dwarkesh.com/p/notes-jan-10-2026) `Reads` *2026-01-11*
+- [What I've been reading recently - Jan 10, 2026](https://www.dwarkesh.com/p/notes-jan-10-2026) `Reads` *2026-01-11*
 - [Max Hodak - Do words mean anything?](https://maxhodak.com/writings/2021/01/30/do-words-mean-anything) `Reads` *2026-01-11*
 - [Stop focusing on your lack - by Neel Khare - Pipedreams](https://szplugz.substack.com/p/stop-focusing-on-your-lack?utm_medium=ios) `Ideas` *2026-01-11*
 - [London–Calcutta bus service - Wikipedia](https://en.wikipedia.org/wiki/London%E2%80%93Calcutta_bus_service) `Wikis` *2026-01-09*
 - [[Jan 7 2026] nanochat miniseries v1 · karpathy nanochat · Discussion -420 · GitHub](https://github.com/karpathy/nanochat/discussions/420) `Academic Papers and Resources` *2026-01-09*
 - [](https://ctan.math.illinois.edu/graphics/pgf/contrib/coffeestains/coffeestains-en.pdf) `Academic Papers and Resources` *2026-01-09*
-- [BLAKE2s Hashing Accelerator: A Solo Tapeout Journey &-183; Tales on the wire](https://essenceia.github.io/projects/blake2s_hashing_accelerator_a_solo_tapeout_journey) `Tech` *2026-01-09*
+- [BLAKE2s Hashing Accelerator: A Solo Tapeout Journey · Tales on the wire](https://essenceia.github.io/projects/blake2s_hashing_accelerator_a_solo_tapeout_journey) `Tech` *2026-01-09*
 - [A closer look at a BGP anomaly in Venezuela](https://blog.cloudflare.com/bgp-route-leak-venezuela) `Tech` *2026-01-09*
-- [RL Environments and RL for Science: Data Foundries and Multi-Agent Architectures ](https://newsletter.semianalysis.com/p/rl-environments-and-rl-for-science) `Tech` *2026-01-09*
-- [Moravec&-x27;s Paradox and the Robot Olympics](https://www.pi.website/blog/olympics) `Tech` *2026-01-09*
+- [RL Environments and RL for Science: Data Foundries and Multi-Agent Architectures](https://newsletter.semianalysis.com/p/rl-environments-and-rl-for-science) `Tech` *2026-01-09*
+- [Moravec's Paradox and the Robot Olympics](https://www.pi.website/blog/olympics) `Tech` *2026-01-09*
 - [The Final Offshoring](https://finaloffshoring.com) `Tech` *2026-01-09*
 - [How not to do research - Rajan Agarwal](https://www.rajan.sh/multiplayer) `Tech` *2026-01-09*
 - [Venezuela, el Futuro de la IA y el Nuevo Mapa Energético](https://esandrearomano.substack.com/p/venezuela-el-futuro-de-la-ia-y-el?r=6k752k&utm_medium=ios&shareImageVariant=overlay&triedRedirect=true) `Reads` *2026-01-09*
-- [ The Dangers of Weak Men in The Society of the Antichrist ](https://www.troynikov.io/essays/weak_men_antichrist) `Reads` *2026-01-09*
+- [The Dangers of Weak Men in The Society of the Antichrist](https://www.troynikov.io/essays/weak_men_antichrist) `Reads` *2026-01-09*
 - [GitHub - LRitzdorf/TheJeffDeanFacts: A consolidated list of the Jeff Dean Facts!](https://github.com/LRitzdorf/TheJeffDeanFacts) `Reads` *2026-01-09*
 - [Why Deepseek Appeasing Karens is Key to CCP Stability](https://www.chinatalk.media/p/why-deepseek-appeasing-karens-is) `Reads` *2026-01-09*
 - [](http://confidence.success-equation.com) `Ideas` *2026-01-09*
@@ -1684,7 +1664,7 @@ Welcome to the Room | Jeffrey Snover&-039;s blog	](https://www.jsnover.com/blog/
 - [Whole words and Claude tokenization - by Sander Land](https://tokencontributions.substack.com/p/whole-words-and-claude-tokenization) `Tech` *2025-07-30*
 - [Prediction Markets 101](https://substack.com/inbox/post/169402112) `Reads` *2025-07-30*
 - [Truchet tiles - Wikipedia](https://en.wikipedia.org/wiki/Truchet_tiles) `Wikis` *2025-07-29*
-- [Prompt design strategies  |  Gemini API  |  Google AI for Developers](https://ai.google.dev/gemini-api/docs/prompting-strategies) `Academic Papers and Resources` *2025-07-29*
+- [Prompt design strategies | Gemini API | Google AI for Developers](https://ai.google.dev/gemini-api/docs/prompting-strategies) `Academic Papers and Resources` *2025-07-29*
 - [Prompt engineering overview - Anthropic](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview) `Academic Papers and Resources` *2025-07-29*
 - [Beyond Bytes: Why Language Models Don't Have to Think in UTF-8](https://substack.com/@sanderland/p-167281177) `Tech` *2025-07-29*
 - [Whole words and Claude tokenization - by Sander Land](https://substack.com/@sanderland/p-151315175) `Tech` *2025-07-29*
@@ -2057,7 +2037,7 @@ Welcome to the Room | Jeffrey Snover&-039;s blog	](https://www.jsnover.com/blog/
 - [Block Diffusion](https://m-arriola.com/bd3lms) `Academic Papers and Resources` *2025-05-10*
 - [GRPO Trainer](https://huggingface.co/docs/trl/main/en/grpo_trainer) `Academic Papers and Resources` *2025-05-10*
 - [Training a Rust 1.5B Coder LM with Reinforcement Learning (GRPO) | Oxen.ai](https://www.oxen.ai/blog/training-a-rust-1-5b-coder-lm-with-reinforcement-learning-grpo) `Tech` *2025-05-10*
-- [⚡️Open Questions in Agentic RL — Will Brown (Prime Intellect) - YouTube](https://www.youtube.com/watch?v=Xkwok_XXQgw) `Academic Papers and Resources` *2025-05-09*
+- [⚡️Open Questions in Agentic RL — Will Brown (Prime Intellect) - YouTube](https://www.youtube.com/watch?v=Xkwok_XXQgw) `Academic Papers and Resources` *2025-05-09*
 - [Ying Sheng](https://sites.google.com/view/yingsheng) `Tech` *2025-05-09*
 - [Prime Intellect - Commoditizing Compute & Intelligence](https://www.primeintellect.ai) `Tech` *2025-05-09*
 - [Radiance Fields and the Future of Generative Media - YouTube](https://www.youtube.com/watch?v=hFlF33JZbA0) `Academic Papers and Resources` *2025-05-08*
@@ -2278,7 +2258,7 @@ Welcome to the Room | Jeffrey Snover&-039;s blog	](https://www.jsnover.com/blog/
 - [We Live Like Royalty and Don’t Know It — The New Atlantis](https://www.thenewatlantis.com/publications/we-live-like-royalty-and-dont-know-it) `Reads` *2025-02-18*
 - [Banks As Socialist Collectives - Bloomberg](https://archive.ph/EpQV5) `Reads` *2025-02-16*
 - [Aresluna](https://aresluna.org) `Tech` *2025-02-15*
-- [The hardest working font in Manhattan – Aresluna](https://aresluna.org/the-hardest-working-font-in-manhattan) `Reads` *2025-02-15*
+- [The hardest working font in Manhattan – Aresluna](https://aresluna.org/the-hardest-working-font-in-manhattan) `Reads` *2025-02-15*
 - [Japanese Print Search and Database](https://ukiyo-e.org) `Museums - Indexers` *2025-02-15*
 - [What if Eye...?](https://eyes.mit.edu) `Academic Papers and Resources` *2025-02-14*
 - [SQL Noir - A Detective SQL Game](https://www.sqlnoir.com) `Tools and Interactive Websites` *2025-02-14*
@@ -2783,7 +2763,7 @@ Welcome to the Room | Jeffrey Snover&-039;s blog	](https://www.jsnover.com/blog/
 - [Googology Wiki](https://googology.fandom.com/wiki/Googology_Wiki) `Wikis` *2024-08-16*
 - [Long-term nuclear waste warning messages - Wikipedia](https://en.wikipedia.org/wiki/Long-term_nuclear_waste_warning_messages) `Wikis` *2024-08-16*
 - [Thomas Carlyle - Wikipedia](https://en.wikipedia.org/wiki/Thomas_Carlyle#) `Wikis` *2024-08-16*
-- [Open letter to Mikhail Gorbachev (1990) ](https://en.wikisource.org/wiki/Open_letter_to_Mikhail_Gorbachev_(1990) `Wikis` *2024-08-16*
+- [Open letter to Mikhail Gorbachev (1990)](https://en.wikisource.org/wiki/Open_letter_to_Mikhail_Gorbachev_(1990) `Wikis` *2024-08-16*
 - [S.M. (patient) - Wikipedia](https://en.wikipedia.org/wiki/S.M._(patient) `Wikis` *2024-08-16*
 - [Fourth International Posadist - Wikipedia](https://en.wikipedia.org/wiki/Fourth_International_Posadist) `Wikis` *2024-08-16*
 - [Social-desirability bias - Wikipedia](https://en.wikipedia.org/wiki/Social-desirability_bias) `Wikis` *2024-08-16*
@@ -2939,7 +2919,7 @@ Welcome to the Room | Jeffrey Snover&-039;s blog	](https://www.jsnover.com/blog/
 - [Gin, Television, and Social Surplus](https://gist.github.com/jm3/6724931) `Reads` *2024-08-16*
 - [Exit the Supersensorium - The Seeds of Science](https://www.theseedsofscience.pub/p/exit-the-supersensorium) `Reads` *2024-08-16*
 - [The Post-Individual](https://www.ystrickler.com/thepostindividual/) `Reads` *2024-08-16*
-- [General Intelligence (2024) – Non\_Interactive ](https://nonint.com/2024/06/03/general-intelligence-2024/) `Reads` *2024-08-16*
+- [General Intelligence (2024) – Non\_Interactive](https://nonint.com/2024/06/03/general-intelligence-2024/) `Reads` *2024-08-16*
 - [On the random origin of Merit - Ax’s Substack](https://axganto.substack.com/p/on-the-random-origin-of-merit) `Reads` *2024-08-16*
 - [Hacking a Virtual Power Plant | rya.nc](https://rya.nc/vpp-hack.html) `Reads` *2024-08-16*
 - [Construction Physics - Why Is It So Hard to Build an Airport](https://www.construction-physics.com/p/why-is-it-so-hard-to-build-an-airport) `Reads` *2024-08-16*
