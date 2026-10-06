@@ -9,8 +9,6 @@ title: Inicio
 - [[projects|proyectos]]
 - [[things i like|otras cosas]]
 
-Más cosas mías en [GitHub](https://github.com/mateo19182), [SoundCloud](https://soundcloud.com/m19182), [YouTube](https://www.youtube.com/channel/UCEJKcBK7i88Iv3saZy2xuSg) y [faircamp](https://music.m19182.dev/).
-
-También llevo [No-Cosign](https://no-cosign.m19182.dev/), un blog de música con unos amigos.
+Más cosas mías en [GitHub](https://github.com/mateo19182), [SoundCloud](https://soundcloud.com/m19182), [YouTube](https://www.youtube.com/channel/UCEJKcBK7i88Iv3saZy2xuSg), [faircamp](https://music.m19182.dev/) y [No-Cosign](https://no-cosign.m19182.dev/).
 
 Puedes escribirme a admin (@) m19182.dev (preferido), [X](https://x.com/mateo19182) o [Linkedin](https://www.linkedin.com/in/mateo-amado-ares-9b7551243/)
