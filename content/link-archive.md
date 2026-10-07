@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-10-06
+date: 2026-10-07
 tags: 
   - personal
 ---
@@ -9,6 +9,15 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Language-agnostic BERT Sentence Embedding - ACL Anthology](https://aclanthology.org/2022.acl-long.62) `Academic Papers and Resources` *2026-10-06*
+- [radio braquage](https://radio.braquage.fun) `Arts` *2026-10-06*
+- [Every Millisecond Counts - Jordi Villar](https://jordivillar.com/blog/every-millisecond-counts) `Tech` *2026-10-06*
+- [Dust: Pretraining Transformers Without Backpropagation](https://qlabs.sh/research/dust) `Tech` *2026-10-06*
+- [I handed the epoll UAF to an agent](https://guysrd.github.io/epoll-uaf-agent) `Tech` *2026-10-06*
+- [Just a moment...](https://dispatch-media.com/will-bitcoin-fc-reach-the-premier-league/?ref=dispatch-articles-newsletter) `Reads` *2026-10-06*
+- [Un desahucio, dos decretos-ley, cero viviendas](https://lapromesageneracional.substack.com/p/un-desahucio-dos-decretos-ley-cero) `Reads` *2026-10-06*
+- [The History of the Bloomberg Terminal - IEEE Spectrum](https://spectrum.ieee.org/bloomberg-terminal) `Reads` *2026-10-06*
+- [Example.com Just Launched The Biggest Redesign In Decades | DebugBear](https://www.debugbear.com/blog/example-dot-com-redesign-history) `Museums - Indexers` *2026-10-06*
 - [The Tao Of Backup](http://www.taobackup.com/index.html) `Tech` *2026-10-05*
 - [On Social Reality in China — LessWrong](https://www.lesswrong.com/posts/b5cSYh4emQb2qrGmK/on-social-reality-in-china) `Reads` *2026-10-05*
 - [What Is Going On With Ceiling Fans? — McMansion Hell](https://mcmansionhell.com/post/829127919552151552/what-is-going-on-with-ceiling-fans) `Ideas` *2026-10-05*
@@ -257,7 +266,7 @@ Collection of places on the internet I enjoyed.
 - [The Arguments Against Open Source AI are Very Bad | Tom Bedor's Blog](https://tombedor.dev/arguments-against-open-source-ai-are-very-bad) `Tech` *2026-07-24*
 - [Part 1: AI, Rockets, and the Return of Hard Contracts | Noumena](http://noumena.com/essays/the-engine-shop-part-1) `Reads` *2026-07-24*
 - [Freetekno - Wikipedia](https://en.wikipedia.org/wiki/Freetekno) `Wikis` *2026-07-23*
-- [Dot Dot Dot (@dotdottdottt): &quot;Traffic light figures around the world… By Maya Barkai &quot;](https://substack.com/@dotdottdottt/note/c-281781315?utm_source=notes-share-action&r=6qjp9o) `Arts` *2026-07-23*
+- [Dot Dot Dot (@dotdottdottt): "Traffic light figures around the world… By Maya Barkai "](https://substack.com/@dotdottdottt/note/c-281781315?utm_source=notes-share-action&r=6qjp9o) `Arts` *2026-07-23*
 - [Hatchet · The startup's Postgres survival guide](https://hatchet.run/blog/postgres-survival-guide) `Tech` *2026-07-23*
 - [damnlines — NYC Restaurant Line Cameras & Wait Times](https://damnlines.com) `Tech` *2026-07-23*
 - [Scanning for Pangram errors - VeryFinePrint](https://veryfineprint.substack.com/p/scanning-for-pangram-errors) `Tech` *2026-07-23*
@@ -822,7 +831,7 @@ Collection of places on the internet I enjoyed.
 - [Cosmologically Unique IDs | Jason Fantl](https://jasonfantl.com/posts/Universal-Unique-IDs) `Reads` *2026-02-20*
 - [Child’s Play, by Sam Kriss](https://harpers.org/archive/2026/03/childs-play-sam-kriss-ai-startup-roy-lee) `Reads` *2026-02-20*
 - [Crime As Proxy For Disorder - by Scott Alexander](https://www.astralcodexten.com/p/crime-as-proxy-for-disorder) `Reads` *2026-02-20*
-- [Paged Out! #8 (PDF)](https://pagedout.institute/download/PagedOut_008.pdf) `Collectives and Magazines` *2026-02-20*
+- [Paged Out! -8 (PDF)](https://pagedout.institute/download/PagedOut_008.pdf) `Collectives and Magazines` *2026-02-20*
 - [The State of Machine Learning Competitions](https://mlcontests.com/state-of-machine-learning-competitions-2025/?ref=eo-s25-cta) `Tech` *2026-02-19*
 - [Google vs IPIDEA: Anatomy of a Residential Proxy Takedown](https://substack.thewebscraping.club/p/google-vs-ipidea-takedown?utm_source=share&utm_medium=android&r=1ned0w&triedRedirect=true) `Tech` *2026-02-18*
 - [WEB 4.0: The birth of superintelligent life](https://web4.ai) `Tech` *2026-02-18*
@@ -2951,7 +2960,7 @@ Collection of places on the internet I enjoyed.
 - [Seven Secular Sermons](https://sevensecularsermons.org/) `Ideas` *2024-08-16*
 - [Start Your Own ISP](https://startyourownisp.com/) `Ideas` *2024-08-16*
 - [llama.ttf](https://fuglede.github.io/llama.ttf/) `Ideas` *2024-08-16*
-- [🇪🇺&nbsp;Dear Europe, please wake up – eu/acc | Andreas Klinger](https://klinger.io/posts/eu-acc) `Ideas` *2024-08-16*
+- [🇪🇺 Dear Europe, please wake up – eu/acc | Andreas Klinger](https://klinger.io/posts/eu-acc) `Ideas` *2024-08-16*
 - [Nano-Nova Intro](http://www.fairpoint.net/~jpierce/nano-nova_intro.htm) `Ideas` *2024-08-16*
 - [Beauty as entropic fine-tuning - by Åsmund Folkestad](https://extramediumplease.substack.com/p/beauty-as-entropic-fine-tuning) `Ideas` *2024-08-16*
 - [A Preliminary Theory of Sound Design | Nathan Ho](https://nathan.ho.name/posts/sound-design-theory/) `Ideas` *2024-08-16*
