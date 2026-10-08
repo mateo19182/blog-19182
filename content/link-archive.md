@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-10-07
+date: 2026-10-08
 tags: 
   - personal
 ---
@@ -9,6 +9,22 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Deloping - Wikipedia](https://en.wikipedia.org/wiki/Deloping?ref=quillette.com) `Wikis` *2026-10-07*
+- [Sorites paradox - Wikipedia](https://en.wikipedia.org/wiki/Sorites_paradox) `Wikis` *2026-10-07*
+- [Instrumental convergence - Wikipedia](https://en.wikipedia.org/wiki/Instrumental_convergence) `Wikis` *2026-10-07*
+- [Évariste Galois - Wikipedia](https://en.wikipedia.org/wiki/%C3%89variste_Galois) `Wikis` *2026-10-07*
+- [](https://ideas.repec.org/a/eee/intell/v99y2023ics0160289623000491.html) `Academic Papers and Resources` *2026-10-07*
+- [China’s AI Safety Money Problem - by Nick Corvino](https://www.chinatalk.media/p/chinas-ai-safety-money-problem?utm_source=%2Finbox&utm_medium=reader2) `Tech` *2026-10-07*
+- [How many AI agents could we run? | Epoch AI](https://epoch.ai/publications/estimating-the-agent-population) `Tech` *2026-10-07*
+- [AirVPN](https://airvpn.org/aboutus) `Tech` *2026-10-07*
+- [hallerite/posts/on-the-nature-of-the-swarm/](https://hallerite.com/posts/on-the-nature-of-the-swarm) `Tech` *2026-10-07*
+- [How to Unclench | Jonny Miller](https://howtounclench.com) `Reads` *2026-10-07*
+- [](https://syllabus.pirate.care/library/Porpentine/Hot%20Allostatic%20Load%20%28410%29/Hot%20Allostatic%20Load%20-%20Porpentine.pdf) `Reads` *2026-10-07*
+- [An Open Letter to Scott Alexander - Quillette’s Substack](https://quillette.substack.com/p/an-open-letter-to-scott-alexander) `Reads` *2026-10-07*
+- [How to make more prodigies - Seeds of Science](https://www.theseedsofscience.pub/p/how-to-make-more-prodigies?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-10-07*
+- [](http://homosabiens.substack.com/p/you-are-the-deer-in-the-subway?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-10-07*
+- [‘It could knock a whole street down’: the art of defusing a second world war bomb | Defence policy | The Guardian](https://www.theguardian.com/news/ng-interactive/2026/oct/06/it-could-knock-a-whole-street-down-the-art-of-defusing-a-second-world-war-bomb) `Reads` *2026-10-07*
+- [Pirate Care - Pirate Care](https://syllabus.pirate.care) `Collectives and Magazines` *2026-10-07*
 - [Language-agnostic BERT Sentence Embedding - ACL Anthology](https://aclanthology.org/2022.acl-long.62) `Academic Papers and Resources` *2026-10-06*
 - [radio braquage](https://radio.braquage.fun) `Arts` *2026-10-06*
 - [Every Millisecond Counts - Jordi Villar](https://jordivillar.com/blog/every-millisecond-counts) `Tech` *2026-10-06*
