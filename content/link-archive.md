@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-10-08
+date: 2026-10-09
 tags: 
   - personal
 ---
@@ -9,6 +9,8 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Shtetl-Optimized &raquo; Blog Archive &raquo; The Mathocalypse](https://scottaaronson.blog/?p=10169) `Reads` *2026-10-08*
+- [China's Starlink Response - by Paddy Stephens - ChinaTalk](https://www.chinatalk.media/p/china-responds-to-starlink?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-10-08*
 - [Deloping - Wikipedia](https://en.wikipedia.org/wiki/Deloping?ref=quillette.com) `Wikis` *2026-10-07*
 - [Sorites paradox - Wikipedia](https://en.wikipedia.org/wiki/Sorites_paradox) `Wikis` *2026-10-07*
 - [Instrumental convergence - Wikipedia](https://en.wikipedia.org/wiki/Instrumental_convergence) `Wikis` *2026-10-07*
