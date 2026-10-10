@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-10-09
+date: 2026-10-10
 tags: 
   - personal
 ---
@@ -9,6 +9,11 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Great Male Renunciation - Wikipedia](https://en.wikipedia.org/wiki/Great_Male_Renunciation) `Wikis` *2026-10-09*
+- [Revista de Economía de Galicia - Wikipedia, a enciclopedia libre](https://gl.wikipedia.org/wiki/Revista_de_Econom%C3%ADa_de_Galicia) `Wikis` *2026-10-09*
+- [Beyond Prediction: Solving the Multiple Knapsack Problem at Scale: How Uber Optimizes Incentives](https://www.uber.com/us/en/blog/solving-multiple-knapsack) `Tech` *2026-10-09*
+- [100+ reactions to 100+ solutions – Proofs and Prompts](https://proofsandprompts.com/2026/10/08/100-reactions-to-100-solutions) `Reads` *2026-10-09*
+- [Beauty in DVD Menus | Vale.Rocks](https://vale.rocks/posts/dvd-menus) `Museums - Indexers` *2026-10-09*
 - [Shtetl-Optimized &raquo; Blog Archive &raquo; The Mathocalypse](https://scottaaronson.blog/?p=10169) `Reads` *2026-10-08*
 - [China's Starlink Response - by Paddy Stephens - ChinaTalk](https://www.chinatalk.media/p/china-responds-to-starlink?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-10-08*
 - [Deloping - Wikipedia](https://en.wikipedia.org/wiki/Deloping?ref=quillette.com) `Wikis` *2026-10-07*
