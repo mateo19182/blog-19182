@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-10-10
+date: 2026-10-11
 tags: 
   - personal
 ---
@@ -9,6 +9,13 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [What mathematicians should know about the Lean Theorem Prover: questions of reliability and AI | What's new](https://terrytao.wordpress.com/2026/10/09/what-mathematicians-should-know-about-the-lean-theorem-proverquestions-of-reliability-and-ai) `Tech` *2026-10-10*
+- [Building China’s Two Starlinks - by Paddy Stephens](https://www.chinatalk.media/p/building-chinas-two-starlinks?utm_source=%2Finbox&utm_medium=reader2) `Tech` *2026-10-10*
+- [Telegram Desktop: one-click account takeover via IPC injection | beaksec](https://beaksec.github.io/posts/telegram-desktop-one-click-account-takeover) `Tech` *2026-10-10*
+- [The Lightbulb Computer: Reimagining Spatial & Ambient Computing with Projectors](https://lightbulbcomputer.com) `Tech` *2026-10-10*
+- [Mosquitoes are a choice](https://www.worksinprogress.news/p/you-can-just-eradicate-things?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-10-10*
+- [ascii.rest: animated ascii art for web pages, by @bas3line](https://ascii.rest) `Tools and Interactive Websites` *2026-10-10*
+- [Read Rare: Rare internal memos and forgotten books](https://readrare.com) `Museums - Indexers` *2026-10-10*
 - [Great Male Renunciation - Wikipedia](https://en.wikipedia.org/wiki/Great_Male_Renunciation) `Wikis` *2026-10-09*
 - [Revista de Economía de Galicia - Wikipedia, a enciclopedia libre](https://gl.wikipedia.org/wiki/Revista_de_Econom%C3%ADa_de_Galicia) `Wikis` *2026-10-09*
 - [Beyond Prediction: Solving the Multiple Knapsack Problem at Scale: How Uber Optimizes Incentives](https://www.uber.com/us/en/blog/solving-multiple-knapsack) `Tech` *2026-10-09*
