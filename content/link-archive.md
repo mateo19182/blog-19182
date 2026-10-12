@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-10-11
+date: 2026-10-12
 tags: 
   - personal
 ---
@@ -9,6 +9,28 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Platinum Jazz - Wikipedia](https://en.wikipedia.org/wiki/Platinum_Jazz) `Wikis` *2026-10-11*
+- [Bernd and Hilla Becher - Wikipedia](https://en.wikipedia.org/wiki/Bernd_and_Hilla_Becher) `Wikis` *2026-10-11*
+- [All Souls College, Oxford - Wikipedia](https://en.wikipedia.org/wiki/All_Souls_College,_Oxford) `Wikis` *2026-10-11*
+- [An Experiment in AI Peer Review - by Kevin Munger](https://kevinmunger.substack.com/p/an-experiment-in-ai-peer-review?utm_source=%2Finbox&utm_medium=reader2) `Academic Papers and Resources` *2026-10-11*
+- [](http://arxiv.org/abs/2008.13321) `Academic Papers and Resources` *2026-10-11*
+- [Linking Past to Present: Discovering Style in Two Centuries of Architecture: : Projects: IU Computer Vision Lab: Indiana University](https://vision.luddy.iu.edu/projects/general-papers/linking-past-to-present.html) `Academic Papers and Resources` *2026-10-11*
+- [](https://graphics.cs.cmu.edu/projects/whatMakesParis) `Academic Papers and Resources` *2026-10-11*
+- [santisima virgen maria + la verbena de la paloma siglo xxx TOUR !!!! – will post here some stuff during the tour, pondremos aqui movidas durante el tour](https://svmtour.wordpress.com) `Arts` *2026-10-11*
+- [The Architects of the Next Musical Disruption](https://www.welcomejpeg.com/p/the-architects-of-the-next-musical?utm_source=ig&utm_medium=social&utm_content=link_in_bio) `Arts` *2026-10-11*
+- [Bernd & Hilla Becher | Fraenkel Gallery](https://fraenkelgallery.com/artists/bernd-and-hilla-becher) `Arts` *2026-10-11*
+- [jenny odell • satellite collections](https://www.jennyodell.com/satellite.html) `Arts` *2026-10-11*
+- [jenny odell • projects](https://www.jennyodell.com/projects.html) `Arts` *2026-10-11*
+- [jenny odell • where was it made?](https://www.jennyodell.com/wherewasitmade/index.html) `Arts` *2026-10-11*
+- [Yufeng Zhao](https://www.yufengzhao.com) `Arts` *2026-10-11*
+- [I don't need a website](https://www.idontneedawebsite.us) `Arts` *2026-10-11*
+- [Honey, I Looked at the Data of a Frontier Benchmark and Found some Issues: Porting Agents' Last Exam Linux CLI subset to Verifiers v1 – sankalp's blog](https://sankalp.bearblog.dev/porting-ale-linux-cli-i-looked-at-the-data-of-a-frontier-benchmark-and-found-some-issues) `Tech` *2026-10-11*
+- [What if dictators never died? - by Jerusalem Demsas](https://www.theargumentmag.com/p/what-if-dictators-never-died?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-10-11*
+- [What does “Land supply is fixed” really mean?](https://blog.landeconomics.org/p/is-land-supply-fixed-part-1-the-netherlands?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-10-11*
+- [Rationalists Are Probably Less Kinky - by Aella](https://aella.substack.com/p/rationalists-are-probably-less-kinky?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-10-11*
+- [Searchable.City](https://searchable.city) `Tools and Interactive Websites` *2026-10-11*
+- [about - all text in nyc](https://alltext.nyc/about) `Tools and Interactive Websites` *2026-10-11*
+- [Banner Depot 2000](https://www.banner-depot-2000.net) `Museums - Indexers` *2026-10-11*
 - [What mathematicians should know about the Lean Theorem Prover: questions of reliability and AI | What's new](https://terrytao.wordpress.com/2026/10/09/what-mathematicians-should-know-about-the-lean-theorem-proverquestions-of-reliability-and-ai) `Tech` *2026-10-10*
 - [Building China’s Two Starlinks - by Paddy Stephens](https://www.chinatalk.media/p/building-chinas-two-starlinks?utm_source=%2Finbox&utm_medium=reader2) `Tech` *2026-10-10*
 - [Telegram Desktop: one-click account takeover via IPC injection | beaksec](https://beaksec.github.io/posts/telegram-desktop-one-click-account-takeover) `Tech` *2026-10-10*
