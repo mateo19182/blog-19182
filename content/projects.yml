@@ -1,3 +1,12 @@
+- title: "Spanish Politics on Telegram"
+  title_es: "Política española en Telegram"
+  url: "https://canales.m19182.dev"
+  date: "2026-10"
+  desc: >-
+    A searchable archive of public Telegram channels for research into Spanish politics and Russian influence, updated as new messages are collected.
+  desc_es: >-
+    Un archivo consultable de canales públicos de Telegram para investigar la política española y la influencia rusa, que se actualiza a medida que se recopilan nuevos mensajes.
+
 - title: "El reto de Feijoo"
   url: "/writings/El-reto-de-Feijoo"
   date: "2026-10"
@@ -36,9 +45,9 @@
   url: "https://datacenters.m19182.dev"
   date: "2026-08"
   desc: >-
-    A public, source-backed map of data centres in peninsular Spain and their relationship to the electricity transmission grid. It keeps IT load, grid connection capacity, and installed power separate, and leaves gaps and contradictions visible. [code and data](https://github.com/mateo19182/mapa-datacenters-espana).
+    A public, source-backed map of data centres in peninsular Spain and their relationship to the electricity transmission grid. It keeps IT load, grid connection capacity, and installed power separate, and leaves gaps and contradictions visible. The project attracted interest from a data-centre consulting company. [code and data](https://github.com/mateo19182/mapa-datacenters-espana).
   desc_es: >-
-    Un mapa público y con fuentes de los centros de datos de la España peninsular y su relación con la red de transporte eléctrico. Separa la carga IT, la capacidad de conexión a la red y la potencia instalada, y deja a la vista los huecos y las contradicciones. [código y datos](https://github.com/mateo19182/mapa-datacenters-espana).
+    Un mapa público y con fuentes de los centros de datos de la España peninsular y su relación con la red de transporte eléctrico. Separa la carga IT, la capacidad de conexión a la red y la potencia instalada, y deja a la vista los huecos y las contradicciones. El proyecto despertó el interés de una consultora especializada en centros de datos. [código y datos](https://github.com/mateo19182/mapa-datacenters-espana).
 
 - title: "Fleet"
   url: "https://github.com/mateo19182/fleet"
