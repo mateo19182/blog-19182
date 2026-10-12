@@ -1,3 +1,11 @@
+- title: "A Coruña street-image archive"
+  title_es: "Archivo de imágenes urbanas de A Coruña"
+  date: "2026-10"
+  desc: >-
+    An exploratory archive of A Coruña’s street-level imagery, using computer vision to detect and organise shop signs, street-name plates, graffiti, and other urban objects. Browse images on a map or in grids, with OCR search and multiple viewpoints.
+  desc_es: >-
+    Un archivo exploratorio de imágenes a pie de calle de A Coruña que utiliza visión por computador para detectar y organizar rótulos comerciales, placas con nombres de calles, grafitis y otros objetos urbanos. Permite explorar las imágenes en un mapa o en cuadrículas, con búsqueda por OCR y distintos puntos de vista.
+
 - title: "Spanish Politics on Telegram"
   title_es: "Política española en Telegram"
   url: "https://canales.m19182.dev"
