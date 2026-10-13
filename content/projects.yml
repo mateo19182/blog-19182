@@ -1,19 +1,20 @@
-- title: "A Coruña street-image archive"
-  title_es: "Archivo de imágenes urbanas de A Coruña"
-  date: "2026-10"
-  desc: >-
-    An exploratory archive of A Coruña’s street-level imagery, using computer vision to detect and organise shop signs, street-name plates, graffiti, and other urban objects. Browse images on a map or in grids, with OCR search and multiple viewpoints.
-  desc_es: >-
-    Un archivo exploratorio de imágenes a pie de calle de A Coruña que utiliza visión por computador para detectar y organizar rótulos comerciales, placas con nombres de calles, grafitis y otros objetos urbanos. Permite explorar las imágenes en un mapa o en cuadrículas, con búsqueda por OCR y distintos puntos de vista.
-
 - title: "Spanish Politics on Telegram"
   title_es: "Política española en Telegram"
   url: "https://canales.m19182.dev"
   date: "2026-10"
   desc: >-
-    A searchable archive of public Telegram channels for research into Spanish politics and Russian influence, updated as new messages are collected.
+    A searchable archive of public Telegram channels relevant to Spanish politics. Browse messages and channel statistics, trace forwarding sources, and explore similar posts grouped into weekly stories. The channel selection draws on published disinformation research and includes parties, media and civil-society organisations. [code](https://github.com/mateo19182/tg-monitor).
   desc_es: >-
-    Un archivo consultable de canales públicos de Telegram para investigar la política española y la influencia rusa, que se actualiza a medida que se recopilan nuevos mensajes.
+    Un archivo con buscador de canales públicos de Telegram relacionados con la política española. Permite consultar mensajes y estadísticas, rastrear el origen de los reenvíos y explorar publicaciones similares agrupadas en historias semanales. La selección parte de investigaciones publicadas sobre desinformación e incluye partidos, medios y organizaciones de la sociedad civil. [código](https://github.com/mateo19182/tg-monitor).
+
+- title: "A Coruña street-image archive"
+  title_es: "Archivo de imágenes urbanas de A Coruña"
+  url: "https://typology.m19182.dev"
+  date: "2026-10"
+  desc: >-
+    An experiment in cataloguing A Coruña through street-level imagery from Apple, Google and Mapillary. Detects and crops shop signs, graffiti, street-name plates and other objects into a browsable map and photo grids inspired by the Bechers' typologies. Includes text search, capture-date filters and multiple viewpoints.
+  desc_es: >-
+    Un experimento para catalogar A Coruña a partir de imágenes de calle de Apple, Google y Mapillary. Detecta y recorta rótulos de comercios, grafitis, placas de calles y otros objetos para explorarlos en un mapa y en cuadrículas de fotos inspiradas en las tipologías de los Becher. Incluye búsqueda de texto, filtros por fecha de captura y varias vistas.
 
 - title: "El reto de Feijoo"
   url: "/writings/El-reto-de-Feijoo"
