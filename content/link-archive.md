@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-10-12
+date: 2026-10-13
 tags: 
   - personal
 ---
@@ -9,6 +9,10 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Pantelegraph - Wikipedia](https://en.wikipedia.org/wiki/Pantelegraph) `Wikis` *2026-10-12*
+- [](https://www.oecd.org/content/dam/oecd/en/publications/reports/2008/08/handbook-on-constructing-composite-indicators-methodology-and-user-guide_g1gh9301/9789264043466-en.pdf) `Academic Papers and Resources` *2026-10-12*
+- [A critical look at Lean4 — LessWrong](https://www.lesswrong.com/posts/zHhGa3iQBQcdSifFL/a-critical-look-at-lean4-1) `Reads` *2026-10-12*
+- [Fingerprints are the new cookies](https://royfish.dev/fingerprints-are-the-new-cookies) `Ideas` *2026-10-12*
 - [Platinum Jazz - Wikipedia](https://en.wikipedia.org/wiki/Platinum_Jazz) `Wikis` *2026-10-11*
 - [Bernd and Hilla Becher - Wikipedia](https://en.wikipedia.org/wiki/Bernd_and_Hilla_Becher) `Wikis` *2026-10-11*
 - [All Souls College, Oxford - Wikipedia](https://en.wikipedia.org/wiki/All_Souls_College,_Oxford) `Wikis` *2026-10-11*
