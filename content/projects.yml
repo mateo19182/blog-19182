@@ -12,9 +12,9 @@
   url: "https://typology.m19182.dev"
   date: "2026-10"
   desc: >-
-    An experiment in cataloguing A Coruña through street-level imagery from Apple, Google and Mapillary. Detects and crops shop signs, graffiti, street-name plates and other objects into a browsable map and photo grids inspired by the Bechers' typologies. Includes text search, capture-date filters and multiple viewpoints.
+    An experiment in cataloguing A Coruña through street-level imagery from Apple, Google and Mapillary. Detects and crops shop signs, graffiti, street-name plates and other objects into a browsable map and photo grids inspired by the Bechers' typologies. Includes text search, capture-date filters and multiple viewpoints. [code](https://github.com/mateo19182/typology-machine).
   desc_es: >-
-    Un experimento para catalogar A Coruña a partir de imágenes de calle de Apple, Google y Mapillary. Detecta y recorta rótulos de comercios, grafitis, placas de calles y otros objetos para explorarlos en un mapa y en cuadrículas de fotos inspiradas en las tipologías de los Becher. Incluye búsqueda de texto, filtros por fecha de captura y varias vistas.
+    Un experimento para catalogar A Coruña a partir de imágenes de calle de Apple, Google y Mapillary. Detecta y recorta rótulos de comercios, grafitis, placas de calles y otros objetos para explorarlos en un mapa y en cuadrículas de fotos inspiradas en las tipologías de los Becher. Incluye búsqueda de texto, filtros por fecha de captura y varias vistas. [código](https://github.com/mateo19182/typology-machine).
 
 - title: "El reto de Feijoo"
   url: "/writings/El-reto-de-Feijoo"
