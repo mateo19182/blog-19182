@@ -1,6 +1,6 @@
 /* blog-19182 — minimal theme. Black/white light, dark-green/black dark. */
 
-/* self-hosted fonts (Geist + Geist Mono) */
+/* self-hosted fonts (Geist + Geist Mono for UI and code, Source Serif 4 for reading) */
 @font-face {
   font-family: "Geist";
   font-style: normal;
@@ -21,6 +21,34 @@
   font-weight: 700;
   font-display: swap;
   src: url("/static/fonts/geist-700.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Source Serif 4";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/static/fonts/source-serif-4-400-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Source Serif 4";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/static/fonts/source-serif-4-400-italic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Source Serif 4";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/static/fonts/source-serif-4-600-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Source Serif 4";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/static/fonts/source-serif-4-600-italic.woff2") format("woff2");
 }
 @font-face {
   font-family: "Geist Mono";
@@ -44,8 +72,14 @@
   --font-header: "Geist", -apple-system, BlinkMacSystemFont, sans-serif;
   --font-body: "Geist", -apple-system, BlinkMacSystemFont, sans-serif;
   --font-mono: "Geist Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --font-text: "Source Serif 4", "Iowan Old Style", Georgia, serif;
 
   --maxw: 960px;
+  /* article layout: text column, contents sidebar, sidenote margin */
+  --measure: 40rem;
+  --toc-w: 13rem;
+  --side-w: 15rem;
+  --col-gap: 3rem;
 }
 
 :root[data-theme="dark"] {
@@ -185,7 +219,36 @@ body {
 .tag:hover { background: var(--lightgray); }
 
 /* ---- prose ---- */
-.prose { font-size: 1.02rem; overflow-wrap: anywhere; }
+.prose { font-family: var(--font-text); font-size: 1.125rem; line-height: 1.6; overflow-wrap: anywhere; }
+.prose strong, .prose b { font-weight: 600; }
+.prose :is(p, li, dd, blockquote, figcaption) { hyphens: auto; -webkit-hyphens: auto; text-wrap: pretty; }
+.prose :is(h1, h2, h3, h4), .article-title { text-wrap: balance; }
+/* lists, cards and tables are UI, not running text */
+.prose :is(.entry-list, .project-list, .tag-index, .table-wrap, .toc), .prose.archive-page { font-family: var(--font-body); font-size: 1rem; }
+.prose .table-wrap { font-size: 0.92rem; }
+@media (min-width: 600px) {
+  .article-page .prose > p, .article-page .prose > .i18n > p { text-align: justify; }
+}
+
+/* drop cap on the first paragraph of an article */
+.prose p.lede::first-letter {
+  float: left;
+  font-weight: 600;
+  font-size: 3.15em;
+  line-height: 0.82;
+  margin: 0.06em 0.09em 0 0;
+  color: var(--dark);
+}
+@supports (initial-letter: 3) or (-webkit-initial-letter: 3) {
+  .prose p.lede::first-letter {
+    float: none;
+    font-size: inherit;
+    line-height: inherit;
+    margin: 0 0.1em 0 0;
+    -webkit-initial-letter: 3;
+    initial-letter: 3;
+  }
+}
 .prose h1, .prose h2, .prose h3, .prose h4 {
   font-family: var(--font-header);
   line-height: 1.25;
@@ -266,7 +329,8 @@ body {
 .prose pre code span { color: var(--shiki-light); }
 :root[data-theme="dark"] .prose pre code span { color: var(--shiki-dark); }
 
-.prose table { border-collapse: collapse; width: 100%; max-width: 100%; margin: 1.2rem 0; font-size: 0.92rem; display: block; overflow-x: auto; overflow-wrap: normal; }
+.prose .table-wrap { margin: 1.2rem 0; overflow-x: auto; }
+.prose table { border-collapse: collapse; width: 100%; overflow-wrap: normal; }
 .prose th, .prose td { min-width: 10rem; border: 1px solid var(--lightgray); padding: 0.4rem 0.6rem; text-align: left; vertical-align: top; }
 .prose th { background: var(--highlight); font-family: var(--font-body); }
 
@@ -342,16 +406,46 @@ body {
 .toc a:hover { color: var(--dark); background: var(--highlight); }
 .toc a[aria-current="location"] { color: var(--dark); border-left-color: var(--secondary); background: var(--highlight); }
 .prose :is(h2, h3, h4) { scroll-margin-top: 6rem; }
-@media (min-width: 1200px) {
-  .wrap.with-toc { max-width: 1232px; }
-  .with-toc .article-layout { display: grid; grid-template-columns: minmax(0, 1fr) 200px; gap: 32px; align-items: start; }
-  .with-toc .article-toc { grid-column: 2; grid-row: 1; position: sticky; top: 5.5rem; max-height: calc(100dvh - 7rem); overflow-y: auto; scrollbar-width: thin; }
-  .with-toc .prose { grid-column: 1; grid-row: 1; }
-  .with-toc .toc { border: 0; padding: 0; margin: 0; overflow-wrap: anywhere; }
-  .with-toc .toc .toc-h2 a { font-size: 0.8rem; }
-  .with-toc .toc .toc-h3 a { font-size: 0.74rem; padding-left: 1rem; }
-  .with-toc .toc summary { list-style: none; cursor: default; pointer-events: none; }
-  .with-toc .toc summary::-webkit-details-marker { display: none; }
+/* ---- article layout ----
+   Running text keeps to one column (--measure). Tables, code, image-only
+   paragraphs and figures may grow wider than it when their content needs the
+   room. From 1024px the contents move to a left sidebar; from 1240px the
+   right margin is wide enough for sidenotes. */
+.article-page .wrap { max-width: calc(var(--measure) + 20rem + 2.5rem); }
+.article-header, .article-page .article-toc { max-width: var(--measure); margin-inline: auto; }
+.article-page .prose > :not(.i18n),
+.article-page .prose > .i18n > * { max-width: var(--measure); margin-inline: auto; }
+.article-page .prose > :is(.table-wrap, pre, p.media, figure, details.feijoo-case, .wide, .katex-display),
+.article-page .prose > .i18n > :is(.table-wrap, pre, p.media, figure, details.feijoo-case, .wide, .katex-display) {
+  width: max-content;
+  min-width: min(100%, var(--measure));
+  max-width: 100%;
+}
+.article-page .prose > :is(.wide, details.feijoo-case),
+.article-page .prose > .i18n > :is(.wide, details.feijoo-case) { width: 100%; }
+@media (min-width: 1024px) {
+  .article-page .wrap { max-width: calc(var(--toc-w) + var(--measure) + var(--side-w) + 2 * var(--col-gap) + 2.5rem); }
+  .article-page .article-layout {
+    display: grid;
+    grid-template-columns: var(--toc-w) minmax(0, 1fr);
+    column-gap: var(--col-gap);
+    align-items: start;
+  }
+  .article-header { grid-column: 2; grid-row: 1; margin-inline: 0; }
+  .article-page .prose { grid-column: 2; grid-row: 2; }
+  .article-page .prose > :not(.i18n),
+  .article-page .prose > .i18n > * { margin-inline: 0; }
+  .article-page .article-toc {
+    grid-column: 1; grid-row: 1 / span 2;
+    position: sticky; top: 5.5rem;
+    max-width: none; margin: 0.4rem 0 0;
+    max-height: calc(100dvh - 7rem); overflow-y: auto; scrollbar-width: thin;
+  }
+  .article-page .toc { border: 0; padding: 0; margin: 0; overflow-wrap: anywhere; }
+  .article-page .toc .toc-h2 a { font-size: 0.8rem; }
+  .article-page .toc .toc-h3 a { font-size: 0.74rem; padding-left: 1rem; }
+  .article-page .toc summary { list-style: none; cursor: default; pointer-events: none; }
+  .article-page .toc summary::-webkit-details-marker { display: none; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 
@@ -560,11 +654,6 @@ li.archive-hidden { display: none; }
 .prose .post-tldr summary { cursor: pointer; font-family: var(--font-mono); font-size: 0.8rem; }
 .prose .post-tldr p { margin: 0.7rem 0 0.2rem; }
 
-/* Shorter reading lines for the Feijoo essay; evidence keeps the full width. */
-.prose.feijoo-post > :is(p:not(:has(img, .scan-surface)), h2, h3, h4, ul, ol, blockquote, .post-tldr) {
-  max-width: 70ch;
-  margin-inline: auto;
-}
 .prose .post-tldr .post-tldr-label {
   margin: 0;
   font-family: var(--font-mono);

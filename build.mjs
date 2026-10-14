@@ -243,11 +243,11 @@ async function build() {
   // render each content page
   for (const p of pages) {
     const imageCaptions = p.name === "El reto de Feijoo"
-    let bodyHtml = md.render(p.en ? p.en.rawContent : p.rawContent, { imageCaptions })
+    let bodyHtml = md.render(p.en ? p.en.rawContent : p.rawContent, { imageCaptions, lede: p.isArticle })
     const toc = p.isArticle ? extractToc(bodyHtml) : []
     let es = null
     if (p.es) {
-      const html = md.render(p.es.rawContent, { docId: "es", imageCaptions })
+      const html = md.render(p.es.rawContent, { docId: "es", imageCaptions, lede: p.isArticle })
       es = { ...p.es, html, toc: p.isArticle ? extractToc(html) : [] }
     }
 

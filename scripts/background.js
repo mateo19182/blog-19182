@@ -9,7 +9,8 @@
   const gl = canvas.getContext("webgl", { antialias: false, depth: false, alpha: false, powerPreference: "low-power" })
   if (!gl) return
 
-  const reduceMotion = matchMedia("(prefers-reduced-motion: reduce)").matches
+  // Only the home page animates; elsewhere one still frame keeps reading calm.
+  const still = matchMedia("(prefers-reduced-motion: reduce)").matches || !document.body.classList.contains("home")
 
   const VERT = `attribute vec2 a; void main(){ gl_Position = vec4(a, 0.0, 1.0); }`
 
@@ -108,6 +109,7 @@
   // Render at a modest resolution — soft noise upscales invisibly, and this is
   // the biggest lever for keeping weak GPUs/phones smooth.
   const QUALITY = Math.min(window.devicePixelRatio || 1, 1.5) * (innerWidth < 700 ? 0.6 : 0.8)
+  const STILL_TIME = 12000
   let lastDrawnTime = 0
   function draw(ms) {
     lastDrawnTime = ms
@@ -130,7 +132,7 @@
 
   readTheme()
   resize()
-  new MutationObserver(readTheme).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] })
+  new MutationObserver(() => { readTheme(); if (still) draw(STILL_TIME) }).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] })
 
   // Reallocating the drawing buffer (canvas.width/height) always clears it to
   // black, so doing it on every resize tick flashes the whole page during a
@@ -153,13 +155,14 @@
     draw(ms)
   }
   document.addEventListener("visibilitychange", () => {
-    running = !document.hidden && !reduceMotion
+    running = !document.hidden && !still
     if (running) requestAnimationFrame(frame)
   })
 
-  if (reduceMotion) {
+  if (still) {
+    running = false
     resize()
-    draw(12000)
+    draw(STILL_TIME)
   } else {
     requestAnimationFrame(frame)
   }
