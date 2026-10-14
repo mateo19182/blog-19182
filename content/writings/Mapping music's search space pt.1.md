@@ -2,6 +2,8 @@
 title: Mapping music's search space pt.1
 summary: "Trying to pin down a working definition of what counts as music."
 date: 2025-01-27
+series: Mapping music's search space
+series_es: Mapeando el espacio de búsqueda de la música
 tags:
   - music
   - philosophy

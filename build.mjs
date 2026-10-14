@@ -55,6 +55,48 @@ function stripToText(md) {
     .trim()
 }
 
+// Words a reader reads: prose, not code, maths, URLs or markup.
+function countWords(md) {
+  const text = md
+    .replace(/<!--[\s\S]*?-->/g, " ")
+    .replace(/^(```|~~~)[\s\S]*?^\1/gm, " ")
+    .replace(/\$\$[\s\S]*?\$\$/g, " ")
+    .replace(/\$(?=\S)[^$\n]*?\S\$/g, " ")
+    .replace(/`[^`\n]*`/g, " ")
+    .replace(/!\[\[[^\]]*\]\]|!\[[^\]]*\]\([^)]*\)/g, " ")
+    .replace(/\[\[(?:[^\]|]*\|)?([^\]]*)\]\]/g, "$1")
+    .replace(/\[\^[^\]]*\]:?/g, " ")
+    .replace(/\]\([^)]*\)/g, "]")
+    .replace(/<[^>]+>|https?:\/\/\S+/g, " ")
+  return (text.match(/[\p{L}\p{N}]+(?:['’.-][\p{L}\p{N}]+)*/gu) || []).length
+}
+
+// Links from one rendered page to other writings, as their URLs.
+function writingLinks(html) {
+  const urls = new Set()
+  for (const [, href] of html.matchAll(/href="(?:https:\/\/blog\.m19182\.dev)?(\/writings\/[^"#?]+)/g)) {
+    try { urls.add(decodeURIComponent(href).replace(/\/+$/, "")) } catch {}
+  }
+  return urls
+}
+
+// Posts sharing a `series:` name, ordered by `series_order`, then date.
+function buildSeries(posts) {
+  const map = new Map()
+  for (const p of posts) {
+    if (!p.series) continue
+    if (!map.has(p.series)) map.set(p.series, { name: p.series, nameEs: "", posts: [] })
+    const s = map.get(p.series)
+    s.nameEs ||= p.seriesEs
+    s.posts.push(p)
+  }
+  const order = (p) => p.seriesOrder ?? Infinity
+  for (const s of map.values()) {
+    s.posts.sort((a, b) => order(a) - order(b) || (a.date || "").localeCompare(b.date || ""))
+    s.posts.forEach((p, i) => { p.seriesInfo = { ...s, index: i } })
+  }
+}
+
 function ogSubtitle(page) {
   if (page.isHome) return "Mateo's blog"
   if (page.isArticle && page.date) return page.date
@@ -112,6 +154,10 @@ async function loadFile(file, name, section) {
     lang: data.lang === "es" ? "es" : "en",
     unlisted: data.unlisted === true,
     date: normalizeDate(data.date),
+    updated: normalizeDate(data.updated),
+    series: data.series ? String(data.series) : "",
+    seriesEs: data.series_es ? String(data.series_es) : "",
+    seriesOrder: Number.isFinite(data.series_order) ? data.series_order : null,
     summary: data.summary || "",
     description: data.description || data.summary || text.slice(0, 160).trim(),
     tags: Array.isArray(data.tags) ? data.tags.filter(Boolean) : [],
@@ -240,7 +286,14 @@ async function build() {
   const sitemapUrls = []
   const ogJobs = []
 
-  // render each content page
+  for (const p of pages) {
+    p.words = countWords(p.en ? p.en.rawContent : p.rawContent)
+    if (p.es) p.es.words = countWords(p.es.rawContent)
+  }
+  buildSeries(posts)
+
+  // render each content page, then link writings to the ones that cite them
+  const rendered = []
   for (const p of pages) {
     const imageCaptions = p.name === "El reto de Feijoo"
     let bodyHtml = md.render(p.en ? p.en.rawContent : p.rawContent, { imageCaptions, lede: p.isArticle })
@@ -266,11 +319,35 @@ async function build() {
       ogImage: ogPath,
       showFilter: p.name === "link-archive",
     }
+    rendered.push([p, page])
+  }
+
+  const byUrl = new Map()
+  for (const p of posts) {
+    byUrl.set(p.url, p)
+    for (const a of p.aliases) byUrl.set("/" + String(a).replace(/^\/+|\/+$/g, ""), p)
+  }
+  const backlinks = new Map()
+  for (const [p, page] of rendered) {
+    if (!p.isArticle || p.unlisted) continue
+    const series = p.seriesInfo?.posts || []
+    for (const url of writingLinks(page.html + (page.es?.html || ""))) {
+      const target = byUrl.get(url)
+      // the series banner already lists every part
+      if (!target || target === p || series.includes(target)) continue
+      if (!backlinks.has(target.url)) backlinks.set(target.url, new Set())
+      backlinks.get(target.url).add(p)
+    }
+  }
+
+  for (const [p, page] of rendered) {
+    page.backlinks = [...(backlinks.get(page.url) || [])]
+      .sort((a, b) => (b.date || "").localeCompare(a.date || ""))
     await emit(p.url, renderPage(page))
     await emitMd(p.url, p.title, p.name === "projects" ? p.rawContent + "\n" + projectListMd(projects) : p.rawContent)
-    if (!p.unlisted) sitemapUrls.push({ url: p.url, date: p.date })
+    if (!p.unlisted) sitemapUrls.push({ url: p.url, date: p.updated > p.date ? p.updated : p.date })
     ogJobs.push({
-      path: ogPath,
+      path: page.ogImage,
       title: p.isHome ? "blog-19182" : p.title,
       subtitle: ogSubtitle(p),
     })
