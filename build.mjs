@@ -285,6 +285,7 @@ async function build() {
 
   const sitemapUrls = []
   const ogJobs = []
+  const searchDocs = []
 
   for (const p of pages) {
     p.words = countWords(p.en ? p.en.rawContent : p.rawContent)
@@ -344,6 +345,7 @@ async function build() {
     page.backlinks = [...(backlinks.get(page.url) || [])]
       .sort((a, b) => (b.date || "").localeCompare(a.date || ""))
     await emit(p.url, renderPage(page))
+    if ((p.isArticle || SEARCHED_PAGES.has(p.name)) && !p.unlisted) searchDocs.push(...searchRecords(page))
     await emitMd(p.url, p.title, p.name === "projects" ? p.rawContent + "\n" + projectListMd(projects) : p.rawContent)
     if (!p.unlisted) sitemapUrls.push({ url: p.url, date: p.updated > p.date ? p.updated : p.date })
     ogJobs.push({
@@ -452,8 +454,43 @@ async function build() {
   }))))
   await writeFile(path.join(OUT, "sitemap.xml"), buildSitemap(sitemapUrls))
   await writeFile(path.join(OUT, "robots.txt"), `User-agent: *\nAllow: /\nSitemap: ${SITE.baseUrl}/sitemap.xml\n`)
+  await buildSearchIndex(searchDocs)
 
   console.log(`Built ${pages.length} pages + ${tagMap.size} tags in ${Date.now() - t0}ms -> public/`)
+}
+
+// ---- search (Pagefind) ------------------------------------------------------
+// Writings plus these pages are searchable; the link archive has its own filter.
+const SEARCHED_PAGES = new Set(["now", "projects", "things-i-like"])
+
+// One record per language slot, so a result shows the text that matched and
+// `?lang=` opens the page in that language. Everything goes into one index
+// (English stemming) so both languages are searched whatever the UI language.
+function searchRecords(page) {
+  const slots = page.es
+    ? [["en", page.en?.title || page.title, page.html], ["es", page.es.title, page.es.html]]
+    : [[page.lang, page.title, page.html]]
+  return slots.map(([lang, title, html]) => ({
+    url: `${page.url}/${page.es ? `?lang=${lang}` : ""}`,
+    content: `<!DOCTYPE html><html lang="${lang}"><head><title>${esc(title)}</title></head><body>
+<main data-pagefind-body><span data-pagefind-meta="lang:${lang}"></span>${page.date ? `<span data-pagefind-meta="date:${page.date}"></span>` : ""}<h1>${esc(title)}</h1>
+${html}</main></body></html>`,
+  }))
+}
+
+async function buildSearchIndex(docs) {
+  const pagefind = await import("pagefind")
+  const { index, errors } = await pagefind.createIndex({
+    forceLanguage: "en",
+    excludeSelectors: [".footnote-ref", ".footnote-backref", ".katex", "svg"],
+  })
+  if (!index) throw new Error(`Pagefind: ${errors.join("; ")}`)
+  for (const doc of docs) {
+    const r = await index.addHTMLFile(doc)
+    if (r.errors.length) throw new Error(`Pagefind ${doc.url}: ${r.errors.join("; ")}`)
+  }
+  await index.writeFiles({ outputPath: path.join(OUT, "pagefind") })
+  await pagefind.close()
 }
 
 function redirectHtml(to) {
@@ -468,6 +505,7 @@ async function serve(port = 8080) {
     ".png": "image/png", ".jpg": "image/jpeg", ".jpeg": "image/jpeg", ".svg": "image/svg+xml",
     ".xml": "application/xml", ".md": "text/markdown; charset=utf-8", ".pdf": "application/pdf",
     ".txt": "text/plain", ".gif": "image/gif", ".webp": "image/webp",
+    ".json": "application/json", ".wasm": "application/wasm",
   }
   http.createServer(async (req, res) => {
     try {
