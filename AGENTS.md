@@ -48,5 +48,15 @@ the original. Update the translation when you change the original.
 
 Every writing has a one-line `summary:` shown in the writings list, and 1–3
 topical `tags:` (no catch-all `writing` tag). Add both when you add a post.
+When you substantially revise a post, set `updated: YYYY-MM-DD`; the meta line
+shows it (only if later than `date`) and the sitemap uses it as `lastmod`. It is
+never filled in from git.
+
+Posts that form a series share `series: <name>` with a Spanish `series_es:`, on
+the original file only (translations hold just `title`/`summary`). Parts are
+ordered by date unless you set `series_order: <n>`. The build adds the series
+list under the title and previous/next links at the end. It also lists the
+writings that link to a post ("Linked from"), leaving out links within the
+same series. Word counts and reading times are computed for each language.
 Projects are data in `content/projects.yml`, with English and Spanish fields side
 by side; edit that file, not `projects.md`.

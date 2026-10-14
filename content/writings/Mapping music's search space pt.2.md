@@ -2,6 +2,8 @@
 title: Mapping music's search space pt.2
 summary: "Mapping sounds by their features so that similar music ends up close together."
 date: 2025-03-31
+series: Mapping music's search space
+series_es: Mapeando el espacio de búsqueda de la música
 tags:
   - music
   - ai

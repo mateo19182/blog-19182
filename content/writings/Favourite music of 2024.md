@@ -2,6 +2,8 @@
 title: Favourite music of 2024
 summary: "My favourite albums and EPs of 2024, with a few notes and reviews."
 date: 2024-12-06
+series: Favourite music
+series_es: Música favorita
 tags:
   - music
 ---
