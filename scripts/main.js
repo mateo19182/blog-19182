@@ -50,3 +50,16 @@
   }, { passive: true })
   header.addEventListener("focusin", () => header.classList.remove("is-hidden"))
 })()
+
+// Both language slots share heading ids; jump to the copy that is visible.
+;(function () {
+  function reveal() {
+    const id = decodeURIComponent(location.hash.slice(1))
+    if (!id) return
+    const all = document.querySelectorAll(`[id="${CSS.escape(id)}"]`)
+    const visible = [...all].find((el) => el.getClientRects().length)
+    if (visible && visible !== all[0]) visible.scrollIntoView()
+  }
+  reveal()
+  addEventListener("hashchange", reveal)
+})()

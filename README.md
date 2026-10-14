@@ -11,7 +11,7 @@ HTML out. Clean and minimal: black/white in light mode, dark-green/black in dark
 - `lib/` — markdown pipeline (markdown-it + wikilinks + KaTeX + Shiki),
   HTML templates, OG-image rendering (satori + resvg), RSS/sitemap.
 - `assets/` — `styles.css`, fonts, and what gets copied to `/static`.
-- `scripts/` — client JS: theme toggle, link-archive filter, sand-garden easter egg.
+- `scripts/` — client JS: theme toggle, site search, link-archive filter, sand-garden easter egg.
 - `content/` — the markdown vault (Obsidian-style `[[wikilinks]]`, frontmatter, tags).
 - `functions/_middleware.ts` — Cloudflare Pages markdown content-negotiation.
 
@@ -27,6 +27,12 @@ npm run serve        # build + serve at http://localhost:8080
 
 - Writings index + per-tag browsing, Now / Projects / Things-I-Like / Home pages.
 - Link archive (~2,600 links) with a live search + category filter.
+- Site search: `build.mjs` indexes writings plus Now, Projects and Things I like
+  with [Pagefind](https://pagefind.app/) into `public/pagefind/` at the end of every
+  build. Each language of a page is its own record (one shared index), so results
+  show the text that matched and link with `?lang=` to open that language. The
+  header button, `/` or Ctrl/Cmd-K opens `scripts/search.js`, which loads the
+  index on first use.
 - Per-page OpenGraph images, RSS (`/index.xml`), `sitemap.xml`, `robots.txt`.
 - A raw `.md` copy of every page, served to clients sending `Accept: text/markdown`
   via the Cloudflare Pages middleware
