@@ -951,6 +951,113 @@ li.archive-hidden { display: none; }
   .search-dialog { margin-top: 0.75rem; max-height: calc(100dvh - 1.5rem); }
 }
 
+/* ---- sidenotes, footnote popovers, link previews (scripts/notes.js) ----
+   From 1240px footnotes sit in the right margin beside their reference: no
+   box, small muted serif. Below that a reference opens the note in a small
+   card anchored to it; links to other writings preview the post the same way. */
+:root { --note-ink: var(--darkgray); --pop-bg: #f3f1ec; --pop-line: var(--lightgray); --pop-shadow: 0 10px 30px -12px rgba(43, 41, 38, 0.28), 0 2px 6px rgba(43, 41, 38, 0.06); }
+:root[data-theme="dark"] { --note-ink: var(--gray); --pop-bg: #151515; --pop-line: #2b2b2b; --pop-shadow: 0 12px 32px -10px rgba(0, 0, 0, 0.8); }
+
+.prose .footnote-ref { font-size: 0.68em; line-height: 0; vertical-align: 0.6em; font-feature-settings: "lnum"; }
+.prose .footnote-ref a { padding: 0 0.15em; margin-left: 0.05em; border-radius: 3px; text-decoration: none; transition: background 0.15s, color 0.15s; }
+.prose .footnote-ref a:hover, .prose .footnote-ref a.is-active { color: var(--dark); background: var(--highlight); text-decoration: none; }
+/* bigger tap target for the small numerals, without moving the text */
+@media (pointer: coarse) {
+  .prose .footnote-ref a { position: relative; }
+  .prose .footnote-ref a::after { content: ""; position: absolute; inset: -0.9em -0.6em; }
+}
+.note-num { font-size: 0.75em; line-height: 0; vertical-align: 0.45em; font-weight: 600; color: var(--secondary); font-feature-settings: "lnum"; margin-right: 0.1em; }
+
+.article-page .prose .sidenote {
+  position: absolute;
+  top: 0;
+  left: calc(var(--measure) + var(--col-gap));
+  width: var(--side-w);
+  max-width: none;
+  margin: 0;
+  font-size: 0.84rem;
+  line-height: 1.5;
+  color: var(--note-ink);
+  text-align: left;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  transition: color 0.15s;
+}
+.prose .sidenote p { margin: 0; }
+.prose .sidenote p + p { margin-top: 0.45em; }
+.prose .sidenote a { color: inherit; text-decoration-color: color-mix(in srgb, currentColor 45%, transparent); }
+.prose .sidenote a:hover { color: var(--dark); }
+.prose .sidenote a.external::after, .note-pop a.external::after { content: "\a0↗"; font-size: 0.75em; }
+.prose .sidenote code, .note-pop code { background: none; padding: 0; font-size: 0.88em; }
+.prose .sidenote.is-active { color: var(--dark); }
+.prose .sidenote.is-long .sidenote-body {
+  max-height: 12em;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(#000 60%, transparent);
+  mask-image: linear-gradient(#000 60%, transparent);
+}
+.sidenote-more {
+  background: none; border: 0; padding: 0; margin-top: 0.15rem; cursor: pointer;
+  font: inherit; font-family: var(--font-body); font-size: 0.72rem; letter-spacing: 0.02em;
+  color: var(--gray); text-decoration: underline; text-decoration-color: transparent; text-underline-offset: 2px;
+}
+.sidenote-more:hover { color: var(--dark); text-decoration-color: currentColor; }
+.prose .sidenote.is-flash { animation: sidenote-flash 1.4s ease-out; }
+@keyframes sidenote-flash { 0%, 40% { color: var(--dark); } }
+.sn-base { display: inline-block; width: 0; height: 0; }
+@media (min-width: 1240px) {
+  .article-page .prose, .article-page .prose > .i18n { position: relative; }
+  .prose.has-sidenotes > :is(.footnotes, .footnotes-sep),
+  .prose > .has-sidenotes > :is(.footnotes, .footnotes-sep) { display: none; }
+}
+@media (max-width: 1239px) { .prose .sidenote { display: none; } }
+
+.note-pop {
+  position: absolute;
+  z-index: 30;
+  top: 0;
+  left: 0;
+  width: max-content;
+  max-width: min(26rem, calc(100vw - 24px));
+  max-height: min(24rem, 60vh);
+  overflow: auto;
+  padding: 0.7rem 0.9rem;
+  background: var(--pop-bg);
+  border: 1px solid var(--pop-line);
+  border-radius: 8px;
+  box-shadow: var(--pop-shadow);
+  font-family: var(--font-text);
+  font-size: 0.94rem;
+  line-height: 1.5;
+  color: var(--dark);
+  overflow-wrap: anywhere;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(3px);
+  transition: opacity 0.12s ease, transform 0.12s ease, visibility 0s linear 0.12s;
+}
+.note-pop.is-below { transform: translateY(-3px); }
+.note-pop.is-open { visibility: visible; opacity: 1; transform: none; transition: opacity 0.12s ease, transform 0.12s ease; }
+.note-pop p { margin: 0; }
+.note-pop p + p { margin-top: 0.5em; }
+.note-pop a { color: var(--secondary); text-underline-offset: 2px; text-decoration-thickness: 1px; }
+.note-pop a:hover { color: var(--dark); }
+.note-pop a.external::after { color: var(--gray); }
+.note-pop--link { width: min(23rem, calc(100vw - 24px)); padding: 0.8rem 1rem 0.85rem; }
+.note-pop .lp-title { display: block; font-family: var(--font-header); font-weight: 700; font-size: 1rem; line-height: 1.3; color: var(--dark); text-decoration: none; text-wrap: balance; }
+.note-pop .lp-title:hover { color: var(--secondary); }
+.note-pop .lp-date { display: block; margin-top: 0.2rem; font-family: var(--font-mono); font-size: 0.72rem; color: var(--gray); }
+.note-pop .lp-summary { margin-top: 0.55rem; font-style: italic; color: var(--darkgray); }
+.note-pop .lp-text { margin-top: 0.55rem; padding-top: 0.55rem; border-top: 1px solid var(--pop-line); max-height: 9em; overflow: hidden; font-size: 0.88rem; color: var(--note-ink); }
+.note-pop .lp-text.is-cut { -webkit-mask-image: linear-gradient(#000 55%, transparent); mask-image: linear-gradient(#000 55%, transparent); }
+@media (prefers-reduced-motion: reduce) {
+  .note-pop, .note-pop.is-open, .note-pop.is-below { transform: none; transition: none; }
+  .prose .sidenote, .prose .footnote-ref a { transition: none; }
+  .prose .sidenote.is-flash { animation: none; }
+}
+
 .newsletter { font-size: 0.9rem; }
 .newsletter p { margin: 0 0 0.6rem; }
 .newsletter-row { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; }

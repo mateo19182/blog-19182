@@ -120,6 +120,26 @@ function extractToc(html) {
   return toc
 }
 
+// Plain-text opening of a rendered post for link previews: the lede paragraph
+// (or the first one outside <details>) plus the next if the first is short.
+function previewExcerpt(html, max = 520) {
+  let body = html.replace(/<sup class="footnote-ref">[\s\S]*?<\/sup>/g, "")
+  const lede = body.indexOf('<p class="lede">')
+  if (lede >= 0) body = body.slice(lede)
+  else body = body.replace(/<details[\s\S]*?<\/details>/g, "")
+  const text = (s) => s.replace(/<[^>]+>/g, "").replace(/&nbsp;/g, " ").replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, '"').replace(/\s+/g, " ").trim()
+  const paras = []
+  for (const m of body.matchAll(/<p(?: class="lede")?>([\s\S]*?)<\/p>/g)) {
+    const s = text(m[1])
+    if (!s) continue
+    paras.push(s)
+    if (paras.length === 2 || paras.join(" ").length >= 280) break
+  }
+  let out = paras.join("\n")
+  if (out.length > max) out = out.slice(0, out.lastIndexOf(" ", max)).replace(/[\s,;:.–—-]+$/, "") + "…"
+  return out
+}
+
 // ---- load content -----------------------------------------------------------
 async function loadAll() {
   const dataFiles = existsSync(path.join(CONTENT, "data"))
@@ -286,6 +306,7 @@ async function build() {
   const sitemapUrls = []
   const ogJobs = []
   const searchDocs = []
+  const previews = {}
 
   for (const p of pages) {
     p.words = countWords(p.en ? p.en.rawContent : p.rawContent)
@@ -346,6 +367,10 @@ async function build() {
       .sort((a, b) => (b.date || "").localeCompare(a.date || ""))
     await emit(p.url, renderPage(page))
     if ((p.isArticle || SEARCHED_PAGES.has(p.name)) && !p.unlisted) searchDocs.push(...searchRecords(page))
+    if (p.isArticle && !p.unlisted) {
+      const slot = (s, html) => ({ title: s.title, summary: s.summary || "", excerpt: previewExcerpt(html) })
+      previews[p.url] = { date: p.date, en: slot(p.en || p, page.html), ...(page.es && { es: slot(page.es, page.es.html) }) }
+    }
     await emitMd(p.url, p.title, p.name === "projects" ? p.rawContent + "\n" + projectListMd(projects) : p.rawContent)
     if (!p.unlisted) sitemapUrls.push({ url: p.url, date: p.updated > p.date ? p.updated : p.date })
     ogJobs.push({
@@ -393,6 +418,9 @@ async function build() {
   await copyDir(path.join(ROOT, "assets"), path.join(OUT, "static"))
   await copyDir(path.join(ROOT, "scripts"), path.join(OUT, "scripts"))
   if (dataFiles.length) await copyDir(path.join(CONTENT, "data"), path.join(OUT, "data"))
+  // hover previews for links between writings (scripts/notes.js)
+  await mkdir(path.join(OUT, "data"), { recursive: true })
+  await writeFile(path.join(OUT, "data", "previews.json"), JSON.stringify(previews))
 
   // alias redirects (frontmatter `aliases`)
   for (const p of pages) {
