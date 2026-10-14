@@ -1,6 +1,6 @@
 /* blog-19182 — minimal theme. Black/white light, dark-green/black dark. */
 
-/* self-hosted fonts (Geist + Geist Mono for UI and code, Source Serif 4 for reading) */
+/* self-hosted fonts (Geist + Geist Mono for UI and code, IBM Plex Serif for reading) */
 @font-face {
   font-family: "Geist";
   font-style: normal;
@@ -23,32 +23,32 @@
   src: url("/static/fonts/geist-700.woff2") format("woff2");
 }
 @font-face {
-  font-family: "Source Serif 4";
+  font-family: "IBM Plex Serif";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("/static/fonts/source-serif-4-400-normal.woff2") format("woff2");
+  src: url("/static/fonts/ibm-plex-serif-400-normal.woff2") format("woff2");
 }
 @font-face {
-  font-family: "Source Serif 4";
+  font-family: "IBM Plex Serif";
   font-style: italic;
   font-weight: 400;
   font-display: swap;
-  src: url("/static/fonts/source-serif-4-400-italic.woff2") format("woff2");
+  src: url("/static/fonts/ibm-plex-serif-400-italic.woff2") format("woff2");
 }
 @font-face {
-  font-family: "Source Serif 4";
+  font-family: "IBM Plex Serif";
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url("/static/fonts/source-serif-4-600-normal.woff2") format("woff2");
+  src: url("/static/fonts/ibm-plex-serif-600-normal.woff2") format("woff2");
 }
 @font-face {
-  font-family: "Source Serif 4";
+  font-family: "IBM Plex Serif";
   font-style: italic;
   font-weight: 600;
   font-display: swap;
-  src: url("/static/fonts/source-serif-4-600-italic.woff2") format("woff2");
+  src: url("/static/fonts/ibm-plex-serif-600-italic.woff2") format("woff2");
 }
 @font-face {
   font-family: "Geist Mono";
@@ -72,7 +72,7 @@
   --font-header: "Geist", -apple-system, BlinkMacSystemFont, sans-serif;
   --font-body: "Geist", -apple-system, BlinkMacSystemFont, sans-serif;
   --font-mono: "Geist Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
-  --font-text: "Source Serif 4", "Iowan Old Style", Georgia, serif;
+  --font-text: "IBM Plex Serif", Georgia, serif;
 
   --maxw: 960px;
   /* article layout: text column, contents sidebar, sidenote margin */
@@ -227,29 +227,22 @@ body {
 .prose :is(.entry-list, .project-list, .tag-index, .table-wrap, .toc), .prose.archive-page { font-family: var(--font-body); font-size: 1rem; }
 .prose .table-wrap { font-size: 0.92rem; }
 @media (min-width: 600px) {
-  .article-page .prose > p, .article-page .prose > .i18n > p { text-align: justify; }
+  .article-page .prose > p:not(.ragged), .article-page .prose > .i18n > p:not(.ragged) { text-align: justify; }
 }
 
-/* drop cap on the first paragraph of an article */
-.prose p.lede { min-height: 3lh; } /* short openings still fit the cap */
+/* raised cap: the article's first letter sits on the first baseline and rises above it */
 .prose p.lede::first-letter {
-  float: left;
+  font-size: 3.4em;
+  line-height: 1;
   font-weight: 600;
-  font-size: 3.15em;
-  line-height: 0.82;
-  margin: 0.06em 0.09em 0 0;
+  margin-right: 0.04em;
   color: var(--dark);
 }
-@supports (initial-letter: 3) or (-webkit-initial-letter: 3) {
-  .prose p.lede::first-letter {
-    float: none;
-    font-size: inherit;
-    line-height: inherit;
-    margin: 0 0.1em 0 0;
-    -webkit-initial-letter: 3;
-    initial-letter: 3;
-  }
-}
+:root[data-theme="dark"] .prose p.lede::first-letter { color: var(--secondary); }
+
+/* URLs written out as link text break anywhere, so justified lines don't stretch around them */
+.prose a.bare-url { word-break: break-all; }
+
 .prose h1, .prose h2, .prose h3, .prose h4 {
   font-family: var(--font-header);
   line-height: 1.25;
@@ -987,7 +980,7 @@ li.archive-hidden { display: none; }
 .prose .sidenote p + p { margin-top: 0.45em; }
 .prose .sidenote a { color: inherit; text-decoration-color: color-mix(in srgb, currentColor 45%, transparent); }
 .prose .sidenote a:hover { color: var(--dark); }
-.prose .sidenote a.external::after, .note-pop a.external::after { content: "\a0↗"; font-size: 0.75em; }
+.prose .sidenote a.external:not(.has-favicon)::after, .note-pop a.external:not(.has-favicon)::after { content: "\a0↗"; font-size: 0.75em; }
 .prose .sidenote code, .note-pop code { background: none; padding: 0; font-size: 0.88em; }
 .prose .sidenote.is-active { color: var(--dark); }
 .prose .sidenote.is-long .sidenote-body {
@@ -1044,7 +1037,7 @@ li.archive-hidden { display: none; }
 .note-pop p + p { margin-top: 0.5em; }
 .note-pop a { color: var(--secondary); text-underline-offset: 2px; text-decoration-thickness: 1px; }
 .note-pop a:hover { color: var(--dark); }
-.note-pop a.external::after { color: var(--gray); }
+.note-pop a.external:not(.has-favicon)::after { color: var(--gray); }
 .note-pop--link { width: min(23rem, calc(100vw - 24px)); padding: 0.8rem 1rem 0.85rem; }
 .note-pop .lp-title { display: block; font-family: var(--font-header); font-weight: 700; font-size: 1rem; line-height: 1.3; color: var(--dark); text-decoration: none; text-wrap: balance; }
 .note-pop .lp-title:hover { color: var(--secondary); }
