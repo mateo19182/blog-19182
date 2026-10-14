@@ -38,7 +38,7 @@ The original idea is to compare volumes I–V (Feijoo himself extended the chall
 > «Solo me resta un recurso; y es el que propondré ahora. Desafío al Anónimo Autor de la Carta, (sea el que se fuere) y a todos los demás que quieran conspirar con él, para que en una o muchas hojas volantes den al público señalados los lugares de las Memorias de Trevoux, de donde pretenden que haya sacado yo lo mejor que he empleado para el fondo de mi Obra. En vista de las citas ofrezco exhibir las Memorias de Trevoux, (ciento y veinte y cuatro tomos son los que tengo) ante dos Caballeros de los principales de esta Ciudad, y dos Eclesiásticos de la primera distinción, que unos y otros entienden bien el Francés, los cuales, leídos con exactitud los lugares señalados, darán certificación pública, firmada de sus nombres, de que es falsa la acusación, y fingido el robo que me imputan.»
 
 ![Feijoo's second challenge, volume V, first edition of 1733, page 388, number 44](/data/feijoo-preview/blog/documents/web/06_segundo_reto_1733_p388.jpg)
-*TCU V, discourse XVII, no. 44, p. 388. [First edition, Universidade de Santiago de Compostela](https://hdl.handle.net/10347/7540); [transcription](https://www.filosofia.org/bjf/bjft517.htm).
+*TCU* V, discourse XVII, no. 44, p. 388. [First edition, Universidade de Santiago de Compostela](https://hdl.handle.net/10347/7540); [transcription](https://www.filosofia.org/bjf/bjft517.htm).
 
 ## Historical context
 
@@ -683,7 +683,7 @@ Google Books did a lot for digitization. The labs are in a race to get more data
 
 That's all, here's [the code and relevant files](https://github.com/mateo19182/feijoo), I'll edit the post if I find anything else related to this challenge. Thanks for reading.
 
-[^1]: The reason is a mix of [Reality has a surprising amount of detail](https://johnsalvatier.org/blog/2017/reality-has-a-surprising-amount-of-detail) and underestimating real-world friction. Something being technically possible isn't the most relevant factor for having an impact. I've had a draft stuck on this for several months, talk to me if you're interested in the topic! On that note, [Del rigor en la ciencia, by Borges](https://ciudadseva.com/texto/del-rigor-en-la-ciencia/), .
+[^1]: The reason is a mix of [Reality has a surprising amount of detail](https://johnsalvatier.org/blog/2017/reality-has-a-surprising-amount-of-detail) and underestimating real-world friction. Something being technically possible isn't the most relevant factor for having an impact. I've had a draft stuck on this for several months, talk to me if you're interested in the topic! On that note, [Del rigor en la ciencia, by Borges](https://ciudadseva.com/texto/del-rigor-en-la-ciencia/).
 
 [^2]: As much as it pisses me off, I'm finding it harder and harder to come up with exceptions... In every example I can think of, the differentiator is an idea, a product design, an algorithm or something around the software. It's possible this was already the case before AI and I just wasn't paying attention.
 

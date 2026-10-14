@@ -20,7 +20,7 @@ El padre Feijoo retó a sus lectores a encontrar líneas traducidas de revistas 
 
 ## Intro
 
-Llevo varios días, desde que leí [AI labs need to start funding historical research](https://resobscura.substack.com/p/ai-labs-need-to-start-funding-historical), obsesianado con las implicaciones. En resumen, los modelos frontier actuales han llegado al punto en que pueden producir conocimiento histórico original por sí mismos, y la conclusión del autor del post es que los labs deberían financiar colaboraciones con historiadores y archivistas para expandir la frontera.
+Llevo varios días, desde que leí [AI labs need to start funding historical research](https://resobscura.substack.com/p/ai-labs-need-to-start-funding-historical), obsesionado con las implicaciones. En resumen, los modelos frontier actuales han llegado al punto en que pueden producir conocimiento histórico original por sí mismos, y la conclusión del autor del post es que los labs deberían financiar colaboraciones con historiadores y archivistas para expandir la frontera.
 
 Si miras por detrás de los incentivos (quien escribe esto es historiador de profesión), lo que a mí me queda es que estamos en un momento único donde cualquiera con el suficiente nivel de espabilado puede conseguir hacer descubrimientos novedosos, antes de que los labs se pongan a cerrar todos los cabos restantes por un poco de promo.
 
@@ -46,7 +46,7 @@ La idea original es comparar los tomos I–V (el propio Feijoo amplió el reto [
 > «Solo me resta un recurso; y es el que propondré ahora. Desafío al Anónimo Autor de la Carta, (sea el que se fuere) y a todos los demás que quieran conspirar con él, para que en una o muchas hojas volantes den al público señalados los lugares de las Memorias de Trevoux, de donde pretenden que haya sacado yo lo mejor que he empleado para el fondo de mi Obra. En vista de las citas ofrezco exhibir las Memorias de Trevoux, (ciento y veinte y cuatro tomos son los que tengo) ante dos Caballeros de los principales de esta Ciudad, y dos Eclesiásticos de la primera distinción, que unos y otros entienden bien el Francés, los cuales, leídos con exactitud los lugares señalados, darán certificación pública, firmada de sus nombres, de que es falsa la acusación, y fingido el robo que me imputan.»
 
 ![Segundo reto de Feijoo, tomo V, primera edición de 1733, página 388, número 44](/data/feijoo-preview/blog/documents/web/06_segundo_reto_1733_p388.jpg)
-*TCU V, discurso XVII, n.º 44, p. 388. [Primera edición, Universidade de Santiago de Compostela](https://hdl.handle.net/10347/7540); [transcripción](https://www.filosofia.org/bjf/bjft517.htm).
+*TCU* V, discurso XVII, n.º 44, p. 388. [Primera edición, Universidade de Santiago de Compostela](https://hdl.handle.net/10347/7540); [transcripción](https://www.filosofia.org/bjf/bjft517.htm).
 
 ## Contexto histórico
 
@@ -691,7 +691,7 @@ Google Books hizo mucho por la digitalización. Los labs están en una carrera p
 
 Esto es todo, aquí está [el código y archivos relevantes](https://github.com/mateo19182/feijoo), editaré el post si encuentro algo más relacionado con este reto. Gracias por leer.
 
-[^1]: La razón es una mezcla entre [Reality has a surprising amount of detail](https://johnsalvatier.org/blog/2017/reality-has-a-surprising-amount-of-detail) e infravalorar la fricción del mundo real. Que algo sea técnicamente posible no es el factor más relevante para tener impacto. Llevo con un draft atascado sobre esto varios meses, háblame si te interesa el tema! Al caso [Del rigor en la ciencia, de Borges](https://ciudadseva.com/texto/del-rigor-en-la-ciencia/), .
+[^1]: La razón es una mezcla entre [Reality has a surprising amount of detail](https://johnsalvatier.org/blog/2017/reality-has-a-surprising-amount-of-detail) e infravalorar la fricción del mundo real. Que algo sea técnicamente posible no es el factor más relevante para tener impacto. Llevo con un draft atascado sobre esto varios meses, háblame si te interesa el tema! Al caso [Del rigor en la ciencia, de Borges](https://ciudadseva.com/texto/del-rigor-en-la-ciencia/).
 
 [^2]: Por mucho que me joda, cada vez me cuesta más encontrar excepciones... En todos los ejemplos que se me ocurren, el diferenciador es una idea, un diseño de producto, un algoritmo o algo que rodea al software. Es posible que esto ya pasara antes de la IA y yo estuviese empanado.
 
