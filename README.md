@@ -62,6 +62,55 @@ Cloudflare Pages (git integration):
 - Output directory: `public`
 - `functions/` is picked up automatically for the markdown-negotiation middleware.
 
+## Newsletter
+
+A small English/Spanish signup form appears on the writings index and published
+articles. `functions/api/subscribe.js` adds emails to a Resend segment. Resend
+stores the subscribers and handles the unsubscribe link in each broadcast.
+There is no database or additional npm dependency.
+
+To activate it:
+
+1. In Resend, verify your sending domain, create a segment for blog readers,
+   and create a full-access API key for contacts and broadcasts.
+2. In Cloudflare Pages **production** settings, set `RESEND_API_KEY` as a secret
+   and `RESEND_SEGMENT_ID` to that segment's ID, then redeploy.
+3. In GitHub Actions settings, add the secret `RESEND_API_KEY` and the variables
+   `RESEND_SEGMENT_ID` and `NEWSLETTER_FROM`, for example
+   `blog.m19182.dev <writings@m19182.dev>` using your verified domain. Set the repository
+   variable `NEWSLETTER_ENABLED` to `true` when ready to send.
+
+On pushes to `main` that change writings, the newsletter action compares
+published URLs against the commit before the push. It sends each new writing's
+title, summary and link after the public `newsletter.json` manifest shows the
+post is live. Edits, translations, and unlisted posts don't send mail. Making an
+unlisted post public does. When renaming a post, keep its old URL in `aliases`
+to avoid announcing it again. Enabling the action does not send the archive.
+
+The action reuses an existing Resend draft on retry and skips broadcasts already
+sent or queued. Keep these broadcasts in Resend so retries retain that history.
+If deployment or Resend fails, rerun the failed workflow in GitHub Actions.
+Emails are English-only and include the title and first five paragraphs, then
+a continue-reading link and an unsubscribe link. Spanish originals use their
+English translation. The HTML uses the website's warm background, dark text
+and understated links, with system font fallbacks for email clients.
+Repeated signups don't reset an existing unsubscribe.
+
+Preview what a push would announce without sending any email:
+
+```sh
+npm run build
+NEWSLETTER_BEFORE=<commit-before-your-post> npm run newsletter:preview
+npm run test:newsletter
+```
+
+The normal local server serves static files only. To test the signup endpoint
+locally, run `npx wrangler pages dev public` with `RESEND_API_KEY` and
+`RESEND_SEGMENT_ID` in an untracked `.dev.vars` file. Use a separate test segment.
+
+API references: [contacts](https://resend.com/docs/api-reference/contacts/create-contact)
+and [broadcasts](https://resend.com/docs/api-reference/broadcasts/create-broadcast).
+
 ## License
 
 Content & code released under [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/).

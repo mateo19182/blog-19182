@@ -6,6 +6,8 @@
   "type": "module",
   "license": "CC0-1.0",
   "scripts": {
+    "test:newsletter": "node --test tests/newsletter.test.mjs",
+    "newsletter:preview": "node tools/send-newsletter.mjs",
     "build": "node build.mjs",
     "sync:feijoo": "node tools/sync-feijoo-preview.mjs",
     "preview:feijoo": "npm run sync:feijoo && npm run serve",

@@ -16,6 +16,7 @@ import {
 import { makeOgImage } from "./lib/og.mjs"
 import { buildRss, buildSitemap } from "./lib/feeds.mjs"
 import { fileSlug } from "./lib/slug.mjs"
+import { newsletterExcerpt } from "./lib/newsletter.mjs"
 
 const ROOT = path.dirname(fileURLToPath(import.meta.url))
 const CONTENT = path.join(ROOT, "content")
@@ -366,6 +367,12 @@ async function build() {
 
   // feeds
   await writeFile(path.join(OUT, "index.xml"), buildRss(posts))
+  await writeFile(path.join(OUT, "newsletter.json"), JSON.stringify(posts.map(p => ({
+    url: p.url,
+    title: p.en?.title || p.title,
+    summary: p.lang === "es" ? p.en?.summary || "" : p.summary,
+    excerpt: newsletterExcerpt(p.lang === "es" ? p.en?.rawContent || "" : p.rawContent, p.url),
+  }))))
   await writeFile(path.join(OUT, "sitemap.xml"), buildSitemap(sitemapUrls))
   await writeFile(path.join(OUT, "robots.txt"), `User-agent: *\nAllow: /\nSitemap: ${SITE.baseUrl}/sitemap.xml\n`)
 

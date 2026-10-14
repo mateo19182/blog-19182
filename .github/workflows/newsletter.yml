@@ -1,0 +1,36 @@
+name: Email new writings
+
+on:
+  push:
+    branches: [main]
+    paths: ['content/writings/**']
+
+permissions:
+  contents: read
+
+concurrency:
+  group: newsletter
+  cancel-in-progress: false
+
+jobs:
+  newsletter:
+    if: vars.NEWSLETTER_ENABLED == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - name: Send new writings after deployment
+        run: node tools/send-newsletter.mjs --send
+        env:
+          NEWSLETTER_BEFORE: ${{ github.event.before }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          RESEND_SEGMENT_ID: ${{ vars.RESEND_SEGMENT_ID }}
+          NEWSLETTER_FROM: ${{ vars.NEWSLETTER_FROM }}
