@@ -325,7 +325,7 @@ body {
 .prose pre code { background: none; padding: 0; font-size: inherit; }
 
 /* shiki light/dark via CSS vars */
-.prose pre.shiki, .prose pre.shiki span { background: transparent !important; }
+.prose pre.shiki, .prose pre.shiki span:not(.highlighted) { background: transparent !important; }
 .prose pre code span { color: var(--shiki-light); }
 :root[data-theme="dark"] .prose pre code span { color: var(--shiki-dark); }
 
@@ -415,8 +415,8 @@ body {
 .article-header, .article-page .article-toc { max-width: var(--measure); margin-inline: auto; }
 .article-page .prose > :not(.i18n),
 .article-page .prose > .i18n > * { max-width: var(--measure); margin-inline: auto; }
-.article-page .prose > :is(.table-wrap, pre, p.media, figure, details.feijoo-case, .wide, .katex-display),
-.article-page .prose > .i18n > :is(.table-wrap, pre, p.media, figure, details.feijoo-case, .wide, .katex-display) {
+.article-page .prose > :is(.table-wrap, pre, .code-block, p.media, figure, details.feijoo-case, .wide, .katex-display),
+.article-page .prose > .i18n > :is(.table-wrap, pre, .code-block, p.media, figure, details.feijoo-case, .wide, .katex-display) {
   width: max-content;
   min-width: min(100%, var(--measure));
   max-width: 100%;
@@ -680,6 +680,72 @@ li.archive-hidden { display: none; }
   line-height: 1.45;
   text-align: left;
 }
+
+/* ---- code blocks ----
+   Fenced code is wrapped in .code-block: optional title bar (file name and
+   language), highlighted lines ({1,3-5}) and a copy button from scripts/code.js. */
+.prose .code-block {
+  position: relative;
+  margin: 1.2rem 0;
+  border: 1px solid var(--lightgray);
+  border-radius: 8px;
+}
+.prose .code-block > pre { margin: 0; border: 0; border-radius: inherit; }
+.prose .code-block.has-title > pre { border-radius: 0 0 8px 8px; }
+.code-head {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-height: 2.2rem;
+  padding: 0.3rem 0.4rem 0.3rem 1rem;
+  border-bottom: 1px solid var(--lightgray);
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  color: var(--darkgray);
+}
+.code-title { overflow-wrap: anywhere; }
+.code-lang { margin-left: auto; color: var(--gray); font-family: var(--font-body); font-size: 0.72rem; letter-spacing: 0.04em; text-transform: lowercase; }
+.code-block > pre code { display: grid; }
+.code-block .line:empty::before { content: " "; }
+.code-block .line.highlighted {
+  margin: 0 -1rem;
+  padding: 0 calc(1rem - 2px) 0 1rem;
+  background: var(--highlight);
+  box-shadow: inset 2px 0 0 var(--gray);
+}
+.code-copy {
+  display: inline-grid;
+  place-items: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  padding: 0;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--darkgray);
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.15s;
+}
+.code-copy:hover { color: var(--dark); background: var(--highlight); }
+.code-copy:focus-visible { outline: 2px solid var(--secondary); outline-offset: 1px; }
+.code-copy.is-done { color: var(--secondary); }
+.code-head .code-lang + .code-copy { margin-left: -0.25rem; }
+.code-head .code-title + .code-copy { margin-left: auto; }
+.code-block > .code-copy {
+  position: absolute;
+  top: 0.45rem;
+  right: 0.45rem;
+  background: var(--light);
+  border-color: var(--lightgray);
+}
+.code-block > .code-copy:hover { background: var(--light); }
+.code-block:hover .code-copy, .code-copy:focus-visible, .code-copy.is-done { opacity: 1; }
+@media (hover: none) {
+  .code-copy { opacity: 1; }
+  .code-block:not(.has-title) > pre { padding-right: 2.8rem; }
+}
+@media (prefers-reduced-motion: reduce) { .code-copy { transition: none; } }
 
 .newsletter { font-size: 0.9rem; }
 .newsletter p { margin: 0 0 0.6rem; }
