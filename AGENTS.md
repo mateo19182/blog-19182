@@ -50,3 +50,9 @@ Every writing has a one-line `summary:` shown in the writings list, and 1–3
 topical `tags:` (no catch-all `writing` tag). Add both when you add a post.
 Projects are data in `content/projects.yml`, with English and Spanish fields side
 by side; edit that file, not `projects.md`.
+
+`![alt](src "wide")` (or a raw `<figure class="wide">`) makes an image use the
+full available width. External links show their site's favicon from the cache in
+`assets/favicons/`; after adding links to new sites, run `npm run favicons`
+(network) and commit the cache. The normal build never fetches; uncached hosts
+fall back to the `↗` marker.
