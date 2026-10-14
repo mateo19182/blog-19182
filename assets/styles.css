@@ -231,6 +231,7 @@ body {
 }
 
 /* drop cap on the first paragraph of an article */
+.prose p.lede { min-height: 3lh; } /* short openings still fit the cap */
 .prose p.lede::first-letter {
   float: left;
   font-weight: 600;
