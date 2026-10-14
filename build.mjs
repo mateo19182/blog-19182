@@ -17,6 +17,7 @@ import { makeOgImage } from "./lib/og.mjs"
 import { buildRss, buildSitemap } from "./lib/feeds.mjs"
 import { fileSlug } from "./lib/slug.mjs"
 import { newsletterExcerpt } from "./lib/newsletter.mjs"
+import { loadFavicons } from "./lib/favicons.mjs"
 
 const ROOT = path.dirname(fileURLToPath(import.meta.url))
 const CONTENT = path.join(ROOT, "content")
@@ -287,7 +288,8 @@ async function build() {
 
   const { pages, dataFiles } = await loadAll()
   const resolve = makeResolver(pages, dataFiles)
-  const md = makeRenderer(resolve)
+  const favicons = loadFavicons(ROOT)
+  const md = makeRenderer(resolve, { favicon: favicons.lookup })
   const projects = await loadProjects()
 
   const posts = pages
@@ -318,11 +320,13 @@ async function build() {
   const rendered = []
   for (const p of pages) {
     const imageCaptions = p.name === "El reto de Feijoo"
-    let bodyHtml = md.render(p.en ? p.en.rawContent : p.rawContent, { imageCaptions, lede: p.isArticle })
+    // every link-archive entry is external, so it stays free of markers
+    const noFavicons = p.name === "link-archive"
+    let bodyHtml = md.render(p.en ? p.en.rawContent : p.rawContent, { imageCaptions, lede: p.isArticle, noFavicons })
     const toc = p.isArticle ? extractToc(bodyHtml) : []
     let es = null
     if (p.es) {
-      const html = md.render(p.es.rawContent, { docId: "es", imageCaptions, lede: p.isArticle })
+      const html = md.render(p.es.rawContent, { docId: "es", imageCaptions, lede: p.isArticle, noFavicons })
       es = { ...p.es, html, toc: p.isArticle ? extractToc(html) : [] }
     }
 
@@ -483,6 +487,11 @@ async function build() {
   await writeFile(path.join(OUT, "sitemap.xml"), buildSitemap(sitemapUrls))
   await writeFile(path.join(OUT, "robots.txt"), `User-agent: *\nAllow: /\nSitemap: ${SITE.baseUrl}/sitemap.xml\n`)
   await buildSearchIndex(searchDocs)
+
+  // tools/fetch-favicons.mjs reads the hosts in use from here
+  if (process.env.FAVICON_HOSTS_OUT) await writeFile(process.env.FAVICON_HOSTS_OUT, JSON.stringify([...favicons.seen].sort()))
+  const unknownHosts = favicons.unknown()
+  if (unknownHosts.length) console.log(`${unknownHosts.length} link hosts have no cached favicon yet (npm run favicons): ${unknownHosts.slice(0, 5).join(", ")}${unknownHosts.length > 5 ? ", …" : ""}`)
 
   console.log(`Built ${pages.length} pages + ${tagMap.size} tags in ${Date.now() - t0}ms -> public/`)
 }
