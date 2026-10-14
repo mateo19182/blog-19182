@@ -4,7 +4,7 @@ title: Inicio
 ¡Hola! Soy Mateo. Ya que estás por aquí, puede que te interese:
 
 - [[now|ahora]]
-- [[writings|escritos]] ([[tags|etiquetas]], [RSS](/index.xml))
+- [[writings|escritos]] ([[tags|etiquetas]])
 - [[link-archive|enlaces]]
 - [[projects|proyectos]]
 - [[things i like|otras cosas]]
