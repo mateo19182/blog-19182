@@ -64,8 +64,11 @@ Cloudflare Pages (git integration):
 
 ## Newsletter
 
-A small English/Spanish signup form appears on the writings index and published
-articles. `functions/api/subscribe.js` adds emails to a Resend segment. Resend
+A small English/Spanish signup form lives at `/subscribe`, linked as Email next
+to RSS. `functions/api/subscribe.js` adds emails to a Resend segment and sends a
+short welcome email immediately, with no confirmation step. Its link opens the
+signup page with the optional Other updates choice selected. Only subscribers
+who select that choice join a separate segment for future updates. Resend
 stores the subscribers and handles the unsubscribe link in each broadcast.
 There is no database or additional npm dependency.
 
@@ -75,6 +78,8 @@ To activate it:
    and create a full-access API key for contacts and broadcasts.
 2. In Cloudflare Pages **production** settings, set `RESEND_API_KEY` as a secret
    and `RESEND_SEGMENT_ID` to that segment's ID, then redeploy.
+   Create a second segment and set `RESEND_UPDATES_SEGMENT_ID` for optional
+   other updates. You can also set `NEWSLETTER_FROM` to customize the sender.
 3. In GitHub Actions settings, add the secret `RESEND_API_KEY` and the variables
    `RESEND_SEGMENT_ID` and `NEWSLETTER_FROM`, for example
    `blog.m19182.dev <writings@m19182.dev>` using your verified domain. Set the repository

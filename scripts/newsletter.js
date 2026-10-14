@@ -1,6 +1,7 @@
 ;(function () {
   const form = document.querySelector('.newsletter form')
   if (!form) return
+  if (new URLSearchParams(location.search).get('updates') === '1') form.elements.updates.checked = true
   form.addEventListener('submit', async (event) => {
     event.preventDefault()
     const button = form.querySelector('button')

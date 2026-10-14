@@ -4,7 +4,7 @@ import { onRequestPost } from '../functions/api/subscribe.js'
 import { newPosts, broadcastBody, sendPost } from '../tools/send-newsletter.mjs'
 import { newsletterExcerpt, newsletterHtml } from '../lib/newsletter.mjs'
 
-const env = { RESEND_API_KEY: 'test-key', RESEND_SEGMENT_ID: 'blog' }
+const env = { RESEND_API_KEY: 'test-key', RESEND_SEGMENT_ID: 'blog', RESEND_UPDATES_SEGMENT_ID: 'updates' }
 const post = { url: '/writings/New', title: 'A <title>', summary: 'A {{{template}}} & summary' }
 function request(data, origin = 'https://blog.m19182.dev') {
   return new Request('https://blog.m19182.dev/api/subscribe', {
@@ -22,20 +22,43 @@ test('signup rejects invalid input and foreign origins, and ignores the honeypot
   ]) assert.equal((await onRequestPost({ request: request(data, origin), env })).status, status)
 })
 
-test('signup stores a normalized email in the segment without resetting unsubscribe', async t => {
+test('signup adds only opted-in segments and sends a welcome email without a confirmation step', async t => {
+  const calls = []
   t.mock.method(globalThis, 'fetch', async (url, options) => {
-    assert.equal(url, 'https://api.resend.com/contacts')
-    assert.equal(options.headers.Authorization, 'Bearer test-key')
-    assert.deepEqual(JSON.parse(options.body), { email: 'reader@example.com', segments: [{ id: 'blog' }] })
-    return Response.json({ id: 'contact' })
+    calls.push({ url, options, body: JSON.parse(options.body) })
+    return Response.json({ id: 'contact-or-email' })
   })
-  assert.equal((await onRequestPost({ request: request({ email: ' Reader@Example.com ' }), env })).status, 200)
+  for (const updates of [undefined, 'yes']) {
+    calls.length = 0
+    assert.equal((await onRequestPost({ request: request({ email: ' Reader@Example.com ', updates }), env })).status, 200)
+    assert.equal(calls.length, 2)
+    assert.equal(calls[0].url, 'https://api.resend.com/contacts')
+    assert.deepEqual(calls[0].body, { email: 'reader@example.com', segments: updates ? [{ id: 'blog' }, { id: 'updates' }] : [{ id: 'blog' }] })
+    assert.equal(calls[1].url, 'https://api.resend.com/emails')
+    assert.deepEqual(calls[1].body.to, ['reader@example.com'])
+    assert.equal(calls[1].body.subject, "You're subscribed")
+    assert.ok(calls[1].options.headers['Idempotency-Key'].startsWith('welcome:'))
+    assert.equal(calls[1].body.html.includes('/subscribe?updates=1'), !updates)
+  }
 })
 
 test('signup reports missing configuration and upstream errors', async t => {
   assert.equal((await onRequestPost({ request: request({ email: 'reader@example.com' }), env: {} })).status, 503)
   t.mock.method(globalThis, 'fetch', async () => new Response('Unavailable', { status: 429 }))
   assert.equal((await onRequestPost({ request: request({ email: 'reader@example.com' }), env })).status, 502)
+})
+
+test('signup fails safely if optional updates are not configured or welcome sending fails', async t => {
+  let calls = 0
+  t.mock.method(globalThis, 'fetch', async () => {
+    calls++
+    return calls === 1 ? Response.json({ id: 'contact' }) : new Response('Unavailable', { status: 500 })
+  })
+  const missingUpdates = { RESEND_API_KEY: 'test-key', RESEND_SEGMENT_ID: 'blog' }
+  assert.equal((await onRequestPost({ request: request({ email: 'reader@example.com', updates: 'yes' }), env: missingUpdates })).status, 503)
+  assert.equal(calls, 0)
+  assert.equal((await onRequestPost({ request: request({ email: 'reader@example.com' }), env })).status, 502)
+  assert.equal(calls, 2)
 })
 
 test('native form submissions work without JavaScript', async t => {

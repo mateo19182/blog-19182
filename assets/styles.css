@@ -600,3 +600,5 @@ li.archive-hidden { display: none; }
 .newsletter .newsletter-trap { position: absolute; left: -10000px; }
 .newsletter .newsletter-note { margin-top: 0.5rem; color: var(--darkgray); font-size: 0.8rem; }
 .newsletter [role="status"]:empty { display: none; }
+.newsletter-updates { display: flex; align-items: center; gap: 0.5rem; margin-top: 1rem; }
+.newsletter .newsletter-updates input { width: auto; }
