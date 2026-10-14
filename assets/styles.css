@@ -504,6 +504,7 @@ li.archive-hidden { display: none; }
 }
 .site-footer .wrap {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
@@ -513,7 +514,7 @@ li.archive-hidden { display: none; }
 .footer-meta a:hover { color: var(--secondary); }
 .footer-meta .dot { margin: 0 0.45rem; }
 
-.footer-right { display: flex; align-items: center; gap: 0.8rem; margin-left: auto; }
+.footer-right { display: flex; flex-wrap: wrap; justify-content: flex-end; align-items: center; gap: 0.8rem; margin-left: auto; }
 .footer-right .theme-toggle { width: 30px; height: 30px; }
 
 /* ---- language ---- */
@@ -680,7 +681,7 @@ li.archive-hidden { display: none; }
   text-align: left;
 }
 
-.newsletter { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--lightgray); font-size: 0.9rem; }
+.newsletter { font-size: 0.9rem; }
 .newsletter p { margin: 0 0 0.6rem; }
 .newsletter-row { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; }
 .newsletter input, .newsletter button { font: inherit; color: var(--dark); background: var(--light); border: 1px solid var(--gray); border-radius: 3px; padding: 0.45rem 0.65rem; }
@@ -692,3 +693,6 @@ li.archive-hidden { display: none; }
 .newsletter [role="status"]:empty { display: none; }
 .newsletter-updates { display: flex; align-items: center; gap: 0.5rem; margin-top: 1rem; }
 .newsletter .newsletter-updates input { width: auto; }
+.writings-intro { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem; }
+.subscription-links { white-space: nowrap; }
+.writings-intro .subscription-links { margin-left: auto; }
