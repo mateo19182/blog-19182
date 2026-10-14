@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-10-13
+date: 2026-10-14
 tags: 
   - personal
 ---
@@ -9,6 +9,9 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [AI models may be capable of self-replicating without access to a datacenter \ Anthropic](https://www.anthropic.com/research/self-replicating-ai) `Tech` *2026-10-13*
+- [momento de volverse un poco más agresivo sobre la vida que quieres](https://gargoladigital.substack.com/p/momento-de-volverse-un-poco-mas-agresivo?utm_source=%2Finbox&utm_medium=reader2) `Ideas` *2026-10-13*
+- [The Museum of Time Based Art](https://motba.art) `Museums - Indexers` *2026-10-13*
 - [Pantelegraph - Wikipedia](https://en.wikipedia.org/wiki/Pantelegraph) `Wikis` *2026-10-12*
 - [](https://www.oecd.org/content/dam/oecd/en/publications/reports/2008/08/handbook-on-constructing-composite-indicators-methodology-and-user-guide_g1gh9301/9789264043466-en.pdf) `Academic Papers and Resources` *2026-10-12*
 - [A critical look at Lean4 — LessWrong](https://www.lesswrong.com/posts/zHhGa3iQBQcdSifFL/a-critical-look-at-lean4-1) `Reads` *2026-10-12*
