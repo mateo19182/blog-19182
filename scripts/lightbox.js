@@ -1,4 +1,4 @@
-// Open prose images that are shown smaller than their real size in a full-view
+// Open prose images in a full-view
 // dialog. Annotated scans are cloned with their overlay. Click the image to see
 // it at full size, anywhere else (or Esc) to close.
 ;(function () {
@@ -19,7 +19,7 @@
       (img.naturalWidth > img.clientWidth * 1.1 || img.naturalHeight > img.clientHeight * 1.1)
   }
   function mark(img) {
-    const on = bigger(img)
+    const on = img.complete && img.naturalWidth > 0 && img.clientWidth > 0
     img.classList.toggle("zoomable", on)
     if (on) {
       img.tabIndex = 0

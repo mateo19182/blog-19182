@@ -744,7 +744,6 @@ li.archive-hidden { display: none; }
 
 /* ---- article metadata & navigation: length, series, backlinks, progress ---- */
 .content-meta :is(.meta-length, .meta-updated) { white-space: nowrap; }
-.content-meta .meta-length .dot { margin: 0 0.3rem; }
 
 .series {
   margin: -0.6rem 0 1.1rem;
@@ -811,14 +810,14 @@ li.archive-hidden { display: none; }
   pointer-events: none;
 }
 
-.entry-row .entry-time {
+.entry-row .entry-length {
   order: 98; margin-left: auto; flex-shrink: 0; white-space: nowrap;
   color: var(--gray); font-size: 0.78rem; font-family: var(--font-mono); opacity: 0.8;
 }
-.entry-row .entry-time + .entry-date { margin-left: 0; }
+.entry-row .entry-length + .entry-date { margin-left: 0; }
 @media (max-width: 600px) {
-  .entry-row .entry-time { display: none; }
-  .entry-row .entry-time + .entry-date { margin-left: auto; }
+  .entry-row .entry-length { display: none; }
+  .entry-row .entry-length + .entry-date { margin-left: auto; }
 }
 
 /* ---- site search (scripts/search.js, Pagefind) ---- */
