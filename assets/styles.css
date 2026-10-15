@@ -401,16 +401,17 @@ body {
 .toc a[aria-current="location"] { color: var(--dark); border-left-color: var(--secondary); background: var(--highlight); }
 .prose :is(h2, h3, h4) { scroll-margin-top: 6rem; }
 /* ---- article layout ----
-   Running text keeps to one column (--measure). Tables, code, image-only
-   paragraphs and figures may grow wider than it when their content needs the
+   Running text and ordinary figures share one column (--measure). Tables,
+   code and explicitly wide figures may grow wider when they need the
    room. From 1024px the contents move to a left sidebar; from 1240px the
    right margin is wide enough for sidenotes. */
+.article-page { --measure: 44rem; }
 .article-page .wrap { max-width: calc(var(--measure) + 20rem + 2.5rem); }
 .article-header, .article-page .article-toc { max-width: var(--measure); margin-inline: auto; }
 .article-page .prose > :not(.i18n),
 .article-page .prose > .i18n > * { max-width: var(--measure); margin-inline: auto; }
-.article-page .prose > :is(.table-wrap, pre, .code-block, p.media, figure, details.feijoo-case, .wide, .katex-display),
-.article-page .prose > .i18n > :is(.table-wrap, pre, .code-block, p.media, figure, details.feijoo-case, .wide, .katex-display) {
+.article-page .prose > :is(.table-wrap, pre, .code-block, details.feijoo-case, .wide, .katex-display),
+.article-page .prose > .i18n > :is(.table-wrap, pre, .code-block, details.feijoo-case, .wide, .katex-display) {
   width: max-content;
   min-width: min(100%, var(--measure));
   max-width: 100%;
@@ -656,18 +657,18 @@ li.archive-hidden { display: none; }
   font-size: 0.8rem;
 }
 
-/* Captions wrap to the image width, rather than the prose column. */
+/* Ordinary article images and captions follow the text's left edge. */
+.article-page .prose img:not(.favicon) { margin-inline: 0; }
 .prose.feijoo-post .post-figure {
-  display: table;
-  width: fit-content;
-  max-width: 100%;
+  display: block;
+  width: 100%;
+  max-width: min(100%, var(--measure));
   margin: 1.5rem auto;
 }
-.prose.feijoo-post .post-figure > img { margin: 0 auto; }
-.prose.feijoo-post .post-figure .scan-surface { margin: 0 auto; }
+.prose.feijoo-post .post-figure > img { margin: 0; }
+.prose.feijoo-post .post-figure .scan-surface { margin: 0; }
 .prose.feijoo-post .post-figure figcaption {
-  display: table-caption;
-  caption-side: bottom;
+  display: block;
   padding-top: 0.6rem;
   color: var(--darkgray);
   font-size: 0.82rem;
@@ -1075,7 +1076,7 @@ li.archive-hidden { display: none; }
 
 .article-page .prose .wide img:not(.favicon),
 .prose.feijoo-post .post-figure.wide .scan-surface { width: 100%; max-height: none; }
-.prose.feijoo-post .post-figure.wide { display: block; width: 100%; }
+.prose.feijoo-post .post-figure.wide { display: block; width: 100%; max-width: 100%; }
 .prose.feijoo-post .post-figure.wide figcaption { display: block; }
 
 .prose img.zoomable { cursor: zoom-in; }
