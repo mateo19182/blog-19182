@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-10-14
+date: 2026-10-15
 tags: 
   - personal
 ---
@@ -9,6 +9,23 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [User awareness in frontier models | Transluce AI](https://transluce.org/user-awareness#introduction) `Academic Papers and Resources` *2026-10-14*
+- [Embedding Gemma Transcribe](https://eg2.haku.sh) `Academic Papers and Resources` *2026-10-14*
+- [❚ moirélephant ❚](https://weird.vivien.garden/transparency) `Arts` *2026-10-14*
+- [Your Game Is A Harness - kyle kukshtel's website](https://kylekukshtel.com/ai-harness-engineering-game-development-claude-code) `Tech` *2026-10-14*
+- [Under the hood, off the hot path: how D1 scales to millions of databases | Cloudflare Blog](https://blog.cloudflare.com/d1-control-plane) `Tech` *2026-10-14*
+- [The Tragedy of 3D XPoint (AKA Intel Optane AKA Micron QuantX)](https://irrationalanalysis.substack.com/p/the-tragedy-of-3d-xpoint-aka-intel?utm_source=%2Finbox&utm_medium=reader2) `Tech` *2026-10-14*
+- [How many shots are in the average movie today?](https://stephenfollows.com/p/how-many-shots-are-in-the-average) `Reads` *2026-10-14*
+- [vyvanse any% - by Celeste 🌱 - celeste-land](https://ceselder.substack.com/p/vyvanse-any?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-10-14*
+- [Species Have Blurry Boundaries](https://www.asimov.press/p/blurry?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-10-14*
+- [The fox in liberalism’s henhouse - by Matthew Yglesias](https://www.theargumentmag.com/p/the-fox-in-liberalisms-henhouse-38e?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-10-14*
+- [Esbozo de un plan para la España del futuro](https://lapromesageneracional.substack.com/p/esbozo-de-un-plan-para-la-espana?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-10-14*
+- [Your prompt… plus everything you've ever (publicly) written — LessWrong](https://www.lesswrong.com/posts/STBuKAX9kkMJunErA/your-prompt-plus-everything-you-ve-ever-publicly-written) `Ideas` *2026-10-14*
+- [How to be more ambitious: A tutorial for humans with models](https://felixrieseberg.com/how-to-be-more-ambitious-a-tutorial-for-humans-with-models/#depth) `Ideas` *2026-10-14*
+- [Vercel Security Checkpoint](https://reforma-digital.es) `Tools and Interactive Websites` *2026-10-14*
+- [About Me](https://felixrieseberg.com/about-me) `Tools and Interactive Websites` *2026-10-14*
+- [XY Music](https://music.xy.dev) `Tools and Interactive Websites` *2026-10-14*
+- [weird web october](https://weird.vivien.garden) `Museums - Indexers` *2026-10-14*
 - [AI models may be capable of self-replicating without access to a datacenter \ Anthropic](https://www.anthropic.com/research/self-replicating-ai) `Tech` *2026-10-13*
 - [momento de volverse un poco más agresivo sobre la vida que quieres](https://gargoladigital.substack.com/p/momento-de-volverse-un-poco-mas-agresivo?utm_source=%2Finbox&utm_medium=reader2) `Ideas` *2026-10-13*
 - [The Museum of Time Based Art](https://motba.art) `Museums - Indexers` *2026-10-13*
