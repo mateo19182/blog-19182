@@ -667,6 +667,9 @@ li.archive-hidden { display: none; }
 }
 .prose.feijoo-post .post-figure > img { margin: 0; }
 .prose.feijoo-post .post-figure .scan-surface { margin: 0; }
+@media (min-width: 1024px) {
+  .article-page .prose.feijoo-post .post-figure { margin-inline: 0; }
+}
 .prose.feijoo-post .post-figure figcaption {
   display: block;
   padding-top: 0.6rem;

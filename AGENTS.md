@@ -57,7 +57,7 @@ the original file only (translations hold just `title`/`summary`). Parts are
 ordered by date unless you set `series_order: <n>`. The build adds the series
 list under the title and previous/next links at the end. It also lists the
 writings that link to a post ("Linked from"), leaving out links within the
-same series. Word counts and reading times are computed for each language.
+same series. Word counts are computed for each language. Do not display reading times.
 Projects are data in `content/projects.yml`, with English and Spanish fields side
 by side; edit that file, not `projects.md`.
 
