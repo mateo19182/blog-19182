@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-10-15
+date: 2026-10-16
 tags: 
   - personal
 ---
@@ -9,6 +9,11 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Neural Networks Are Already Clean](https://already-clean.goodfire.com) `Tech` *2026-10-15*
+- [Scott And Scurvy (Idle Words)](https://idlewords.com/2010/03/scott_and_scurvy.htm) `Reads` *2026-10-15*
+- [Reality is Very Weird and You Need to be Prepared for That – SLIME MOLD TIME MOLD](https://slimemoldtimemold.com/2022/01/11/reality-is-very-weird-and-you-need-to-be-prepared-for-that) `Reads` *2026-10-15*
+- [Do dentists actually know what they’re doing?](https://mapwriting.substack.com/p/dentists) `Ideas` *2026-10-15*
+- [Spark WebGPU demos](https://sparkwebgpu.lucab.co.uk) `Tools and Interactive Websites` *2026-10-15*
 - [User awareness in frontier models | Transluce AI](https://transluce.org/user-awareness#introduction) `Academic Papers and Resources` *2026-10-14*
 - [Embedding Gemma Transcribe](https://eg2.haku.sh) `Academic Papers and Resources` *2026-10-14*
 - [❚ moirélephant ❚](https://weird.vivien.garden/transparency) `Arts` *2026-10-14*
