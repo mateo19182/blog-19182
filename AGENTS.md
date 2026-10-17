@@ -59,7 +59,13 @@ list under the title and previous/next links at the end. It also lists the
 writings that link to a post ("Linked from"), leaving out links within the
 same series. Word counts are computed for each language. Do not display reading times.
 Projects are data in `content/projects.yml`, with English and Spanish fields side
-by side; edit that file, not `projects.md`.
+by side; edit that file, not `projects.md`. The page lists them newest first by
+`date` under year headings. Each project has 1–3 `tags:` from `PROJECT_TAGS` in
+`lib/templates.mjs` (the build fails on unknown ones), and the page filters by them.
+`highlight: true` gives a project a framed card; `image: name.webp` (in
+`assets/projects/`, 16:10) adds a thumbnail, highlighted or not. For live sites, `npm run screenshots`
+(network, needs Chrome) captures missing images; add repo-only ones by hand. Commit
+the images.
 
 `![alt](src "wide")` (or a raw `<figure class="wide">`) makes an image use the
 full available width. External links show their site's favicon from the cache in

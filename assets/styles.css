@@ -444,22 +444,55 @@ li.archive-hidden { display: none; }
 /* every archive link is external — drop the ↗ noise here */
 .archive-page a.external::after { content: none; }
 
-/* ---- projects (cards live in markdown but themed here) ---- */
-.project-list { display: flex; flex-direction: column; gap: 1rem; margin: 1.5rem 0; }
-.project-card {
-  border: 1px solid var(--lightgray);
-  border-radius: 8px;
-  padding: 1rem 1.1rem;
-  background: var(--light);
-  transition: border-color 0.2s, transform 0.1s;
+/* ---- projects (list built from projects.yml, filtered by scripts/projects.js) ---- */
+.project-filter { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 1.5rem 0 0.5rem; font-family: var(--font-body); }
+.project-chip span { color: var(--gray); }
+.project-chip[aria-current] { background: var(--dark); color: var(--light); }
+.project-chip[aria-current] span { color: var(--lightgray); }
+.project-list { display: flex; flex-direction: column; margin: 0.5rem 0 1.5rem; }
+.prose .project-year {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: normal;
+  color: var(--gray);
+  margin: 1.6rem 0 0.2rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--lightgray);
 }
-.project-card:hover { border-color: var(--secondary); transform: translateY(-1px); }
-.project-title { font-weight: 600; margin-bottom: 0.3rem; font-family: var(--font-header); }
+.project-list [hidden] { display: none; }
+.project { padding: 0.7rem 0; display: flex; gap: 1.1rem; align-items: flex-start; }
+/* dashed rule between rows; with JS, projects.js marks them so hidden rows don't count */
+.project-list:not(.js) .project + .project,
+.project-list.js .project-sep { border-top: 1px dashed var(--lightgray); }
+/* highlighted: larger image on the right and text a size up */
+.project-highlight { flex-direction: row-reverse; gap: 1.4rem; padding: 1.1rem 0; }
+.project-highlight .project-thumb { flex-basis: 19rem; }
+.project-highlight .project-title { font-size: 1.2rem; }
+.project-highlight .project-desc { font-size: 1rem; }
+.prose :is(.project-filter, .project-tags) .tag { text-decoration: none; }
+.project-thumb { flex: 0 0 13rem; display: block; line-height: 0; }
+.project-thumb img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: top left;
+  border-radius: 5px;
+  border: 1px solid var(--lightgray);
+}
+.project-body { min-width: 0; flex: 1; }
+.project-title { font-weight: 600; margin-bottom: 0.2rem; font-family: var(--font-header); }
 .project-title a { color: var(--dark); text-decoration: none; }
 .project-title a:hover { color: var(--secondary); }
 .project-desc { font-size: 0.94rem; color: var(--darkgray); }
 .project-desc a { color: var(--secondary); }
 .project-date { font-size: 0.78rem; color: var(--gray); font-family: var(--font-mono); margin-left: 0.5rem; font-weight: normal; }
+.project-tags { margin-top: 0.35rem; display: flex; flex-wrap: wrap; gap: 0.3rem; }
+.project-tags .tag { font-size: 0.72rem; }
+@media (max-width: 600px) {
+  .project-has-thumb { flex-direction: column; gap: 0.7rem; }
+  .project-highlight .project-thumb { flex-basis: auto; }
+  .project-thumb { flex: none; width: 100%; }
+}
 
 /* ---- footer ---- */
 .site-footer {

@@ -13,7 +13,8 @@
     "sync:feijoo": "node tools/sync-feijoo-preview.mjs",
     "preview:feijoo": "npm run sync:feijoo && npm run serve",
     "serve": "node build.mjs --serve",
-    "dev": "node build.mjs --serve --watch"
+    "dev": "node build.mjs --serve --watch",
+    "screenshots": "node tools/project-screenshots.mjs"
   },
   "dependencies": {
     "@resvg/resvg-js": "^2.6.2",

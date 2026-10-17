@@ -11,7 +11,7 @@ import matter from "gray-matter"
 import { makeRenderer, initHighlighter, linkKey } from "./lib/markdown.mjs"
 import {
   renderPage, writingsIndexHtml, tagsIndexHtml,
-  tagPageHtml, tagSlug, SITE, esc, t, projectListHtml, projectListMd,
+  tagPageHtml, tagSlug, SITE, esc, t, projectListHtml, projectListMd, checkProjectTags,
 } from "./lib/templates.mjs"
 import { makeOgImage } from "./lib/og.mjs"
 import { buildRss, buildSitemap } from "./lib/feeds.mjs"
@@ -221,11 +221,13 @@ async function loadTranslation(file, fallbackTitle) {
 }
 
 // Project cards live in content/projects.yml; `hidden: true` entries are kept but not shown.
+// Newest first; undated entries go last, in file order.
 async function loadProjects() {
   const file = path.join(CONTENT, "projects.yml")
   if (!existsSync(file)) return []
-  const list = matter.engines.yaml.parse(await readFile(file, "utf8")) || []
-  return list.filter((p) => !p.hidden)
+  const list = (matter.engines.yaml.parse(await readFile(file, "utf8")) || []).filter((p) => !p.hidden)
+  checkProjectTags(list)
+  return list.sort((a, b) => String(b.date || "").localeCompare(String(a.date || "")))
 }
 
 // ---- resolver for wikilinks -------------------------------------------------

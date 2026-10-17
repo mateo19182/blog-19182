@@ -2,6 +2,9 @@
   title_es: "Política española en Telegram"
   url: "https://canales.m19182.dev"
   date: "2026-10"
+  tags: [public-data, research]
+  highlight: true
+  image: telegram.webp
   desc: >-
     A searchable archive of public Telegram channels relevant to Spanish politics. Browse messages and channel statistics, trace forwarding sources, and explore similar posts grouped into weekly stories. The channel selection draws on published disinformation research and includes parties, media and civil-society organisations. [code](https://github.com/mateo19182/tg-monitor).
   desc_es: >-
@@ -11,6 +14,9 @@
   title_es: "Archivo de imágenes urbanas de A Coruña"
   url: "https://typology.m19182.dev"
   date: "2026-10"
+  tags: [public-data, ml]
+  highlight: true
+  image: typology.webp
   desc: >-
     An experiment in cataloguing A Coruña through street-level imagery from Apple, Google and Mapillary. Detects and crops shop signs, graffiti, street-name plates and other objects into a browsable map and photo grids inspired by the Bechers' typologies. Includes text search, capture-date filters and multiple viewpoints. [code](https://github.com/mateo19182/typology-machine).
   desc_es: >-
@@ -19,6 +25,9 @@
 - title: "El reto de Feijoo"
   url: "/writings/El-reto-de-Feijoo"
   date: "2026-10"
+  tags: [research]
+  highlight: true
+  image: feijoo.webp
   desc: >-
     In 1729 and 1733 Feijoo dared his readers to find even four lines in his books translated from French journals. Using OCR and cross-language search, I found ten solid cases and two borderline ones, six of which I couldn't find identified in earlier scholarship. The [write-up](/writings/El-reto-de-Feijoo) is on the blog (in Spanish); [materials](/data/feijoo-evidence/index.html) and [code and data](https://github.com/mateo19182/feijoo).
   desc_es: >-
@@ -28,6 +37,8 @@
   title_es: "◇ diseñador de banderas"
   url: "https://flag.m19182.dev"
   date: "2026-10"
+  tags: [art-music]
+  image: flag.webp
   desc: >-
     A browser instrument for designing flags, made for the album release of my friend [alexoalexo](https://soundcloud.com/alexoalexo). Layers, heraldic symbols, patch-cable effects and two LFOs for animation; exports to SVG, PNG, WebM or a shareable link. [code](https://github.com/mateo19182/alexoflag).
   desc_es: >-
@@ -36,6 +47,7 @@
 - title: "music-stack"
   url: "https://github.com/mateo19182/music-stack"
   date: "2026-10"
+  tags: [self-hosted, art-music]
   desc: >-
     Self-hosted music discovery and library management, with automated tagging, manual review, and MCP tools for agents.
   desc_es: >-
@@ -44,6 +56,8 @@
 - title: "trace-it"
   url: "https://github.com/Martinhdeez/trace-it"
   date: "2026-09"
+  tags: [llm, competitions]
+  highlight: true
   desc: >-
     Winner of the [HackSpain](https://hackspain.com/) Maisa track. Turns operating policy described in plain language into versioned, deterministic decision processes. Ingests documents in any format, proposes the rules and data sources, compiles them to tested Python, and backtests against past cases before publishing... Built with a team of five.
   desc_es: >-
@@ -53,6 +67,9 @@
   title_es: "Centros de datos en España"
   url: "https://datacenters.m19182.dev"
   date: "2026-08"
+  tags: [public-data, research]
+  highlight: true
+  image: datacenters.webp
   desc: >-
     A public, source-backed map of data centres in peninsular Spain and their relationship to the electricity transmission grid. It keeps IT load, grid connection capacity, and installed power separate, and leaves gaps and contradictions visible. The project attracted interest from a data-centre consulting company. [code and data](https://github.com/mateo19182/mapa-datacenters-espana).
   desc_es: >-
@@ -61,6 +78,7 @@
 - title: "Fleet"
   url: "https://github.com/mateo19182/fleet"
   date: "2026-08"
+  tags: [llm, tools]
   desc: >-
     A small reference shelf for the agent skills and MCPs I use, with upstream links, inventory notes, and installation instructions.
   desc_es: >-
@@ -69,6 +87,7 @@
 - title: "MediaLib"
   url: "https://github.com/mateo19182/medialib"
   date: "2026-07"
+  tags: [self-hosted]
   desc: >-
     A self-hosted personal media library for music, books, movies, series, anime, manga, webtoons, and live shows. Save links through Telegram or the web UI, enrich them with provider metadata, cache artwork, track ratings and status, and migrate saved tracks to YouTube Music. Built on Cloudflare Workers, D1, and R2.
   desc_es: >-
@@ -77,6 +96,7 @@
 - title: "¿Cómo de raro eres?"
   url: "https://github.com/mateo19182/eres-raro-espana"
   date: "2026-06"
+  tags: [public-data]
   desc: >-
     An interactive explorer of how common a seven-axis profile is among Spanish adults, built from CIS microdata. It preserves the joint distribution of responses instead of multiplying marginal percentages.
   desc_es: >-
@@ -85,6 +105,7 @@
 - title: "agame"
   url: "https://github.com/mateo19182/agame"
   date: "2026-06"
+  tags: [tools]
   desc: >-
     A two-player couch game with trivia and minigames. One screen shows the board while two phones act as controllers. Runs on Cloudflare Workers with realtime Durable Objects.
   desc_es: >-
@@ -93,6 +114,8 @@
 - title: "Arcus CTF"
   url: "https://github.com/mateo19182/arcus-ctf"
   date: "2026-06"
+  tags: [llm, research, competitions]
+  highlight: true
   desc: >-
     Investigation notes and tooling for an LLM-based CTF challenge. Compared model checkpoints, probed token likelihoods, and drove the live grader. The [write-up](/writings/Arcus-CTF-Write-up) is on the blog.
   desc_es: >-
@@ -101,6 +124,7 @@
 - title: "FoxEngineReborn"
   url: "https://github.com/mateo19182/FoxEngineReborn"
   date: "2026-05"
+  tags: [self-hosted]
   desc: >-
     A self-hosted PII and breach-data search stack. Ingests normalized leads into ClickHouse, supports tags and a small query DSL, and uses JWT or API-key authentication.
   desc_es: >-
@@ -109,6 +133,7 @@
 - title: "SQS Inspector"
   url: "https://github.com/mateo19182/sqs-inspector"
   date: "2026-04"
+  tags: [tools]
   desc: >-
     A local development tool for inspecting AWS SQS queues. Lists queues, peeks at messages without consuming them, and shows their bodies, attributes, and metadata.
   desc_es: >-
@@ -117,6 +142,7 @@
 - title: "TRIBE v2 Prediction CLI"
   url: "https://github.com/mateo19182/tribev2"
   date: "2026-04"
+  tags: [ml, tools]
   desc: >-
     A small CLI for running TRIBE v2 predictions from an input file, with checkpoint caching and CPU or CUDA support.
   desc_es: >-
@@ -125,6 +151,7 @@
 - title: "ee-bench"
   url: "https://github.com/mateo19182/ee-bench"
   date: "2026-04"
+  tags: [llm, research]
   desc: >-
     Explore/exploit benchmark for LLMs. Runs models through 8 environments — stationary and non-stationary bandits, grid search, combinatorial optimization — and measures cumulative regret, exploration ratio, and adaptation speed. Useful for comparing behavior across models, temperatures, and prompt framings.
   desc_es: >-
@@ -133,6 +160,7 @@
 - title: "Vexor × Project Barcelona"
   url: "https://github.com/mateo19182/vexor-project-barcelona"
   date: "2026-04"
+  tags: [llm, competitions]
   desc: >-
     AI enrichment pipeline for debt collection cases. Takes a minimal case record (name, country, debt amount) and fans out across 23 OSINT modules to produce a sourced, collector-ready dossier. Uses a wave-based async scheduler and a typed Signal system for provenance tracking.
   desc_es: >-
@@ -141,6 +169,7 @@
 - title: "pantry-bot"
   url: "https://github.com/mateo19182/pantry-bot"
   date: "2026-04"
+  tags: [self-hosted, llm]
   desc: >-
     Telegram bot for managing a shared home pantry. Add, remove, list items, and get recipe suggestions via slash commands, free-form messages, or photos of groceries or receipts. Uses an LLM for natural-language parsing.
   desc_es: >-
@@ -149,6 +178,7 @@
 - title: "BOE/DOG Summary Bot"
   url: "https://github.com/mateo19182/boe-dog-summary"
   date: "2026-04"
+  tags: [public-data, llm]
   desc: >-
     A daily Telegram bot that parses the RSS feeds from Spain's [BOE](https://www.boe.es/) and Galicia's [DOG](https://www.xunta.gal/diario-oficial-galicia), filters entries relevant to my interests with AI, and sends a summary to Telegram.
   desc_es: >-
@@ -157,6 +187,7 @@
 - title: "Linkwarden CLI"
   url: "https://github.com/mateo19182/linkwarden-cli"
   date: "2026-03"
+  tags: [tools]
   desc: >-
     A CLI for saving links to Linkwarden, with fzf collection selection, clipboard input, and a local collection cache.
   desc_es: >-
@@ -165,6 +196,7 @@
 - title: "beancount-ui"
   url: "https://github.com/mateo19182/beancount-ui"
   date: "2026-03"
+  tags: [self-hosted]
   desc: >-
     App for managing [Beancount](https://beancount.github.io/) ledgers, built with NiceGUI. Point it at a `.beancount` file to visualize asset allocation, stock and crypto holdings, transactions, document attachments, and a bank import flow via the Enable Banking API with automatic payee categorization.
   desc_es: >-
@@ -173,6 +205,7 @@
 - title: "i18n Skill"
   url: "https://github.com/mateo19182/i18n-skill"
   date: "2026-02"
+  tags: [llm, tools]
   desc: >-
     A skill for coding agents (Claude Code, opencode...) for adding i18n translations to big codebases that originally had hardcoded strings.
   desc_es: >-
@@ -182,6 +215,8 @@
   title_es: "Competición de detección de copas de árboles"
   url: "https://solafune.com/competitions/26ff758c-7422-4cd1-bfe0-daecfc40db70?modal=%22%22&tab=&menu=about"
   date: "2025-12"
+  tags: [ml, competitions]
+  highlight: true
   desc: >-
     Competed in a tree canopy detection challenge using satellite imagery. Placed top 50 out of 4000+ participants. Explored Yolo, EOMT (DinoV3 backbone) and Mask2Former architectures. [code repository](https://github.com/mateo19182/tree_canopy).
   desc_es: >-
@@ -191,6 +226,7 @@
   title_es: "Buscador neuronal de RGPD en España"
   url: "https://github.com/mateo19182/gdpr"
   date: "2025-08"
+  tags: [public-data, llm]
   desc: >-
     A search prototype for Spanish GDPR and LOPDGDD material. Uses embeddings to search legal and regulatory sources by intent rather than keywords.
   desc_es: >-
@@ -198,6 +234,8 @@
 
 - title: "No-Cosign Fanzine"
   url: "https://no-cosign.com"
+  date: "2023"
+  tags: [art-music]
   desc: >-
     We released a fanzine with some of our favorite articles from our blog. Contact me if you want a copy!
   desc_es: >-
@@ -205,6 +243,10 @@
 
 - title: "SciPathBench"
   url: "https://github.com/mateo19182/SciPathBench/"
+  date: "2025-08"
+  tags: [llm, research]
+  highlight: true
+  image: scipathbench.webp
   desc: >-
     Evaluating LLM agents on finding shortest citation paths between academic papers. Generates graphs for visualizing results and allows a human player via a web interface.
   desc_es: >-
@@ -213,6 +255,8 @@
 - title: "Translate latex projects using LLMs"
   title_es: "Traducir proyectos LaTeX con LLMs"
   url: "https://github.com/mateo19182/latex-translate"
+  date: "2025-07"
+  tags: [llm, tools]
   desc: >-
     A tool to translate latex projects using LLMs, preserving structure and formatting.
   desc_es: >-
@@ -221,6 +265,10 @@
 - title: "Retinal Image Registration with INRs"
   title_es: "Registro de imágenes de retina con INRs"
   url: "https://github.com/mateo19182/IDIR-ollos"
+  date: "2025-07"
+  tags: [ml, research]
+  highlight: true
+  image: retina.webp
   desc: >-
     Thesis project adapting the IDIR framework for 2D retinal image alignment using Implicit Neural Representations. Developed as my computer science degree thesis at UDC. [Written thesis and presentation materials](https://github.com/mateo19182/TFG) available separately.
   desc_es: >-
@@ -228,6 +276,8 @@
 
 - title: "fieldNormalizer"
   url: "https://github.com/mateo19182/fieldNormalizer"
+  date: "2025-05"
+  tags: [llm, tools]
   desc: >-
     AI-powered CLI tool that merges data sources (.csv, .sql, .jsonl...) into a unified format. Automatically maps fields, infers missing headers, and rejects irrelevant information.
   desc_es: >-
@@ -235,6 +285,8 @@
 
 - title: "HackUPC25"
   url: "https://hackupc.com/"
+  date: "2025-05"
+  tags: [competitions]
   desc: >-
     Competed in Spain's biggest hackathon, where we created [VuelingConnect](https://github.com/migueldeoleiros/vuelingconnect), a multiplatform app that creates a decentralized communications network using BLE, with a creative approach to ensure battery efficiency and avoid redundancies.
   desc_es: >-
@@ -242,6 +294,8 @@
 
 - title: "Beats19182"
   url: "https://github.com/mateo19182/beats19182"
+  date: "2025-03"
+  tags: [self-hosted, art-music]
   desc: >-
     An open source and self-hosted alternative to [Offtop](https://offtop.com/). Allows for uploading, tagging and sharing beats or packs with other artists.
   desc_es: >-
@@ -249,6 +303,8 @@
 
 - title: "HackUDC25"
   url: "https://hackudc.gpul.org/"
+  date: "2025-02"
+  tags: [competitions]
   desc: >-
     Competed with 2 different projects over 3 days with a couple of friends: [cMatch](https://devpost.com/software/cmatch), a website and Chrome extension to find and manage clothes from Inditex; and [skillhub](https://devpost.com/software/skillhub), a hard and soft skills manager for organizations where users can post issues and guides.
   desc_es: >-
@@ -256,6 +312,8 @@
 
 - title: "Escoba Bench"
   url: "https://github.com/mateo19182/escobaBenchmark"
+  date: "2025-02"
+  tags: [llm, research]
   desc: >-
     A tool for benchmarking LLM agents by making them play [Escoba](https://en.wikipedia.org/wiki/Escoba) against each other, using the ELO rating system.
   desc_es: >-
@@ -270,10 +328,14 @@
 - title: "Competed in a flood detection challenge"
   title_es: "Competí en un reto de detección de inundaciones"
   url: "https://github.com/mateo19182/floods_sa"
+  date: "2024-11"
+  tags: [ml, competitions]
   desc: ""
 
 - title: "GymSimulation"
   url: "https://github.com/angelbarreiros/GymSimulation/tree/main"
+  date: "2024-11"
+  tags: [tools]
   desc: >-
     Using gyms' occupancy data and maps, we built a simulation that allows managers to easily visualize it and identify problems.
   desc_es: >-
@@ -287,14 +349,18 @@
 
 - title: "img-corroder"
   url: "https://github.com/mateo19182/img-corroder"
+  date: "2024-10"
+  tags: [art-music, tools]
   desc: >-
     Image processing tool written in Rust, centered around [glitch](http://satyarth.me/articles/pixel-sorting/) and [corruption](https://lo.calho.st/posts/image-glitching/) effects. Able to create custom filter pipelines or randomized ones; also added the ability to do image segmentation from a text prompt using [SAM2 and GroundingDINO](https://github.com/mateo19182/langSAM).
   desc_es: >-
     Herramienta de procesado de imagen escrita en Rust, centrada en efectos de [glitch](http://satyarth.me/articles/pixel-sorting/) y [corrupción](https://lo.calho.st/posts/image-glitching/). Permite crear cadenas de filtros personalizadas o aleatorias, y también segmentar imágenes a partir de un prompt de texto con [SAM2 y GroundingDINO](https://github.com/mateo19182/langSAM).
 
-- title: "Competed in a satellite imagery detection challenge with friends"
-  title_es: "Competí con amigos en un reto de detección con imágenes de satélite"
+- title: "Human Settlement Detection Challenge"
+  title_es: "Reto de detección de asentamientos humanos"
   url: "https://github.com/Gonzalosilvalde/challenge-reducido"
+  date: "2024-09"
+  tags: [ml, competitions]
   desc: >-
     Placed top 25, OK for a first time; learned lots about satellite data.
   desc_es: >-
@@ -302,6 +368,8 @@
 
 - title: "Sibilance Shredder"
   url: "https://github.com/mateo19182/Sibilance_Shredder"
+  date: "2023-06"
+  tags: [tools]
   desc: >-
     Simple Chrome extension for reducing sibilance in speech.
   desc_es: >-
@@ -309,6 +377,9 @@
 
 - title: "Bastos-finetune"
   url: "https://github.com/mateo19182/bastos-finetune"
+  date: "2024-07"
+  tags: [llm, ml]
+  highlight: true
   desc: >-
     Trained a LoRA for Llama 3.1 on a dataset of Miguel Anxo Bastos's conferences and articles.
   desc_es: >-
@@ -316,6 +387,8 @@
 
 - title: "mostos0"
   url: "https://huggingface.co/mateo-19182/mosoco"
+  date: "2024-09"
+  tags: [ml, art-music]
   desc: >-
     Flux LoRA on [Victor Moscoso's](https://en.wikipedia.org/wiki/Victor_Moscoso) poster art.
   desc_es: >-
@@ -323,6 +396,9 @@
 
 - title: "all-the-breaks"
   url: "https://github.com/mateo19182/all-the-breaks"
+  date: "2024-09"
+  tags: [ml, art-music]
+  highlight: true
   desc: >-
     Trained a model based on musicgen-small with drum breaks.
   desc_es: >-
@@ -348,6 +424,10 @@
 
 - title: "live(@)NADIE.CREA - 2023"
   url: "https://youtu.be/xBBow3L3EF8"
+  date: "2023"
+  tags: [art-music]
+  highlight: true
+  image: nadie-crea.webp
   desc: >-
     Performed an audiovisual live show at the event, using reactive and artificially generated visuals that morph with the music. Most of the songs were my own productions; the visuals were made with StableDiffusion and TouchDesigner.
   desc_es: >-
@@ -355,6 +435,8 @@
 
 - title: "dotfiles"
   url: "https://github.com/mateo19182/dotfiles"
+  date: "2026-03"
+  tags: [tools]
   desc: >-
     My personal dotfiles for configuring development environments and tools.
   desc_es: >-
