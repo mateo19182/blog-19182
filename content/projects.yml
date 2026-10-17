@@ -75,15 +75,6 @@
   desc_es: >-
     Un mapa público y con fuentes de los centros de datos de la España peninsular y su relación con la red de transporte eléctrico. Separa la carga IT, la capacidad de conexión a la red y la potencia instalada, y deja a la vista los huecos y las contradicciones. El proyecto despertó el interés de una consultora especializada en centros de datos. [código y datos](https://github.com/mateo19182/mapa-datacenters-espana).
 
-- title: "Fleet"
-  url: "https://github.com/mateo19182/fleet"
-  date: "2026-08"
-  tags: [llm, tools]
-  desc: >-
-    A small reference shelf for the agent skills and MCPs I use, with upstream links, inventory notes, and installation instructions.
-  desc_es: >-
-    Una pequeña estantería de referencia con las skills y MCPs para agentes que uso, con enlaces al original, notas de inventario e instrucciones de instalación.
-
 - title: "MediaLib"
   url: "https://github.com/mateo19182/medialib"
   date: "2026-07"
@@ -436,8 +427,8 @@
 - title: "dotfiles"
   url: "https://github.com/mateo19182/dotfiles"
   date: "2026-03"
-  tags: [tools]
+  tags: [tools, llm]
   desc: >-
-    My personal dotfiles for configuring development environments and tools.
+    My Omarchy desktop configuration plus the curated set of agent skills I run in Claude Code and Codex, vendored from upstream with inventory notes and an installer that links them into every agent.
   desc_es: >-
-    Mis dotfiles personales para configurar entornos y herramientas de desarrollo.
+    Mi configuración de escritorio Omarchy más el conjunto de skills para agentes que uso en Claude Code y Codex, copiadas del original con notas de inventario y un instalador que las enlaza en cada agente.
