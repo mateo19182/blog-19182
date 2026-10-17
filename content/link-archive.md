@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-10-16
+date: 2026-10-17
 tags: 
   - personal
 ---
@@ -9,6 +9,20 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Itineraries of the Roman emperors, 337–363 - Wikipedia](https://en.wikipedia.org/wiki/Itineraries_of_the_Roman_emperors,_337%E2%80%93363) `Wikis` *2026-10-16*
+- [Unparliamentary language - Wikipedia](https://en.wikipedia.org/wiki/Unparliamentary_language) `Wikis` *2026-10-16*
+- [Curiosity Media Lab](https://curiositylab.media) `Arts` *2026-10-16*
+- [About &mdash; Hayden Clay](https://www.haydenclay.com/about) `Arts` *2026-10-16*
+- [about](https://taylor.town/about) `Blogs` *2026-10-16*
+- [Writing - Jordan Gonen](https://jordangonen.com/writing) `Blogs` *2026-10-16*
+- [Daniel Temkin | Folders Language](https://danieltemkin.com/esolangs/folders) `Tech` *2026-10-16*
+- [The Economic Complexity of the Western Roman Empire – Michele Coscia](https://www.michelecoscia.com/?p=2613) `Reads` *2026-10-16*
+- [nytimes.com](https://www.nytimes.com/2026/10/15/opinion/interesting-times-dwarkes-patel-tyler-cowen.html) `Reads` *2026-10-16*
+- [The insider trading you're allowed to do — Coached Weekly](https://coached.com/essays/the-insider-trading-youre-allowed-to-do) `Ideas` *2026-10-16*
+- [Kit Digital en cifras: ayudas, agentes y fondos | ADAS](https://adases.es/datos) `Tools and Interactive Websites` *2026-10-16*
+- [Claude Artifact](https://claude.ai/public/artifacts/b0e14755-0bd9-4da6-8175-ce3f47a3242a) `Weird` *2026-10-16*
+- [surprising but true, by jarred and jordan - Documentos de Google](https://docs.google.com/document/d/1uJQQo-LDzQQ1tfGksLdD747D0ptodw5rFJ1ZSs_LWec/edit?tab=t.0) `Museums - Indexers` *2026-10-16*
+- [quotes worth quoting - Documentos de Google](https://docs.google.com/document/d/15_HSqMjB89PIRfoKZ_6JPZuJ0n_YxCVgm2TkLCCB5ec/edit?tab=t.0#heading=h.um4apyr3qypj) `Collectives and Magazines` *2026-10-16*
 - [Neural Networks Are Already Clean](https://already-clean.goodfire.com) `Tech` *2026-10-15*
 - [Scott And Scurvy (Idle Words)](https://idlewords.com/2010/03/scott_and_scurvy.htm) `Reads` *2026-10-15*
 - [Reality is Very Weird and You Need to be Prepared for That – SLIME MOLD TIME MOLD](https://slimemoldtimemold.com/2022/01/11/reality-is-very-weird-and-you-need-to-be-prepared-for-that) `Reads` *2026-10-15*
