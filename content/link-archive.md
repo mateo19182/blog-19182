@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-10-17
+date: 2026-10-18
 tags: 
   - personal
 ---
@@ -9,6 +9,15 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [StarSkirmish Bench v0.2](https://starskirmish.com/bench/v0-2) `Tech` *2026-10-17*
+- [Giving Inngest's Queue a Bigger Brain (and a Backup Generator): Our Migration to FoundationDB, Part 1 - Inngest Blog](https://www.inngest.com/blog/migration-to-foundationdb-part-1?ref=blog-migration-to-foundationdb-part-2) `Tech` *2026-10-17*
+- [threat-research/indicators/meta-h2-2026-russia-cib-based-network-2.md at main · facebook/threat-research · GitHub](https://github.com/facebook/threat-research/blob/main/indicators/meta-h2-2026-russia-cib-based-network-2.md) `Tech` *2026-10-17*
+- [Microck - tools for AI agents and developers](https://micr.dev/en) `Tech` *2026-10-17*
+- [To Those Arriving Soon &mdash; Dear Aliens](https://www.dearaliens.net/winners/first.html) `Reads` *2026-10-17*
+- [](https://i.smitop.com/concise-research-roadmap.pdf) `Ideas` *2026-10-17*
+- [raceday.gg](https://raceday.gg) `Tools and Interactive Websites` *2026-10-17*
+- [freeideas.net](https://freeideas.net) `Museums - Indexers` *2026-10-17*
+- [Vercel Security Checkpoint](https://www.quarter--mile.com) `Collectives and Magazines` *2026-10-17*
 - [Itineraries of the Roman emperors, 337–363 - Wikipedia](https://en.wikipedia.org/wiki/Itineraries_of_the_Roman_emperors,_337%E2%80%93363) `Wikis` *2026-10-16*
 - [Unparliamentary language - Wikipedia](https://en.wikipedia.org/wiki/Unparliamentary_language) `Wikis` *2026-10-16*
 - [Curiosity Media Lab](https://curiositylab.media) `Arts` *2026-10-16*
