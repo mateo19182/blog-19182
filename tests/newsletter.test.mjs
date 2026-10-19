@@ -4,7 +4,7 @@ import { onRequestPost } from '../functions/api/subscribe.js'
 import { newPosts, broadcastBody, sendPost } from '../tools/send-newsletter.mjs'
 import { newsletterExcerpt, newsletterHtml } from '../lib/newsletter.mjs'
 
-const env = { RESEND_API_KEY: 'test-key', RESEND_SEGMENT_ID: 'blog', RESEND_UPDATES_SEGMENT_ID: 'updates' }
+const env = { RESEND_API_KEY: 'test-key', RESEND_SEGMENT_ID: 'blog', RESEND_UPDATES_SEGMENT_ID: 'updates', RESEND_KILLSWITCH_SEGMENT_ID: 'killswitch' }
 const post = { url: '/writings/New', title: 'A <title>', summary: 'A {{{template}}} & summary' }
 function request(data, origin = 'https://blog.m19182.dev') {
   return new Request('https://blog.m19182.dev/api/subscribe', {
@@ -28,24 +28,34 @@ test('signup adds only opted-in segments and sends a welcome email without a con
     calls.push({ url, options, body: JSON.parse(options.body) })
     return Response.json({ id: 'contact-or-email' })
   })
-  for (const updates of [undefined, 'yes']) {
+  const cases = [
+    [{ posts: 'yes' }, ['blog'], 'new writings.'],
+    [{ posts: 'yes', updates: 'yes' }, ['blog', 'updates'], 'new writings and quarterly life updates.'],
+    [{ posts: 'no', updates: 'yes', killswitch: 'yes' }, ['updates', 'killswitch'], 'quarterly life updates and one email if I die.'],
+  ]
+  for (const [lists, segments, message] of cases) {
     calls.length = 0
-    assert.equal((await onRequestPost({ request: request({ email: ' Reader@Example.com ', updates }), env })).status, 200)
+    assert.equal((await onRequestPost({ request: request({ email: ' Reader@Example.com ', ...lists }), env })).status, 200)
     assert.equal(calls.length, 2)
     assert.equal(calls[0].url, 'https://api.resend.com/contacts')
-    assert.deepEqual(calls[0].body, { email: 'reader@example.com', segments: updates ? [{ id: 'blog' }, { id: 'updates' }] : [{ id: 'blog' }] })
+    assert.deepEqual(calls[0].body, { email: 'reader@example.com', segments: segments.map(id => ({ id })) })
     assert.equal(calls[1].url, 'https://api.resend.com/emails')
     assert.deepEqual(calls[1].body.to, ['reader@example.com'])
     assert.equal(calls[1].body.subject, "You're subscribed")
     assert.ok(calls[1].options.headers['Idempotency-Key'].startsWith('welcome:'))
-    assert.equal(calls[1].body.html.includes('/subscribe?updates=1'), !updates)
+    assert.ok(calls[1].body.text.endsWith(message))
   }
 })
 
+test('signup needs at least one list', async t => {
+  t.mock.method(globalThis, 'fetch', async () => assert.fail('no request expected'))
+  assert.equal((await onRequestPost({ request: request({ email: 'reader@example.com', posts: 'no' }), env })).status, 400)
+})
+
 test('signup reports missing configuration and upstream errors', async t => {
-  assert.equal((await onRequestPost({ request: request({ email: 'reader@example.com' }), env: {} })).status, 503)
+  assert.equal((await onRequestPost({ request: request({ email: 'reader@example.com', posts: 'yes' }), env: {} })).status, 503)
   t.mock.method(globalThis, 'fetch', async () => new Response('Unavailable', { status: 429 }))
-  assert.equal((await onRequestPost({ request: request({ email: 'reader@example.com' }), env })).status, 502)
+  assert.equal((await onRequestPost({ request: request({ email: 'reader@example.com', posts: 'yes' }), env })).status, 502)
 })
 
 test('signup fails safely if optional updates are not configured or welcome sending fails', async t => {
@@ -57,7 +67,7 @@ test('signup fails safely if optional updates are not configured or welcome send
   const missingUpdates = { RESEND_API_KEY: 'test-key', RESEND_SEGMENT_ID: 'blog' }
   assert.equal((await onRequestPost({ request: request({ email: 'reader@example.com', updates: 'yes' }), env: missingUpdates })).status, 503)
   assert.equal(calls, 0)
-  assert.equal((await onRequestPost({ request: request({ email: 'reader@example.com' }), env })).status, 502)
+  assert.equal((await onRequestPost({ request: request({ email: 'reader@example.com', posts: 'yes' }), env })).status, 502)
   assert.equal(calls, 2)
 })
 
@@ -65,7 +75,7 @@ test('native form submissions work without JavaScript', async t => {
   t.mock.method(globalThis, 'fetch', async () => Response.json({ id: 'contact' }))
   const req = new Request('https://blog.m19182.dev/api/subscribe', {
     method: 'POST', headers: { Origin: 'https://blog.m19182.dev', 'Content-Type': 'application/x-www-form-urlencoded' },
-    body: 'email=reader%40example.com&website=',
+    body: 'posts=yes&email=reader%40example.com&website=',
   })
   const response = await onRequestPost({ request: req, env })
   assert.equal(response.status, 200)
