@@ -5,7 +5,7 @@ export async function onRequestPost({ request, env }) {
     ? Response.json({ ok }, { status, headers: { 'Cache-Control': 'no-store' } })
     : new Response(ok ? "You're on the list. / Ya estás en la lista.\n" : 'Could not subscribe. Please go back and try again. / No se pudo guardar. Vuelve e inténtalo de nuevo.\n', { status, headers: { 'Content-Type': 'text/plain; charset=utf-8', 'Cache-Control': 'no-store' } })
   if (request.headers.get('Origin') !== new URL(request.url).origin) return reply(403, false)
-  if (!env.RESEND_API_KEY || !env.RESEND_SEGMENT_ID) return reply(503, false)
+  if (!env.RESEND_API_KEY) return reply(503, false)
   try {
     if (Number(request.headers.get('Content-Length')) > 2048) return reply(413, false)
     const body = await request.text()
@@ -18,10 +18,14 @@ export async function onRequestPost({ request, env }) {
     if (data.website) return reply(200, true)
     const email = typeof data.email === 'string' ? data.email.trim().toLowerCase() : ''
     if (email.length > 254 || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return reply(400, false)
-    const updates = data.updates === 'yes'
-    if (updates && !env.RESEND_UPDATES_SEGMENT_ID) return reply(503, false)
-    const segments = [{ id: env.RESEND_SEGMENT_ID }]
-    if (updates) segments.push({ id: env.RESEND_UPDATES_SEGMENT_ID })
+    const lists = [
+      ['posts', env.RESEND_SEGMENT_ID, 'new writings'],
+      ['updates', env.RESEND_UPDATES_SEGMENT_ID, 'quarterly life updates'],
+      ['killswitch', env.RESEND_KILLSWITCH_SEGMENT_ID, 'one email if I die'],
+    ].filter(([name]) => data[name] === 'yes')
+    if (!lists.length) return reply(400, false)
+    if (lists.some(([, id]) => !id)) return reply(503, false)
+    const segments = lists.map(([, id]) => ({ id }))
     const result = await fetch('https://api.resend.com/contacts', {
       method: 'POST',
       headers: { Authorization: `Bearer ${env.RESEND_API_KEY}`, 'Content-Type': 'application/json' },
@@ -30,10 +34,11 @@ export async function onRequestPost({ request, env }) {
       signal: AbortSignal.timeout(10000),
     })
     if (!result.ok) return reply(502, false)
-    const digest = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(`${email}:${env.RESEND_SEGMENT_ID}:${updates}`))
+    const digest = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(`${email}:${segments.map(s => s.id).join(',')}`))
     const hash = Array.from(new Uint8Array(digest), b => b.toString(16).padStart(2, '0')).join('')
     const base = new URL(request.url).origin
-    const message = updates ? "You'll receive new writings and quarterly life updates." : "You'll receive new writings by email."
+    const names = lists.map(([, , label]) => label)
+    const message = `You'll receive ${names.length > 1 ? `${names.slice(0, -1).join(', ')} and ${names.at(-1)}` : names[0]}.`
     const welcome = await fetch('https://api.resend.com/emails', {
       method: 'POST',
       headers: { Authorization: `Bearer ${env.RESEND_API_KEY}`, 'Content-Type': 'application/json', 'Idempotency-Key': `welcome:${hash}` },
@@ -41,8 +46,8 @@ export async function onRequestPost({ request, env }) {
         from: env.NEWSLETTER_FROM || 'blog.m19182.dev <writings@m19182.dev>',
         to: [email],
         subject: "You're subscribed",
-        html: `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"></head><body style="margin:0;background:#e9e7e1;color:#2b2926;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr><td align="center" style="padding:40px 20px;"><table role="presentation" width="100%" style="max-width:600px;font-family:Geist,-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;font-size:17px;line-height:1.65;"><tr><td><p style="margin:0 0 32px;font-size:13px;"><a href="${base}" style="color:#6a655c;text-decoration:none;">blog.m19182.dev</a></p><h1 style="font-size:30px;line-height:1.2;">You're subscribed</h1><p>${message}</p>${updates ? '' : `<p><a href="${base}/subscribe?updates=1" style="color:#505050;text-decoration:underline;">Subscribe to quarterly life updates too</a></p>`}</td></tr></table></td></tr></table></body></html>`,
-        text: `You're subscribed. ${message}${updates ? '' : `\n\nFor quarterly life updates too: ${base}/subscribe?updates=1`}`,
+        html: `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"></head><body style="margin:0;background:#e9e7e1;color:#2b2926;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr><td align="center" style="padding:40px 20px;"><table role="presentation" width="100%" style="max-width:600px;font-family:Geist,-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;font-size:17px;line-height:1.65;"><tr><td><p style="margin:0 0 32px;font-size:13px;"><a href="${base}" style="color:#6a655c;text-decoration:none;">blog.m19182.dev</a></p><h1 style="font-size:30px;line-height:1.2;">You're subscribed</h1><p>${message}</p></td></tr></table></td></tr></table></body></html>`,
+        text: `You're subscribed. ${message}`,
       }),
       signal: AbortSignal.timeout(10000),
     })
