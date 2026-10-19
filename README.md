@@ -107,6 +107,12 @@ English translation. The HTML uses the website's warm background, dark text
 and understated links, with system font fallbacks for email clients.
 Repeated signups don't reset an existing unsubscribe.
 
+Quarterly updates are sent by posthumail. When an update has a public version,
+posthumail writes it to `content/updates/<quarter>.md` (`title`, `date`, short
+body) and pushes. The build lists these newest first at the bottom of the Now
+page in both languages. They are not writings, so they don't trigger the
+newsletter action.
+
 Preview what a push would announce without sending any email:
 
 ```sh

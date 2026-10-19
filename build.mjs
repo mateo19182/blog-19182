@@ -17,6 +17,7 @@ import { makeOgImage } from "./lib/og.mjs"
 import { buildRss, buildSitemap } from "./lib/feeds.mjs"
 import { fileSlug } from "./lib/slug.mjs"
 import { newsletterExcerpt } from "./lib/newsletter.mjs"
+import { appendUpdates } from "./lib/updates.mjs"
 import { loadFavicons } from "./lib/favicons.mjs"
 
 const ROOT = path.dirname(fileURLToPath(import.meta.url))
@@ -220,6 +221,16 @@ async function loadTranslation(file, fallbackTitle) {
   }
 }
 
+async function loadUpdates() {
+  const dir = path.join(CONTENT, "updates")
+  if (!existsSync(dir)) return []
+  const files = (await readdir(dir)).filter((f) => f.endsWith(".md"))
+  return Promise.all(files.map(async (f) => {
+    const { data, content } = matter(await readFile(path.join(dir, f), "utf8"))
+    return { title: data.title || f.replace(/\.md$/, ""), date: normalizeDate(data.date), content }
+  }))
+}
+
 // Project cards live in content/projects.yml; `hidden: true` entries are kept but not shown.
 // Newest first; undated entries go last, in file order.
 async function loadProjects() {
@@ -289,6 +300,7 @@ async function build() {
   await initHighlighter()
 
   const { pages, dataFiles } = await loadAll()
+  appendUpdates(pages.find((p) => p.name === "now" && !p.section), await loadUpdates())
   const resolve = makeResolver(pages, dataFiles)
   const favicons = loadFavicons(ROOT)
   const md = makeRenderer(resolve, { favicon: favicons.lookup })
