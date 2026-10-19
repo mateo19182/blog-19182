@@ -73,8 +73,8 @@ Cloudflare Pages (git integration):
 A small English/Spanish signup form lives at `/subscribe`, linked as Email next
 to RSS. `functions/api/subscribe.js` adds emails to a Resend segment and sends a
 short welcome email immediately, with no confirmation step. Its link opens the
-signup page with the optional Other updates choice selected. Only subscribers
-who select that choice join a separate segment for future updates. Resend
+signup page with the optional Quarterly updates choice selected. Only subscribers
+who select that choice join a separate segment, used by posthumail for quarterly updates. Resend
 stores the subscribers and handles the unsubscribe link in each broadcast.
 There is no database or additional npm dependency.
 
