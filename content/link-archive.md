@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-10-18
+date: 2026-10-19
 tags: 
   - personal
 ---
@@ -9,6 +9,7 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [ETSO: Estilometría aplicada al Teatro del Siglo de Oro](https://etso.es) `Academic Papers and Resources` *2026-10-18*
 - [StarSkirmish Bench v0.2](https://starskirmish.com/bench/v0-2) `Tech` *2026-10-17*
 - [Giving Inngest's Queue a Bigger Brain (and a Backup Generator): Our Migration to FoundationDB, Part 1 - Inngest Blog](https://www.inngest.com/blog/migration-to-foundationdb-part-1?ref=blog-migration-to-foundationdb-part-2) `Tech` *2026-10-17*
 - [threat-research/indicators/meta-h2-2026-russia-cib-based-network-2.md at main · facebook/threat-research · GitHub](https://github.com/facebook/threat-research/blob/main/indicators/meta-h2-2026-russia-cib-based-network-2.md) `Tech` *2026-10-17*
