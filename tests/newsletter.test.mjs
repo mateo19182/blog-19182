@@ -43,7 +43,9 @@ test('signup adds only opted-in segments and sends a welcome email without a con
     assert.deepEqual(calls[1].body.to, ['reader@example.com'])
     assert.equal(calls[1].body.subject, "You're subscribed")
     assert.ok(calls[1].options.headers['Idempotency-Key'].startsWith('welcome:'))
-    assert.ok(calls[1].body.text.endsWith(message))
+    assert.ok(calls[1].body.text.includes(message))
+    assert.equal(calls[1].body.text.includes('/writings'), segments.includes('blog'))
+    assert.equal(calls[1].body.text.includes('/now#quarterly-life-updates'), segments.includes('updates'))
   }
 })
 

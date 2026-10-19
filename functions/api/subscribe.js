@@ -38,6 +38,10 @@ export async function onRequestPost({ request, env }) {
     const hash = Array.from(new Uint8Array(digest), b => b.toString(16).padStart(2, '0')).join('')
     const base = new URL(request.url).origin
     const names = lists.map(([, , label]) => label)
+    const reading = [
+      lists.some(([name]) => name === 'posts') && ['Past writings', `${base}/writings`],
+      lists.some(([name]) => name === 'updates') && ['Previous life updates', `${base}/now#quarterly-life-updates`],
+    ].filter(Boolean)
     const message = `You'll receive ${names.length > 1 ? `${names.slice(0, -1).join(', ')} and ${names.at(-1)}` : names[0]}.`
     const welcome = await fetch('https://api.resend.com/emails', {
       method: 'POST',
@@ -46,8 +50,8 @@ export async function onRequestPost({ request, env }) {
         from: env.NEWSLETTER_FROM || 'blog.m19182.dev <writings@m19182.dev>',
         to: [email],
         subject: "You're subscribed",
-        html: `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"></head><body style="margin:0;background:#e9e7e1;color:#2b2926;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr><td align="center" style="padding:40px 20px;"><table role="presentation" width="100%" style="max-width:600px;font-family:Geist,-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;font-size:17px;line-height:1.65;"><tr><td><p style="margin:0 0 32px;font-size:13px;"><a href="${base}" style="color:#6a655c;text-decoration:none;">blog.m19182.dev</a></p><h1 style="font-size:30px;line-height:1.2;">You're subscribed</h1><p>${message}</p></td></tr></table></td></tr></table></body></html>`,
-        text: `You're subscribed. ${message}`,
+        html: `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"></head><body style="margin:0;background:#e9e7e1;color:#2b2926;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr><td align="center" style="padding:40px 20px;"><table role="presentation" width="100%" style="max-width:600px;font-family:Geist,-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;font-size:17px;line-height:1.65;"><tr><td><p style="margin:0 0 32px;font-size:13px;"><a href="${base}" style="color:#6a655c;text-decoration:none;">blog.m19182.dev</a></p><h1 style="font-size:30px;line-height:1.2;">You're subscribed</h1><p>${message}</p>${reading.map(([label, url]) => `<p><a href="${url}" style="color:#505050;text-decoration:underline;">${label}</a></p>`).join('')}</td></tr></table></td></tr></table></body></html>`,
+        text: `You're subscribed. ${message}${reading.map(([label, url]) => `\n\n${label}: ${url}`).join('')}`,
       }),
       signal: AbortSignal.timeout(10000),
     })

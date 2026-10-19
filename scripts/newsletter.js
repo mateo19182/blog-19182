@@ -25,7 +25,17 @@
         body: JSON.stringify(data),
       })
       if (!response.ok) throw new Error('Signup failed')
-      status.textContent = es ? 'Ya estás en la lista. Gracias.' : "You're on the list. Thanks."
+      const links = [
+        data.posts === 'yes' && (es ? ['Escritos anteriores', '/writings'] : ['Past writings', '/writings']),
+        data.updates === 'yes' && (es ? ['Actualizaciones anteriores', '/now#actualizaciones-trimestrales'] : ['Previous life updates', '/now#quarterly-life-updates']),
+      ].filter(Boolean)
+      status.textContent = (es ? 'Ya estás en la lista. Gracias.' : "You're on the list. Thanks.") + (links.length ? ' ' : '')
+      links.forEach(([label, href], i) => {
+        const a = document.createElement('a')
+        a.href = href
+        a.textContent = label
+        status.append(...(i ? [' · ', a] : [a]))
+      })
       form.elements.email.value = ''
     } catch {
       status.textContent = es ? 'No se pudo guardar. Inténtalo de nuevo más tarde.' : 'Could not subscribe. Please try again later.'
