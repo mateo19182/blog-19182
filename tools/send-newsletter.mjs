@@ -28,18 +28,19 @@ function previousUrls(ref) {
   return urls
 }
 
-export function broadcastBody(post, segment, from) {
+export function broadcastBody(post, segment, topic, from) {
   return {
     name: `writing:${createHash('sha256').update(post.url).digest('hex').slice(0, 40)}`,
     segment_id: segment,
+    topic_id: topic,
     from,
     subject: `New post: ${post.title}`,
     html: newsletterHtml(post),
   }
 }
 
-export async function sendPost(post, { api, segment, from }) {
-  const body = broadcastBody(post, segment, from)
+export async function sendPost(post, { api, segment, topic, from }) {
+  const body = broadcastBody(post, segment, topic, from)
   let after = ''
   let existing
   do {
@@ -78,8 +79,8 @@ async function main() {
     console.log(JSON.stringify(added, null, 2))
     return
   }
-  const { RESEND_API_KEY: key, RESEND_SEGMENT_ID: segment, NEWSLETTER_FROM: from } = process.env
-  if (!key || !segment || !from) throw new Error('Missing Resend newsletter configuration')
+  const { RESEND_API_KEY: key, RESEND_SEGMENT_ID: segment, RESEND_POSTS_TOPIC_ID: topic, NEWSLETTER_FROM: from } = process.env
+  if (!key || !segment || !topic || !from) throw new Error('Missing Resend newsletter configuration')
 
   // Cloudflare deploys independently of Actions. Wait up to ten minutes until
   // the public manifest contains these posts before sending links to readers.
@@ -106,7 +107,7 @@ async function main() {
     if (!response.ok) throw new Error(`Resend ${route}: HTTP ${response.status}`)
     return response.json()
   }
-  for (const post of added) await sendPost(post, { api, segment, from })
+  for (const post of added) await sendPost(post, { api, segment, topic, from })
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) await main()

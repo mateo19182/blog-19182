@@ -71,25 +71,28 @@ Cloudflare Pages (git integration):
 ## Newsletter
 
 A small English/Spanish signup form lives at `/subscribe`, linked as Email next
-to RSS. It has three lists, each a Resend segment: blog posts (checked by
+to RSS. It has three lists, each a Resend topic: blog posts (checked by
 default), life updates, and a one-time email from
 [posthumail](https://github.com/mateo19182/posthumail) if I die.
 `?posts=0`, `?updates=1` and `?killswitch=1` preselect them.
-`functions/api/subscribe.js` adds the email to the chosen segments and sends a
-short welcome email immediately, with no confirmation step. Resend stores the
-subscribers and handles the unsubscribe link in each broadcast. There is no
+`functions/api/subscribe.js` adds the email to the one subscribers segment,
+opts it in to the chosen topics, and sends a short welcome email immediately,
+with no confirmation step. Every broadcast names its topic, so the unsubscribe
+link only drops that list. Resend stores the subscribers and hosts the
+unsubscribe page. There is no
 database or additional npm dependency.
 
 To activate it:
 
-1. In Resend, verify your sending domain, create a segment for blog readers,
-   and create a full-access API key for contacts and broadcasts.
-2. In Cloudflare Pages **production** settings, set `RESEND_API_KEY` as a secret
-   and `RESEND_SEGMENT_ID` to that segment's ID, then redeploy.
-   Set `RESEND_UPDATES_SEGMENT_ID` and `RESEND_KILLSWITCH_SEGMENT_ID` for the
-   other two lists. You can also set `NEWSLETTER_FROM` to customize the sender.
+1. In Resend, verify your sending domain, create one segment for subscribers,
+   three private `opt_out` topics (blog posts, life updates, killswitch), and a
+   full-access API key for contacts and broadcasts.
+2. In Cloudflare Pages **production** settings, set `RESEND_API_KEY` as a secret,
+   `RESEND_SEGMENT_ID` to the segment's ID, and `RESEND_POSTS_TOPIC_ID`,
+   `RESEND_UPDATES_TOPIC_ID` and `RESEND_KILLSWITCH_TOPIC_ID`, then redeploy.
+   You can also set `NEWSLETTER_FROM` to customize the sender.
 3. In GitHub Actions settings, add the secret `RESEND_API_KEY` and the variables
-   `RESEND_SEGMENT_ID` and `NEWSLETTER_FROM`, for example
+   `RESEND_SEGMENT_ID`, `RESEND_POSTS_TOPIC_ID` and `NEWSLETTER_FROM`, for example
    `blog.m19182.dev <writings@m19182.dev>` using your verified domain. Set the repository
    variable `NEWSLETTER_ENABLED` to `true` when ready to send.
 
@@ -127,8 +130,8 @@ npm run test:newsletter
 ```
 
 The normal local server serves static files only. To test the signup endpoint
-locally, run `npx wrangler pages dev public` with `RESEND_API_KEY` and
-`RESEND_SEGMENT_ID` in an untracked `.dev.vars` file. Use a separate test segment.
+locally, run `npx wrangler pages dev public` with the Pages variables above in
+an untracked `.dev.vars` file. Use a separate test segment and topics.
 
 API references: [contacts](https://resend.com/docs/api-reference/contacts/create-contact)
 and [broadcasts](https://resend.com/docs/api-reference/broadcasts/create-broadcast).

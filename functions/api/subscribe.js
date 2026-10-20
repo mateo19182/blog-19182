@@ -18,23 +18,25 @@ export async function onRequestPost({ request, env }) {
     if (data.website) return reply(200, true)
     const email = typeof data.email === 'string' ? data.email.trim().toLowerCase() : ''
     if (email.length > 254 || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return reply(400, false)
+    // Every subscriber is in one segment; each list is a Resend topic, so an
+    // unsubscribe link only drops the list it came from.
     const lists = [
-      ['posts', env.RESEND_SEGMENT_ID, 'new writings'],
-      ['updates', env.RESEND_UPDATES_SEGMENT_ID, 'life updates'],
-      ['killswitch', env.RESEND_KILLSWITCH_SEGMENT_ID, 'one email if I die'],
+      ['posts', env.RESEND_POSTS_TOPIC_ID, 'new writings'],
+      ['updates', env.RESEND_UPDATES_TOPIC_ID, 'life updates'],
+      ['killswitch', env.RESEND_KILLSWITCH_TOPIC_ID, 'one email if I die'],
     ].filter(([name]) => data[name] === 'yes')
     if (!lists.length) return reply(400, false)
-    if (lists.some(([, id]) => !id)) return reply(503, false)
-    const segments = lists.map(([, id]) => ({ id }))
+    if (!env.RESEND_SEGMENT_ID || lists.some(([, id]) => !id)) return reply(503, false)
+    const topics = lists.map(([, id]) => ({ id, subscription: 'opt_in' }))
     const result = await fetch('https://api.resend.com/contacts', {
       method: 'POST',
       headers: { Authorization: `Bearer ${env.RESEND_API_KEY}`, 'Content-Type': 'application/json' },
       // Omit unsubscribed so a repeated signup cannot undo an unsubscribe.
-      body: JSON.stringify({ email, segments }),
+      body: JSON.stringify({ email, segments: [{ id: env.RESEND_SEGMENT_ID }], topics }),
       signal: AbortSignal.timeout(10000),
     })
     if (!result.ok) return reply(502, false)
-    const digest = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(`${email}:${segments.map(s => s.id).join(',')}`))
+    const digest = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(`${email}:${topics.map(t => t.id).join(',')}`))
     const hash = Array.from(new Uint8Array(digest), b => b.toString(16).padStart(2, '0')).join('')
     const base = new URL(request.url).origin
     const names = lists.map(([, , label]) => label)

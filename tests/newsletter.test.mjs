@@ -4,7 +4,7 @@ import { onRequestPost } from '../functions/api/subscribe.js'
 import { newPosts, broadcastBody, sendPost } from '../tools/send-newsletter.mjs'
 import { newsletterExcerpt, newsletterHtml } from '../lib/newsletter.mjs'
 
-const env = { RESEND_API_KEY: 'test-key', RESEND_SEGMENT_ID: 'blog', RESEND_UPDATES_SEGMENT_ID: 'updates', RESEND_KILLSWITCH_SEGMENT_ID: 'killswitch' }
+const env = { RESEND_API_KEY: 'test-key', RESEND_SEGMENT_ID: 'all', RESEND_POSTS_TOPIC_ID: 'posts', RESEND_UPDATES_TOPIC_ID: 'updates', RESEND_KILLSWITCH_TOPIC_ID: 'killswitch' }
 const post = { url: '/writings/New', title: 'A <title>', summary: 'A {{{template}}} & summary' }
 function request(data, origin = 'https://blog.m19182.dev') {
   return new Request('https://blog.m19182.dev/api/subscribe', {
@@ -22,30 +22,30 @@ test('signup rejects invalid input and foreign origins, and ignores the honeypot
   ]) assert.equal((await onRequestPost({ request: request(data, origin), env })).status, status)
 })
 
-test('signup adds only opted-in segments and sends a welcome email without a confirmation step', async t => {
+test('signup opts in only to the chosen topics and sends a welcome email without a confirmation step', async t => {
   const calls = []
   t.mock.method(globalThis, 'fetch', async (url, options) => {
     calls.push({ url, options, body: JSON.parse(options.body) })
     return Response.json({ id: 'contact-or-email' })
   })
   const cases = [
-    [{ posts: 'yes' }, ['blog'], 'new writings.'],
-    [{ posts: 'yes', updates: 'yes' }, ['blog', 'updates'], 'new writings and life updates.'],
+    [{ posts: 'yes' }, ['posts'], 'new writings.'],
+    [{ posts: 'yes', updates: 'yes' }, ['posts', 'updates'], 'new writings and life updates.'],
     [{ posts: 'no', updates: 'yes', killswitch: 'yes' }, ['updates', 'killswitch'], 'life updates and one email if I die.'],
   ]
-  for (const [lists, segments, message] of cases) {
+  for (const [lists, topics, message] of cases) {
     calls.length = 0
     assert.equal((await onRequestPost({ request: request({ email: ' Reader@Example.com ', ...lists }), env })).status, 200)
     assert.equal(calls.length, 2)
     assert.equal(calls[0].url, 'https://api.resend.com/contacts')
-    assert.deepEqual(calls[0].body, { email: 'reader@example.com', segments: segments.map(id => ({ id })) })
+    assert.deepEqual(calls[0].body, { email: 'reader@example.com', segments: [{ id: 'all' }], topics: topics.map(id => ({ id, subscription: 'opt_in' })) })
     assert.equal(calls[1].url, 'https://api.resend.com/emails')
     assert.deepEqual(calls[1].body.to, ['reader@example.com'])
     assert.equal(calls[1].body.subject, "You're subscribed")
     assert.ok(calls[1].options.headers['Idempotency-Key'].startsWith('welcome:'))
     assert.ok(calls[1].body.text.includes(message))
-    assert.equal(calls[1].body.text.includes('/writings'), segments.includes('blog'))
-    assert.equal(calls[1].body.text.includes('/updates'), segments.includes('updates'))
+    assert.equal(calls[1].body.text.includes('/writings'), topics.includes('posts'))
+    assert.equal(calls[1].body.text.includes('/updates'), topics.includes('updates'))
   }
 })
 
@@ -66,7 +66,7 @@ test('signup fails safely if optional updates are not configured or welcome send
     calls++
     return calls === 1 ? Response.json({ id: 'contact' }) : new Response('Unavailable', { status: 500 })
   })
-  const missingUpdates = { RESEND_API_KEY: 'test-key', RESEND_SEGMENT_ID: 'blog' }
+  const missingUpdates = { RESEND_API_KEY: 'test-key', RESEND_SEGMENT_ID: 'all', RESEND_POSTS_TOPIC_ID: 'posts' }
   assert.equal((await onRequestPost({ request: request({ email: 'reader@example.com', updates: 'yes' }), env: missingUpdates })).status, 503)
   assert.equal(calls, 0)
   assert.equal((await onRequestPost({ request: request({ email: 'reader@example.com', posts: 'yes' }), env })).status, 502)
@@ -86,16 +86,17 @@ test('native form submissions work without JavaScript', async t => {
 
 test('only new URLs are selected; email escapes content and retains unsubscribe', () => {
   assert.deepEqual(newPosts([{ url: '/old' }, post], new Set(['/old'])), [post])
-  const body = broadcastBody(post, 'blog', 'Mateo <blog@example.com>')
+  const body = broadcastBody(post, 'all', 'posts', 'Mateo <blog@example.com>')
   assert.match(body.html, /&lt;title&gt;/)
   assert.ok(!body.html.includes('{{{template}}}'))
   assert.match(body.html, /\{\{\{RESEND_UNSUBSCRIBE_URL\}\}\}/)
-  assert.equal(body.segment_id, 'blog')
+  assert.equal(body.segment_id, 'all')
+  assert.equal(body.topic_id, 'posts')
   assert.equal(body.subject, 'New post: A <title>')
 })
 
 test('broadcast retries reuse drafts and skip sent emails across paginated history', async () => {
-  const name = broadcastBody(post, 'blog', 'sender').name
+  const name = broadcastBody(post, 'blog', 'posts', 'sender').name
   for (const status of ['draft', 'sent']) {
     const routes = []
     await sendPost(post, { segment: 'blog', from: 'sender', api: async (route) => {

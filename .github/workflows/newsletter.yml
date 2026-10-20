@@ -33,4 +33,5 @@ jobs:
           NEWSLETTER_BEFORE: ${{ github.event.before }}
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           RESEND_SEGMENT_ID: ${{ vars.RESEND_SEGMENT_ID }}
+          RESEND_POSTS_TOPIC_ID: ${{ vars.RESEND_POSTS_TOPIC_ID }}
           NEWSLETTER_FROM: ${{ vars.NEWSLETTER_FROM }}
