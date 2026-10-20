@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-10-19
+date: 2026-10-20
 tags: 
   - personal
 ---
@@ -9,6 +9,13 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Alphonse Laurencic - Wikipedia](https://en.wikipedia.org/wiki/Alphonse_Laurencic) `Wikis` *2026-10-19*
+- [William Gibson and the trademarking of Cyberspace™](https://colo.to/cyberspace.html) `Reads` *2026-10-19*
+- [How Social Engineering Drives Technology](https://www.palladiummag.com/2020/05/28/how-social-engineering-drives-technology/?utm_source=substack&utm_medium=email) `Reads` *2026-10-19*
+- [Pliny the Younger - by Naomi Kanakia - Woman of Letters](https://www.woman-of-letters.com/p/pliny-the-younger?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-10-19*
+- [India's IT Tale: Part I](https://zosoproject.com/en/writings/en-india-i.html) `Reads` *2026-10-19*
+- [Claude, don’t touch my lump - by Adam Mastroianni](https://www.experimental-history.com/p/claude-dont-touch-my-lump?utm_source=%2Finbox&utm_medium=reader2) `Ideas` *2026-10-19*
+- [The DNS Museum](https://dns.museum) `Museums - Indexers` *2026-10-19*
 - [ETSO: Estilometría aplicada al Teatro del Siglo de Oro](https://etso.es) `Academic Papers and Resources` *2026-10-18*
 - [StarSkirmish Bench v0.2](https://starskirmish.com/bench/v0-2) `Tech` *2026-10-17*
 - [Giving Inngest's Queue a Bigger Brain (and a Backup Generator): Our Migration to FoundationDB, Part 1 - Inngest Blog](https://www.inngest.com/blog/migration-to-foundationdb-part-1?ref=blog-migration-to-foundationdb-part-2) `Tech` *2026-10-17*
