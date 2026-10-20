@@ -1,0 +1,26 @@
+name: Monthly reminder
+
+# Opens an issue assigned to the owner on the 1st of each month, so GitHub
+# notifies them to refresh the Now table and write a life update.
+
+on:
+  schedule:
+    - cron: "0 8 1 * *"
+  workflow_dispatch: {}
+
+permissions:
+  issues: write
+
+jobs:
+  remind:
+    runs-on: ubuntu-latest
+    steps:
+      - env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          month=$(date -u +%Y-%m)
+          gh issue create --assignee "${{ github.repository_owner }}" \
+            --title "Now y actualización: $month" \
+            --body "- [ ] Añadir la fila del mes a la tabla de \`content/now.md\` y \`content/now.es.md\`
+          - [ ] Escribir \`content/updates/$month.md\` (\`title\`, \`date\`, texto corto en español)"

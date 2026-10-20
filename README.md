@@ -72,7 +72,7 @@ Cloudflare Pages (git integration):
 
 A small English/Spanish signup form lives at `/subscribe`, linked as Email next
 to RSS. It has three lists, each a Resend segment: blog posts (checked by
-default), quarterly life updates, and a one-time email from
+default), life updates, and a one-time email from
 [posthumail](https://github.com/mateo19182/posthumail) if I die.
 `?posts=0`, `?updates=1` and `?killswitch=1` preselect them.
 `functions/api/subscribe.js` adds the email to the chosen segments and sends a
@@ -109,12 +109,14 @@ English translation. The HTML uses the website's warm background, dark text
 and understated links, with system font fallbacks for email clients.
 Repeated signups don't reset an existing unsubscribe.
 
-Quarterly life updates live here. The public version is
-`content/updates/<quarter>.md` (`title`, `date`, short body); the build lists
-these newest first at the bottom of the Now page in both languages. They are not
-writings, so they don't trigger the newsletter action. The email to the updates
-segment is `private/updates/<quarter>.md` (gitignored; `subject:` frontmatter,
-plain-text body), sent by posthumail with `bun cli update send <quarter>`.
+Life updates live here, in Spanish. Each is `content/updates/<yyyy-mm>.md`
+(`title`, `date`, short body); the build lists them newest first in their own
+section under Bio at the bottom of the Now page, in both languages. They are not
+writings, so they don't trigger the newsletter action. On the 1st of each month
+`.github/workflows/monthly-reminder.yml` opens an issue to update the Now table
+and write one. An email to the updates segment, if any, is
+`private/updates/<name>.md` (gitignored; `subject:` frontmatter, plain-text
+body), sent by posthumail with `bun cli update send <name>`.
 
 Preview what a push would announce without sending any email:
 

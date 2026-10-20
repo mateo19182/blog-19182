@@ -30,8 +30,8 @@ test('signup adds only opted-in segments and sends a welcome email without a con
   })
   const cases = [
     [{ posts: 'yes' }, ['blog'], 'new writings.'],
-    [{ posts: 'yes', updates: 'yes' }, ['blog', 'updates'], 'new writings and quarterly life updates.'],
-    [{ posts: 'no', updates: 'yes', killswitch: 'yes' }, ['updates', 'killswitch'], 'quarterly life updates and one email if I die.'],
+    [{ posts: 'yes', updates: 'yes' }, ['blog', 'updates'], 'new writings and life updates.'],
+    [{ posts: 'no', updates: 'yes', killswitch: 'yes' }, ['updates', 'killswitch'], 'life updates and one email if I die.'],
   ]
   for (const [lists, segments, message] of cases) {
     calls.length = 0
@@ -45,7 +45,7 @@ test('signup adds only opted-in segments and sends a welcome email without a con
     assert.ok(calls[1].options.headers['Idempotency-Key'].startsWith('welcome:'))
     assert.ok(calls[1].body.text.includes(message))
     assert.equal(calls[1].body.text.includes('/writings'), segments.includes('blog'))
-    assert.equal(calls[1].body.text.includes('/now#quarterly-life-updates'), segments.includes('updates'))
+    assert.equal(calls[1].body.text.includes('/now#life-updates'), segments.includes('updates'))
   }
 })
 

@@ -20,7 +20,7 @@ export async function onRequestPost({ request, env }) {
     if (email.length > 254 || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return reply(400, false)
     const lists = [
       ['posts', env.RESEND_SEGMENT_ID, 'new writings'],
-      ['updates', env.RESEND_UPDATES_SEGMENT_ID, 'quarterly life updates'],
+      ['updates', env.RESEND_UPDATES_SEGMENT_ID, 'life updates'],
       ['killswitch', env.RESEND_KILLSWITCH_SEGMENT_ID, 'one email if I die'],
     ].filter(([name]) => data[name] === 'yes')
     if (!lists.length) return reply(400, false)
@@ -40,7 +40,7 @@ export async function onRequestPost({ request, env }) {
     const names = lists.map(([, , label]) => label)
     const reading = [
       lists.some(([name]) => name === 'posts') && ['Past writings', `${base}/writings`],
-      lists.some(([name]) => name === 'updates') && ['Previous life updates', `${base}/now#quarterly-life-updates`],
+      lists.some(([name]) => name === 'updates') && ['Previous life updates', `${base}/now#life-updates`],
     ].filter(Boolean)
     const message = `You'll receive ${names.length > 1 ? `${names.slice(0, -1).join(', ')} and ${names.at(-1)}` : names[0]}.`
     const welcome = await fetch('https://api.resend.com/emails', {
