@@ -109,11 +109,12 @@ English translation. The HTML uses the website's warm background, dark text
 and understated links, with system font fallbacks for email clients.
 Repeated signups don't reset an existing unsubscribe.
 
-Quarterly updates are sent by posthumail. When an update has a public version,
-posthumail writes it to `content/updates/<quarter>.md` (`title`, `date`, short
-body) and pushes. The build lists these newest first at the bottom of the Now
-page in both languages. They are not writings, so they don't trigger the
-newsletter action.
+Quarterly life updates live here. The public version is
+`content/updates/<quarter>.md` (`title`, `date`, short body); the build lists
+these newest first at the bottom of the Now page in both languages. They are not
+writings, so they don't trigger the newsletter action. The email to the updates
+segment is `private/updates/<quarter>.md` (gitignored; `subject:` frontmatter,
+plain-text body), sent by posthumail with `bun cli update send <quarter>`.
 
 Preview what a push would announce without sending any email:
 
