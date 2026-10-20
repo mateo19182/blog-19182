@@ -17,7 +17,7 @@ import { makeOgImage } from "./lib/og.mjs"
 import { buildRss, buildSitemap } from "./lib/feeds.mjs"
 import { fileSlug } from "./lib/slug.mjs"
 import { newsletterExcerpt } from "./lib/newsletter.mjs"
-import { appendUpdates } from "./lib/updates.mjs"
+import { linkUpdates, updatesPage } from "./lib/updates.mjs"
 import { loadFavicons } from "./lib/favicons.mjs"
 
 const ROOT = path.dirname(fileURLToPath(import.meta.url))
@@ -104,6 +104,7 @@ function ogSubtitle(page) {
   if (page.isArticle && page.date) return page.date
   return {
     now: "what I'm working on",
+    updates: "life updates",
     projects: "things I've built",
     writings: "essays and notes",
     "link-archive": "a living archive of links",
@@ -224,10 +225,13 @@ async function loadTranslation(file, fallbackTitle) {
 async function loadUpdates() {
   const dir = path.join(CONTENT, "updates")
   if (!existsSync(dir)) return []
-  const files = (await readdir(dir)).filter((f) => f.endsWith(".md"))
+  const files = (await readdir(dir)).filter((f) => f.endsWith(".md") && !f.endsWith(".en.md"))
   return Promise.all(files.map(async (f) => {
-    const { data, content } = matter(await readFile(path.join(dir, f), "utf8"))
-    return { title: data.title || f.replace(/\.md$/, ""), date: normalizeDate(data.date), content }
+    const file = path.join(dir, f)
+    const { data, content } = matter(await readFile(file, "utf8"))
+    const title = data.title || f.replace(/\.md$/, "")
+    const en = await loadTranslation(file.replace(/\.md$/, ".en.md"), title)
+    return { title, date: normalizeDate(data.date), content, ...(en && { en: { title: en.title, content: en.rawContent } }) }
   }))
 }
 
@@ -300,7 +304,11 @@ async function build() {
   await initHighlighter()
 
   const { pages, dataFiles } = await loadAll()
-  appendUpdates(pages.find((p) => p.name === "now" && !p.section), await loadUpdates())
+  const updates = await loadUpdates()
+  if (updates.length) {
+    pages.push(updatesPage(updates))
+    linkUpdates(pages.find((p) => p.name === "now" && !p.section))
+  }
   const resolve = makeResolver(pages, dataFiles)
   const favicons = loadFavicons(ROOT)
   const md = makeRenderer(resolve, { favicon: favicons.lookup })
@@ -512,7 +520,7 @@ async function build() {
 
 // ---- search (Pagefind) ------------------------------------------------------
 // Writings plus these pages are searchable; the link archive has its own filter.
-const SEARCHED_PAGES = new Set(["now", "projects", "things-i-like"])
+const SEARCHED_PAGES = new Set(["now", "updates", "projects", "things-i-like"])
 
 // One record per language slot, so a result shows the text that matched and
 // `?lang=` opens the page in that language. Everything goes into one index

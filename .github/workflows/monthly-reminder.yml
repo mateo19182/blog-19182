@@ -23,4 +23,4 @@ jobs:
           gh issue create --assignee "${{ github.repository_owner }}" \
             --title "Now y actualización: $month" \
             --body "- [ ] Añadir la fila del mes a la tabla de \`content/now.md\` y \`content/now.es.md\`
-          - [ ] Escribir \`content/updates/$month.md\` (\`title\`, \`date\`, texto corto en español)"
+          - [ ] Escribir \`content/updates/$month.md\` y su traducción \`$month.en.md\`"

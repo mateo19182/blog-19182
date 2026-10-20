@@ -40,7 +40,7 @@ export async function onRequestPost({ request, env }) {
     const names = lists.map(([, , label]) => label)
     const reading = [
       lists.some(([name]) => name === 'posts') && ['Past writings', `${base}/writings`],
-      lists.some(([name]) => name === 'updates') && ['Previous life updates', `${base}/now#life-updates`],
+      lists.some(([name]) => name === 'updates') && ['Previous life updates', `${base}/updates`],
     ].filter(Boolean)
     const message = `You'll receive ${names.length > 1 ? `${names.slice(0, -1).join(', ')} and ${names.at(-1)}` : names[0]}.`
     const welcome = await fetch('https://api.resend.com/emails', {

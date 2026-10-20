@@ -110,13 +110,13 @@ and understated links, with system font fallbacks for email clients.
 Repeated signups don't reset an existing unsubscribe.
 
 Life updates live here, in Spanish. Each is `content/updates/<yyyy-mm>.md`
-(`title`, `date`, short body); the build lists them newest first in their own
-section under Bio at the bottom of the Now page, in both languages. They are not
-writings, so they don't trigger the newsletter action. On the 1st of each month
+(`title`, `date`, short body) with an optional English translation
+`<yyyy-mm>.en.md` (`title` and body). The build turns them into one `/updates`
+page, newest first, linked from a small line at the bottom of the Now page.
+They don't trigger the newsletter action. On the 1st of each month
 `.github/workflows/monthly-reminder.yml` opens an issue to update the Now table
-and write one. An email to the updates segment, if any, is
-`private/updates/<name>.md` (gitignored; `subject:` frontmatter, plain-text
-body), sent by posthumail with `bun cli update send <name>`.
+and write one. posthumail emails an update to its segment with
+`bun cli update send <yyyy-mm>`.
 
 Preview what a push would announce without sending any email:
 

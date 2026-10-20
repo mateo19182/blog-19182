@@ -27,7 +27,7 @@
       if (!response.ok) throw new Error('Signup failed')
       const links = [
         data.posts === 'yes' && (es ? ['Escritos anteriores', '/writings'] : ['Past writings', '/writings']),
-        data.updates === 'yes' && (es ? ['Actualizaciones anteriores', '/now#actualizaciones'] : ['Previous life updates', '/now#life-updates']),
+        data.updates === 'yes' && (es ? ['Actualizaciones anteriores', '/updates'] : ['Previous life updates', '/updates']),
       ].filter(Boolean)
       status.textContent = (es ? 'Ya estás en la lista. Gracias.' : "You're on the list. Thanks.") + (links.length ? ' ' : '')
       links.forEach(([label, href], i) => {

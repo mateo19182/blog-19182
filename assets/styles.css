@@ -1203,3 +1203,7 @@ html:has(.lightbox[open]) { overflow: hidden; }
 .writings-intro { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem; }
 .subscription-links { white-space: nowrap; }
 .writings-intro .subscription-links { margin-left: auto; }
+
+/* small link from the Now page to /updates */
+.prose .updates-link { font-size: 0.88rem; margin-top: 2rem; }
+.prose .updates-link a { color: var(--gray); }
