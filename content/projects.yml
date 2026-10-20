@@ -1,3 +1,15 @@
+- title: "forocoches-lm"
+  title_es: "forocoches-lm"
+  url: "https://forocoches.m19182.dev"
+  date: "2026-10"
+  tags: [llm, ml, public-data]
+  highlight: true
+  image: forocoches.webp
+  desc: >-
+    A 1B language model that writes ForoCoches threads: title, opening post and replies, in the forum's Spanish, conditioned on a thread type. Gemma 3 fully fine-tuned on half a million archived threads, served as a forum look-alike where generation runs in your browser over WebGPU. Model, browser weights and the labelled dataset are on [Hugging Face](https://huggingface.co/mateo-19182); [code](https://github.com/mateo19182/forocoches-lm).
+  desc_es: >-
+    Un modelo de lenguaje de 1B que escribe hilos de ForoCoches: título, OP y respuestas, en el castellano del foro y según el tipo de hilo que le pidas. Gemma 3 con full fine-tune sobre medio millón de hilos del archivo, servido como una réplica del foro donde la generación corre en tu navegador con WebGPU. El modelo, los pesos para navegador y el dataset etiquetado están en [Hugging Face](https://huggingface.co/mateo-19182); [código](https://github.com/mateo19182/forocoches-lm).
+
 - title: "Spanish Politics on Telegram"
   title_es: "Política española en Telegram"
   url: "https://canales.m19182.dev"
