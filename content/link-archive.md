@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-10-20
+date: 2026-10-21
 tags: 
   - personal
 ---
@@ -9,6 +9,9 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [](https://www.nber.org/system/files/working_papers/w35901/w35901.pdf) `Academic Papers and Resources` *2026-10-20*
+- [The Real Development was the Friends We Made Along the Way | Oliver W. Kim](https://oliverwkim.com/Hirschman-Strategy) `Ideas` *2026-10-20*
+- [](https://www.oocities.org/spunk1111/clownpr.htm) `Weird` *2026-10-20*
 - [Alphonse Laurencic - Wikipedia](https://en.wikipedia.org/wiki/Alphonse_Laurencic) `Wikis` *2026-10-19*
 - [William Gibson and the trademarking of Cyberspace™](https://colo.to/cyberspace.html) `Reads` *2026-10-19*
 - [How Social Engineering Drives Technology](https://www.palladiummag.com/2020/05/28/how-social-engineering-drives-technology/?utm_source=substack&utm_medium=email) `Reads` *2026-10-19*
