@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-10-21
+date: 2026-10-22
 tags: 
   - personal
 ---
@@ -9,6 +9,10 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [How Europe’s most wanted cocaine trafficker turned Sierra Leone into the world’s first true narco state | Global development | The Guardian](https://www.theguardian.com/global-development/ng-interactive/2026/oct/14/europes-most-wanted-cocaine-trafficker-sierra-leone-crime-drugs-narco-state) `Reads` *2026-10-21*
+- [You'll forget most of what you learn. What should you do about that?](https://www.theseedsofscience.pub/p/youll-forget-most-of-what-you-learn?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-10-21*
+- [AI Safety Is Not A Corporate Plot - by Scott Alexander](https://www.astralcodexten.com/p/ai-safety-is-not-a-corporate-plot?utm_source=%2Finbox&utm_medium=reader2) `Ideas` *2026-10-21*
+- [Synth.is — Evolving Instruments](https://synth.is) `Tools and Interactive Websites` *2026-10-21*
 - [](https://www.nber.org/system/files/working_papers/w35901/w35901.pdf) `Academic Papers and Resources` *2026-10-20*
 - [The Real Development was the Friends We Made Along the Way | Oliver W. Kim](https://oliverwkim.com/Hirschman-Strategy) `Ideas` *2026-10-20*
 - [](https://www.oocities.org/spunk1111/clownpr.htm) `Weird` *2026-10-20*
