@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-10-22
+date: 2026-10-23
 tags: 
   - personal
 ---
@@ -9,6 +9,8 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [The PingCAP TiDB Cloud Leaks - FulcrumSec](https://fulcrumsec.vg/pingcap) `Tech` *2026-10-22*
+- [Citrini Therapeutics - Citrini Research](https://www.citriniresearch.com/p/citrini-therapeutics) `Reads` *2026-10-22*
 - [How Europe’s most wanted cocaine trafficker turned Sierra Leone into the world’s first true narco state | Global development | The Guardian](https://www.theguardian.com/global-development/ng-interactive/2026/oct/14/europes-most-wanted-cocaine-trafficker-sierra-leone-crime-drugs-narco-state) `Reads` *2026-10-21*
 - [You'll forget most of what you learn. What should you do about that?](https://www.theseedsofscience.pub/p/youll-forget-most-of-what-you-learn?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-10-21*
 - [AI Safety Is Not A Corporate Plot - by Scott Alexander](https://www.astralcodexten.com/p/ai-safety-is-not-a-corporate-plot?utm_source=%2Finbox&utm_medium=reader2) `Ideas` *2026-10-21*
