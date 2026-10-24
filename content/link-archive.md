@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-10-23
+date: 2026-10-24
 tags: 
   - personal
 ---
@@ -9,6 +9,11 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Why Do AI Models Tell Left-Wing Voters to Support the Communist Party? AI Voting Advice in Japan’s 2026 General Election](https://andrewbenjaminhall.com/Miyazaki_Hall_Japan_AI.pdf) `Academic Papers and Resources` *2026-10-23*
+- [The end of startups | Evan Conrad](https://evanjconrad.com/posts/end-of-startups) `Tech` *2026-10-23*
+- [What Happened at the Peptide Party? — MAMA Magazine](https://mamathemagazine.com/what-happened-at-the-peptide-party) `Reads` *2026-10-23*
+- [12 Axes — Teste Político Grátis e Quiz de Ideologia em 12 Eixos](https://12axes.vercel.app) `Tools and Interactive Websites` *2026-10-23*
+- [OlmoEarth Studio — Embeddings](https://olmoearth.allenai.org/embeddings#map=1.5/0/0&s=zDYtBCoAwEMT-kvMeqoji_qZWD1WkWmFFxL-7pyFM8mJoK1wog51jWBF2h2JLtbzcjjPad8IT0eAzoY2QvOOIubqwJTeE4sf3Aw) `Tools and Interactive Websites` *2026-10-23*
 - [The PingCAP TiDB Cloud Leaks - FulcrumSec](https://fulcrumsec.vg/pingcap) `Tech` *2026-10-22*
 - [Citrini Therapeutics - Citrini Research](https://www.citriniresearch.com/p/citrini-therapeutics) `Reads` *2026-10-22*
 - [How Europe’s most wanted cocaine trafficker turned Sierra Leone into the world’s first true narco state | Global development | The Guardian](https://www.theguardian.com/global-development/ng-interactive/2026/oct/14/europes-most-wanted-cocaine-trafficker-sierra-leone-crime-drugs-narco-state) `Reads` *2026-10-21*
