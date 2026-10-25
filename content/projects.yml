@@ -83,6 +83,14 @@
   desc_es: >-
     Un interruptor de hombre muerto autoalojado en el plan gratuito de Cloudflare. Comprobaciones mensuales por correo y Telegram; si dejo de responder, se pregunta a personas de confianza y, cuando suficientes confirman, se envían mis mensajes. También manda por correo las actualizaciones del blog a la lista del boletín.
 
+- title: "finance"
+  date: "2026-10"
+  tags: [self-hosted, llm]
+  desc: >-
+    Self-hosted personal finance on a plain-text [Beancount](https://beancount.github.io/) ledger. Daily sync of bank accounts (Enable Banking), Indexa, on-chain wallets and prices; transactions are categorized from my own history first and with a classifier only when unsure, uncertain ones go to Telegram for review. A minimal web UI for net worth, spending and portfolio, and a CLI that my agents use to answer questions and book things. Replaces my earlier beancount-ui.
+  desc_es: >-
+    Finanzas personales autoalojadas sobre un libro contable de [Beancount](https://beancount.github.io/) en texto plano. Sincronización diaria de bancos (Enable Banking), Indexa, wallets on-chain y precios; las transacciones se categorizan primero con mi propio historial y con un clasificador solo si hay dudas, y las inciertas van a Telegram para revisarlas. Una web mínima para patrimonio, gastos y cartera, y un CLI que usan mis agentes para responder preguntas y registrar movimientos. Sustituye a mi antigua beancount-ui.
+
 - title: "trace-it"
   url: "https://github.com/Martinhdeez/trace-it"
   date: "2026-09"
@@ -213,15 +221,6 @@
     A CLI for saving links to Linkwarden, with fzf collection selection, clipboard input, and a local collection cache.
   desc_es: >-
     Un CLI para guardar enlaces en Linkwarden, con selección de colección con fzf, entrada desde el portapapeles y caché local de colecciones.
-
-- title: "beancount-ui"
-  url: "https://github.com/mateo19182/beancount-ui"
-  date: "2026-03"
-  tags: [self-hosted]
-  desc: >-
-    App for managing [Beancount](https://beancount.github.io/) ledgers, built with NiceGUI. Point it at a `.beancount` file to visualize asset allocation, stock and crypto holdings, transactions, document attachments, and a bank import flow via the Enable Banking API with automatic payee categorization.
-  desc_es: >-
-    App para gestionar libros contables de [Beancount](https://beancount.github.io/), hecha con NiceGUI. Apúntala a un fichero `.beancount` para ver la distribución de activos, acciones y cripto, transacciones, documentos adjuntos y un flujo de importación bancaria mediante la API de Enable Banking con categorización automática de beneficiarios.
 
 - title: "i18n Skill"
   url: "https://github.com/mateo19182/i18n-skill"
