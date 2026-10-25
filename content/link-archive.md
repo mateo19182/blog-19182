@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-10-24
+date: 2026-10-25
 tags: 
   - personal
 ---
@@ -9,6 +9,11 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Just a moment...](https://www.cgdev.org/blog/20-aid-really-lost-corruption-zombie-statistics-and-their-sources) `Academic Papers and Resources` *2026-10-24*
+- [Security Through Binary Patching - pancake](https://trufae.substack.com/p/security-through-binary-patching) `Tech` *2026-10-24*
+- [How does Fable 5.1 hide messages in images? — LessWrong](https://www.lesswrong.com/posts/WHEQps5PK8LrrcTAb/how-does-fable-5-1-hide-messages-in-images) `Tech` *2026-10-24*
+- [12 Axes — Free Political Test, Quiz & Compass Across 12 Axes](https://12axes.vercel.app/en) `Tools and Interactive Websites` *2026-10-24*
+- [neu. devices | Neutone](https://neutone.jp/neu) `Tools and Interactive Websites` *2026-10-24*
 - [Why Do AI Models Tell Left-Wing Voters to Support the Communist Party? AI Voting Advice in Japan’s 2026 General Election](https://andrewbenjaminhall.com/Miyazaki_Hall_Japan_AI.pdf) `Academic Papers and Resources` *2026-10-23*
 - [The end of startups | Evan Conrad](https://evanjconrad.com/posts/end-of-startups) `Tech` *2026-10-23*
 - [What Happened at the Peptide Party? — MAMA Magazine](https://mamathemagazine.com/what-happened-at-the-peptide-party) `Reads` *2026-10-23*
