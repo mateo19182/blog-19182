@@ -65,6 +65,24 @@
   desc_es: >-
     Descubrimiento y gestión de una biblioteca musical autoalojada, con etiquetado automático, revisión manual y herramientas MCP para agentes.
 
+- title: "Full Marks"
+  url: "https://github.com/mateo19182/full-marks"
+  date: "2026-10"
+  tags: [ml, research, art-music]
+  desc: >-
+    Experiments in getting an audio-aesthetics predictor (Audiobox Aesthetics) to give top scores to unusual sounds, by optimising waveforms, codec latents and the initial noise of a frozen generator. The scores can be pushed past the human 1–10 scale, but they collapse with small gain changes or off-grid time shifts, and a high predicted score doesn't make the audio more enjoyable.
+  desc_es: >-
+    Experimentos para que un predictor de estética de audio (Audiobox Aesthetics) dé la máxima nota a sonidos poco habituales, optimizando formas de onda, latentes de un códec y el ruido inicial de un generador congelado. Las puntuaciones se pueden llevar por encima de la escala humana de 1 a 10, pero se hunden con pequeños cambios de ganancia o desplazamientos fuera de la rejilla temporal, y una nota alta no hace que el audio guste más.
+
+- title: "posthumail"
+  url: "https://github.com/mateo19182/posthumail"
+  date: "2026-10"
+  tags: [self-hosted, tools]
+  desc: >-
+    A self-hosted dead man's switch on Cloudflare's free plan. Monthly check-ins by email and Telegram; if I stop answering, trusted people are asked, and once enough of them confirm, my messages are sent. It also emails the blog's life updates to the newsletter list.
+  desc_es: >-
+    Un interruptor de hombre muerto autoalojado en el plan gratuito de Cloudflare. Comprobaciones mensuales por correo y Telegram; si dejo de responder, se pregunta a personas de confianza y, cuando suficientes confirman, se envían mis mensajes. También manda por correo las actualizaciones del blog a la lista del boletín.
+
 - title: "trace-it"
   url: "https://github.com/Martinhdeez/trace-it"
   date: "2026-09"
