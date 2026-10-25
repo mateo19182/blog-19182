@@ -1,6 +1,7 @@
 // Tag filter for the projects page. Chips and #tags link to /projects?tag=x, so
 // without JS they just reload the full list; with JS they filter in place, keep
-// the URL in sync and hide year headings left with no projects. Both language
+// the URL in sync, hide year headings left with no projects and re-alternate the
+// thumbnail sides over the visible rows. Both language
 // copies of the list are filtered together.
 ;(function () {
   const lists = document.querySelectorAll(".project-list")
@@ -16,6 +17,7 @@
       let heading = null
       let shown = 0
       let prev = null
+      let thumbs = 0
       const close = () => heading && (heading.hidden = shown === 0)
       for (const el of list.children) {
         if (el.classList.contains("project-year")) {
@@ -28,6 +30,7 @@
           el.hidden = !ok
           if (!ok) continue
           el.classList.toggle("project-sep", !!prev)
+          if (el.classList.contains("project-has-thumb")) el.classList.toggle("project-flip", thumbs++ % 2 === 0)
           prev = el
           shown++
         }

@@ -464,8 +464,10 @@ li.archive-hidden { display: none; }
 /* dashed rule between rows; with JS, projects.js marks them so hidden rows don't count */
 .project-list:not(.js) .project + .project,
 .project-list.js .project-sep { border-top: 1px dashed var(--lightgray); }
-/* highlighted: larger image on the right and text a size up */
-.project-highlight { flex-direction: row-reverse; gap: 1.4rem; padding: 1.1rem 0; }
+/* thumbnails alternate sides: every other one on the right */
+.project-flip { flex-direction: row-reverse; }
+/* highlighted: larger image and text a size up */
+.project-highlight { gap: 1.4rem; padding: 1.1rem 0; }
 .project-highlight .project-thumb { flex-basis: 19rem; }
 .project-highlight .project-title { font-size: 1.2rem; }
 .project-highlight .project-desc { font-size: 1rem; }
