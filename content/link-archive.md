@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-10-25
+date: 2026-10-27
 tags: 
   - personal
 ---
@@ -9,6 +9,14 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [nadeko.net](https://nadeko.net) `Tech` *2026-10-26*
+- [Vercel Security Checkpoint](https://www.piratewires.com/p/inside-peter-thiels-nashville-antichrist) `Reads` *2026-10-26*
+- [“I Will Complain to the EU!” - by yixuan - ChinaTalk](https://www.chinatalk.media/p/workers-of-the-world-email-volkswagen?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-10-26*
+- [‘You Met Me at a Very Chinese Time in My Life’](https://www.welcomejpeg.com/p/you-met-me-at-a-very-chinese-time?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-10-26*
+- [hitogata](https://hitogata.neocities.org) `Blogs` *2026-10-25*
+- [“We should be more ambitious with the software we build”](https://danluu.com/ambitious/#fn:A) `Tech` *2026-10-25*
+- [I Did This Without Your Knowledge — LessWrong](https://www.lesswrong.com/posts/3375SZNGA5dKHQMie/i-did-this-without-your-knowledge) `Reads` *2026-10-25*
+- [Movies / TV / Anime • freemediaheckyeah](https://fmhy.net/video#live-sports) `Museums - Indexers` *2026-10-25*
 - [Just a moment...](https://www.cgdev.org/blog/20-aid-really-lost-corruption-zombie-statistics-and-their-sources) `Academic Papers and Resources` *2026-10-24*
 - [Security Through Binary Patching - pancake](https://trufae.substack.com/p/security-through-binary-patching) `Tech` *2026-10-24*
 - [How does Fable 5.1 hide messages in images? — LessWrong](https://www.lesswrong.com/posts/WHEQps5PK8LrrcTAb/how-does-fable-5-1-hide-messages-in-images) `Tech` *2026-10-24*
