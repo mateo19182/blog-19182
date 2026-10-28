@@ -6,9 +6,9 @@
   highlight: true
   image: forocoches.webp
   desc: >-
-    A 1B language model that writes ForoCoches threads: title, opening post and replies, in the forum's Spanish, conditioned on a thread type. Gemma 3 fully fine-tuned on half a million archived threads, served as a forum look-alike where generation runs in your browser over WebGPU. Model, browser weights and the labelled dataset are on [Hugging Face](https://huggingface.co/mateo-19182); [code](https://github.com/mateo19182/forocoches-lm).
+    A 1B language model that writes ForoCoches threads: title, opening post and replies, in the forum's Spanish, conditioned on a thread type and year. Gemma 3 fully fine-tuned on a full crawl of the forum (2003–2026) plus the public archive, 820k threads in all, served as a forum look-alike where generation runs in your browser over WebGPU. [Model](https://huggingface.co/mateo-19182/forocoches-lm-v3), [dataset](https://huggingface.co/datasets/mateo-19182/forocoches-threads-v3), [crawl](https://huggingface.co/datasets/mateo-19182/forocoches-crawl-2026), [code](https://github.com/mateo19182/forocoches-lm).
   desc_es: >-
-    Un modelo de lenguaje de 1B que escribe hilos de ForoCoches: título, OP y respuestas, en el castellano del foro y según el tipo de hilo que le pidas. Gemma 3 con full fine-tune sobre medio millón de hilos del archivo, servido como una réplica del foro donde la generación corre en tu navegador con WebGPU. El modelo, los pesos para navegador y el dataset etiquetado están en [Hugging Face](https://huggingface.co/mateo-19182); [código](https://github.com/mateo19182/forocoches-lm).
+    Un modelo de lenguaje de 1B que escribe hilos de ForoCoches: título, OP y respuestas, en el castellano del foro y según el tipo de hilo y el año que le pidas. Gemma 3 con full fine-tune sobre un crawl completo del foro (2003–2026) y el archivo público, 820.000 hilos en total, servido como una réplica del foro donde la generación corre en tu navegador con WebGPU. [Modelo](https://huggingface.co/mateo-19182/forocoches-lm-v3), [dataset](https://huggingface.co/datasets/mateo-19182/forocoches-threads-v3), [crawl](https://huggingface.co/datasets/mateo-19182/forocoches-crawl-2026), [código](https://github.com/mateo19182/forocoches-lm).
 
 - title: "Spanish Politics on Telegram"
   title_es: "Política española en Telegram"
