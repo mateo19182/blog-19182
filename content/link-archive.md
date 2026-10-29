@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-10-28
+date: 2026-10-29
 tags: 
   - personal
 ---
@@ -9,6 +9,14 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Artificial Analysis v5 and the benchmarker's dilemma](https://www.interconnects.ai/p/artificial-analysis-v5-and-the-benchmarkers?utm_source=%2Finbox&utm_medium=reader2) `Tech` *2026-10-28*
+- [Europe’s Chip Gap - by Anton Leicht - Threading the Needle](https://writing.antonleicht.me/p/eurofab?utm_source=%2Finbox&utm_medium=reader2) `Tech` *2026-10-28*
+- [Why Global Trepanation? - by Scott Alexander](https://www.astralcodexten.com/p/why-global-trepanation?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-10-28*
+- [Computer Chips Are the Most Magnificent Things Humanity Has Ever Made | The New Yorker](https://www.newyorker.com/magazine/2026/10/26/computer-chips-are-the-most-magnificent-things-weve-ever-made) `Reads` *2026-10-28*
+- [Most Intelligence Is Search - by Tomas Pueyo](https://unchartedterritories.tomaspueyo.com/p/most-intelligence-is-search-6a0?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-10-28*
+- [Do Prediction Markets Create Information?](https://nicholasdecker.substack.com/p/do-prediction-markets-create-information) `Reads` *2026-10-28*
+- [Biology is a Burrito — Asimov Press](https://press.asimov.com/books/burrito) `Reads` *2026-10-28*
+- [Young prudes - by Aria Schrecker and Works in Progress](https://www.worksinprogress.news/p/young-prudes?utm_source=%2Finbox&utm_medium=reader2) `Ideas` *2026-10-28*
 - [The catalogue of TON Telegram channels — Gram News](https://gramnews.org/channels) `Museums - Indexers` *2026-10-27*
 - [nadeko.net](https://nadeko.net) `Tech` *2026-10-26*
 - [Vercel Security Checkpoint](https://www.piratewires.com/p/inside-peter-thiels-nashville-antichrist) `Reads` *2026-10-26*
