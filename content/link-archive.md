@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-10-29
+date: 2026-10-30
 tags: 
   - personal
 ---
@@ -9,6 +9,10 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Tasshin](https://tasshin.com) `Blogs` *2026-10-29*
+- [Culper Research vs Cerebras: A Neutral Engineering-Driven View](https://irrationalanalysis.substack.com/p/culper-research-vs-cerebras-a-neutral?utm_source=%2Finbox&utm_medium=reader2) `Tech` *2026-10-29*
+- [Caduceus City — Monstrous Times](https://monstroustimes.com/articles/caduceus-city) `Reads` *2026-10-29*
+- [Monstrous Times](https://monstroustimes.com) `Collectives and Magazines` *2026-10-29*
 - [Artificial Analysis v5 and the benchmarker's dilemma](https://www.interconnects.ai/p/artificial-analysis-v5-and-the-benchmarkers?utm_source=%2Finbox&utm_medium=reader2) `Tech` *2026-10-28*
 - [Europe’s Chip Gap - by Anton Leicht - Threading the Needle](https://writing.antonleicht.me/p/eurofab?utm_source=%2Finbox&utm_medium=reader2) `Tech` *2026-10-28*
 - [Why Global Trepanation? - by Scott Alexander](https://www.astralcodexten.com/p/why-global-trepanation?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-10-28*
