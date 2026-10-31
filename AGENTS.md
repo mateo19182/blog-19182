@@ -62,7 +62,9 @@ A writing may have a `soundtrack:` (`artist`, `title`, `file`) on the original
 file only, chosen to last about as long as the read (230 wpm). The build fails if
 `content/data/soundtrack/<file>` is missing. Encode from the library
 (`/mnt/data/music-library/library`) as Opus:
-`ffmpeg -i <src> -vn -map_metadata -1 -c:a libopus -b:a 64k <file>.webm`.
+`ffmpeg -i <src> -vn -map_metadata -1 -c:a libopus -b:a 64k <file>.webm`, then
+run `npm run soundtrack:peaks` (needs ffmpeg) and commit `peaks.json`: the player
+draws its waveform and length from it before any audio loads.
 Cloudflare Pages rejects files over 25 MiB, about 40 minutes at this rate.
 The Feijoo soundtrack lives in the header of `tools/sync-feijoo-preview.mjs`.
 Projects are data in `content/projects.yml`, with English and Spanish fields side

@@ -775,16 +775,58 @@ li.archive-hidden { display: none; }
 .series li[aria-current]::marker { color: var(--secondary); }
 
 .soundtrack {
+  --st-played: var(--dark);
+  --st-rest: color-mix(in srgb, var(--gray) 45%, transparent);
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-areas: "play cap time" "play wave wave";
+  align-items: center;
+  gap: 0.3rem 0.75rem;
   margin: -0.6rem 0 1.1rem;
-  padding: 0.1rem 0 0.1rem 0.85rem;
+  padding: 0.15rem 0 0.15rem 0.85rem;
   border-left: 2px solid var(--lightgray);
   font-size: 0.85rem;
   color: var(--gray);
 }
-.soundtrack figcaption { margin-bottom: 0.35rem; }
+:root[data-theme="dark"] .soundtrack { --st-played: var(--secondary); }
+.soundtrack figcaption { grid-area: cap; min-width: 0; line-height: 1.35; }
 .soundtrack cite { font-style: normal; color: var(--darkgray); }
-.soundtrack audio { display: block; width: 100%; max-width: 26rem; height: 2.25rem; }
-:root[data-theme="dark"] .soundtrack audio { color-scheme: dark; }
+.st-time { grid-area: time; font: 0.75rem var(--font-mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.st-play {
+  grid-area: play;
+  display: grid;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  border: 1px solid var(--gray);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--dark);
+  cursor: pointer;
+  transition: background-color 0.15s, border-color 0.15s;
+}
+.st-play:hover { background: var(--highlight); border-color: var(--darkgray); }
+.st-play svg { width: 0.95rem; height: 0.95rem; fill: currentColor; }
+.st-i-pause, .st-playing .st-i-play { display: none; }
+.st-playing .st-i-pause { display: inline; }
+.st-playing .st-play { border-color: var(--st-played); color: var(--st-played); }
+.st-loading .st-play { animation: st-wait 0.8s ease-in-out infinite alternate; }
+@keyframes st-wait { to { opacity: 0.35; } }
+.st-wave {
+  grid-area: wave;
+  height: 1.9rem;
+  background: linear-gradient(90deg, var(--st-played) var(--p, 0%), var(--st-rest) 0);
+  -webkit-mask: var(--wave) 0 0 / 100% 100% no-repeat;
+  mask: var(--wave) 0 0 / 100% 100% no-repeat;
+  cursor: pointer;
+  touch-action: none;
+}
+/* the mask clips outlines, so focus shows on the figure's edge */
+.st-wave:focus-visible { outline: none; }
+.soundtrack:has(.st-wave:focus-visible) { border-left-color: var(--st-played); }
+.soundtrack noscript audio { grid-column: 1 / -1; width: 100%; }
+@media (prefers-reduced-motion: reduce) { .st-loading .st-play { animation: none; } }
 
 .article-end {
   max-width: var(--measure);

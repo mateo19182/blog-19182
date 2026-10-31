@@ -192,13 +192,20 @@ async function loadFile(file, name, section) {
   }
 }
 
+let soundtrackPeaks
 async function loadSoundtrack(s, file) {
   if (!s) return null
   if (!s.artist || !s.title || !s.file) throw new Error(`${file}: soundtrack needs artist, title and file`)
-  if (!existsSync(path.join(CONTENT, "data", "soundtrack", s.file))) {
-    throw new Error(`${file}: missing content/data/soundtrack/${s.file}`)
+  const dir = path.join(CONTENT, "data", "soundtrack")
+  if (!existsSync(path.join(dir, s.file))) throw new Error(`${file}: missing content/data/soundtrack/${s.file}`)
+  soundtrackPeaks ??= JSON.parse(await readFile(path.join(dir, "peaks.json"), "utf8"))
+  const wave = soundtrackPeaks[s.file]
+  if (!wave) throw new Error(`${file}: no peaks for ${s.file}; run npm run soundtrack:peaks`)
+  return {
+    artist: String(s.artist), title: String(s.title),
+    src: `/data/soundtrack/${encodeURIComponent(s.file)}`,
+    ...wave,
   }
-  return { artist: String(s.artist), title: String(s.title), src: `/data/soundtrack/${encodeURIComponent(s.file)}` }
 }
 
 // The default slot is English and `es` is Spanish, whichever was written first.
@@ -517,6 +524,8 @@ async function build() {
     excerpt: newsletterExcerpt(p.lang === "es" ? p.en?.rawContent || "" : p.rawContent, p.url),
   }))))
   await writeFile(path.join(OUT, "sitemap.xml"), buildSitemap(sitemapUrls))
+  // Cloudflare Pages would serve .webm as video/webm.
+  await writeFile(path.join(OUT, "_headers"), "/data/soundtrack/*.webm\n  Content-Type: audio/webm\n")
   await writeFile(path.join(OUT, "robots.txt"), `User-agent: *\nAllow: /\nSitemap: ${SITE.baseUrl}/sitemap.xml\n`)
   await buildSearchIndex(searchDocs)
 
@@ -574,7 +583,7 @@ async function serve(port = 8080) {
     ".png": "image/png", ".jpg": "image/jpeg", ".jpeg": "image/jpeg", ".svg": "image/svg+xml",
     ".xml": "application/xml", ".md": "text/markdown; charset=utf-8", ".pdf": "application/pdf",
     ".txt": "text/plain", ".gif": "image/gif", ".webp": "image/webp",
-    ".json": "application/json", ".wasm": "application/wasm",
+    ".json": "application/json", ".wasm": "application/wasm", ".webm": "audio/webm",
   }
   http.createServer(async (req, res) => {
     try {
@@ -585,7 +594,17 @@ async function serve(port = 8080) {
       else if (!existsSync(file)) file = path.join(OUT, p, "index.html")
       if (!existsSync(file)) { res.writeHead(404); res.end("404"); return }
       const body = await readFile(file)
-      res.writeHead(200, { "content-type": mime[path.extname(file)] || "application/octet-stream" })
+      const type = mime[path.extname(file)] || "application/octet-stream"
+      // Audio can only seek with byte ranges, which Cloudflare also serves.
+      const range = /^bytes=(\d*)-(\d*)$/.exec(req.headers.range || "")
+      if (range && (range[1] || range[2])) {
+        const start = range[1] ? Number(range[1]) : Math.max(0, body.length - Number(range[2]))
+        const end = range[1] && range[2] ? Math.min(Number(range[2]), body.length - 1) : body.length - 1
+        res.writeHead(206, { "content-type": type, "accept-ranges": "bytes", "content-range": `bytes ${start}-${end}/${body.length}` })
+        res.end(body.subarray(start, end + 1))
+        return
+      }
+      res.writeHead(200, { "content-type": type, "accept-ranges": "bytes" })
       res.end(body)
     } catch (e) {
       res.writeHead(500); res.end(String(e))

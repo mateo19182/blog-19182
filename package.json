@@ -15,6 +15,7 @@
     "preview:feijoo": "npm run sync:feijoo && npm run serve",
     "serve": "node build.mjs --serve",
     "dev": "node build.mjs --serve --watch",
+    "soundtrack:peaks": "node tools/soundtrack-peaks.mjs",
     "screenshots": "node tools/project-screenshots.mjs"
   },
   "dependencies": {
