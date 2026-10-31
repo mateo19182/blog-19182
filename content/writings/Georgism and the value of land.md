@@ -5,6 +5,10 @@ date: 2023-10-31
 tags:
   - economics
   - policy
+soundtrack:
+  artist: "Herbie Hancock"
+  title: "Cantaloupe Island"
+  file: herbie-hancock-cantaloupe-island.webm
 ---
 
 This post is more of an exercise, to try to understand more deeply the importance of land in our society before, now, and in the future. To do that I will explore the Georgism ideology and allow myself to go down on related tangents. I will not discuss topics that stray too much from that such as whether chasing maximum productivity is the way forward or if this is more easily solved by nationalizing all natural resources.

@@ -5,6 +5,10 @@ date: 2024-05-04
 tags:
   - economics
   - society
+soundtrack:
+  artist: "Miles Davis"
+  title: "On the Corner / New York Girl / Thinkin' of One Thing and Doin' Another / Vote for Miles"
+  file: miles-davis-on-the-corner.webm
 ---
 
 ---

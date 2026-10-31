@@ -185,10 +185,20 @@ async function loadFile(file, name, section) {
     description: data.description || data.summary || text.slice(0, 160).trim(),
     tags: Array.isArray(data.tags) ? data.tags.filter(Boolean) : [],
     aliases: Array.isArray(data.aliases) ? data.aliases : data.aliases ? [data.aliases] : [],
+    soundtrack: await loadSoundtrack(data.soundtrack, file),
     rawContent: content,
     isArticle: section === "writings",
     ...(await loadTranslations(file, name, data, content)),
   }
+}
+
+async function loadSoundtrack(s, file) {
+  if (!s) return null
+  if (!s.artist || !s.title || !s.file) throw new Error(`${file}: soundtrack needs artist, title and file`)
+  if (!existsSync(path.join(CONTENT, "data", "soundtrack", s.file))) {
+    throw new Error(`${file}: missing content/data/soundtrack/${s.file}`)
+  }
+  return { artist: String(s.artist), title: String(s.title), src: `/data/soundtrack/${encodeURIComponent(s.file)}` }
 }
 
 // The default slot is English and `es` is Spanish, whichever was written first.

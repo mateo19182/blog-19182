@@ -774,6 +774,18 @@ li.archive-hidden { display: none; }
 .series li[aria-current] { color: var(--dark); font-weight: 500; }
 .series li[aria-current]::marker { color: var(--secondary); }
 
+.soundtrack {
+  margin: -0.6rem 0 1.1rem;
+  padding: 0.1rem 0 0.1rem 0.85rem;
+  border-left: 2px solid var(--lightgray);
+  font-size: 0.85rem;
+  color: var(--gray);
+}
+.soundtrack figcaption { margin-bottom: 0.35rem; }
+.soundtrack cite { font-style: normal; color: var(--darkgray); }
+.soundtrack audio { display: block; width: 100%; max-width: 26rem; height: 2.25rem; }
+:root[data-theme="dark"] .soundtrack audio { color-scheme: dark; }
+
 .article-end {
   max-width: var(--measure);
   margin: 2.5rem auto 0;

@@ -5,6 +5,10 @@ date: 2024-09-03
 tags:
   - mind
   - philosophy
+soundtrack:
+  artist: "Alfa Mist"
+  title: "Live at Real World Studios"
+  file: alfa-mist-live-at-real-world-studios.webm
 ---
 
 This is a work in progess, most ideas aren't well fleshed out and will probably have to reorder it at some point to mantain some sort of narrative.

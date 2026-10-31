@@ -5,6 +5,10 @@ date: 2026-06-12
 tags:
   - ai
   - computers
+soundtrack:
+  artist: "Primal Scream"
+  title: "False Flags"
+  file: primal-scream-false-flags.webm
 ---
 Found out [via X](https://x.com/rodfernn/status/2061782265558966544) about this company, AugustaLabs.ai, that recently raised and created a CTF to find talent. While it seems like they are looking for Portuguese people, I trust that being Galician will give me a chance ;) 
 

@@ -6,6 +6,10 @@ tags:
   - mind
   - society
   - ai
+soundtrack:
+  artist: "Aesop Rock"
+  title: "Mindful Solutionism"
+  file: aesop-rock-mindful-solutionism.webm
 ---
 
 > **Cogsec**: Cognitive security refers to the protection of cognitive processes from manipulation, misinformation, and other forms of psychological influence that can affect decision-making and perception.

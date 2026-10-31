@@ -6,6 +6,10 @@ series: Favourite music
 series_es: Música favorita
 tags:
   - music
+soundtrack:
+  artist: "Jawnino"
+  title: "Can't Be (Airhead Remix)"
+  file: jawnino-cant-be-airhead-remix.webm
 ---
 
 For one more year, I will be compiling my favourite albums and EPs released this year. Also added a new section on live shows I saw. Items are listed in rought descending order of enjoyment.

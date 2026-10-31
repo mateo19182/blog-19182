@@ -6,6 +6,10 @@ date: 2025-07-24
 tags:
   - systems
   - society
+soundtrack:
+  artist: "Death Grips"
+  title: "Steroids (Crouching Tiger Hidden Gabber Megamix)"
+  file: death-grips-steroids.webm
 ---
 
 

@@ -5,6 +5,10 @@ date: 2023-08-14
 tags:
   - music
   - mind
+soundtrack:
+  artist: "Speaker Music"
+  title: "Sonological Hubris"
+  file: speaker-music-sonological-hubris.webm
 ---
 
 On my recent trip to London, I visited the Lisson Gallery where they were hosting the ["HiFi listening Room Dream No.1"](https://www.lissongallery.com/exhibitions/devon-turnbull-ojas-hifi-listening-room-dream-no-1). The event was put together by [Devon Turnbull](https://ojas.nyc/)  (aka OJAS) and was completely free. I and my friend got to catch [Mo Yasin](https://www.instagram.com/_moyasin_/?hl=en) in residence (8–11 August). Also worth mentioning is that most of the system was built from scratch by OJAS and his team.

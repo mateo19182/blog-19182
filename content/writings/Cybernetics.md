@@ -5,6 +5,10 @@ date: 2024-01-22
 tags:
   - systems
   - history
+soundtrack:
+  artist: "Herbie Hancock"
+  title: "Perfect Machine"
+  file: herbie-hancock-perfect-machine.webm
 ---
 
 For some time now, there has been a page of Wikipedia that I keep finding myself in [Complex Systems](https://en.wikipedia.org/wiki/Complex_system). But complex systems is an enormous field, so, for this post, I will be talking about one "branch" of systems theory, Cybernetics.

@@ -5,6 +5,10 @@ date: 2023-10-07
 tags:
   - personal
   - music
+soundtrack:
+  artist: "m19182"
+  title: "outside"
+  file: m19182-outside.webm
 ---
 
 I want to write this post to remind myself and anyone else reading this to take risks. It's the most generic advice given, especially to young people, but that is because it's true. Last weekend I attended a conference organized by [modulartec](https://modulartec.gal/es/inicio_es/) about a small company called [befaco](https://www.befaco.org/), they are the only company in Spain (as far as I know) making modules for modular synths.

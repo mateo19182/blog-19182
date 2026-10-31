@@ -58,6 +58,13 @@ ordered by date unless you set `series_order: <n>`. The build adds the series
 list under the title and previous/next links at the end. It also lists the
 writings that link to a post ("Linked from"), leaving out links within the
 same series. Word counts are computed for each language. Do not display reading times.
+A writing may have a `soundtrack:` (`artist`, `title`, `file`) on the original
+file only, chosen to last about as long as the read (230 wpm). The build fails if
+`content/data/soundtrack/<file>` is missing. Encode from the library
+(`/mnt/data/music-library/library`) as Opus:
+`ffmpeg -i <src> -vn -map_metadata -1 -c:a libopus -b:a 64k <file>.webm`.
+Cloudflare Pages rejects files over 25 MiB, about 40 minutes at this rate.
+The Feijoo soundtrack lives in the header of `tools/sync-feijoo-preview.mjs`.
 Projects are data in `content/projects.yml`, with English and Spanish fields side
 by side; edit that file, not `projects.md`. The page lists them newest first by
 `date` under year headings. Each project has 1–3 `tags:` from `PROJECT_TAGS` in

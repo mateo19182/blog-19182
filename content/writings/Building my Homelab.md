@@ -4,6 +4,10 @@ summary: "Choosing parts and setting up Proxmox for my first home server."
 date: 2024-05-24
 tags:
   - computers
+soundtrack:
+  artist: "Daft Punk"
+  title: "Rollin' & Scratchin'"
+  file: daft-punk-rollin-and-scratchin.webm
 ---
 
 

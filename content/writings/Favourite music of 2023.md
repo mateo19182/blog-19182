@@ -6,6 +6,10 @@ series: Favourite music
 series_es: Música favorita
 tags:
   - music
+soundtrack:
+  artist: "Speakers Corner Quartet"
+  title: "Shabz Needs Sun"
+  file: speakers-corner-quartet-shabz-needs-sun.webm
 ---
 
 I am triying to compile a list of my favourite projects released every year. Im including albums and EPs not in any particular orden. Projects that I really want to highlight will be marked with a (*). [Here is last year's list.](/data/2022.jpeg)

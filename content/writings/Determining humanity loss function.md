@@ -5,6 +5,10 @@ date: 2023-12-20
 tags:
   - philosophy
   - systems
+soundtrack:
+  artist: "HUMAN ERROR CLUB"
+  title: "PANGAEA"
+  file: human-error-club-pangaea.webm
 ---
 
 A loss function is a method of evaluating how well a machine learning algorithm models the given data. It is used in the context of mathematical optimization and decision theory and recently became a widely known concept thanks to the advent of AI. An intuitive way of understanding is that it is the term that we are trying to minimize in an optimization problem.

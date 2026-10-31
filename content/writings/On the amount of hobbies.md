@@ -4,6 +4,10 @@ summary: "On having too many hobbies, and whether spreading myself thin is a pro
 date: 2023-09-29
 tags:
   - personal
+soundtrack:
+  artist: "J Dilla"
+  title: "Time: The Donut of the Heart"
+  file: j-dilla-time-the-donut-of-the-heart.webm
 ---
 
 Recently, [this substack](https://goodreason.substack.com/p/an-infinity-of-choices) caught my attention. Since reading it 4 or 5 days ago my mind keeps going back to it, as the main premise (you need to focus on a few things to be good at them) is kind of opposite to the way I´ve been living.

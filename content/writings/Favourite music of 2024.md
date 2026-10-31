@@ -6,6 +6,10 @@ series: Favourite music
 series_es: Música favorita
 tags:
   - music
+soundtrack:
+  artist: "JPEGMAFIA"
+  title: "it's dark and hell is hot"
+  file: jpegmafia-its-dark-and-hell-is-hot.webm
 ---
 
 For one more year, I will be compiling my favourite albums and EPs released this year. Projects are listed in rought descending order of enjoyment. [Here's the 2022 list](/data/2022.jpeg) and [[Favourite music of 2023]].

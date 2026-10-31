@@ -7,6 +7,10 @@ series_es: Mapeando el espacio de búsqueda de la música
 tags:
   - music
   - philosophy
+soundtrack:
+  artist: "Burial"
+  title: "Phoneglow"
+  file: burial-phoneglow.webm
 ---
 
 Where I attempt to find a way to determine what is or isn't music and explore some ways of mapping it. In this first part I will try to answer the first question.
