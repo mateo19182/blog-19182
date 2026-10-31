@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-10-30
+date: 2026-10-31
 tags: 
   - personal
 ---
@@ -9,6 +9,12 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [](https://cs230.stanford.edu/projects_fall_2021/reports/103176936.pdf) `Academic Papers and Resources` *2026-10-30*
+- [i’m so bad at billiards that i ended up in the hyperbolic plane - YouTube](https://youtu.be/kL9BTbIGxLg) `Academic Papers and Resources` *2026-10-30*
+- [Learning To Play Settlers of Catan With Deep RL](https://settlers-rl.github.io) `Tech` *2026-10-30*
+- [jacob on X: "How I Built the Most AI-Pilled Company in the World" / X](https://x.com/jsnnsa/status/2115623382721126826?s=52) `Tech` *2026-10-30*
+- [The Commanding Heights](https://commanding-heights.com) `Reads` *2026-10-30*
+- [Legal exploits may emerge at scale – Felix Ringe](https://www.felixringe.com/legal-exploits) `Ideas` *2026-10-30*
 - [Tasshin](https://tasshin.com) `Blogs` *2026-10-29*
 - [Culper Research vs Cerebras: A Neutral Engineering-Driven View](https://irrationalanalysis.substack.com/p/culper-research-vs-cerebras-a-neutral?utm_source=%2Finbox&utm_medium=reader2) `Tech` *2026-10-29*
 - [Caduceus City — Monstrous Times](https://monstroustimes.com/articles/caduceus-city) `Reads` *2026-10-29*
