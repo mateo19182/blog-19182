@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-10-31
+date: 2026-11-01
 tags: 
   - personal
 ---
@@ -9,6 +9,17 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Hospitalization: A Review — LessWrong](https://www.lesswrong.com/posts/5kSbx2vPTRhjiNHfe/hospitalization-a-review) `Reads` *2026-10-31*
+- [HISTORY LESSON: The upbringing of young Abe Lincoln | The Tribune](https://irontontribune.com/2019/04/17/history-lesson-the-upbringing-of-young-abe-lincoln) `Reads` *2026-10-31*
+- [Not a Meat Eater FAQ](https://www.erichgrunewald.com/posts/not-a-meat-eater-faq) `Reads` *2026-10-31*
+- [UnWall | Read Full Articles Without Paywalls](https://unwall.app/www.wsj.com/tech/apple-iphone-memory-chips-ai-c0084cc9?reflink=desktopwebshare_permalink&st=PStmix) `Reads` *2026-10-31*
+- [El marcador se ajusta solo - by Joan Tubau - Kapital](https://joantubau.substack.com/p/el-marcador-se-ajusta-solo?r=c1szx&utm_campaign=post&utm_medium=email) `Ideas` *2026-10-31*
+- [Digital minimalism](https://vitalik.eth.limo/general/2026/10/31/digital_minimalism.html) `Ideas` *2026-10-31*
+- [Capital Ownership Will Make You Go Crazy First](https://boundedlyrational.substack.com/p/capital-ownership-will-make-you-go?r=1vek9y&utm_medium=ios) `Ideas` *2026-10-31*
+- [Rule Thinkers In, Not Out — LessWrong](https://www.lesswrong.com/posts/u8GMcpEN9Z6aQiCvp/rule-thinkers-in-not-out) `Ideas` *2026-10-31*
+- [Fastest Personality test](https://dynomight.net/mbti) `Tools and Interactive Websites` *2026-10-31*
+- [MINISTERIO DE CULTURA - Portal de Archivos Espa&ntilde;oles](https://pares.cultura.gob.es/catastro/servlets/ServletController) `Museums - Indexers` *2026-10-31*
+- [Reddit](https://www.reddit.com/r/slatestarcodex/comments/aoh607/examples_of_otherwise_good_scientists_who_were) `Museums - Indexers` *2026-10-31*
 - [](https://cs230.stanford.edu/projects_fall_2021/reports/103176936.pdf) `Academic Papers and Resources` *2026-10-30*
 - [i’m so bad at billiards that i ended up in the hyperbolic plane - YouTube](https://youtu.be/kL9BTbIGxLg) `Academic Papers and Resources` *2026-10-30*
 - [Learning To Play Settlers of Catan With Deep RL](https://settlers-rl.github.io) `Tech` *2026-10-30*
