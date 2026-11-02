@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-11-01
+date: 2026-11-02
 tags: 
   - personal
 ---
@@ -9,6 +9,21 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Stageshow](https://benji.org/stageshow) `Tech` *2026-11-01*
+- [Some Memories of Early Anthropic - by Ivan Vendrov](https://nothinghuman.substack.com/p/some-memories-of-early-anthropic) `Tech` *2026-11-01*
+- [20 years. 766 million files. Two Chameleons. - The Zamzar Blog](https://blog.zamzar.com/2026/10/30/20-years-766-million-files-two-chameleons) `Tech` *2026-11-01*
+- [Do the Math: How We Took Over ChatGPT Accounts - Parameter](https://www.parameter.ai/labs/we-found-a-gap-at-openai) `Tech` *2026-11-01*
+- [UnWall | Read Full Articles Without Paywalls](https://unwall.app/www.nytimes.com/2026/10/31/insider/the-times-decisions-alaska-senate-race-story.html) `Reads` *2026-11-01*
+- [Próspera's Stack - Limn](https://limn.press/article/prosperas-stack) `Reads` *2026-11-01*
+- [Assassins and the Strategy of the Underdog - Medievalists.net](https://www.medievalists.net/2025/09/assassins-and-the-strategy-of-the-underdog) `Reads` *2026-11-01*
+- [Welcome to the Orion's Arm Universe Project](https://www.orionsarm.com) `Reads` *2026-11-01*
+- [Your Book Review: The History And Adventures Of An Atom](https://www.astralcodexten.com/p/your-book-review-the-history-and?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-11-01*
+- [El truco del acuerdo para rebajar la indemnización de despido.](https://laboro-spain.blogspot.com/2026/01/aceptar-acuerdo-despido.html?m=1) `Ideas` *2026-11-01*
+- [Don't ask to ask, just ask](https://dontasktoask.com) `Ideas` *2026-11-01*
+- [post-human humor - by Adam Aleksic - The Etymology Nerd](https://etymology.substack.com/p/post-human-humor?utm_source=%2Finbox&utm_medium=reader2) `Ideas` *2026-11-01*
+- [Resource Watch](https://resourcewatch.org/data/explore/cit01701-Travel-Time-to-Major-Cities?section=Discover&selectedCollection=&zoom=3&lat=0&lng=0&pitch=0&bearing=0&basemap=dark&labels=light&layers=%255B%257B%2522dataset%2522%253A%2522ccbcaf7b-1619-4298-8275-b135d1e8e04e%2522%252C%2522opacity%2522%253A1%252C%2522layer%2522%253A%2522d787d894-f7af-47c4-af0f-0849b06686ee%2522%257D%255D&aoi=&page=1&sort=most-viewed&sortDirection=-1) `Tools and Interactive Websites` *2026-11-01*
+- [Radiaverse – Global Radiation Map](https://radiaverse.com) `Tools and Interactive Websites` *2026-11-01*
+- [](https://enflujo.com) `Collectives and Magazines` *2026-11-01*
 - [Hospitalization: A Review — LessWrong](https://www.lesswrong.com/posts/5kSbx2vPTRhjiNHfe/hospitalization-a-review) `Reads` *2026-10-31*
 - [HISTORY LESSON: The upbringing of young Abe Lincoln | The Tribune](https://irontontribune.com/2019/04/17/history-lesson-the-upbringing-of-young-abe-lincoln) `Reads` *2026-10-31*
 - [Not a Meat Eater FAQ](https://www.erichgrunewald.com/posts/not-a-meat-eater-faq) `Reads` *2026-10-31*
