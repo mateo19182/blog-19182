@@ -8,6 +8,7 @@
   "scripts": {
     "test:newsletter": "node --test tests/newsletter.test.mjs",
     "test:updates": "node --test tests/updates.test.mjs",
+    "test:links": "node --test tests/links.test.mjs",
     "newsletter:preview": "node tools/send-newsletter.mjs",
     "build": "node build.mjs",
     "favicons": "node tools/fetch-favicons.mjs",

@@ -80,4 +80,6 @@ the images.
 full available width. External links show their site's favicon from the cache in
 `assets/favicons/`; after adding links to new sites, run `npm run favicons`
 (network) and commit the cache. The normal build never fetches; uncached hosts
-fall back to the `↗` marker.
+fall back to the `↗` marker. The build strips tracking and referral parameters
+(`utm_*`, Substack `r=`, `?ref=`, share `si=`…) from links in content files via
+`lib/links.mjs`, so paste links as they come; gift and unlock parameters stay.

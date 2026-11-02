@@ -2192,7 +2192,7 @@ Collection of places on the internet I enjoyed.
 - [How Georgists Valued land in the 1900's - by Lars Doucet](https://substack.com/inbox/post/163789219) `Reads` *2025-05-21*
 - [Foreskin Man - Wikipedia](https://en.wikipedia.org/wiki/Foreskin_Man) `Wikis` *2025-05-20*
 - [Will Jesus Christ return in an election year? — LessWrong](https://www.lesswrong.com/posts/LBC2TnHK8cZAimdWF/will-jesus-christ-return-in-an-election-year) `Ideas` *2025-05-20*
-- [YKcelerate!!! - by Nance - TBN](https://nanceee.substack.com/p/ykcelerate?r=2g1yjb&utm_medium=ios&triedRedirect=true) `Reads` *2025-05-19*
+- [YKcelerate!!! - by Nance - TBN](https://web.archive.org/web/20250524035421/https://nanceee.substack.com/p/ykcelerate) `Reads` *2025-05-19*
 - [Types of Memetic Information | near.blog](https://near.blog/memetic-information) `Ideas` *2025-05-19*
 - [O(n) vs. O(n^2) Startups | rohan ganapavarapu](https://rohan.ga/blog/startup_types) `Ideas` *2025-05-19*
 - [Why do girls like this blog? - Worst Boyfriend Ever](https://substack.com/@worstboyfriendever/p-162259325) `Weird` *2025-05-19*
@@ -2283,7 +2283,7 @@ Collection of places on the internet I enjoyed.
 - [Me at the zoo](https://things.lfesp.me/zoo) `Tools and Interactive Websites` *2025-04-24*
 - [Schizo embeddings: Initializing special tokens the complicated way](https://snimu.github.io/2025/04/21/schizo-embeddings.html) `Academic Papers and Resources` *2025-04-22*
 - [Abusing DuckDB-WASM by making SQL draw 3D graphics (Sort Of)](https://www.hey.earth/posts/duckdb-doom) `Tech` *2025-04-22*
-- [A Ketamine Addict's Perspective On What Elon Musk Might Be Experiencing On Ketamine](https://alisoncrosthwait.substack.com/p/a-ketamine-addicts-perspective-on?r=bdhc9&utm_medium=ios&triedRedirect=true) `Reads` *2025-04-22*
+- [A Ketamine Addict's Perspective On What Elon Musk Might Be Experiencing On Ketamine](https://web.archive.org/web/20250422183322/https://alisoncrosthwait.substack.com/p/a-ketamine-addicts-perspective-on) `Reads` *2025-04-22*
 - [How to run Python in production](https://ashishb.net/programming/python-in-production-2) `Tech` *2025-04-21*
 - [Public Annotated Complexity Talk - ITA-software-travel-complexity.pdf](http://www.demarcken.org/carl/papers/ITA-software-travel-complexity/ITA-software-travel-complexity.pdf) `Academic Papers and Resources` *2025-04-19*
 - [Debugging a Vision Transformer Compilation Issue](https://ohadravid.github.io/posts/2025-01-debugging-vit-and-tensorrt/#fnref:1) `Academic Papers and Resources` *2025-04-19*
@@ -2549,7 +2549,7 @@ Collection of places on the internet I enjoyed.
 - [Femininity is Fake, But Masculinity is Real](https://kryptogal.substack.com/p/femininity-is-fake-but-masculinity) `Ideas` *2025-01-19*
 - [The 2024 Lyttle Lytton Contest](https://adamcadre.ac/lyttle/2024.html) `Museums - Indexers` *2025-01-19*
 - [Using ChatGPT is not bad for the environment](https://andymasley.substack.com/p/individual-ai-use-is-not-bad-for) `Ideas` *2025-01-18*
-- [Neutralidad climática o la confirmación del declive](https://granadareview.substack.com/p/neutralidad-climatica-o-la-confirmacion?triedRedirect=true) `Reads` *2025-01-17*
+- [Neutralidad climática o la confirmación del declive](https://web.archive.org/web/20250117183221/https://granadareview.substack.com/p/neutralidad-climatica-o-la-confirmacion) `Reads` *2025-01-17*
 - [ZADZMO code](https://zadzmo.org/code/nepenthes) `Tools and Interactive Websites` *2025-01-17*
 - [The Gatalog – The Gatalog](https://thegatalog.com) `Tools and Interactive Websites` *2025-01-17*
 - [Fischerspooner’s Million Pound Contract | Red Bull Music Academy Daily](https://daily.redbullmusicacademy.com/2014/07/fischerspooner-feature) `Reads` *2025-01-16*

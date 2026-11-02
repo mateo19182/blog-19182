@@ -19,6 +19,7 @@ import { fileSlug } from "./lib/slug.mjs"
 import { newsletterExcerpt } from "./lib/newsletter.mjs"
 import { linkUpdates, updatesPage } from "./lib/updates.mjs"
 import { loadFavicons } from "./lib/favicons.mjs"
+import { cleanLinks } from "./lib/links.mjs"
 
 const ROOT = path.dirname(fileURLToPath(import.meta.url))
 const CONTENT = path.join(ROOT, "content")
@@ -164,9 +165,13 @@ async function loadAll() {
   return { pages, dataFiles }
 }
 
+// Front matter and body of a content file, with outbound links cleaned.
+async function readContent(file) {
+  return matter(cleanLinks(await readFile(file, "utf8")))
+}
+
 async function loadFile(file, name, section) {
-  const raw = await readFile(file, "utf8")
-  const { data, content } = matter(raw)
+  const { data, content } = await readContent(file)
   const isHome = name === "index" && !section
   const slug = isHome ? "" : fileSlug(name)
   const url = isHome ? "/" : section ? `/${section}/${slug}` : `/${slug}`
@@ -231,7 +236,7 @@ async function loadTranslations(file, name, data, content) {
 // Optional Spanish version of a page, written by hand as a sibling `foo.es.md`.
 async function loadTranslation(file, fallbackTitle) {
   if (!existsSync(file)) return null
-  const { data, content } = matter(await readFile(file, "utf8"))
+  const { data, content } = await readContent(file)
   return {
     title: data.title || fallbackTitle,
     summary: data.summary || "",
@@ -245,7 +250,7 @@ async function loadUpdates() {
   const files = (await readdir(dir)).filter((f) => f.endsWith(".md") && !f.endsWith(".en.md"))
   return Promise.all(files.map(async (f) => {
     const file = path.join(dir, f)
-    const { data, content } = matter(await readFile(file, "utf8"))
+    const { data, content } = await readContent(file)
     const title = data.title || f.replace(/\.md$/, "")
     const en = await loadTranslation(file.replace(/\.md$/, ".en.md"), title)
     return { title, date: normalizeDate(data.date), content, ...(en && { en: { title: en.title, content: en.rawContent } }) }

@@ -55,6 +55,8 @@ if (!TOKEN) {
 // Manual titles for links Linkwarden saved empty or as a bot-check page
 // ("Just a moment...", "Checking your browser..."). Keyed by exact URL.
 const TITLE_OVERRIDES = JSON.parse(await readFile(path.join(ROOT, "scripts", "link-titles.json"), "utf8"))
+// Archived copies for links whose page is gone. Keyed by exact saved URL.
+const URL_OVERRIDES = JSON.parse(await readFile(path.join(ROOT, "scripts", "link-urls.json"), "utf8"))
 
 // Linkwarden stores titles with raw HTML entities (&#039;, &#x27;, &amp;).
 const ENTITIES = { amp: "&", lt: "<", gt: ">", quot: '"', apos: "'", nbsp: " " }
@@ -85,7 +87,7 @@ for (const collection of data.collections || []) {
   for (const link of collection.links || []) {
     links.push({
       name: (TITLE_OVERRIDES[link.url] ?? decodeEntities(link.name || "")).replaceAll("#", "-").replace(/\s+/g, " ").trim(),
-      url: link.url,
+      url: URL_OVERRIDES[link.url] ?? link.url,
       date: (link.createdAt || "").split("T")[0],
       collection: collection.name,
     })
