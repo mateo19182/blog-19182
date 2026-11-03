@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-11-02
+date: 2026-11-03
 tags: 
   - personal
 ---
@@ -9,6 +9,8 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Pray for Chaos | the singularity is nearer](https://geohot.github.io//blog/jekyll/update/2026/11/01/pray-for-chaos.html) `Reads` *2026-11-02*
+- [elpais.com](https://elpais.com/opinion/2026-11-02/un-estado-capaz.html) `Reads` *2026-11-02*
 - [Stageshow](https://benji.org/stageshow) `Tech` *2026-11-01*
 - [Some Memories of Early Anthropic - by Ivan Vendrov](https://nothinghuman.substack.com/p/some-memories-of-early-anthropic) `Tech` *2026-11-01*
 - [20 years. 766 million files. Two Chameleons. - The Zamzar Blog](https://blog.zamzar.com/2026/10/30/20-years-766-million-files-two-chameleons) `Tech` *2026-11-01*
