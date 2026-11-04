@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-11-03
+date: 2026-11-04
 tags: 
   - personal
 ---
@@ -9,6 +9,8 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Progress on provable inference for large language models \ Anthropic](https://www.anthropic.com/research/provable-inference) `Tech` *2026-11-03*
+- [Quantity vs quality in pottery is a lie — LessWrong](https://www.lesswrong.com/posts/LrAqM4bGmAoA79rP3/quantity-vs-quality-in-pottery-is-a-lie) `Reads` *2026-11-03*
 - [Pray for Chaos | the singularity is nearer](https://geohot.github.io//blog/jekyll/update/2026/11/01/pray-for-chaos.html) `Reads` *2026-11-02*
 - [elpais.com](https://elpais.com/opinion/2026-11-02/un-estado-capaz.html) `Reads` *2026-11-02*
 - [Stageshow](https://benji.org/stageshow) `Tech` *2026-11-01*
