@@ -96,6 +96,7 @@
     Un interruptor de hombre muerto autoalojado en el plan gratuito de Cloudflare. Comprobaciones mensuales por correo y Telegram; si dejo de responder, se pregunta a personas de confianza y, cuando suficientes confirman, se envían mis mensajes. También manda por correo las actualizaciones del blog a la lista del boletín.
 
 - title: "finance"
+  url: "https://github.com/mateo19182/fin"
   date: "2026-10"
   tags: [self-hosted, llm]
   desc: >-
