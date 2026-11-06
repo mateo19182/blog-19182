@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-11-04
+date: 2026-11-06
 tags: 
   - personal
 ---
@@ -9,6 +9,7 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Claude Artifact](https://claude.ai/artifact/L8qsMc3SorytGW3LA81nYf) `Reads` *2026-11-06*
 - [Progress on provable inference for large language models \ Anthropic](https://www.anthropic.com/research/provable-inference) `Tech` *2026-11-03*
 - [Quantity vs quality in pottery is a lie — LessWrong](https://www.lesswrong.com/posts/LrAqM4bGmAoA79rP3/quantity-vs-quality-in-pottery-is-a-lie) `Reads` *2026-11-03*
 - [Pray for Chaos | the singularity is nearer](https://geohot.github.io//blog/jekyll/update/2026/11/01/pray-for-chaos.html) `Reads` *2026-11-02*
