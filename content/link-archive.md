@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-11-06
+date: 2026-11-07
 tags: 
   - personal
 ---
@@ -9,7 +9,22 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [on performance - merve](https://mervenoyann.substack.com/p/on-performance?r=27yl9f&utm_campaign=post&utm_medium=web) `Reads` *2026-11-07*
+- [Wow! signal - Wikipedia](https://en.wikipedia.org/wiki/Wow!_signal) `Wikis` *2026-11-06*
+- [The Hitchhiker’s Guide to Training on Compute Islands | Core Automation](https://www.coreauto.com/hitchhikers-guide-to-training-on-compute-islands) `Academic Papers and Resources` *2026-11-06*
+- [Just a moment...](https://synthient.com/blog/the-internals-of-a-badbox-operation) `Tech` *2026-11-06*
+- [Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights](https://rikiyat.github.io/blog/weight-space-programming) `Tech` *2026-11-06*
+- [The Office of the Frontier - Colossus](https://colossus.com/article/michael-kratsios-office-frontier-ostp) `Reads` *2026-11-06*
 - [Claude Artifact](https://claude.ai/artifact/L8qsMc3SorytGW3LA81nYf) `Reads` *2026-11-06*
+- [Soviet Submitted Names - Behind the Name](https://www.behindthename.com/submit/names/usage/soviet) `Reads` *2026-11-06*
+- [Against the Victorians - Pimlico Journal](https://www.pimlicojournal.co.uk/p/against-the-victorians) `Reads` *2026-11-06*
+- [We already know what a world without work looks like](https://asteriskmag.substack.com/p/we-already-know-what-a-world-without) `Reads` *2026-11-06*
+- [Not Deciphering The Voynich Manuscript](https://goflaw.substack.com/p/not-deciphering-the-voynich-manuscript) `Reads` *2026-11-06*
+- [Natural Law Theory Is Obviously False](https://benthams.substack.com/p/natural-law-theory-is-obviously-false) `Reads` *2026-11-06*
+- [The Closure of the Internet - by Arctotherium](https://arctotherium.substack.com/p/the-closure-of-the-internet) `Reads` *2026-11-06*
+- [Just a moment...](https://medium.com/@stewart/we-dont-sell-saddles-here-4c59524d650d) `Ideas` *2026-11-06*
+- [](https://voynich.nu) `Weird` *2026-11-06*
+- [meow :3](https://swimming.fish) `Weird` *2026-11-06*
 - [Progress on provable inference for large language models \ Anthropic](https://www.anthropic.com/research/provable-inference) `Tech` *2026-11-03*
 - [Quantity vs quality in pottery is a lie — LessWrong](https://www.lesswrong.com/posts/LrAqM4bGmAoA79rP3/quantity-vs-quality-in-pottery-is-a-lie) `Reads` *2026-11-03*
 - [Pray for Chaos | the singularity is nearer](https://geohot.github.io//blog/jekyll/update/2026/11/01/pray-for-chaos.html) `Reads` *2026-11-02*
