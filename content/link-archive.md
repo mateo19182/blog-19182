@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-11-07
+date: 2026-11-08
 tags: 
   - personal
 ---
@@ -10,6 +10,7 @@ Collection of places on the internet I enjoyed.
  If a link is broken and you're interested in it, contact me for an archive.
 
 - [on performance - merve](https://mervenoyann.substack.com/p/on-performance?r=27yl9f&utm_campaign=post&utm_medium=web) `Reads` *2026-11-07*
+- [TristanTube](https://karpathy.ai/tristan-tube) `Museums - Indexers` *2026-11-07*
 - [Wow! signal - Wikipedia](https://en.wikipedia.org/wiki/Wow!_signal) `Wikis` *2026-11-06*
 - [The Hitchhiker’s Guide to Training on Compute Islands | Core Automation](https://www.coreauto.com/hitchhikers-guide-to-training-on-compute-islands) `Academic Papers and Resources` *2026-11-06*
 - [Just a moment...](https://synthient.com/blog/the-internals-of-a-badbox-operation) `Tech` *2026-11-06*
