@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-11-08
+date: 2026-11-09
 tags: 
   - personal
 ---
@@ -9,6 +9,14 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Barriga Verde - Wikipedia, la enciclopedia libre](https://es.wikipedia.org/wiki/Barriga_Verde) `Wikis` *2026-11-08*
+- [Just a moment...](https://journals.sagepub.com/doi/10.1177/1043463107077384) `Academic Papers and Resources` *2026-11-08*
+- [Inside the Choreography of Damien Jalet - by Welcome.jpeg](https://www.welcomejpeg.com/p/inside-the-choreography-of-damien?utm_source=%2Finbox&utm_medium=reader2) `Arts` *2026-11-08*
+- [The Vanishing White Male Writer | Compact](https://www.compactmag.com/article/the-vanishing-white-male-writer) `Reads` *2026-11-08*
+- [We Visited China’s Stargate in Inner Mongolia](https://newsletter.semianalysis.com/p/we-visited-chinas-stargate-in-inner) `Reads` *2026-11-08*
+- [acerca de la situación del intelectual latinoamericano](https://www.queverguenza.com/p/acerca-de-la-situacion-del-intelectual) `Reads` *2026-11-08*
+- [Against SURA — LessWrong](https://www.lesswrong.com/posts/xikGZ8fuhdG6DApAo/against-sura) `Reads` *2026-11-08*
+- [MoreWrong](https://morewrong.lol) `Weird` *2026-11-08*
 - [on performance - merve](https://mervenoyann.substack.com/p/on-performance?r=27yl9f&utm_campaign=post&utm_medium=web) `Reads` *2026-11-07*
 - [TristanTube](https://karpathy.ai/tristan-tube) `Museums - Indexers` *2026-11-07*
 - [Wow! signal - Wikipedia](https://en.wikipedia.org/wiki/Wow!_signal) `Wikis` *2026-11-06*
