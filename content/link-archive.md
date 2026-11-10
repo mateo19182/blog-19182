@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-11-09
+date: 2026-11-10
 tags: 
   - personal
 ---
@@ -9,6 +9,13 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [UnWall | Read Full Articles Without Paywalls](https://unwall.app/www.404media.co/the-confessions-of-an-ai-fraud-kingpin-onlyfake-owner-nazarenko) `Tech` *2026-11-09*
+- [Is Half of China’s AI Making Slop? - by Zilan Qian](https://www.chinatalk.media/p/is-half-of-chinas-ai-making-slop?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-11-09*
+- [UnWall | Read Full Articles Without Paywalls](https://unwall.app/www.newyorker.com/culture/the-weekend-essay/good-enough-for-a-tuesday-night) `Reads` *2026-11-09*
+- [FAQ on LoadBear's Instrument of Precommitment](https://docs.google.com/document/d/1nRSRWbAqtC48rPv5NG6kzggL3HXSJ1O93jFn3fgu0Rs/mobilebasic) `Reads` *2026-11-09*
+- [UnWall | Read Full Articles Without Paywalls](https://unwall.app/www.newyorker.com/humor/shouts-murmurs/life-as-a-dc-insider-as-imagined-by-a-dc-outsider) `Reads` *2026-11-09*
+- [Why Democrats Can’t Quit the Spam](https://nymag.com/intelligencer/article/democratic-party-spam-text-emails-mothership-dnc-midterms.html?view_token=eyJhbGciOiJIUzI1NiJ9.eyJpZCI6InFockpRTDR2Z08iLCJwIjoiL2ludGVsbGlnZW5jZXIvYXJ0aWNsZS9kZW1vY3JhdGljLXBhcnR5LXNwYW0tdGV4dC1lbWFpbHMtbW90aGVyc2hpcC1kbmMtbWlkdGVybXMuaHRtbCIsImV4cCI6MTc5NDkyMjc1NywiaWF0IjoxNzkzNzEzMTU3fQ.Zca8vf-EJ7n3WW_gDXfsb27fJJnI-mJEzMujDTKhp-c&utm_medium=gift_link_ios) `Reads` *2026-11-09*
+- [Is Andy Burnham a Cuckold? - HATE not Hope](https://hatenothope.substack.com/p/is-andy-burnham-a-cuckold) `Weird` *2026-11-09*
 - [Barriga Verde - Wikipedia, la enciclopedia libre](https://es.wikipedia.org/wiki/Barriga_Verde) `Wikis` *2026-11-08*
 - [Just a moment...](https://journals.sagepub.com/doi/10.1177/1043463107077384) `Academic Papers and Resources` *2026-11-08*
 - [Inside the Choreography of Damien Jalet - by Welcome.jpeg](https://www.welcomejpeg.com/p/inside-the-choreography-of-damien?utm_source=%2Finbox&utm_medium=reader2) `Arts` *2026-11-08*
