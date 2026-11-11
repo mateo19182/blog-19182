@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-11-10
+date: 2026-11-11
 tags: 
   - personal
 ---
@@ -9,6 +9,8 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [The Local AI Opportunity](https://thesis.truffle.net/introduction) `Tech` *2026-11-10*
+- [Incident Report: October 21st Security Attack | Railway Blog](https://blog.railway.com/p/incident-report-october-security-incident) `Tech` *2026-11-10*
 - [UnWall | Read Full Articles Without Paywalls](https://unwall.app/www.404media.co/the-confessions-of-an-ai-fraud-kingpin-onlyfake-owner-nazarenko) `Tech` *2026-11-09*
 - [Is Half of China’s AI Making Slop? - by Zilan Qian](https://www.chinatalk.media/p/is-half-of-chinas-ai-making-slop?utm_source=%2Finbox&utm_medium=reader2) `Reads` *2026-11-09*
 - [UnWall | Read Full Articles Without Paywalls](https://unwall.app/www.newyorker.com/culture/the-weekend-essay/good-enough-for-a-tuesday-night) `Reads` *2026-11-09*
