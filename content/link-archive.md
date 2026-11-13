@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-11-11
+date: 2026-11-13
 tags: 
   - personal
 ---
@@ -9,6 +9,10 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [How I accidentally became a millionaire Ʊ lyra's epic blog](https://lyra.horse/blog/2026/11/disinformation-machine) `Tech` *2026-11-12*
+- [Backdooring the next release of Codex through GitHub Action pipeline exploit chaining | Depi](https://depi.security/blog/20261111-backdooring-codex) `Tech` *2026-11-12*
+- [We need more goat sacrifices - by Adam Mastroianni](https://www.experimental-history.com/p/we-need-more-goat-sacrifices) `Reads` *2026-11-12*
+- [Piggybacking to the Frontier](https://www.chinatalk.media/p/the-us-is-selling-rl-environments) `Reads` *2026-11-12*
 - [The Local AI Opportunity](https://thesis.truffle.net/introduction) `Tech` *2026-11-10*
 - [Incident Report: October 21st Security Attack | Railway Blog](https://blog.railway.com/p/incident-report-october-security-incident) `Tech` *2026-11-10*
 - [UnWall | Read Full Articles Without Paywalls](https://unwall.app/www.404media.co/the-confessions-of-an-ai-fraud-kingpin-onlyfake-owner-nazarenko) `Tech` *2026-11-09*
