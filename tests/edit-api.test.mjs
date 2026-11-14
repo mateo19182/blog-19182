@@ -125,7 +125,7 @@ test("refuses to overwrite a file changed since it was opened", async () => {
 test("refuses generated files, odd paths, invalid posts and cross-site posts", async () => {
   const tok = await token()
   const commit = (files, origin) => call(req("commit", { tok, method: "POST", body: { message: "x", files }, origin }))
-  assert.equal((await commit([{ path: "content/writings/El reto de Feijoo.md", content: valid, baseSha: "s" }])).status, 400)
+  assert.equal((await commit([{ path: "content/link-archive.md", content: valid, baseSha: "s" }])).status, 400)
   assert.equal((await commit([{ path: "functions/api/subscribe.js", content: "x", baseSha: null }])).status, 400)
   assert.equal((await commit([{ path: "content/../build.mjs", content: "x", baseSha: null }])).status, 400)
   const bad = await commit([{ path: post, content: "---\ntitle: Hello\n---\nNo summary or tags", baseSha: null }])
