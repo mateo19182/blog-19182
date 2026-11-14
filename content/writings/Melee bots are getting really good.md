@@ -17,7 +17,7 @@ Competitive Melee players average 7 actions per second, in a super fast-paced fi
 
 ![Fox wavedashing, L-canceling and dash dancing on Final Destination, with the stick and buttons pressed on each frame](/data/melee/tech.webp)
 
-*Three of those techniques, redrawn from bench replays at half speed, with the inputs underneath.*
+*Redrawn from bench replays at half speed, with the inputs underneath. **Wavedash**: jump, then air-dodge diagonally into the floor, and the dodge's momentum turns into a slide. **L-cancel**: press L or R just before an aerial lands to halve the landing lag. **Dash dance**: flick the stick back in a dash's first frames and Fox turns around instantly, without stopping.*
 
 The community around it has built absurdly good open tooling: [Slippi](https://slippi.gg) for online play and replays, [libmelee](https://github.com/vladfi1/libmelee) to read the game and press buttons from Python, and even a decompilation of the game's own code.
 
