@@ -13,11 +13,9 @@ soundtrack:
 ---
 Super Smash Bros Melee came out in 2001, and it's one of the videogames with the highest skill ceiling (and floor) that i know of, proof of that is that there is a lot of people still playing it competitively. I'm not good at all, SSB4 was the only one where I put in the hours, but I know enough to understand some of the complexity, and it's extremely impressive. [^1]
 
-Competitive Melee players average 7 actions per second, in a super fast-paced fight with no input buffer and cool tech like Wavedashing, L-Canceling or Dash Dancing. I enjoy it much more than any other fighter as it does not rely as heavily on combos and is much more "free-form". 
+Competitive Melee players average 7 actions per second, in a super fast-paced fight with no input buffer and cool tech like Wavedashing, L-Canceling or Dash Dancing. I enjoy it much more than any other fighters as it does not rely as heavily on combos and is much more "free-form". 
 
 ![Fox wavedashing, L-canceling and dash dancing on Final Destination, with the stick and buttons pressed on each frame](/data/melee/tech.webp)
-
-*Redrawn from bench replays at half speed, with the inputs underneath. **Wavedash**: jump, then air-dodge diagonally into the floor, and the dodge's momentum turns into a slide. **L-cancel**: press L or R just before an aerial lands to halve the landing lag. **Dash dance**: flick the stick back in a dash's first frames and Fox turns around instantly, without stopping.*
 
 The community around it has built absurdly good open tooling: [Slippi](https://slippi.gg) for online play and replays, [libmelee](https://github.com/vladfi1/libmelee) to read the game and press buttons from Python, and even a decompilation of the game's own code.
 
