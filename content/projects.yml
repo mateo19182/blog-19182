@@ -4,6 +4,7 @@
   date: "2026-11"
   tags: [ml, llm, research]
   highlight: true
+  image: melee.webp
   desc: >-
     Ten years of Super Smash Bros. Melee bots, from the built-in CPUs to Faynt and Reyn, on one Elo scale, next to frontier LLMs playing live, untimed, coaching a bot and writing their own. Built in two days around the real game on my home server, with a site that streams live games with AI commentary, a simulator 100 times faster than the emulator, and a behaviour-cloned Yoshi of my own, m19182-yoshi, now on the [stomped.dev](https://stomped.dev) bot ladder. [Post](/writings/Melee-bots-are-getting-really-good), [slides](https://melee.m19182.dev/writeup/slides.html) from the 5-minute talk, [code](https://github.com/mateo19182/melee-llm).
   desc_es: >-
