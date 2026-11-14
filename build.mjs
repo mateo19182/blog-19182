@@ -8,71 +8,25 @@ import { existsSync } from "node:fs"
 import path from "node:path"
 import { fileURLToPath } from "node:url"
 import matter from "gray-matter"
-import { makeRenderer, initHighlighter, linkKey } from "./lib/markdown.mjs"
+import { makeRenderer, initHighlighter } from "./lib/markdown.mjs"
 import {
   renderPage, writingsIndexHtml, tagsIndexHtml,
-  tagPageHtml, tagSlug, SITE, esc, t, projectListHtml, projectListMd, checkProjectTags,
+  tagPageHtml, tagSlug, SITE, esc, t, projectListMd, checkProjectTags,
 } from "./lib/templates.mjs"
 import { makeOgImage } from "./lib/og.mjs"
 import { buildRss, buildSitemap } from "./lib/feeds.mjs"
 import { fileSlug } from "./lib/slug.mjs"
 import { newsletterExcerpt } from "./lib/newsletter.mjs"
 import { linkUpdates, updatesPage } from "./lib/updates.mjs"
-import { loadFavicons } from "./lib/favicons.mjs"
+import { faviconLookup, FAVICON_DIR } from "./lib/favicons.mjs"
 import { cleanLinks } from "./lib/links.mjs"
+import { countWords, normalizeDate } from "./lib/content.mjs"
+import { pageMeta, translationSlots, soundtrackInfo, buildSeries, makeResolver, renderBody, visibleProjects, unlinkDrafts, unlinkDraftsMd } from "./lib/page.mjs"
+import { buildEditor } from "./lib/editor-build.mjs"
 
 const ROOT = path.dirname(fileURLToPath(import.meta.url))
 const CONTENT = path.join(ROOT, "content")
 const OUT = path.join(ROOT, "public")
-const IMAGE_EXT = /\.(png|jpe?g|gif|svg|webp|pdf|avif)$/i
-
-// ---- date normalization ----------------------------------------------------
-function normalizeDate(d) {
-  if (!d) return ""
-  if (d instanceof Date) return d.toISOString().slice(0, 10)
-  let s = String(d).trim()
-  // "04 May, 2024" -> ISO
-  const m = s.match(/^(\d{1,2})\s+([A-Za-z]+),?\s+(\d{4})$/)
-  if (m) {
-    const months = { jan: 1, feb: 2, mar: 3, apr: 4, may: 5, jun: 6, jul: 7, aug: 8, sep: 9, oct: 10, nov: 11, dec: 12 }
-    const mo = months[m[2].slice(0, 3).toLowerCase()]
-    if (mo) return `${m[3]}-${String(mo).padStart(2, "0")}-${m[1].padStart(2, "0")}`
-  }
-  // "2024-04-1" / "2024-12-6" -> pad
-  const iso = s.match(/^(\d{4})-(\d{1,2})-(\d{1,2})$/)
-  if (iso) return `${iso[1]}-${iso[2].padStart(2, "0")}-${iso[3].padStart(2, "0")}`
-  return s
-}
-
-// ---- helpers ----------------------------------------------------------------
-function stripToText(md) {
-  return md
-    .replace(/^---[\s\S]*?---/, "")
-    .replace(/<[^>]+>/g, " ")
-    .replace(/!\[\[[^\]]*\]\]/g, "")
-    .replace(/\[\[([^\]|]*\|)?([^\]]*)\]\]/g, "$2")
-    .replace(/`{1,3}[^`]*`{1,3}/g, " ")
-    .replace(/[#>*_~\-]+/g, " ")
-    .replace(/\[([^\]]*)\]\([^)]*\)/g, "$1")
-    .replace(/\s+/g, " ")
-    .trim()
-}
-
-// Words a reader reads: prose, not code, maths, URLs or markup.
-function countWords(md) {
-  const text = md
-    .replace(/<!--[\s\S]*?-->/g, " ")
-    .replace(/^(```|~~~)[\s\S]*?^\1/gm, " ")
-    .replace(/\$\$[\s\S]*?\$\$/g, " ")
-    .replace(/\$(?=\S)[^$\n]*?\S\$/g, " ")
-    .replace(/`[^`\n]*`/g, " ")
-    .replace(/!\[\[[^\]]*\]\]|!\[[^\]]*\]\([^)]*\)/g, " ")
-    .replace(/\[\[(?:[^\]|]*\|)?([^\]]*)\]\]/g, "$1")
-    .replace(/\[\^[^\]]*\]:?/g, " ")
-    .replace(/\]\([^)]*\)/g, "]")
-    .replace(/<[^>]+>|https?:\/\/\S+/g, " ")
-  return (text.match(/[\p{L}\p{N}]+(?:['’.-][\p{L}\p{N}]+)*/gu) || []).length
-}
 
 // Links from one rendered page to other writings, as their URLs.
 function writingLinks(html) {
@@ -81,23 +35,6 @@ function writingLinks(html) {
     try { urls.add(decodeURIComponent(href).replace(/\/+$/, "")) } catch {}
   }
   return urls
-}
-
-// Posts sharing a `series:` name, ordered by `series_order`, then date.
-function buildSeries(posts) {
-  const map = new Map()
-  for (const p of posts) {
-    if (!p.series) continue
-    if (!map.has(p.series)) map.set(p.series, { name: p.series, nameEs: "", posts: [] })
-    const s = map.get(p.series)
-    s.nameEs ||= p.seriesEs
-    s.posts.push(p)
-  }
-  const order = (p) => p.seriesOrder ?? Infinity
-  for (const s of map.values()) {
-    s.posts.sort((a, b) => order(a) - order(b) || (a.date || "").localeCompare(b.date || ""))
-    s.posts.forEach((p, i) => { p.seriesInfo = { ...s, index: i } })
-  }
 }
 
 function ogSubtitle(page) {
@@ -111,17 +48,6 @@ function ogSubtitle(page) {
     "link-archive": "a living archive of links",
     "things-i-like": "books, music, films, and more",
   }[page.name] || "blog.m19182.dev"
-}
-
-function extractToc(html) {
-  const toc = []
-  const re = /<h([23])[^>]*\bid="([^"]+)"[^>]*>([\s\S]*?)<\/h\1>/g
-  let m
-  while ((m = re.exec(html))) {
-    const text = m[3].replace(/<[^>]+>/g, "").trim()
-    if (text) toc.push({ level: Number(m[1]), id: m[2], text })
-  }
-  return toc
 }
 
 // Plain-text opening of a rendered post for link previews: the lede paragraph
@@ -150,19 +76,16 @@ async function loadAll() {
     ? await readdir(path.join(CONTENT, "data"))
     : []
 
-  const pages = []
-  // top-level pages
-  for (const f of await readdir(CONTENT)) {
-    if (!f.endsWith(".md") || /\.(es|en)\.md$/.test(f)) continue
-    pages.push(await loadFile(path.join(CONTENT, f), f.replace(/\.md$/, ""), null))
+  // `draft: true` pages are left out of the site entirely; only the editor lists them.
+  const pages = [], drafts = []
+  for (const [dir, section] of [[CONTENT, null], [path.join(CONTENT, "writings"), "writings"]]) {
+    for (const f of await readdir(dir)) {
+      if (!f.endsWith(".md") || /\.(es|en)\.md$/.test(f)) continue
+      const page = await loadFile(path.join(dir, f), f.replace(/\.md$/, ""), section)
+      ;(page.draft ? drafts : pages).push(page)
+    }
   }
-  // writings
-  const wdir = path.join(CONTENT, "writings")
-  for (const f of await readdir(wdir)) {
-    if (!f.endsWith(".md") || /\.(es|en)\.md$/.test(f)) continue
-    pages.push(await loadFile(path.join(wdir, f), f.replace(/\.md$/, ""), "writings"))
-  }
-  return { pages, dataFiles }
+  return { pages, drafts, dataFiles }
 }
 
 // Front matter and body of a content file, with outbound links cleaned.
@@ -172,27 +95,9 @@ async function readContent(file) {
 
 async function loadFile(file, name, section) {
   const { data, content } = await readContent(file)
-  const isHome = name === "index" && !section
-  const slug = isHome ? "" : fileSlug(name)
-  const url = isHome ? "/" : section ? `/${section}/${slug}` : `/${slug}`
-  const text = stripToText(content)
   return {
-    name, section, slug, url, isHome,
-    title: data.title || name,
-    lang: data.lang === "es" ? "es" : "en",
-    unlisted: data.unlisted === true,
-    date: normalizeDate(data.date),
-    updated: normalizeDate(data.updated),
-    series: data.series ? String(data.series) : "",
-    seriesEs: data.series_es ? String(data.series_es) : "",
-    seriesOrder: Number.isFinite(data.series_order) ? data.series_order : null,
-    summary: data.summary || "",
-    description: data.description || data.summary || text.slice(0, 160).trim(),
-    tags: Array.isArray(data.tags) ? data.tags.filter(Boolean) : [],
-    aliases: Array.isArray(data.aliases) ? data.aliases : data.aliases ? [data.aliases] : [],
+    ...pageMeta(name, section, data, content),
     soundtrack: await loadSoundtrack(data.soundtrack, file),
-    rawContent: content,
-    isArticle: section === "writings",
     ...(await loadTranslations(file, name, data, content)),
   }
 }
@@ -206,90 +111,37 @@ async function loadSoundtrack(s, file) {
   soundtrackPeaks ??= JSON.parse(await readFile(path.join(dir, "peaks.json"), "utf8"))
   const wave = soundtrackPeaks[s.file]
   if (!wave) throw new Error(`${file}: no peaks for ${s.file}; run npm run soundtrack:peaks`)
-  return {
-    artist: String(s.artist), title: String(s.title),
-    src: `/data/soundtrack/${encodeURIComponent(s.file)}`,
-    ...wave,
-  }
+  return soundtrackInfo(s, wave)
 }
 
-// The default slot is English and `es` is Spanish, whichever was written first.
-// An English-original page may have a sibling `foo.es.md`; a Spanish-original one
-// (`lang: es`) may have `foo.en.md`. `translated` names the slot that is a translation.
 async function loadTranslations(file, name, data, content) {
-  const title = data.title || name
-  if (data.lang === "es") {
-    const en = await loadTranslation(file.replace(/\.md$/, ".en.md"), title)
-    if (!en) return { es: null }
-    return {
-      en,
-      es: { title, summary: data.summary || "", rawContent: content },
-      translated: "en",
-    }
-  }
-  const es = await loadTranslation(file.replace(/\.md$/, ".es.md"), title)
-  // The link list is regenerated weekly, so the Spanish page only translates the intro.
-  if (es && name === "link-archive") es.rawContent += "\n" + content.slice(content.indexOf("\n- ["))
-  return { es, translated: es ? "es" : null }
-}
-
-// Optional Spanish version of a page, written by hand as a sibling `foo.es.md`.
-async function loadTranslation(file, fallbackTitle) {
-  if (!existsSync(file)) return null
-  const { data, content } = await readContent(file)
-  return {
-    title: data.title || fallbackTitle,
-    summary: data.summary || "",
-    rawContent: content,
-  }
+  const sibling = file.replace(/\.md$/, data.lang === "es" ? ".en.md" : ".es.md")
+  return translationSlots(name, data, content, existsSync(sibling) ? await readContent(sibling) : null)
 }
 
 async function loadUpdates() {
   const dir = path.join(CONTENT, "updates")
   if (!existsSync(dir)) return []
   const files = (await readdir(dir)).filter((f) => f.endsWith(".md") && !f.endsWith(".en.md"))
-  return Promise.all(files.map(async (f) => {
+  const updates = await Promise.all(files.map(async (f) => {
     const file = path.join(dir, f)
     const { data, content } = await readContent(file)
+    if (data.draft === true) return null
     const title = data.title || f.replace(/\.md$/, "")
-    const en = await loadTranslation(file.replace(/\.md$/, ".en.md"), title)
-    return { title, date: normalizeDate(data.date), content, ...(en && { en: { title: en.title, content: en.rawContent } }) }
+    const enFile = file.replace(/\.md$/, ".en.md")
+    const en = existsSync(enFile) && (await readContent(enFile))
+    return { title, date: normalizeDate(data.date), content, ...(en && { en: { title: en.data.title || title, content: en.content } }) }
   }))
+  return updates.filter(Boolean)
 }
 
 // Project cards live in content/projects.yml; `hidden: true` entries are kept but not shown.
-// Newest first; undated entries go last, in file order.
-async function loadProjects() {
+async function loadProjects(drafts) {
   const file = path.join(CONTENT, "projects.yml")
   if (!existsSync(file)) return []
-  const list = (matter.engines.yaml.parse(await readFile(file, "utf8")) || []).filter((p) => !p.hidden)
-  checkProjectTags(list)
-  return list.sort((a, b) => String(b.date || "").localeCompare(String(a.date || "")))
-}
-
-// ---- resolver for wikilinks -------------------------------------------------
-function makeResolver(pages, dataFiles) {
-  const dataSet = new Set(dataFiles)
-  const map = new Map()
-  const put = (key, href) => map.set(linkKey(key), { href, exists: true })
-  for (const p of pages) {
-    put(p.name, p.url)
-    if (p.title) put(p.title, p.url)
-    if (p.es) put(p.es.title, p.url)
-  }
-  // synthetic pages
-  put("writings", "/writings")
-  put("tags", "/tags")
-  put("home", "/")
-
-  return (target) => {
-    if (IMAGE_EXT.test(target)) {
-      const base = path.basename(target)
-      if (dataSet.has(base)) return { href: `/data/${base}`, exists: true }
-      return { href: "", exists: false }
-    }
-    return map.get(linkKey(target)) || null
-  }
+  const list = matter.engines.yaml.parse(await readFile(file, "utf8")) || []
+  checkProjectTags(list.filter((p) => !p.hidden))
+  return visibleProjects(list, drafts.map((d) => d.url))
 }
 
 // ---- write helpers ----------------------------------------------------------
@@ -325,16 +177,17 @@ async function build() {
   await mkdir(OUT, { recursive: true })
   await initHighlighter()
 
-  const { pages, dataFiles } = await loadAll()
+  const { pages, drafts, dataFiles } = await loadAll()
   const updates = await loadUpdates()
   if (updates.length) {
     pages.push(updatesPage(updates))
     linkUpdates(pages.find((p) => p.name === "now" && !p.section))
   }
   const resolve = makeResolver(pages, dataFiles)
-  const favicons = loadFavicons(ROOT)
+  const faviconFile = path.join(ROOT, FAVICON_DIR, "manifest.json")
+  const favicons = faviconLookup(existsSync(faviconFile) ? JSON.parse(await readFile(faviconFile, "utf8")) : {})
   const md = makeRenderer(resolve, { favicon: favicons.lookup })
-  const projects = await loadProjects()
+  const projects = await loadProjects(drafts)
 
   const posts = pages
     .filter((p) => p.isArticle && !p.unlisted)
@@ -363,23 +216,7 @@ async function build() {
   // render each content page, then link writings to the ones that cite them
   const rendered = []
   for (const p of pages) {
-    const imageCaptions = p.name === "El reto de Feijoo"
-    // every link-archive entry is external, so it stays free of markers
-    const noFavicons = p.name === "link-archive"
-    let bodyHtml = md.render(p.en ? p.en.rawContent : p.rawContent, { imageCaptions, lede: p.isArticle, noFavicons })
-    const toc = p.isArticle ? extractToc(bodyHtml) : []
-    let es = null
-    if (p.es) {
-      const html = md.render(p.es.rawContent, { docId: "es", imageCaptions, lede: p.isArticle, noFavicons })
-      es = { ...p.es, html, toc: p.isArticle ? extractToc(html) : [] }
-    }
-
-    if (p.name === "projects") {
-      const inline = (s) => md.renderInline(s)
-      bodyHtml += projectListHtml(projects, inline)
-      if (es) es.html += projectListHtml(projects, inline, "es")
-    }
-
+    const { html: bodyHtml, toc, es } = renderBody(md, p, projects)
     const ogPath = p.name === "El reto de Feijoo" ? "/static/og/feijoo-documentos-sin-texto.png" : p.isHome ? "/static/og/index.png" : `/static/og${p.url}.png`
     const page = {
       ...p,
@@ -410,6 +247,13 @@ async function build() {
     }
   }
 
+  // Drafts aren't built: links to them stay plain text until they are published.
+  const draftUrls = new Set(drafts.map((d) => d.url))
+  for (const [, page] of rendered) {
+    page.html = unlinkDrafts(page.html, draftUrls)
+    if (page.es) page.es.html = unlinkDrafts(page.es.html, draftUrls)
+  }
+
   for (const [p, page] of rendered) {
     page.backlinks = [...(backlinks.get(page.url) || [])]
       .sort((a, b) => (b.date || "").localeCompare(a.date || ""))
@@ -419,7 +263,7 @@ async function build() {
       const slot = (s, html) => ({ title: s.title, summary: s.summary || "", excerpt: previewExcerpt(html) })
       previews[p.url] = { date: p.date, en: slot(p.en || p, page.html), ...(page.es && { es: slot(page.es, page.es.html) }) }
     }
-    await emitMd(p.url, p.title, p.name === "projects" ? p.rawContent + "\n" + projectListMd(projects) : p.rawContent)
+    await emitMd(p.url, p.title, unlinkDraftsMd(p.name === "projects" ? p.rawContent + "\n" + projectListMd(projects) : p.rawContent, draftUrls))
     if (!p.unlisted) sitemapUrls.push({ url: p.url, date: p.updated > p.date ? p.updated : p.date })
     ogJobs.push({
       path: page.ogImage,
@@ -531,7 +375,8 @@ async function build() {
   await writeFile(path.join(OUT, "sitemap.xml"), buildSitemap(sitemapUrls))
   // Cloudflare Pages would serve .webm as video/webm.
   await writeFile(path.join(OUT, "_headers"), "/data/soundtrack/*.webm\n  Content-Type: audio/webm\n")
-  await writeFile(path.join(OUT, "robots.txt"), `User-agent: *\nAllow: /\nSitemap: ${SITE.baseUrl}/sitemap.xml\n`)
+  await writeFile(path.join(OUT, "robots.txt"), `User-agent: *\nAllow: /\nDisallow: /edit\nSitemap: ${SITE.baseUrl}/sitemap.xml\n`)
+  await buildEditor({ root: ROOT, out: OUT, pages, drafts, posts, dataFiles })
   await buildSearchIndex(searchDocs)
 
   // tools/fetch-favicons.mjs reads the hosts in use from here

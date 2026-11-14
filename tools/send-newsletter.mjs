@@ -20,7 +20,7 @@ function previousUrls(ref) {
   for (const file of files) {
     if (!file.endsWith('.md') || /\.(en|es)\.md$/.test(file)) continue
     const { data } = matter(git('show', `${ref}:${file}`))
-    if (data.unlisted === true) continue
+    if (data.unlisted === true || data.draft === true) continue
     const name = file.slice('content/writings/'.length, -3)
     urls.add(`/writings/${fileSlug(name)}`)
     for (const alias of [data.aliases || []].flat()) urls.add('/' + String(alias).replace(/^\/+|\/+$/g, ''))

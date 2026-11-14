@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Editor · blog-19182</title>
+<link rel="icon" href="/static/icon.png" type="image/png">
+<link rel="stylesheet" href="/edit/editor.css">
+<script type="module" src="/edit/editor.js"></script>
+</head>
+<body class="empty">
+<header class="bar">
+  <button id="toggle-files" class="icon" title="Archivos" aria-label="Archivos">☰</button>
+  <span id="path"></span>
+  <span class="spacer"></span>
+  <button id="new-post" type="button">Nuevo</button>
+  <button id="translate" type="button" hidden>Crear traducción</button>
+  <button id="swap" type="button" hidden></button>
+  <a id="view-full" class="button" target="_blank" title="Página completa, solo para ti (Access)">Página completa</a>
+  <a id="view-live" class="button" target="_blank" rel="noopener" hidden>Ver publicada</a>
+  <button id="toggle-preview" type="button" class="mobile-only">Vista previa</button>
+  <button id="save" type="button" class="primary" title="Revisar y guardar (Ctrl/Cmd-S)" disabled>Guardar</button>
+</header>
+<div class="layout">
+  <nav id="sidebar">
+    <input id="filter" type="search" placeholder="Buscar archivo…" aria-label="Buscar archivo">
+    <div id="files"></div>
+    <p class="who">Sesión: <span id="who"></span></p>
+  </nav>
+  <section id="editor-pane">
+    <p id="banner" hidden></p>
+    <form id="form" hidden onsubmit="return false"></form>
+    <ul id="problems" class="problems" hidden></ul>
+    <div id="toolbar" role="toolbar" aria-label="Formato">
+      <button data-cmd="bold" title="Negrita (Ctrl-B)"><b>B</b></button>
+      <button data-cmd="italic" title="Cursiva (Ctrl-I)"><i>I</i></button>
+      <button data-cmd="link" title="Enlace (Ctrl-K)">🔗</button>
+      <button data-cmd="h2" title="Título 2">H2</button>
+      <button data-cmd="h3" title="Título 3">H3</button>
+      <button data-cmd="quote" title="Cita">❝</button>
+      <button data-cmd="list" title="Lista">•</button>
+      <button data-cmd="code" title="Código">&lt;/&gt;</button>
+      <button data-cmd="footnote" title="Nota al pie (Ctrl-Shift-F)">¹</button>
+      <button data-cmd="image" title="Imagen (o pega / arrastra)">🖼</button>
+      <input id="image-input" type="file" accept="image/*" multiple hidden>
+      <span id="status"></span>
+    </div>
+    <div id="cm"></div>
+    <div id="empty-msg">
+      <p>Elige un archivo a la izquierda o crea uno nuevo.</p>
+      <p class="muted">Ctrl/Cmd-S revisa y guarda · Ctrl-B/I/K negrita, cursiva, enlace · Ctrl-Shift-F nota al pie · Ctrl-F buscar · Alt-P vista previa (móvil) · pega o arrastra imágenes.</p>
+    </div>
+  </section>
+  <section id="preview-pane">
+    <div class="preview-bar"><span>Vista previa</span><button id="preview-lang" type="button" title="Cambiar idioma de la vista previa">EN/ES</button></div>
+    <iframe id="preview" title="Vista previa"></iframe>
+  </section>
+</div>
+
+<dialog id="new-dialog">
+  <form method="dialog">
+    <h2>Nuevo</h2>
+    <label><input type="radio" name="kind" value="post" checked> Escrito</label>
+    <label><input type="radio" name="kind" value="update"> Actualización (mensual)</label>
+    <div class="post-only">
+      <label>Título <input name="title" autocomplete="off"></label>
+      <label>Idioma original <select name="lang"><option value="">inglés</option><option value="es">español</option></select></label>
+    </div>
+    <div class="update-only"><label>Mes <input name="month" type="month"></label></div>
+    <p id="new-hint" class="muted"></p>
+    <p class="muted">Se crea como borrador (<code>draft: true</code>): no sale en el sitio hasta que lo desmarques.</p>
+    <menu><button value="cancel">Cancelar</button><button value="ok" class="primary">Crear</button></menu>
+  </form>
+</dialog>
+
+<dialog id="review">
+  <form method="dialog">
+    <h2>Revisar y guardar</h2>
+    <p id="review-target"></p>
+    <div id="review-files"></div>
+    <label class="msg">Mensaje del commit <input name="message" autocomplete="off"></label>
+    <p id="review-error" class="error"></p>
+    <menu><button value="cancel">Cancelar</button><button value="ok" class="primary">Guardar</button></menu>
+  </form>
+</dialog>
+
+<a id="view-edit" class="button">Editar</a>
+<div id="toast" hidden role="status" aria-live="polite"></div>
+</body>
+</html>
