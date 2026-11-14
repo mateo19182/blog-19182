@@ -68,7 +68,10 @@ writings (with their translations), pages, life updates and `projects.yml`;
 edits Markdown in CodeMirror with a form for the front matter; and previews
 with the site's own markdown pipeline and templates (`lib/page.mjs`, shared with
 the build), minus syntax highlighting and "Linked from". It checks the rules in
-`AGENTS.md` (`lib/content.mjs`) before saving. Edits autosave in the browser
+`AGENTS.md` (`lib/content.mjs`) before saving. A spell checker (`editor/spell.js`, Hunspell
+British English and Spanish via nspell; Spanish text also accepts English words)
+underlines typos outside code, URLs and maths; right-click a word for
+suggestions or to add it to the browser's personal dictionary. Edits autosave in the browser
 (IndexedDB) until saved. Saving shows a diff and makes one commit with every
 changed file and pasted image (WebP, ≤2000 px; project thumbnails cropped to
 16:10).

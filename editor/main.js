@@ -13,6 +13,7 @@ import { diffLines } from "diff"
 import { store } from "./store.js"
 import { processImage, dataUrl } from "./images.js"
 import { makePreview } from "./preview.js"
+import { spellChecker, spellLang, spellTheme } from "./spell.js"
 import {
   fileKind, originalPath, translationPath, fileNameFor, splitFrontMatter, joinFrontMatter,
   validateFile, countWords, READ_ONLY,
@@ -327,7 +328,7 @@ function makeState(doc) {
       EditorView.lineWrapping,
       langConf.of(doc.kind === "projects" ? yamlLang() : markdown()),
       roConf.of(EditorState.readOnly.of(!!doc.readOnly)),
-      attrConf.of(EditorView.contentAttributes.of({ spellcheck: "true", lang: docLang(doc), autocorrect: "on", autocapitalize: "sentences" })),
+      attrConf.of(langExtensions(doc)),
       EditorView.updateListener.of((u) => { if (u.docChanged) onBodyChange(u.state.doc.toString()) }),
       EditorView.domEventHandlers({
         paste: (e, v) => onPaste(e, v),
@@ -336,6 +337,22 @@ function makeState(doc) {
       }),
     ],
   })
+}
+
+// The built-in checker (editor/spell.js) replaces the browser's own while it's on.
+const spellOn = () => { try { return localStorage.getItem("spell") !== "off" } catch { return true } }
+
+function langExtensions(doc) {
+  const own = spellOn() && doc.kind !== "projects"
+  return [
+    EditorView.contentAttributes.of({ spellcheck: own ? "false" : "true", lang: docLang(doc), autocorrect: "on", autocapitalize: "sentences" }),
+    own ? [spellLang.of(docLang(doc)), spellChecker, spellTheme] : [],
+  ]
+}
+
+function applyLang() {
+  if (view && S.current) view.dispatch({ effects: attrConf.reconfigure(langExtensions(S.current)) })
+  $("#spell").setAttribute("aria-pressed", String(spellOn()))
 }
 
 function docLang(doc) {
@@ -384,6 +401,7 @@ async function open(path) {
   doc.state ??= makeState(doc)
   if (!view) view = new EditorView({ parent: $("#cm"), state: doc.state })
   else view.setState(doc.state)
+  applyLang()
   S.previewLang = docLang(doc)
   document.body.classList.remove("empty")
   $("#path").textContent = path.replace(/^content\//, "")
@@ -428,6 +446,7 @@ $("#banner").addEventListener("click", async (e) => {
     setText(doc, doc.remote ?? "")
     doc.state = makeState(doc)
     view.setState(doc.state)
+    applyLang()
     await persist(doc)
     renderForm()
   }
@@ -528,7 +547,7 @@ function onForm(e) {
     else if (f.type === "number") v = el.value === "" ? undefined : Number(el.value)
     else v = el.value
     doc.data[key] = v
-    if (key === "lang") $("#cm .cm-content")?.setAttribute("lang", docLang(doc))
+    if (key === "lang") applyLang()
   } else return
   doc.fmDirty = true
   doc.text = compose(doc)
@@ -985,6 +1004,10 @@ $("#toolbar").addEventListener("click", (e) => {
     bold: wrapSel("**"), italic: wrapSel("*"), link, footnote, code: wrapSel("`"),
     h2: linePrefix("## "), h3: linePrefix("### "), quote: linePrefix("> "), list: linePrefix("- "),
     image: () => $("#image-input").click(),
+    spell: () => {
+      localStorage.setItem("spell", spellOn() ? "off" : "on")
+      applyLang()
+    },
   }
   cmds[cmd]?.(view)
 })
