@@ -4,6 +4,10 @@ summary: "Diez años de bots de Super Smash Bros. Melee, y unos cuantos LLM, en 
 ---
 Melee salió en 2001 y la gente lo sigue jugando de forma competitiva. Va a 60 fotogramas por segundo y no espera a nadie: un segundo pensando son 60 fotogramas en los que te pueden golpear, agarrar y tirar del escenario. Eso lo hace un objetivo difícil para cualquier IA, y su comunidad ha montado herramientas abiertas absurdamente buenas: [Slippi](https://slippi.gg) para jugar online y guardar repeticiones, [libmelee](https://github.com/vladfi1/libmelee) para leer el juego y pulsar botones desde Python, e incluso una descompilación del propio código del juego.
 
+![Fox haciendo wavedash, L-cancel y dash dance en Final Destination, con el stick y los botones pulsados en cada fotograma](/data/melee/tech-es.webp)
+
+*Tres técnicas de Melee, redibujadas a media velocidad desde repeticiones del benchmark, con los controles debajo.*
+
 Empecé con una pregunta sobre LLM. La mayoría de benchmarks de juegos para ellos son por turnos (ajedrez, Pokémon, Slay the Spire), donde el juego espera educadamente mientras el modelo piensa. Yo quería uno que no esperase. Los LLM acabaron siendo la parte pequeña de la historia... así que este post empieza por los bots.
 
 Todo esto se hizo en dos días y lo presenté en una charla de 5 minutos en [1hack](https://1hack.eu/) el 14 de noviembre ([diapositivas](https://melee.m19182.dev/writeup/slides.html)). La mayor parte del código la escribieron agentes de programación trabajando en paralelo en mi servidor de casa. La web del proyecto, con las clasificaciones, repeticiones, partidas en directo y un [artículo](https://melee.m19182.dev/writeup/) más largo, está en [melee.m19182.dev](https://melee.m19182.dev), y el código está en [GitHub](https://github.com/mateo19182/melee-llm).
