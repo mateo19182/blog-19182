@@ -45,10 +45,6 @@ npm run serve        # build + serve at http://localhost:8080
   stays disabled until a translation is added.
 - Set `unlisted: true` to serve a writing at its URL without adding it to the
   writings index, tags, RSS, or sitemap. The HTML includes a `noindex` meta tag.
-- The Feijoo preview is copied from `../inv/feijoo/blog/post/draft.md` with
-  `npm run sync:feijoo`. The command copies referenced images, PDFs and text files to `/data/`,
-  keeps repository-only Markdown links as plain labels, and leaves the source untouched. Run `npm run build`
-  after syncing, or `npm run preview:feijoo` to sync and serve locally.
 - Writings frontmatter: `title`, `date`, `tags` (topical, 1–3 per post), and a
   one-line `summary` shown under the title in the writings list (also the fallback
   meta/RSS description). A translation file may carry its own `summary`.
@@ -80,8 +76,8 @@ changed file and pasted image (WebP, ≤2000 px; project thumbnails cropped to
 Saves go to `main`. New posts start as drafts: `draft: true` keeps them off the
 site entirely (links to them from published pages stay plain text, and a project
 card linking to one is hidden), while `/edit` shows them to you, full page with
-"Página completa". Unticking "Borrador" publishes. The synced Feijoo post and
-the link archive are read-only.
+"Página completa". Unticking "Borrador" publishes. The link archive, regenerated
+weekly, is read-only.
 
 - `editor/` is the client, bundled by esbuild into `public/edit/` on every build.
 - `functions/api/edit/[[path]].js` → `lib/edit-api.mjs` reads and commits
