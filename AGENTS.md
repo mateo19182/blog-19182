@@ -48,6 +48,8 @@ the original. Update the translation when you change the original.
 
 Every writing has a one-line `summary:` shown in the writings list, and 1–3
 topical `tags:` (no catch-all `writing` tag). Add both when you add a post.
+`draft: true` keeps a writing, page or update off the site entirely (the web
+editor creates new posts that way); `unlisted: true` publishes at its URL only.
 When you substantially revise a post, set `updated: YYYY-MM-DD`; the meta line
 shows it (only if later than `date`) and the sitemap uses it as `lastmod`. It is
 never filled in from git.
@@ -83,3 +85,11 @@ full available width. External links show their site's favicon from the cache in
 fall back to the `↗` marker. The build strips tracking and referral parameters
 (`utm_*`, Substack `r=`, `?ref=`, share `si=`…) from links in content files via
 `lib/links.mjs`, so paste links as they come; gift and unlock parameters stay.
+
+## Web editor
+
+Mateo can also edit content in the browser at `/edit` (see README), which
+commits to `main`. Pull before editing the same files
+locally. `lib/content.mjs` holds the editor's copy of the rules above:
+`READ_ONLY`, writable paths and `validateFile`. Update it when a convention
+changes, and keep `npm test` passing (it checks every file in `content/`).

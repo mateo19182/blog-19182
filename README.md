@@ -52,6 +52,11 @@ npm run serve        # build + serve at http://localhost:8080
 - Writings frontmatter: `title`, `date`, `tags` (topical, 1–3 per post), and a
   one-line `summary` shown under the title in the writings list (also the fallback
   meta/RSS description). A translation file may carry its own `summary`.
+- Set `draft: true` to leave a writing, page or life update out of the site
+  entirely (no page, listing, feed, sitemap, search or newsletter; links to it
+  stay plain text). The repository is public, so drafts are still readable on
+  GitHub, and their images in `content/data/` are deployed. Removing the flag
+  publishes it.
 - Rename a writing's file and list the old URL under `aliases:` (e.g.
   `writings/Old-Slug`); the build emits a redirect page there.
 - Projects live in `content/projects.yml` (`title`, `title_es`, `url`, `date`,
@@ -59,6 +64,42 @@ npm run serve        # build + serve at http://localhost:8080
   `projects.md` / `projects.es.md` only hold the page frontmatter.
 - Footer sand-garden easter egg (fill the canvas to win).
 - Self-hosted Umami analytics.
+
+## Web editor
+
+`/edit` is a browser editor for `content/`, behind Cloudflare Access. It lists
+writings (with their translations), pages, life updates and `projects.yml`;
+edits Markdown in CodeMirror with a form for the front matter; and previews
+with the site's own markdown pipeline and templates (`lib/page.mjs`, shared with
+the build), minus syntax highlighting and "Linked from". It checks the rules in
+`AGENTS.md` (`lib/content.mjs`) before saving. Edits autosave in the browser
+(IndexedDB) until saved. Saving shows a diff and makes one commit with every
+changed file and pasted image (WebP, ≤2000 px; project thumbnails cropped to
+16:10).
+
+Saves go to `main`. New posts start as drafts: `draft: true` keeps them off the
+site entirely (links to them from published pages stay plain text, and a project
+card linking to one is hidden), while `/edit` shows them to you, full page with
+"Página completa". Unticking "Borrador" publishes. The synced Feijoo post and
+the link archive are read-only.
+
+- `editor/` is the client, bundled by esbuild into `public/edit/` on every build.
+- `functions/api/edit/[[path]].js` → `lib/edit-api.mjs` reads and commits
+  through the GitHub API. It verifies the `Cf-Access-Jwt-Assertion` JWT
+  (signature, audience, issuer, expiry, email) itself, and refuses to overwrite
+  a file changed on `main` since it was opened.
+- Pages production variables: `GITHUB_TOKEN` (secret; fine-grained token, this
+  repository only, Contents read/write), `ACCESS_TEAM_DOMAIN`
+  (`m19182.cloudflareaccess.com`), `ACCESS_AUD` (the Access application's
+  audience tag) and `EDITOR_EMAIL`.
+- The Access application "blog editor" protects `/edit` and `/api/edit` on
+  the custom domain and on `blog-19182.pages.dev`. Branch preview deployments
+  are turned off.
+
+Locally: `npm run build`, then `npx wrangler pages dev public` with
+`GITHUB_TOKEN`, `EDIT_DEV_EMAIL=you@localhost` and `EDIT_BRANCH=<throwaway
+branch>` in `.dev.vars` (the Access check is skipped only on localhost when
+`EDIT_DEV_EMAIL` is set). Saves are real commits. `npm test` runs all tests.
 
 ## Deploy
 
