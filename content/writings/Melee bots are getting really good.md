@@ -11,7 +11,12 @@ soundtrack:
   title: "Final Destination"
   file: hirokazu-ando-shogo-sakai-final-destination.webm
 ---
-Melee came out in 2001 and people still play it competitively. It runs at 60 frames per second and waits for nobody: one second of thinking is 60 frames in which you can get hit, grabbed and thrown off the stage. That makes it a hard target for any AI, and the community around it has built absurdly good open tooling: [Slippi](https://slippi.gg) for online play and replays, [libmelee](https://github.com/vladfi1/libmelee) to read the game and press buttons from Python, and even a decompilation of the game's own code.
+[Super Smash Bros Melee](https://en.wikipedia.org/wiki/Super_Smash_Bros._Melee) came out in 2001, and it's one of the videogames with the highest skill ceiling (and floor xd), proof of that is that there is a lot of playing still playing it competitively. I'm not good at all, SSB4 was the only one where I put in the hours, but I know enough to understand some of the complexity, and it's extremely impressive. [^1]
+
+It runs at 50-60 fps and competitive Melee players average 7 actions per second 
+
+
+The community around it has built absurdly good open tooling: [Slippi](https://slippi.gg) for online play and replays, [libmelee](https://github.com/vladfi1/libmelee) to read the game and press buttons from Python, and even a decompilation of the game's own code.
 
 I started with a question about LLMs. Most game benchmarks for them are turn-based (chess, Pokémon, Slay the Spire), where the game politely waits while the model thinks. I wanted one that doesn't. The LLMs ended up being the smaller part of the story... so this post starts with the bots.
 
@@ -136,3 +141,5 @@ I'm giving it one or two more weeks, with LLMs no longer at the centre. A bigger
 ---
 
 Built on [Slippi](https://slippi.gg), [libmelee](https://github.com/vladfi1/libmelee), [Slippi Lab](https://github.com/frankborden/slippilab) and [melee-sim-light](https://github.com/kyhavlov/melee-sim-light), with the bots of vladfi1 (Phillip), Eric Gu (HAL), erickfm (MIMIC) and Frisson Labs (Faynt, Reyn), TypeSafe's Jev and ElevenLabs voices.
+
+[^1]: highly recommend [AsumSaus](https://www.youtube.com/@AsumSaus/videos) if interested in learning more!
