@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-11-13
+date: 2026-11-14
 tags: 
   - personal
 ---
@@ -9,6 +9,9 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Attention Required! | Cloudflare](https://www.newthingsunderthesun.com/pub/3wpc3plu/release/1) `Reads` *2026-11-14*
+- [Top Chinese Frontier AI Models Carry the Fingerprint of Export-Controlled NVIDIA Blackwell GPUs · Unemployment Labs](https://unemploymentlabs.com/checkpoint-forensics) `Tech` *2026-11-13*
+- [The Base Contagious Clouds - Will Savage](https://wavage.substack.com/p/the-base-contagious-clouds) `Reads` *2026-11-13*
 - [How I accidentally became a millionaire Ʊ lyra's epic blog](https://lyra.horse/blog/2026/11/disinformation-machine) `Tech` *2026-11-12*
 - [Backdooring the next release of Codex through GitHub Action pipeline exploit chaining | Depi](https://depi.security/blog/20261111-backdooring-codex) `Tech` *2026-11-12*
 - [We need more goat sacrifices - by Adam Mastroianni](https://www.experimental-history.com/p/we-need-more-goat-sacrifices) `Reads` *2026-11-12*
