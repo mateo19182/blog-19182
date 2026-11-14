@@ -125,6 +125,10 @@ Opus came out clearly on top this time, with a mean of 1813 and a best of 1929. 
 
 I'm giving it one or two more weeks, with LLMs no longer at the centre. A bigger run of m19182-yoshi (`bc-20m-v3`: 44,805 Yoshi games, 444M frames, with aMSa labelled "pro") is training right now, and after that comes self-play in the simulator, which is where the published bots got strong. The goal is to see how far it can climb on stomped.dev, and to learn how these bots are actually trained along the way. Also on the list: putting m19182-yoshi and myself on the bench, and getting people to play the bots.
 
+![Me presenting the project at 1hack, in front of the slide on ten years of Melee bots](/data/melee/talk-1hack.webp)
+
+*Presenting it at [1hack](https://1hack.eu/) on 14 November.*
+
 ---
 
 Built on [Slippi](https://slippi.gg), [libmelee](https://github.com/vladfi1/libmelee), [Slippi Lab](https://github.com/frankborden/slippilab) and [melee-sim-light](https://github.com/kyhavlov/melee-sim-light), with the bots of vladfi1 (Phillip), Eric Gu (HAL), erickfm (MIMIC) and Frisson Labs (Faynt, Reyn), TypeSafe's Jev and ElevenLabs voices.
