@@ -11,7 +11,7 @@ Melee came out in 2001 and people still play it competitively. It runs at 60 fra
 
 I started with a question about LLMs. Most game benchmarks for them are turn-based (chess, Pokémon, Slay the Spire), where the game politely waits while the model thinks. I wanted one that doesn't. The LLMs ended up being the smaller part of the story... so this post starts with the bots.
 
-All of this was built over two days and shown as a 5-minute talk at a hackathon on 14 November ([slides](https://melee.m19182.dev/writeup/slides.html)). Most of the code was written by coding agents running in parallel on my home server; this post wasn't. The project site, with the boards, replays, live games and a longer [write-up](https://melee.m19182.dev/writeup/), is at [melee.m19182.dev](https://melee.m19182.dev).
+All of this was built over two days and shown as a 5-minute talk at a hackathon on 14 November ([slides](https://melee.m19182.dev/writeup/slides.html)). Most of the code was written by coding agents running in parallel on my home server. The project site, with the boards, replays, live games and a longer [write-up](https://melee.m19182.dev/writeup/), is at [melee.m19182.dev](https://melee.m19182.dev).
 
 ![A bench game redrawn from its replay file: Faynt (blue) takes a stock from Phillip (red), both playing Fox on Final Destination](/data/melee/replay-2d.webp)
 
@@ -110,7 +110,7 @@ Opus came out clearly on top this time, with a mean of 1813 and a best of 1929. 
 
 **A bot of my own, m19182-yoshi.** A small transformer that copies human play, the way HAL did: it reads the last 4 seconds of the game and predicts the next controller input. The first version (6M parameters) lost all 12 games against the level 9 CPU; a 20M one won 1 of 12. The current one, `bc-20m-amsa`, is 20M parameters trained on aMSa's 21,896 Yoshi games from HAL's public dataset, and it won 3 of 12. Still below the hardest CPU, but getting there. It now plays on the stomped.dev bot ladder from my home server.
 
-**Playing them yourself.** You can play any of these bots with a controller on my laptop, or from home over Slippi direct connect. The board has a slot waiting for human results.
+**Playing them yourself.** You can play any of these bots with a controller on your own machine with `play.py`; playing them over netplay from the website is next. The board has a slot waiting for human results.
 
 ---
 

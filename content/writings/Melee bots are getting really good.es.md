@@ -6,7 +6,7 @@ Melee salió en 2001 y la gente lo sigue jugando de forma competitiva. Va a 60 f
 
 Empecé con una pregunta sobre LLM. La mayoría de benchmarks de juegos para ellos son por turnos (ajedrez, Pokémon, Slay the Spire), donde el juego espera educadamente mientras el modelo piensa. Yo quería uno que no esperase. Los LLM acabaron siendo la parte pequeña de la historia... así que este post empieza por los bots.
 
-Todo esto se hizo en dos días y lo presenté en una charla de 5 minutos en un hackathon el 14 de noviembre ([diapositivas](https://melee.m19182.dev/writeup/slides.html)). La mayor parte del código la escribieron agentes de programación trabajando en paralelo en mi servidor de casa; este post no. La web del proyecto, con las clasificaciones, repeticiones, partidas en directo y un [artículo](https://melee.m19182.dev/writeup/) más largo, está en [melee.m19182.dev](https://melee.m19182.dev).
+Todo esto se hizo en dos días y lo presenté en una charla de 5 minutos en un hackathon el 14 de noviembre ([diapositivas](https://melee.m19182.dev/writeup/slides.html)). La mayor parte del código la escribieron agentes de programación trabajando en paralelo en mi servidor de casa. La web del proyecto, con las clasificaciones, repeticiones, partidas en directo y un [artículo](https://melee.m19182.dev/writeup/) más largo, está en [melee.m19182.dev](https://melee.m19182.dev).
 
 ![Una partida del benchmark redibujada desde su repetición: Faynt (azul) le quita una vida a Phillip (rojo), los dos con Fox en Final Destination](/data/melee/replay-2d.webp)
 
@@ -105,7 +105,7 @@ Esta vez Opus quedó claramente por delante, con una media de 1813 y un máximo 
 
 **Un bot propio, m19182-yoshi.** Un transformer pequeño que copia el juego humano, como hizo HAL: lee los últimos 4 segundos de partida y predice la siguiente entrada del mando. La primera versión (6M de parámetros) perdió las 12 partidas contra la CPU de nivel 9; una de 20M ganó 1 de 12. La actual, `bc-20m-amsa`, tiene 20M de parámetros entrenados con las 21.896 partidas de Yoshi de aMSa del dataset público de HAL, y ganó 3 de 12. Sigue por debajo de la CPU más difícil, pero va llegando. Ya juega en la clasificatoria de bots de stomped.dev desde mi servidor de casa.
 
-**Jugar contra ellos.** Puedes jugar contra cualquiera de estos bots con un mando en mi portátil, o desde casa por conexión directa de Slippi. La clasificación tiene un hueco esperando resultados humanos.
+**Jugar contra ellos.** Puedes jugar contra cualquiera de estos bots con un mando en tu propio ordenador con `play.py`; jugar contra ellos por netplay desde la web es lo siguiente. La clasificación tiene un hueco esperando resultados humanos.
 
 ---
 
