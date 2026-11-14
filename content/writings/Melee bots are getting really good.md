@@ -6,6 +6,10 @@ draft: true
 tags:
   - ai
   - computers
+soundtrack:
+  artist: "Hirokazu Ando & Shogo Sakai"
+  title: "Final Destination"
+  file: hirokazu-ando-shogo-sakai-final-destination.webm
 ---
 Melee came out in 2001 and people still play it competitively. It runs at 60 frames per second and waits for nobody: one second of thinking is 60 frames in which you can get hit, grabbed and thrown off the stage. That makes it a hard target for any AI, and the community around it has built absurdly good open tooling: [Slippi](https://slippi.gg) for online play and replays, [libmelee](https://github.com/vladfi1/libmelee) to read the game and press buttons from Python, and even a decompilation of the game's own code.
 
