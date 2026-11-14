@@ -28,6 +28,8 @@
     "@codemirror/view": "^6.43.15",
     "@resvg/resvg-js": "^2.6.2",
     "codemirror": "^6.0.2",
+    "dictionary-en-gb": "^3.0.0",
+    "dictionary-es": "^4.0.0",
     "diff": "^9.0.0",
     "esbuild": "^0.28.2",
     "gray-matter": "^4.0.3",
@@ -37,6 +39,7 @@
     "markdown-it-anchor": "^9.2.0",
     "markdown-it-footnote": "^4.0.0",
     "markdown-it-texmath": "^1.0.0",
+    "nspell": "^2.1.5",
     "pagefind": "^1.5.2",
     "satori": "^0.19.1",
     "shiki": "^1.26.2"
