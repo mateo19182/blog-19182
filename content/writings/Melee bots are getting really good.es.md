@@ -2,11 +2,15 @@
 title: Los bots de Melee se están poniendo muy buenos
 summary: "Diez años de bots de Super Smash Bros. Melee, y unos cuantos LLM, en una sola escala Elo, más un bot propio."
 ---
-Melee salió en 2001 y la gente lo sigue jugando de forma competitiva. Va a 60 fotogramas por segundo y no espera a nadie: un segundo pensando son 60 fotogramas en los que te pueden golpear, agarrar y tirar del escenario. Eso lo hace un objetivo difícil para cualquier IA, y su comunidad ha montado herramientas abiertas absurdamente buenas: [Slippi](https://slippi.gg) para jugar online y guardar repeticiones, [libmelee](https://github.com/vladfi1/libmelee) para leer el juego y pulsar botones desde Python, e incluso una descompilación del propio código del juego.
+Super Smash Bros. Melee salió en 2001 y es uno de los videojuegos con el techo (y el suelo) de habilidad más alto que conozco; prueba de ello es que muchísima gente lo sigue jugando de forma competitiva. No soy nada bueno, SSB4 fue el único en el que eché horas, pero sé lo suficiente para entender parte de su complejidad, y es impresionante. [^1]
 
-![Fox haciendo wavedash, L-cancel y dash dance en Final Destination, con el stick y los botones pulsados en cada fotograma](/data/melee/tech-es.webp)
+Los jugadores competitivos de Melee hacen de media 7 acciones por segundo, en un combate rapidísimo, sin buffer de entradas y con técnicas como el wavedash, el L-cancel o el dash dance. Lo disfruto mucho más que cualquier otro juego de lucha porque no depende tanto de los combos y es mucho más libre.
 
-*Tres técnicas de Melee, redibujadas a media velocidad desde repeticiones del benchmark, con los controles debajo.*
+![Fox haciendo wavedash, L-cancel y dash dance en Final Destination, con el stick y los botones pulsados en cada fotograma](/data/melee/tech.webp)
+
+*Redibujado a media velocidad desde repeticiones del benchmark, con los controles debajo. **Wavedash**: saltas y haces un esquive aéreo en diagonal contra el suelo, y su impulso se convierte en un deslizamiento. **L-cancel**: pulsar L o R justo antes de aterrizar un aéreo reduce a la mitad el retraso al aterrizar. **Dash dance**: echar el stick atrás en los primeros fotogramas del dash hace que Fox se gire al instante, sin frenar.*
+
+La comunidad ha montado herramientas abiertas absurdamente buenas: [Slippi](https://slippi.gg) para jugar online y guardar repeticiones, [libmelee](https://github.com/vladfi1/libmelee) para leer el juego y pulsar botones desde Python, e incluso una descompilación del propio código del juego.
 
 Empecé con una pregunta sobre LLM. La mayoría de benchmarks de juegos para ellos son por turnos (ajedrez, Pokémon, Slay the Spire), donde el juego espera educadamente mientras el modelo piensa. Yo quería uno que no esperase. Los LLM acabaron siendo la parte pequeña de la historia... así que este post empieza por los bots.
 
@@ -131,3 +135,5 @@ Le doy una o dos semanas más, ya sin los LLM en el centro. Ahora mismo se está
 ---
 
 Construido sobre [Slippi](https://slippi.gg), [libmelee](https://github.com/vladfi1/libmelee), [Slippi Lab](https://github.com/frankborden/slippilab) y [melee-sim-light](https://github.com/kyhavlov/melee-sim-light), con los bots de vladfi1 (Phillip), Eric Gu (HAL), erickfm (MIMIC) y Frisson Labs (Faynt, Reyn), Jev de TypeSafe y voces de ElevenLabs.
+
+[^1]: Si te interesa saber más, recomiendo mucho [AsumSaus](https://www.youtube.com/@AsumSaus/videos).
