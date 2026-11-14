@@ -145,7 +145,8 @@ async function boot() {
   document.body.classList.toggle("view-only", S.viewOnly)
   try {
     const [index] = await Promise.all([
-      fetch("/edit/index.json").then((r) => r.json()),
+      // revalidated each time: it lists the soundtracks and pages the checks rely on
+      fetch("/edit/index.json", { cache: "no-cache" }).then((r) => r.json()),
       api("me").then((me) => { $("#who").textContent = me.email }),
     ])
     S.index = index
@@ -484,7 +485,9 @@ function renderForm() {
   const form = $("#form")
   const keys = doc.data && !doc.readOnly ? FORMS[doc.kind] || [] : []
   form.hidden = !keys.length
+  $("#props-bar").hidden = !keys.length
   if (!keys.length) return (form.innerHTML = "")
+  renderPropsSummary()
   const d = doc.data
   const series = [...new Set(S.index.pages.map((p) => p.series).filter(Boolean))]
   const field = (key) => {
@@ -530,6 +533,29 @@ $("#form").addEventListener("click", (e) => {
   onForm({ target: $(`#f-${key}`) })
 })
 
+// One line standing in for the form while it's collapsed.
+function renderPropsSummary() {
+  const d = S.current?.data
+  if (!d) return
+  const bits = [
+    d.draft === true && "borrador",
+    d.unlisted === true && "sin listar",
+    d.title,
+    d.date && String(d.date),
+    [d.tags || []].flat().filter(Boolean).map((t) => `#${t}`).join(" "),
+  ].filter(Boolean)
+  $("#props-summary").textContent = bits.join(" · ")
+}
+
+const propsCollapsed = () => { try { return localStorage.getItem("props") === "collapsed" } catch { return false } }
+document.body.classList.toggle("props-collapsed", propsCollapsed())
+$("#props-toggle").addEventListener("click", () => {
+  localStorage.setItem("props", propsCollapsed() ? "open" : "collapsed")
+  document.body.classList.toggle("props-collapsed", propsCollapsed())
+  $("#props-toggle").setAttribute("aria-expanded", String(!propsCollapsed()))
+})
+$("#props-toggle").setAttribute("aria-expanded", String(!propsCollapsed()))
+
 function onForm(e) {
   const doc = S.current
   const el = e.target
@@ -552,6 +578,7 @@ function onForm(e) {
   doc.fmDirty = true
   doc.text = compose(doc)
   changed()
+  renderPropsSummary()
   if (e.type === "change") renderSidebar()
 }
 

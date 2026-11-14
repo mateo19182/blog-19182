@@ -51,6 +51,14 @@ code { font-family: var(--mono); font-size: 0.9em; }
 
 #editor-pane { display: flex; flex-direction: column; min-height: 0; border-right: 1px solid var(--line); }
 #banner { margin: 0; padding: 0.5rem 0.75rem; background: var(--warn); font-size: 0.9rem; }
+#props-bar { display: flex; align-items: center; gap: 0.6rem; padding: 0.3rem 0.75rem; border-bottom: 1px solid var(--line); font-size: 0.8rem; min-width: 0; }
+#props-toggle { padding: 0.1rem 0.5rem; font-size: 0.8rem; }
+#props-toggle::before { content: "▾ "; }
+body.props-collapsed #props-toggle::before { content: "▸ "; }
+#props-summary { color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: none; }
+body.props-collapsed #props-summary { display: inline; }
+body.props-collapsed #form { display: none !important; }
+body.empty #props-bar, body.view-only #props-bar { display: none !important; }
 #form { display: grid; grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr)); gap: 0.4rem 0.75rem; padding: 0.6rem 0.75rem; border-bottom: 1px solid var(--line); max-height: 40vh; overflow: auto; }
 .field { display: flex; flex-direction: column; gap: 0.15rem; font-size: 0.8rem; color: var(--muted); }
 .field > span { font-weight: 700; }
