@@ -11,7 +11,7 @@ Melee came out in 2001 and people still play it competitively. It runs at 60 fra
 
 I started with a question about LLMs. Most game benchmarks for them are turn-based (chess, Pokémon, Slay the Spire), where the game politely waits while the model thinks. I wanted one that doesn't. The LLMs ended up being the smaller part of the story... so this post starts with the bots.
 
-All of this was built over two days and shown as a 5-minute talk at a hackathon on 14 November ([slides](https://melee.m19182.dev/writeup/slides.html)). Most of the code was written by coding agents running in parallel on my home server. The project site, with the boards, replays, live games and a longer [write-up](https://melee.m19182.dev/writeup/), is at [melee.m19182.dev](https://melee.m19182.dev), and the code is on [GitHub](https://github.com/mateo19182/melee-llm).
+All of this was built over two days and shown as a 5-minute talk at [1hack](https://1hack.eu/) on 14 November ([slides](https://melee.m19182.dev/writeup/slides.html)). Most of the code was written by coding agents running in parallel on my home server. The project site, with the boards, replays, live games and a longer [write-up](https://melee.m19182.dev/writeup/), is at [melee.m19182.dev](https://melee.m19182.dev), and the code is on [GitHub](https://github.com/mateo19182/melee-llm).
 
 ![A bench game redrawn from its replay file: Faynt (blue) takes a stock from Phillip (red), both playing Fox on Final Destination](/data/melee/replay-2d.webp)
 
