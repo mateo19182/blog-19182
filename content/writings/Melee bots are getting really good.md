@@ -15,6 +15,10 @@ Super Smash Bros Melee came out in 2001, and it's one of the videogames with the
 
 Competitive Melee players average 7 actions per second, in a super fast-paced fight with no input buffer and cool tech like Wavedashing, L-Canceling or Dash Dancing. I enjoy it much more than any other fighter as it does not rely as heavily on combos and is much more "free-form". 
 
+![Fox wavedashing, L-canceling and dash dancing on Final Destination, with the stick and buttons pressed on each frame](/data/melee/tech.webp)
+
+*Three of those techniques, redrawn from bench replays at half speed, with the inputs underneath.*
+
 The community around it has built absurdly good open tooling: [Slippi](https://slippi.gg) for online play and replays, [libmelee](https://github.com/vladfi1/libmelee) to read the game and press buttons from Python, and even a decompilation of the game's own code.
 
 I started with a question about LLMs. Most game benchmarks for them are turn-based (chess, Pokémon, Slay the Spire), where the game politely waits while the model thinks. I wanted one that doesn't. The LLMs ended up being the smaller part of the story... so this post starts with the bots.
