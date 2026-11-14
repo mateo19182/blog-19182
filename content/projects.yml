@@ -1,3 +1,14 @@
+- title: "Melee bots are getting really good"
+  title_es: "Los bots de Melee se están poniendo muy buenos"
+  url: "https://melee.m19182.dev"
+  date: "2026-11"
+  tags: [ml, llm, research]
+  highlight: true
+  desc: >-
+    Ten years of Super Smash Bros. Melee bots, from the built-in CPUs to Faynt and Reyn, on one Elo scale, next to frontier LLMs playing live, untimed, coaching a bot and writing their own. Built in two days around the real game on my home server, with a site that streams live games with AI commentary, a simulator 100 times faster than the emulator, and a behaviour-cloned Yoshi of my own, m19182-yoshi, now on the [stomped.dev](https://stomped.dev) bot ladder. [Post](/writings/Melee-bots-are-getting-really-good), [slides](https://melee.m19182.dev/writeup/slides.html) from the 5-minute talk, [code](https://github.com/mateo19182/melee-llm).
+  desc_es: >-
+    Diez años de bots de Super Smash Bros. Melee, de las CPU del juego a Faynt y Reyn, en una sola escala Elo, junto a LLM punteros jugando en directo, sin límite de tiempo, entrenando a un bot y escribiendo el suyo. Hecho en dos días alrededor del juego real en mi servidor de casa, con una web que emite partidas en directo con comentarios de IA, un simulador 100 veces más rápido que el emulador y un Yoshi propio clonado de partidas humanas, m19182-yoshi, que ya juega en la clasificatoria de bots de [stomped.dev](https://stomped.dev). [Artículo](/writings/Melee-bots-are-getting-really-good), [diapositivas](https://melee.m19182.dev/writeup/slides.html) de la charla de 5 minutos, [código](https://github.com/mateo19182/melee-llm).
+
 - title: "Legal exploits in Spanish regulations"
   title_es: "Exploits legales en reglamentos españoles"
   url: "https://legal.m19182.dev"
