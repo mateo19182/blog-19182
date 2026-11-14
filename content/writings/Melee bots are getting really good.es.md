@@ -6,7 +6,7 @@ Melee salió en 2001 y la gente lo sigue jugando de forma competitiva. Va a 60 f
 
 Empecé con una pregunta sobre LLM. La mayoría de benchmarks de juegos para ellos son por turnos (ajedrez, Pokémon, Slay the Spire), donde el juego espera educadamente mientras el modelo piensa. Yo quería uno que no esperase. Los LLM acabaron siendo la parte pequeña de la historia... así que este post empieza por los bots.
 
-Todo esto se hizo en dos días y lo presenté en una charla de 5 minutos en un hackathon el 14 de noviembre ([diapositivas](https://melee.m19182.dev/writeup/slides.html)). La mayor parte del código la escribieron agentes de programación trabajando en paralelo en mi servidor de casa. La web del proyecto, con las clasificaciones, repeticiones, partidas en directo y un [artículo](https://melee.m19182.dev/writeup/) más largo, está en [melee.m19182.dev](https://melee.m19182.dev).
+Todo esto se hizo en dos días y lo presenté en una charla de 5 minutos en un hackathon el 14 de noviembre ([diapositivas](https://melee.m19182.dev/writeup/slides.html)). La mayor parte del código la escribieron agentes de programación trabajando en paralelo en mi servidor de casa. La web del proyecto, con las clasificaciones, repeticiones, partidas en directo y un [artículo](https://melee.m19182.dev/writeup/) más largo, está en [melee.m19182.dev](https://melee.m19182.dev), y el código está en [GitHub](https://github.com/mateo19182/melee-llm).
 
 ![Una partida del benchmark redibujada desde su repetición: Faynt (azul) le quita una vida a Phillip (rojo), los dos con Fox en Final Destination](/data/melee/replay-2d.webp)
 
