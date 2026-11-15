@@ -2,7 +2,7 @@
 // /api/edit (lib/edit-api.mjs), autosaves locally, previews with the site's own
 // renderer, and saves by committing to `main`, which Cloudflare Pages deploys.
 // Drafts (`draft: true`) are committed too but left out of the site.
-import { EditorView, keymap } from "@codemirror/view"
+import { EditorView, keymap, highlightActiveLine } from "@codemirror/view"
 import { EditorState, Compartment } from "@codemirror/state"
 import { minimalSetup } from "codemirror"
 import { markdown } from "@codemirror/lang-markdown"
@@ -315,6 +315,7 @@ const editorKeys = [
   { key: "Mod-k", run: link },
   { key: "Mod-Shift-f", run: footnote },
   { key: "Alt-p", run: () => (togglePreview(), true) },
+  { key: "Alt-z", run: () => (toggleFocus(), true) },
   indentWithTab,
 ]
 
@@ -327,6 +328,7 @@ function makeState(doc) {
       highlightSelectionMatches(),
       keymap.of([...editorKeys, ...searchKeymap]),
       EditorView.lineWrapping,
+      highlightActiveLine(),
       langConf.of(doc.kind === "projects" ? yamlLang() : markdown()),
       roConf.of(EditorState.readOnly.of(!!doc.readOnly)),
       attrConf.of(langExtensions(doc)),
@@ -1030,7 +1032,23 @@ $("#files").addEventListener("click", (e) => {
   e.preventDefault()
   open(decodeURIComponent(a.getAttribute("href").slice(1)))
 })
-$("#toggle-files").addEventListener("click", () => document.body.classList.toggle("show-files"))
+// Wide screens hide the file list (remembered); narrow ones open it over the editor.
+const filesHidden = () => { try { return localStorage.getItem("files") === "hidden" } catch { return false } }
+document.body.classList.toggle("hide-files", filesHidden())
+$("#toggle-files").addEventListener("click", () => {
+  if (matchMedia("(max-width: 1100px)").matches) return document.body.classList.toggle("show-files")
+  localStorage.setItem("files", filesHidden() ? "shown" : "hidden")
+  document.body.classList.toggle("hide-files", filesHidden())
+})
+
+// Focus mode: only the text, the current paragraph highlighted.
+function toggleFocus(on = !document.body.classList.contains("focus")) {
+  document.body.classList.toggle("focus", on)
+  view?.requestMeasure()
+  view?.focus()
+}
+$("#focus").addEventListener("click", () => toggleFocus())
+$("#focus-exit").addEventListener("click", () => toggleFocus(false))
 $("#toggle-preview").addEventListener("click", togglePreview)
 $("#preview-lang").addEventListener("click", () => {
   S.previewLang = S.previewLang === "es" ? "en" : "es"
@@ -1055,6 +1073,8 @@ document.addEventListener("keydown", (e) => {
     e.preventDefault()
     review()
   }
+  // Esc leaves focus mode unless something else (search, a dialog) used it
+  if (e.key === "Escape" && !e.defaultPrevented && document.body.classList.contains("focus") && !document.querySelector("dialog[open], .cm-panels, .spell-menu")) toggleFocus(false)
 })
 addEventListener("pagehide", () => { if (S.current) persist(S.current) })
 addEventListener("hashchange", () => {

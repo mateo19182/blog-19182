@@ -126,6 +126,25 @@ dialog menu { display: flex; justify-content: flex-end; gap: 0.5rem; padding: 0;
 #toast a { color: inherit; }
 .fatal { padding: 2rem; max-width: 40rem; }
 #toggle-preview[aria-pressed="false"] { opacity: 0.6; }
+#cm .cm-activeLine { background: none; }
+#focus-exit { display: none; }
+@media (min-width: 1101px) {
+  body.hide-files #sidebar { display: none; }
+  body.hide-files .layout { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  body.hide-files.hide-preview .layout { grid-template-columns: minmax(0, 1fr); }
+}
+body.focus .bar, body.focus #sidebar, body.focus #preview-pane, body.focus #props-bar, body.focus #form, body.focus #problems { display: none !important; }
+body.focus .layout { grid-template-columns: minmax(0, 1fr) !important; }
+body.focus #editor-pane { border-right: 0; }
+body.focus #toolbar { border: 0; padding: 0; }
+body.focus #toolbar > :not(#status) { display: none; }
+body.focus #status { position: fixed; right: 1rem; bottom: 0.75rem; opacity: 0.7; }
+body.focus #focus-exit { display: block; position: fixed; top: 0.75rem; right: 1rem; z-index: 10; opacity: 0.35; }
+body.focus #focus-exit:hover, body.focus #focus-exit:focus-visible { opacity: 1; }
+body.focus #cm .cm-scroller { font-size: 16px; line-height: 1.8; padding-top: 10vh; }
+body.focus #cm .cm-content { max-width: 40rem; }
+body.focus #cm .cm-line { opacity: 0.4; transition: opacity 0.15s; }
+body.focus #cm .cm-activeLine { opacity: 1; }
 @media (min-width: 761px) {
   body.hide-preview #preview-pane { display: none; }
   body.hide-preview .layout { grid-template-columns: 16rem minmax(0, 1fr); }
