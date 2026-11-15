@@ -15,13 +15,14 @@ Super Smash Bros Melee came out in 2001, and it's one of the videogames with the
 
 Competitive Melee players average 7 actions per second, in a super fast-paced fight with no input buffer and cool tech like Wavedashing, L-Canceling or Dash Dancing. I enjoy it much more than any other fighters as it does not rely as heavily on combos and is much more "free-form". 
 
-![Fox wavedashing, L-canceling and dash dancing on Final Destination, with the stick and buttons pressed on each frame](/data/melee/tech.webp)
+![Fox wavedashing, L-cancelling and dash dancing on Final Destination, with the stick and buttons pressed on each frame](/data/melee/tech.webp)
 
-The community around it has built absurdly good open tooling: [Slippi](https://slippi.gg) for online play and replays, [libmelee](https://github.com/vladfi1/libmelee) to read the game and press buttons from Python, and even a decompilation of the game's own code.
+I had seen some activity on twitter on recent advancements on AI bots taking on some top players, which seemed incredible to me, and decided to explore this during [1hack](https://1hack.eu/), an event where we get together for 24hours to build whatever is on our mind, and ended up giving a [short presentation](/data/melee/talk-1hack.webp) at the end!
 
-I started with a question about LLMs. Most game benchmarks for them are turn-based (chess, Pokémon, Slay the Spire), where the game politely waits while the model thinks. I wanted one that doesn't. The LLMs ended up being the smaller part of the story... so this post starts with the bots.
+Started with a vague idea of having LLMs play the game directly. Some of the best ways of measuring the performance of latest models are based on having play [games that it hasn't encountered during training](https://arcprize.org/arc-agi). Most game benchmarks are turn-based ([chess](https://maxim-saplin.github.io/llm_chess/#leaderboard), [Pokémon](https://dl.acm.org/doi/10.1145/3771095), [Slay the Spire](https://arxiv.org/abs/2610.12596)..... lots of these popping up lately). This did not work as expected but got me interested in the topic, my objective with this post is to write what I would have liked to have read when I started learning!
 
-All of this was built over two days and shown as a 5-minute talk at [1hack](https://1hack.eu/) on 14 November ([slides](https://melee.m19182.dev/writeup/slides.html)). Most of the code was written by coding agents running in parallel on my home server. The project site, with the boards, replays, live games and a longer [write-up](https://melee.m19182.dev/writeup/), is at [melee.m19182.dev](https://melee.m19182.dev), and the code is on [GitHub](https://github.com/mateo19182/melee-llm).
+
+The community has built some really good open tooling over time that allows for this kind of experimentation: [Slippi](https://slippi.gg) for online play and replays (most of the data for training comes from here, it's a gold mine), [libmelee](https://github.com/vladfi1/libmelee) to read the game and press buttons from Python, and very recently, a [decompilation](https://github.com/doldecomp/melee) of the game's own code.
 
 ![A bench game redrawn from its replay file: Faynt (blue) takes a stock from Phillip (red), both playing Fox on Final Destination](/data/melee/replay-2d.webp)
 
@@ -135,9 +136,9 @@ Opus came out clearly on top this time, with a mean of 1813 and a best of 1929. 
 
 I'm giving it one or two more weeks, with LLMs no longer at the centre. A bigger run of m19182-yoshi (`bc-20m-v3`: 44,805 Yoshi games, 444M frames, with aMSa labelled "pro") is training right now, and after that comes self-play in the simulator, which is where the published bots got strong. The goal is to see how far it can climb on stomped.dev, and to learn how these bots are actually trained along the way. Also on the list: putting m19182-yoshi and myself on the bench, and getting people to play the bots.
 
-![Me presenting the project at 1hack, in front of the slide on ten years of Melee bots](/data/melee/talk-1hack.webp)
 
-*Presenting it at [1hack](https://1hack.eu/) on 14 November.*
+
+The project site, with the boards, replays, live games and a longer [write-up](https://melee.m19182.dev/writeup/), is at [melee.m19182.dev](https://melee.m19182.dev), and the code is on [GitHub](https://github.com/mateo19182/melee-llm).
 
 ---
 
