@@ -654,7 +654,7 @@ function localizeImages(html) {
 
 function updatePreview() {
   const doc = S.current
-  if (!doc) return
+  if (!doc || (previewHidden() && !narrow() && !document.body.classList.contains("view-only"))) return
   let out
   try {
     out = S.render(doc.path, textOf)
@@ -701,9 +701,21 @@ function syncScroll() {
   w.scrollTo({ top: frac * max, behavior: "instant" })
 }
 
-function togglePreview() {
-  document.body.classList.toggle("show-preview")
+// Narrow screens swap editor and preview; wide ones can hide the preview to write
+// with the full width, remembered in this browser.
+const narrow = () => matchMedia("(max-width: 760px)").matches
+const previewHidden = () => { try { return localStorage.getItem("preview") === "hidden" } catch { return false } }
+function applyPreviewPref() {
+  document.body.classList.toggle("hide-preview", previewHidden())
+  $("#toggle-preview").setAttribute("aria-pressed", String(!previewHidden()))
 }
+function togglePreview() {
+  if (narrow()) return document.body.classList.toggle("show-preview")
+  localStorage.setItem("preview", previewHidden() ? "shown" : "hidden")
+  applyPreviewPref()
+  if (!previewHidden()) schedulePreview(0)
+}
+applyPreviewPref()
 
 // ---- images --------------------------------------------------------------------------------
 function imageFiles(e) {
