@@ -23,17 +23,19 @@ Started with a vague idea of having LLMs play the game directly. Some of the bes
 
 In case you have never played a Smash game: two characters (from the extended Nintendo universe) fight on a small floating stage, hitting your opponent raises his percentage, and the higher it is the further they get knocked. Throw them off the screen and they lose a stock.
 
+* difficult on the low level (fast, precise) and the high level (mindgames, predicitions...)
 *more melee history, wombo combo, why its so techically complex details...
 
 
 ## Some history
 
-The game shipped with built-in CPUs, levels 1-9. They are not great an any experienced player can beat them easily, mostly because they repeat moves and strategies constantly. It wasn't until **2015**, where Dan "altf4" Petro presented, [SmashBot](https://www.youtube.com/watch?v=_0Z_oN_CZyA) (great DEFCON talk!), a Fox bot that he wrote by hand. His main advantage was that it acted frame-perfect and with zero reaction time, but players quickly understood it's tactics and exploited them. However, the library that he wrote to interact with the game eventually became [libmelee](https://github.com/vladfi1/libmelee), which almost every bot since is built on.
+The game shipped with built-in CPUs, levels 1-9. They are not great an any experienced player can beat them easily, mostly because they repeat moves and strategies constantly. It wasn't until **2015**, where Dan "altf4" Petro presented, [SmashBot](https://www.youtube.com/watch?v=_0Z_oN_CZyA) (great DEFCON talk!), a Fox bot that he wrote by hand using [GOFAI](https://en.wikipedia.org/wiki/Symbolic_artificial_intelligence). His main advantage was that it acted frame-perfect and with zero reaction time, but players quickly understood it's tactics and exploited them until they were patched by hand. However, the heavy lifting of reverse engineering the game eventually became [libmelee](https://github.com/vladfi1/libmelee), which almost every bot since is built on.
 
-- **2017**, [Phillip](https://arxiv.org/abs/1702.06230). Vlad Firoiu trained a network with reinforcement learning alone and it beat professional players, reacting in about 2 frames where a human needs 12 to 15.
-- **2018-2022**, Slippi: replay files, rollback netplay, a ranked ladder. Suddenly there were hundreds of thousands of recorded human games to learn from.
-- **2024**, Phillip again, now with [slippi-ai](https://github.com/vladfi1/slippi-ai): copy humans from replays first, then improve by self-play, with a human-like reaction delay built in. Zain [beat it 5-3](https://www.youtube.com/watch?v=c8nRFAGvr2c); Moky [lost 3-10](https://www.youtube.com/watch?v=1kviVflqXc4).
-- **2025**, Eric Gu's [HAL](https://ericyuegu.com/behavior-cloning-melee/) cloned pro Fox games into a 20M-parameter transformer for about $5 of compute and beat the level 9 CPU 95% of the time. [MIMIC](https://github.com/erickfm/MIMIC) followed with one model per character.
+In **2017**, Vlad Firoiu published [Phillip](https://arxiv.org/abs/1702.06230), trained end to end with asynchronous RL. He trained a network per character and used a naive reward (KOs + Damage Dealt*weight) with [Trust Region Policy Optimization](https://arxiv.org/html/1502.05477v5) and self-play. It was able to beat some professional players, thought mostly because it could react in about 2 frames where a human needs around 12. Still was quite exploitable, as some players found that simply crouching on the ledge would cause it to eventually suicide.
+
+In the following years [Slippi](https://slippi.gg/) got popular, allowing for replay files, rollback netplay, a ranked ladder... Accumulating hundreds of thousands of recorded human games to learn from gave birth, in **2024**, to [slippi-ai](https://github.com/vladfi1/slippi-ai), which copied humans from replays first, then improved by self-play, with a human-like reaction delay built in. 
+
+Not too long after, in **2025**, Eric Gu's released [HAL](https://ericyuegu.com/behavior-cloning-melee/) (fox only) and [MIMIC](https://github.com/erickfm/MIMIC) (all characters), which
 
 And then the last six weeks:
 
@@ -49,6 +51,7 @@ So: the strongest bots can be downloaded and run on one home GPU, one of them ta
 
 
 The community has built some really good open tooling over time that allows for this kind of experimentation: [Slippi](https://slippi.gg) for online play and replays (most of the data for training comes from here, it's a gold mine), [libmelee](https://github.com/vladfi1/libmelee) to read the game and press buttons from Python, and very recently, a [decompilation](https://github.com/doldecomp/melee) of the game's own code.
+TAS community too!
 
 
 
@@ -151,4 +154,4 @@ The project site, with the boards, replays, live games and a longer [write-up](h
 
 Built on [Slippi](https://slippi.gg), [libmelee](https://github.com/vladfi1/libmelee), [Slippi Lab](https://github.com/frankborden/slippilab) and [melee-sim-light](https://github.com/kyhavlov/melee-sim-light), with the bots of vladfi1 (Phillip), Eric Gu (HAL), erickfm (MIMIC) and Frisson Labs (Faynt, Reyn), TypeSafe's Jev and ElevenLabs voices.
 
-[^1]: highly recommend [AsumSaus](https://www.youtube.com/@AsumSaus/videos) if interested in learning more!
+[^1]: highly recommend [AsumSaus](https://www.youtube.com/@AsumSaus/videos) and [PracticalTAS](https://youtube.com/@practicaltas?si=rUSebEZkc0eIUzv8) if interested in learning more!
