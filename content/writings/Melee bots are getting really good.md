@@ -21,18 +21,16 @@ I had seen some activity on twitter on recent advancements on AI bots taking on 
 
 Started with a vague idea of having LLMs play the game directly. Some of the best ways of measuring the performance of latest models are based on having play [games that it hasn't encountered during training](https://arcprize.org/arc-agi). Most game benchmarks are turn-based ([chess](https://maxim-saplin.github.io/llm_chess/#leaderboard), [Pokémon](https://dl.acm.org/doi/10.1145/3771095), [Slay the Spire](https://arxiv.org/abs/2610.12596)..... lots of these popping up lately). This did not work as expected but got me interested in the topic, my objective with this post is to write what I would have liked to have read when I started learning!
 
+In case you have never played a Smash game: two characters (from the extended Nintendo universe) fight on a small floating stage, hitting your opponent raises his percentage, and the higher it is the further they get knocked. Throw them off the screen and they lose a stock.
 
-The community has built some really good open tooling over time that allows for this kind of experimentation: [Slippi](https://slippi.gg) for online play and replays (most of the data for training comes from here, it's a gold mine), [libmelee](https://github.com/vladfi1/libmelee) to read the game and press buttons from Python, and very recently, a [decompilation](https://github.com/doldecomp/melee) of the game's own code.
-
-![A bench game redrawn from its replay file: Faynt (blue) takes a stock from Phillip (red), both playing Fox on Final Destination](/data/melee/replay-2d.webp)
-
-*14 seconds of a bench game, redrawn from the replay file: Faynt (blue) takes a stock off Phillip (red), both playing Fox.*
-
-If you have never played: two characters fight on a small floating stage, every hit raises the other player's damage percentage, and the higher it is the further they fly. Knock them off the screen and they lose a stock. Four stocks, eight minutes. Simple on paper, but at a high level it's about reactions measured in single frames and reading what the other person will do next.
+*more melee history, wombo combo, why its so techically complex details...
 
 ---
 
 ## Ten years of bots, and why now
+
+The community has built some really good open tooling over time that allows for this kind of experimentation: [Slippi](https://slippi.gg) for online play and replays (most of the data for training comes from here, it's a gold mine), [libmelee](https://github.com/vladfi1/libmelee) to read the game and press buttons from Python, and very recently, a [decompilation](https://github.com/doldecomp/melee) of the game's own code.
+
 
 - **2001**, the built-in CPUs, levels 1 to 9. Level 9 jabs and grabs on the exact frame, but almost never shields, always recovers the same way and loses to one move repeated.
 - **2015**, [SmashBot](https://www.youtube.com/watch?v=_0Z_oN_CZyA). Dan "altf4" Petro wrote a Fox bot by hand, frame-perfect and with zero reaction time. Its plumbing became libmelee, which almost every bot since is built on.
@@ -53,6 +51,12 @@ And then the last six weeks:
 So: the strongest bots can be downloaded and run on one home GPU, one of them takes language, the game can be simulated far faster than real time, cloning a decent bot costs a few dollars, and there is a public ladder to test it on. Nobody had put them all on one scale, or asked where an LLM fits among them.
 
 None of these bots look at the screen. They read the game's memory every frame (positions, speeds, animation, damage) and answer with a whole controller state. And almost all of them share a recipe: copy humans from replays, then get better by playing themselves. It's AlphaGo minus the search, since there's no looking ahead in 16 milliseconds and no way to rewind. They are tiny next to an LLM (10M to 247M parameters) and answer in a few milliseconds per frame. Reyn, despite the language, has no LLM inside: it was trained on replays labelled with commands, and a small router maps whatever you type onto a fixed menu of about 100 of them. That detail matters later.
+
+
+![A bench game redrawn from its replay file: Faynt (blue) takes a stock from Phillip (red), both playing Fox on Final Destination](/data/melee/replay-2d.webp)
+
+*14 seconds of a bench game, redrawn from the replay file: Faynt (blue) takes a stock off Phillip (red), both playing Fox.*
+
 
 ---
 
