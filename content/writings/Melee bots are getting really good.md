@@ -11,7 +11,7 @@ soundtrack:
   title: "Final Destination"
   file: hirokazu-ando-shogo-sakai-final-destination.webm
 ---
-Super Smash Bros Melee came out in 2001, and it's one of the videogames with the highest skill ceiling (and floor) that i know of, proof of that is that there is a lot of people still playing it competitively. I'm not good at all, SSB4 was the only one where I put in the hours, but I know enough to understand some of the complexity, and it's extremely impressive. [^1]
+Super Smash Bros Melee came out in 2001 for the [GameCube](https://en.wikipedia.org/wiki/GameCube), and it's one of the videogames with the highest skill ceiling (and floor) that i know of, proof of that is that there is a lot of people still playing it competitively. I'm not good at all, SSB4 was the only one where I put in the hours, but I know enough to understand some of the complexity, and it's extremely impressive. [^1]
 
 Competitive Melee players average 7 actions per second, in a super fast-paced fight with no input buffer and cool tech like Wavedashing, L-Canceling or Dash Dancing. I enjoy it much more than any other fighters as it does not rely as heavily on combos and is much more "free-form". 
 
@@ -25,15 +25,11 @@ In case you have never played a Smash game: two characters (from the extended Ni
 
 *more melee history, wombo combo, why its so techically complex details...
 
----
 
-## Ten years of bots, and why now
+## Some history
 
-The community has built some really good open tooling over time that allows for this kind of experimentation: [Slippi](https://slippi.gg) for online play and replays (most of the data for training comes from here, it's a gold mine), [libmelee](https://github.com/vladfi1/libmelee) to read the game and press buttons from Python, and very recently, a [decompilation](https://github.com/doldecomp/melee) of the game's own code.
+The game shipped with built-in CPUs, levels 1-9. They are not great an any experienced player can beat them easily, mostly because they repeat moves and strategies constantly. It wasn't until **2015**, where Dan "altf4" Petro presented, [SmashBot](https://www.youtube.com/watch?v=_0Z_oN_CZyA) (great DEFCON talk!), a Fox bot that he wrote by hand. His main advantage was that it acted frame-perfect and with zero reaction time, but players quickly understood it's tactics and exploited them. However, the library that he wrote to interact with the game eventually became [libmelee](https://github.com/vladfi1/libmelee), which almost every bot since is built on.
 
-
-- **2001**, the built-in CPUs, levels 1 to 9. Level 9 jabs and grabs on the exact frame, but almost never shields, always recovers the same way and loses to one move repeated.
-- **2015**, [SmashBot](https://www.youtube.com/watch?v=_0Z_oN_CZyA). Dan "altf4" Petro wrote a Fox bot by hand, frame-perfect and with zero reaction time. Its plumbing became libmelee, which almost every bot since is built on.
 - **2017**, [Phillip](https://arxiv.org/abs/1702.06230). Vlad Firoiu trained a network with reinforcement learning alone and it beat professional players, reacting in about 2 frames where a human needs 12 to 15.
 - **2018-2022**, Slippi: replay files, rollback netplay, a ranked ladder. Suddenly there were hundreds of thousands of recorded human games to learn from.
 - **2024**, Phillip again, now with [slippi-ai](https://github.com/vladfi1/slippi-ai): copy humans from replays first, then improve by self-play, with a human-like reaction delay built in. Zain [beat it 5-3](https://www.youtube.com/watch?v=c8nRFAGvr2c); Moky [lost 3-10](https://www.youtube.com/watch?v=1kviVflqXc4).
@@ -49,6 +45,13 @@ And then the last six weeks:
 - Three days before the talk, Frisson released [Reyn](https://www.frisson-labs.com/reyn), a bot you steer with English commands.
 
 So: the strongest bots can be downloaded and run on one home GPU, one of them takes language, the game can be simulated far faster than real time, cloning a decent bot costs a few dollars, and there is a public ladder to test it on. Nobody had put them all on one scale, or asked where an LLM fits among them.
+
+
+
+The community has built some really good open tooling over time that allows for this kind of experimentation: [Slippi](https://slippi.gg) for online play and replays (most of the data for training comes from here, it's a gold mine), [libmelee](https://github.com/vladfi1/libmelee) to read the game and press buttons from Python, and very recently, a [decompilation](https://github.com/doldecomp/melee) of the game's own code.
+
+
+
 
 None of these bots look at the screen. They read the game's memory every frame (positions, speeds, animation, damage) and answer with a whole controller state. And almost all of them share a recipe: copy humans from replays, then get better by playing themselves. It's AlphaGo minus the search, since there's no looking ahead in 16 milliseconds and no way to rewind. They are tiny next to an LLM (10M to 247M parameters) and answer in a few milliseconds per frame. Reyn, despite the language, has no LLM inside: it was trained on replays labelled with commands, and a small router maps whatever you type onto a fixed menu of about 100 of them. That detail matters later.
 
