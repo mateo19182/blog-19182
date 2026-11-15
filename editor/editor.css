@@ -84,7 +84,8 @@ body.empty #props-bar, body.view-only #props-bar { display: none !important; }
 #status { margin-left: auto; font-size: 0.8rem; color: var(--muted); }
 #cm { flex: 1; min-height: 0; }
 #cm .cm-editor { height: 100%; background: var(--bg); }
-#cm .cm-scroller { font-family: var(--mono); font-size: 14px; line-height: 1.65; padding: 0.5rem 0; }
+/* Geist Mono's ligatures draw "..." as one dot-wide glyph: show what's typed. */
+#cm .cm-scroller { font-family: var(--mono); font-size: 14px; line-height: 1.65; padding: 0.5rem 0; font-variant-ligatures: none; font-feature-settings: "liga" 0, "calt" 0; }
 #cm .cm-content { max-width: 46rem; margin: 0 auto; padding: 0 1rem 40vh; caret-color: var(--fg); }
 #cm .cm-cursor { border-left-color: var(--fg); }
 #cm .cm-focused { outline: none; }
