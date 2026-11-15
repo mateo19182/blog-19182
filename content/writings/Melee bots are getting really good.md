@@ -13,7 +13,7 @@ soundtrack:
 ---
 Super Smash Bros Melee came out in 2001 for the [GameCube](https://en.wikipedia.org/wiki/GameCube), and it's one of the videogames with the highest skill ceiling (and floor) that i know of, proof of that is that there is a lot of people still playing it competitively. I'm not good at all, SSB4 was the only one where I put in the hours, but I know enough to understand some of the complexity, and it's extremely impressive. [^1]
 
-Competitive Melee players average 7 actions per second, in a super fast-paced fight with no input buffer and cool tech like Wavedashing, L-Canceling or Dash Dancing. I enjoy it much more than any other fighters as it does not rely as heavily on combos and is much more "free-form". 
+Competitive Melee players average 6 actions per second, in a super fast-paced fight with no input buffer and cool tech like Wavedashing, L-Canceling or Dash Dancing. I enjoy it much more than any other fighters as it does not rely as heavily on combos and is much more "free-form". 
 
 ![Fox wavedashing, L-cancelling and dash dancing on Final Destination, with the stick and buttons pressed on each frame](/data/melee/tech.webp)
 
@@ -29,11 +29,19 @@ In case you have never played a Smash game: two characters (from the extended Ni
 
 ## Some history
 
-The game shipped with built-in CPUs, levels 1-9. They are not great an any experienced player can beat them easily, mostly because they repeat moves and strategies constantly. It wasn't until **2015**, where Dan "altf4" Petro presented, [SmashBot](https://www.youtube.com/watch?v=_0Z_oN_CZyA) (great DEFCON talk!), a Fox bot that he wrote by hand using [GOFAI](https://en.wikipedia.org/wiki/Symbolic_artificial_intelligence). His main advantage was that it acted frame-perfect and with zero reaction time, but players quickly understood it's tactics and exploited them until they were patched by hand. However, the heavy lifting of reverse engineering the game eventually became [libmelee](https://github.com/vladfi1/libmelee), which almost every bot since is built on.
+Melee itself was made in about 13 months (reaaally fast) and was the GameCube's best selling game. The game shipped with built-in CPUs, levels 1-9. They are not great and any experienced player can beat them easily, mostly because they repeat moves and strategies constantly. It wasn't until **2015**, where Dan "altf4" Petro presented, [SmashBot](https://www.youtube.com/watch?v=_0Z_oN_CZyA) (great DEFCON talk!), a Fox bot that he wrote by hand using [GOFAI](https://en.wikipedia.org/wiki/Symbolic_artificial_intelligence). His main advantage was that it acted frame-perfect and with zero reaction time, but players quickly understood it's tactics and exploited them until they were patched by hand. However, the heavy lifting of reverse engineering the game eventually became [libmelee](https://github.com/vladfi1/libmelee), which almost every bot since is built on.
 
-In **2017**, Vlad Firoiu published [Phillip](https://arxiv.org/abs/1702.06230), trained end to end with asynchronous RL. He trained a network per character and used a naive reward (KOs + Damage Dealt*weight) with [Trust Region Policy Optimization](https://arxiv.org/html/1502.05477v5) and self-play. It was able to beat some professional players, thought mostly because it could react in about 2 frames where a human needs around 12. Still was quite exploitable, as some players found that simply crouching on the ledge would cause it to eventually suicide.
+In **2017**, Vlad Firoiu published [Phillip](https://arxiv.org/abs/1702.06230), trained end to end with asynchronous RL. He trained a network per character and used a naive reward (KOs + Damage Dealt*weight) with [actor-critic](https://en.wikipedia.org/wiki/Actor-critic_algorithm) and self-play. It was able to beat some professional players, thought mostly because it could react in about 2 frames where a human needs around 12. Still was quite exploitable, as some players found that simply crouching on the ledge would cause it to eventually suicide.
 
-In the following years [Slippi](https://slippi.gg/) got popular, allowing for replay files, rollback netplay, a ranked ladder... Accumulating hundreds of thousands of recorded human games to learn from gave birth, in **2024**, to [slippi-ai](https://github.com/vladfi1/slippi-ai), which copied humans from replays first, then improved by self-play, with a human-like reaction delay built in. 
+https://arxiv.org/html/1810.07286v1 vlad 2018 action delay
+
+2017 https://www.yash-sharma.com/files/learning-play-super%20(3).pdf
+
+In the following years [Slippi](https://slippi.gg/) got popular, allowing for replay files, rollback netplay, a ranked ladder... Accumulating hundreds of thousands of recorded human games to learn from gave birth, 
+
+2022 [Project Nabla](https://web.archive.org/web/20221013224436/https://bycn.github.io/2022/08/19/project-nabla-writeup.html)
+
+in **2024**, to [slippi-ai](https://github.com/vladfi1/slippi-ai), which copied humans from replays first, then improved by self-play, with a human-like reaction delay built in. 
 
 Not too long after, in **2025**, Eric Gu's released [HAL](https://ericyuegu.com/behavior-cloning-melee/) (fox only) and [MIMIC](https://github.com/erickfm/MIMIC) (all characters), which
 
@@ -41,18 +49,18 @@ And then the last six weeks:
 
 - Top players took on a crew of Phillips on stream, twice, and barely won both times.
 - Frisson Labs released [Faynt](https://www.frisson-labs.com/faynt), one 10M-parameter model that plays all 26 characters and won 240 of 244 games against Phillip's public releases.
-- A scaled-up HAL (247M parameters) [reached about 2200 Elo](https://ericyuegu.com/hillclimbing-melee/), the top 1% of the human ladder.
+- A scaled-up HAL (247M parameters) [reached about 2200 Elo](https://ericyuegu.com/hillcli0mbing-melee/), the top 1% of the human ladder.
 - [stomped.dev](https://stomped.dev) opened, a ranked ladder for bots only.
 - [melee-sim-light](https://github.com/kyhavlov/melee-sim-light) runs the decompiled game without an emulator, about 100 times faster.
 - Three days before the talk, Frisson released [Reyn](https://www.frisson-labs.com/reyn), a bot you steer with English commands.
 
+
+All this cool work is enabled by a the community, that has built the open tooling over time that allows for this kind of experimentation, and most recently leveraging AI to complete the [decompilation](https://github.com/doldecomp/melee) of the full Melee code. This is I think an incredible opportunity to really push it to the limit.
+
+TAS scene too!
+
+
 So: the strongest bots can be downloaded and run on one home GPU, one of them takes language, the game can be simulated far faster than real time, cloning a decent bot costs a few dollars, and there is a public ladder to test it on. Nobody had put them all on one scale, or asked where an LLM fits among them.
-
-
-
-The community has built some really good open tooling over time that allows for this kind of experimentation: [Slippi](https://slippi.gg) for online play and replays (most of the data for training comes from here, it's a gold mine), [libmelee](https://github.com/vladfi1/libmelee) to read the game and press buttons from Python, and very recently, a [decompilation](https://github.com/doldecomp/melee) of the game's own code.
-TAS community too!
-
 
 
 
