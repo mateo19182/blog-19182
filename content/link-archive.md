@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-11-14
+date: 2026-11-15
 tags: 
   - personal
 ---
@@ -9,6 +9,10 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Reyn — A language-steerable Melee player](https://www.frisson-labs.com/reyn) `Tech` *2026-11-14*
+- [End‑to‑End 4‑Bit Training - Thinking Machines Lab](https://thinkingmachines.ai/blog/end-to-end-4-bit-training) `Tech` *2026-11-14*
+- [LLM Colosseum](https://llm-colosseum.phospho.ai) `Tech` *2026-11-14*
+- [Scaling pre-training on Melee — Eric Gu](https://ericyuegu.com/hillclimbing-melee) `Tech` *2026-11-14*
 - [Attention Required! | Cloudflare](https://www.newthingsunderthesun.com/pub/3wpc3plu/release/1) `Reads` *2026-11-14*
 - [Top Chinese Frontier AI Models Carry the Fingerprint of Export-Controlled NVIDIA Blackwell GPUs · Unemployment Labs](https://unemploymentlabs.com/checkpoint-forensics) `Tech` *2026-11-13*
 - [The Base Contagious Clouds - Will Savage](https://wavage.substack.com/p/the-base-contagious-clouds) `Reads` *2026-11-13*
