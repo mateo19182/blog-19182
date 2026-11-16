@@ -81,13 +81,14 @@ All of these are tiny next to an LLM (10M to 247M parameters), answer in 2 to 8 
 
 All this cool work is enabled by a the community (like the recently opened [stomped.dev](https://stomped.dev), a ranked ladder for bots only with a nice discord community), that has built the open tooling over time that allows for this kind of experimentation, most recently leveraging AI to complete the [decompilation](https://github.com/doldecomp/melee) of the full Melee code, that also gave us  [melee-sim-light](https://github.com/kyhavlov/melee-sim-light), which runs the decompiled game without an emulator, about 100 times faster.
 
+After my adventures in bruteforcing melee, I ended up with a fork of melee-sim-light modified for that, [melee-brute](https://github.com/mateo19182/melee-brute), that I think might be really useful.
+
 ### The TAS scene
 
-Next to the bots there's also scene of tool-assisted play (TAS): a sequence built frame by frame in an emulator. Playback is deterministic, and it's mostly used to show the limits of the game.
+Next to the bots there's also scene of tool-assisted play (TAS): a sequence built frame by frame in an emulator. Playback is deterministic, and it's mostly used to show the limits of the game. I feel like my fork might be useful here, but never got into it so I'm not sure. 
 
 Started in **2005** with Action Replay videos made in the game's hidden frame-by-frame debug mode. Around **2010** Dolphin got proper TAS tools (savestates, frame advance, input movies), and later Lua scripting on top, like PracticalTAS's [ssbm-lua-core](https://github.com/practicaltas/ssbm-lua-core).
 - Some cool showpieces: [combos that all end at exactly 69 hits](https://www.youtube.com/watch?v=F-mUcQXeSSc), and [Target Test for all 25 characters](https://tasvideos.org/7174S) in 2:39.97 in-game time. Many findings flow back to human play.
-
 
 ![A bench game redrawn from its replay file: Faynt (blue) takes a stock from Phillip (red), both playing Fox on Final Destination](/data/melee/replay-2d.webp)
 
@@ -121,12 +122,10 @@ The learned bots are far ahead. Faynt never lost (370-0, so its 3403 is really a
 ![Untimed vs real-time Elo for each model, with the share of live replies thrown away for arriving too late](/data/melee/latency-tax.svg "wide")
 
 Given time to think, GPT-6.1 Sol beats the level 9 CPU (1729), the other models land between 1254 and 1474, and all of them beat Jev (1082). A player that picks a random move at every decision rates 732 here, so the thinking does count.
+Live, all of that disappears: every model drops 492 to 851 points, below the level 1 CPU** (762 to 878).
 
-Live, all of that disappears: every model drops 492 to 851 points and ends up **below the level 1 CPU** (762 to 878), level with each other and with Jev. Sol's replies take 2-3 seconds, so 95% of them arrive too late and get thrown away. I checked it with two controls: my fallback autopilot alone, never asking a model, rates 824, and random moves rate 700. Every live LLM is inside the autopilot's interval, so at this speed the LLM adds nothing measurable over the code it's wrapped in. Even Haiku, fast enough that only 5% of its replies are dropped, is acting on a game state about 70 frames old, which in Melee is several exchanges ago.
+Screenshots don't help either: given an image instead of the text, models performed generally worse. [LLM Colosseum](https://github.com/OpenGenerativeAI/llm-colosseum) had a similar finding in Street Fighter (GPT-3.5 beat GPT-4 by being faster). 
 
-[LLM Colosseum](https://github.com/OpenGenerativeAI/llm-colosseum) saw the same in Street Fighter (GPT-3.5 beat GPT-4 by being faster); here it is on a scale with error bars.
-
-Screenshots don't help either: given an image instead of the text, Haiku mostly didn't notice it was hanging off the ledge. Every model read the damage numbers almost perfectly and got left/right at about chance.
 
 ### Coaching: two words win
 
