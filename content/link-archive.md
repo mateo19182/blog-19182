@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-11-15
+date: 2026-11-16
 tags: 
   - personal
 ---
@@ -9,6 +9,7 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Chasing an audio artifact on power loss](https://subalpinecircuits.com/chasing-an-audio-artifact-on-power-loss) `Tech` *2026-11-15*
 - [Reyn — A language-steerable Melee player](https://www.frisson-labs.com/reyn) `Tech` *2026-11-14*
 - [End‑to‑End 4‑Bit Training - Thinking Machines Lab](https://thinkingmachines.ai/blog/end-to-end-4-bit-training) `Tech` *2026-11-14*
 - [LLM Colosseum](https://llm-colosseum.phospho.ai) `Tech` *2026-11-14*
