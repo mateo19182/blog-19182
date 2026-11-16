@@ -65,25 +65,17 @@ It would also be basically impossible for the bot to control RNG, as the opponen
 
 In **2017**, Vlad Firoiu published [Phillip](https://arxiv.org/abs/1702.06230), trained end to end with asynchronous RL. He trained a network per character and used a naive reward (KOs + Damage Dealt*weight) with [actor-critic](https://en.wikipedia.org/wiki/Actor-critic_algorithm) and self-play. It was able to beat some professional players, thought mostly because it could react in about 2 frames where a human needs around 12. Still was quite exploitable, as some players found that simply crouching on the ledge would cause it to eventually suicide.
 
-The same year, [Sharma and Friedman](https://www.yash-sharma.com/files/learning-play-super%20(3).pdf) (Cooper Union) trained a recurrent DQN that had to act with a 12-frame delay, closer to a human. Vlad's own [follow-up](https://arxiv.org/abs/1810.07286) in 2018 ("At Human Speed") did the same with Phillip: plain RL collapsed under the delay, and adding a learned model that predicts the game brought it back.
+The same year, [Sharma and Friedman](https://www.yash-sharma.com/files/learning-play-super%20(3).pdf) trained a recurrent DQN that had to act with a 12-frame delay, closer to a human. Vlad's own [follow-up](https://arxiv.org/abs/1810.07286) in 2018 ("At Human Speed") did the same with Phillip: plain RL collapsed under the delay, and adding a learned model that predicts the game brought it back.
 
-In the following years [Slippi](https://slippi.gg/) got popular, allowing for replay files, rollback netplay, a ranked ladder... Accumulating hundreds of thousands of recorded human games to learn from changed the recipe: copy humans first, then improve with RL. [Project Nabla](https://web.archive.org/web/20221013224436/https://bycn.github.io/2022/08/19/project-nabla-writeup.html) (Bryan Chen, 2022) was an early example: a small recurrent network cloned from about 100k tournament replays, then PPO, playing with 2 frames of delay. Its Falco went from under 30% to over 80% stock wins against the level 9 CPU and some testers thought it was a human, but the code was never released.
+In the following years [Slippi](https://slippi.gg/) got popular, allowing for replay files, rollback netplay, a ranked ladder... Accumulating hundreds of thousands of recorded human games to learn from changed the recipe: copy humans first, then improve with RL. [Project Nabla](https://web.archive.org/web/20221013224436/https://bycn.github.io/2022/08/19/project-nabla-writeup.html) (Bryan Chen, 2022) was an early example: a small recurrent network cloned from about 100k tournament replays, then PPO, playing with 2 frames of delay.
 
 The big one is Vlad's second Phillip, [slippi-ai](https://github.com/vladfi1/slippi-ai): in the works since 2020 and playing top players in **2024**, it copied humans from replays first, then improved by self-play, with a human-like reaction delay built in.
 
-Not too long after, in **2025**, Eric Gu released [HAL](https://ericyuegu.com/behavior-cloning-melee/) (Fox only), and erickfm took the same recipe to [MIMIC](https://github.com/erickfm/MIMIC), one model per character. Both are small transformers cloned from replays with public weights, and HAL beat the level 9 CPU 95% of the time for about $5 of compute.
+Not too long after, in **2025**, Eric Gu released [HAL](https://ericyuegu.com/behavior-cloning-melee/) (Fox only), and erickfm took the same recipe to [MIMIC](https://github.com/erickfm/MIMIC), one model per character. Then a [scaled-up HAL](https://ericyuegu.com/hillclimbing-melee/) (247M parameters) too. All transformers cloned from replays.
 
-And then the last six weeks:
+Now in late 2026, Frisson Labs released [Faynt](https://www.frisson-labs.com/faynt), one 10M-parameter model that plays all 26 characters, followed by [Reyn](https://www.frisson-labs.com/reyn), a bot you can steer with English commands.
 
-- Top players took on a crew of Phillips on stream, twice, and barely won both times.
-- Frisson Labs released [Faynt](https://www.frisson-labs.com/faynt), one 10M-parameter model that plays all 26 characters and won 240 of 244 games against Phillip's public releases.
-- A scaled-up HAL (247M parameters) [reached about 2200 Elo](https://ericyuegu.com/hillclimbing-melee/), the top 1% of the human ladder.
-- [stomped.dev](https://stomped.dev) opened, a ranked ladder for bots only.
-- [melee-sim-light](https://github.com/kyhavlov/melee-sim-light) runs the decompiled game without an emulator, about 100 times faster.
-- Three days before the talk, Frisson released [Reyn](https://www.frisson-labs.com/reyn), a bot you steer with English commands.
-
-
-All this cool work is enabled by a the community, that has built the open tooling over time that allows for this kind of experimentation, and most recently leveraging AI to complete the [decompilation](https://github.com/doldecomp/melee) of the full Melee code. This is I think an incredible opportunity to really push it to the limit.
+All this cool work is enabled by a the community (like the recently opened [stomped.dev](https://stomped.dev), a ranked ladder for bots only with a nice discord community), that has built the open tooling over time that allows for this kind of experimentation, most recently leveraging AI to complete the [decompilation](https://github.com/doldecomp/melee) of the full Melee code, that also gave us  [melee-sim-light](https://github.com/kyhavlov/melee-sim-light), which runs the decompiled game without an emulator, about 100 times faster.
 
 ### The TAS scene
 
