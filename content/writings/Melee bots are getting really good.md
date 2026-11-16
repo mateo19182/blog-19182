@@ -90,21 +90,19 @@ None of these bots look at the screen. They read the game's memory every frame (
 
 ## The bench
 
-Using Slippi's Dolphin emulator, Fox mirror on FD and Battlefield y put every bot relevant bot that i could find and a couple of my experiments on a couple different categories
+Using Slippi's Dolphin emulator, Fox mirror on FD and Battlefield y put every bot relevant bot that i could find and a couple of my experiments. Everything goes into one Elo fit with the level 9 CPU pinned at 1500. Then left it overnight playing thousands of games.
 
-LLMs are far too slow to press buttons every frame (a frame is 16.7 ms, a reply takes 1-3 seconds), so each setup gives them a higher-level job and lets something faster handle the frames. They read about 150 words of text describing the moment and:
+LLMs are a special case since they are too slow to press buttons every frame (16.7 ms) so each setup gives them a higher-level job and lets something faster handle the frames. They read about 500 tokens of game state with a rolling context window
 
-1. **Play, untimed**: pick a move (`laser`, `shine`, `wavedash`, `recover`...) and the game pauses while they think. This measures only how good their choices are.
-2. **Play, live**: the same at full speed, with a safe default while the model thinks. Replies older than 2 seconds are thrown away.
-3. **Jev plays**: [TypeSafe's Jev](https://typesafe.ai/blog/introducing-system-one-models-and-jev), a fast decision model that answers multiple-choice questions in about 0.15 seconds.
-4. **Coach Reyn**: Reyn plays every frame, and every 5 seconds the coach picks one of its commands.
-5. **Write a bot**: a coding agent gets 30 minutes, a sandbox and a practice tool to write a Python bot that then plays like any other entrant.
-
-Everything goes into one Elo fit with the level 9 CPU pinned at 1500 (400 points of difference means the stronger side wins about 10 games out of 11). Nobody picked the games by hand: a scheduler chose the next one every few seconds, favouring the games that would tighten the widest intervals for the fewest tokens. Overnight it played 1,573 games in 9 hours.
+- **Play, untimed**: pick a move and the game pauses while they think. This measures how good their choices are.
+- **Play, live**: same but no stops.
+- **Jev plays**: [TypeSafe's Jev](https://typesafe.ai/blog/introducing-system-one-models-and-jev), a decision model that answers multiple-choice questions in about 0.15 seconds.
+- **Coach Reyn**: Reyn plays every frame, and every 5 seconds the LLM coach uses text to condition it's play style.
+- **Write a bot**: a coding agent gets 30 minutes, a sandbox and a practice tool to write a Python bot that then plays like any other entrant.
 
 ![Real-time board: every entrant's Elo with its 95% interval, coloured by kind](/data/melee/leaderboard-realtime.svg "wide")
 
-The learned bots are far ahead. **Faynt never lost**: 390-0, most of it against Phillip gm, so its 3358 is really a floor. Then Phillip gm (2488) and HAL (2234). A fun one: CPU levels barely matter in a Fox mirror. Level 1 (1250) sits above level 5 (1194), because the CPU Fox keeps jumping off the stage by itself, and that matters more than its level.
+tThe learned bots are far ahead. Faynt never lost (390-0), then Phillip gm (2488) and HAL (2234).
 
 ---
 
