@@ -57,12 +57,11 @@ The only other frame 1 move is Jigglipuff's rest and it won't ever reach Fox und
 | Short hop in | 15–26 units | Jabs him out of it | −4% |
 | Jab | 26+ units (it misses) | Punishes the recovery, or lasers | −5% to −9% |
 
-The solver runs on the decompiled game (the simulator further down), and the [full write-up](https://github.com/mateo19182/melee-llm/blob/main/docs/optimal-play.md) extends it to every character against Fox. Across 26 characters, 13 moves and gaps of 12 to 40 units, no first move got through a Fox reacting on the next frame (1,085 cases). The one move nobody can react to is Fox's own frame-1 shine, inside a 10 to 16 unit disc depending on the opponent. Exact equilibria of short exchanges come out within ±2.2% damage for every matchup tested, leaning slightly to Fox up close, and Dan's "walk in, then shine" plan loses to a best response in all of them. Yoshi's double-jump armor and a frame-picked Game & Watch Judge 9 beat the shine itself, but Fox still answers both on reaction.
-
-
+The solver runs on the decompiled game and, across 26 characters, no first move got through a Fox reacting on the next frame. Yoshi's double-jump armour and a frame-picked Game & Watch Judge 9 beat the shine itself, but Fox still answers both on reaction. I limited myself to tournament legal moves, but [Ice Climbers' freeze glitch](https://www.ssbwiki.com/Freeze_glitch) or [Ness's yo-yo glitch](https://www.ssbwiki.com/Yo-yo_glitch) also wouldn't be able to reach him.
 
 It would also be basically impossible for the bot to control RNG, as the opponent moves also advance the cycles. But under tournament rules, there is no sudden death, there is another single stock game which the person with the most percentage at the end of 2 minutes loses.
 
+### Back to History
 
 In **2017**, Vlad Firoiu published [Phillip](https://arxiv.org/abs/1702.06230), trained end to end with asynchronous RL. He trained a network per character and used a naive reward (KOs + Damage Dealt*weight) with [actor-critic](https://en.wikipedia.org/wiki/Actor-critic_algorithm) and self-play. It was able to beat some professional players, thought mostly because it could react in about 2 frames where a human needs around 12. Still was quite exploitable, as some players found that simply crouching on the ledge would cause it to eventually suicide.
 
@@ -88,7 +87,7 @@ All this cool work is enabled by a the community, that has built the open toolin
 
 ### The TAS scene
 
-Next to the bots there's a smaller scene of tool-assisted play (TAS): an input file built frame by frame in an emulator, with savestates and unlimited retries, then played back from power-on. Playback is deterministic, so the same inputs always give the same game. It shows what the game allows, not what a human can do.
+Next to the bots there's also scene of tool-assisted play (TAS): a sequence built frame by frame in an emulator. Playback is deterministic, and it's mostly used to show the limits of the game.
 
 - It started in **2005** with Action Replay videos made in the game's hidden frame-by-frame debug mode. Around **2010** Dolphin got proper TAS tools (savestates, frame advance, input movies), and later Lua scripting on top, like PracticalTAS's [ssbm-lua-core](https://github.com/practicaltas/ssbm-lua-core).
 - The showpieces: [combos that all end at exactly 69 hits](https://www.youtube.com/watch?v=F-mUcQXeSSc), and [Target Test for all 25 characters](https://tasvideos.org/7174S) in 2:39.97 in-game time. Findings flow back to human play too: an Ice Climbers route taken from TAS saved 91 frames in the real-time [race to break 3:00](https://www.youtube.com/watch?v=qsT08n_96p4).
