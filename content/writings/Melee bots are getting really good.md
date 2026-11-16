@@ -35,12 +35,15 @@ Melee itself was made in about 13 months (reaaally fast) and was the GameCube's 
 
 A brief intermission, in one of the questions at the end of the talk Dan shares a thought experiment on what the an optimal melee bot would play against each other. In summary, 
 
-> Every projectile can be reflected within a two-frame window, so throwing them is pointless <
+> Every projectile can be reflected within a two-frame window, so throwing them is pointless.
+>
 > The fastest move in the game is Fox's shine, which hits on its very first frame. So two perfect Foxes walk toward each other until they're exactly in range and shine on the same frame. The shines cancel, and from then on it's a deadlock.
-> Best play for both is to jump and multishine, frame-perfectly, until the clock runs out. Then the game goes to Sudden Death, where bob-ombs fall from the sky. apparently at random.
+>
+> Best play for both is to jump and multishine, frame-perfectly, until the clock runs out. Then the game goes to Sudden Death, where bob-ombs fall from the sky, apparently at random.
+>
 > But they aren't random, melee RNG is predictable. Real optimal strategy then it's to steer the game so that when the deadlock ends eight minutes later, the generator is in a state that drops the bombs where your opponent has to choose between running into your shine or into a bomb.
 
-Me being a fan of these kind of thought experiments, found some holes in it, and ended up creating a solver to find out what is actually the optimal play since we now have the decompiled source code, and in theory, Melee checks all the boxes to have an optimal value. I might be missing something so if you have any ideas please reach out to me.
+Me being a fan of these kind of thought experiments, found some holes in it, and ended up creating a [solver](https://github.com/mateo19182/melee-llm/tree/main/melee_llm/solver) to find out what is actually the optimal play since we now have the decompiled source code, and in theory, Melee checks all the boxes to have an optimal value. I might be missing something so if you have any ideas please reach out to me.
 
 Shine is indeed the superior move once you are in range, but it will loose against attacks with more range, like Fox's short hop N-air. This makes it so the optimal move is not to walk up to your opponent, but the opposite. Defence is stronger in all the situations I could think of, and there is no incentive to commit before seeing the opponent's move, since the bot can read game state memory and always react on time.
 
@@ -54,6 +57,8 @@ The only other frame 1 move is Jigglipuff's rest and it won't ever reach Fox und
 | Short hop in | 15–26 units | Jabs him out of it | −4% |
 | Jab | 26+ units (it misses) | Punishes the recovery, or lasers | −5% to −9% |
 
+The solver runs on the decompiled game (the simulator further down), and the [full write-up](https://github.com/mateo19182/melee-llm/blob/main/docs/optimal-play.md) extends it to every character against Fox. Across 26 characters, 13 moves and gaps of 12 to 40 units, no first move got through a Fox reacting on the next frame (1,085 cases). The one move nobody can react to is Fox's own frame-1 shine, inside a 10 to 16 unit disc depending on the opponent. Exact equilibria of short exchanges come out within ±2.2% damage for every matchup tested, leaning slightly to Fox up close, and Dan's "walk in, then shine" plan loses to a best response in all of them. Yoshi's double-jump armor and a frame-picked Game & Watch Judge 9 beat the shine itself, but Fox still answers both on reaction.
+
 
 
 It would also be basically impossible for the bot to control RNG, as the opponent moves also advance the cycles. But under tournament rules, there is no sudden death, there is another single stock game which the person with the most percentage at the end of 2 minutes loses.
@@ -61,23 +66,19 @@ It would also be basically impossible for the bot to control RNG, as the opponen
 
 In **2017**, Vlad Firoiu published [Phillip](https://arxiv.org/abs/1702.06230), trained end to end with asynchronous RL. He trained a network per character and used a naive reward (KOs + Damage Dealt*weight) with [actor-critic](https://en.wikipedia.org/wiki/Actor-critic_algorithm) and self-play. It was able to beat some professional players, thought mostly because it could react in about 2 frames where a human needs around 12. Still was quite exploitable, as some players found that simply crouching on the ledge would cause it to eventually suicide.
 
-https://arxiv.org/html/1810.07286v1 vlad 2018 action delay
+The same year, [Sharma and Friedman](https://www.yash-sharma.com/files/learning-play-super%20(3).pdf) (Cooper Union) trained a recurrent DQN that had to act with a 12-frame delay, closer to a human. Vlad's own [follow-up](https://arxiv.org/abs/1810.07286) in 2018 ("At Human Speed") did the same with Phillip: plain RL collapsed under the delay, and adding a learned model that predicts the game brought it back.
 
-2017 https://www.yash-sharma.com/files/learning-play-super%20(3).pdf
+In the following years [Slippi](https://slippi.gg/) got popular, allowing for replay files, rollback netplay, a ranked ladder... Accumulating hundreds of thousands of recorded human games to learn from changed the recipe: copy humans first, then improve with RL. [Project Nabla](https://web.archive.org/web/20221013224436/https://bycn.github.io/2022/08/19/project-nabla-writeup.html) (Bryan Chen, 2022) was an early example: a small recurrent network cloned from about 100k tournament replays, then PPO, playing with 2 frames of delay. Its Falco went from under 30% to over 80% stock wins against the level 9 CPU and some testers thought it was a human, but the code was never released.
 
-In the following years [Slippi](https://slippi.gg/) got popular, allowing for replay files, rollback netplay, a ranked ladder... Accumulating hundreds of thousands of recorded human games to learn from gave birth, 
+The big one is Vlad's second Phillip, [slippi-ai](https://github.com/vladfi1/slippi-ai): in the works since 2020 and playing top players in **2024**, it copied humans from replays first, then improved by self-play, with a human-like reaction delay built in.
 
-2022 [Project Nabla](https://web.archive.org/web/20221013224436/https://bycn.github.io/2022/08/19/project-nabla-writeup.html)
-
-in **2024**, to [slippi-ai](https://github.com/vladfi1/slippi-ai), which copied humans from replays first, then improved by self-play, with a human-like reaction delay built in. 
-
-Not too long after, in **2025**, Eric Gu's released [HAL](https://ericyuegu.com/behavior-cloning-melee/) (fox only) and [MIMIC](https://github.com/erickfm/MIMIC) (all characters), which
+Not too long after, in **2025**, Eric Gu released [HAL](https://ericyuegu.com/behavior-cloning-melee/) (Fox only), and erickfm took the same recipe to [MIMIC](https://github.com/erickfm/MIMIC), one model per character. Both are small transformers cloned from replays with public weights, and HAL beat the level 9 CPU 95% of the time for about $5 of compute.
 
 And then the last six weeks:
 
 - Top players took on a crew of Phillips on stream, twice, and barely won both times.
 - Frisson Labs released [Faynt](https://www.frisson-labs.com/faynt), one 10M-parameter model that plays all 26 characters and won 240 of 244 games against Phillip's public releases.
-- A scaled-up HAL (247M parameters) [reached about 2200 Elo](https://ericyuegu.com/hillcli0mbing-melee/), the top 1% of the human ladder.
+- A scaled-up HAL (247M parameters) [reached about 2200 Elo](https://ericyuegu.com/hillclimbing-melee/), the top 1% of the human ladder.
 - [stomped.dev](https://stomped.dev) opened, a ranked ladder for bots only.
 - [melee-sim-light](https://github.com/kyhavlov/melee-sim-light) runs the decompiled game without an emulator, about 100 times faster.
 - Three days before the talk, Frisson released [Reyn](https://www.frisson-labs.com/reyn), a bot you steer with English commands.
@@ -93,7 +94,7 @@ Next to the bots there's a smaller scene of tool-assisted play (TAS): an input f
 - The showpieces: [combos that all end at exactly 69 hits](https://www.youtube.com/watch?v=F-mUcQXeSSc), and [Target Test for all 25 characters](https://tasvideos.org/7174S) in 2:39.97 in-game time. Findings flow back to human play too: an Ice Climbers route taken from TAS saved 91 frames in the real-time [race to break 3:00](https://www.youtube.com/watch?v=qsT08n_96p4).
 - Melee's "random" numbers come from one 32-bit seed and a simple formula (`seed × 214013 + 2531011`), advanced once per random call. TASers steer it, for example by picking random characters on the select screen, which spends exactly two calls. That's the same predictability Dan's sudden-death bob-omb plan relies on.
 
-A TAS and a bot read the same game state and press the same virtual controller, but a TAS is open loop: it knows the whole future and is searched offline. A bot sees each frame once and has 16 ms. Other games automate TAS with search over their decompiled code (Super Mario 64 has brute-forcers that do exactly that), and as far as I could find nobody has done it for Melee yet: it's still Lua scripts and frame-by-frame editing by hand.
+A TAS and a bot read the same game state and press the same virtual controller, but a TAS is open loop: it knows the whole future and is searched offline. A bot sees each frame once and has 16 ms. Other games automate TAS with search over their decompiled code (Super Mario 64 has brute-forcers that do exactly that), and as far as I could find nobody has done it for Melee yet: it's still Lua scripts and frame-by-frame editing by hand. My notes, with sources, are [here](https://github.com/mateo19182/melee-llm/blob/main/docs/tas.md).
 
 
 So: the strongest bots can be downloaded and run on one home GPU, one of them takes language, the game can be simulated far faster than real time, cloning a decent bot costs a few dollars, and there is a public ladder to test it on. Nobody had put them all on one scale, or asked where an LLM fits among them.
@@ -122,15 +123,15 @@ They are tiny next to an LLM (10M to 247M parameters), answer in 2 to 8 millisec
 
 ## The bench
 
-Using Slippi's Dolphin emulator, Fox mirror on FD and Battlefield y put every bot relevant bot that i could find and a couple of my experiments. Everything goes into one Elo fit with the level 9 CPU pinned at 1500. Then left it overnight playing thousands of games: 4,082 rated games by the end.
+Using Slippi's Dolphin emulator, Fox mirror on FD and Battlefield y put every bot relevant bot that i could find and a couple of my experiments. Everything goes into [one Elo fit](https://github.com/mateo19182/melee-llm/tree/main/melee_llm/bench) with the level 9 CPU pinned at 1500. Then left it overnight playing thousands of games: 4,082 rated games by the end.
 
-LLMs are a special case since they are too slow to press buttons every frame (16.7 ms) so each setup gives them a higher-level job and lets something faster handle the frames. They read about 500 tokens of game state with a rolling context window
+LLMs are a special case since they are too slow to press buttons every frame (16.7 ms) so each setup gives them a higher-level job and lets something faster handle the frames. They read about 500 tokens of [game state](https://github.com/mateo19182/melee-llm/blob/main/melee_llm/state.py) with a rolling context window
 
-- **Play, untimed**: pick a move and the game pauses while they think. This measures how good their choices are.
-- **Play, live**: same but no stops.
-- **Jev plays**: [TypeSafe's Jev](https://typesafe.ai/blog/introducing-system-one-models-and-jev), a decision model that answers multiple-choice questions in about 0.15 seconds.
-- **Coach Reyn**: Reyn plays every frame, and every 5 seconds the LLM coach uses text to condition it's play style.
-- **Write a bot**: a coding agent gets 30 minutes, a sandbox and a practice tool to write a Python bot that then plays like any other entrant.
+- **[Play, untimed](https://github.com/mateo19182/melee-llm/blob/main/melee_llm/agents/llm_paused.py)**: pick a move and the game pauses while they think. This measures how good their choices are.
+- **[Play, live](https://github.com/mateo19182/melee-llm/blob/main/melee_llm/agents/llm_live.py)**: same but no stops.
+- **[Jev plays](https://github.com/mateo19182/melee-llm/blob/main/melee_llm/agents/jev_player.py)**: [TypeSafe's Jev](https://typesafe.ai/blog/introducing-system-one-models-and-jev), a decision model that answers multiple-choice questions in about 0.15 seconds.
+- **[Coach Reyn](https://github.com/mateo19182/melee-llm/blob/main/melee_llm/agents/coach.py)**: Reyn plays every frame, and every 5 seconds the LLM coach uses text to condition it's play style.
+- **[Write a bot](https://github.com/mateo19182/melee-llm/tree/main/melee_llm/botwriter)**: a coding agent gets 30 minutes, a sandbox and a practice tool to write a Python bot that then plays like any other entrant.
 
 ![Real-time board: every entrant's Elo with its 95% interval, coloured by kind](/data/melee/leaderboard-realtime.svg "wide")
 
@@ -180,18 +181,18 @@ That tie says more about the starter than about the models. The new starter was 
 
 ## What else came out of it
 
-**A website** to watch it all, dressed like Melee's own menus: the boards with a page per entrant, every game on the server drawn live in 2D, a launcher for any matchup, every replay with the AI's decisions on a timeline, and a Live page streaming the real game.
+**A [website](https://github.com/mateo19182/melee-llm/tree/main/melee_llm/web)** to watch it all, dressed like Melee's own menus: the boards with a page per entrant, every game on the server drawn live in 2D, a launcher for any matchup, every replay with the AI's decisions on a timeline, and a Live page streaming the real game.
 
-**An AI commentary booth** on that Live page. Two casters, Charlie on play-by-play ("loud, fast, loses his mind on big moments") and Laura on colour ("dry wit, teases Charlie"). A fast LLM watches the game's events and writes a line every few seconds, ElevenLabs voices them, only while someone is listening. A real exchange:
+**An [AI commentary booth](https://github.com/mateo19182/melee-llm/blob/main/melee_llm/commentary.py)** on that Live page. Two casters, Charlie on play-by-play ("loud, fast, loses his mind on big moments") and Laura on colour ("dry wit, teases Charlie"). A fast LLM watches the game's events and writes a line every few seconds, ElevenLabs voices them, only while someone is listening. A real exchange:
 
 > **Charlie:** HAL MASTER's Fox is in the air and Faynt's Marth is waiting for him!
 > **Laura:** Waiting is the right word. Faynt doesn't chase, Charlie, he collects.
 
-**A simulator.** I hooked every player, learned bots included, into melee-sim-light and checked it against 300 replays: 287 matched frame for frame (the other 13 were unfinished files), about 100 times faster than the emulator. The catch is that it has no built-in CPUs.
+**A [simulator](https://github.com/mateo19182/melee-llm/tree/main/melee_llm/sim).** I hooked every player, learned bots included, into melee-sim-light and checked it against 300 replays: 287 matched frame for frame (the other 13 were unfinished files), about 100 times faster than the emulator. The catch is that it has no built-in CPUs.
 
-**A bot of my own, m19182-yoshi.** A small transformer that copies human play, the way HAL did: it reads the last 4 seconds of the game and predicts the next controller input. The first version (6M parameters) lost all 12 games against the level 9 CPU; a 20M one won 1 of 12. What made the difference was data: the current best, `bc-20m-ft`, is first pretrained on 1.4 billion frames of Pro and Master games with every character, then fine-tuned on Yoshi with 2 to 4 frames of delay, like online play. It won 5 of 6 against the level 9 CPU and its first games off MIMIC's Marth (2 of 6) and HAL's Yoshi (1 of 6), but it still loses every game to Phillip, HAL's Fox and Faynt. Then I tried the second half of the recipe, self-play RL in the simulator. It beat its teacher about 80% of the time there by iteration 100, then collapsed, and those snapshots played worse than `bc-20m-ft` in the real game. Lesson learned: the simulator is great for speed, but a checkpoint only counts once it wins in Dolphin.
+**A bot of my own, [m19182-yoshi](https://github.com/mateo19182/melee-llm/tree/main/train/meleebot).** A small transformer that copies human play, the way HAL did: it reads the last 4 seconds of the game and predicts the next controller input. The first version (6M parameters) lost all 12 games against the level 9 CPU; a 20M one won 1 of 12. What made the difference was data: the current best, `bc-20m-ft`, is first pretrained on 1.4 billion frames of Pro and Master games with every character, then fine-tuned on Yoshi with 2 to 4 frames of delay, like online play. It won 5 of 6 against the level 9 CPU and its first games off MIMIC's Marth (2 of 6) and HAL's Yoshi (1 of 6), but it still loses every game to Phillip, HAL's Fox and Faynt. Then I tried the second half of the recipe, [self-play RL](https://github.com/mateo19182/melee-llm/tree/main/train/meleebot/rl) in the simulator. It beat its teacher about 80% of the time there by iteration 100, then collapsed, and those snapshots played worse than `bc-20m-ft` in the real game. Lesson learned: the simulator is great for speed, but a checkpoint only counts once it wins in Dolphin.
 
-**Playing them yourself.** You can play any of these bots with a controller on your own machine with `play.py`; playing them over netplay from the website is next. The board has a slot waiting for human results.
+**Playing them yourself.** You can play any of these bots with a controller on your own machine with [`play.py`](https://github.com/mateo19182/melee-llm/blob/main/play.py); playing them over netplay from the website is next. The board has a slot waiting for human results.
 
 ---
 
@@ -204,7 +205,7 @@ That tie says more about the starter than about the models. The new starter was 
 
 ## What's next
 
-I'm giving it one or two more weeks, with LLMs no longer at the centre. For m19182-yoshi the goal is now the best Yoshi I can make by following the published recipes more closely: I've only used about 10% of HAL's dataset so far, and self-play needs a better learning signal before it helps. The other thing I want to try is TAS-style search in the simulator: it already saves and restores whole games at about 100 times Dolphin's speed, which is the setup Mario 64's brute-forcers use. That could answer questions like "can anything survive this edgeguard?" or label the best move from real replay positions to train the bot on. The catches are that the simulator only does versus matches and its RNG differs from Dolphin's. Also on the list: putting m19182-yoshi and myself on the bench, and getting people to play the bots.
+I'm giving it one or two more weeks, with LLMs no longer at the centre. For m19182-yoshi the goal is now the best Yoshi I can make by following the published recipes more closely: I've only used about 10% of HAL's dataset so far, and self-play needs a better learning signal before it helps. The other thing I want to try is TAS-style search in the simulator: it already [saves and restores](https://github.com/mateo19182/melee-llm/blob/main/melee_llm/sim/world.py) whole games at about 100 times Dolphin's speed, which is the setup Mario 64's brute-forcers use, and the [solver](https://github.com/mateo19182/melee-llm/tree/main/melee_llm/solver) above already runs on it. That could answer questions like "can anything survive this edgeguard?" or label the best move from real replay positions to train the bot on. The catches are that the simulator only does versus matches and its RNG differs from Dolphin's. Also on the list: putting m19182-yoshi and myself on the bench, and getting people to play the bots.
 
 
 
