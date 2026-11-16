@@ -1,54 +1,58 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 222" width="760" height="222" role="img" aria-label="The latency tax: same model, untimed vs real time">
 <title>The latency tax: same model, untimed vs real time</title>
-<style>text{font-family:system-ui, -apple-system, "Segoe UI", sans-serif;font-variant-numeric:tabular-nums}.bg{fill:#e9e7e1}.ring{stroke:#e9e7e1}.t1{fill:#2b2926}.t2{fill:#4a463f}.tm{fill:#6a655c}.grid{stroke:#d8d5cd}.axis{stroke:#b9b5ab}.band{fill:#999489;fill-opacity:.12}.conn{stroke:#a9a59a}.c-learned{fill:#1f6fd1;stroke:#1f6fd1}.c-coach{fill:#d95926;stroke:#d95926}.c-written{fill:#199e70;stroke:#199e70}.c-llm{fill:#a66d00;stroke:#a66d00}.c-jev{fill:#d55181;stroke:#d55181}.c-ref{fill:#7d7a73;stroke:#7d7a73}.ci{fill:none;stroke-width:2;stroke-linecap:round}.hollow{fill-opacity:0}</style>
+<style>text{font-family:system-ui, -apple-system, "Segoe UI", sans-serif;font-variant-numeric:tabular-nums}.bg{fill:#080b28}.ring{stroke:#080b28}.t1{fill:#e8ebf7}.t2{fill:#b5bbdc}.tm{fill:#8088b4}.grid{stroke:#1b2250}.axis{stroke:#2e3878}.band{fill:#9198c0;fill-opacity:.12}.conn{stroke:#3a4590}.c-learned{fill:#3987e5;stroke:#3987e5}.c-coach{fill:#d95926;stroke:#d95926}.c-written{fill:#199e70;stroke:#199e70}.c-llm{fill:#c98500;stroke:#c98500}.c-jev{fill:#d55181;stroke:#d55181}.c-ref{fill:#898781;stroke:#898781}.ci{fill:none;stroke-width:2;stroke-linecap:round}.hollow{fill-opacity:0}</style>
 <rect class="bg" x="0" y="0" width="760" height="222" rx="8"/>
 <text x="16.0" y="26.0" class="t1" font-size="15" text-anchor="start" font-weight="600">The latency tax: same model, untimed vs real time</text>
-<text x="16.0" y="45.0" class="t2" font-size="12" text-anchor="start">Untimed: the game waits for every decision. Real time: 60 fps, never waits. 95% intervals are about ±110-145.</text>
+<text x="16.0" y="45.0" class="t2" font-size="12" text-anchor="start">Untimed: the game waits for every decision. Real time: 60 fps, never waits. 95% intervals are about ±125-190.</text>
 <circle cx="21.0" cy="64.0" r="4.5" class="c-learned ring" stroke-width="2"/>
 <text x="31.0" y="68.0" class="t2" font-size="11.5" text-anchor="start">Untimed (game waits)</text>
 <circle cx="187.0" cy="64.0" r="4.5" class="c-coach ring" stroke-width="2"/>
 <text x="197.0" y="68.0" class="t2" font-size="11.5" text-anchor="start">Real time</text>
 <line x1="216.0" x2="216.0" y1="76" y2="188" class="grid" stroke-width="1"/>
-<text x="216.0" y="204.0" class="tm" font-size="11" text-anchor="middle">900</text>
-<line x1="298.4" x2="298.4" y1="76" y2="188" class="grid" stroke-width="1"/>
-<text x="298.4" y="204.0" class="tm" font-size="11" text-anchor="middle">1,100</text>
-<line x1="380.8" x2="380.8" y1="76" y2="188" class="grid" stroke-width="1"/>
-<text x="380.8" y="204.0" class="tm" font-size="11" text-anchor="middle">1,300</text>
-<line x1="463.2" x2="463.2" y1="76" y2="188" class="grid" stroke-width="1"/>
-<text x="463.2" y="204.0" class="tm" font-size="11" text-anchor="middle">1,500</text>
-<line x1="545.6" x2="545.6" y1="76" y2="188" class="grid" stroke-width="1"/>
-<text x="545.6" y="204.0" class="tm" font-size="11" text-anchor="middle">1,700</text>
-<line x1="628.0" x2="628.0" y1="76" y2="188" class="grid" stroke-width="1"/>
-<text x="628.0" y="204.0" class="tm" font-size="11" text-anchor="middle">1,900</text>
+<text x="216.0" y="204.0" class="tm" font-size="11" text-anchor="middle">600</text>
+<line x1="279.4" x2="279.4" y1="76" y2="188" class="grid" stroke-width="1"/>
+<text x="279.4" y="204.0" class="tm" font-size="11" text-anchor="middle">800</text>
+<line x1="342.8" x2="342.8" y1="76" y2="188" class="grid" stroke-width="1"/>
+<text x="342.8" y="204.0" class="tm" font-size="11" text-anchor="middle">1,000</text>
+<line x1="406.2" x2="406.2" y1="76" y2="188" class="grid" stroke-width="1"/>
+<text x="406.2" y="204.0" class="tm" font-size="11" text-anchor="middle">1,200</text>
+<line x1="469.5" x2="469.5" y1="76" y2="188" class="grid" stroke-width="1"/>
+<text x="469.5" y="204.0" class="tm" font-size="11" text-anchor="middle">1,400</text>
+<line x1="532.9" x2="532.9" y1="76" y2="188" class="grid" stroke-width="1"/>
+<text x="532.9" y="204.0" class="tm" font-size="11" text-anchor="middle">1,600</text>
+<line x1="596.3" x2="596.3" y1="76" y2="188" class="grid" stroke-width="1"/>
+<text x="596.3" y="204.0" class="tm" font-size="11" text-anchor="middle">1,800</text>
 <text x="628.0" y="220.0" class="tm" font-size="11" text-anchor="end">Elo (CPU 9 = 1500)</text>
-<line x1="463.2" x2="463.2" y1="76" y2="188" class="axis" stroke-width="1.5"/>
-<text x="467.2" y="86.0" class="tm" font-size="10.5" text-anchor="start">CPU 9</text>
-<line x1="337.1" x2="337.1" y1="76" y2="188" class="axis" stroke-width="1.5"/>
-<text x="341.1" y="86.0" class="tm" font-size="10.5" text-anchor="start">CPU 5</text>
+<line x1="501.2" x2="501.2" y1="76" y2="188" class="axis" stroke-width="1.5"/>
+<text x="505.2" y="86.0" class="tm" font-size="10.5" text-anchor="start">CPU 9</text>
+<line x1="335.2" x2="335.2" y1="76" y2="188" class="axis" stroke-width="1.5"/>
+<text x="339.2" y="86.0" class="tm" font-size="10.5" text-anchor="start">CPU 1</text>
+<line x1="287.0" x2="287.0" y1="76" y2="188" class="axis" stroke-width="1.5"/>
+<text x="291.0" y="86.0" class="tm" font-size="10.5" text-anchor="start">no model</text>
 <text x="746.0" y="72.0" class="tm" font-size="10.5" text-anchor="end">replies too stale</text>
-<line x1="304.2" x2="542.3" y1="92.0" y2="92.0" class="conn" stroke-width="2"/>
+<line x1="304.1" x2="573.8" y1="92.0" y2="92.0" class="conn" stroke-width="2"/>
 <text x="200.0" y="96.0" class="t1" font-size="12" text-anchor="end" font-weight="600">GPT-6.1 Sol</text>
-<circle cx="542.3" cy="92.0" r="4.5" class="c-learned ring" stroke-width="2"/>
+<circle cx="573.8" cy="92.0" r="4.5" class="c-learned ring" stroke-width="2"/>
 <text x="746.0" y="96.0" class="tm" font-size="11" text-anchor="end">95% dropped</text>
-<circle cx="304.2" cy="92.0" r="4.5" class="c-coach ring" stroke-width="2"/>
-<line x1="288.1" x2="437.7" y1="112.0" y2="112.0" class="conn" stroke-width="2"/>
+<circle cx="304.1" cy="92.0" r="4.5" class="c-coach ring" stroke-width="2"/>
+<line x1="292.7" x2="493.0" y1="112.0" y2="112.0" class="conn" stroke-width="2"/>
 <text x="200.0" y="116.0" class="t1" font-size="12" text-anchor="end" font-weight="600">Sonnet 5.5</text>
-<circle cx="437.7" cy="112.0" r="4.5" class="c-learned ring" stroke-width="2"/>
+<circle cx="493.0" cy="112.0" r="4.5" class="c-learned ring" stroke-width="2"/>
 <text x="746.0" y="116.0" class="tm" font-size="11" text-anchor="end">35% dropped</text>
-<circle cx="288.1" cy="112.0" r="4.5" class="c-coach ring" stroke-width="2"/>
-<line x1="284.0" x2="432.7" y1="132.0" y2="132.0" class="conn" stroke-width="2"/>
+<circle cx="292.7" cy="112.0" r="4.5" class="c-coach ring" stroke-width="2"/>
+<line x1="282.6" x2="474.9" y1="132.0" y2="132.0" class="conn" stroke-width="2"/>
 <text x="200.0" y="136.0" class="t1" font-size="12" text-anchor="end" font-weight="600">GPT-6 Luna</text>
-<circle cx="432.7" cy="132.0" r="4.5" class="c-learned ring" stroke-width="2"/>
+<circle cx="474.9" cy="132.0" r="4.5" class="c-learned ring" stroke-width="2"/>
 <text x="746.0" y="136.0" class="tm" font-size="11" text-anchor="end">23% dropped</text>
-<circle cx="284.0" cy="132.0" r="4.5" class="c-coach ring" stroke-width="2"/>
-<line x1="279.9" x2="391.9" y1="152.0" y2="152.0" class="conn" stroke-width="2"/>
+<circle cx="282.6" cy="132.0" r="4.5" class="c-coach ring" stroke-width="2"/>
+<line x1="267.3" x2="423.3" y1="152.0" y2="152.0" class="conn" stroke-width="2"/>
 <text x="200.0" y="156.0" class="t1" font-size="12" text-anchor="end" font-weight="600">Haiku 4.5</text>
-<circle cx="391.9" cy="152.0" r="4.5" class="c-learned ring" stroke-width="2"/>
+<circle cx="423.3" cy="152.0" r="4.5" class="c-learned ring" stroke-width="2"/>
 <text x="746.0" y="156.0" class="tm" font-size="11" text-anchor="end">5% dropped</text>
-<circle cx="279.9" cy="152.0" r="4.5" class="c-coach ring" stroke-width="2"/>
-<line x1="291.8" x2="301.3" y1="172.0" y2="172.0" class="conn" stroke-width="2"/>
+<circle cx="267.3" cy="152.0" r="4.5" class="c-coach ring" stroke-width="2"/>
+<line x1="299.4" x2="368.8" y1="172.0" y2="172.0" class="conn" stroke-width="2"/>
 <text x="200.0" y="176.0" class="t1" font-size="12" text-anchor="end" font-weight="600">Jev</text>
-<circle cx="301.3" cy="172.0" r="4.5" class="c-learned ring" stroke-width="2"/>
+<circle cx="368.8" cy="172.0" r="4.5" class="c-learned ring" stroke-width="2"/>
 <text x="746.0" y="176.0" class="tm" font-size="11" text-anchor="end">7% dropped</text>
-<circle cx="291.8" cy="172.0" r="4.5" class="c-coach ring" stroke-width="2"/>
+<circle cx="299.4" cy="172.0" r="4.5" class="c-coach ring" stroke-width="2"/>
 </svg>
