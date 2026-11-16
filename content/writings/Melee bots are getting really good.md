@@ -31,6 +31,20 @@ In case you have never played a Smash game: two characters (from the extended Ni
 
 Melee itself was made in about 13 months (reaaally fast) and was the GameCube's best selling game. The game shipped with built-in CPUs, levels 1-9. They are not great and any experienced player can beat them easily, mostly because they repeat moves and strategies constantly. It wasn't until **2015**, where Dan "altf4" Petro presented, [SmashBot](https://www.youtube.com/watch?v=_0Z_oN_CZyA) (great DEFCON talk!), a Fox bot that he wrote by hand using [GOFAI](https://en.wikipedia.org/wiki/Symbolic_artificial_intelligence). His main advantage was that it acted frame-perfect and with zero reaction time, but players quickly understood it's tactics and exploited them until they were patched by hand. However, the heavy lifting of reverse engineering the game eventually became [libmelee](https://github.com/vladfi1/libmelee), which almost every bot since is built on.
 
+A brief intermission, in one of the questions at the end of the talk Dan shares a thought experiment on what the an optimal melee bot would play against each other. In summary, 
+
+> Every projectile can be reflected within a two-frame window, so throwing them is pointless <
+> The fastest move in the game is Fox's shine, which hits on its very first frame. So two perfect Foxes walk toward each other until they're exactly in range and shine on the same frame. The shines cancel, and from then on it's a deadlock.
+> Best play for both is to jump and multishine, frame-perfectly, until the clock runs out. Then the game goes to Sudden Death, where bob-ombs fall from the sky. apparently at random.
+> But they aren't random, melee RNG is predictable. Real optimal strategy then it's to steer the game so that when the deadlock ends eight minutes later, the generator is in a state that drops the bombs where your opponent has to choose between running into your shine or into a bomb.
+
+Me being a fan of these kind of thought experiments, found some holes in it, and ended up creating a solver to find out what is actually the optimal play since we now have the decompiled source code, and in theory, Melee checks all the boxes to have an optimal value.
+
+Shine is indeed the superior move once you are in range, but it will loose against attacks with more range, like Fox's short hop N-air. This makes it so the optimal move is not to walk up to your opponent, but the opposite. Defence is stronger in all the situations I could think of, and there is no incentive to commit before seeing the opponent's move.
+
+It would also be basically impossible for the bot to control RNG, as the opponent moves also advance the RNG clock. But under tournament rules, there is no sudden death, there is another single stock game which the person with the most percentage at the end of 2 minutes loses.
+
+
 In **2017**, Vlad Firoiu published [Phillip](https://arxiv.org/abs/1702.06230), trained end to end with asynchronous RL. He trained a network per character and used a naive reward (KOs + Damage Dealt*weight) with [actor-critic](https://en.wikipedia.org/wiki/Actor-critic_algorithm) and self-play. It was able to beat some professional players, thought mostly because it could react in about 2 frames where a human needs around 12. Still was quite exploitable, as some players found that simply crouching on the ledge would cause it to eventually suicide.
 
 https://arxiv.org/html/1810.07286v1 vlad 2018 action delay
@@ -76,7 +90,7 @@ None of these bots look at the screen. They read the game's memory every frame (
 
 ## The bench
 
-Everything runs on my home server: the real game in Slippi's Dolphin emulator, a dozen games side by side, Python driving virtual controllers. Every game is Fox against Fox on two tournament stages. The entrants are the built-in CPUs, three small scripted bots, the five published learned bots (Phillip at several skill tiers, HAL, MIMIC, Faynt and Reyn), and LLMs.
+Using Slippi's Dolphin emulator, Fox mirror on FD and Battlefield y put every bot relevant bot that i could find and a couple of my experiments on a couple different categories
 
 LLMs are far too slow to press buttons every frame (a frame is 16.7 ms, a reply takes 1-3 seconds), so each setup gives them a higher-level job and lets something faster handle the frames. They read about 150 words of text describing the moment and:
 
