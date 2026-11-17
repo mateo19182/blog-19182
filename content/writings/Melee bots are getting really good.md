@@ -1,6 +1,6 @@
 ---
 title: Melee bots are getting really good
-summary: "Putting ten years of Super Smash Bros. Melee bots, and a few LLMs, on one Elo scale, plus a bot of my own."
+summary: "Putting ten years of Super Smash Bros. Melee bots, and a few LLMs, on one Elo scale, plus a bot of my own and a brute-force search for what two perfect Foxes would do."
 date: 2026-11-14
 draft: true
 tags:
