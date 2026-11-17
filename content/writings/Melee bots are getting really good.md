@@ -91,7 +91,7 @@ And at the ledge the guess is no longer even. One more thing can go wrong there:
 
 ![Blue, with his back to the ledge, shines red's shield. The pushback slides blue off the stage while he is still holding the shine](/data/melee/fox-ledge.webp "wide")
 
-But the squeeze only works on a Fox who refuses to ever guess, and a perfect one doesn't have to. In the middle of the stage the guess the attacker offers is worth exactly 0, so he can just take it there instead of backing into a bad ledge. I mapped 90 positions in the middle of the stage (standing, walking and dashing attacker, at every distance near contact), about 1.2 billion game states, and found no spot where taking the guess costs him. That's what it would take to break the stalemate: a position mid-stage where the guess isn't even.
+But the squeeze only works on a Fox who refuses to ever guess, and a perfect one doesn't have to. In the middle of the stage the guess the attacker offers is worth exactly 0, so he can just take it there instead of backing into a bad ledge. I solved the fair game at the two spots the squeeze has to go through, a Fox walking in at 13.9 and both standing at 12.1 apart, and both are worth exactly 0: best play is to wait. That's what it would take to break the stalemate: a position mid-stage where the guess isn't even.
 
 #### So, a stalemate?
 
