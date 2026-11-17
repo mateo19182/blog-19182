@@ -55,11 +55,11 @@ The deadlock seems to be real, but not for that reason. Walking isn't actually t
 
 ![Two Foxes 7 units apart shine on the same frame: the hitboxes clank, both freeze for 4 frames and nobody takes damage](/data/melee/fox-clank.webp "wide")
 
-I then thought that maybe some other character can hit Fox in a way he can't react (he can read the game memory)
+I then thought that maybe some other character can hit Fox in a way he can't react to (remember, he can read the game memory, so he sees every move on the frame it starts). Petro takes for granted that Fox is the best, so before going into the ditto I checked that against the whole cast.
 
-...
+**Lots of moves out-range the shine.** Measuring how far each move reaches a standing Fox, most of the cast lands a jab from about 12 units on frame 2 to 5, just outside shine range. Marth's jab hits from 30, Sheik's chain from 46, Samus's grapple from 44. So range is not what makes Fox special.
 
-What actually holds is that nobody can move first. I tried every first move against a Fox that sees it start and answers on the next frame (what a bot reading the game's memory can do), and anything except the shine gives him at least one frame to pick the right answer. He always has one:
+**But nobody's first move gets through.** For every character, 13 moves each (jab, tilts, smashes, grab, the specials, dash attack, short hop aerials) and gaps from 12 to 40, I let Fox answer on the next frame with one of 10 reactions. In the 1,085 cases where the move would hit a Fox standing there, Fox punished it 1,002 times and blocked it 83. Through: 0. Most of the time his answer is the shine (765) or a jab (288). For the Fox ditto, his best answers look like this:
 
 | First move | From how far | What the other Fox does | Result for the attacker |
 | --- | --- | --- | --- |
@@ -69,11 +69,27 @@ What actually holds is that nobody can move first. I tried every first move agai
 | Short hop in | 15–26 units | Jabs him out of it | −4% |
 | Jab | 26+ units (it misses) | Punishes the recovery, or lasers | −5% to −9% |
 
-Across 26 characters, 1,085 cases, no first move got through. The only other frame 1 move is Jigglypuff's rest and it never reaches him. Yoshi's double-jump armour and a frame-picked Game & Watch Judge 9 beat the shine itself, but Fox still answers both on reaction. I limited myself to tournament legal moves, but [Ice Climbers' freeze glitch](https://www.ssbwiki.com/Freeze_glitch) or [Ness's yo-yo glitch](https://www.ssbwiki.com/Yo-yo_glitch) also wouldn't be able to reach him.
+The shine's first frame does a lot here. On that frame Fox is intangible, and on the ground its hitbox clanks with the attacker's, so even a frame-2 jab from up close loses to it. And every grab in the game starts on frame 7 or later, so Ice Climbers never get to start a wobble.
+
+**The weird ones.** I went looking for anything that could still sneak through:
+
+- **Jigglypuff's Rest** is the only other move that hits on frame 1, but its hitbox is tiny, and standing next to Fox it never connects. Same frame against a shine, Rest's intangibility eats the shine and Rest misses, and then Puff sleeps for 249 frames.
+- **Yoshi's double jump** has armour, and the shine can never move him out of it, at any percent. But the armour ends when he attacks, and Fox punishes all of it on reaction.
+- **Mr. Game & Watch's Judge** picks its number from the RNG on the frame you press it, so a TAS knows which frames give a 9. A 9 just outside shine range hits for 32% through a Fox who answers with the shine. Fox jabbing or shielding instead beats it at every distance though. Fun detail: Fox's own inputs move the RNG too, so Petro's "RNG war" is real here.
+- **Glitches**: I limited myself to tournament legal moves, but even the banned ones don't help. [Ness's yo-yo glitch](https://www.ssbwiki.com/Yo-yo_glitch) reproduces in the simulator and his jab hits Fox from 35 units, but on frame 3, so Fox gets out on reaction, and setting it up needs a free up smash on Fox first. The [freeze glitch](https://www.ssbwiki.com/Freeze_glitch) and Mewtwo's Soul Breaker need a grab or items.
+- **Projectiles**: Petro's first claim checks out. Holding the reflector up reflects or stops every real projectile I fired, from fireballs and arrows to turnips and Samus's charge shot. Sheik's chain is not a projectile and goes through, but it lands on frame 34, so he just shields it.
+
+**And the other way round.** Doing the same with Fox attacking, the shine is the only move in the whole game that got through a reaction, 6 times out of 386, because its hitbox is out on frame 1, before any reaction exists. How far it reaches depends on the other character's body: 10 units against Peach, 11 against Marth, 13 against Sheik, 16 against Yoshi. So every character has a small circle around Fox they can never stand in, and nobody has one against him. Falco has the same shine, but it reaches about 8. That's the measured part of "Fox is the best".
+
+How much is that circle worth? I solved small matrix games for 9 matchups, both sides picking from the same 15 moves, at three distances. Every value came out within 2.2% damage per exchange of zero: at close range it leans slightly to Fox in 8 of the 9, and at range everyone is waiting. Petro's own plan, walking in to shine, loses to a best response in every matchup, by 2 to 38%. So Fox is the best, but only by a little, and only up close. With anyone else it's the same standoff. It's not a proof that he is the only optimal character, but no one I tested has anything he doesn't answer.
+
+**What about running out the clock?** If anyone took a lead (say with lasers, 3% with no hitstun, which hit every standing character but Link from across the stage), could they just hide? Fox, Falco, Sheik, Captain Falcon and Ganondorf have [fully intangible ledge stalls](https://www.ssbwiki.com/Ledgestall), so with no rules a lead could be held forever. Today's rulesets cap ledge grabs at 40 to 60 a game, roughly 25 seconds of an 8-minute match, and Final Destination is too small to run away for long. A perfect opponent would powershield every laser back though, and I haven't simulated that ping-pong.
+
+So if there is an optimal character, it's Fox, and the real question is the ditto.
 
 #### Both pick at once
 
- This is the place where I got overwhelmed by the number of possibilities, but seeing the speeds some of my RL runs were going using melee-sim-light I thought maybe it might be possible to bruteforce the solution, kinda like trying to find a checkmate that breaks the deadlock. It ending in a deadlock sounds boringggg.
+This is the place where I got overwhelmed by the number of possibilities, but seeing the speeds some of my RL runs were going using melee-sim-light I thought maybe it might be possible to bruteforce the solution, kinda like trying to find a checkmate that breaks the deadlock. It ending in a deadlock sounds boringggg.
 
 So that's what the search does: every frame both Foxes pick an input without seeing the other's, like rock-paper-scissors played 60 times a second, and it finds the best mix for each side. The score is the first clean hit (you hit and don't get hit). The menu is waiting, dashing or walking in and out, jab, grab, shine, shield and every way out of it, spotdodge, short hop and nair. Each position is searched 8 frames ahead, which is 5 to 25 million game states, and every extra frame about doubles it.
 
