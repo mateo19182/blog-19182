@@ -32,7 +32,7 @@ Melee itself was made in about 13 months (reaaally fast) and was the GameCube's 
 
 ### The optimal melee game
 
-A brief intermission to talk about a thought experiment Dan shares at the end of his talk: what would two perfect bots play against each other? I went down a rabbit hole trying to answer it, so I put it all in here:
+A brief intermission to talk about a thought experiment Dan [shares at the end of his talk](https://youtu.be/_0Z_oN_CZyA?t=2207): what would two perfect bots play against each other? I went deep into the rabbithole on this one!
 
 <details markdown="1">
 <summary>Two perfect Foxes: brute-forcing the deadlock</summary>
@@ -43,19 +43,21 @@ In summary, his answer was:
 >
 > The fastest move in the game is Fox's shine, which hits on its very first frame. So two perfect Foxes walk toward each other until they're exactly in range and shine on the same frame. The shines cancel, and from then on it's a deadlock.
 >
-> Best play for both is to jump and multishine, frame-perfectly, until the clock runs out. Then the game goes to Sudden Death, where bob-ombs fall from the sky, apparently at random.
+> Best play for both is to jump and multishine[^3], frame-perfectly, until the clock runs out. Then the game goes to Sudden Death, where bob-ombs fall from the sky, apparently at random.
 >
-> But they aren't random, melee RNG is predictable. Real optimal strategy then it's to steer the game so that when the deadlock ends eight minutes later, the generator is in a state that drops the bombs where your opponent has to choose between running into your shine or into a bomb.
+> But they aren't random, melee RNG is predictable[^2]. Real optimal strategy then it's to steer the game so that when the deadlock ends eight minutes later, the generator is in a state that drops the bombs where your opponent has to choose between running into your shine or into a bomb.
 
-Me being a fan of these kind of thought experiments, found some holes in it, and since we now have the decompiled source code I ended up trying to brute force the answer. That turned into [melee-brute](https://github.com/mateo19182/melee-brute), a fork of [melee-sim-light](https://github.com/kyhavlov/melee-sim-light) that can explore the search space much faster than any traditional emulator: it plays a frame, looks at what happened, takes it back and tries the next input, millions of times a second across all the cores.
-
-The ending first: it would be basically impossible for the bot to control RNG, as the opponent's moves also advance it. Also under tournament rules there is no Sudden Death: a timeout goes to whoever has less percent, and a tie on percent is replayed as a single stock game of 2 or 3 minutes, which would deadlock the same way.
+Me being a fan of these kind of thought experiments, poked some holes at it, and since we now have the decompiled source code I ended up trying to brute force the answer. That turned into [melee-brute](https://github.com/mateo19182/melee-brute), a fork I made of [melee-sim-light](https://github.com/kyhavlov/melee-sim-light) that can explore the search space much faster than any traditional emulator. It's honestly just a bunch of clever Fable tricks optimising for this use case but I think it can be pretty useful for other stuff!
 
 #### Nobody can go first
 
-The deadlock seems to be real, but not for that reason. Walking up to shine is a bad idea: its reach is tiny (about 10 units between the two Foxes), and Fox's jab hits from 21, so the other one just jabs you on the way in. And if both do shine on the same frame on the ground, they don't cancel into a multishine war, the hitboxes clank: both freeze for 4 frames and nobody takes damage. One frame earlier and it's 5%.
+The deadlock seems to be real, but not for that reason. Walking isn't actually the best play. Its reach is tiny (10 units), and Fox's jab hits from 21, so the other one just jabs you on the way in. If a Fox walks in, stops right outside shine range and slides, both have to pick on the same frame, so nobody is reacting to anything.
 
 ![Two Foxes 7 units apart shine on the same frame: the hitboxes clank, both freeze for 4 frames and nobody takes damage](/data/melee/fox-clank.webp "wide")
+
+I then thought that maybe some other character can hit Fox in a way he can't react (he can read the game memory)
+
+...
 
 What actually holds is that nobody can move first. I tried every first move against a Fox that sees it start and answers on the next frame (what a bot reading the game's memory can do), and anything except the shine gives him at least one frame to pick the right answer. He always has one:
 
@@ -71,7 +73,7 @@ Across 26 characters, 1,085 cases, no first move got through. The only other fra
 
 #### Both pick at once
 
-All of that assumes one Fox moves and the other answers. But two bots act at the same time, each seeing the game one frame late. If a Fox walks in, stops right outside shine range and something slides him in range, both have to pick on the same frame, so nobody is reacting to anything. This is the place where I got overwhelmed by the number of possibilities, but seeing the speeds some of my RL runs were going using melee-sim-light I thought maybe it might be possible to bruteforce the solution, kinda like trying to find a checkmate that breaks the deadlock. It ending in a deadlock sounds boringggg.
+ This is the place where I got overwhelmed by the number of possibilities, but seeing the speeds some of my RL runs were going using melee-sim-light I thought maybe it might be possible to bruteforce the solution, kinda like trying to find a checkmate that breaks the deadlock. It ending in a deadlock sounds boringggg.
 
 So that's what the search does: every frame both Foxes pick an input without seeing the other's, like rock-paper-scissors played 60 times a second, and it finds the best mix for each side. The score is the first clean hit (you hit and don't get hit). The menu is waiting, dashing or walking in and out, jab, grab, shine, shield and every way out of it, spotdodge, short hop and nair. Each position is searched 8 frames ahead, which is 5 to 25 million game states, and every extra frame about doubles it.
 
@@ -242,3 +244,7 @@ The project site, with the boards, replays, live games and a longer [write-up](h
 Built on [Slippi](https://slippi.gg), [libmelee](https://github.com/vladfi1/libmelee), [Slippi Lab](https://github.com/frankborden/slippilab) and [melee-sim-light](https://github.com/kyhavlov/melee-sim-light), with the bots of vladfi1 (Phillip), Eric Gu (HAL), erickfm (MIMIC) and Frisson Labs (Faynt, Reyn), TypeSafe's Jev and ElevenLabs voices.
 
 [^1]: highly recommend [AsumSaus](https://www.youtube.com/@AsumSaus/videos) and [PracticalTAS](https://youtube.com/@practicaltas?si=rUSebEZkc0eIUzv8) if interested in learning more!
+
+[^2]: It would be practically impossible for the bot to control RNG, as the opponent's moves also advance it. Also under tournament rules there is no Sudden Death: a timeout goes to whoever has less percent, and a tie on percent is replayed as a single stock game of 2 or 3 minutes, which would deadlock the same way.
+
+[^3]: If both do shine on the same frame on the ground, they don't cancel into a multishine war, the hitboxes clank and both freeze for 4 frames.
