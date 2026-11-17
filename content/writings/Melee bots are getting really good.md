@@ -49,54 +49,60 @@ In summary, his answer was:
 
 Me being a fan of these kind of thought experiments, poked some holes at it, and since we now have the decompiled source code I ended up trying to brute force the answer. That turned into [melee-brute](https://github.com/mateo19182/melee-brute), a fork I made of [melee-sim-light](https://github.com/kyhavlov/melee-sim-light) that can explore the search space much faster than any traditional emulator. It's honestly just a bunch of clever Fable tricks optimising for this use case but I think it can be pretty useful for other stuff!
 
-#### Nobody can go first
+The argument goes in four steps: nobody can attack first, so it comes down to Fox against Fox; that mirror match is even from the start; a Fox can still be made to guess; and the attacker only comes out ahead if the defender is at the ledge, which I found no way to force.
 
-The deadlock seems to be real, but not for that reason. Walking in and shining isn't actually the best play. Its reach is tiny (10 units), and Fox's jab hits from 21, so the other one just jabs you on the way in. 
+#### 1. Nobody can go first
+
+The deadlock seems to be real, but not for that reason. Walking in and shining isn't actually the best play. Its reach is tiny (10 units), and Fox's jab hits from 21, so the other one just jabs you on the way in.
+
+I then thought that maybe some other character can hit Fox in a way he can't react to (he can read the game memory, so he sees every move on the frame it starts). So I tried every character's moves against a Fox answering on the next frame, from a gap of 12 to 40[^4]: nothing got through. He punishes or blocks all of it, mostly with shine or a jab.
+
+The shine's first frame does most of the work. Fox is intangible on it, and on the ground its hitbox clanks with the attacker's, so even a frame-2 jab from up close loses to it. It's also the only move in the game that hits before anyone can react, so nobody can stand in that small circle around Fox, and he has nothing like it to fear. Falco has the same shine, but it reaches 8 instead of 10.
 
 ![Two Foxes 7 units apart shine on the same frame: the hitboxes clank, both freeze for 4 frames and nobody takes damage](/data/melee/fox-clank.webp "wide")
 
-I then thought that maybe some other character can hit Fox in a way he can't react to (he can read the game memory, so he sees every move on the frame it starts), but as far as I could think of, no move can get through to him. 
-From a gap of 12 to 40[^4] can Fox punish or block anything, mostly with shine or a jab.
+So if anyone wins, it's a Fox, and the real question is the Fox ditto.
 
-The shine's first frame does most of the work, Fox is intangible and on the ground its hitbox clanks with the attacker's, so even a frame-2 jab from up close loses to it. Falco has the same shine, but it reaches 8 instead.
+#### 2. The ditto is even from the start
 
-The most interesting case is the For the Fox ditto, where if one walks in, stops right outside shine range and slides, both have to pick on the same frame, so nobody is reacting to anything.
+One thing doesn't need any search: a match on Final Destination starts as a mirror image, so whatever plan one Fox has, the other can play it mirrored. Neither Fox can be ahead from the start.
 
-#### Both pick at once
+So the question isn't who wins, it's what that "even" looks like. Either both can stand there safely forever (Petro's deadlock), or both are forced into guesses that happen to balance out.
 
-This is the place where I got overwhelmed by the number of possibilities, but seeing the speeds some of my RL runs were going using melee-sim-light I thought maybe it might be possible to bruteforce the solution, kinda like trying to find a checkmate that breaks the deadlock. It ending in a deadlock sounds boringggg.
+#### 3. But you can't just stand there
 
-For every frame both Foxes pick an input without seeing the other's 60 times a second. Each position is searched N frames ahead or until the first clean hit, which are millions game states!
+Step 1 assumed one Fox moves and the other reacts. That breaks when both have to pick on the same frame, with nobody reacting to anything. This is the place where I got overwhelmed by the number of possibilities, but seeing the speeds some of my RL runs were going using melee-sim-light I thought maybe it might be possible to bruteforce the solution, kinda like trying to find a checkmate that breaks the deadlock. It ending in a deadlock sounds boringggg.
 
-One thing doesn't need any search: a match on Final Destination starts as a mirror image, so whatever plan one Fox has, the other can play it mirrored. Neither Fox can be ahead from the start. The question is whether that 0 means both standing there forever, or that both have to guess.
+So the search does exactly that: every frame both Foxes pick an input without seeing the other's, 60 times a second, and it looks N frames ahead or until the first clean hit. That's millions of game states for each position.
 
-#### You can't just stand there
+I ask it two different questions:
 
-The other one walks in for 3 seconds (182 frames), stops at 13.2 units and flicks his stick away. The turn slides him a bit closer, and a turning Fox can be hit from further away than a standing one. Now the one standing has to guess: if he tries to leave or shine and guessed wrong he eats a shine, if he stays still he's fine, and he can't see which one is coming. With best play from both the attacker gets the first clean hit 25% of the time. That doesn't mean he is winning, the defender's guesses can hit too.
+- **Can the defender always stay safe without guessing?** That's the worst case for him: the attacker gets to see his input before answering.
+- **What's the best play when both pick at once?** That's the fair game two real bots would be playing.
+
+The first one breaks a Fox who only stands still. The other one walks in for 3 seconds (182 frames), stops at 13.2 units and flicks his stick away. The turn slides him a bit closer, and a turning Fox can be hit from further away than a standing one. Now the one standing has to guess, and it's rock-paper-scissors: shine beats stepping away, stepping away beats shine, and waiting beats a shine from the attacker but loses to one from the defender. With best play each lands the first hit 12.5% of the time on that frame. So the defender isn't losing, but he can't just wait any more.
 
 ![The attacking Fox (red) walks in for 182 frames and flicks his stick away just outside shine range. Shown twice with the same red input: blue turns to leave and is hit, blue stands still and is not](/data/melee/fox-flick.webp "wide")
 
 *Red walks in for 3 seconds and flicks away at 13.2 units. Same input from red twice: first blue tries to leave and eats the shine, then blue stands still and nothing happens. Blue has to pick without seeing which one it is.*
 
-The other tricks I found all needed the defender's help. Holding shield next to a Fox who can act is a trap: every way out of it loses 5 to 18%, and if you just keep holding it, it breaks by itself after 196 frames. And a Fox in the air beats one on the ground in the shine war, since from above he out-reaches him and his double jump lets him shine again 2 frames sooner. But nothing forces anyone to shield, and the hop starts far enough away that the other Fox can just back off.
-
-The fix is to give ground a bit earlier. At 13.7 units, stepping away is the one input the search proves safe for him, and then the flick doesn't work:
+There are two ways out of it. If he never wants to guess, he steps back at 13.7, the one input that is safe even if the attacker sees it coming, and the flick never happens:
 
 ![The same walk, but blue dashes back at 13.7 units before red can flick. Nobody is hit](/data/melee/fox-retreat.webp "wide")
 
-I then let a defender that plays like this, and remembers every position where he was cracked, play thousands of approaches from scripted and random attackers. Every crack it found could be avoided from at most 18 frames earlier, none reached back to the start of the match, and it landed the first hit on almost every approach.
+Or he accepts the guess: in the fair game, walking in at that distance is worth exactly 0 to the attacker, and the best play for both is to wait.
 
-#### Can he be pushed off the stage?
+The other tricks I found all needed the defender's help. Holding shield next to a Fox who can act is a trap: every way out of it loses 5 to 18%, and if you just keep holding it, it breaks by itself after 196 frames. And a Fox in the air beats one on the ground in the shine war, since from above he out-reaches him and his double jump lets him shine again 2 frames sooner. But nothing forces anyone to shield, and the hop starts far enough away that the other Fox can just back off.
 
-Each step back costs stage, and Final Destination ends. So the next question was whether the attacker can keep walking him back to the ledge. I mapped 90 starting positions in the middle of the stage (standing, walking and dashing attacker, at every distance near contact), about 1.2 billion game positions:
+#### 4. Can he be pushed off the stage?
+
+If stepping back is how he avoids guessing, the attacker could try to keep walking in until there's no stage left behind him. I mapped 90 starting positions in the middle of the stage (standing, walking and dashing attacker, at every distance near contact), about 1.2 billion game positions:
 
 - From 14.7 units out the defender has several safe inputs, standing still among them.
 - Against a walking Fox at 13.5 to 14.1, only stepping away is safe. With both standing at 11.5 to 12.1 there is no safe input.
 - Adding the rule "the defender loses if he gets pushed 3 units back" changed nothing: within 8 frames he can't be moved.
 
-In the middle of the stage walking in is worth exactly 0 to the attacker, and the best play for both is to wait.
-
-At the ledge it's different, because one more thing can go wrong: sliding off. With the defender on the ledge and both in shine range, the attacker comes out ahead by about a quarter of a first hit (+0.27), and a good part of his best mix is... holding shield, so the other Fox's shine pushes its own owner off the stage. Walking in on a Fox at the ledge is worth a little too (+0.08).
+At the ledge it would be different, because one more thing can go wrong: sliding off. With the defender on the ledge and both in shine range, the attacker comes out ahead by about a quarter of a first hit (+0.27), and a good part of his best mix is... holding shield, so the other Fox's shine pushes its own owner off the stage. Walking in on a Fox at the ledge is worth a little too (+0.08).
 
 ![Blue, with his back to the ledge, shines red's shield. The pushback slides blue off the stage while he is still holding the shine](/data/melee/fox-ledge.webp "wide")
 
@@ -104,7 +110,7 @@ But in every one of these positions I had to put the defender on the ledge by ha
 
 #### So, a stalemate?
 
-As far as I can search, yes, and that is not very far. Each search looks 8 frames ahead, so a squeeze slower than that isn't ruled out. Lasers, wavedashes, dash dancing and full hops are not in the menu yet. And apart from the walk-in, every position is placed by hand, not reached by play from the start of the match. It's not a proof. Every position, with the clips frame by frame and what is proven where, is on the [Brute page](https://melee.m19182.dev/brute). I might be missing something so if you have any ideas please reach out to me.
+Putting it together: nobody can attack first, the Fox ditto is even, a Fox who stands still can be made to guess but the guess is even too, and the only place the attacker gets ahead is a ledge he can't push you to. So, as far as I can search, yes. That's not very far though: each search looks 8 frames ahead, so a squeeze slower than that isn't ruled out. Lasers, wavedashes, dash dancing and full hops are not in the menu yet. And apart from the walk-in, every position is placed by hand, not reached by play from the start of the match. It's not a proof. Every position, with the clips frame by frame and what is proven where, is on the [Brute page](https://melee.m19182.dev/brute). I might be missing something so if you have any ideas please reach out to me.
 
 </details>
 
