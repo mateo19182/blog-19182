@@ -44,11 +44,13 @@ A brief intermission, in one of the questions at the end of the talk Dan shares 
 
 Me being a fan of these kind of thought experiments, found some holes in it, and since we now have the decompiled source code I ended up trying to brute force the answer. That turned into [melee-brute](https://github.com/mateo19182/melee-brute), a fork of [melee-sim-light](https://github.com/kyhavlov/melee-sim-light) that can explore the search space much faster than any traditional emulator.
 
-What came out of it:
+It would be basically impossible for the bot to control RNG, as the opponent's moves also advance it. Also under tournament rules there is no Sudden Death: a timeout goes to whoever has less percent, and a tie on percent is replayed as a single stock game of 2 or 3 minutes, which would deadlock.
 
-- **The deadlock is real, but not for his reason.** Walking up to shine is a bad idea: Fox's own jab reaches about twice as far as his shine, and two grounded shines on the same frame just clank for 0%. What actually holds is that nobody can go first. No first move, from any of the 26 characters, got through a Fox who reacts on the next frame.
-- **Neither Fox is ahead.** The match starts as a mirror image, so whatever one Fox can do the other can do too. No search needed for this one.
-- **A perfect Fox can't just stand there though.** The other Fox walks in for 3 seconds, stops right outside shine range and flicks his stick away. The turn slides him a bit closer, and now both have to pick on the same frame, so nobody is reacting to anything: the Fox who stood still has to guess. His fix is to give ground a bit earlier, and then I couldn't find anything against him.
+The deadlock seems to be real, but not for that reason. In an optimal Fox mirror, jab reaches about twice as far as his shine, and two grounded shines on the same frame just clank for 0%. In fact, no first move, from any of the 26 characters, can get through a Fox who reacts on the next frame.
+
+If another Fox walks in and stops right outside shine range and slides in range, both have to pick on the same frame, so nobody is reacting to anything. This is a the place where I got overwhelmed by the number of possibilities, but seeing the speeds some of my RL runs were going using melee-sim-light I thought maybe it might be possible to bruteforce the solution, kinda like trying to find a checkmate that breaks the deadlock. It ending in a deadlock sounds boringggg.
+
+His fix is to give ground a bit earlier, and then I couldn't find anything against him.
 - **The only place where the attacker comes out ahead is with the other Fox at the ledge**, and I found nothing that forces him to go there.
 
 ![The attacking Fox (red) walks in for 182 frames and flicks his stick away just outside shine range. Shown twice with the same red input: blue turns to leave and is hit, blue stands still and is not](/data/melee/fox-flick.webp "wide")
@@ -95,8 +97,6 @@ But in every one of these positions I had to put the defender on the ledge by ha
 **What this doesn't cover.** Each search looks 8 frames ahead and every extra frame about doubles the work, so a squeeze slower than that is not ruled out. The move list has waiting, dashing in and out (walking in some searches), jab, grab, shine, shield and every way out of it, spotdodge, short hop and nair, but no lasers inside the search, no full hop, no dash dance and no wavedash. And apart from the walk-in, the positions are placed by hand, not reached by play from the start of the match. Every position, with the clips frame by frame and what is proven where, is on the [Brute page](https://melee.m19182.dev/brute) of the project site.
 
 </details>
-
-It would also be basically impossible for the bot to control RNG, as the opponent's moves also advance it. And under tournament rules there is no Sudden Death: a timeout goes to whoever has less percent, and a tie on percent is replayed as a single stock game of 2 or 3 minutes, which would deadlock the same way.
 
 ### Back to History
 
