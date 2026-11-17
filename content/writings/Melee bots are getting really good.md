@@ -33,7 +33,7 @@ Melee itself was made in about 13 months (reaaally fast) and was the GameCube's 
 
 ### The optimal melee game
 
-A brief intermission, in one of the questions at the end of the talk Dan shares a thought experiment on what the an optimal melee bot would play against each other. In summary, 
+A brief intermission, in one of the questions at the end of the talk Dan shares a thought experiment on what two optimal melee bots would play against each other. In summary, 
 
 > Every projectile can be reflected within a two-frame window, so throwing them is pointless.
 >
@@ -43,11 +43,25 @@ A brief intermission, in one of the questions at the end of the talk Dan shares 
 >
 > But they aren't random, melee RNG is predictable. Real optimal strategy then it's to steer the game so that when the deadlock ends eight minutes later, the generator is in a state that drops the bombs where your opponent has to choose between running into your shine or into a bomb.
 
-Me being a fan of these kind of thought experiments, found some holes in it, and ended up creating a [solver](https://github.com/mateo19182/melee-llm/tree/main/melee_llm/solver) to find out what is actually the optimal play since we now have the decompiled source code, and in theory, Melee checks all the boxes to have an optimal value. I might be missing something so if you have any ideas please reach out to me.
+Me being a fan of these kind of thought experiments, found some holes in it, and since we now have the decompiled source code I ended up trying to brute force the answer. That turned into [melee-brute](https://github.com/mateo19182/melee-brute), a fork of melee-sim-light that can try an input, look at what happened and take it back, so it can try every input for both Foxes, one frame at a time. I think it might be really useful for other things too.
 
-Shine is indeed the superior move once you are in range, but it will loose against attacks with more range, like Fox's short hop N-air. This makes it so the optimal move is not to walk up to your opponent, but the opposite. Defence is stronger in all the situations I could think of, and there is no incentive to commit before seeing the opponent's move, since the bot can read game state memory and always react on time.
+What came out of it:
 
-The only other frame 1 move is Jigglipuff's rest and it won't ever reach Fox under this conditions. Anything else gives Fox at least one frame to pick the right answer, and Fox always has one: shine, jab, shield or just moving away.
+- **The deadlock is real, but not for his reason.** Walking up to shine is a bad idea: Fox's own jab reaches about twice as far as his shine, and two grounded shines on the same frame just clank for 0%. What actually holds is that nobody can go first. No first move, from any of the 26 characters, got through a Fox who reacts on the next frame.
+- **Neither Fox is ahead.** The match starts as a mirror image, so whatever one Fox can do the other can do too. No search needed for this one.
+- **A perfect Fox can't just stand there though.** The other Fox walks in for 3 seconds, stops right outside shine range and flicks his stick away. The turn slides him a bit closer, and now both have to pick on the same frame, so nobody is reacting to anything: the Fox who stood still has to guess. His fix is to give ground a bit earlier, and then I couldn't find anything against him.
+- **The only place where the attacker comes out ahead is with the other Fox at the ledge**, and I found nothing that forces him to go there.
+
+![The attacking Fox (red) walks in for 182 frames and flicks his stick away just outside shine range. Shown twice with the same red input: blue turns to leave and is hit, blue stands still and is not](/data/melee/fox-flick.webp "wide")
+
+*Red walks in for 3 seconds and flicks away at 13.2 units. Same input from red twice: first blue tries to leave and eats the shine, then blue stands still and nothing happens. Blue has to pick without seeing which one it is.*
+
+So, a stalemate as far as I can search, and that is not very far: 8 frames ahead of each position, with a fixed list of moves that leaves out lasers, wavedashes, dash dancing and full hops. It's not a proof. I might be missing something so if you have any ideas please reach out to me.
+
+<details markdown="1">
+<summary>The long version: brute-forcing the Fox ditto</summary>
+
+**Nobody can go first.** The first thing I checked was every first move against a Fox that sees it start and answers on the next frame. Shine is indeed the superior move once you are in range, but its range is tiny (about 10 units between the two Foxes, a jab hits from 21). Anything else gives Fox at least one frame to pick the right answer, and he always has one:
 
 | First move | From how far | What the other Fox does | Result for the attacker |
 | --- | --- | --- | --- |
@@ -57,9 +71,33 @@ The only other frame 1 move is Jigglipuff's rest and it won't ever reach Fox und
 | Short hop in | 15–26 units | Jabs him out of it | −4% |
 | Jab | 26+ units (it misses) | Punishes the recovery, or lasers | −5% to −9% |
 
-The solver runs on the decompiled game and, across 26 characters, no first move got through a Fox reacting on the next frame. Yoshi's double-jump armour and a frame-picked Game & Watch Judge 9 beat the shine itself, but Fox still answers both on reaction. I limited myself to tournament legal moves, but [Ice Climbers' freeze glitch](https://www.ssbwiki.com/Freeze_glitch) or [Ness's yo-yo glitch](https://www.ssbwiki.com/Yo-yo_glitch) also wouldn't be able to reach him.
+Across 26 characters, 1,085 cases, no first move got through. The only other frame 1 move is Jigglypuff's rest and it never reaches him. Yoshi's double-jump armour and a frame-picked Game & Watch Judge 9 beat the shine itself, but Fox still answers both on reaction. I limited myself to tournament legal moves, but [Ice Climbers' freeze glitch](https://www.ssbwiki.com/Freeze_glitch) or [Ness's yo-yo glitch](https://www.ssbwiki.com/Yo-yo_glitch) also wouldn't be able to reach him.
 
-It would also be basically impossible for the bot to control RNG, as the opponent moves also advance the cycles. But under tournament rules, there is no sudden death, there is another single stock game which the person with the most percentage at the end of 2 minutes loses.
+**The shines don't cancel into a multishine war.** On the ground, two shines on the same frame clank: both freeze for 4 frames and nobody takes damage. One frame earlier and it's 5%.
+
+![Two Foxes 7 units apart shine on the same frame: the hitboxes clank, both freeze for 4 frames and nobody takes damage](/data/melee/fox-clank.webp "wide")
+
+**Reacting is not the whole game.** All of the above assumes one Fox moves and the other answers. But two bots act at the same time, each seeing the game one frame late. So I switched to solving it as that: every frame both pick an input without seeing the other's, like rock-paper-scissors played 60 times a second, and the search looks for the best mix for each side.
+
+That's where the flick shows up. With a Fox that only stands and answers what he sees, the attacker walks for 182 frames to 13.2 units and flicks the stick away. In that position best play from both gives the attacker a clean first hit 25% of the time. That means the defender has to guess, not that he is losing: his own guesses hit too, and I haven't measured by how much.
+
+The defender doesn't have to let it get there. At 13.7 units stepping away is the one input the search proves safe for him:
+
+![The same walk, but blue dashes back at 13.7 units before red can flick. Nobody is hit](/data/melee/fox-retreat.webp "wide")
+
+**Can he be pushed back until he runs out of stage?** I mapped 90 starting positions in the middle of the stage (standing, walking and dashing attacker, at every distance near contact), about 1.2 billion game positions. From 14.7 units out the defender has several safe inputs, standing still among them. Closer, against a walking Fox, only stepping away is safe. And adding the rule "the defender loses if he gets pushed 3 units back" changed nothing: within 8 frames he can't be moved. In the middle of the stage, walking in is worth exactly 0 to the attacker.
+
+At the ledge it's different, because there one more thing can go wrong: sliding off. With the defender on the ledge and both in shine range, the attacker is ahead by about a quarter of a first hit, and a good part of his best mix is... holding shield, so the other Fox's shine pushes its own owner off the stage.
+
+![Blue, with his back to the ledge, shines red's shield. The pushback slides blue off the stage while he is still holding the shine](/data/melee/fox-ledge.webp "wide")
+
+But in every one of these positions I had to put the defender on the ledge by hand. Nothing I found makes him go there.
+
+**What this doesn't cover.** Each search looks 8 frames ahead and every extra frame about doubles the work, so a squeeze slower than that is not ruled out. The move list has waiting, dashing in and out (walking in some searches), jab, grab, shine, shield and every way out of it, spotdodge, short hop and nair, but no lasers inside the search, no full hop, no dash dance and no wavedash. And apart from the walk-in, the positions are placed by hand, not reached by play from the start of the match. Every position, with the clips frame by frame and what is proven where, is on the [Brute page](https://melee.m19182.dev/brute) of the project site.
+
+</details>
+
+It would also be basically impossible for the bot to control RNG, as the opponent's moves also advance it. And under tournament rules there is no Sudden Death: a timeout goes to whoever has less percent, and a tie on percent is replayed as a single stock game of 2 or 3 minutes, which would deadlock the same way.
 
 ### Back to History
 
@@ -80,8 +118,6 @@ Now in late 2026, Frisson Labs released [Faynt](https://www.frisson-labs.com/fay
 All of these are tiny next to an LLM (10M to 247M parameters), answer in 2 to 8 milliseconds a frame on one home GPU, and get their strength from human replays plus self-play, not from reasoning.
 
 All this cool work is enabled by a the community (like the recently opened [stomped.dev](https://stomped.dev), a ranked ladder for bots only with a nice discord community), that has built the open tooling over time that allows for this kind of experimentation, most recently leveraging AI to complete the [decompilation](https://github.com/doldecomp/melee) of the full Melee code, that also gave us  [melee-sim-light](https://github.com/kyhavlov/melee-sim-light), which runs the decompiled game without an emulator, about 100 times faster.
-
-After my adventures in bruteforcing melee, I ended up with a fork of melee-sim-light modified for that, [melee-brute](https://github.com/mateo19182/melee-brute), that I think might be really useful.
 
 ### The TAS scene
 
@@ -122,7 +158,7 @@ The learned bots are far ahead. Faynt never lost (370-0, so its 3403 is really a
 ![Untimed vs real-time Elo for each model, with the share of live replies thrown away for arriving too late](/data/melee/latency-tax.svg "wide")
 
 Given time to think, GPT-6.1 Sol beats the level 9 CPU (1729), the other models land between 1254 and 1474, and all of them beat Jev (1082). A player that picks a random move at every decision rates 732 here, so the thinking does count.
-Live, all of that disappears: every model drops 492 to 851 points, below the level 1 CPU** (762 to 878).
+Live, all of that disappears: every model drops 492 to 851 points, below the level 1 CPU (762 to 878).
 
 Screenshots don't help either: given an image instead of the text, models performed generally worse. [LLM Colosseum](https://github.com/OpenGenerativeAI/llm-colosseum) had a similar finding in Street Fighter (GPT-3.5 beat GPT-4 by being faster). 
 
@@ -179,7 +215,7 @@ That tie says more about the starter than about the models. The new starter was 
 
 ## What's next
 
-I'm giving it one or two more weeks, with LLMs no longer at the centre. For m19182-yoshi the goal is now the best Yoshi I can make by following the published recipes more closely: I've only used about 10% of HAL's dataset so far, and self-play needs a better learning signal before it helps. The other thing I want to try is TAS-style search in the simulator: it already [saves and restores](https://github.com/mateo19182/melee-llm/blob/main/melee_llm/sim/world.py) whole games at about 100 times Dolphin's speed, which is the setup Mario 64's brute-forcers use, and the [solver](https://github.com/mateo19182/melee-llm/tree/main/melee_llm/solver) above already runs on it. That could answer questions like "can anything survive this edgeguard?" or label the best move from real replay positions to train the bot on. The catches are that the simulator only does versus matches and its RNG differs from Dolphin's. Also on the list: putting m19182-yoshi and myself on the bench, and getting people to play the bots.
+I'm giving it one or two more weeks, with LLMs no longer at the centre. For m19182-yoshi the goal is now the best Yoshi I can make by following the published recipes more closely: I've only used about 10% of HAL's dataset so far, and self-play needs a better learning signal before it helps. The other thing is the brute-force search: [melee-brute](https://github.com/mateo19182/melee-brute) takes inputs back and tries others on the real game code, which is the setup Mario 64's brute-forcers use. For the two Foxes the open part is lasers, wavedashes and looking further than 8 frames. It could also answer questions like "can anything survive this edgeguard?" or label the best move from real replay positions to train the bot on. The catches are that the simulator only does versus matches and its RNG differs from Dolphin's. Also on the list: putting m19182-yoshi and myself on the bench, and getting people to play the bots.
 
 
 
