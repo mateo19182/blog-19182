@@ -11,9 +11,11 @@ soundtrack:
   title: "Final Destination"
   file: hirokazu-ando-shogo-sakai-final-destination.webm
 ---
-Super Smash Bros Melee came out in 2001 for the [GameCube](https://en.wikipedia.org/wiki/GameCube), and it's one of the videogames with the highest skill ceiling (and floor) that i know of, proof of that is that there is a lot of people still playing it competitively. I'm not good at all, SSB4 was the only one where I put in the hours, but I know enough to understand some of the complexity, and it's extremely impressive. [^1]
+Super Smash Bros Melee came out in 2001 for the [GameCube](https://en.wikipedia.org/wiki/GameCube), and it's one of the videogames with the highest skill ceiling (and floor) that i know of, proof of that is that there is a lot of people still playing it professionally. I'm not good at all, SSB4 was the only one where I put in the hours, but I know enough to understand the complexity, and it's extremely impressive. [^1]
 
-Competitive Melee players average 6 actions per second, in a super fast-paced fight with no input buffer and cool tech like Wavedashing, L-Canceling or Dash Dancing. I enjoy it much more than any other fighters as it does not rely as heavily on combos and is much more "free-form". 
+It's difficulty can be divided in 2 levels. On the low level, the game runs on 60 fps and many techniques only have a 1-2 frame window to perform correctly (no input buffer!). Competitive Melee players average 6 actions per second, and have to master tech like Wavedashing, L-Canceling or Dash Dancing. Some of these techniques were not intended by the developers, which to me makes it more interesting.
+
+On a high level it's more of a mindgame. Humans react in about 12 frames and many attacks are faster than that, so most of the time you are predicting your opponent, not reacting. Good players spend whole games conditioning the other one to expect something, and then do the opposite. I enjoy it much more than any other fighters as it does not rely as heavily on combos and is much more "free-form". 
 
 ![Fox wavedashing, L-cancelling and dash dancing on Final Destination, with the stick and buttons pressed on each frame](/data/melee/tech.webp)
 
@@ -21,10 +23,7 @@ I had seen some activity on twitter on recent advancements on AI bots taking on 
 
 Started with a vague idea of having LLMs play the game directly. Some of the best ways of measuring the performance of latest models are based on having play [games that it hasn't encountered during training](https://arcprize.org/arc-agi). Most game benchmarks are turn-based ([chess](https://maxim-saplin.github.io/llm_chess/#leaderboard), [Pokémon](https://dl.acm.org/doi/10.1145/3771095), [Slay the Spire](https://arxiv.org/abs/2610.12596)..... lots of these popping up lately). This did not work as expected but got me interested in the topic, my objective with this post is to write what I would have liked to have read when I started learning!
 
-In case you have never played a Smash game: two characters (from the extended Nintendo universe) fight on a small floating stage, hitting your opponent raises his percentage, and the higher it is the further they get knocked. Throw them off the screen and they lose a stock.
-
-* difficult on the low level (fast, precise) and the high level (mindgames, predicitions...)
-*more melee history, wombo combo, why its so techically complex details...
+I think its an extremely exciting moment to get into this, with a lot of work to do and low-hanging fruit to get started!
 
 
 ## Some history
@@ -43,7 +42,7 @@ A brief intermission, in one of the questions at the end of the talk Dan shares 
 >
 > But they aren't random, melee RNG is predictable. Real optimal strategy then it's to steer the game so that when the deadlock ends eight minutes later, the generator is in a state that drops the bombs where your opponent has to choose between running into your shine or into a bomb.
 
-Me being a fan of these kind of thought experiments, found some holes in it, and since we now have the decompiled source code I ended up trying to brute force the answer. That turned into [melee-brute](https://github.com/mateo19182/melee-brute), a fork of melee-sim-light that can try an input, look at what happened and take it back, so it can try every input for both Foxes, one frame at a time. I think it might be really useful for other things too.
+Me being a fan of these kind of thought experiments, found some holes in it, and since we now have the decompiled source code I ended up trying to brute force the answer. That turned into [melee-brute](https://github.com/mateo19182/melee-brute), a fork of [melee-sim-light](https://github.com/kyhavlov/melee-sim-light) that can explore the search space much faster than any traditional emulator.
 
 What came out of it:
 
