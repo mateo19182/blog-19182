@@ -85,9 +85,13 @@ Or he accepts the guess: in the fair game, walking in at that distance is worth 
 
 #### 4. Can he be pushed off the stage?
 
-If stepping back is how he avoids guessing, the attacker could try to keep walking in until there's no stage left. 
+If stepping back is how he avoids guessing, the attacker could try to keep walking in until there's no stage left. That's the squeeze: every walk-in to 13.7 makes a Fox who never guesses give a bit of ground, and the stage ends at the ledge.
+
+And at the ledge the guess is no longer even. One more thing can go wrong there: sliding off. With the defender's back to the ledge and both in shine range, the attacker comes out ahead by about a quarter of a first hit, and a good part of his best mix is... holding shield, so the other Fox's shine pushes its own owner off the stage.
 
 ![Blue, with his back to the ledge, shines red's shield. The pushback slides blue off the stage while he is still holding the shine](/data/melee/fox-ledge.webp "wide")
+
+But the squeeze only works on a Fox who refuses to ever guess, and a perfect one doesn't have to. In the middle of the stage the guess the attacker offers is worth exactly 0, so he can just take it there instead of backing into a bad ledge. I solved the fair game at the two spots the squeeze has to go through, a Fox walking in at 13.9 and both standing at 12.1 apart, and both are worth exactly 0: best play is to wait. That's what it would take to break the stalemate: a position mid-stage where the guess isn't even.
 
 #### So, a stalemate?
 
