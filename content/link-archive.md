@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-11-16
+date: 2026-11-17
 tags: 
   - personal
 ---
@@ -9,6 +9,10 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Mordechai Vanunu - Wikipedia](https://en.wikipedia.org/wiki/Mordechai_Vanunu#) `Wikis` *2026-11-16*
+- [Researchers track whole body movement with just a smartwatch | Cornell Chronicle](https://news.cornell.edu/stories/2026/11/researchers-track-whole-body-movement-just-smartwatch) `Tech` *2026-11-16*
+- [Neuron Lens](https://neuron-lens.com) `Tech` *2026-11-16*
+- [Building a Serverless ClickHouse - Jordi Villar](https://jordivillar.com/blog/building-a-serverless-clickhouse) `Tech` *2026-11-16*
 - [Chasing an audio artifact on power loss](https://subalpinecircuits.com/chasing-an-audio-artifact-on-power-loss) `Tech` *2026-11-15*
 - [Reyn — A language-steerable Melee player](https://www.frisson-labs.com/reyn) `Tech` *2026-11-14*
 - [End‑to‑End 4‑Bit Training - Thinking Machines Lab](https://thinkingmachines.ai/blog/end-to-end-4-bit-training) `Tech` *2026-11-14*
