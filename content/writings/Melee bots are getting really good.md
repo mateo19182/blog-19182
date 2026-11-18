@@ -37,13 +37,13 @@ A brief intermission to talk about a thought experiment Dan [shares at the end o
 <details markdown="1">
 <summary>Two perfect Foxes: brute-forcing the deadlock</summary>
 
-In summary, his answer was:
+Paraphrasing, his answer was:
 
 > Every projectile can be reflected within a two-frame window, so throwing them is pointless.
 >
-> The fastest move in the game is Fox's shine, which hits on its very first frame. So two perfect Foxes walk toward each other until they're exactly in range and shine on the same frame. The shines cancel, and from then on it's a deadlock.
+> The fastest move in the game is Fox's shine, which hits on its very first frame. So two perfect Foxes walk toward each other until they're exactly in range and shine on the same frame. The shines cancel[^3], and from then on it's a deadlock.
 >
-> Best play for both is to jump and multishine[^3], frame-perfectly, until the clock runs out. Then the game goes to Sudden Death, where bob-ombs fall from the sky, apparently at random.
+> Best play for both is to jump and multishine, frame-perfectly, until the clock runs out. Then the game goes to Sudden Death, where bob-ombs fall from the sky, apparently at random.
 >
 > But they aren't random, melee RNG is predictable[^2]. The real optimal strategy then is to steer the game so that when the deadlock ends eight minutes later, the generator is in a state that drops the bombs where your opponent has to choose between running into your shine or into a bomb.
 
@@ -63,6 +63,8 @@ One thing doesn't need any search: a match on Final Destination starts as a mirr
 
 Either both can stand there safely forever (Petro's deadlock), or both are forced into guesses that happen to balance out.
 
+So far I assumed one Fox moves and the other reacts. But when both have to pick on the same frame, a Fox who just stands there can be forced to guess: walk in, stop at 13.2 and flick the stick away. Now blue has to pick between shining, stepping away or waiting, a rock-paper-scissors where each side lands the first hit 12.5% of the time.
+
 ![The attacking Fox (red) walks in for 182 frames and flicks his stick away just outside shine range. Shown twice with the same red input: blue turns to leave and is hit, blue stands still and is not](/data/melee/fox-flick.webp "wide")
 
 *Red walks in for 3 seconds and flicks away at 13.2 units. Same input from red twice: first blue tries to leave and eats the shine, then blue stands still and nothing happens. Blue has to pick without seeing which one it is.*
@@ -81,7 +83,7 @@ With the defender's back to the ledge and both in shine range it's still a guess
 
 The squeeze only works on a Fox who refuses to ever guess, and a perfect one doesn't have to. In the middle of the stage the guess the attacker offers is worth the same to both, so he can just take it there instead of backing into a bad ledge. 
 
-Many other experiments I tried on the [Brute page](https://melee.m19182.dev/brute), most of this is useless info, and I might be missing something so if you have any ideas please reach out to me!
+So, as far as I can search, it is a stalemate: nobody can attack first, the ditto is even, and the guesses a Fox can be forced into are even too, except at a ledge nobody can push you to. That's not very far though: each search looks 8 frames ahead, the menu has no lasers, wavedashes or dash dancing, and most positions are placed by hand. The rest of the experiments are on the [Brute page](https://melee.m19182.dev/brute), and I might be missing something, so if you have any ideas please reach out to me!
 
 </details>
 
@@ -101,20 +103,19 @@ Not too long after, in 2025, Eric Gu released [HAL](https://ericyuegu.com/behavi
 
 Now in late 2026, Frisson Labs released [Faynt](https://www.frisson-labs.com/faynt) ([paper](https://arxiv.org/abs/2610.02144)), one 10M-parameter transformer that plays all 26 characters. It's trained in three stages: behaviour cloning on about 840,000 ranked replays, a "winner curriculum" that ends on games won by Master-ranked players (distilled from a 75M sibling), then self-play RL in Fox mirrors with 96 emulators on one GPU. It plays with zero reaction delay and won 240 of 244 games against Phillip's public releases. It was followed by [Reyn](https://www.frisson-labs.com/reyn), a bot you can steer with English commands, but with no LLM inside: Frisson labelled human replays with rule-based instructions ("this is a grab"), trained the policy to follow them, then froze it and trained small adapters with RL. A router maps whatever you type onto a fixed menu of about 100 commands, or rejects it. That detail matters later.
 
+![A bench game redrawn from its replay file: Faynt (blue) takes a stock from Phillip (red), both playing Fox on Final Destination](/data/melee/replay-2d.webp)
+
+*14 seconds of a bench game, redrawn from the replay file: Faynt (blue) takes a stock off Phillip (red), both playing Fox.*
+
 All of these are tiny next to an LLM (10M to 247M parameters), answer in 2 to 8 milliseconds a frame on one home GPU, and get their strength from human replays plus self-play, not from reasoning.
 
-All this cool work is enabled by the community (like the recently opened [stomped.dev](https://stomped.dev), a ranked ladder for bots only with a nice discord community), that has built the open tooling over time that allows for this kind of experimentation, most recently leveraging AI to complete the [decompilation](https://github.com/doldecomp/melee) of the full Melee code, that also gave us [melee-sim-light](https://github.com/kyhavlov/melee-sim-light), which runs the decompiled game without an emulator, about 100 times faster.
+All this cool work is enabled by the community (like the recently opened [stomped.dev](https://stomped.dev), a ranked ladder for bots only with a nice discord community), that has built the open tooling over time that allows for this kind of experimentation, most recently leveraging AI to complete the [decompilation](https://github.com/doldecomp/melee) of the full Melee code, that also gave us [melee-sim-light](https://github.com/kyhavlov/melee-sim-light), which runs the decompiled game without an emulator, about 100 times faster than headless Dolphin.
 
 ### TAS
 
 Next to the bots there's also a scene of tool-assisted play (TAS): a sequence built frame by frame in an emulator. Playback is deterministic, and it's mostly used to show the limits of the game. I feel like my fork might be useful here, but never got into it so I'm not sure. 
 
-Started in 2005 with [Action Replay](https://www.supercheats.com/gamecube/supersmashbrosmeleeactionreplaycodes.htm) videos made in the game's hidden frame-by-frame debug mode. Around 2010 Dolphin got proper TAS tools (savestates, frame advance, input movies), and later Lua scripting on top, like PracticalTAS's [ssbm-lua-core](https://github.com/practicaltas/ssbm-lua-core).
-- Some cool showpieces: [combos that all end at exactly 69 hits](https://www.youtube.com/watch?v=F-mUcQXeSSc), and [Target Test for all 25 characters](https://tasvideos.org/7174S) in 2:39.97 in-game time. Many findings flow back to human play.
-
-![A bench game redrawn from its replay file: Faynt (blue) takes a stock from Phillip (red), both playing Fox on Final Destination](/data/melee/replay-2d.webp)
-
-*14 seconds of a bench game, redrawn from the replay file: Faynt (blue) takes a stock off Phillip (red), both playing Fox.*
+Started in 2005 with [Action Replay](https://www.supercheats.com/gamecube/supersmashbrosmeleeactionreplaycodes.htm) videos made in the game's hidden frame-by-frame debug mode. Around 2010 Dolphin got proper TAS tools (savestates, frame advance, input movies), and later Lua scripting on top, like PracticalTAS's [ssbm-lua-core](https://github.com/practicaltas/ssbm-lua-core). Some cool showpieces: [combos that all end at exactly 69 hits](https://www.youtube.com/watch?v=F-mUcQXeSSc), and [Target Test for all 25 characters](https://tasvideos.org/7174S) in 2:39.97 in-game time. Many findings flow back to human play.
 
 
 ---
@@ -137,7 +138,7 @@ The learned bots are far ahead. Faynt never lost (370-0, so its 3403 is really a
 
 ### LLMs
 
-### Playing
+#### Playing
 
 ![Untimed vs real-time Elo for each model, with the share of live replies thrown away for arriving too late](/data/melee/latency-tax.svg "wide")
 
@@ -147,11 +148,11 @@ Live, all of that disappears: every model drops 492 to 851 points, below the lev
 Screenshots don't help either: given an image instead of the text, models performed generally worse. [LLM Colosseum](https://github.com/OpenGenerativeAI/llm-colosseum) had a similar finding in Street Fighter (GPT-3.5 beat GPT-4 by being faster). 
 
 
-### Coaching
+#### Coaching
 
 ![Reyn's rating with no command, with random commands, with each LLM and Jev as coach, and holding "Don't die." all game](/data/melee/coaching.svg "wide")
 
-This was the surprise. Reyn with no orders rates 1846, and with any coach it jumps by about 300 points to HAL's level. But a "coach" that picks a random command every 5 seconds without looking at the game gets most of that jump (2141). On ratings alone the LLM coaches overlap it, so I had the coaches play each other directly: 300 more games, the same bot on both sides, only the coach differing. Three of the four LLM coaches do beat random: Sonnet 5.5 won 29 of 36 against it, Haiku 4.5 28 of 37 and GPT-6 Luna 30 of 45, about 170 points above it. GPT-6.1 Sol doesn't (15 of 35); it's also the slowest, at 3 seconds a reply. So I dug in:
+This was the surprise. Reyn with no orders rates 1846, and with any LLM coach it jumps by about 450 points to HAL's level (2303 to 2324). But a "coach" that picks a random command every 5 seconds without looking at the game gets two thirds of that jump (2141). On ratings alone the LLM coaches overlap it, so I had the coaches play each other directly: 300 more games, the same bot on both sides, only the coach differing. Three of the four LLM coaches do beat random: Sonnet 5.5 won 29 of 36 against it, Haiku 4.5 28 of 37 and GPT-6 Luna 30 of 45, about 170 points above it. GPT-6.1 Sol doesn't (15 of 35); it's also the slowest, at 3 seconds a reply. So I dug in:
 
 - Reyn mostly needs *any* command. One random command held all game already gets it to 2075.
 - Holding "Don't die." all game, with no coach at all, rates 2452, above every LLM coach.
@@ -159,7 +160,7 @@ This was the surprise. Reyn with no orders rates 1846, and with any coach it jum
 
 The LLMs pick sensible-sounding plans (edgeguard, play aggressive) that turn out to be worth less than the boring one. The lesson is less about LLMs than about the bot, and about how a language interface can quietly turn your words into something else.
 
-### Coding
+#### Coding
 
 ![Bench rating of every bot an LLM wrote in a 30-minute session, next to CPUs, MIMIC and Phillip silver](/data/melee/bot-writer.svg "wide")
 
