@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, interactive-widget=resizes-content">
 <meta name="robots" content="noindex, nofollow">
 <title>Editor · blog-19182</title>
 <link rel="icon" href="/static/icon.png" type="image/png">
@@ -14,12 +14,15 @@
   <button id="toggle-files" class="icon" title="Mostrar u ocultar los archivos" aria-label="Archivos">☰</button>
   <span id="path"></span>
   <span class="spacer"></span>
-  <button id="new-post" type="button">Nuevo</button>
-  <button id="translate" type="button" hidden>Crear traducción</button>
-  <button id="swap" type="button" hidden></button>
-  <a id="view-full" class="button" target="_blank" title="Página completa, solo para ti (Access)">Página completa</a>
-  <a id="view-live" class="button" target="_blank" rel="noopener" hidden>Ver publicada</a>
-  <button id="focus" type="button" title="Modo foco: solo el texto (Alt-Z; Esc para salir)">Foco</button>
+  <button id="more" class="icon" type="button" title="Más acciones" aria-label="Más acciones" aria-expanded="false" aria-controls="more-menu">⋯</button>
+  <div id="more-menu">
+    <button id="new-post" type="button">Nuevo</button>
+    <button id="translate" type="button" hidden>Crear traducción</button>
+    <button id="swap" type="button" hidden></button>
+    <a id="view-full" class="button" target="_blank" title="Página completa, solo para ti (Access)">Página completa</a>
+    <a id="view-live" class="button" target="_blank" rel="noopener" hidden>Ver publicada</a>
+    <button id="focus" type="button" title="Modo foco: solo el texto (Alt-Z; Esc para salir)">Foco</button>
+  </div>
   <button id="toggle-preview" type="button" title="Mostrar u ocultar la vista previa (Alt-P)">Vista previa</button>
   <button id="save" type="button" class="primary" title="Revisar y guardar (Ctrl/Cmd-S)" disabled>Guardar</button>
 </header>
@@ -34,7 +37,8 @@
     <div id="props-bar" hidden><button id="props-toggle" type="button" title="Mostrar u ocultar las propiedades">Propiedades</button><span id="props-summary"></span></div>
     <form id="form" hidden onsubmit="return false"></form>
     <ul id="problems" class="problems" hidden></ul>
-    <div id="toolbar" role="toolbar" aria-label="Formato">
+    <div id="toolbar">
+      <div class="tools" role="toolbar" aria-label="Formato">
       <button data-cmd="bold" title="Negrita (Ctrl-B)"><b>B</b></button>
       <button data-cmd="italic" title="Cursiva (Ctrl-I)"><i>I</i></button>
       <button data-cmd="link" title="Enlace (Ctrl-K)">🔗</button>
@@ -47,12 +51,14 @@
       <button data-cmd="image" title="Imagen (o pega / arrastra)">🖼</button>
       <button data-cmd="spell" id="spell" title="Corrector ortográfico (clic derecho en una palabra subrayada)" aria-pressed="true">abc✓</button>
       <input id="image-input" type="file" accept="image/*" multiple hidden>
+      </div>
       <span id="status"></span>
     </div>
     <div id="cm"></div>
     <div id="empty-msg">
-      <p>Elige un archivo a la izquierda o crea uno nuevo.</p>
-      <p class="muted">Ctrl/Cmd-S revisa y guarda · Ctrl-B/I/K negrita, cursiva, enlace · Ctrl-Shift-F nota al pie · Ctrl-F buscar · Alt-P muestra u oculta la vista previa · Alt-Z modo foco · pega o arrastra imágenes.</p>
+      <p class="wide-only">Elige un archivo a la izquierda o crea uno nuevo.</p>
+      <p class="narrow-only">Elige un archivo de la lista o crea uno nuevo con ⋯ → Nuevo.</p>
+      <p class="muted wide-only">Ctrl/Cmd-S revisa y guarda · Ctrl-B/I/K negrita, cursiva, enlace · Ctrl-Shift-F nota al pie · Ctrl-F buscar · Alt-P muestra u oculta la vista previa · Alt-Z modo foco · pega o arrastra imágenes.</p>
     </div>
   </section>
   <section id="preview-pane">
@@ -83,8 +89,10 @@
     <p id="review-target"></p>
     <div id="review-files"></div>
     <label class="msg">Mensaje del commit <input name="message" autocomplete="off"></label>
-    <p id="review-error" class="error"></p>
-    <menu><button value="cancel">Cancelar</button><button value="ok" class="primary">Guardar</button></menu>
+    <div class="dialog-foot">
+      <p id="review-error" class="error"></p>
+      <menu><button value="cancel">Cancelar</button><button value="ok" class="primary">Guardar</button></menu>
+    </div>
   </form>
 </dialog>
 

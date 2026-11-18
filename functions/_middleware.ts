@@ -30,12 +30,26 @@ const candidatePaths = (pathname: string): string[] => {
   return candidates
 }
 
+// `/writings/Some-post/edit` opens that page in the web editor (behind Access),
+// which finds the file from `?page=`.
+const editRedirect = (url: URL): Response | null => {
+  const m = url.pathname.match(/^(\/.*?)\/edit\/?$/)
+  if (!m || m[1].startsWith("/edit") || m[1].startsWith("/api")) return null
+  const target = new URL("/edit/", url)
+  target.searchParams.set("page", m[1])
+  const lang = url.searchParams.get("lang")
+  if (lang === "en" || lang === "es") target.searchParams.set("lang", lang)
+  return Response.redirect(target.toString(), 302)
+}
+
 export const onRequest: PagesFunction<Env> = async (ctx) => {
   const { request, next, env } = ctx
 
   if (request.method !== "GET" && request.method !== "HEAD") {
     return next()
   }
+  const redirect = editRedirect(new URL(request.url))
+  if (redirect) return redirect
   if (!wantsMarkdown(request.headers.get("accept"))) {
     return next()
   }

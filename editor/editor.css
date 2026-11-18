@@ -32,8 +32,11 @@ code { font-family: var(--mono); font-size: 0.9em; }
 .bar .spacer { flex: 1; }
 #path { font-family: var(--mono); font-size: 0.85rem; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 30vw; }
 .icon { padding: 0.3rem 0.55rem; }
+#more { display: none; }
+#more-menu, #toolbar .tools { display: contents; }
+.narrow-only { display: none; }
 
-.layout { flex: 1; display: grid; grid-template-columns: 16rem minmax(0, 1fr) minmax(0, 1fr); min-height: 0; }
+.layout { position: relative; flex: 1; display: grid; grid-template-columns: 16rem minmax(0, 1fr) minmax(0, 1fr); min-height: 0; }
 #sidebar { border-right: 1px solid var(--line); overflow: auto; padding: 0.75rem; display: flex; flex-direction: column; gap: 0.5rem; }
 #filter { width: 100%; }
 #files h3 { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); margin: 0.9rem 0 0.3rem; }
@@ -102,7 +105,7 @@ body.empty #cm, body.empty #toolbar, body.empty #form, body.empty #problems, bod
 .preview-bar button { font-size: 0.75rem; padding: 0.1rem 0.5rem; }
 #preview { flex: 1; width: 100%; border: 0; background: var(--bg); }
 
-dialog { border: 1px solid var(--line); border-radius: 10px; background: var(--panel); color: var(--fg); padding: 1rem 1.25rem; width: min(52rem, 94vw); max-height: 90vh; }
+dialog { border: 1px solid var(--line); border-radius: 10px; background: var(--panel); color: var(--fg); padding: 1rem 1.25rem; width: min(52rem, 94vw); max-height: 90vh; max-height: 90dvh; }
 dialog::backdrop { background: rgba(0, 0, 0, 0.35); }
 dialog h2 { margin: 0 0 0.75rem; font-size: 1.1rem; }
 dialog form > label, dialog .post-only label, dialog .update-only label { display: flex; flex-direction: column; gap: 0.2rem; margin: 0.5rem 0; }
@@ -118,6 +121,14 @@ dialog menu { display: flex; justify-content: flex-end; gap: 0.5rem; padding: 0;
 .diff { font-family: var(--mono); font-size: 12px; white-space: pre-wrap; word-break: break-word; max-height: 45vh; overflow: auto; border: 1px solid var(--line); border-radius: 6px; padding: 0.4rem; margin-top: 0.4rem; }
 .diff .add { background: var(--add); }
 .diff .del { background: var(--del); }
+.diff mark { color: inherit; border-radius: 2px; }
+.diff .add mark { background: color-mix(in srgb, var(--add), #2a8f2a 35%); }
+.diff .del mark { background: color-mix(in srgb, var(--del), #c33 35%); text-decoration: line-through; }
+/* the save button stays in view however long the diff is */
+.dialog-foot { position: sticky; bottom: -1rem; margin-bottom: -1rem; padding-bottom: 1rem; background: var(--panel); }
+.dialog-foot menu { margin-top: 0.75rem; padding-top: 0.25rem; }
+#review-error { margin: 0; }
+#review-error:not(:empty) { padding-top: 0.5rem; }
 .diff .skip { color: var(--muted); text-align: center; }
 .msg input { width: 100%; }
 .error { color: var(--err); }
@@ -163,7 +174,7 @@ body.view-only #view-edit { display: block; position: fixed; top: 0.75rem; right
 
 @media (max-width: 1100px) {
   .layout { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
-  #sidebar { display: none; position: fixed; inset: 3rem auto 0 0; width: min(20rem, 85vw); background: var(--bg); z-index: 5; box-shadow: 0 0 30px rgba(0, 0, 0, 0.25); }
+  #sidebar { display: none; position: absolute; inset: 0 auto 0 0; width: min(20rem, 85vw); background: var(--bg); z-index: 5; box-shadow: 0 0 30px rgba(0, 0, 0, 0.25); }
   body.show-files #sidebar, body.empty #sidebar { display: flex; }
   body.empty #sidebar { position: static; width: auto; box-shadow: none; }
 }
@@ -172,6 +183,39 @@ body.view-only #view-edit { display: block; position: fixed; top: 0.75rem; right
   #preview-pane { display: none; }
   body.show-preview #preview-pane { display: flex; }
   body.show-preview #editor-pane { display: none; }
-  #path { display: none; }
   #form { max-height: 30vh; }
+
+  /* the keyboard shrinks the app instead of covering it (see fitViewport in main.js) */
+  body { height: var(--app-h, 100dvh); }
+  .wide-only { display: none; }
+  .narrow-only { display: block; }
+
+  .bar { flex-wrap: nowrap; position: relative; gap: 0.35rem; padding: 0.4rem 0.5rem; }
+  .bar .spacer { display: none; }
+  .bar button, .bar .button { min-height: 2.5rem; display: inline-flex; align-items: center; }
+  #path { flex: 1; max-width: none; min-width: 0; }
+  #more { display: inline-flex; }
+  #more-menu { display: none; position: absolute; top: calc(100% + 0.25rem); right: 0.5rem; z-index: 15; flex-direction: column; gap: 0.15rem; min-width: 14rem; padding: 0.3rem; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); }
+  body.show-more #more-menu { display: flex; }
+  #more-menu > * { border: 0; background: none; text-align: left; padding: 0.6rem 0.75rem; }
+
+  #files li { padding: 0.45rem 0; }
+  #files li > a:first-child { font-size: 1rem; }
+  .sib { padding: 0.15rem 0.45rem; font-size: 0.8rem; }
+
+  /* formatting at the bottom, one swipeable row, right above the keyboard */
+  #toolbar { order: 10; flex-direction: column; align-items: stretch; flex-wrap: nowrap; gap: 0; padding: 0; border-bottom: 0; border-top: 1px solid var(--line); }
+  #toolbar .tools { display: flex; gap: 0.3rem; overflow-x: auto; padding: 0.35rem 0.5rem; scrollbar-width: none; }
+  #toolbar .tools::-webkit-scrollbar { display: none; }
+  #toolbar button { flex: none; min-width: 2.75rem; min-height: 2.5rem; }
+  #status { order: -1; margin: 0; padding: 0.25rem 0.75rem 0; font-size: 0.72rem; }
+
+  /* 16px also keeps iOS from zooming in when the editor gets focus */
+  #cm .cm-scroller { font-family: var(--font); font-size: 16px; line-height: 1.6; }
+  #cm .cm-content { padding: 0 0.9rem 30vh; }
+  .spell-menu button { padding: 0.6rem 0.75rem; }
+
+  #review { width: 100%; max-width: none; height: var(--app-h, 100dvh); max-height: none; margin: 0; border: 0; border-radius: 0; padding: 1rem; }
+  #review .diff { max-height: none; }
+  #review menu button { min-height: 2.75rem; padding: 0 1.1rem; }
 }
