@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-11-17
+date: 2026-11-18
 tags: 
   - personal
 ---
@@ -9,6 +9,8 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [](https://www.monirbounadi.com/Bounadi_JMP.pdf) `Academic Papers and Resources` *2026-11-17*
+- [My Empire of Dirt | the singularity is nearer](https://geohot.github.io/blog/jekyll/update/2026/11/17/my-empire-of-dirt.html) `Ideas` *2026-11-17*
 - [Mordechai Vanunu - Wikipedia](https://en.wikipedia.org/wiki/Mordechai_Vanunu#) `Wikis` *2026-11-16*
 - [Researchers track whole body movement with just a smartwatch | Cornell Chronicle](https://news.cornell.edu/stories/2026/11/researchers-track-whole-body-movement-just-smartwatch) `Tech` *2026-11-16*
 - [Neuron Lens](https://neuron-lens.com) `Tech` *2026-11-16*
