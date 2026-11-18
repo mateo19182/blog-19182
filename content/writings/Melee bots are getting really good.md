@@ -75,15 +75,13 @@ Or he accepts the guess: in the fair game, walking in at that distance is worth 
 
 The attacker could try to keep walking in until there's no stage left. That's the squeeze: every walk-in to 13.7 makes a Fox who never guesses give a bit of ground, and the stage ends at the ledge.
 
-With the defender's back to the ledge and both in shine range, in a way that, while still a guessing game, according to my solver the attacker will win. and a good part of his best mix is... holding shield, so the other Fox's shine pushes its own owner off the stage.
+With the defender's back to the ledge and both in shine range, in a way that, while still a guessing game, according to my solver the attacker has the advantage. Out of 100 games, looking 8 frames into the future (about a billion game states), the attacker lands the first hit, or the defender slides off the stage ≈ 34 times. The defender lands the first hit ≈ 8 and nobody is hit ≈ 58.
 
 ![Blue, with his back to the ledge, shines red's shield. The pushback slides blue off the stage while he is still holding the shine](/data/melee/fox-ledge.webp "wide")
 
-But the squeeze only works on a Fox who refuses to ever guess, and a perfect one doesn't have to. In the middle of the stage the guess the attacker offers is worth exactly 0, so he can just take it there instead of backing into a bad ledge. I solved the fair game at the two spots the squeeze has to go through, a Fox walking in at 13.9 and both standing at 12.1 apart, and both are worth exactly 0: best play is to wait. That's what it would take to break the stalemate: a position mid-stage where the guess isn't even.
+The squeeze only works on a Fox who refuses to ever guess, and a perfect one doesn't have to. In the middle of the stage the guess the attacker offers is worth the same to both, so he can just take it there instead of backing into a bad ledge. 
 
-#### So, a stalemate?
-
-Putting it together: nobody can attack first, the Fox ditto is even, a Fox who stands still can be made to guess but the guess is even too, and the only place the attacker gets ahead is a ledge he can't push you to. Many other experiments I tried on the [Brute page](https://melee.m19182.dev/brute). I might be missing something so if you have any ideas please reach out to me.
+Many other experiments I tried on the [Brute page](https://melee.m19182.dev/brute), most of this is useless info, and I might be missing something so if you have any ideas please reach out to me!
 
 </details>
 
