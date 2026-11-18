@@ -106,7 +106,7 @@ Esta fue la sorpresa. Reyn sin órdenes puntúa 1846, y con cualquier entrenador
 
 Los LLM eligen planes que suenan sensatos (edgeguard, jugar agresivo) y que resultan valer menos que el aburrido. La lección va menos de LLM que del bot, y de cómo una interfaz de lenguaje puede convertir tus palabras en otra cosa sin que te enteres.
 
-### Programando: una CPU 9 en 30 minutos
+### Programando
 
 ![Puntuación en el benchmark de cada bot escrito por un LLM en una sesión de 30 minutos, junto a las CPU, MIMIC y Phillip silver](/data/melee/bot-writer.svg "wide")
 

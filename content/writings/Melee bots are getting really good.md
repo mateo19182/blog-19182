@@ -28,7 +28,7 @@ I think its an extremely exciting moment to get into this, with a lot of work to
 
 ## Some history
 
-Melee itself was made in about 13 months (reaaally fast) and was the GameCube's best selling game. The game shipped with built-in CPUs, levels 1-9. They are not great and any experienced player can beat them easily, mostly because they repeat moves and strategies constantly. It wasn't until **2015**, where Dan "altf4" Petro presented, [SmashBot](https://www.youtube.com/watch?v=_0Z_oN_CZyA) (great DEFCON talk!), a Fox bot that he wrote by hand using [GOFAI](https://en.wikipedia.org/wiki/Symbolic_artificial_intelligence). His main advantage was that it acted frame-perfect and with zero reaction time, but players quickly understood it's tactics and exploited them until they were patched by hand. However, the heavy lifting of reverse engineering the game eventually became [libmelee](https://github.com/vladfi1/libmelee), which almost every bot since is built on.
+Melee itself was made in about 13 months (reaaally fast) and was the GameCube's best selling game. The game shipped with built-in CPUs, levels 1-9. They are not great and any experienced player can beat them easily, mostly because they repeat moves and strategies constantly. It wasn't until 2015, where Dan "altf4" Petro presented, [SmashBot](https://www.youtube.com/watch?v=_0Z_oN_CZyA) (great DEFCON talk!), a Fox bot that he wrote by hand using [GOFAI](https://en.wikipedia.org/wiki/Symbolic_artificial_intelligence). His main advantage was that it acted frame-perfect and with zero reaction time, but players quickly understood it's tactics and exploited them until they were patched by hand. However, the heavy lifting of reverse engineering the game eventually became [libmelee](https://github.com/vladfi1/libmelee), which almost every bot since is built on.
 
 ### The optimal melee game
 
@@ -87,7 +87,7 @@ Many other experiments I tried on the [Brute page](https://melee.m19182.dev/brut
 
 ### Back to History
 
-In **2017**, Vlad Firoiu published [Phillip](https://arxiv.org/abs/1702.06230), trained end to end with asynchronous RL. He trained a network per character and used a naive reward (KOs + Damage Dealt*weight) with [actor-critic](https://en.wikipedia.org/wiki/Actor-critic_algorithm) and self-play. It was able to beat some professional players, thought mostly because it could react in about 2 frames where a human needs around 12. Still was quite exploitable, as some players found that simply crouching on the ledge would cause it to eventually suicide.
+In 2017, Vlad Firoiu published [Phillip](https://arxiv.org/abs/1702.06230), trained end to end with asynchronous RL. He trained a network per character and used a naive reward (KOs + Damage Dealt*weight) with [actor-critic](https://en.wikipedia.org/wiki/Actor-critic_algorithm) and self-play. It was able to beat some professional players, thought mostly because it could react in about 2 frames where a human needs around 12. Still was quite exploitable, as some players found that simply crouching on the ledge would cause it to eventually suicide.
 
 The same year, [Sharma and Friedman](https://www.yash-sharma.com/files/learning-play-super%20(3).pdf) trained a recurrent DQN that had to act with a 12-frame delay, closer to a human. Vlad's own [follow-up](https://arxiv.org/abs/1810.07286) in 2018 ("At Human Speed") did the same with Phillip: plain RL collapsed under the delay, and adding a learned model that predicts the game brought it back.
 
@@ -125,11 +125,11 @@ Using Slippi's Dolphin emulator, Fox mirror on FD and Battlefield y put every bo
 
 LLMs are a special case since they are too slow to press buttons every frame (16.7 ms) so each setup gives them a higher-level job and lets something faster handle the frames. They read about 500 tokens of [game state](https://github.com/mateo19182/melee-llm/blob/main/melee_llm/state.py) with a rolling context window
 
-- **[Play, untimed](https://github.com/mateo19182/melee-llm/blob/main/melee_llm/agents/llm_paused.py)**: pick a move and the game pauses while they think. This measures how good their choices are.
-- **[Play, live](https://github.com/mateo19182/melee-llm/blob/main/melee_llm/agents/llm_live.py)**: same but no stops.
-- **[Jev plays](https://github.com/mateo19182/melee-llm/blob/main/melee_llm/agents/jev_player.py)**: [TypeSafe's Jev](https://typesafe.ai/blog/introducing-system-one-models-and-jev), a decision model that answers multiple-choice questions in about 0.15 seconds.
-- **[Coach Reyn](https://github.com/mateo19182/melee-llm/blob/main/melee_llm/agents/coach.py)**: Reyn plays every frame, and every 5 seconds the LLM coach uses text to condition it's play style.
-- **[Write a bot](https://github.com/mateo19182/melee-llm/tree/main/melee_llm/botwriter)**: a coding agent gets 30 minutes, a sandbox and a practice tool to write a Python bot that then plays like any other entrant.
+- [Play, untimed](https://github.com/mateo19182/melee-llm/blob/main/melee_llm/agents/llm_paused.py): pick a move and the game pauses while they think. This measures how good their choices are.
+- [Play, live](https://github.com/mateo19182/melee-llm/blob/main/melee_llm/agents/llm_live.py): same but no stops.
+- [Jev plays](https://github.com/mateo19182/melee-llm/blob/main/melee_llm/agents/jev_player.py): [TypeSafe's Jev](https://typesafe.ai/blog/introducing-system-one-models-and-jev), a decision model that answers multiple-choice questions in about 0.15 seconds.
+- [Coach Reyn](https://github.com/mateo19182/melee-llm/blob/main/melee_llm/agents/coach.py): Reyn plays every frame, and every 5 seconds the LLM coach uses text to condition it's play style.
+- [Write a bot](https://github.com/mateo19182/melee-llm/tree/main/melee_llm/botwriter): a coding agent gets 30 minutes, a sandbox and a practice tool to write a Python bot that then plays like any other entrant.
 
 ![Real-time board: every entrant's Elo with its 95% interval, coloured by kind](/data/melee/leaderboard-realtime.svg "wide")
 
@@ -156,20 +156,20 @@ Screenshots don't help either: given an image instead of the text, models perfor
 This was the surprise. Reyn with no orders rates 1846, and with any coach it jumps by about 300 points to HAL's level. But a "coach" that picks a random command every 5 seconds without looking at the game gets most of that jump (2141). On ratings alone the LLM coaches overlap it, so I had the coaches play each other directly: 300 more games, the same bot on both sides, only the coach differing. Three of the four LLM coaches do beat random: Sonnet 5.5 won 29 of 36 against it, Haiku 4.5 28 of 37 and GPT-6 Luna 30 of 45, about 170 points above it. GPT-6.1 Sol doesn't (15 of 35); it's also the slowest, at 3 seconds a reply. So I dug in:
 
 - Reyn mostly needs *any* command. One random command held all game already gets it to 2075.
-- **Holding "Don't die." all game, with no coach at all, rates 2452**, above every LLM coach.
+- Holding "Don't die." all game, with no coach at all, rates 2452, above every LLM coach.
 - Jev is the best coach (2403), and by accident: its favourite pick is "kill now", which Reyn's router maps every single time to... "Don't die."
 
 The LLMs pick sensible-sounding plans (edgeguard, play aggressive) that turn out to be worth less than the boring one. The lesson is less about LLMs than about the bot, and about how a language interface can quietly turn your words into something else.
 
-### Coding: a CPU 9 in 30 minutes
+### Coding
 
 ![Bench rating of every bot an LLM wrote in a 30-minute session, next to CPUs, MIMIC and Phillip silver](/data/melee/bot-writer.svg "wide")
 
 27 Claude Code sessions of 30 minutes each, in three batches, all on the main board:
 
-- **One run per model.** Sonnet's 135-line bot (shine, grab, lasers) rates 1752, Haiku 4.5's 1599, and Opus's 303 lines, the most engineered, 1527.
-- **Three runs each at medium effort.** Opus was clearly ahead (1684 to 1858, all above the level 9 CPU); Sonnet (936 to 1233) and Haiku (1060 to 1444) stayed below it.
-- **Five runs each at high effort, with a better starter bot.** All three came out level: Opus 1699 on average, Haiku 1686, Sonnet 1660.
+- One run per model. Sonnet's 135-line bot (shine, grab, lasers) rates 1752, Haiku 4.5's 1599, and Opus's 303 lines, the most engineered, 1527.
+- Three runs each at medium effort. Opus was clearly ahead (1684 to 1858, all above the level 9 CPU); Sonnet (936 to 1233) and Haiku (1060 to 1444) stayed below it.
+- Five runs each at high effort, with a better starter bot. All three came out level: Opus 1699 on average, Haiku 1686, Sonnet 1660.
 
 That tie says more about the starter than about the models. The new starter was 60 lines that run at the opponent and up-smash, and I hadn't checked how strong it was: one Haiku session handed it in unchanged and it rates 1685, above the level 9 CPU. Opus and Sonnet mostly rewrote it, into as many as 450 lines, and on average ended where they started. Only two sessions clearly improved on it (the best reached 1944, level with MIMIC). So runs of one model differ by hundreds of points, and 60 lines of the right idea beat most of what 30 minutes of a strong model adds.
 
