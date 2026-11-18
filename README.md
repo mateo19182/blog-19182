@@ -70,10 +70,14 @@ with the site's own markdown pipeline and templates (`lib/page.mjs`, shared with
 the build), minus syntax highlighting and "Linked from". It checks the rules in
 `AGENTS.md` (`lib/content.mjs`) before saving. A spell checker (`editor/spell.js`, Hunspell
 British English and Spanish via nspell; Spanish text also accepts English words)
-underlines typos outside code, URLs and maths; right-click a word for
-suggestions or to add it to the browser's personal dictionary. The file list and the preview
+underlines typos outside code, URLs and maths; right-click (or tap, on a touch
+screen) a word for suggestions or to add it to the browser's personal dictionary. The file list and the preview
 can be hidden (☰, Vista previa / Alt-P), and Foco (Alt-Z, Esc to leave) leaves only the
-text, dimming all but the current paragraph. Edits autosave in the browser
+text, dimming all but the current paragraph. On a phone the editor and preview take
+turns (Vista / Editar), each opening at the paragraph the other showed; the
+formatting bar sits above the keyboard and the less used actions are under ⋯.
+Adding `/edit` to any page's URL on the site (`/writings/Some-post/edit`) opens
+its file in the editor; `functions/_middleware.ts` redirects it. Edits autosave in the browser
 (IndexedDB) until saved. Saving shows a diff and makes one commit with every
 changed file and pasted image (WebP, ≤2000 px; project thumbnails cropped to
 16:10).

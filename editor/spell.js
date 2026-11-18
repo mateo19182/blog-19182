@@ -1,9 +1,9 @@
 // Spell checking with Hunspell dictionaries (British English, Spanish), so it
 // works the same in any browser. Spanish text also accepts English words, since
 // posts mix in English terms. Skips code, URLs, HTML, maths and link
-// targets, and capitalised words mid-sentence (names). Right-click (or long
-// press) a marked word for suggestions or to add it to your dictionary, which
-// lives in this browser.
+// targets, and capitalised words mid-sentence (names). Right-click (tap, on a
+// touch screen) a marked word for suggestions or to add it to your dictionary,
+// which lives in this browser.
 import { ViewPlugin, Decoration, EditorView } from "@codemirror/view"
 import { Facet, RangeSetBuilder, StateEffect } from "@codemirror/state"
 import { syntaxTree } from "@codemirror/language"
@@ -98,18 +98,27 @@ export const spellChecker = ViewPlugin.fromClass(class {
   decorations: (p) => p.decorations,
   eventHandlers: {
     contextmenu(e, view) {
-      const el = e.target.closest?.(".cm-misspelled")
-      if (!el) return false
-      e.preventDefault()
-      const pos = view.posAtDOM(el)
-      const range = this.decorations.iter(pos)
-      let from = pos, to = pos
-      for (; range.value; range.next()) { if (range.from <= pos && range.to >= pos) { from = range.from; to = range.to; break } if (range.from > pos) break }
-      menu(view, e.clientX, e.clientY, from, to)
-      return true
+      return openAt(this, e, view)
+    },
+    // Touch screens have no right-click (iOS never sends contextmenu): a tap opens it.
+    click(e, view) {
+      return matchMedia("(pointer: coarse)").matches && openAt(this, e, view)
     },
   },
 })
+
+function openAt(plugin, e, view) {
+  const el = e.target.closest?.(".cm-misspelled")
+  if (!el) return false
+  e.preventDefault()
+  const pos = view.posAtDOM(el)
+  const range = plugin.decorations.iter(pos)
+  let from = pos, to = pos
+  for (; range.value; range.next()) { if (range.from <= pos && range.to >= pos) { from = range.from; to = range.to; break } if (range.from > pos) break }
+  const r = el.getBoundingClientRect()
+  menu(view, e.type === "click" ? r.left : e.clientX, e.type === "click" ? r.bottom + 4 : e.clientY, from, to)
+  return true
+}
 
 // nspell misses swapped neighbours ("teh"), the commonest typo: try those first.
 function suggest(spell, word) {
@@ -132,12 +141,14 @@ function menu(view, x, y, from, to) {
   const suggestions = suggest(spell, word)
   el.innerHTML = (suggestions.length ? suggestions.map((s) => `<button data-s="${s.replace(/"/g, "&quot;")}">${s}</button>`).join("") : '<span class="muted">Sin sugerencias</span>') +
     `<hr><button data-add>Añadir «${word}» al diccionario</button>`
-  Object.assign(el.style, { left: `${Math.min(x, innerWidth - 240)}px`, top: `${Math.min(y, innerHeight - 260)}px` })
   document.body.append(el)
-  const close = () => { el.remove(); removeEventListener("mousedown", outside, true); removeEventListener("keydown", esc, true) }
+  // keep it inside what's visible, above the phone keyboard too
+  const h = visualViewport?.height ?? innerHeight
+  Object.assign(el.style, { left: `${Math.max(4, Math.min(x, innerWidth - el.offsetWidth - 4))}px`, top: `${Math.max(4, Math.min(y, h - el.offsetHeight - 4))}px` })
+  const close = () => { el.remove(); removeEventListener("pointerdown", outside, true); removeEventListener("keydown", esc, true) }
   const outside = (e) => { if (!el.contains(e.target)) close() }
   const esc = (e) => { if (e.key === "Escape") close() }
-  addEventListener("mousedown", outside, true)
+  addEventListener("pointerdown", outside, true)
   addEventListener("keydown", esc, true)
   el.addEventListener("click", (e) => {
     const b = e.target.closest("button")

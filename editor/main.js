@@ -9,7 +9,7 @@ import { markdown } from "@codemirror/lang-markdown"
 import { yaml as yamlLang } from "@codemirror/lang-yaml"
 import { indentWithTab } from "@codemirror/commands"
 import { search, searchKeymap, highlightSelectionMatches } from "@codemirror/search"
-import { diffLines } from "diff"
+import { diffLines, diffWordsWithSpace } from "diff"
 import { store } from "./store.js"
 import { processImage, dataUrl } from "./images.js"
 import { makePreview } from "./preview.js"
@@ -23,6 +23,8 @@ import { esc } from "../lib/templates.mjs"
 
 const $ = (s, el = document) => el.querySelector(s)
 const today = () => new Date().toISOString().slice(0, 10)
+// Phone layout: one pane at a time (editor or preview), files in a drawer.
+const narrow = () => matchMedia("(max-width: 760px)").matches
 const SITE = "https://blog.m19182.dev"
 
 const S = {
@@ -163,8 +165,30 @@ async function loadFiles(path) {
   S.dataFiles = list.dataFiles
   await loadLocal()
   renderSidebar()
+  path ??= pathForPage()
   if (path && (S.remote.has(path) || S.local.has(path))) await open(path)
   else showEmpty()
+}
+
+// Adding /edit to a page's URL on the site lands here as ?page=/that/page
+// (functions/_middleware.ts): open the file behind it, in the language asked for.
+function pathForPage() {
+  const q = new URLSearchParams(location.search)
+  const page = q.get("page")
+  if (page == null) return null
+  const lang = q.get("lang")
+  q.delete("page")
+  q.delete("lang")
+  history.replaceState(null, "", `${location.pathname}${q.size ? `?${q}` : ""}`)
+  let want = page.replace(/\/+$/, "")
+  try { want = decodeURIComponent(want) } catch {}
+  const orig = allPaths().filter((p) => p === originalPath(p) && pageUrl(p) === want).sort().reverse()[0]
+  if (!orig) {
+    toast(`No encuentro el archivo de ${page}`, true)
+    return null
+  }
+  const translated = lang && orig.replace(/\.md$/, `.${lang}.md`)
+  return translated && allPaths().includes(translated) ? translated : orig
 }
 
 function fatal(msg) {
@@ -549,7 +573,13 @@ function renderPropsSummary() {
   $("#props-summary").textContent = bits.join(" · ")
 }
 
-const propsCollapsed = () => { try { return localStorage.getItem("props") === "collapsed" } catch { return false } }
+// Collapsed by default on phones, where the form would take half the screen.
+const propsCollapsed = () => {
+  try {
+    const v = localStorage.getItem("props")
+    return v ? v === "collapsed" : narrow()
+  } catch { return narrow() }
+}
 document.body.classList.toggle("props-collapsed", propsCollapsed())
 $("#props-toggle").addEventListener("click", () => {
   localStorage.setItem("props", propsCollapsed() ? "open" : "collapsed")
@@ -693,31 +723,131 @@ function setPreviewLang() {
   root.lang = hasEs ? S.previewLang : root.lang
 }
 
-function syncScroll() {
-  if (!view) return
+const editorFraction = () => {
   const sc = view.scrollDOM
-  const frac = sc.scrollTop / Math.max(1, sc.scrollHeight - sc.clientHeight)
+  return sc.scrollTop / Math.max(1, sc.scrollHeight - sc.clientHeight)
+}
+
+function scrollPreviewTo(frac) {
   const w = $("#preview").contentWindow
   if (!w?.document?.documentElement) return
   const max = w.document.documentElement.scrollHeight - w.innerHeight
   w.scrollTo({ top: frac * max, behavior: "instant" })
 }
 
+// Side by side, the preview follows the editor. Phones place it when switching
+// instead (hiding the editor fires a scroll to the top, which would undo that).
+function syncScroll() {
+  if (view && !narrow()) scrollPreviewTo(editorFraction())
+}
+
+// On phones the editor and preview take turns: each opens at the paragraph the
+// other was showing, found by its first words, or else at the same relative height.
+const BLOCKS = "main :is(p, li, h1, h2, h3, h4, blockquote, figcaption, td, dd)"
+const PREVIEW_TOP = 70 // below the preview's sticky site header
+const plain = (s) => s
+  .replace(/^\s*(?:[-+*]|\d+\.)\s+/, "")
+  .replace(/\[\^[^\]]*\]/g, "")
+  .replace(/!?\[([^\]]*)\]\([^)]*\)/g, "$1")
+  .replace(/\[\[(?:[^\]|]*\|)?([^\]]*)\]\]/g, "$1")
+  .replace(/<[^>]+>/g, "")
+  .replace(/[*_`#>~]/g, " ")
+  .replace(/[‘’]/g, "'").replace(/[“”]/g, '"')
+  .replace(/\s+/g, " ").trim().toLowerCase()
+const firstWords = (s) => {
+  const words = plain(s).split(" ").filter(Boolean)
+  return words.length >= 3 ? words.slice(0, 6).join(" ") : null
+}
+
+// The first words of the paragraph being edited, or of the first one in view.
+function editorAnchor() {
+  const sc = view.scrollDOM.getBoundingClientRect()
+  const head = view.state.selection.main.head
+  const caret = view.coordsAtPos(head)
+  const pos = caret && caret.top >= sc.top && caret.bottom <= sc.bottom ? head : view.posAtCoords({ x: sc.left + sc.width / 2, y: sc.top + 8 }, false)
+  const doc = view.state.doc
+  for (let n = doc.lineAt(pos).number; n <= Math.min(doc.lines, doc.lineAt(pos).number + 30); n++) {
+    const words = firstWords(doc.line(n).text)
+    if (words) return { words, frac: editorFraction() }
+  }
+  return { words: null, frac: editorFraction() }
+}
+
+function previewBlocks() {
+  const d = $("#preview").contentDocument
+  return d ? [...d.querySelectorAll(BLOCKS)].filter((el) => el.getClientRects().length) : []
+}
+
+function previewAnchor() {
+  const w = $("#preview").contentWindow
+  const top = previewBlocks().find((el) => el.getBoundingClientRect().bottom > PREVIEW_TOP && firstWords(el.textContent))
+  const max = w ? w.document.documentElement.scrollHeight - w.innerHeight : 0
+  return { words: top ? firstWords(top.textContent) : null, frac: w && max > 0 ? w.scrollY / max : 0 }
+}
+
+function showInPreview({ words, frac }) {
+  const el = words && previewBlocks().find((b) => plain(b.textContent).includes(words))
+  if (!el) return scrollPreviewTo(frac)
+  const w = $("#preview").contentWindow
+  w.scrollTo({ top: el.getBoundingClientRect().top + w.scrollY - PREVIEW_TOP, behavior: "instant" })
+}
+
+function showInEditor({ words, frac }) {
+  const doc = view.state.doc
+  let pos = null
+  for (let n = 1; words && n <= doc.lines && pos == null; n++) if (plain(doc.line(n).text).includes(words)) pos = doc.line(n).from
+  view.requestMeasure()
+  if (pos != null) view.dispatch({ effects: EditorView.scrollIntoView(pos, { y: "start", yMargin: 12 }) })
+  else {
+    const sc = view.scrollDOM
+    sc.scrollTop = frac * (sc.scrollHeight - sc.clientHeight)
+  }
+}
+
 // Narrow screens swap editor and preview; wide ones can hide the preview to write
 // with the full width, remembered in this browser.
-const narrow = () => matchMedia("(max-width: 760px)").matches
 const previewHidden = () => { try { return localStorage.getItem("preview") === "hidden" } catch { return false } }
 function applyPreviewPref() {
   document.body.classList.toggle("hide-preview", previewHidden())
-  $("#toggle-preview").setAttribute("aria-pressed", String(!previewHidden()))
+  const btn = $("#toggle-preview")
+  if (narrow()) {
+    const showing = document.body.classList.contains("show-preview")
+    btn.textContent = showing ? "Editar" : "Vista"
+    btn.setAttribute("aria-pressed", String(showing))
+  } else {
+    btn.textContent = "Vista previa"
+    btn.setAttribute("aria-pressed", String(!previewHidden()))
+  }
 }
 function togglePreview() {
-  if (narrow()) return document.body.classList.toggle("show-preview")
+  if (narrow()) {
+    const toPreview = !document.body.classList.contains("show-preview")
+    const anchor = view && (toPreview ? editorAnchor() : previewAnchor())
+    document.body.classList.toggle("show-preview", toPreview)
+    applyPreviewPref()
+    // two frames: a preview that was hidden ignores scrolling until it has been laid out
+    if (anchor) requestAnimationFrame(() => requestAnimationFrame(() => (toPreview ? showInPreview(anchor) : showInEditor(anchor))))
+    return
+  }
   localStorage.setItem("preview", previewHidden() ? "shown" : "hidden")
   applyPreviewPref()
   if (!previewHidden()) schedulePreview(0)
 }
 applyPreviewPref()
+matchMedia("(max-width: 760px)").addEventListener("change", applyPreviewPref)
+
+// iOS doesn't shrink the page for the on-screen keyboard (Android does, with
+// interactive-widget in index.html): fit the app to what's visible, so the
+// formatting bar sits right above the keyboard.
+function fitViewport() {
+  const vv = window.visualViewport
+  if (!vv || vv.scale > 1.01) return
+  document.documentElement.style.setProperty("--app-h", `${vv.height}px`)
+  if (narrow() && scrollY) scrollTo(0, 0)
+}
+window.visualViewport?.addEventListener("resize", fitViewport)
+window.visualViewport?.addEventListener("scroll", fitViewport)
+fitViewport()
 
 // ---- images --------------------------------------------------------------------------------
 function imageFiles(e) {
@@ -870,13 +1000,34 @@ function referencedImages(docs) {
   return [...S.images.keys()].filter((p) => text.includes(p.split("/").pop()))
 }
 
+// Lines of one side of a word diff, the changed words in <mark>.
+function markedLines(words, side) {
+  const lines = [""]
+  for (const w of words) {
+    if (w[side === "add" ? "removed" : "added"]) continue
+    w.value.split("\n").forEach((piece, i) => {
+      if (i) lines.push("")
+      if (piece) lines[lines.length - 1] += w.added || w.removed ? `<mark>${esc(piece)}</mark>` : esc(piece)
+    })
+  }
+  if (lines.length > 1 && lines.at(-1) === "") lines.pop()
+  return lines
+}
+
 function diffHtml(a, b) {
   const parts = diffLines(a || "", b)
   const out = []
+  const line = (cls, html) => `<div class="${cls}">${cls === "add" ? "+" : "−"} ${html}</div>`
   for (const [i, p] of parts.entries()) {
     const lines = p.value.replace(/\n$/, "").split("\n")
-    if (p.added || p.removed) {
-      out.push(...lines.map((l) => `<div class="${p.added ? "add" : "del"}">${p.added ? "+" : "−"} ${esc(l)}</div>`))
+    // a rewritten block: show which words changed, not just the whole paragraph twice
+    if (p.removed && parts[i + 1]?.added && p.value.length + parts[i + 1].value.length < 20000) {
+      const words = diffWordsWithSpace(p.value, parts[i + 1].value)
+      out.push(...markedLines(words, "del").map((l) => line("del", l)), ...markedLines(words, "add").map((l) => line("add", l)))
+    } else if (p.added && parts[i - 1]?.removed && p.value.length + parts[i - 1].value.length < 20000) {
+      continue
+    } else if (p.added || p.removed) {
+      out.push(...lines.map((l) => line(p.added ? "add" : "del", esc(l))))
     } else if (lines.length > 6) {
       const head = i === 0 ? [] : lines.slice(0, 3)
       const tail = i === parts.length - 1 ? [] : lines.slice(-3)
@@ -913,7 +1064,12 @@ function notesFor(doc, pending) {
   return notes
 }
 
-async function review() {
+// A failure here used to be swallowed: the button seemed to do nothing.
+function review() {
+  return openReview().catch((e) => toast(`No se pudo preparar el guardado: ${e.message}. Tus cambios siguen guardados en este navegador.`, true))
+}
+
+async function openReview() {
   await persist(S.current)
   // load autosaved files that weren't opened, so they can be diffed
   for (const d of pendingDocs().filter((d) => d.notLoaded)) await loadDoc(d.path).catch(() => {})
@@ -1040,6 +1196,13 @@ $("#toggle-files").addEventListener("click", () => {
   localStorage.setItem("files", filesHidden() ? "shown" : "hidden")
   document.body.classList.toggle("hide-files", filesHidden())
 })
+// Phones keep the less used actions in a ⋯ menu; wide screens show them inline.
+function setMore(on) {
+  document.body.classList.toggle("show-more", on)
+  $("#more").setAttribute("aria-expanded", String(on))
+}
+$("#more").addEventListener("click", () => setMore(!document.body.classList.contains("show-more")))
+document.addEventListener("click", (e) => { if (!e.target.closest("#more")) setMore(false) })
 
 // Focus mode: only the text, the current paragraph highlighted.
 function toggleFocus(on = !document.body.classList.contains("focus")) {
@@ -1068,6 +1231,8 @@ $("#toolbar").addEventListener("click", (e) => {
   }
   cmds[cmd]?.(view)
 })
+// keep the editor focused, so the phone keyboard stays open while formatting
+$("#toolbar").addEventListener("mousedown", (e) => { if (e.target.closest("button")) e.preventDefault() })
 document.addEventListener("keydown", (e) => {
   if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "s") {
     e.preventDefault()
