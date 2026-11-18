@@ -175,41 +175,27 @@ That tie says more about the starter than about the models. The new starter was 
 
 ---
 
+## Training my own bot
+
+After finding an intersection of my hobbies such as Melee and training neural networks, it's only natural to train my own AI bots. These were my first steps, I'm just getting into the community and understanding the state of the art, so might make an update later!
+
+Started by training my own small transformer on human Yoshi replays, the way HAL does. The best one beat the level 9 CPU, but lost every game to the serious bots, and self-play RL in the simulator made it worse in the real game. Then checked my pipeline by retraining HAL's 20M Fox with it, but got much worse results so I stopped and started from HAL instead did some finetunes on HAL's 247M model specific for Yoshi.
+
+Tried making some primitives for specific Yoshi tech and labelling it in training data, but didn't seem to be useful
+
+Delay is seems like one of the biggest problems to solve. Online the bot sees the game 10 frames late. It can still performs double-jump cancels and L-cancels, but parries, which need a 6-frame read, mostly disappear. To train against that, I got HAL running inside melee-sim-light at about 1,800 game frames a second.
+
 ## What else came out of it
 
-**A [website](https://github.com/mateo19182/melee-llm/tree/main/melee_llm/web)** to watch it all, dressed like Melee's own menus: the boards with a page per entrant, every game on the server drawn live in 2D, a launcher for any matchup, every replay with the AI's decisions on a timeline, and a Live page streaming the real game.
+A [website](https://github.com/mateo19182/melee-llm/tree/main/melee_llm/web) where I recorded my investigations and experiments, with every game being played live in 2D and my model training runs live, among other stuff.
 
-**An [AI commentary booth](https://github.com/mateo19182/melee-llm/blob/main/melee_llm/commentary.py)** on that Live page. Two casters, Charlie on play-by-play ("loud, fast, loses his mind on big moments") and Laura on colour ("dry wit, teases Charlie"). A fast LLM watches the game's events and writes a line every few seconds, ElevenLabs voices them, only while someone is listening. A real exchange:
+An [AI commentary booth](https://github.com/mateo19182/melee-llm/blob/main/melee_llm/commentary.py) with two casters. A fast LLM watches the game's events and ElevenLabs voices them.
 
-> **Charlie:** HAL MASTER's Fox is in the air and Faynt's Marth is waiting for him!
-> **Laura:** Waiting is the right word. Faynt doesn't chase, Charlie, he collects.
+I'm also looking for interesting this to do with [melee-brute](https://github.com/mateo19182/melee-brute). At it's current speeds, it can only reach a conclusion under very restrictive situations, but for questions like "was there any possible way of surviving this specific "edgeguard" it can work.
 
-**A [simulator](https://github.com/mateo19182/melee-llm/tree/main/melee_llm/sim).** I hooked every player, learned bots included, into melee-sim-light and checked it against 300 replays: 287 matched frame for frame (the other 13 were unfinished files), about 100 times faster than the emulator. The catch is that it has no built-in CPUs.
-
-**A bot of my own, [m19182-yoshi](https://github.com/mateo19182/melee-llm/tree/main/train/meleebot).** A small transformer that copies human play, the way HAL did: it reads the last 4 seconds of the game and predicts the next controller input. The first version (6M parameters) lost all 12 games against the level 9 CPU; a 20M one won 1 of 12. What made the difference was data: the current best, `bc-20m-ft`, is first pretrained on 1.4 billion frames of Pro and Master games with every character, then fine-tuned on Yoshi with 2 to 4 frames of delay, like online play. It won 5 of 6 against the level 9 CPU and its first games off MIMIC's Marth (2 of 6) and HAL's Yoshi (1 of 6), but it still loses every game to Phillip, HAL's Fox and Faynt. Then I tried the second half of the recipe, [self-play RL](https://github.com/mateo19182/melee-llm/tree/main/train/meleebot/rl) in the simulator. It beat its teacher about 80% of the time there by iteration 100, then collapsed, and those snapshots played worse than `bc-20m-ft` in the real game. Lesson learned: the simulator is great for speed, but a checkpoint only counts once it wins in Dolphin.
-
-**Playing them yourself.** You can play any of these bots with a controller on your own machine with [`play.py`](https://github.com/mateo19182/melee-llm/blob/main/play.py); playing them over netplay from the website is next. The board has a slot waiting for human results.
+Also thinking of enabling a way to play my bots live via netplay if there's interest. Talk to me!
 
 ---
-
-## What I learned
-
-- In real time, latency is the whole game. A frontier model that makes good decisions is worth nothing if they arrive two seconds (120 frames) late.
-- The interesting place for an LLM is above a fast policy, not instead of it, and even there it has to be checked against the dumbest possible baseline. "Random command" and "Don't die." were the most useful controls I ran.
-- The bots got strong from human replays plus self-play, not from reasoning, and they do it with tens of millions of parameters on one home GPU.
-- One run per model ranks nothing. Runs of the same model spread over hundreds of points, and the starter bot mattered more than the model.
-
-## What's next
-
-I'm giving it one or two more weeks, with LLMs no longer at the centre. For m19182-yoshi the goal is now the best Yoshi I can make by following the published recipes more closely: I've only used about 10% of HAL's dataset so far, and self-play needs a better learning signal before it helps. The other thing is the brute-force search: [melee-brute](https://github.com/mateo19182/melee-brute) takes inputs back and tries others on the real game code, which is the setup Mario 64's brute-forcers use. For the two Foxes the open part is lasers, wavedashes and looking further than 8 frames. It could also answer questions like "can anything survive this edgeguard?" or label the best move from real replay positions to train the bot on. The catches are that the simulator only does versus matches and its RNG differs from Dolphin's. Also on the list: putting m19182-yoshi and myself on the bench, and getting people to play the bots.
-
-
-
-The project site, with the boards, replays, live games and a longer [write-up](https://melee.m19182.dev/writeup/), is at [melee.m19182.dev](https://melee.m19182.dev), and the code is on [GitHub](https://github.com/mateo19182/melee-llm).
-
----
-
-Built on [Slippi](https://slippi.gg), [libmelee](https://github.com/vladfi1/libmelee), [Slippi Lab](https://github.com/frankborden/slippilab) and [melee-sim-light](https://github.com/kyhavlov/melee-sim-light), with the bots of vladfi1 (Phillip), Eric Gu (HAL), erickfm (MIMIC) and Frisson Labs (Faynt, Reyn), TypeSafe's Jev and ElevenLabs voices.
 
 [^1]: highly recommend [AsumSaus](https://www.youtube.com/@AsumSaus/videos) and [PracticalTAS](https://youtube.com/@practicaltas?si=rUSebEZkc0eIUzv8) if interested in learning more!
 
