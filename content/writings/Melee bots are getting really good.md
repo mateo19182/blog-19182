@@ -49,29 +49,19 @@ In summary, his answer was:
 
 Me being a fan of these kind of thought experiments, poked some holes at it, and since we now have the decompiled source code I ended up trying to brute force the answer. That turned into [melee-brute](https://github.com/mateo19182/melee-brute), a fork I made of [melee-sim-light](https://github.com/kyhavlov/melee-sim-light) that can explore the search space much faster than any traditional emulator. It's honestly just a bunch of clever Fable tricks optimising for this use case but I think it can be pretty useful for other stuff!
 
-#### 1. Nobody can go first
-
 The deadlock seems to be real, but not for that reason. Walking in and shining isn't actually the best play. Its reach is tiny (10 units), and Fox's jab hits from 21, so the other one just jabs you on the way in.
 
-I then thought that maybe some other character can hit Fox in a way he can't react to (he can read the game memory, so he sees every move on the frame it starts). So I tried every character's moves against a Fox answering on the next frame, from a gap of 12 to 40[^4]: nothing got through. He punishes or blocks all of it, mostly with shine or a jab.
+I then thought that maybe some other character can hit Fox in a way he can't react to (he can read the game memory, so he sees every move on the frame it starts). So I tried every character's moves against a Fox answering on the next frame, from a gap of 12 to 40[^4] and nothing got through. He punishes or blocks all of it, mostly with shine or a jab.
 
-The shine's first frame does most of the work. Fox is intangible on it, and on the ground its hitbox clanks with the attacker's, so even a frame-2 jab from up close loses to it. It's also the only move in the game that hits before anyone can react, so nobody can stand in that small circle around Fox, and he has nothing like it to fear. Falco has the same shine, but it reaches 8 instead of 10.
+The shine's first frame does most of the work. Fox is intangible on it, and on the ground its hitbox clanks with the attacker's, so even a frame-2 jab from up close loses to it. It's also the only move in the game that hits before anyone can react, so nobody can stand in that small circle around Fox.
 
 ![Two Foxes 7 units apart shine on the same frame: the hitboxes clank, both freeze for 4 frames and nobody takes damage](/data/melee/fox-clank.webp "wide")
 
 So if anyone wins, it's a Fox, and the real question is the Fox ditto.
 
-#### 2. The ditto is even from the start
-
 One thing doesn't need any search: a match on Final Destination starts as a mirror image, so whatever plan one Fox has, the other can play it mirrored. Neither Fox can be ahead from the start.
 
 Either both can stand there safely forever (Petro's deadlock), or both are forced into guesses that happen to balance out.
-
-#### 3. But you can't just stand there
-
-Step 1 assumed one Fox moves and the other reacts. That breaks when both have to pick on the same frame, with nobody reacting to anything. This is the place where I got overwhelmed by the number of possibilities, but seeing the speeds some of my RL runs were going using melee-sim-light I thought maybe it might be possible to bruteforce the solution, kinda like trying to find a checkmate that breaks the deadlock.
-
-So the search does exactly that: every frame both Foxes pick an input without seeing the other's, 60 times a second, and it looks N frames ahead or until the first clean hit. That's millions of game states for each position.
 
 ![The attacking Fox (red) walks in for 182 frames and flicks his stick away just outside shine range. Shown twice with the same red input: blue turns to leave and is hit, blue stands still and is not](/data/melee/fox-flick.webp "wide")
 
@@ -83,11 +73,9 @@ There are two ways out of it. If he never wants to guess, he steps back at 13.7,
 
 Or he accepts the guess: in the fair game, walking in at that distance is worth exactly 0 to the attacker, and the best play for both is to wait. If there was any way we can force the defender to hold shield, or attacker can reach him from above ground, attacker can get the advantage, but there just no way to force a standing fox to do that
 
-#### 4. Can he be pushed off the stage?
+The attacker could try to keep walking in until there's no stage left. That's the squeeze: every walk-in to 13.7 makes a Fox who never guesses give a bit of ground, and the stage ends at the ledge.
 
-If stepping back is how he avoids guessing, the attacker could try to keep walking in until there's no stage left. That's the squeeze: every walk-in to 13.7 makes a Fox who never guesses give a bit of ground, and the stage ends at the ledge.
-
-And at the ledge the guess is no longer even. One more thing can go wrong there: sliding off. With the defender's back to the ledge and both in shine range, the attacker comes out ahead by about a quarter of a first hit, and a good part of his best mix is... holding shield, so the other Fox's shine pushes its own owner off the stage.
+With the defender's back to the ledge and both in shine range, in a way that, while still a guessing game, according to my solver the attacker will win. and a good part of his best mix is... holding shield, so the other Fox's shine pushes its own owner off the stage.
 
 ![Blue, with his back to the ledge, shines red's shield. The pushback slides blue off the stage while he is still holding the shine](/data/melee/fox-ledge.webp "wide")
 
