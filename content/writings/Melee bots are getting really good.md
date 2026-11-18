@@ -178,11 +178,13 @@ That tie says more about the starter than about the models. The new starter was 
 
 After finding an intersection of my hobbies such as Melee and training neural networks, it's only natural to train my own AI bots. These were my first steps, I'm just getting into the community and understanding the state of the art, so might make an update later!
 
-Started by training my own small transformer on human Yoshi replays, the way HAL does. The best one beat the level 9 CPU, but lost every game to the serious bots, and self-play RL in the simulator made it worse in the real game. Then checked my pipeline by retraining HAL's 20M Fox with it, but got much worse results so I stopped and started from HAL instead did some finetunes on HAL's 247M model specific for Yoshi.
+Started by training my own small transformer on human Yoshi replays, the way HAL does. The best one beat the level 9 CPU, but lost every game to the serious bots, and self-play RL in the simulator made it worse in the real game. To check my pipeline I retrained HAL's 20M Fox with it: it won 2 of 24 against the CPU where HAL's wins 95%. So I stopped and used HAL directly: its 247M model, asked to play like aMSa, is a better Yoshi than anything I trained, with no training at all.
 
 Tried making some primitives for specific Yoshi tech and labelling it in training data, but it didn't seem to be useful.
 
-Delay seems like one of the biggest problems to solve. Online the bot sees the game 10 frames late. It can still perform double-jump cancels and L-cancels, but parries, which need a 6-frame read, mostly disappear. To train against that, I got HAL running inside melee-sim-light at about 1,800 game frames a second.
+Delay seems like one of the biggest problems to solve. On stomped the bot sees the game 10 frames late, which costs it 200 to 300 Elo. It still double-jump cancels and L-cancels like aMSa, but parries against Fox, which have to land in Yoshi's 6-frame shield start-up, go from 0.17 a minute to almost none (0.02). Re-weighting HAL's training for delay didn't help.
+
+Right now I'm switching the base to Faynt's 10M model, which plays Yoshi better than HAL out of the box, and setting up RL against Phillip's anti-Yoshi bots inside melee-sim-light, about 60 times faster than Dolphin. More on that in a future update!
 
 ## What else came out of it
 
