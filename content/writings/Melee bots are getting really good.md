@@ -11,24 +11,24 @@ soundtrack:
   title: "Final Destination"
   file: hirokazu-ando-shogo-sakai-final-destination.webm
 ---
-Super Smash Bros Melee came out in 2001 for the [GameCube](https://en.wikipedia.org/wiki/GameCube), and it's one of the videogames with the highest skill ceiling (and floor) that i know of, proof of that is that there is a lot of people still playing it professionally. I'm not good at all, SSB4 was the only one where I put in the hours, but I know enough to understand the complexity, and it's extremely impressive. [^1]
+Super Smash Bros Melee came out in 2001 for the [GameCube](https://en.wikipedia.org/wiki/GameCube), and it's one of the videogames with the highest skill ceiling (and floor) that I know of, proof of that is that there is a lot of people still playing it professionally. I'm not good at all, SSB4 was the only one where I put in the hours, but I know enough to understand the complexity, and it's extremely impressive. [^1]
 
-It's difficulty can be divided in 2 levels. On the low level, the game runs on 60 fps and many techniques only have a 1-2 frame window to perform correctly (no input buffer!). Competitive Melee players average 6 actions per second, and have to master tech like Wavedashing, L-Canceling or Dash Dancing. Some of these techniques were not intended by the developers, which to me makes it even more interesting.
+Its difficulty can be divided in 2 levels. On the low level, the game runs at 60 fps and many techniques only have a 1-2 frame window to perform correctly (no input buffer!). Competitive Melee players average 6 actions per second, and have to master tech like Wavedashing, L-Canceling or Dash Dancing. Some of these techniques were not intended by the developers, which to me makes it even more interesting.
 
 On a high level it's more of a mindgame. Humans react in about 12 frames and many attacks are faster than that, so most of the time you are predicting your opponent, not reacting. Good players spend whole games conditioning the other one to expect something. I enjoy watching it much more than any other fighter as it does not rely as heavily on combos and is much more "free-form". 
 
 ![Fox wavedashing, L-cancelling and dash dancing on Final Destination, with the stick and buttons pressed on each frame](/data/melee/tech.webp)
 
-I had seen some activity on twitter on recent advancements on AI bots taking on some top players, which seemed incredible to me, and decided to explore this during [1hack](https://1hack.eu/), an event where we get together for 24hours to build whatever is on our mind, and ended up giving a [short presentation](/data/melee/talk-1hack.webp) at the end!
+I had seen some activity on twitter on recent advancements on AI bots taking on some top players, which seemed incredible to me, and decided to explore this during [1hack](https://1hack.eu/), an event where we get together for 24 hours to build whatever is on our mind, and ended up giving a [short presentation](/data/melee/talk-1hack.webp) at the end!
 
-Started with a vague idea of having LLMs play the game directly. Some of the best ways of measuring the performance of latest models are based on having play [games that are out of the training distribution](https://arcprize.org/arc-agi). Most game benchmarks are turn-based ([chess](https://maxim-saplin.github.io/llm_chess/#leaderboard), [Pokémon](https://dl.acm.org/doi/10.1145/3771095), [Slay the Spire](https://arxiv.org/abs/2610.12596)... lots of these popping up lately). This did not work as expected but got me interested in the topic, my objective with this post is to write what I would have liked to have read when I started learning.
+Started with a vague idea of having LLMs play the game directly. Some of the best ways of measuring the performance of latest models are based on having them play [games that are out of the training distribution](https://arcprize.org/arc-agi). Most game benchmarks are turn-based ([chess](https://maxim-saplin.github.io/llm_chess/#leaderboard), [Pokémon](https://dl.acm.org/doi/10.1145/3771095), [Slay the Spire](https://arxiv.org/abs/2610.12596)... lots of these popping up lately). This did not work as expected but got me interested in the topic, my objective with this post is to write what I would have liked to have read when I started learning.
 
 I think its an extremely exciting moment to get into this, with a lot of work to do and low-hanging fruit to get started!
 
 
 ## Some history
 
-Melee itself was made in about 13 months (reaaally fast) and was the GameCube's best selling game. The game shipped with built-in CPUs, levels 1-9. They are not great and any experienced player can beat them easily, mostly because they repeat moves and strategies constantly. It wasn't until 2015, where Dan "altf4" Petro presented, [SmashBot](https://www.youtube.com/watch?v=_0Z_oN_CZyA) (great DEFCON talk!), a Fox bot that he wrote by hand using [GOFAI](https://en.wikipedia.org/wiki/Symbolic_artificial_intelligence). His main advantage was that it acted frame-perfect and with zero reaction time, but players quickly understood it's tactics and exploited them until they were patched by hand. However, the heavy lifting of reverse engineering the game eventually became [libmelee](https://github.com/vladfi1/libmelee), which almost every bot since is built on.
+Melee itself was made in about 13 months (reaaally fast) and was the GameCube's best selling game. The game shipped with built-in CPUs, levels 1-9. They are not great and any experienced player can beat them easily, mostly because they repeat moves and strategies constantly. It wasn't until 2015, where Dan "altf4" Petro presented, [SmashBot](https://www.youtube.com/watch?v=_0Z_oN_CZyA) (great DEFCON talk!), a Fox bot that he wrote by hand using [GOFAI](https://en.wikipedia.org/wiki/Symbolic_artificial_intelligence). His main advantage was that it acted frame-perfect and with zero reaction time, but players quickly understood its tactics and exploited them until they were patched by hand. However, the heavy lifting of reverse engineering the game eventually became [libmelee](https://github.com/vladfi1/libmelee), which almost every bot since is built on.
 
 ### The optimal melee game
 
@@ -45,7 +45,7 @@ In summary, his answer was:
 >
 > Best play for both is to jump and multishine[^3], frame-perfectly, until the clock runs out. Then the game goes to Sudden Death, where bob-ombs fall from the sky, apparently at random.
 >
-> But they aren't random, melee RNG is predictable[^2]. Real optimal strategy then it's to steer the game so that when the deadlock ends eight minutes later, the generator is in a state that drops the bombs where your opponent has to choose between running into your shine or into a bomb.
+> But they aren't random, melee RNG is predictable[^2]. The real optimal strategy then is to steer the game so that when the deadlock ends eight minutes later, the generator is in a state that drops the bombs where your opponent has to choose between running into your shine or into a bomb.
 
 Me being a fan of these kind of thought experiments, poked some holes at it, and since we now have the decompiled source code I ended up trying to brute force the answer. That turned into [melee-brute](https://github.com/mateo19182/melee-brute), a fork I made of [melee-sim-light](https://github.com/kyhavlov/melee-sim-light) that can explore the search space much faster than any traditional emulator. It's honestly just a bunch of clever Fable tricks optimising for this use case but I think it can be pretty useful for other stuff!
 
@@ -53,7 +53,7 @@ The deadlock seems to be real, but not for that reason. Walking in and shining i
 
 I then thought that maybe some other character can hit Fox in a way he can't react to (he can read the game memory, so he sees every move on the frame it starts). So I tried every character's moves against a Fox answering on the next frame, from a gap of 12 to 40[^4] and nothing got through. He punishes or blocks all of it, mostly with shine or a jab.
 
-The shine's first frame does most of the work. Fox is intangible on it, and on the ground its hitbox clanks with the attacker's, so even a frame-2 jab from up close loses to it. It's also the only move in the game that hits before anyone can react, so nobody can stand in that small circle around Fox.
+The shine's first frame does most of the work. Fox is intangible on it, and on the ground its hitbox clanks with the attacker's, so even a frame-2 jab from up close loses to it. It's also the only move in the game that hits before anyone can react, so nobody can stand in that small circle around Fox. Falco has the same shine, but it reaches 8 instead of 10.
 
 ![Two Foxes 7 units apart shine on the same frame: the hitboxes clank, both freeze for 4 frames and nobody takes damage](/data/melee/fox-clank.webp "wide")
 
@@ -71,11 +71,11 @@ There are two ways out of it. If he never wants to guess, he steps back at 13.7,
 
 ![The same walk, but blue dashes back at 13.7 units before red can flick. Nobody is hit](/data/melee/fox-retreat.webp "wide")
 
-Or he accepts the guess: in the fair game, walking in at that distance is worth exactly 0 to the attacker, and the best play for both is to wait. If there was any way we can force the defender to hold shield, or attacker can reach him from above ground, attacker can get the advantage, but there just no way to force a standing fox to do that
+Or he accepts the guess: in the fair game, walking in at that distance is worth exactly 0 to the attacker, and the best play for both is to wait. If there was any way we can force the defender to hold shield, or attacker can reach him from above ground, attacker can get the advantage, but there's just no way to force a standing Fox to do that.
 
-The attacker could try to keep walking in until there's no stage left. That's the squeeze: every walk-in to 13.7 makes a Fox who never guesses give a bit of ground, and the stage ends at the ledge.
+The attacker could try to keep walking in until there's no stage left. That's the idea of the squeeze: if every walk-in to 13.7 makes a Fox who never guesses give a bit of ground, sooner or later the stage ends at the ledge.
 
-With the defender's back to the ledge and both in shine range, in a way that, while still a guessing game, according to my solver the attacker has the advantage. Out of 100 games, looking 8 frames into the future (about a billion game states), the attacker lands the first hit, or the defender slides off the stage ≈ 34 times. The defender lands the first hit ≈ 8 and nobody is hit ≈ 58.
+With the defender's back to the ledge and both in shine range it's still a guessing game, but no longer an even one. Played 100 times, looking 8 frames ahead (about 16 million game states), the attacker lands the first hit or the defender slides off the stage ≈ 34 times, the defender lands it ≈ 8, and ≈ 58 times nobody is hit.
 
 ![Blue, with his back to the ledge, shines red's shield. The pushback slides blue off the stage while he is still holding the shine](/data/melee/fox-ledge.webp "wide")
 
@@ -87,7 +87,7 @@ Many other experiments I tried on the [Brute page](https://melee.m19182.dev/brut
 
 ### Back to History
 
-In 2017, Vlad Firoiu published [Phillip](https://arxiv.org/abs/1702.06230), trained end to end with asynchronous RL. He trained a network per character and used a naive reward (KOs + Damage Dealt*weight) with [actor-critic](https://en.wikipedia.org/wiki/Actor-critic_algorithm) and self-play. It was able to beat some professional players, thought mostly because it could react in about 2 frames where a human needs around 12. Still was quite exploitable, as some players found that simply crouching on the ledge would cause it to eventually suicide.
+In 2017, Vlad Firoiu published [Phillip](https://arxiv.org/abs/1702.06230), trained end to end with asynchronous RL. He trained a network per character and used a naive reward (KOs + Damage Dealt*weight) with [actor-critic](https://en.wikipedia.org/wiki/Actor-critic_algorithm) and self-play. It was able to beat some professional players, though mostly because it could react in about 2 frames where a human needs around 12. Still was quite exploitable, as some players found that simply crouching on the ledge would cause it to eventually suicide.
 
 The same year, [Sharma and Friedman](https://www.yash-sharma.com/files/learning-play-super%20(3).pdf) trained a recurrent DQN that had to act with a 12-frame delay, closer to a human. Vlad's own [follow-up](https://arxiv.org/abs/1810.07286) in 2018 ("At Human Speed") did the same with Phillip: plain RL collapsed under the delay, and adding a learned model that predicts the game brought it back.
 
@@ -103,11 +103,11 @@ Now in late 2026, Frisson Labs released [Faynt](https://www.frisson-labs.com/fay
 
 All of these are tiny next to an LLM (10M to 247M parameters), answer in 2 to 8 milliseconds a frame on one home GPU, and get their strength from human replays plus self-play, not from reasoning.
 
-All this cool work is enabled by a the community (like the recently opened [stomped.dev](https://stomped.dev), a ranked ladder for bots only with a nice discord community), that has built the open tooling over time that allows for this kind of experimentation, most recently leveraging AI to complete the [decompilation](https://github.com/doldecomp/melee) of the full Melee code, that also gave us  [melee-sim-light](https://github.com/kyhavlov/melee-sim-light), which runs the decompiled game without an emulator, about 100 times faster.
+All this cool work is enabled by the community (like the recently opened [stomped.dev](https://stomped.dev), a ranked ladder for bots only with a nice discord community), that has built the open tooling over time that allows for this kind of experimentation, most recently leveraging AI to complete the [decompilation](https://github.com/doldecomp/melee) of the full Melee code, that also gave us [melee-sim-light](https://github.com/kyhavlov/melee-sim-light), which runs the decompiled game without an emulator, about 100 times faster.
 
 ### TAS
 
-Next to the bots there's also scene of tool-assisted play (TAS): a sequence built frame by frame in an emulator. Playback is deterministic, and it's mostly used to show the limits of the game. I feel like my fork might be useful here, but never got into it so I'm not sure. 
+Next to the bots there's also a scene of tool-assisted play (TAS): a sequence built frame by frame in an emulator. Playback is deterministic, and it's mostly used to show the limits of the game. I feel like my fork might be useful here, but never got into it so I'm not sure. 
 
 Started in 2005 with [Action Replay](https://www.supercheats.com/gamecube/supersmashbrosmeleeactionreplaycodes.htm) videos made in the game's hidden frame-by-frame debug mode. Around 2010 Dolphin got proper TAS tools (savestates, frame advance, input movies), and later Lua scripting on top, like PracticalTAS's [ssbm-lua-core](https://github.com/practicaltas/ssbm-lua-core).
 - Some cool showpieces: [combos that all end at exactly 69 hits](https://www.youtube.com/watch?v=F-mUcQXeSSc), and [Target Test for all 25 characters](https://tasvideos.org/7174S) in 2:39.97 in-game time. Many findings flow back to human play.
@@ -121,14 +121,14 @@ Started in 2005 with [Action Replay](https://www.supercheats.com/gamecube/supers
 
 ## Benchmark
 
-Using Slippi's Dolphin emulator, Fox mirror on FD and Battlefield y put every bot relevant bot that i could find and a couple of my experiments. Everything goes into [one Elo fit](https://github.com/mateo19182/melee-llm/tree/main/melee_llm/bench) with the level 9 CPU pinned at 1500. Then left it overnight playing thousands of games: 4,082 rated games by the end.
+Using Slippi's Dolphin emulator, Fox mirror on FD and Battlefield, I put every relevant bot that I could find and a couple of my experiments. Everything goes into [one Elo fit](https://github.com/mateo19182/melee-llm/tree/main/melee_llm/bench) with the level 9 CPU pinned at 1500. Then left it overnight playing thousands of games: 4,082 rated games by the end.
 
-LLMs are a special case since they are too slow to press buttons every frame (16.7 ms) so each setup gives them a higher-level job and lets something faster handle the frames. They read about 500 tokens of [game state](https://github.com/mateo19182/melee-llm/blob/main/melee_llm/state.py) with a rolling context window
+LLMs are a special case since they are too slow to press buttons every frame (16.7 ms) so each setup gives them a higher-level job and lets something faster handle the frames. They read about 500 tokens of [game state](https://github.com/mateo19182/melee-llm/blob/main/melee_llm/state.py) with a rolling context window.
 
 - [Play, untimed](https://github.com/mateo19182/melee-llm/blob/main/melee_llm/agents/llm_paused.py): pick a move and the game pauses while they think. This measures how good their choices are.
 - [Play, live](https://github.com/mateo19182/melee-llm/blob/main/melee_llm/agents/llm_live.py): same but no stops.
 - [Jev plays](https://github.com/mateo19182/melee-llm/blob/main/melee_llm/agents/jev_player.py): [TypeSafe's Jev](https://typesafe.ai/blog/introducing-system-one-models-and-jev), a decision model that answers multiple-choice questions in about 0.15 seconds.
-- [Coach Reyn](https://github.com/mateo19182/melee-llm/blob/main/melee_llm/agents/coach.py): Reyn plays every frame, and every 5 seconds the LLM coach uses text to condition it's play style.
+- [Coach Reyn](https://github.com/mateo19182/melee-llm/blob/main/melee_llm/agents/coach.py): Reyn plays every frame, and every 5 seconds the LLM coach uses text to condition its play style.
 - [Write a bot](https://github.com/mateo19182/melee-llm/tree/main/melee_llm/botwriter): a coding agent gets 30 minutes, a sandbox and a practice tool to write a Python bot that then plays like any other entrant.
 
 ![Real-time board: every entrant's Elo with its 95% interval, coloured by kind](/data/melee/leaderboard-realtime.svg "wide")
@@ -179,9 +179,9 @@ After finding an intersection of my hobbies such as Melee and training neural ne
 
 Started by training my own small transformer on human Yoshi replays, the way HAL does. The best one beat the level 9 CPU, but lost every game to the serious bots, and self-play RL in the simulator made it worse in the real game. Then checked my pipeline by retraining HAL's 20M Fox with it, but got much worse results so I stopped and started from HAL instead did some finetunes on HAL's 247M model specific for Yoshi.
 
-Tried making some primitives for specific Yoshi tech and labelling it in training data, but didn't seem to be useful
+Tried making some primitives for specific Yoshi tech and labelling it in training data, but it didn't seem to be useful.
 
-Delay is seems like one of the biggest problems to solve. Online the bot sees the game 10 frames late. It can still performs double-jump cancels and L-cancels, but parries, which need a 6-frame read, mostly disappear. To train against that, I got HAL running inside melee-sim-light at about 1,800 game frames a second.
+Delay seems like one of the biggest problems to solve. Online the bot sees the game 10 frames late. It can still perform double-jump cancels and L-cancels, but parries, which need a 6-frame read, mostly disappear. To train against that, I got HAL running inside melee-sim-light at about 1,800 game frames a second.
 
 ## What else came out of it
 
@@ -189,16 +189,16 @@ A [website](https://github.com/mateo19182/melee-llm/tree/main/melee_llm/web) whe
 
 An [AI commentary booth](https://github.com/mateo19182/melee-llm/blob/main/melee_llm/commentary.py) with two casters. A fast LLM watches the game's events and ElevenLabs voices them.
 
-I'm also looking for interesting this to do with [melee-brute](https://github.com/mateo19182/melee-brute). At it's current speeds, it can only reach a conclusion under very restrictive situations, but for questions like "was there any possible way of surviving this specific "edgeguard" it can work.
+I'm also looking for interesting things to do with [melee-brute](https://github.com/mateo19182/melee-brute). At its current speeds, it can only reach a conclusion under very restrictive situations, but for questions like "was there any possible way of surviving this specific edgeguard?" it can work.
 
 Also thinking of enabling a way to play my bots live via netplay if there's interest. Talk to me!
 
 ---
 
-[^1]: highly recommend [AsumSaus](https://www.youtube.com/@AsumSaus/videos) and [PracticalTAS](https://youtube.com/@practicaltas?si=rUSebEZkc0eIUzv8) if interested in learning more!
+[^1]: highly recommend [AsumSaus](https://www.youtube.com/@AsumSaus/videos) and [PracticalTAS](https://youtube.com/@practicaltas) if interested in learning more!
 
 [^2]: It would be practically impossible for the bot to control RNG, as the opponent's moves also advance it. Also under tournament rules there is no Sudden Death: a timeout goes to whoever has less percent, and a tie on percent is replayed as a single stock game of 2 or 3 minutes, which would deadlock the same way.
 
 [^3]: If both do shine on the same frame on the ground, they don't cancel into a multishine war, the hitboxes clank and both freeze for 4 frames.
 
-[^4]: Since that's how close any character can get too him under the best of circumstances.
+[^4]: Since that's how close any character can get to him under the best of circumstances.
