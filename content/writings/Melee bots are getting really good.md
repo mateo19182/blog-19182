@@ -105,7 +105,7 @@ All of these are tiny next to an LLM (10M to 247M parameters), answer in 2 to 8 
 
 All this cool work is enabled by a the community (like the recently opened [stomped.dev](https://stomped.dev), a ranked ladder for bots only with a nice discord community), that has built the open tooling over time that allows for this kind of experimentation, most recently leveraging AI to complete the [decompilation](https://github.com/doldecomp/melee) of the full Melee code, that also gave us  [melee-sim-light](https://github.com/kyhavlov/melee-sim-light), which runs the decompiled game without an emulator, about 100 times faster.
 
-### The TAS scene
+### TAS
 
 Next to the bots there's also scene of tool-assisted play (TAS): a sequence built frame by frame in an emulator. Playback is deterministic, and it's mostly used to show the limits of the game. I feel like my fork might be useful here, but never got into it so I'm not sure. 
 
@@ -119,7 +119,7 @@ Started in 2005 with [Action Replay](https://www.supercheats.com/gamecube/supers
 
 ---
 
-## The bench
+## Benchmark
 
 Using Slippi's Dolphin emulator, Fox mirror on FD and Battlefield y put every bot relevant bot that i could find and a couple of my experiments. Everything goes into [one Elo fit](https://github.com/mateo19182/melee-llm/tree/main/melee_llm/bench) with the level 9 CPU pinned at 1500. Then left it overnight playing thousands of games: 4,082 rated games by the end.
 
@@ -135,11 +135,9 @@ LLMs are a special case since they are too slow to press buttons every frame (16
 
 The learned bots are far ahead. Faynt never lost (370-0, so its 3403 is really a floor), then Phillip gm (2549) and HAL (2300). The CPUs rise in order, from 976 for level 1 to 1500 for level 9: a smaller gap than the 1,000 points between level 9 and Phillip gm.
 
----
+### LLMs
 
-## Where the LLMs landed
-
-### Playing: speed beats smarts
+### Playing
 
 ![Untimed vs real-time Elo for each model, with the share of live replies thrown away for arriving too late](/data/melee/latency-tax.svg "wide")
 
@@ -149,7 +147,7 @@ Live, all of that disappears: every model drops 492 to 851 points, below the lev
 Screenshots don't help either: given an image instead of the text, models performed generally worse. [LLM Colosseum](https://github.com/OpenGenerativeAI/llm-colosseum) had a similar finding in Street Fighter (GPT-3.5 beat GPT-4 by being faster). 
 
 
-### Coaching: two words win
+### Coaching
 
 ![Reyn's rating with no command, with random commands, with each LLM and Jev as coach, and holding "Don't die." all game](/data/melee/coaching.svg "wide")
 
