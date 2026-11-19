@@ -253,14 +253,16 @@
   // ---- link previews -----------------------------------------------------------
   let previews = null
   const loadPreviews = () => previews ||= fetch('/data/previews.json').then(r => r.ok ? r.json() : {}).catch(() => ({}))
-  const here = location.pathname.replace(/\/$/, '')
+  // Writings are keyed by their original URL; translations live under /es or /en.
+  const postPath = (p) => p.replace(/\/$/, '').replace(/^\/(es|en)(?=\/)/, '')
+  const here = postPath(location.pathname)
 
   function postKey(a) {
     if (a.closest('.footnote-ref, .footnote-backref, .note-pop') || !a.closest('.prose')) return null
     let url
     try { url = new URL(a.href) } catch { return null }
     if (url.host !== location.host && url.host !== 'blog.m19182.dev') return null
-    const path = url.pathname.replace(/\/$/, '')
+    const path = postPath(url.pathname)
     if (!/^\/writings\/[^/]+$/.test(path) || path === here) return null
     return path
   }

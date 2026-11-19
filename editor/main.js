@@ -483,7 +483,7 @@ $("#banner").addEventListener("click", async (e) => {
 
 // ---- front matter form ----------------------------------------------------------------
 const FORMS = {
-  writing: ["draft", "unlisted", "title", "summary", "date", "updated", "tags", "lang", "series", "series_es", "series_order", "aliases", "soundtrack"],
+  writing: ["draft", "unlisted", "title", "summary", "date", "updated", "tags", "lang", "series", "series_es", "series_order", "soundtrack"],
   translation: ["title", "summary"],
   page: ["title"],
   update: ["draft", "title", "date"],
@@ -502,7 +502,6 @@ const FIELDS = {
   series: { label: "Serie", type: "text", list: "series-list" },
   series_es: { label: "Serie (ES)", type: "text" },
   series_order: { label: "Orden en la serie", type: "number" },
-  aliases: { label: "URLs antiguas", type: "tags", hint: "p. ej. writings/Old-Slug" },
   soundtrack: { label: "Banda sonora", type: "soundtrack" },
 }
 

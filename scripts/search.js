@@ -120,7 +120,7 @@
   function add(d) {
     if (!relevant(d)) return
     const lang = d.meta.lang
-    const path = d.url.replace(/\?.*$/, "")
+    const path = d.url.replace(/^\/(es|en)(?=\/)/, "")
     const prev = items.find((it) => it.path === path)
     const item = { path, lang, data: d }
     if (!prev) items.push(item)

@@ -13,18 +13,14 @@
   })
 })()
 
-// Language toggle. The pre-paint script sets <html lang> from the saved choice;
-// the button is disabled on pages that only exist in one language. A translated
-// article's notice has its own button back to the original.
+// On the site each language has its own URL and the toggle is a link. The
+// editor preview holds both languages in one page; these buttons switch it.
 ;(function () {
-  document.querySelectorAll(".lang-toggle:not(:disabled), .lang-switch").forEach(btn => btn.addEventListener("click", function () {
+  document.querySelectorAll("button.lang-toggle:not(:disabled), button.lang-switch").forEach(btn => btn.addEventListener("click", function () {
     const root = document.documentElement
     const next = root.lang === "es" ? "en" : "es"
     root.lang = next
     document.title = next === "es" ? root.dataset.esTitle : root.dataset.enTitle
-    try {
-      localStorage.setItem("lang", next)
-    } catch (e) {}
   }))
 })()
 

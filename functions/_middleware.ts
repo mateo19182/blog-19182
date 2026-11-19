@@ -31,14 +31,14 @@ const candidatePaths = (pathname: string): string[] => {
 }
 
 // `/writings/Some-post/edit` opens that page in the web editor (behind Access),
-// which finds the file from `?page=`.
+// which finds the file from `?page=`. A translation's URL (`/es/…`, `/en/…`)
+// opens the translation file.
 const editRedirect = (url: URL): Response | null => {
-  const m = url.pathname.match(/^(\/.*?)\/edit\/?$/)
-  if (!m || m[1].startsWith("/edit") || m[1].startsWith("/api")) return null
+  const m = url.pathname.match(/^(?:\/(en|es)(?=\/))?(\/.*?)\/edit\/?$/)
+  if (!m || m[2].startsWith("/edit") || m[2].startsWith("/api")) return null
   const target = new URL("/edit/", url)
-  target.searchParams.set("page", m[1])
-  const lang = url.searchParams.get("lang")
-  if (lang === "en" || lang === "es") target.searchParams.set("lang", lang)
+  target.searchParams.set("page", m[2])
+  if (m[1]) target.searchParams.set("lang", m[1])
   return Response.redirect(target.toString(), 302)
 }
 

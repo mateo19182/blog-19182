@@ -30,17 +30,20 @@ npm run serve        # build + serve at http://localhost:8080
 - Site search: `build.mjs` indexes writings plus Now, Projects and Things I like
   with [Pagefind](https://pagefind.app/) into `public/pagefind/` at the end of every
   build. Each language of a page is its own record (one shared index), so results
-  show the text that matched and link with `?lang=` to open that language. The
+  show the text that matched and link to that language's URL. The
   header button, `/` or Ctrl/Cmd-K opens `scripts/search.js`, which loads the
   index on first use.
 - Per-page OpenGraph images, RSS (`/index.xml`), `sitemap.xml`, `robots.txt`.
 - A raw `.md` copy of every page, served to clients sending `Accept: text/markdown`
   via the Cloudflare Pages middleware
   ([markdown negotiation](https://isitagentready.com/.well-known/agent-skills/markdown-negotiation/)).
-- English/Spanish toggle in the footer. Add a Spanish version of a page as a sibling
-  `foo.es.md` (its frontmatter `title` is used). Both languages go into one HTML page
-  and the choice is saved in localStorage. Pages without an `.es.md` use the
-  language set in frontmatter, or English by default.
+- English/Spanish versions. Add a Spanish version of a page as a sibling
+  `foo.es.md` (its frontmatter `title` is used). Each language is its own page: the
+  original at its URL, the translation under `/es/` (or `/en/` for a Spanish
+  original), with `hreflang` links between them; the header and footer toggles
+  link to the other one, and links between pages stay in the reader's language.
+  Pages without an `.es.md` use the language set in frontmatter, or English by
+  default.
 - For a Spanish-only page, set `lang: es` in its frontmatter. Its language toggle
   stays disabled until a translation is added.
 - Set `unlisted: true` to serve a writing at its URL without adding it to the
@@ -53,8 +56,6 @@ npm run serve        # build + serve at http://localhost:8080
   stay plain text). The repository is public, so drafts are still readable on
   GitHub, and their images in `content/data/` are deployed. Removing the flag
   publishes it.
-- Rename a writing's file and list the old URL under `aliases:` (e.g.
-  `writings/Old-Slug`); the build emits a redirect page there.
 - Projects live in `content/projects.yml` (`title`, `title_es`, `url`, `date`,
   `desc`, `desc_es` as inline Markdown, `hidden: true` to keep an entry off the page).
   `projects.md` / `projects.es.md` only hold the page frontmatter.
@@ -146,8 +147,7 @@ On pushes to `main` that change writings, the newsletter action compares
 published URLs against the commit before the push. It sends each new writing's
 title, summary and link after the public `newsletter.json` manifest shows the
 post is live. Edits, translations, and unlisted posts don't send mail. Making an
-unlisted post public does. When renaming a post, keep its old URL in `aliases`
-to avoid announcing it again. Enabling the action does not send the archive.
+unlisted post public does. Renaming a post announces it again. Enabling the action does not send the archive.
 
 The action reuses an existing Resend draft on retry and skips broadcasts already
 sent or queued. Keep these broadcasts in Resend so retries retain that history.
