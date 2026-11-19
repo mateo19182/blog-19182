@@ -148,27 +148,19 @@ Screenshots don't help either: given an image instead of the text, models perfor
 
 #### Coaching
 
-![Reyn's rating with no command, with random commands, with each LLM and Jev as coach, and holding "Don't die." all game](/data/melee/coaching-light.svg "wide")
+![Reyn's rating with no coach, with a random coach, with each LLM and Jev as coach, and holding "Don't die." all game](/data/melee/coaching-light.svg "wide")
 
-This was the surprise. Reyn with no orders rates 1846, and with any LLM coach it jumps by about 450 points to HAL's level (2303 to 2324). But a "coach" that picks a random command every 5 seconds without looking at the game gets two thirds of that jump (2141). On ratings alone the LLM coaches overlap it, so I had the coaches play each other directly: 300 more games, the same bot on both sides, only the coach differing. Three of the four LLM coaches do beat random: Sonnet 5.5 won 29 of 36 against it, Haiku 4.5 28 of 37 and GPT-6 Luna 30 of 45, about 170 points above it. GPT-6.1 Sol doesn't (15 of 35); it's also the slowest, at 3 seconds a reply. So I dug in:
+Reyn on its own rates 1846. With an LLM picking one of its ~100 commands every 5 seconds, it climbs to about 2300, HAL's level. But most of that isn't the LLM: a coach picking commands at random gets to 2141, and Reyn holding "Don't die." all game, with no coach at all, gets to 2452, above every LLM. Jev is the best coach (2403) by accident: its favourite pick, "kill now", gets mapped by Reyn's router to... "Don't die."
 
-- Reyn mostly needs *any* command. One random command held all game already gets it to 2075.
-- Holding "Don't die." all game, with no coach at all, rates 2452, above every LLM coach.
-- Jev is the best coach (2403), and by accident: its favourite pick is "kill now", which Reyn's router maps every single time to... "Don't die."
-
-The LLMs pick sensible-sounding plans (edgeguard, play aggressive) that turn out to be worth less than the boring one. The lesson is less about LLMs than about the bot, and about how a language interface can quietly turn your words into something else.
+So the LLMs do help a bit (head to head, three of the four beat the random coach, by about 170 Elo), but Reyn gains more from being told anything, and most from being told to play safe, than from clever plans. A language interface can quietly turn your words into something else.
 
 #### Coding
 
-![Bench rating of every bot an LLM wrote in a 30-minute session, grouped by batch, next to the level 9 CPU and MIMIC](/data/melee/bot-writer-light.svg "wide")
+I gave Claude Code 30 minutes, a sandbox and a practice tool to write a Python bot, starting from a 60-line bot that runs at the opponent and up-smashes. That starter alone, it turns out, already rates 1685, above the level 9 CPU. Five sessions each for Opus, Sonnet and Haiku:
 
-27 Claude Code sessions of 30 minutes each, in three batches, all on the main board:
+![Bots written by Opus, Haiku and Sonnet in 30-minute sessions: five each, with each model's average, next to the level 9 CPU, the starter bot and MIMIC](/data/melee/bot-writer-light.svg "wide")
 
-- One run per model. Sonnet's 135-line bot (shine, grab, lasers) rates 1752, Haiku 4.5's 1599, and Opus's 303 lines, the most engineered, 1527.
-- Three runs each at medium effort. Opus was clearly ahead (1684 to 1858, all above the level 9 CPU); Sonnet (936 to 1233) and Haiku (1060 to 1444) stayed below it.
-- Five runs each at high effort, with a better starter bot. All three came out level: Opus 1699 on average, Haiku 1686, Sonnet 1660.
-
-That tie says more about the starter than about the models. The new starter was 60 lines that run at the opponent and up-smash, and I hadn't checked how strong it was: one Haiku session handed it in unchanged and it rates 1685, above the level 9 CPU. Opus and Sonnet mostly rewrote it, into as many as 450 lines, and on average ended where they started. Only two sessions clearly improved on it (the best reached 1944, level with MIMIC). So runs of one model differ by hundreds of points, and 60 lines of the right idea beat most of what 30 minutes of a strong model adds.
+All three end up level with the starter: Opus 1699 on average, Haiku 1686, Sonnet 1660. Sessions of the same model differ by hundreds of points, and only two clearly improved on it (the best, 1944, is level with MIMIC). So 60 lines of the right idea beat most of what 30 minutes of a strong model adds.
 
 ## Training my own bot
 
