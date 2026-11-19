@@ -123,7 +123,7 @@ Los LLM son un caso especial, porque son demasiado lentos para pulsar botones en
 - [Entrenador de Reyn](https://github.com/mateo19182/melee-llm/blob/main/melee_llm/agents/coach.py): Reyn juega cada fotograma, y cada 5 segundos el LLM entrenador usa texto para condicionar su estilo de juego.
 - [Escriben un bot](https://github.com/mateo19182/melee-llm/tree/main/melee_llm/botwriter): un agente de programación tiene 30 minutos, un sandbox y una herramienta de práctica para escribir un bot en Python que luego juega como cualquier otro participante.
 
-![Clasificación en tiempo real: bots aprendidos, entrenadores, el mejor bot escrito, CPU y LLM jugando en directo, cada uno con su intervalo del 95%, coloreados por tipo](/data/melee/leaderboard-realtime-light.svg "wide")
+![Clasificación en tiempo real: bots aprendidos, entrenadores, el mejor bot escrito, CPU y LLM jugando en directo, cada uno con su intervalo del 95%, coloreados por tipo](/data/melee/leaderboard-realtime.svg "wide")
 
 Los bots aprendidos van muy por delante. Faynt no perdió nunca (370-0, así que su 3403 es en realidad un mínimo), luego Phillip gm (2549) y HAL (2300). Las CPU suben en orden, de 976 la de nivel 1 a 1500 la de nivel 9: menos distancia que los 1.000 puntos entre la de nivel 9 y Phillip gm.
 
@@ -131,7 +131,7 @@ Los bots aprendidos van muy por delante. Faynt no perdió nunca (370-0, así que
 
 #### Jugando
 
-![Elo sin límite de tiempo frente a Elo en tiempo real para cada modelo, con el porcentaje de respuestas en directo descartadas por llegar tarde](/data/melee/latency-tax-light.svg "wide")
+![Elo sin límite de tiempo frente a Elo en tiempo real para cada modelo, con el porcentaje de respuestas en directo descartadas por llegar tarde](/data/melee/latency-tax.svg "wide")
 
 Con tiempo para pensar, GPT-6.1 Sol gana a la CPU de nivel 9 (1729), el resto de modelos quedan entre 1254 y 1474, y todos ganan a Jev (1082). Un jugador que elige un movimiento al azar en cada decisión puntúa 732 aquí, así que pensar sí cuenta.
 En directo, todo eso desaparece: todos los modelos caen de 492 a 851 puntos, por debajo de la CPU de nivel 1 (de 762 a 878).
@@ -141,7 +141,7 @@ Las capturas de pantalla tampoco ayudan: con una imagen en lugar del texto, los 
 
 #### Entrenando
 
-![Puntuación de Reyn sin órdenes, con órdenes al azar, con cada LLM y Jev como entrenador, y manteniendo "Don't die." toda la partida](/data/melee/coaching-light.svg "wide")
+![Puntuación de Reyn sin órdenes, con órdenes al azar, con cada LLM y Jev como entrenador, y manteniendo "Don't die." toda la partida](/data/melee/coaching.svg "wide")
 
 Esta fue la sorpresa. Reyn sin órdenes puntúa 1846, y con cualquier LLM de entrenador sube unos 450 puntos hasta el nivel de HAL (de 2303 a 2324). Pero un "entrenador" que elige una orden al azar cada 5 segundos sin mirar la partida consigue dos tercios de esa subida (2141). Solo con las puntuaciones, los LLM entrenadores se solapan con él, así que puse a los entrenadores a jugar entre sí directamente: 300 partidas más, el mismo bot en los dos lados y solo cambia el entrenador. Tres de los cuatro LLM entrenadores sí ganan al azar: Sonnet 5.5 le ganó 29 de 36, Haiku 4.5 28 de 37 y GPT-6 Luna 30 de 45, unos 170 puntos por encima. GPT-6.1 Sol no (15 de 35); también es el más lento, 3 segundos por respuesta. Así que investigué más:
 
@@ -153,7 +153,7 @@ Los LLM eligen planes que suenan sensatos (edgeguard, jugar agresivo) y que resu
 
 #### Programando
 
-![Puntuación en el benchmark de cada bot escrito por un LLM en una sesión de 30 minutos, agrupados por tanda, junto a la CPU de nivel 9 y MIMIC](/data/melee/bot-writer-light.svg "wide")
+![Puntuación en el benchmark de cada bot escrito por un LLM en una sesión de 30 minutos, agrupados por tanda, junto a la CPU de nivel 9 y MIMIC](/data/melee/bot-writer.svg "wide")
 
 27 sesiones de Claude Code de 30 minutos cada una, en tres tandas, todas en la clasificación principal:
 
