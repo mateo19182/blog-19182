@@ -1,5 +1,6 @@
 ---
 title: Home
+description: "Mateo Amado Ares's blog: writing and projects on creative technology, music production and DJing, generative visuals, machine learning and public-data research."
 ---
 Hey! I'm Mateo. Since you are here, you might be interested in:
 
