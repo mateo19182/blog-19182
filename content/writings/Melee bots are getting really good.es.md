@@ -1,159 +1,198 @@
 ---
 title: Los bots de Melee se están poniendo muy buenos
-summary: "Diez años de bots de Super Smash Bros. Melee, y unos cuantos LLM, en una sola escala Elo, más un bot propio."
+summary: "Diez años de bots de Super Smash Bros. Melee, y unos cuantos LLM, en una sola escala Elo, más un bot propio y una búsqueda por fuerza bruta de lo que harían dos Fox perfectos."
 ---
-Super Smash Bros. Melee salió en 2001 y es uno de los videojuegos con el techo (y el suelo) de habilidad más alto que conozco; prueba de ello es que muchísima gente lo sigue jugando de forma competitiva. No soy nada bueno, SSB4 fue el único en el que eché horas, pero sé lo suficiente para entender parte de su complejidad, y es impresionante. [^1]
+Super Smash Bros Melee salió en 2001 para la [GameCube](https://en.wikipedia.org/wiki/GameCube), y es uno de los videojuegos con el techo (y el suelo) de habilidad más alto que conozco; prueba de ello es que hay muchísima gente que lo sigue jugando de forma profesional. No soy nada bueno, SSB4 fue el único en el que eché horas, pero sé lo suficiente para entender su complejidad, y es impresionante. [^1]
 
-Los jugadores competitivos de Melee hacen de media 7 acciones por segundo, en un combate rapidísimo, sin buffer de entradas y con técnicas como el wavedash, el L-cancel o el dash dance. Lo disfruto mucho más que cualquier otro juego de lucha porque no depende tanto de los combos y es mucho más libre.
+Su dificultad se puede dividir en 2 niveles. En el nivel bajo, el juego va a 60 fps y muchas técnicas tienen solo una ventana de 1-2 fotogramas para hacerlas bien (¡sin buffer de entradas!). Los jugadores competitivos de Melee hacen de media 6 acciones por segundo, y tienen que dominar técnicas como el wavedash, el L-cancel o el dash dance. Algunas de estas técnicas no las previeron los desarrolladores, lo que para mí lo hace aún más interesante.
+
+En el nivel alto es más un juego mental. Los humanos reaccionan en unos 12 fotogramas y muchos ataques son más rápidos que eso, así que casi siempre estás prediciendo al rival, no reaccionando. Los buenos jugadores se pasan partidas enteras condicionando al otro para que espere algo. Disfruto viéndolo mucho más que cualquier otro juego de lucha porque no depende tanto de los combos y es mucho más "libre".
 
 ![Fox haciendo wavedash, L-cancel y dash dance en Final Destination, con el stick y los botones pulsados en cada fotograma](/data/melee/tech.webp)
 
-*Redibujado a media velocidad desde repeticiones del benchmark, con los controles debajo. **Wavedash**: saltas y haces un esquive aéreo en diagonal contra el suelo, y su impulso se convierte en un deslizamiento. **L-cancel**: pulsar L o R justo antes de aterrizar un aéreo reduce a la mitad el retraso al aterrizar. **Dash dance**: echar el stick atrás en los primeros fotogramas del dash hace que Fox se gire al instante, sin frenar.*
+Había visto algo de movimiento en twitter sobre avances recientes de bots de IA enfrentándose a algunos jugadores top, cosa que me pareció increíble, y decidí explorarlo durante [1hack](https://1hack.eu/), un evento donde nos juntamos 24 horas para construir lo que se nos ocurra, ¡y acabé dando una [pequeña charla](/data/melee/talk-1hack.webp) al final!
 
-La comunidad ha montado herramientas abiertas absurdamente buenas: [Slippi](https://slippi.gg) para jugar online y guardar repeticiones, [libmelee](https://github.com/vladfi1/libmelee) para leer el juego y pulsar botones desde Python, e incluso una descompilación del propio código del juego.
+Empecé con una idea vaga de poner a LLM a jugar directamente. Algunas de las mejores formas de medir el rendimiento de los últimos modelos se basan en ponerlos a jugar a [juegos fuera de su distribución de entrenamiento](https://arcprize.org/arc-agi). La mayoría de benchmarks de juegos son por turnos ([ajedrez](https://maxim-saplin.github.io/llm_chess/#leaderboard), [Pokémon](https://dl.acm.org/doi/10.1145/3771095), [Slay the Spire](https://arxiv.org/abs/2610.12596)... están saliendo un montón últimamente). Esto no funcionó como esperaba, pero me enganchó al tema; mi objetivo con este post es escribir lo que me habría gustado leer cuando empecé a aprender.
 
-Empecé con una pregunta sobre LLM. La mayoría de benchmarks de juegos para ellos son por turnos (ajedrez, Pokémon, Slay the Spire), donde el juego espera educadamente mientras el modelo piensa. Yo quería uno que no esperase. Los LLM acabaron siendo la parte pequeña de la historia... así que este post empieza por los bots.
+Creo que es un momento muy emocionante para meterse en esto, ¡con mucho trabajo por hacer y cosas fáciles por las que empezar!
 
-Todo esto se hizo en dos días y lo presenté en una charla de 5 minutos en [1hack](https://1hack.eu/) el 14 de noviembre ([diapositivas](https://melee.m19182.dev/writeup/slides.html)). La mayor parte del código la escribieron agentes de programación trabajando en paralelo en mi servidor de casa. La web del proyecto, con las clasificaciones, repeticiones, partidas en directo y un [artículo](https://melee.m19182.dev/writeup/) más largo, está en [melee.m19182.dev](https://melee.m19182.dev), y el código está en [GitHub](https://github.com/mateo19182/melee-llm).
+
+## Un poco de historia
+
+Melee en sí se hizo en unos 13 meses (rapidíiisimo) y fue el juego más vendido de la GameCube. El juego venía con CPU incorporadas, de nivel 1 a 9. No son gran cosa y cualquier jugador con experiencia les gana fácilmente, sobre todo porque repiten movimientos y estrategias constantemente. No fue hasta 2015 cuando Dan "altf4" Petro presentó [SmashBot](https://www.youtube.com/watch?v=_0Z_oN_CZyA) (¡gran charla de DEFCON!), un bot de Fox que escribió a mano usando [GOFAI](https://en.wikipedia.org/wiki/Symbolic_artificial_intelligence). Su principal ventaja era que actuaba perfecto al fotograma y con tiempo de reacción cero, pero los jugadores entendieron rápido sus tácticas y las explotaron hasta que se parchearon a mano. Aun así, el trabajo duro de hacer ingeniería inversa del juego acabó convirtiéndose en [libmelee](https://github.com/vladfi1/libmelee), sobre la que se construyen casi todos los bots desde entonces.
+
+### La partida de Melee óptima
+
+Un breve intermedio para hablar de un experimento mental que Dan [comparte al final de su charla](https://youtu.be/_0Z_oN_CZyA?t=2207): ¿qué jugarían dos bots perfectos entre sí? ¡Me metí hasta el fondo de la madriguera con este!
+
+<details markdown="1">
+<summary>Dos Fox perfectos: el punto muerto por fuerza bruta</summary>
+
+Parafraseando, su respuesta fue:
+
+> Cualquier proyectil se puede reflejar en una ventana de dos fotogramas, así que lanzarlos no sirve de nada.
+>
+> El movimiento más rápido del juego es el shine de Fox, que golpea en su primerísimo fotograma. Así que dos Fox perfectos caminan el uno hacia el otro hasta estar justo a distancia y hacen shine en el mismo fotograma. Los shines se anulan[^3], y a partir de ahí es un punto muerto.
+>
+> Lo mejor para los dos es saltar y hacer multishine, perfecto al fotograma, hasta que se acabe el tiempo. Entonces la partida va a Muerte Súbita, donde caen bob-ombs del cielo, aparentemente al azar.
+>
+> Pero no son aleatorias, el RNG de Melee es predecible[^2]. La verdadera estrategia óptima es entonces llevar la partida para que, cuando el punto muerto acabe ocho minutos después, el generador esté en un estado que suelte las bombas donde tu rival tenga que elegir entre meterse en tu shine o en una bomba.
+
+Como soy fan de este tipo de experimentos mentales, le busqué algunos agujeros, y como ahora tenemos el código fuente descompilado acabé intentando sacar la respuesta por fuerza bruta. Eso se convirtió en [melee-brute](https://github.com/mateo19182/melee-brute), un fork que hice de [melee-sim-light](https://github.com/kyhavlov/melee-sim-light) que puede explorar el espacio de búsqueda mucho más rápido que cualquier emulador tradicional. Sinceramente, es solo un montón de trucos ingeniosos de Fable optimizando para este caso de uso, ¡pero creo que puede ser bastante útil para otras cosas!
+
+El punto muerto parece ser real, pero no por ese motivo. Acercarse y hacer shine no es en realidad lo mejor. Su alcance es diminuto (10 unidades), y el jab de Fox golpea desde 21, así que el otro simplemente te hace jab mientras te acercas.
+
+Luego pensé que a lo mejor algún otro personaje puede golpear a Fox de una forma a la que no pueda reaccionar (puede leer la memoria del juego, así que ve cada movimiento en el fotograma en que empieza). Así que probé los movimientos de todos los personajes contra un Fox que responde al fotograma siguiente, desde una distancia de 12 a 40[^4], y no pasó nada. Lo castiga o lo bloquea todo, sobre todo con shine o un jab.
+
+El primer fotograma del shine hace casi todo el trabajo. Fox es intangible en él, y en el suelo su hitbox choca con la del atacante, así que incluso un jab de fotograma 2 desde cerca pierde contra él. También es el único movimiento del juego que golpea antes de que nadie pueda reaccionar, así que nadie puede quedarse en ese pequeño círculo alrededor de Fox. Falco tiene el mismo shine, pero llega a 8 en vez de a 10.
+
+![Dos Fox a 7 unidades hacen shine en el mismo fotograma: las hitboxes chocan, los dos se congelan 4 fotogramas y nadie recibe daño](/data/melee/fox-clank.webp "wide")
+
+Así que si alguien gana, es un Fox, y la pregunta de verdad es el ditto de Fox.
+
+Hay una cosa que no necesita ninguna búsqueda: una partida en Final Destination empieza como una imagen especular, así que cualquier plan que tenga un Fox, el otro puede jugarlo reflejado. Ninguno de los dos puede ir por delante desde el principio.
+
+O los dos pueden quedarse ahí quietos y seguros para siempre (el punto muerto de Petro), o los dos se ven obligados a adivinar de una forma que acaba equilibrándose.
+
+Hasta ahora he supuesto que un Fox se mueve y el otro reacciona. Pero cuando los dos tienen que elegir en el mismo fotograma, a un Fox que simplemente se queda quieto se le puede obligar a adivinar: acércate, para a 13,2 y echa el stick hacia atrás de golpe. Ahora azul tiene que elegir entre hacer shine, apartarse o esperar, un piedra-papel-tijera donde cada lado conecta el primer golpe el 12,5% de las veces.
+
+![El Fox atacante (rojo) camina durante 182 fotogramas y echa el stick hacia atrás justo fuera del alcance del shine. Se muestra dos veces con la misma entrada de rojo: azul se gira para irse y recibe el golpe, azul se queda quieto y no](/data/melee/fox-flick.webp "wide")
+
+*Rojo camina durante 3 segundos y echa el stick hacia atrás a 13,2 unidades. La misma entrada de rojo dos veces: primero azul intenta irse y se come el shine, luego azul se queda quieto y no pasa nada. Azul tiene que elegir sin ver cuál de las dos es.*
+
+Hay dos salidas. Si nunca quiere adivinar, retrocede a 13,7, la única entrada que es segura aunque el atacante la vea venir, y el amago nunca llega a pasar:
+
+![El mismo paseo, pero azul hace dash hacia atrás a 13,7 unidades antes de que rojo pueda hacer el amago. Nadie recibe el golpe](/data/melee/fox-retreat.webp "wide")
+
+O acepta adivinar: en el juego justo, acercarse a esa distancia le vale exactamente 0 al atacante, y lo mejor para los dos es esperar. Si hubiera alguna forma de obligar al defensor a mantener el escudo, o de que el atacante le alcanzase desde el aire, el atacante podría sacar ventaja, pero simplemente no hay forma de obligar a un Fox quieto a hacer eso.
+
+El atacante podría intentar seguir acercándose hasta que no quede escenario. Esa es la idea del acorralamiento: si cada acercamiento a 13,7 hace que un Fox que nunca adivina ceda un poco de terreno, tarde o temprano el escenario se acaba en el borde.
+
+Con el defensor de espaldas al borde y los dos a distancia de shine sigue siendo un juego de adivinar, pero ya no está igualado. Jugado 100 veces, mirando 8 fotogramas por delante (unos 16 millones de estados de juego), el atacante conecta el primer golpe o el defensor se cae del escenario ≈ 34 veces, el defensor lo conecta ≈ 8, y ≈ 58 veces nadie recibe golpe.
+
+![Azul, de espaldas al borde, hace shine al escudo de rojo. El retroceso saca a azul del escenario mientras todavía mantiene el shine](/data/melee/fox-ledge.webp "wide")
+
+El acorralamiento solo funciona contra un Fox que se niega a adivinar nunca, y uno perfecto no tiene por qué. En medio del escenario, la adivinanza que ofrece el atacante vale lo mismo para los dos, así que puede aceptarla ahí en vez de retroceder hasta un borde malo.
+
+Así que, hasta donde puedo buscar, es tablas: nadie puede atacar primero, el ditto está igualado, y las adivinanzas a las que se puede obligar a un Fox también lo están, salvo en un borde al que nadie te puede empujar. Aunque eso no es llegar muy lejos: cada búsqueda mira 8 fotogramas por delante, el menú no tiene láseres, wavedashes ni dash dance, y la mayoría de posiciones están colocadas a mano. El resto de experimentos están en la [página de Brute](https://melee.m19182.dev/brute), y puede que se me escape algo, así que si tienes alguna idea, ¡escríbeme!
+
+</details>
+
+### Volviendo a la historia
+
+En 2017, Vlad Firoiu publicó [Phillip](https://arxiv.org/abs/1702.06230), entrenado de principio a fin con RL asíncrono. Entrenó una red por personaje y usó una recompensa ingenua (KOs + daño hecho*peso) con [actor-crítico](https://en.wikipedia.org/wiki/Actor-critic_algorithm) y juego contra sí mismo. Llegó a ganar a algunos jugadores profesionales, aunque sobre todo porque podía reaccionar en unos 2 fotogramas cuando un humano necesita unos 12. Aun así era bastante explotable: algunos jugadores descubrieron que con solo agacharse en el borde acababa suicidándose.
+
+Ese mismo año, [Sharma y Friedman](https://www.yash-sharma.com/files/learning-play-super%20(3).pdf) entrenaron una DQN recurrente que tenía que actuar con 12 fotogramas de retraso, más parecido a un humano. El propio [seguimiento](https://arxiv.org/abs/1810.07286) de Vlad en 2018 ("At Human Speed") hizo lo mismo con Phillip: el RL a secas se hundía con el retraso, y añadir un modelo aprendido que predice el juego lo recuperaba.
+
+En los años siguientes [Slippi](https://slippi.gg/) se hizo popular, con archivos de repetición, netplay con rollback, una clasificatoria... Acumular cientos de miles de partidas humanas grabadas de las que aprender cambió la receta: primero copiar a humanos, luego mejorar con RL. [Project Nabla](https://web.archive.org/web/20221013224436/https://bycn.github.io/2022/08/19/project-nabla-writeup.html) (Bryan Chen, 2022) fue un ejemplo temprano: una red recurrente pequeña clonada de unas 100k repeticiones de torneo, y luego PPO, jugando con 2 fotogramas de retraso.
+
+Ninguno de estos bots mira la pantalla. Leen la memoria del juego en cada fotograma (posiciones, velocidades, animación y en qué punto va, daño) y responden con el estado completo de un mando. [AlphaStar de DeepMind para StarCraft II](https://deepmind.google/blog/alphastar-mastering-the-real-time-strategy-game-starcraft-ii/) siguió la misma receta: tiempo real, clonado de repeticiones humanas, y luego juego contra sí mismo con una penalización por alejarse del juego humano.
+
+El gordo es el segundo Phillip de Vlad, [slippi-ai](https://github.com/vladfi1/slippi-ai): en desarrollo desde 2020 y jugando contra jugadores top en 2024, primero copió a humanos a partir de repeticiones de ranked y de profesionales, y luego mejoró jugando contra sí mismo, con un retraso de reacción humano incorporado: ve el juego con 18 a 24 fotogramas de retraso. Es una red recurrente que elige el mando en dos pasos, una de 728 combinaciones de botones, gatillos y C-stick, y luego una de 85 posiciones del stick principal. Zain [le ganó 5-3](https://www.youtube.com/watch?v=c8nRFAGvr2c) y Moky [perdió 3-10](https://www.youtube.com/watch?v=1kviVflqXc4).
+
+No mucho después, en 2025, Eric Gu publicó [HAL](https://ericyuegu.com/behavior-cloning-melee/) (solo Fox): un transformer de 20M clonado de partidas de Fox de profesionales por unos 5 $ de cómputo, que ganaba a la CPU de nivel 9 el 95% de las veces. erickfm llevó la misma receta a [MIMIC](https://github.com/erickfm/MIMIC), un modelo de unos 20M por personaje, con una cabeza dedicada a los botones para poder hacer wavedash y un poco de RL sobre cosas como el porcentaje de L-cancel. Luego llegó un [HAL escalado](https://ericyuegu.com/hillclimbing-melee/): 247M de parámetros con 256 fotogramas de contexto, dirigido pidiéndole un nivel de juego o el estilo de un jugador. Predice 4 fotogramas de entradas a la vez para esconder su tiempo de cómputo, y Gu vio que un fotograma de retraso de reacción hace el doble de daño que un fotograma actuando sin información nueva.
+
+Ahora, a finales de 2026, Frisson Labs publicó [Faynt](https://www.frisson-labs.com/faynt) ([artículo](https://arxiv.org/abs/2610.02144)), un solo transformer de 10M de parámetros que juega con los 26 personajes. Se entrena en tres fases: clonación de comportamiento con unas 840.000 repeticiones de ranked, un "currículo de ganadores" que acaba en partidas ganadas por jugadores de rango Master (destilado de un hermano de 75M), y luego RL jugando contra sí mismo en espejos de Fox con 96 emuladores en una GPU. Juega con retraso de reacción cero y ganó 240 de 244 partidas contra las versiones públicas de Phillip. Le siguió [Reyn](https://www.frisson-labs.com/reyn), un bot que diriges con órdenes en inglés, pero sin ningún LLM dentro: Frisson etiquetó repeticiones humanas con instrucciones generadas por reglas ("esto es un agarre"), entrenó la política para seguirlas, y luego la congeló y entrenó pequeños adaptadores con RL. Un enrutador traduce lo que escribas a un menú fijo de unas 100 órdenes, o lo rechaza. Ese detalle importa más adelante.
 
 ![Una partida del benchmark redibujada desde su repetición: Faynt (azul) le quita una vida a Phillip (rojo), los dos con Fox en Final Destination](/data/melee/replay-2d.webp)
 
 *14 segundos de una partida del benchmark, redibujados desde el archivo de repetición: Faynt (azul) le quita una vida a Phillip (rojo), los dos con Fox.*
 
-Si nunca lo has jugado: dos personajes pelean en un escenario pequeño que flota, cada golpe sube el porcentaje de daño del rival y cuanto más alto, más lejos sale volando. Si lo sacas de la pantalla pierde una vida (un *stock*). Cuatro vidas, ocho minutos. Sencillo sobre el papel, pero a alto nivel va de reacciones medidas en fotogramas sueltos y de leer lo que va a hacer el otro.
+Todos son diminutos al lado de un LLM (de 10M a 247M de parámetros), responden en 2 a 8 milisegundos por fotograma en una GPU doméstica, y su fuerza sale de repeticiones humanas más juego contra sí mismos, no de razonar.
+
+Todo este trabajo tan chulo lo hace posible la comunidad (como la recién abierta [stomped.dev](https://stomped.dev), una clasificatoria solo para bots con una comunidad de discord muy maja), que ha construido con el tiempo las herramientas abiertas que permiten este tipo de experimentos, y que hace poco usó IA para completar la [descompilación](https://github.com/doldecomp/melee) de todo el código de Melee, de la que también salió [melee-sim-light](https://github.com/kyhavlov/melee-sim-light), que ejecuta el juego descompilado sin emulador, unas 100 veces más rápido que Dolphin sin interfaz.
+
+### TAS
+
+Junto a los bots también hay una escena de juego asistido por herramientas (TAS): una secuencia construida fotograma a fotograma en un emulador. La reproducción es determinista, y se usa sobre todo para enseñar los límites del juego. Tengo la sensación de que mi fork podría ser útil aquí, pero nunca me metí, así que no estoy seguro.
+
+Empezó en 2005 con vídeos de [Action Replay](https://www.supercheats.com/gamecube/supersmashbrosmeleeactionreplaycodes.htm) hechos en el modo de depuración oculto del juego, que avanza fotograma a fotograma. Hacia 2010 Dolphin tuvo herramientas TAS de verdad (estados guardados, avance por fotograma, películas de entradas), y más tarde scripts en Lua encima, como [ssbm-lua-core](https://github.com/practicaltas/ssbm-lua-core) de PracticalTAS. Algunas obras chulas: [combos que acaban todos en exactamente 69 golpes](https://www.youtube.com/watch?v=F-mUcQXeSSc), y [Target Test con los 25 personajes](https://tasvideos.org/7174S) en 2:39.97 de tiempo de juego. Muchos hallazgos vuelven al juego humano.
+
 
 ---
 
-## Diez años de bots, y por qué ahora
+## Benchmark
 
-- **2001**, las CPU del juego, niveles 1 a 9. La de nivel 9 golpea y agarra en el fotograma exacto, pero casi nunca usa el escudo, siempre se recupera igual y pierde contra un mismo movimiento repetido.
-- **2015**, [SmashBot](https://www.youtube.com/watch?v=_0Z_oN_CZyA). Dan "altf4" Petro escribió a mano un bot de Fox, perfecto al fotograma y con tiempo de reacción cero. Su fontanería se convirtió en libmelee, sobre la que se construyen casi todos los bots desde entonces.
-- **2017**, [Phillip](https://arxiv.org/abs/1702.06230). Vlad Firoiu entrenó una red solo con aprendizaje por refuerzo y ganó a jugadores profesionales, reaccionando en unos 2 fotogramas cuando un humano necesita de 12 a 15.
-- **2018-2022**, Slippi: archivos de repetición, netplay con rollback y una clasificatoria. De repente había cientos de miles de partidas humanas grabadas de las que aprender.
-- **2024**, Phillip otra vez, ahora con [slippi-ai](https://github.com/vladfi1/slippi-ai): primero copiar a humanos a partir de repeticiones y luego mejorar jugando contra sí mismo, con un retardo de reacción humano incorporado: ve el juego con 18 a 24 fotogramas de retraso. Es una red recurrente que elige el mando en dos pasos, una de 728 combinaciones de botones, gatillos y C-stick, y luego una de 85 posiciones del stick principal. Zain [le ganó 5-3](https://www.youtube.com/watch?v=c8nRFAGvr2c); Moky [perdió 3-10](https://www.youtube.com/watch?v=1kviVflqXc4).
-- **2025**, [HAL](https://ericyuegu.com/behavior-cloning-melee/), de Eric Gu, clonó partidas de Fox de profesionales en un transformer de 20M de parámetros por unos 5 $ de cómputo y ganó a la CPU de nivel 9 el 95% de las veces. [MIMIC](https://github.com/erickfm/MIMIC), de erickfm, vino después con la misma receta y un modelo de unos 20M por personaje, con una cabeza dedicada a los botones para poder hacer wavedash y un poco de RL sobre cosas que el juego puede comprobar, como el porcentaje de L-cancel.
+Usando el emulador Dolphin de Slippi, Fox contra Fox en FD y Battlefield, metí todos los bots relevantes que encontré y un par de experimentos míos. Todo entra en un [único ajuste Elo](https://github.com/mateo19182/melee-llm/tree/main/melee_llm/bench) con la CPU de nivel 9 fijada en 1500. Luego lo dejé toda la noche jugando miles de partidas: 4.082 partidas puntuadas al final.
 
-Ninguno de estos bots mira la pantalla. Leen la memoria del juego en cada fotograma (posiciones, velocidades, animación y en qué punto va, daño) y responden con el estado completo de un mando. Y casi todos comparten receta: copiar a humanos a partir de repeticiones (clonación de comportamiento) y luego mejorar jugando contra sí mismos. Es AlphaGo sin la búsqueda, porque en 16 milisegundos no hay tiempo de mirar jugadas por delante ni forma de rebobinar. El pariente más cercano es AlphaStar de DeepMind para StarCraft II: también en tiempo real, también clonado de repeticiones humanas, y luego juego contra sí mismo con una penalización por alejarse del juego humano.
+Los LLM son un caso especial, porque son demasiado lentos para pulsar botones en cada fotograma (16,7 ms), así que cada montaje les da una tarea de más alto nivel y deja los fotogramas a algo más rápido. Leen unos 500 tokens de [estado del juego](https://github.com/mateo19182/melee-llm/blob/main/melee_llm/state.py) con una ventana de contexto deslizante.
 
-Y luego, las últimas seis semanas:
+- [Juegan, sin límite de tiempo](https://github.com/mateo19182/melee-llm/blob/main/melee_llm/agents/llm_paused.py): eligen un movimiento y el juego se pausa mientras piensan. Esto mide lo buenas que son sus decisiones.
+- [Juegan, en directo](https://github.com/mateo19182/melee-llm/blob/main/melee_llm/agents/llm_live.py): lo mismo pero sin pausas.
+- [Juega Jev](https://github.com/mateo19182/melee-llm/blob/main/melee_llm/agents/jev_player.py): [Jev, de TypeSafe](https://typesafe.ai/blog/introducing-system-one-models-and-jev), un modelo de decisión que responde preguntas tipo test en unos 0,15 segundos.
+- [Reyn con coach](https://github.com/mateo19182/melee-llm/blob/main/melee_llm/agents/coach.py): Reyn juega cada fotograma, y cada 5 segundos el LLM coach usa texto para condicionar su estilo de juego.
+- [Escriben un bot](https://github.com/mateo19182/melee-llm/tree/main/melee_llm/botwriter): un agente de programación tiene 30 minutos, un sandbox y una herramienta de práctica para escribir un bot en Python que luego juega como cualquier otro participante.
 
-- Jugadores de élite se enfrentaron en directo a un equipo de Phillips, dos veces, y ganaron las dos por los pelos.
-- Frisson Labs publicó [Faynt](https://www.frisson-labs.com/faynt), un solo modelo de 10M de parámetros que juega con los 26 personajes y ganó 240 de 244 partidas contra las versiones públicas de Phillip. Se entrena en tres fases ([artículo](https://arxiv.org/abs/2610.02144)): clonación con unas 840.000 repeticiones de ranked, un "currículo de ganadores" que acaba en partidas ganadas por jugadores de rango Master (destilado de un hermano de 75M), y luego RL jugando contra sí mismo en espejos de Fox con 96 emuladores en una GPU. Juega con retraso de reacción cero.
-- Un HAL escalado (247M de parámetros) [llegó a unos 2200 de Elo](https://ericyuegu.com/hillclimbing-melee/), el 1% superior de la clasificatoria humana: 256 fotogramas de contexto, entrenado en 16 horas en una B200 con unos 1,3M de partidas (13.500 millones de fotogramas), y dirigido pidiéndole un nivel de juego o el estilo de un jugador ("juega como Cody"). Predice 4 fotogramas de entradas a la vez para esconder su tiempo de cómputo, y Gu vio que un fotograma de retraso de reacción hace el doble de daño que un fotograma actuando sin información nueva.
-- Abrió [stomped.dev](https://stomped.dev), una clasificatoria solo para bots.
-- [melee-sim-light](https://github.com/kyhavlov/melee-sim-light) ejecuta el juego descompilado sin emulador, unas 100 veces más rápido.
-- Tres días antes de la charla, Frisson publicó [Reyn](https://www.frisson-labs.com/reyn), un bot que diriges con órdenes en inglés, pero sin ningún LLM dentro: Frisson etiquetó repeticiones humanas con instrucciones generadas por reglas ("esto es un agarre"), entrenó la política para seguirlas, y luego la congeló y entrenó pequeños adaptadores con RL. Un enrutador traduce lo que escribas a un menú fijo de unas 100 órdenes, o lo rechaza. Ese detalle importa más adelante.
+![Clasificación en tiempo real: bots aprendidos, coaches, el mejor bot que escribió cada modelo con esfuerzo alto, CPU y LLM jugando en directo, cada uno con su intervalo del 95%, coloreados por tipo](/data/melee/leaderboard-realtime-light.svg "wide")
 
-Todos son diminutos al lado de un LLM (de 10M a 247M de parámetros), responden en 2 a 8 milisegundos por fotograma en una GPU doméstica, y su fuerza sale de repeticiones humanas y juego contra sí mismos, no de razonar.
+Los bots aprendidos van muy por delante. Faynt no perdió nunca (370-0, así que su 3403 es en realidad un mínimo), luego Phillip gm (2549) y HAL (2300). Las CPU suben en orden, de 976 la de nivel 1 a 1500 la de nivel 9: menos distancia que los 1.000 puntos entre la de nivel 9 y Phillip gm.
 
-### La escena TAS
+### LLM
 
-Junto a los bots hay una escena más pequeña de juego asistido por herramientas (TAS): un archivo de entradas construido fotograma a fotograma en un emulador, con estados guardados y reintentos ilimitados, que luego se reproduce desde el encendido. La reproducción es determinista, así que las mismas entradas dan siempre la misma partida. Enseña lo que permite el juego, no lo que puede hacer un humano.
+#### Jugando
 
-- Empezó en **2005** con vídeos de Action Replay hechos en el modo de depuración oculto del juego, que avanza fotograma a fotograma. Hacia **2010** Dolphin tuvo herramientas TAS de verdad (estados guardados, avance por fotograma, películas de entradas), y más tarde scripts en Lua encima, como [ssbm-lua-core](https://github.com/practicaltas/ssbm-lua-core) de PracticalTAS.
-- Las obras maestras: [combos que acaban todos en exactamente 69 golpes](https://www.youtube.com/watch?v=F-mUcQXeSSc), y [Target Test con los 25 personajes](https://tasvideos.org/7174S) en 2:39.97 de tiempo de juego. Los hallazgos vuelven al juego humano: una ruta de Ice Climbers sacada de un TAS ahorró 91 fotogramas en la [carrera por bajar de 3:00](https://www.youtube.com/watch?v=qsT08n_96p4) en tiempo real.
-- Los números "aleatorios" de Melee salen de una sola semilla de 32 bits y una fórmula sencilla (`seed × 214013 + 2531011`), que avanza una vez por cada llamada aleatoria. Los TASers la dirigen, por ejemplo eligiendo personajes al azar en la pantalla de selección, que gasta exactamente dos llamadas.
+![Elo sin límite de tiempo frente a Elo en tiempo real para cada modelo, con el porcentaje de respuestas en directo descartadas por llegar tarde](/data/melee/latency-tax-light.svg "wide")
 
-Un TAS y un bot leen el mismo estado del juego y pulsan el mismo mando virtual, pero un TAS es de lazo abierto: conoce todo el futuro y se busca sin prisa. Un bot ve cada fotograma una vez y tiene 16 ms. Otros juegos automatizan el TAS con búsqueda sobre su código descompilado (Super Mario 64 tiene fuerza bruta que hace justo eso), y por lo que he encontrado nadie lo ha hecho todavía para Melee: siguen siendo scripts de Lua y edición a mano fotograma a fotograma. Mis notas, con fuentes, están [aquí](https://github.com/mateo19182/melee-llm/blob/main/docs/tas.md).
+Con tiempo para pensar, GPT-6.1 Sol gana a la CPU de nivel 9 (1729), el resto de modelos quedan entre 1254 y 1474, y todos ganan a Jev (1082). Un jugador que elige un movimiento al azar en cada decisión puntúa 732 aquí, así que pensar sí cuenta.
+En directo, todo eso desaparece: todos los modelos caen de 492 a 851 puntos, por debajo de la CPU de nivel 1 (de 762 a 878).
 
-O sea: los bots más fuertes se pueden descargar y ejecutar en una sola GPU doméstica, uno de ellos entiende lenguaje, el juego se puede simular mucho más rápido que en tiempo real, clonar un bot decente cuesta unos pocos dólares y hay una clasificatoria pública donde probarlo. Nadie los había puesto a todos en una misma escala, ni se había preguntado dónde encaja un LLM entre ellos.
+Las capturas de pantalla tampoco ayudan: con una imagen en lugar del texto, los modelos rindieron en general peor. [LLM Colosseum](https://github.com/OpenGenerativeAI/llm-colosseum) vio algo parecido en Street Fighter (GPT-3.5 ganaba a GPT-4 por ser más rápido).
 
----
 
-## El benchmark
+#### Como coach
 
-Todo corre en mi servidor de casa: el juego real en el emulador Dolphin de Slippi, una docena de partidas a la vez y Python manejando mandos virtuales. Todas las partidas son Fox contra Fox en dos escenarios de torneo. Participan las CPU del juego, tres bots sencillos programados a mano, los cinco bots aprendidos publicados (Phillip en varios niveles, HAL, MIMIC, Faynt y Reyn) y LLM.
+![Puntuación de Reyn sin órdenes, con órdenes al azar, con cada LLM y Jev como coach, y manteniendo "Don't die." toda la partida](/data/melee/coaching-light.svg "wide")
 
-Los LLM son demasiado lentos para pulsar botones en cada fotograma (un fotograma son 16,7 ms y una respuesta tarda de 1 a 3 segundos), así que cada montaje les da una tarea de más alto nivel y deja los fotogramas a algo más rápido. Leen unas 150 palabras de texto que describen el momento y:
-
-1. **[Juegan, sin límite de tiempo](https://github.com/mateo19182/melee-llm/blob/main/melee_llm/agents/llm_paused.py)**: eligen un movimiento (`laser`, `shine`, `wavedash`, `recover`...) y el juego se pausa mientras piensan. Esto mide solo lo buenas que son sus decisiones.
-2. **[Juegan, en directo](https://github.com/mateo19182/melee-llm/blob/main/melee_llm/agents/llm_live.py)**: lo mismo a velocidad real, con un comportamiento seguro por defecto mientras el modelo piensa. Las respuestas con más de 2 segundos se descartan.
-3. **[Juega Jev](https://github.com/mateo19182/melee-llm/blob/main/melee_llm/agents/jev_player.py)**: [Jev, de TypeSafe](https://typesafe.ai/blog/introducing-system-one-models-and-jev), un modelo de decisión rápido que responde preguntas tipo test en unos 0,15 segundos.
-4. **[Entrenan a Reyn](https://github.com/mateo19182/melee-llm/blob/main/melee_llm/agents/coach.py)**: Reyn juega cada fotograma y cada 5 segundos el entrenador elige una de sus órdenes.
-5. **[Escriben un bot](https://github.com/mateo19182/melee-llm/tree/main/melee_llm/botwriter)**: un agente de programación tiene 30 minutos, un sandbox y una herramienta de práctica para escribir un bot en Python que luego juega como cualquier otro participante.
-
-Todo entra en un [único ajuste Elo](https://github.com/mateo19182/melee-llm/tree/main/melee_llm/bench) con la CPU de nivel 9 fijada en 1500 (400 puntos de diferencia significan que el más fuerte gana unas 10 partidas de cada 11). Nadie eligió las partidas a mano: un planificador escogía la siguiente cada pocos segundos, priorizando las que más estrechaban los intervalos más anchos por menos tokens. Al final la clasificación reunió 4.082 partidas.
-
-![Clasificación en tiempo real: el Elo de cada participante con su intervalo del 95%, coloreado por tipo](/data/melee/leaderboard-realtime.svg "wide")
-
-Los bots aprendidos van muy por delante. **Faynt no perdió nunca**: 370-0, la mayoría contra Phillip gm, así que su 3403 es en realidad un mínimo. Después vienen Phillip gm (2549) y HAL (2300). Las CPU suben en orden, de 976 la de nivel 1 a 1500 la de nivel 9: menos distancia que los 1.000 puntos entre la de nivel 9 y Phillip gm.
-
----
-
-## Dónde quedaron los LLM
-
-### Jugando: la velocidad gana a la inteligencia
-
-![Elo sin límite de tiempo frente a Elo en tiempo real para cada modelo, con el porcentaje de respuestas en directo descartadas por llegar tarde](/data/melee/latency-tax.svg "wide")
-
-Con tiempo para pensar, GPT-6.1 Sol gana a la CPU de nivel 9 (1729), el resto de modelos quedan entre 1254 y 1474, y todos ganan a Jev (1082). Un jugador que elige un movimiento al azar en cada decisión puntúa 732, así que aquí pensar sí cuenta.
-
-En directo todo eso desaparece: todos los modelos caen de 492 a 851 puntos y acaban **por debajo de la CPU de nivel 1** (de 762 a 878), empatados entre sí y con Jev. Las respuestas de Sol tardan 2-3 segundos, así que el 95% llegan tarde y se descartan. Lo comprobé con dos controles: mi piloto automático solo, sin preguntar nunca a un modelo, puntúa 824, y los movimientos al azar 700. Todos los LLM en directo caen dentro del intervalo del piloto automático, así que a esta velocidad el LLM no aporta nada medible sobre el código que lo envuelve. Incluso Haiku, lo bastante rápido como para que solo se descarte el 5% de sus respuestas, actúa sobre un estado del juego de hace unos 70 fotogramas, que en Melee son varios intercambios atrás.
-
-[LLM Colosseum](https://github.com/OpenGenerativeAI/llm-colosseum) vio lo mismo en Street Fighter (GPT-3.5 ganaba a GPT-4 por ser más rápido); aquí está en una escala con barras de error.
-
-Las capturas de pantalla tampoco ayudan: con una imagen en lugar del texto, Haiku casi nunca se daba cuenta de que estaba colgado del borde. Todos los modelos leían los porcentajes de daño casi a la perfección y acertaban izquierda/derecha más o menos al azar.
-
-### Entrenando: dos palabras ganan
-
-![Puntuación de Reyn sin órdenes, con órdenes al azar, con cada LLM y Jev como entrenador, y manteniendo "Don't die." toda la partida](/data/melee/coaching.svg "wide")
-
-Esta fue la sorpresa. Reyn sin órdenes puntúa 1846, y con cualquier entrenador sube unos 300 puntos hasta el nivel de HAL. Pero un "entrenador" que elige una orden al azar cada 5 segundos sin mirar la partida consigue la mayor parte de esa subida (2141). Solo con las puntuaciones, los intervalos de los LLM entrenadores se solapan con el suyo, así que puse a los entrenadores a jugar entre sí directamente: 300 partidas más, el mismo bot en los dos lados y solo cambia el entrenador. Tres de los cuatro LLM sí ganan al azar: Sonnet 5.5 le ganó 29 de 36, Haiku 4.5 28 de 37 y GPT-6 Luna 30 de 45, unos 170 puntos por encima. GPT-6.1 Sol no (15 de 35), y también es el más lento, 3 segundos por respuesta. Así que investigué más:
+Esta fue la sorpresa. Reyn sin órdenes puntúa 1846, y con cualquier LLM de coach sube unos 450 puntos hasta el nivel de HAL (de 2303 a 2324). Pero un "coach" que elige una orden al azar cada 5 segundos sin mirar la partida consigue dos tercios de esa subida (2141). Solo con las puntuaciones, los LLM coaches se solapan con él, así que puse a los coaches a jugar entre sí directamente: 300 partidas más, el mismo bot en los dos lados y solo cambia el coach. Tres de los cuatro LLM coaches sí ganan al azar: Sonnet 5.5 le ganó 29 de 36, Haiku 4.5 28 de 37 y GPT-6 Luna 30 de 45, unos 170 puntos por encima. GPT-6.1 Sol no (15 de 35); también es el más lento, 3 segundos por respuesta. Así que investigué más:
 
 - A Reyn le basta casi con *cualquier* orden. Una sola orden al azar mantenida toda la partida ya lo sube a 2075.
-- **Mantener "Don't die." ("no te mueras") toda la partida, sin entrenador, puntúa 2452**, por encima de todos los LLM entrenadores.
-- Jev es el mejor entrenador (2403), y por accidente: su elección favorita es "kill now" ("mata ya"), que el enrutador de Reyn traduce, siempre, a... "Don't die."
+- Mantener "Don't die." ("no te mueras") toda la partida, sin ningún coach, puntúa 2452, por encima de todos los LLM coaches.
+- Jev es el mejor coach (2403), y por accidente: su elección favorita es "kill now" ("mata ya"), que el enrutador de Reyn traduce, siempre, a... "Don't die."
 
 Los LLM eligen planes que suenan sensatos (edgeguard, jugar agresivo) y que resultan valer menos que el aburrido. La lección va menos de LLM que del bot, y de cómo una interfaz de lenguaje puede convertir tus palabras en otra cosa sin que te enteres.
 
-### Programando
+#### Programando
 
-![Puntuación en el benchmark de cada bot escrito por un LLM en una sesión de 30 minutos, junto a las CPU, MIMIC y Phillip silver](/data/melee/bot-writer.svg "wide")
+![Puntuación en el benchmark de cada bot escrito por un LLM en una sesión de 30 minutos, agrupados por tanda, junto a la CPU de nivel 9 y MIMIC](/data/melee/bot-writer-light.svg "wide")
 
 27 sesiones de Claude Code de 30 minutos cada una, en tres tandas, todas en la clasificación principal:
 
-- **Una ejecución por modelo.** El bot de Sonnet, de 135 líneas (shine, agarre, láseres), puntúa 1752, el de Haiku 4.5 1599, y el de Opus, 303 líneas y el más elaborado, 1527.
-- **Tres ejecuciones de cada uno con esfuerzo medio.** Opus quedó claramente por delante (de 1684 a 1858, todos por encima de la CPU de nivel 9); Sonnet (de 936 a 1233) y Haiku (de 1060 a 1444) se quedaron por debajo.
-- **Cinco ejecuciones de cada uno con esfuerzo alto y un bot inicial mejor.** Los tres quedaron empatados: Opus 1699 de media, Haiku 1686, Sonnet 1660.
+- Una ejecución por modelo. El bot de Sonnet, de 135 líneas (shine, agarre, láseres), puntúa 1752, el de Haiku 4.5 1599, y el de Opus, 303 líneas y el más elaborado, 1527.
+- Tres ejecuciones de cada uno con esfuerzo medio. Opus quedó claramente por delante (de 1684 a 1858, todos por encima de la CPU de nivel 9); Sonnet (de 936 a 1233) y Haiku (de 1060 a 1444) se quedaron por debajo.
+- Cinco ejecuciones de cada uno con esfuerzo alto y un bot inicial mejor. Los tres quedaron empatados: Opus 1699 de media, Haiku 1686, Sonnet 1660.
 
 Ese empate dice más del bot inicial que de los modelos. El nuevo bot inicial eran 60 líneas que van a por el rival y hacen up-smash, y no había comprobado lo fuerte que era: una sesión de Haiku lo entregó sin cambios y puntúa 1685, por encima de la CPU de nivel 9. Opus y Sonnet casi siempre lo reescribieron, hasta 450 líneas, y de media acabaron donde empezaron. Solo dos sesiones lo mejoraron claramente (la mejor llegó a 1944, al nivel de MIMIC). O sea: ejecuciones del mismo modelo difieren en cientos de puntos, y 60 líneas con la idea correcta superan casi todo lo que añaden 30 minutos de un modelo fuerte.
 
 ---
 
+## Entrenando mi propio bot
+
+Después de encontrar un cruce entre aficiones mías como Melee y entrenar redes neuronales, lo natural era entrenar mis propios bots de IA. Estos han sido mis primeros pasos, apenas estoy entrando en la comunidad y entendiendo el estado del arte, ¡así que puede que haga una actualización más adelante!
+
+Empecé entrenando mi propio transformer pequeño con repeticiones humanas de Yoshi, como hace HAL. El mejor ganaba a la CPU de nivel 9, pero perdía todas las partidas contra los bots serios, y el RL jugando contra sí mismo en el simulador lo empeoraba en el juego real. Para comprobar mi pipeline reentrené con él el Fox de 20M de HAL: ganó 2 de 24 contra la CPU, donde el de HAL gana el 95%. Así que lo dejé y usé HAL directamente: su modelo de 247M, pidiéndole que juegue como aMSa, es mejor Yoshi que cualquier cosa que entrené, sin entrenar nada.
+
+Probé a hacer algunas primitivas para técnicas concretas de Yoshi y etiquetarlas en los datos de entrenamiento, pero no pareció servir de mucho.
+
+El retraso parece uno de los mayores problemas por resolver. En stomped el bot ve el juego con 10 fotogramas de retraso, lo que le cuesta de 200 a 300 de Elo. Sigue haciendo double-jump cancel y L-cancel como aMSa, pero los parries contra Fox, que tienen que caer en los 6 fotogramas de arranque del escudo de Yoshi, pasan de 0,17 por minuto a casi ninguno (0,02). Reponderar el entrenamiento de HAL para el retraso no ayudó.
+
+Ahora mismo estoy cambiando la base al modelo de 10M de Faynt, que juega con Yoshi mejor que HAL de serie, y montando RL contra los bots anti-Yoshi de Phillip dentro de melee-sim-light, unas 60 veces más rápido que Dolphin. ¡Más sobre eso en una próxima actualización!
+
 ## Qué más salió de esto
 
-**Una [web](https://github.com/mateo19182/melee-llm/tree/main/melee_llm/web)** para verlo todo, vestida como los menús del propio Melee: las clasificaciones con una página por participante, cada partida del servidor dibujada en 2D en directo, un lanzador para cualquier enfrentamiento, todas las repeticiones con las decisiones de la IA en una línea temporal y una página Live que emite el juego real.
+Una [web](https://github.com/mateo19182/melee-llm/tree/main/melee_llm/web) donde fui apuntando mis investigaciones y experimentos, con cada partida que se juega en directo en 2D y mis entrenamientos de modelos en directo, entre otras cosas.
 
-**Una [cabina de comentarios con IA](https://github.com/mateo19182/melee-llm/blob/main/melee_llm/commentary.py)** en esa página Live. Dos comentaristas, Charlie en la narración ("ruidoso, rápido, pierde la cabeza en los momentos grandes") y Laura en el análisis ("ingenio seco, se mete con Charlie"). Un LLM rápido sigue los eventos de la partida y escribe una frase cada pocos segundos, y ElevenLabs les pone voz, solo mientras alguien escucha. Un intercambio real:
+Una [cabina de comentarios con IA](https://github.com/mateo19182/melee-llm/blob/main/melee_llm/commentary.py) con dos comentaristas. Un LLM rápido sigue los eventos de la partida y ElevenLabs les pone voz.
 
-> **Charlie:** HAL MASTER's Fox is in the air and Faynt's Marth is waiting for him!
-> **Laura:** Waiting is the right word. Faynt doesn't chase, Charlie, he collects.
+También estoy buscando cosas interesantes que hacer con [melee-brute](https://github.com/mateo19182/melee-brute). A su velocidad actual, solo puede llegar a una conclusión en situaciones muy restringidas, pero para preguntas como "¿había alguna forma posible de sobrevivir a este edgeguard concreto?" puede funcionar.
 
-**Un [simulador](https://github.com/mateo19182/melee-llm/tree/main/melee_llm/sim).** Conecté todos los jugadores, bots aprendidos incluidos, a melee-sim-light y lo comprobé contra 300 repeticiones: 287 coincidieron fotograma a fotograma (las otras 13 eran archivos sin terminar), unas 100 veces más rápido que el emulador. La pega es que no tiene las CPU del juego.
-
-**Un bot propio, [m19182-yoshi](https://github.com/mateo19182/melee-llm/tree/main/train/meleebot).** Un transformer pequeño que copia el juego humano, como hizo HAL: lee los últimos 4 segundos de partida y predice la siguiente entrada del mando. La primera versión (6M de parámetros) perdió las 12 partidas contra la CPU de nivel 9; una de 20M ganó 1 de 12. Lo que marcó la diferencia fueron los datos: la mejor hasta ahora, `bc-20m-ft`, se preentrena con 1.400 millones de fotogramas de partidas de rango Pro y Master con todos los personajes, y luego se ajusta con Yoshi con 2 a 4 fotogramas de retraso, como en el juego online. Ganó 5 de 6 contra la CPU de nivel 9 y sus primeras partidas contra la Marth de MIMIC (2 de 6) y el Yoshi de HAL (1 de 6), pero sigue perdiendo todas contra Phillip, el Fox de HAL y Faynt. Después probé la segunda mitad de la receta, [RL](https://github.com/mateo19182/melee-llm/tree/main/train/meleebot/rl) jugando contra sí mismo en el simulador. Allí llegó a ganar a su maestro un 80% de las veces hacia la iteración 100, luego se hundió, y esas versiones jugaban peor que `bc-20m-ft` en el juego real. Lección aprendida: el simulador es genial por velocidad, pero una versión solo cuenta cuando gana en Dolphin.
-
-**Jugar contra ellos.** Puedes jugar contra cualquiera de estos bots con un mando en tu propio ordenador con [`play.py`](https://github.com/mateo19182/melee-llm/blob/main/play.py); jugar contra ellos por netplay desde la web es lo siguiente. La clasificación tiene un hueco esperando resultados humanos.
+También estoy pensando en habilitar una forma de jugar contra mis bots en directo por netplay si hay interés. ¡Háblame!
 
 ---
 
-## Qué aprendí
+[^1]: Si te interesa saber más, ¡recomiendo mucho [AsumSaus](https://www.youtube.com/@AsumSaus/videos) y [PracticalTAS](https://youtube.com/@practicaltas)!
 
-- En tiempo real, la latencia lo es todo. Un modelo puntero que toma buenas decisiones no vale nada si llegan con dos segundos (120 fotogramas) de retraso.
-- El sitio interesante para un LLM es por encima de una política rápida, no en su lugar, e incluso ahí hay que compararlo con la referencia más tonta posible. "Orden al azar" y "Don't die." fueron los controles más útiles que probé.
-- Los bots se hicieron fuertes con repeticiones humanas y juego contra sí mismos, no razonando, y lo consiguen con decenas de millones de parámetros en una sola GPU doméstica.
-- Una ejecución por modelo no ordena nada. Las ejecuciones del mismo modelo se dispersan cientos de puntos, y el bot inicial importó más que el modelo.
+[^2]: Sería prácticamente imposible que el bot controlase el RNG, porque los movimientos del rival también lo hacen avanzar. Además, con las reglas de torneo no hay Muerte Súbita: si se acaba el tiempo gana quien tenga menos porcentaje, y un empate a porcentaje se repite como una partida a una sola vida de 2 o 3 minutos, que se quedaría en punto muerto igual.
 
-## Qué viene ahora
+[^3]: Si los dos hacen shine en el mismo fotograma en el suelo, no se anulan en una guerra de multishines: las hitboxes chocan y los dos se congelan 4 fotogramas.
 
-Le doy una o dos semanas más, ya sin los LLM en el centro. Para m19182-yoshi el objetivo ahora es el mejor Yoshi que pueda hacer siguiendo más de cerca las recetas publicadas: de momento solo he usado un 10% del dataset de HAL, y el juego contra sí mismo necesita una señal de aprendizaje mejor antes de ayudar. Lo otro que quiero probar es búsqueda al estilo TAS en el simulador: ya [guarda y restaura](https://github.com/mateo19182/melee-llm/blob/main/melee_llm/sim/world.py) partidas enteras a unas 100 veces la velocidad de Dolphin, que es el montaje que usan los buscadores por fuerza bruta de Mario 64. Podría responder preguntas como "¿hay alguna forma de sobrevivir a este edgeguard?" o etiquetar el mejor movimiento desde posiciones de repeticiones reales para entrenar al bot. Las pegas: el simulador solo hace partidas versus y su RNG no es el de Dolphin. También está en la lista meter a m19182-yoshi y a mí mismo en el benchmark, y conseguir que la gente juegue contra los bots.
-
-![Yo presentando el proyecto en 1hack, delante de la diapositiva sobre diez años de bots de Melee](/data/melee/talk-1hack.webp)
-
-*Presentándolo en [1hack](https://1hack.eu/) el 14 de noviembre.*
-
----
-
-Construido sobre [Slippi](https://slippi.gg), [libmelee](https://github.com/vladfi1/libmelee), [Slippi Lab](https://github.com/frankborden/slippilab) y [melee-sim-light](https://github.com/kyhavlov/melee-sim-light), con los bots de vladfi1 (Phillip), Eric Gu (HAL), erickfm (MIMIC) y Frisson Labs (Faynt, Reyn), Jev de TypeSafe y voces de ElevenLabs.
-
-[^1]: Si te interesa saber más, recomiendo mucho [AsumSaus](https://www.youtube.com/@AsumSaus/videos).
+[^4]: Porque es lo más cerca que cualquier personaje puede ponerse de él en las mejores circunstancias.
