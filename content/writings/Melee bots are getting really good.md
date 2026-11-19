@@ -132,7 +132,7 @@ LLMs are a special case since they are too slow to press buttons every frame (16
 - [Coach Reyn](https://github.com/mateo19182/melee-llm/blob/main/melee_llm/agents/coach.py): Reyn plays every frame, and every 5 seconds the LLM coach uses text to condition its play style.
 - [Write a bot](https://github.com/mateo19182/melee-llm/tree/main/melee_llm/botwriter): a coding agent gets 30 minutes, a sandbox and a practice tool to write a Python bot that then plays like any other entrant.
 
-![Real-time board: every entrant's Elo with its 95% interval, coloured by kind](/data/melee/leaderboard-realtime.svg "wide")
+![Real-time board: learned bots, coaches, the best bot each model wrote at high effort, CPUs and LLMs playing live, each with its 95% interval, coloured by kind](/data/melee/leaderboard-realtime-light.svg "wide")
 
 The learned bots are far ahead. Faynt never lost (370-0, so its 3403 is really a floor), then Phillip gm (2549) and HAL (2300). The CPUs rise in order, from 976 for level 1 to 1500 for level 9: a smaller gap than the 1,000 points between level 9 and Phillip gm.
 
@@ -140,7 +140,7 @@ The learned bots are far ahead. Faynt never lost (370-0, so its 3403 is really a
 
 #### Playing
 
-![Untimed vs real-time Elo for each model, with the share of live replies thrown away for arriving too late](/data/melee/latency-tax.svg "wide")
+![Untimed vs real-time Elo for each model, with the share of live replies thrown away for arriving too late](/data/melee/latency-tax-light.svg "wide")
 
 Given time to think, GPT-6.1 Sol beats the level 9 CPU (1729), the other models land between 1254 and 1474, and all of them beat Jev (1082). A player that picks a random move at every decision rates 732 here, so the thinking does count.
 Live, all of that disappears: every model drops 492 to 851 points, below the level 1 CPU (762 to 878).
@@ -150,7 +150,7 @@ Screenshots don't help either: given an image instead of the text, models perfor
 
 #### Coaching
 
-![Reyn's rating with no command, with random commands, with each LLM and Jev as coach, and holding "Don't die." all game](/data/melee/coaching.svg "wide")
+![Reyn's rating with no command, with random commands, with each LLM and Jev as coach, and holding "Don't die." all game](/data/melee/coaching-light.svg "wide")
 
 This was the surprise. Reyn with no orders rates 1846, and with any LLM coach it jumps by about 450 points to HAL's level (2303 to 2324). But a "coach" that picks a random command every 5 seconds without looking at the game gets two thirds of that jump (2141). On ratings alone the LLM coaches overlap it, so I had the coaches play each other directly: 300 more games, the same bot on both sides, only the coach differing. Three of the four LLM coaches do beat random: Sonnet 5.5 won 29 of 36 against it, Haiku 4.5 28 of 37 and GPT-6 Luna 30 of 45, about 170 points above it. GPT-6.1 Sol doesn't (15 of 35); it's also the slowest, at 3 seconds a reply. So I dug in:
 
@@ -162,7 +162,7 @@ The LLMs pick sensible-sounding plans (edgeguard, play aggressive) that turn out
 
 #### Coding
 
-![Bench rating of every bot an LLM wrote in a 30-minute session, next to CPUs, MIMIC and Phillip silver](/data/melee/bot-writer.svg "wide")
+![Bench rating of every bot an LLM wrote in a 30-minute session, grouped by batch, next to the level 9 CPU and MIMIC](/data/melee/bot-writer-light.svg "wide")
 
 27 Claude Code sessions of 30 minutes each, in three batches, all on the main board:
 

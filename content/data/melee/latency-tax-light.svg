@@ -1,7 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 222" width="760" height="222" role="img" aria-label="The latency tax: same model, untimed vs real time">
 <title>The latency tax: same model, untimed vs real time</title>
-<style>text{font-family:system-ui, -apple-system, "Segoe UI", sans-serif;font-variant-numeric:tabular-nums}.bg{fill:#080b28}.ring{stroke:#080b28}.t1{fill:#e8ebf7}.t2{fill:#b5bbdc}.tm{fill:#8088b4}.grid{stroke:#1b2250}.axis{stroke:#2e3878}.band{fill:#9198c0;fill-opacity:.12}.conn{stroke:#3a4590}.c-learned{fill:#3987e5;stroke:#3987e5}.c-coach{fill:#d95926;stroke:#d95926}.c-written{fill:#199e70;stroke:#199e70}.c-llm{fill:#c98500;stroke:#c98500}.c-jev{fill:#d55181;stroke:#d55181}.c-ref{fill:#898781;stroke:#898781}.ci{fill:none;stroke-width:2;stroke-linecap:round}.hollow{fill-opacity:0}</style>
-<rect class="bg" x="0" y="0" width="760" height="222" rx="8"/>
+<style>text{font-family:Geist, Inter, system-ui, -apple-system, "Segoe UI", sans-serif;font-variant-numeric:tabular-nums}.bg{fill:None}.ring{stroke:#e9e7e1}.t1{fill:#2b2926}.t2{fill:#4a4640}.tm{fill:#7d786e}.grid{stroke:#d8d5cd}.axis{stroke:#a8a398}.band{fill:#6a655c;fill-opacity:.12}.conn{stroke:#bdb8ad}.c-learned{fill:#2a78d6;stroke:#2a78d6}.c-coach{fill:#eb6834;stroke:#eb6834}.c-written{fill:#1baf7a;stroke:#1baf7a}.c-llm{fill:#eda100;stroke:#eda100}.c-jev{fill:#e87ba4;stroke:#e87ba4}.c-ref{fill:#8a8579;stroke:#8a8579}.ci{fill:none;stroke-width:2;stroke-linecap:round}.hollow{fill-opacity:0}</style>
 <text x="16.0" y="26.0" class="t1" font-size="15" text-anchor="start" font-weight="600">The latency tax: same model, untimed vs real time</text>
 <text x="16.0" y="45.0" class="t2" font-size="12" text-anchor="start">Untimed: the game waits for every decision. Real time: 60 fps, never waits. 95% intervals are about ±125-190.</text>
 <circle cx="21.0" cy="64.0" r="4.5" class="c-learned ring" stroke-width="2"/>
@@ -28,7 +27,7 @@
 <line x1="335.2" x2="335.2" y1="76" y2="188" class="axis" stroke-width="1.5"/>
 <text x="339.2" y="86.0" class="tm" font-size="10.5" text-anchor="start">CPU 1</text>
 <line x1="287.0" x2="287.0" y1="76" y2="188" class="axis" stroke-width="1.5"/>
-<text x="291.0" y="86.0" class="tm" font-size="10.5" text-anchor="start">no model</text>
+<text x="283.0" y="86.0" class="tm" font-size="10.5" text-anchor="end">no model</text>
 <text x="746.0" y="72.0" class="tm" font-size="10.5" text-anchor="end">replies too stale</text>
 <line x1="304.1" x2="573.8" y1="92.0" y2="92.0" class="conn" stroke-width="2"/>
 <text x="200.0" y="96.0" class="t1" font-size="12" text-anchor="end" font-weight="600">GPT-6.1 Sol</text>

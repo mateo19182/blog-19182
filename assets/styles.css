@@ -227,6 +227,8 @@ body {
 .prose a:hover { color: var(--dark); }
 .prose a.external:not(.has-favicon)::after { content: " ↗"; font-size: 0.8em; color: var(--gray); }
 .prose img { max-width: 100%; height: auto; border-radius: 6px; display: block; margin: 1.2rem auto; }
+.prose img.theme-dark, :root[data-theme="dark"] .prose img.theme-light { display: none; }
+:root[data-theme="dark"] .prose img.theme-dark { display: block; }
 
 /* Feijoo source comparisons: open a case, then compare both original pages. */
 .prose .feijoo-case {
