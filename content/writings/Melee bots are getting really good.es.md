@@ -14,7 +14,7 @@ Había visto algo de movimiento en twitter sobre avances recientes de bots de IA
 
 Empecé con una idea vaga de poner a LLM a jugar directamente. Algunas de las mejores formas de medir el rendimiento de los últimos modelos se basan en ponerlos a jugar a [juegos fuera de su distribución de entrenamiento](https://arcprize.org/arc-agi). La mayoría de benchmarks de juegos son por turnos ([ajedrez](https://maxim-saplin.github.io/llm_chess/#leaderboard), [Pokémon](https://dl.acm.org/doi/10.1145/3771095), [Slay the Spire](https://arxiv.org/abs/2610.12596)... están saliendo un montón últimamente). Esto no funcionó como esperaba, pero me enganchó al tema; mi objetivo con este post es escribir lo que me habría gustado leer cuando empecé a aprender.
 
-Creo que es un momento muy emocionante para meterse en esto, ¡con mucho trabajo por hacer y fruta fácil de coger para empezar!
+Creo que es un momento muy emocionante para meterse en esto, ¡con mucho trabajo por hacer y cosas fáciles por las que empezar!
 
 
 ## Un poco de historia
@@ -120,10 +120,10 @@ Los LLM son un caso especial, porque son demasiado lentos para pulsar botones en
 - [Juegan, sin límite de tiempo](https://github.com/mateo19182/melee-llm/blob/main/melee_llm/agents/llm_paused.py): eligen un movimiento y el juego se pausa mientras piensan. Esto mide lo buenas que son sus decisiones.
 - [Juegan, en directo](https://github.com/mateo19182/melee-llm/blob/main/melee_llm/agents/llm_live.py): lo mismo pero sin pausas.
 - [Juega Jev](https://github.com/mateo19182/melee-llm/blob/main/melee_llm/agents/jev_player.py): [Jev, de TypeSafe](https://typesafe.ai/blog/introducing-system-one-models-and-jev), un modelo de decisión que responde preguntas tipo test en unos 0,15 segundos.
-- [Entrenador de Reyn](https://github.com/mateo19182/melee-llm/blob/main/melee_llm/agents/coach.py): Reyn juega cada fotograma, y cada 5 segundos el LLM entrenador usa texto para condicionar su estilo de juego.
+- [Reyn con coach](https://github.com/mateo19182/melee-llm/blob/main/melee_llm/agents/coach.py): Reyn juega cada fotograma, y cada 5 segundos el LLM coach usa texto para condicionar su estilo de juego.
 - [Escriben un bot](https://github.com/mateo19182/melee-llm/tree/main/melee_llm/botwriter): un agente de programación tiene 30 minutos, un sandbox y una herramienta de práctica para escribir un bot en Python que luego juega como cualquier otro participante.
 
-![Clasificación en tiempo real: bots aprendidos, entrenadores, el mejor bot escrito, CPU y LLM jugando en directo, cada uno con su intervalo del 95%, coloreados por tipo](/data/melee/leaderboard-realtime.svg "wide")
+![Clasificación en tiempo real: bots aprendidos, coaches, el mejor bot escrito, CPU y LLM jugando en directo, cada uno con su intervalo del 95%, coloreados por tipo](/data/melee/leaderboard-realtime.svg "wide")
 
 Los bots aprendidos van muy por delante. Faynt no perdió nunca (370-0, así que su 3403 es en realidad un mínimo), luego Phillip gm (2549) y HAL (2300). Las CPU suben en orden, de 976 la de nivel 1 a 1500 la de nivel 9: menos distancia que los 1.000 puntos entre la de nivel 9 y Phillip gm.
 
@@ -139,15 +139,15 @@ En directo, todo eso desaparece: todos los modelos caen de 492 a 851 puntos, por
 Las capturas de pantalla tampoco ayudan: con una imagen en lugar del texto, los modelos rindieron en general peor. [LLM Colosseum](https://github.com/OpenGenerativeAI/llm-colosseum) vio algo parecido en Street Fighter (GPT-3.5 ganaba a GPT-4 por ser más rápido).
 
 
-#### Entrenando
+#### Como coach
 
-![Puntuación de Reyn sin órdenes, con órdenes al azar, con cada LLM y Jev como entrenador, y manteniendo "Don't die." toda la partida](/data/melee/coaching.svg "wide")
+![Puntuación de Reyn sin órdenes, con órdenes al azar, con cada LLM y Jev como coach, y manteniendo "Don't die." toda la partida](/data/melee/coaching.svg "wide")
 
-Esta fue la sorpresa. Reyn sin órdenes puntúa 1846, y con cualquier LLM de entrenador sube unos 450 puntos hasta el nivel de HAL (de 2303 a 2324). Pero un "entrenador" que elige una orden al azar cada 5 segundos sin mirar la partida consigue dos tercios de esa subida (2141). Solo con las puntuaciones, los LLM entrenadores se solapan con él, así que puse a los entrenadores a jugar entre sí directamente: 300 partidas más, el mismo bot en los dos lados y solo cambia el entrenador. Tres de los cuatro LLM entrenadores sí ganan al azar: Sonnet 5.5 le ganó 29 de 36, Haiku 4.5 28 de 37 y GPT-6 Luna 30 de 45, unos 170 puntos por encima. GPT-6.1 Sol no (15 de 35); también es el más lento, 3 segundos por respuesta. Así que investigué más:
+Esta fue la sorpresa. Reyn sin órdenes puntúa 1846, y con cualquier LLM de coach sube unos 450 puntos hasta el nivel de HAL (de 2303 a 2324). Pero un "coach" que elige una orden al azar cada 5 segundos sin mirar la partida consigue dos tercios de esa subida (2141). Solo con las puntuaciones, los LLM coaches se solapan con él, así que puse a los coaches a jugar entre sí directamente: 300 partidas más, el mismo bot en los dos lados y solo cambia el coach. Tres de los cuatro LLM coaches sí ganan al azar: Sonnet 5.5 le ganó 29 de 36, Haiku 4.5 28 de 37 y GPT-6 Luna 30 de 45, unos 170 puntos por encima. GPT-6.1 Sol no (15 de 35); también es el más lento, 3 segundos por respuesta. Así que investigué más:
 
 - A Reyn le basta casi con *cualquier* orden. Una sola orden al azar mantenida toda la partida ya lo sube a 2075.
-- Mantener "Don't die." ("no te mueras") toda la partida, sin ningún entrenador, puntúa 2452, por encima de todos los LLM entrenadores.
-- Jev es el mejor entrenador (2403), y por accidente: su elección favorita es "kill now" ("mata ya"), que el enrutador de Reyn traduce, siempre, a... "Don't die."
+- Mantener "Don't die." ("no te mueras") toda la partida, sin ningún coach, puntúa 2452, por encima de todos los LLM coaches.
+- Jev es el mejor coach (2403), y por accidente: su elección favorita es "kill now" ("mata ya"), que el enrutador de Reyn traduce, siempre, a... "Don't die."
 
 Los LLM eligen planes que suenan sensatos (edgeguard, jugar agresivo) y que resultan valer menos que el aburrido. La lección va menos de LLM que del bot, y de cómo una interfaz de lenguaje puede convertir tus palabras en otra cosa sin que te enteres.
 
