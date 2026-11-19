@@ -117,8 +117,6 @@ Started in 2005 with [Action Replay](https://www.supercheats.com/gamecube/supers
 *14 seconds of a bench game, redrawn from the replay file: Faynt (blue) takes a stock off Phillip (red), both playing Fox.*
 
 
----
-
 ## Benchmark
 
 Using Slippi's Dolphin emulator, Fox mirror on FD and Battlefield y put every bot relevant bot that i could find and a couple of my experiments. Everything goes into [one Elo fit](https://github.com/mateo19182/melee-llm/tree/main/melee_llm/bench) with the level 9 CPU pinned at 1500. Then left it overnight playing thousands of games: 4,082 rated games by the end.
@@ -171,8 +169,6 @@ The LLMs pick sensible-sounding plans (edgeguard, play aggressive) that turn out
 
 That tie says more about the starter than about the models. The new starter was 60 lines that run at the opponent and up-smash, and I hadn't checked how strong it was: one Haiku session handed it in unchanged and it rates 1685, above the level 9 CPU. Opus and Sonnet mostly rewrote it, into as many as 450 lines, and on average ended where they started. Only two sessions clearly improved on it (the best reached 1944, level with MIMIC). So runs of one model differ by hundreds of points, and 60 lines of the right idea beat most of what 30 minutes of a strong model adds.
 
----
-
 ## Training my own bot
 
 After finding an intersection of my hobbies such as Melee and training neural networks, it's only natural to train my own AI bots. These were my first steps, I'm just getting into the community and understanding the state of the art, so might make an update later!
@@ -192,8 +188,6 @@ An [AI commentary booth](https://github.com/mateo19182/melee-llm/blob/main/melee
 I'm also looking for interesting this to do with [melee-brute](https://github.com/mateo19182/melee-brute). At it's current speeds, it can only reach a conclusion under very restrictive situations, but for questions like "was there any possible way of surviving this specific "edgeguard" it can work.
 
 Also thinking of enabling a way to play my bots live via netplay if there's interest. Talk to me!
-
----
 
 [^1]: highly recommend [AsumSaus](https://www.youtube.com/@AsumSaus/videos) and [PracticalTAS](https://youtube.com/@practicaltas?si=rUSebEZkc0eIUzv8) if interested in learning more!
 
