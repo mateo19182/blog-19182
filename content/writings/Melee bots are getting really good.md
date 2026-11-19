@@ -118,8 +118,6 @@ Next to the bots there's also a scene of tool-assisted play (TAS): a sequence bu
 Started in 2005 with [Action Replay](https://www.supercheats.com/gamecube/supersmashbrosmeleeactionreplaycodes.htm) videos made in the game's hidden frame-by-frame debug mode. Around 2010 Dolphin got proper TAS tools (savestates, frame advance, input movies), and later Lua scripting on top, like PracticalTAS's [ssbm-lua-core](https://github.com/practicaltas/ssbm-lua-core). Some cool showpieces: [combos that all end at exactly 69 hits](https://www.youtube.com/watch?v=F-mUcQXeSSc), and [Target Test for all 25 characters](https://tasvideos.org/7174S) in 2:39.97 in-game time. Many findings flow back to human play.
 
 
----
-
 ## Benchmark
 
 Using Slippi's Dolphin emulator, Fox mirror on FD and Battlefield, I put every relevant bot that I could find and a couple of my experiments. Everything goes into [one Elo fit](https://github.com/mateo19182/melee-llm/tree/main/melee_llm/bench) with the level 9 CPU pinned at 1500. Then left it overnight playing thousands of games: 4,082 rated games by the end.
@@ -172,8 +170,6 @@ The LLMs pick sensible-sounding plans (edgeguard, play aggressive) that turn out
 
 That tie says more about the starter than about the models. The new starter was 60 lines that run at the opponent and up-smash, and I hadn't checked how strong it was: one Haiku session handed it in unchanged and it rates 1685, above the level 9 CPU. Opus and Sonnet mostly rewrote it, into as many as 450 lines, and on average ended where they started. Only two sessions clearly improved on it (the best reached 1944, level with MIMIC). So runs of one model differ by hundreds of points, and 60 lines of the right idea beat most of what 30 minutes of a strong model adds.
 
----
-
 ## Training my own bot
 
 After finding an intersection of my hobbies such as Melee and training neural networks, it's only natural to train my own AI bots. These were my first steps, I'm just getting into the community and understanding the state of the art, so might make an update later!
@@ -195,8 +191,6 @@ An [AI commentary booth](https://github.com/mateo19182/melee-llm/blob/main/melee
 I'm also looking for interesting things to do with [melee-brute](https://github.com/mateo19182/melee-brute). At its current speeds, it can only reach a conclusion under very restrictive situations, but for questions like "was there any possible way of surviving this specific edgeguard?" it can work.
 
 Also thinking of enabling a way to play my bots live via netplay if there's interest. Talk to me!
-
----
 
 [^1]: highly recommend [AsumSaus](https://www.youtube.com/@AsumSaus/videos) and [PracticalTAS](https://youtube.com/@practicaltas) if interested in learning more!
 
