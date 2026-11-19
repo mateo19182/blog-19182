@@ -1,5 +1,6 @@
 ---
 title: Inicio
+description: "Blog de Mateo Amado Ares: escritos y proyectos sobre tecnología creativa, producción musical y DJ, visuales generativos, machine learning e investigación con datos públicos."
 ---
 ¡Hola! Soy Mateo. Ya que estás por aquí, puede que te interese:
 

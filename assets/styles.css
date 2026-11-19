@@ -537,6 +537,8 @@ li.archive-hidden { display: none; }
   gap: 0.35rem;
 }
 .lang-toggle:disabled { cursor: default; opacity: 0.5; }
+a.lang-toggle { text-decoration: none; }
+.prose a.lang-switch { color: inherit; }
 
 .translation-note { font-size: 0.85rem; color: var(--gray); margin: 0 0 1.5rem; }
 .lang-switch {

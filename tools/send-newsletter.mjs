@@ -23,7 +23,6 @@ function previousUrls(ref) {
     if (data.unlisted === true || data.draft === true) continue
     const name = file.slice('content/writings/'.length, -3)
     urls.add(`/writings/${fileSlug(name)}`)
-    for (const alias of [data.aliases || []].flat()) urls.add('/' + String(alias).replace(/^\/+|\/+$/g, ''))
   }
   return urls
 }
@@ -64,15 +63,6 @@ async function main() {
   if (!before || /^0+$/.test(before)) throw new Error('NEWSLETTER_BEFORE must be an existing commit; refusing to announce the archive.')
   const posts = JSON.parse(await readFile('public/newsletter.json', 'utf8'))
   const previous = previousUrls(before)
-  // New aliases in this commit suppress announcements for renamed posts.
-  const current = execFileSync('git', ['ls-files', '-z', 'content/writings'], { encoding: 'utf8' }).split('\0')
-  for (const file of current) {
-    if (!file.endsWith('.md') || /\.(en|es)\.md$/.test(file)) continue
-    const { data } = matter(await readFile(file, 'utf8'))
-    if ([data.aliases || []].flat().some(a => previous.has('/' + String(a).replace(/^\/+|\/+$/g, '')))) {
-      previous.add(`/writings/${fileSlug(file.slice('content/writings/'.length, -3))}`)
-    }
-  }
   const added = newPosts(posts, previous)
   if (!added.length) return console.log('No new writings.')
   if (!process.argv.includes('--send')) {

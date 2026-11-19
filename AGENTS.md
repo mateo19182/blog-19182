@@ -4,7 +4,7 @@
 
 `content/writings/El reto de Feijoo.md` used to be synced from a draft in
 `../inv`; it is now an ordinary post, edited here (or in `/edit`) like any
-other. Its date stays `2026-10-05`, and its former draft URL redirects to it.
+other. Its date stays `2026-10-05`.
 Its images, PDFs and research materials live in `content/data/feijoo-preview/`
 and `content/data/feijoo-evidence/`. Keep `El reto de Feijoo.en.md` in step.
 
@@ -16,6 +16,11 @@ frontmatter (plus a translated `summary:` for writings) and the translated body,
 with the same links, footnote labels and markup as the original. Translated articles show a one-line notice linking back to
 the original. Update the translation when you change the original.
 `link-archive.es.md` only translates the intro; the build appends the link list.
+Each language has its own URL: the original at its path, the translation under
+`/es/` (or `/en/` for a Spanish original), linked with `hreflang`. Links between
+pages are rewritten to the reader's language and the trailing slash. Old URLs
+don't redirect: when renaming a post, its old URL is gone (and the newsletter
+announces it again).
 
 ## Writings and projects
 

@@ -11,7 +11,7 @@ import matter from "gray-matter"
 import { makeRenderer, initHighlighter } from "./lib/markdown.mjs"
 import {
   renderPage, writingsIndexHtml, tagsIndexHtml,
-  tagPageHtml, tagSlug, SITE, esc, t, projectListMd, checkProjectTags,
+  tagPageHtml, tagSlug, SITE, esc, t, projectListMd, checkProjectTags, mdUrl, slashed,
 } from "./lib/templates.mjs"
 import { makeOgImage } from "./lib/og.mjs"
 import { buildRss, buildSitemap } from "./lib/feeds.mjs"
@@ -21,7 +21,7 @@ import { linkUpdates, updatesPage } from "./lib/updates.mjs"
 import { faviconLookup, FAVICON_DIR } from "./lib/favicons.mjs"
 import { cleanLinks } from "./lib/links.mjs"
 import { countWords, normalizeDate } from "./lib/content.mjs"
-import { pageMeta, translationSlots, soundtrackInfo, buildSeries, makeResolver, renderBody, visibleProjects, unlinkDrafts, unlinkDraftsMd } from "./lib/page.mjs"
+import { pageMeta, translationSlots, soundtrackInfo, buildSeries, makeResolver, renderBody, visibleProjects, unlinkDrafts, unlinkDraftsMd, pageViews, localizeLinks } from "./lib/page.mjs"
 import { buildEditor } from "./lib/editor-build.mjs"
 
 const ROOT = path.dirname(fileURLToPath(import.meta.url))
@@ -154,8 +154,7 @@ async function emit(urlPath, html) {
 }
 
 async function emitMd(urlPath, title, body) {
-  const clean = urlPath === "/" ? "index" : urlPath.replace(/^\//, "")
-  const dest = path.join(OUT, `${clean}.md`)
+  const dest = path.join(OUT, mdUrl(urlPath))
   await mkdir(path.dirname(dest), { recursive: true })
   await writeFile(dest, `# ${title}\n\n${body.trim()}\n`)
 }
@@ -229,11 +228,7 @@ async function build() {
     rendered.push([p, page])
   }
 
-  const byUrl = new Map()
-  for (const p of posts) {
-    byUrl.set(p.url, p)
-    for (const a of p.aliases) byUrl.set("/" + String(a).replace(/^\/+|\/+$/g, ""), p)
-  }
+  const byUrl = new Map(posts.map((p) => [p.url, p]))
   const backlinks = new Map()
   for (const [p, page] of rendered) {
     if (!p.isArticle || p.unlisted) continue
@@ -254,17 +249,61 @@ async function build() {
     if (page.es) page.es.html = unlinkDrafts(page.es.html, draftUrls)
   }
 
-  for (const [p, page] of rendered) {
+  for (const [, page] of rendered) {
     page.backlinks = [...(backlinks.get(page.url) || [])]
       .sort((a, b) => (b.date || "").localeCompare(a.date || ""))
-    await emit(p.url, renderPage(page))
+  }
+
+  // Index pages, rendered from the same bilingual HTML in each language.
+  const indexPages = []
+  indexPages.push({
+    title: "Writings", url: "/writings", section: null, es: { title: "Escritos", description: "Ensayos y notas de Mateo." },
+    html: `<p class="writings-intro"><span>${t("Essays and notes", "Ensayos y notas")}</span><span class="subscription-links">${t("Subscribe:", "Suscribirse:")} <a href="/index.xml">RSS</a><span class="dot">·</span><a href="/subscribe">Email</a></span></p>` + writingsIndexHtml(posts),
+    ogImage: "/static/og/writings.png", description: "Essays and notes by Mateo.",
+  })
+  ogJobs.push({ path: "/static/og/writings.png", title: "Writings", subtitle: `${posts.length} posts` })
+  indexPages.push({
+    title: "Tags", url: "/tags", es: { title: "Etiquetas", description: "Los escritos, por etiqueta." }, ogImage: "/static/og/tags.png",
+    html: `<p>${t("Browse writings by topic.", "Explora los escritos por tema.")}</p>` + tagsIndexHtml(tagMap),
+    description: "Browse writings by tag.",
+  })
+  ogJobs.push({ path: "/static/og/tags.png", title: "Tags", subtitle: "browse by topic" })
+  for (const [tag, tposts] of tagMap) {
+    const slug = tagSlug(tag)
+    indexPages.push({
+      title: `#${tag}`, url: `/tags/${slug}`, section: "tags", es: { title: `#${tag}`, description: `Escritos con la etiqueta ${tag}.` },
+      html: `<p>${t("Writings tagged", "Escritos con la etiqueta")} <strong>#${esc(tag)}</strong>.</p>` + tagPageHtml(tag, tposts),
+      ogImage: `/static/og/tags-${slug}.png`, description: `Writings tagged ${tag}.`,
+    })
+    ogJobs.push({ path: `/static/og/tags-${slug}.png`, title: `#${tag}`, subtitle: `${tposts.length} posts` })
+  }
+
+  // Every page's URL in each language, for links between pages.
+  const versions = new Map()
+  for (const page of [...rendered.map(([, page]) => page), ...indexPages]) {
+    const v = {}
+    for (const view of pageViews(page)) v[view.lang] = slashed(view.url)
+    versions.set(slashed(page.url), v)
+  }
+  const emitPage = async (page) => {
+    for (const view of pageViews(page)) {
+      await emit(view.url, localizeLinks(renderPage(page, view), view.lang, versions))
+      if (!page.unlisted) sitemapUrls.push({ url: view.url, date: page.updated > page.date ? page.updated : page.date })
+    }
+  }
+
+  for (const [p, page] of rendered) {
+    await emitPage(page)
     if ((p.isArticle || SEARCHED_PAGES.has(p.name)) && !p.unlisted) searchDocs.push(...searchRecords(page))
     if (p.isArticle && !p.unlisted) {
       const slot = (s, html) => ({ title: s.title, summary: s.summary || "", excerpt: previewExcerpt(html) })
       previews[p.url] = { date: p.date, en: slot(p.en || p, page.html), ...(page.es && { es: slot(page.es, page.es.html) }) }
     }
-    await emitMd(p.url, p.title, unlinkDraftsMd(p.name === "projects" ? p.rawContent + "\n" + projectListMd(projects) : p.rawContent, draftUrls))
-    if (!p.unlisted) sitemapUrls.push({ url: p.url, date: p.updated > p.date ? p.updated : p.date })
+    for (const view of pageViews(p)) {
+      const slot = view.lang === p.lang ? p : view.lang === "es" ? p.es : p.en
+      const raw = p.name === "projects" ? slot.rawContent + "\n" + projectListMd(projects) : slot.rawContent
+      await emitMd(view.url, slot.title, unlinkDraftsMd(raw, draftUrls))
+    }
     ogJobs.push({
       path: page.ogImage,
       title: p.isHome ? "blog-19182" : p.title,
@@ -272,39 +311,7 @@ async function build() {
     })
   }
 
-  // writings index
-  {
-    const html = `<p class="writings-intro"><span>${t("Essays and notes", "Ensayos y notas")}</span><span class="subscription-links">${t("Subscribe:", "Suscribirse:")} <a href="/index.xml">RSS</a><span class="dot">·</span><a href="/subscribe">Email</a></span></p>` + writingsIndexHtml(posts)
-    await emit("/writings", renderPage({
-      title: "Writings", url: "/writings", section: null, html, es: { title: "Escritos" },
-      ogImage: "/static/og/writings.png", description: "Essays and notes by Mateo.",
-    }))
-    sitemapUrls.push({ url: "/writings" })
-    ogJobs.push({ path: "/static/og/writings.png", title: "Writings", subtitle: `${posts.length} posts` })
-  }
-
-  // tags index
-  {
-    const html = `<p>${t("Browse writings by topic.", "Explora los escritos por tema.")}</p>` + tagsIndexHtml(tagMap)
-    await emit("/tags", renderPage({
-      title: "Tags", url: "/tags", html, es: { title: "Etiquetas" }, ogImage: "/static/og/tags.png",
-      description: "Browse writings by tag.",
-    }))
-    sitemapUrls.push({ url: "/tags" })
-    ogJobs.push({ path: "/static/og/tags.png", title: "Tags", subtitle: "browse by topic" })
-  }
-
-  // per-tag pages
-  for (const [tag, tposts] of tagMap) {
-    const slug = tagSlug(tag)
-    const html = `<p>${t("Writings tagged", "Escritos con la etiqueta")} <strong>#${esc(tag)}</strong>.</p>` + tagPageHtml(tag, tposts)
-    await emit(`/tags/${slug}`, renderPage({
-      title: `#${tag}`, url: `/tags/${slug}`, section: "tags", html, es: { title: `#${tag}` },
-      ogImage: `/static/og/tags-${slug}.png`, description: `Writings tagged ${tag}.`,
-    }))
-    sitemapUrls.push({ url: `/tags/${slug}` })
-    ogJobs.push({ path: `/static/og/tags-${slug}.png`, title: `#${tag}`, subtitle: `${tposts.length} posts` })
-  }
+  for (const page of indexPages) await emitPage(page)
 
   // static assets
   await copyDir(path.join(ROOT, "assets"), path.join(OUT, "static"))
@@ -313,22 +320,6 @@ async function build() {
   // hover previews for links between writings (scripts/notes.js)
   await mkdir(path.join(OUT, "data"), { recursive: true })
   await writeFile(path.join(OUT, "data", "previews.json"), JSON.stringify(previews))
-
-  // alias redirects (frontmatter `aliases`)
-  for (const p of pages) {
-    for (const a of p.aliases) {
-      const aslug = String(a).replace(/^\/+/, "")
-      await emit(`/${aslug}`, redirectHtml(p.url))
-    }
-  }
-
-  // the flag designer moved to its own repo and site
-  await emit("/flag", redirectHtml("https://flag.m19182.dev/"))
-
-  // retired tags
-  for (const [from, to] of [["writing", "/writings"], ["complex-systems", "/tags/systems"], ["rambling", "/tags/personal"]]) {
-    await emit(`/tags/${from}`, redirectHtml(to))
-  }
 
   // OG images
   for (const job of ogJobs) {
@@ -350,7 +341,7 @@ async function build() {
   // custom 404
   await writeFile(
     path.join(OUT, "404.html"),
-    renderPage({
+    localizeLinks(renderPage({
       title: "404",
       url: "/404",
       html: `<p style="font-size:3rem;font-family:var(--font-header);margin:2rem 0 0.5rem">404</p>
@@ -361,7 +352,7 @@ async function build() {
       es: { title: "404" },
       ogImage: "/static/og-default.png",
       description: "Page not found.",
-    }),
+    }), "en", versions),
   )
 
   // feeds
@@ -391,15 +382,15 @@ async function build() {
 // Writings plus these pages are searchable; the link archive has its own filter.
 const SEARCHED_PAGES = new Set(["now", "updates", "projects", "things-i-like"])
 
-// One record per language slot, so a result shows the text that matched and
-// `?lang=` opens the page in that language. Everything goes into one index
-// (English stemming) so both languages are searched whatever the UI language.
+// One record per language, at that language's URL, so a result shows the text
+// that matched. Everything goes into one index (English stemming) so both
+// languages are searched whatever the UI language.
 function searchRecords(page) {
-  const slots = page.es
-    ? [["en", page.en?.title || page.title, page.html], ["es", page.es.title, page.es.html]]
-    : [[page.lang, page.title, page.html]]
-  return slots.map(([lang, title, html]) => ({
-    url: `${page.url}/${page.es ? `?lang=${lang}` : ""}`,
+  return pageViews(page).map(({ lang, url }) => {
+    const slot = lang === "es" ? page.es : page.en
+    return [lang, url, slot?.title ?? page.title, lang === "es" && page.es ? page.es.html : page.html]
+  }).map(([lang, url, title, html]) => ({
+    url: slashed(url),
     content: `<!DOCTYPE html><html lang="${lang}"><head><title>${esc(title)}</title></head><body>
 <main data-pagefind-body><span data-pagefind-meta="lang:${lang}"></span>${page.date ? `<span data-pagefind-meta="date:${page.date}"></span>` : ""}<h1>${esc(title)}</h1>
 ${html}</main></body></html>`,
@@ -419,10 +410,6 @@ async function buildSearchIndex(docs) {
   }
   await index.writeFiles({ outputPath: path.join(OUT, "pagefind") })
   await pagefind.close()
-}
-
-function redirectHtml(to) {
-  return `<!DOCTYPE html><html><head><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=${to}"><link rel="canonical" href="${to}"><title>Redirecting…</title></head><body><a href="${to}">${to}</a></body></html>`
 }
 
 // ---- dev server -------------------------------------------------------------
