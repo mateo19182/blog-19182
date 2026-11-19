@@ -109,8 +109,6 @@ Junto a los bots también hay una escena de juego asistido por herramientas (TAS
 Empezó en 2005 con vídeos de [Action Replay](https://www.supercheats.com/gamecube/supersmashbrosmeleeactionreplaycodes.htm) hechos en el modo de depuración oculto del juego, que avanza fotograma a fotograma. Hacia 2010 Dolphin tuvo herramientas TAS de verdad (estados guardados, avance por fotograma, películas de entradas), y más tarde scripts en Lua encima, como [ssbm-lua-core](https://github.com/practicaltas/ssbm-lua-core) de PracticalTAS. Algunas obras chulas: [combos que acaban todos en exactamente 69 golpes](https://www.youtube.com/watch?v=F-mUcQXeSSc), y [Target Test con los 25 personajes](https://tasvideos.org/7174S) en 2:39.97 de tiempo de juego. Muchos hallazgos vuelven al juego humano.
 
 
----
-
 ## Benchmark
 
 Usando el emulador Dolphin de Slippi, Fox contra Fox en FD y Battlefield, metí todos los bots relevantes que encontré y un par de experimentos míos. Todo entra en un [único ajuste Elo](https://github.com/mateo19182/melee-llm/tree/main/melee_llm/bench) con la CPU de nivel 9 fijada en 1500. Luego lo dejé toda la noche jugando miles de partidas: 4.082 partidas puntuadas al final.
@@ -141,29 +139,19 @@ Las capturas de pantalla tampoco ayudan: con una imagen en lugar del texto, los 
 
 #### Como coach
 
-![Puntuación de Reyn sin órdenes, con órdenes al azar, con cada LLM y Jev como coach, y manteniendo "Don't die." toda la partida](/data/melee/coaching-light.svg "wide")
+![Puntuación de Reyn sin coach, con un coach al azar, con cada LLM y Jev como coach, y manteniendo "Don't die." toda la partida](/data/melee/coaching-light.svg "wide")
 
-Esta fue la sorpresa. Reyn sin órdenes puntúa 1846, y con cualquier LLM de coach sube unos 450 puntos hasta el nivel de HAL (de 2303 a 2324). Pero un "coach" que elige una orden al azar cada 5 segundos sin mirar la partida consigue dos tercios de esa subida (2141). Solo con las puntuaciones, los LLM coaches se solapan con él, así que puse a los coaches a jugar entre sí directamente: 300 partidas más, el mismo bot en los dos lados y solo cambia el coach. Tres de los cuatro LLM coaches sí ganan al azar: Sonnet 5.5 le ganó 29 de 36, Haiku 4.5 28 de 37 y GPT-6 Luna 30 de 45, unos 170 puntos por encima. GPT-6.1 Sol no (15 de 35); también es el más lento, 3 segundos por respuesta. Así que investigué más:
+Reyn solo puntúa 1846. Con un LLM eligiendo una de sus ~100 órdenes cada 5 segundos, sube a unos 2300, el nivel de HAL. Pero casi todo eso no es mérito del LLM: un coach que elige órdenes al azar llega a 2141, y Reyn manteniendo "Don't die." ("no te mueras") toda la partida, sin ningún coach, llega a 2452, por encima de todos los LLM. Jev es el mejor coach (2403) por accidente: su orden favorita, "kill now" ("mata ya"), el enrutador de Reyn la traduce a... "Don't die."
 
-- A Reyn le basta casi con *cualquier* orden. Una sola orden al azar mantenida toda la partida ya lo sube a 2075.
-- Mantener "Don't die." ("no te mueras") toda la partida, sin ningún coach, puntúa 2452, por encima de todos los LLM coaches.
-- Jev es el mejor coach (2403), y por accidente: su elección favorita es "kill now" ("mata ya"), que el enrutador de Reyn traduce, siempre, a... "Don't die."
-
-Los LLM eligen planes que suenan sensatos (edgeguard, jugar agresivo) y que resultan valer menos que el aburrido. La lección va menos de LLM que del bot, y de cómo una interfaz de lenguaje puede convertir tus palabras en otra cosa sin que te enteres.
+O sea, los LLM ayudan un poco (cara a cara, tres de los cuatro ganan al coach al azar, por unos 170 de Elo), pero Reyn gana más con que le digan cualquier cosa, y sobre todo con que le digan que juegue seguro, que con planes ingeniosos. Una interfaz de lenguaje puede convertir tus palabras en otra cosa sin que te enteres.
 
 #### Programando
 
-![Puntuación en el benchmark de cada bot escrito por un LLM en una sesión de 30 minutos, agrupados por tanda, junto a la CPU de nivel 9 y MIMIC](/data/melee/bot-writer-light.svg "wide")
+Le di a Claude Code 30 minutos, un sandbox y una herramienta de práctica para escribir un bot en Python, partiendo de un bot de 60 líneas que va a por el rival y hace up-smash. Resulta que ese bot inicial, él solo, ya puntúa 1685, por encima de la CPU de nivel 9. Cinco sesiones para cada uno de Opus, Sonnet y Haiku:
 
-27 sesiones de Claude Code de 30 minutos cada una, en tres tandas, todas en la clasificación principal:
+![Bots escritos por Opus, Haiku y Sonnet en sesiones de 30 minutos: cinco de cada uno, con la media de cada modelo, junto a la CPU de nivel 9, el bot inicial y MIMIC](/data/melee/bot-writer-light.svg "wide")
 
-- Una ejecución por modelo. El bot de Sonnet, de 135 líneas (shine, agarre, láseres), puntúa 1752, el de Haiku 4.5 1599, y el de Opus, 303 líneas y el más elaborado, 1527.
-- Tres ejecuciones de cada uno con esfuerzo medio. Opus quedó claramente por delante (de 1684 a 1858, todos por encima de la CPU de nivel 9); Sonnet (de 936 a 1233) y Haiku (de 1060 a 1444) se quedaron por debajo.
-- Cinco ejecuciones de cada uno con esfuerzo alto y un bot inicial mejor. Los tres quedaron empatados: Opus 1699 de media, Haiku 1686, Sonnet 1660.
-
-Ese empate dice más del bot inicial que de los modelos. El nuevo bot inicial eran 60 líneas que van a por el rival y hacen up-smash, y no había comprobado lo fuerte que era: una sesión de Haiku lo entregó sin cambios y puntúa 1685, por encima de la CPU de nivel 9. Opus y Sonnet casi siempre lo reescribieron, hasta 450 líneas, y de media acabaron donde empezaron. Solo dos sesiones lo mejoraron claramente (la mejor llegó a 1944, al nivel de MIMIC). O sea: ejecuciones del mismo modelo difieren en cientos de puntos, y 60 líneas con la idea correcta superan casi todo lo que añaden 30 minutos de un modelo fuerte.
-
----
+Los tres acaban al nivel del bot inicial: Opus 1699 de media, Haiku 1686, Sonnet 1660. Las sesiones del mismo modelo difieren en cientos de puntos, y solo dos lo mejoraron claramente (la mejor, 1944, al nivel de MIMIC). O sea: 60 líneas con la idea correcta superan casi todo lo que añaden 30 minutos de un modelo fuerte.
 
 ## Entrenando mi propio bot
 
@@ -186,8 +174,6 @@ Una [cabina de comentarios con IA](https://github.com/mateo19182/melee-llm/blob/
 También estoy buscando cosas interesantes que hacer con [melee-brute](https://github.com/mateo19182/melee-brute). A su velocidad actual, solo puede llegar a una conclusión en situaciones muy restringidas, pero para preguntas como "¿había alguna forma posible de sobrevivir a este edgeguard concreto?" puede funcionar.
 
 También estoy pensando en habilitar una forma de jugar contra mis bots en directo por netplay si hay interés. ¡Háblame!
-
----
 
 [^1]: Si te interesa saber más, ¡recomiendo mucho [AsumSaus](https://www.youtube.com/@AsumSaus/videos) y [PracticalTAS](https://youtube.com/@practicaltas)!
 
