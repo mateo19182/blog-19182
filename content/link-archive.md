@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-11-19
+date: 2026-11-20
 tags: 
   - personal
 ---
@@ -9,6 +9,9 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Enumeracion](https://enumeracion.com) `Blogs` *2026-11-19*
+- [Garage Door Spam – Harrison Was Here](https://blog.harrison.page/garage-door-spam) `Tech` *2026-11-19*
+- [The Silent Consensus - by Nicholas Decker - Homo Economicus](https://nicholasdecker.substack.com/p/the-silent-consensus) `Ideas` *2026-11-19*
 - [Science isn't a series of lucky accidents - Works in Progress Magazine](https://worksinprogress.co/issue/accidental-discoveries/?v4) `Reads` *2026-11-18*
 - [How war in Myanmar is driving a deadly rare earth mining boom | Grist](https://grist.org/international/myanmar-war-rare-earth-mining-landslide-labor) `Reads` *2026-11-18*
 - [](https://www.monirbounadi.com/Bounadi_JMP.pdf) `Academic Papers and Resources` *2026-11-17*
