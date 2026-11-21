@@ -1,6 +1,6 @@
 - title: "Melee bots are getting really good"
   title_es: "Los bots de Melee se están poniendo muy buenos"
-  url: "https://melee.m19182.dev"
+  url: "https://melee.m19182.dev/bench"
   date: "2026-11"
   tags: [ml, llm, research]
   highlight: true
