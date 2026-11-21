@@ -152,6 +152,9 @@ Delay seems like one of the biggest problems to solve. On stomped.dev the bot se
 
 Finally I switched the base to Faynt's 10M model, which plays Yoshi better than HAL out of the box, and ran RL against Phillip's anti-Yoshi bots inside melee-sim-light (60x faster than Dolphin). After 1,000 steps (about a day on my 3090) it won 85 of 88 games in Dolphin, by far my best Yoshi, but only with no delay. I'm now post-training it on different delay, see how that works.
 
+![Win rate during the RL run against four opponents, rising to 100% by step 1000; the same bot with 1 frame of input delay wins 0 of 48](/data/melee/yoshi-rl-light.svg "wide")
+
+
 ## Other stuff
 
 A [website](https://github.com/mateo19182/melee-llm/tree/main/melee_llm/web) where I recorded my investigations and experiments, with every game being played live in 2D and my model training runs live, among other stuff.
