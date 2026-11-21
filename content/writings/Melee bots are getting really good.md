@@ -150,7 +150,7 @@ Set as objective to make the best Yoshi (my main) I could. Started by training m
 
 Delay seems like one of the biggest problems to solve. On stomped.dev the bot sees the game 10 frames late if playing from my server[^6], which heavily affects it's performance. It still can do double-jump cancel and L-cancels other tech like parries, which have to land in Yoshi's 6-frame shield start-up, go from 0.17 a minute to almost none (0.02).
 
-Right now I'm switching the base to Faynt's 10M model, which plays Yoshi better than HAL out of the box, and setting up RL against Phillip's anti-Yoshi bots inside melee-sim-light, about 60 times faster than Dolphin. More on that in a future update!
+Finally I switched the base to Faynt's 10M model, which plays Yoshi better than HAL out of the box, and ran RL against Phillip's anti-Yoshi bots inside melee-sim-light (60x faster than Dolphin). After 1,000 steps (about a day on my 3090) it won 85 of 88 games in Dolphin, by far my best Yoshi, but only with no delay. I'm now post-training it on different delay, see how that works.
 
 ## Other stuff
 
