@@ -165,6 +165,8 @@ El retraso parece uno de los mayores problemas por resolver. En stomped el bot v
 
 Ahora mismo estoy cambiando la base al modelo de 10M de Faynt, que juega con Yoshi mejor que HAL de serie, y montando RL contra los bots anti-Yoshi de Phillip dentro de melee-sim-light, unas 60 veces más rápido que Dolphin. ¡Más sobre eso en una próxima actualización!
 
+![Porcentaje de victorias durante el RL contra cuatro rivales, que llega al 100% en el paso 1000; el mismo bot con 1 fotograma de retraso gana 0 de 48](/data/melee/yoshi-rl-light.svg "wide")
+
 ## Qué más salió de esto
 
 Una [web](https://github.com/mateo19182/melee-llm/tree/main/melee_llm/web) donde fui apuntando mis investigaciones y experimentos, con cada partida que se juega en directo en 2D y mis entrenamientos de modelos en directo, entre otras cosas.

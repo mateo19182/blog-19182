@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 376" width="760" height="376" role="img" aria-label="Win rate during RL">
+<title>Win rate during RL</title>
+<style>text{font-family:Geist, Inter, system-ui, -apple-system, "Segoe UI", sans-serif;font-variant-numeric:tabular-nums}.bg{fill:None}.ring{stroke:#0c0c0c}.t1{fill:#f5f5f5}.t2{fill:#c8c8c8}.tm{fill:#8a8a8a}.grid{stroke:#232323}.axis{stroke:#4a4a4a}.band{fill:#b0b0b0;fill-opacity:.12}.conn{stroke:#3a3a3a}.c-learned{fill:#3987e5;stroke:#3987e5}.c-coach{fill:#d95926;stroke:#d95926}.c-written{fill:#199e70;stroke:#199e70}.c-llm{fill:#c98500;stroke:#c98500}.c-jev{fill:#d55181;stroke:#d55181}.c-ref{fill:#898781;stroke:#898781}.ci{fill:none;stroke-width:2;stroke-linecap:round}.hollow{fill-opacity:0}</style>
+<text x="16.0" y="26.0" class="t1" font-size="15" text-anchor="start" font-weight="600">Teaching Faynt's Yoshi with RL, in the simulator</text>
+<text x="16.0" y="45.0" class="t2" font-size="12" text-anchor="start">Share of 48 games won against each opponent, checked every 50 steps. No input delay.</text>
+<line x1="16" x2="32" y1="64" y2="64" class="ci c-learned" stroke-width="2.5"/>
+<text x="38.0" y="68.0" class="t2" font-size="11.5" text-anchor="start">Phillip's anti-Yoshi Fox</text>
+<line x1="197.2" x2="213.2" y1="64" y2="64" class="ci c-coach" stroke-width="2.5"/>
+<text x="219.2" y="68.0" class="t2" font-size="11.5" text-anchor="start">Phillip's anti-Yoshi Marth</text>
+<line x1="391.0" x2="407.0" y1="64" y2="64" class="ci c-written" stroke-width="2.5"/>
+<text x="413.0" y="68.0" class="t2" font-size="11.5" text-anchor="start">Phillip's Yoshi</text>
+<line x1="515.5" x2="531.5" y1="64" y2="64" class="ci c-llm" stroke-width="2.5"/>
+<text x="537.5" y="68.0" class="t2" font-size="11.5" text-anchor="start">Faynt's Yoshi (the starting model)</text>
+<line x1="56" x2="570" y1="330.0" y2="330.0" class="grid" stroke-width="1"/>
+<text x="48.0" y="334.0" class="tm" font-size="11" text-anchor="end">0%</text>
+<line x1="56" x2="570" y1="270.5" y2="270.5" class="grid" stroke-width="1"/>
+<text x="48.0" y="274.5" class="tm" font-size="11" text-anchor="end">25%</text>
+<line x1="56" x2="570" y1="211.0" y2="211.0" class="grid" stroke-width="1"/>
+<text x="48.0" y="215.0" class="tm" font-size="11" text-anchor="end">50%</text>
+<line x1="56" x2="570" y1="151.5" y2="151.5" class="grid" stroke-width="1"/>
+<text x="48.0" y="155.5" class="tm" font-size="11" text-anchor="end">75%</text>
+<line x1="56" x2="570" y1="92.0" y2="92.0" class="grid" stroke-width="1"/>
+<text x="48.0" y="96.0" class="tm" font-size="11" text-anchor="end">100%</text>
+<text x="56.0" y="348.0" class="tm" font-size="11" text-anchor="middle">0</text>
+<text x="158.8" y="348.0" class="tm" font-size="11" text-anchor="middle">200</text>
+<text x="261.6" y="348.0" class="tm" font-size="11" text-anchor="middle">400</text>
+<text x="364.4" y="348.0" class="tm" font-size="11" text-anchor="middle">600</text>
+<text x="467.2" y="348.0" class="tm" font-size="11" text-anchor="middle">800</text>
+<text x="570.0" y="348.0" class="tm" font-size="11" text-anchor="middle">1,000</text>
+<text x="570.0" y="366.0" class="tm" font-size="11" text-anchor="end">RL steps (1,000 ≈ 25 hours on one RTX 3090)</text>
+<polyline points="56.0,216.0 81.7,146.5 107.4,121.8 133.1,101.9 158.8,92.0 184.5,92.0 210.2,92.0 235.9,92.0 261.6,92.0 287.3,92.0 313.0,92.0 338.7,92.0 364.4,92.0 390.1,92.0 415.8,92.0 441.5,92.0 467.2,92.0 492.9,92.0 518.6,92.0 544.3,92.0 570.0,92.0" class="ci c-llm" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="56.0,290.3 81.7,255.6 107.4,141.6 133.1,121.8 158.8,116.8 184.5,92.0 210.2,92.0 235.9,92.0 261.6,101.9 287.3,92.0 313.0,92.0 338.7,92.0 364.4,92.0 390.1,92.0 415.8,92.0 441.5,92.0 467.2,92.0 492.9,92.0 518.6,92.0 544.3,92.0 570.0,92.0" class="ci c-written" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="56.0,300.2 81.7,280.4 107.4,275.5 133.1,181.2 158.8,136.6 184.5,141.6 210.2,136.6 235.9,111.8 261.6,101.9 287.3,97.0 313.0,92.0 338.7,92.0 364.4,92.0 390.1,92.0 415.8,92.0 441.5,97.0 467.2,92.0 492.9,92.0 518.6,92.0 544.3,92.0 570.0,92.0" class="ci c-coach" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline points="56.0,275.5 81.7,285.4 107.4,225.9 133.1,211.0 158.8,191.2 184.5,146.5 210.2,131.7 235.9,131.7 261.6,116.8 287.3,106.9 313.0,111.8 338.7,101.9 364.4,97.0 390.1,106.9 415.8,101.9 441.5,92.0 467.2,101.9 492.9,92.0 518.6,92.0 544.3,92.0 570.0,92.0" class="ci c-learned" stroke-width="2.5" stroke-linejoin="round"/>
+<line x1="570.0" x2="570.0" y1="99.1" y2="322.9" class="axis" stroke-width="1.5" stroke-dasharray="4 3"/>
+<circle cx="570.0" cy="92.0" r="4.5" class="c-learned ring" stroke-width="2"/>
+<circle cx="570.0" cy="330.0" r="4.5" class="c-learned hollow" stroke-width="2"/>
+<text x="584.0" y="90.0" class="t1" font-size="12" text-anchor="start" font-weight="600">Step 1000, no delay</text>
+<text x="584.0" y="106.0" class="t2" font-size="11.5" text-anchor="start">48 of 48 vs the Fox</text>
+<text x="584.0" y="122.0" class="t2" font-size="11.5" text-anchor="start">85 of 88 in real Dolphin</text>
+<text x="584.0" y="304.0" class="t1" font-size="12" text-anchor="start" font-weight="600">Same bot, 1 frame</text>
+<text x="584.0" y="320.0" class="t1" font-size="12" text-anchor="start" font-weight="600">of input delay:</text>
+<text x="584.0" y="336.0" class="t2" font-size="11.5" text-anchor="start">0 of 48 vs the Fox</text>
+</svg>
