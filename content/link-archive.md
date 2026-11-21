@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-11-20
+date: 2026-11-21
 tags: 
   - personal
 ---
@@ -9,6 +9,7 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Dead Simple Sites — Minimal Web Design Inspiration & Gallery](https://deadsimplesites.com) `Museums - Indexers` *2026-11-20*
 - [Enumeracion](https://enumeracion.com) `Blogs` *2026-11-19*
 - [Garage Door Spam – Harrison Was Here](https://blog.harrison.page/garage-door-spam) `Tech` *2026-11-19*
 - [The Silent Consensus - by Nicholas Decker - Homo Economicus](https://nicholasdecker.substack.com/p/the-silent-consensus) `Ideas` *2026-11-19*
