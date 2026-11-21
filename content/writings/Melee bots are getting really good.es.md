@@ -32,11 +32,11 @@ Parafraseando, su respuesta fue:
 
 > Cualquier proyectil se puede reflejar en una ventana de dos fotogramas, así que lanzarlos no sirve de nada.
 >
-> El movimiento más rápido del juego es el shine de Fox, que golpea en su primerísimo fotograma. Así que dos Fox perfectos caminan el uno hacia el otro hasta estar justo a distancia y hacen shine en el mismo fotograma. Los shines se anulan[^3], y a partir de ahí es un punto muerto.
+> El movimiento más rápido del juego es el shine de Fox, que golpea en su primerísimo fotograma. Así que dos Fox perfectos caminan el uno hacia el otro hasta estar justo a distancia y hacen shine en el mismo fotograma. Los shines se anulan[^2], y a partir de ahí es un punto muerto.
 >
 > Lo mejor para los dos es saltar y hacer multishine, perfecto al fotograma, hasta que se acabe el tiempo. Entonces la partida va a Muerte Súbita, donde caen bob-ombs del cielo, aparentemente al azar.
 >
-> Pero no son aleatorias, el RNG de Melee es predecible[^2]. La verdadera estrategia óptima es entonces llevar la partida para que, cuando el punto muerto acabe ocho minutos después, el generador esté en un estado que suelte las bombas donde tu rival tenga que elegir entre meterse en tu shine o en una bomba.
+> Pero no son aleatorias, el RNG de Melee es predecible[^3]. La verdadera estrategia óptima es entonces llevar la partida para que, cuando el punto muerto acabe ocho minutos después, el generador esté en un estado que suelte las bombas donde tu rival tenga que elegir entre meterse en tu shine o en una bomba.
 
 Como soy fan de este tipo de experimentos mentales, le busqué algunos agujeros, y como ahora tenemos el código fuente descompilado acabé intentando sacar la respuesta por fuerza bruta. Eso se convirtió en [melee-brute](https://github.com/mateo19182/melee-brute), un fork que hice de [melee-sim-light](https://github.com/kyhavlov/melee-sim-light) que puede explorar el espacio de búsqueda mucho más rápido que cualquier emulador tradicional. Sinceramente, es solo un montón de trucos ingeniosos de Fable optimizando para este caso de uso, ¡pero creo que puede ser bastante útil para otras cosas!
 
@@ -177,8 +177,8 @@ También estoy pensando en habilitar una forma de jugar contra mis bots en direc
 
 [^1]: Si te interesa saber más, ¡recomiendo mucho [AsumSaus](https://www.youtube.com/@AsumSaus/videos) y [PracticalTAS](https://youtube.com/@practicaltas)!
 
-[^2]: Sería prácticamente imposible que el bot controlase el RNG, porque los movimientos del rival también lo hacen avanzar. Además, con las reglas de torneo no hay Muerte Súbita: si se acaba el tiempo gana quien tenga menos porcentaje, y un empate a porcentaje se repite como una partida a una sola vida de 2 o 3 minutos, que se quedaría en punto muerto igual.
+[^2]: Si los dos hacen shine en el mismo fotograma en el suelo, no se anulan en una guerra de multishines: las hitboxes chocan y los dos se congelan 4 fotogramas.
 
-[^3]: Si los dos hacen shine en el mismo fotograma en el suelo, no se anulan en una guerra de multishines: las hitboxes chocan y los dos se congelan 4 fotogramas.
+[^3]: Sería prácticamente imposible que el bot controlase el RNG, porque los movimientos del rival también lo hacen avanzar. Además, con las reglas de torneo no hay Muerte Súbita: si se acaba el tiempo gana quien tenga menos porcentaje, y un empate a porcentaje se repite como una partida a una sola vida de 2 o 3 minutos, que se quedaría en punto muerto igual.
 
 [^4]: Porque es lo más cerca que cualquier personaje puede ponerse de él en las mejores circunstancias.

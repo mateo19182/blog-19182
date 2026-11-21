@@ -230,6 +230,29 @@ body {
 .prose img.theme-dark, :root[data-theme="dark"] .prose img.theme-light { display: none; }
 :root[data-theme="dark"] .prose img.theme-dark { display: block; }
 
+/* Collapsible asides from <details markdown="1">: a card, so it is clear where it starts and ends. */
+.prose details.aside {
+  border: 1px solid var(--lightgray);
+  border-radius: 8px;
+  margin: 1.4rem 0;
+  background: var(--highlight);
+}
+.prose details.aside > summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  gap: 0.6rem;
+  align-items: baseline;
+  padding: 0.7rem 1rem;
+  font-weight: 600;
+}
+.prose details.aside > summary::-webkit-details-marker { display: none; }
+.prose details.aside > summary::before { content: "▸"; color: var(--darkgray); transition: transform 0.15s; }
+.prose details.aside[open] > summary::before { transform: rotate(90deg); }
+.prose details.aside[open] > summary { border-bottom: 1px solid var(--lightgray); }
+.prose details.aside .aside-time { margin-left: auto; font: 400 0.72rem var(--font-mono); color: var(--gray); white-space: nowrap; }
+.prose details.aside > .aside-body { padding: 0.2rem 1.1rem 0.4rem; background: var(--light); border-radius: 0 0 8px 8px; }
+
 /* Feijoo source comparisons: open a case, then compare both original pages. */
 .prose .feijoo-case {
   border: 1px solid var(--lightgray);
