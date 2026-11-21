@@ -35,7 +35,7 @@ Melee itself was made in about 13 months (reaaally fast) and was the GameCube's 
 A brief intermission to talk about a thought experiment Dan [shares at the end of his talk](https://youtu.be/_0Z_oN_CZyA?t=2207): what would two perfect bots play against each other? I went deep into the rabbithole on this one.
 
 <details markdown="1">
-<summary>Two perfect Foxes: brute-forcing the deadlock</summary>
+<summary>Brute-forcing the deadlock</summary>
 
 Paraphrasing, his answer was:
 
