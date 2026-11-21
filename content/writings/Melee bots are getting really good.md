@@ -32,7 +32,7 @@ Melee itself was made in about 13 months (reaaally fast) and was the GameCube's 
 
 ### The optimal melee game
 
-A brief intermission to talk about a thought experiment Dan [shares at the end of his talk](https://youtu.be/_0Z_oN_CZyA?t=2207): what would two perfect bots play against each other? I went deep into the rabbithole on this one!
+A brief intermission to talk about a thought experiment Dan [shares at the end of his talk](https://youtu.be/_0Z_oN_CZyA?t=2207): what would two perfect bots play against each other? I went deep into the rabbithole on this one.
 
 <details markdown="1">
 <summary>Two perfect Foxes: brute-forcing the deadlock</summary>
@@ -49,41 +49,27 @@ Paraphrasing, his answer was:
 
 Me being a fan of these kind of thought experiments, poked some holes at it, and since we now have the decompiled source code I ended up trying to brute force the answer. That turned into [melee-brute](https://github.com/mateo19182/melee-brute), a fork I made of [melee-sim-light](https://github.com/kyhavlov/melee-sim-light) that can explore the search space much faster than any traditional emulator. It's honestly just a bunch of clever Fable tricks optimising for this use case but I think it can be pretty useful for other stuff!
 
-The deadlock seems to be real, but not for that reason. Walking in and shining isn't actually the best play. Its reach is tiny (10 units), and Fox's jab hits from 21, so the other one just jabs you on the way in.
+The deadlock that Dan mention does seem to be real, but not for that reason. Walking in and shining isn't actually the best play. Since the attack only reaches about 10 units, any other attack like Fox's jab, that hits from 21,can stop the aggressor on the way in.
 
-I then thought that maybe some other character can hit Fox in a way he can't react to (he can read the game memory, so he sees every move on the frame it starts). So I tried every character's moves against a Fox answering on the next frame, from a gap of 12 to 40[^4] and nothing got through. He punishes or blocks all of it, mostly with shine or a jab.
+I then thought that maybe some other character can hit Fox in a way he can't react to (this is a perfect Fox, it's as if he can read the game memory, so he sees every move on the frame it starts). So I tried every character's moves against a Fox answering on the next frame, from a gap of 12 to 40[^4] units and nothing got through. The defender is able to punish or block any of the approaches.
 
-The shine's first frame does most of the work. Fox is intangible on it, and on the ground its hitbox clanks with the attacker's, so even a frame-2 jab from up close loses to it. It's also the only move in the game that hits before anyone can react, so nobody can stand in that small circle around Fox. Falco has the same shine, but it reaches 8 instead of 10.
+The shine's coming out on frame 1, while Fox is intangible, it's the main blocker. It's also the only move in the game that hits before any theoretical perfect opponent can react, so nobody can stand in that small circle around Fox. While Falco has the same shine, but it reaches 8 instead of 10.
 
 ![Two Foxes 7 units apart shine on the same frame: the hitboxes clank, both freeze for 4 frames and nobody takes damage](/data/melee/fox-clank.webp "wide")
 
-So if anyone wins, it's a Fox, and the real question is the Fox ditto.
+So we know the optimal game has to be a fox ditto, which kind of makes the whole experiment useless as whatever plan one Fox has, the other can play it mirrored, and neither Fox can be ahead from the start. [^5] Either both can stand there safely forever (the original deadlock), or both are forced into guesses that, as far as I've tested, always balance out 50/50.
 
-One thing doesn't need any search: a match on Final Destination starts as a mirror image, so whatever plan one Fox has, the other can play it mirrored. Neither Fox can be ahead from the start.
-
-Either both can stand there safely forever (Petro's deadlock), or both are forced into guesses that happen to balance out.
-
-So far I assumed one Fox moves and the other reacts. But when both have to pick on the same frame, a Fox who just stands there can be forced to guess: walk in, stop at 13.2 and flick the stick away. Now blue has to pick between shining, stepping away or waiting, a rock-paper-scissors where each side lands the first hit 12.5% of the time.
+For example, one Fox attacks and walk in, stop at 13.2 distance units and flick the stick away. Now blue has to pick between shining, stepping away or waiting, a rock-paper-scissors with no better or worse answer.
 
 ![The attacking Fox (red) walks in for 182 frames and flicks his stick away just outside shine range. Shown twice with the same red input: blue turns to leave and is hit, blue stands still and is not](/data/melee/fox-flick.webp "wide")
 
-*Red walks in for 3 seconds and flicks away at 13.2 units. Same input from red twice: first blue tries to leave and eats the shine, then blue stands still and nothing happens. Blue has to pick without seeing which one it is.*
-
-There are two ways out of it. If he never wants to guess, he steps back at 13.7, the one input that is safe even if the attacker sees it coming, and the flick never happens:
-
-![The same walk, but blue dashes back at 13.7 units before red can flick. Nobody is hit](/data/melee/fox-retreat.webp "wide")
-
-Or he accepts the guess: in the fair game, walking in at that distance is worth exactly 0 to the attacker, and the best play for both is to wait. If there was any way we can force the defender to hold shield, or attacker can reach him from above ground, attacker can get the advantage, but there's just no way to force a standing Fox to do that.
-
-The attacker could try to keep walking in until there's no stage left. That's the idea of the squeeze: if every walk-in to 13.7 makes a Fox who never guesses give a bit of ground, sooner or later the stage ends at the ledge.
-
-With the defender's back to the ledge and both in shine range it's still a guessing game, but no longer an even one. Played 100 times, looking 8 frames ahead (about 16 million game states), the attacker lands the first hit or the defender slides off the stage ≈ 34 times, the defender lands it ≈ 8, and ≈ 58 times nobody is hit.
+If the defender never wants to guess, he can step back, which will always be safe even if the attacker sees it coming. The attacker could try to keep walking in until there's no stage left. Once both are in shine range it's still a guessing game, but no longer an even one. Played 100 times, looking 8 frames ahead (about 16 million game states), the attacker lands the first hit or the defender slides off the stage ≈ 34 times, the defender lands it ≈ 8, and ≈ 58 times nobody is hit.
 
 ![Blue, with his back to the ledge, shines red's shield. The pushback slides blue off the stage while he is still holding the shine](/data/melee/fox-ledge.webp "wide")
 
-The squeeze only works on a Fox who refuses to ever guess, and a perfect one doesn't have to. In the middle of the stage the guess the attacker offers is worth the same to both, so he can just take it there instead of backing into a bad ledge. 
+This squeeze would only work on a Fox who refuses to ever guess, and a perfect one doesn't need to. In the middle of the stage the guess the attacker offers is worth the same to both, so he can just take it there instead of backing into a bad ledge.
 
-So, as far as I can search, it is a stalemate: nobody can attack first, the ditto is even, and the guesses a Fox can be forced into are even too, except at a ledge nobody can push you to. That's not very far though: each search looks 8 frames ahead, the menu has no lasers, wavedashes or dash dancing, and most positions are placed by hand. The rest of the experiments are on the [Brute page](https://melee.m19182.dev/brute), and I might be missing something, so if you have any ideas please reach out to me!
+As far as I can search, it is a stalemate. There still is a lot of ground to cover, my search only looks 8 frames ahead and on a limited pool of actions. More details on the experiments are on the [Brute page](https://melee.m19182.dev/brute). I might be missing something, so if you have any ideas please reach out to me!
 
 </details>
 
@@ -191,3 +177,5 @@ Also thinking of enabling a way to play my bots live via netplay if there's inte
 [^3]: It would be practically impossible for the bot to control RNG, as the opponent's moves also advance it. Also under tournament rules there is no Sudden Death: a timeout goes to whoever has less percent, and a tie on percent is replayed as a single stock game of 2 or 3 minutes, which would deadlock the same way.
 
 [^4]: Since that's how close any character can get to him under the best of circumstances.
+
+[^5]: Kind of, Melee is a weird game, for example some exact ties are [resolved in port order](https://www.ssbwiki.com/Port_priority). Both attacking on the same frame does end even, though, and at shine range a grab loses to the shine, so this doesn't break the deadlock afaik.
