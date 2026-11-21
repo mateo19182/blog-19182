@@ -1,16 +1,17 @@
 ---
 title: Melee bots are getting really good
-summary: "Putting ten years of Super Smash Bros. Melee bots, and a few LLMs, on one Elo scale, plus a bot of my own and a brute-force search for what two perfect Foxes would do."
+summary: Putting ten years of Super Smash Bros. Melee bots, and a few LLMs, on one Elo scale, plus a bot of my own and a brute-force search.
 date: 2026-11-14
-draft: true
 tags:
   - ai
   - computers
+draft: true
 soundtrack:
-  artist: "Hirokazu Ando & Shogo Sakai"
-  title: "Final Destination"
+  artist: Hirokazu Ando & Shogo Sakai
+  title: Final Destination
   file: hirokazu-ando-shogo-sakai-final-destination.webm
 ---
+
 Super Smash Bros Melee came out in 2001 for the [GameCube](https://en.wikipedia.org/wiki/GameCube), and it's one of the videogames with the highest skill ceiling (and floor) that I know of, proof of that is that there is a lot of people still playing it professionally. I'm not good at all, SSB4 was the only one where I put in the hours, but I know enough to understand the complexity, and it's extremely impressive. [^1]
 
 Its difficulty can be divided in 2 levels. On the low level, the game runs at 60 fps and many techniques only have a 1-2 frame window to perform correctly (no input buffer!). Competitive Melee players average 6 actions per second, and have to master tech like Wavedashing, L-Canceling or Dash Dancing. Some of these techniques were not intended by the developers, which to me makes it even more interesting.
