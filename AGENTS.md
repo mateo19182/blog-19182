@@ -39,7 +39,7 @@ list under the title and previous/next links at the end. It also lists the
 writings that link to a post ("Linked from"), leaving out links within the
 same series. Word counts are computed for each language. Do not display reading times.
 A writing may have a `soundtrack:` (`artist`, `title`, `file`) on the original
-file only, chosen to last about as long as the read (230 wpm). The build fails if
+file only. The player loops it, so any length works. The build fails if
 `content/data/soundtrack/<file>` is missing. Encode from the library
 (`/mnt/data/music-library/library`) as Opus:
 `ffmpeg -i <src> -vn -map_metadata -1 -c:a libopus -b:a 64k <file>.webm`, then

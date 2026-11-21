@@ -54,7 +54,6 @@
   audio.addEventListener('pause', state)
   audio.addEventListener('waiting', () => fig.classList.add('st-loading'))
   audio.addEventListener('playing', () => fig.classList.remove('st-loading'))
-  audio.addEventListener('ended', () => { audio.currentTime = pending = 0; draw() })
   audio.addEventListener('timeupdate', () => { if (audio.paused) draw() })
 
   wave.addEventListener('pointerdown', (e) => {
