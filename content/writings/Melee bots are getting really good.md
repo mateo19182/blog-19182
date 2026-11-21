@@ -5,16 +5,15 @@ date: 2026-11-14
 tags:
   - ai
   - computers
-draft: true
 soundtrack:
   artist: Hirokazu Ando & Shogo Sakai
   title: Final Destination
   file: hirokazu-ando-shogo-sakai-final-destination.webm
 ---
 
-Super Smash Bros Melee came out in 2001 for the [GameCube](https://en.wikipedia.org/wiki/GameCube), and it's one of the videogames with the highest skill ceiling (and floor) that I know of, proof of that is that there is a lot of people still playing it professionally. I'm not good at all, SSB4 was the only one where I put in the hours, but I know enough to understand the complexity, and it's extremely impressive. [^1]
+Super Smash Bros Melee came out in 2001 for the [GameCube](https://en.wikipedia.org/wiki/GameCube), and it's one of the videogames with the highest skill ceiling (and floor) that I know of, proof of that is that there are a lot of people still playing it professionally. I'm not good at all, SSB4 was the only one where I put in the hours, but I know enough to understand the complexity, and it's extremely impressive. [^1]
 
-Its difficulty can be divided in 2 levels. On the a level, the game runs at 60 fps and many techniques only have a 1-2 frame window to perform correctly (no input buffer!). Competitive Melee players average 6 actions per second, and have to master tech like Wavedashing, L-Canceling or Dash Dancing. Some of these techniques were not intended by the developers, which to me makes it even more interesting.
+Its difficulty can be divided in 2 levels. On a low level, the game runs at 60 fps and many techniques only have a 1-2 frame window to perform correctly (no input buffer!). Competitive Melee players average 6 actions per second, and have to master tech like Wavedashing, L-Canceling or Dash Dancing. Some of these techniques were not intended by the developers, which to me makes it even more interesting.
 
 On a high level it's more of a mindgame. Humans react in about 12 frames and many attacks are faster than that, so most of the time you are predicting your opponent, not reacting. Good players spend whole games conditioning the other one to expect something. I enjoy watching it much more than any other fighter as it does not rely as heavily on combos and is much more "free-form". 
 
