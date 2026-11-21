@@ -146,11 +146,9 @@ All three end up level with the starter: Opus 1699 on average, Haiku 1686, Sonne
 
 After finding an intersection of my hobbies such as Melee and training neural networks, it's only natural to train my own AI bots. These were my first steps, I'm just getting into the community and understanding the state of the art, so might make an update later!
 
-Started by training my own small transformer on human Yoshi replays, the way HAL does. The best one beat the level 9 CPU, but lost every game to the serious bots, and self-play RL in the simulator made it worse in the real game. To check my pipeline I retrained HAL's 20M Fox with it: it won 2 of 24 against the CPU where HAL's wins 95%. So I stopped and used HAL directly: its 247M model, asked to play like aMSa, is a better Yoshi than anything I trained, with no training at all.
+Set as objective to make the best Yoshi (my main) I could. Started by training my own small transformer on human Yoshi replays, the way HAL does. The best one beat the level 9 CPU, but lost every game to the serious bots, and self-play RL in the simulator made it worse in the real game. To check my pipeline I retrained HAL's 20M Fox with it and found a bunch of bugs... Also tried making some primitives for specific Yoshi tech and labelling it in training data, but it didn't seem to be useful.
 
-Tried making some primitives for specific Yoshi tech and labelling it in training data, but it didn't seem to be useful.
-
-Delay seems like one of the biggest problems to solve. On stomped the bot sees the game 10 frames late, which costs it 200 to 300 Elo. It still double-jump cancels and L-cancels like aMSa, but parries against Fox, which have to land in Yoshi's 6-frame shield start-up, go from 0.17 a minute to almost none (0.02). Re-weighting HAL's training for delay didn't help.
+Delay seems like one of the biggest problems to solve. On stomped.dev the bot sees the game 10 frames late if playing from my server[^6], which heavily affects it's performance. It still can do double-jump cancel and L-cancels other tech like parries, which have to land in Yoshi's 6-frame shield start-up, go from 0.17 a minute to almost none (0.02).
 
 Right now I'm switching the base to Faynt's 10M model, which plays Yoshi better than HAL out of the box, and setting up RL against Phillip's anti-Yoshi bots inside melee-sim-light, about 60 times faster than Dolphin. More on that in a future update!
 
@@ -173,3 +171,5 @@ Also thinking of enabling a way to play my bots live via netplay if there's inte
 [^4]: Since that's how close any character can get to him under the best of circumstances.
 
 [^5]: Kind of, Melee is a weird game, for example some exact ties are [resolved in port order](https://www.ssbwiki.com/Port_priority). Both attacking on the same frame does end even, though, and at shine range a grab loses to the shine, so this doesn't break the deadlock afaik.
+
+[^6]: Would only be 2 if I rented a box next to their server but I kinda want the challenge
