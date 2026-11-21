@@ -123,27 +123,24 @@ The learned bots are far ahead!
 
 ![Untimed vs real-time Elo for each model, with the share of live replies thrown away for arriving too late](/data/melee/latency-tax-light.svg "wide")
 
-Given time to think, GPT-6.1 Sol beats the level 9 CPU (1729), the other models land between 1254 and 1474, and all of them beat Jev (1082). A player that picks a random move at every decision rates 732 here, so the thinking does count.
-Live, all of that disappears: every model drops 492 to 851 points, below the level 1 CPU (762 to 878).
+Given time to think, GPT-6.1 Sol beats the level 9 CPU (1729). Live, all of that disappears: every model drops 492 to 851 points, below the level 1 CPU (762 to 878).
 
-Screenshots don't help either: given an image instead of the text, models performed generally worse. [LLM Colosseum](https://github.com/OpenGenerativeAI/llm-colosseum) had a similar finding in Street Fighter (GPT-3.5 beat GPT-4 by being faster). 
+Screenshots don't help either: given an image instead of the text, models performed generally worse. [LLM Colosseum](https://github.com/OpenGenerativeAI/llm-colosseum) had a similar finding in Street Fighter. 
 
 
 #### Coaching
 
 ![Reyn's rating with no coach, with a random coach, with each LLM and Jev as coach, and holding "Don't die." all game](/data/melee/coaching-light.svg "wide")
 
-Reyn on its own rates 1846. With an LLM picking one of its ~100 commands every 5 seconds, it climbs to about 2300, HAL's level. But most of that isn't the LLM: a coach picking commands at random gets to 2141, and Reyn holding "Don't die." all game, with no coach at all, gets to 2452, above every LLM. Jev is the best coach (2403) by accident: its favourite pick, "kill now", gets mapped by Reyn's router to... "Don't die."
-
-So the LLMs do help a bit (head to head, three of the four beat the random coach, by about 170 Elo), but Reyn gains more from being told anything, and most from being told to play safe, than from clever plans. A language interface can quietly turn your words into something else.
+Reyn on its own rates 1846. With an LLM picking one of its ~100 commands every 5 seconds, it climbs to about 2300, HAL's level.Surprisingly, Reyn holding "Don't die." all game, with no coach at all, gets to 2452, above every LLM.
 
 #### Coding
 
-I gave Claude Code 30 minutes, a sandbox and a practice tool to write a Python bot, starting from a 60-line bot that runs at the opponent and up-smashes. That starter alone, it turns out, already rates 1685, above the level 9 CPU. Five sessions each for Opus, Sonnet and Haiku:
+I gave Claude Code 30 minutes, a sandbox and a practice tool to write a Python bot, starting from a 60-line bot that runs at the opponent and up-smashes. Turns our that starter is already above the level 9 CPU.
 
 ![Bots written by Opus, Haiku and Sonnet in 30-minute sessions: five each, with each model's average, next to the level 9 CPU, the starter bot and MIMIC](/data/melee/bot-writer-light.svg "wide")
 
-All three end up level with the starter: Opus 1699 on average, Haiku 1686, Sonnet 1660. Sessions of the same model differ by hundreds of points, and only two clearly improved on it (the best, 1944, is level with MIMIC). So 60 lines of the right idea beat most of what 30 minutes of a strong model adds.
+All three end up level with the starter: Opus 1699 on average, Haiku 1686, Sonnet 1660. Sessions of the same model differ by hundreds of points.
 
 ## Training my own bot
 
@@ -157,7 +154,7 @@ Delay seems like one of the biggest problems to solve. On stomped the bot sees t
 
 Right now I'm switching the base to Faynt's 10M model, which plays Yoshi better than HAL out of the box, and setting up RL against Phillip's anti-Yoshi bots inside melee-sim-light, about 60 times faster than Dolphin. More on that in a future update!
 
-## What else came out of it
+## Other stuff
 
 A [website](https://github.com/mateo19182/melee-llm/tree/main/melee_llm/web) where I recorded my investigations and experiments, with every game being played live in 2D and my model training runs live, among other stuff.
 
