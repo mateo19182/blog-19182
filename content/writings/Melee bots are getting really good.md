@@ -104,19 +104,18 @@ Started in 2005 with [Action Replay](https://www.supercheats.com/gamecube/supers
 
 ## Benchmark
 
-Using Slippi's Dolphin emulator, Fox mirror on FD and Battlefield, I put every relevant bot that I could find and a couple of my experiments. Everything goes into [one Elo fit](https://github.com/mateo19182/melee-llm/tree/main/melee_llm/bench) with the level 9 CPU pinned at 1500. Then left it overnight playing thousands of games.
+Using Slippi's Dolphin emulator, Fox mirror on FD and Battlefield, I put every relevant bot that I could find and a couple of my experiments. Everything goes into [one Elo fit](https://github.com/mateo19182/melee-llm/tree/main/melee_llm/bench) with the level 9 CPU pinned at 1500. THen left it overnight playing thousands of games.
 
 LLMs are a special case since they are too slow to press buttons every frame (16.7 ms) so each setup gives them a higher-level job and lets something faster handle the frames. They read about 500 tokens of [game state](https://github.com/mateo19182/melee-llm/blob/main/melee_llm/state.py) with a rolling context window.
 
 - [Play, untimed](https://github.com/mateo19182/melee-llm/blob/main/melee_llm/agents/llm_paused.py): pick a move and the game pauses while they think. This measures how good their choices are.
 - [Play, live](https://github.com/mateo19182/melee-llm/blob/main/melee_llm/agents/llm_live.py): same but no stops.
-- [Jev plays](https://github.com/mateo19182/melee-llm/blob/main/melee_llm/agents/jev_player.py): [TypeSafe's Jev](https://typesafe.ai/blog/introducing-system-one-models-and-jev), a decision model that answers multiple-choice questions in about 0.15 seconds.
 - [Coach Reyn](https://github.com/mateo19182/melee-llm/blob/main/melee_llm/agents/coach.py): Reyn plays every frame, and every 5 seconds the LLM coach uses text to condition its play style.
 - [Write a bot](https://github.com/mateo19182/melee-llm/tree/main/melee_llm/botwriter): a coding agent gets 30 minutes, a sandbox and a practice tool to write a Python bot that then plays like any other entrant.
 
 ![Real-time board: learned bots, coaches, the best bot each model wrote at high effort, CPUs and LLMs playing live, each with its 95% interval, coloured by kind](/data/melee/leaderboard-realtime-light.svg "wide")
 
-The learned bots are far ahead. Faynt never lost (370-0, so its 3403 is really a floor), then Phillip gm (2549) and HAL (2300). The CPUs rise in order, from 976 for level 1 to 1500 for level 9: a smaller gap than the 1,000 points between level 9 and Phillip gm.
+The learned bots are far ahead!
 
 ### LLMs
 
