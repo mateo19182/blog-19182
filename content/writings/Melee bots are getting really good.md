@@ -53,13 +53,13 @@ The deadlock that Dan mentions does seem to be real, but not for that reason. Wa
 
 I then thought that maybe some other character can hit Fox in a way he can't react to (this is a perfect Fox, it's as if he can read the game memory, so he sees every move on the frame it starts). So I tried every character's moves against a Fox answering on the next frame, from a gap of 12 to 40[^4] units and nothing got through. The defender is able to punish or block any of the approaches.
 
-The shine's coming out on frame 1, while Fox is intangible, it's the main blocker. It's also the only move in the game that hits before any theoretical perfect opponent can react, so nobody can stand in that small circle around Fox. Falco has the same shine, but it reaches 8 instead of 10.
+The shine, coming out on frame 1 while Fox is intangible, is the main blocker. It's also the only move in the game that hits before any theoretical perfect opponent can react, so nobody can stand in that small circle around Fox. Falco has the same shine, but it reaches 8 instead of 10.
 
 ![Two Foxes 7 units apart shine on the same frame: the hitboxes clank, both freeze for 4 frames and nobody takes damage](/data/melee/fox-clank.webp "wide")
 
 So we know the optimal game has to be a fox ditto, which kind of makes the whole experiment useless as whatever plan one Fox has, the other can play it mirrored, and neither Fox can be ahead from the start. [^5] Either both can stand there safely forever (the original deadlock), or both are forced into guesses that, as far as I've tested, always balance out 50/50.
 
-For example, one Fox attacks and walks in, stops at 13.2 distance units and flick the stick away. Now blue has to pick between shining, stepping away or waiting, a rock-paper-scissors with no better or worse answer.
+For example, one Fox attacks and walks in, stops at 13.2 distance units and flicks the stick away. Now blue has to pick between shining, stepping away or waiting, a rock-paper-scissors with no better or worse answer.
 
 ![The attacking Fox (red) walks in for 182 frames and flicks his stick away just outside shine range. Shown twice with the same red input: blue turns to leave and is hit, blue stands still and is not](/data/melee/fox-flick.webp "wide")
 
@@ -104,7 +104,7 @@ Started in 2005 with [Action Replay](https://www.supercheats.com/gamecube/supers
 
 ## Benchmark
 
-Using Slippi's Dolphin emulator, Fox mirror on FD and Battlefield, I put every relevant bot that I could find and a couple of my experiments. Everything goes into [one Elo fit](https://github.com/mateo19182/melee-llm/tree/main/melee_llm/bench) with the level 9 CPU pinned at 1500. THen left it overnight playing thousands of games.
+Using Slippi's Dolphin emulator, Fox mirror on FD and Battlefield, I put every relevant bot that I could find and a couple of my experiments. Everything goes into [one Elo fit](https://github.com/mateo19182/melee-llm/tree/main/melee_llm/bench) with the level 9 CPU pinned at 1500. Then left it overnight playing thousands of games.
 
 LLMs are a special case since they are too slow to press buttons every frame (16.7 ms) so each setup gives them a higher-level job and lets something faster handle the frames. They read about 500 tokens of [game state](https://github.com/mateo19182/melee-llm/blob/main/melee_llm/state.py) with a rolling context window.
 
@@ -132,11 +132,11 @@ Screenshots don't help either: given an image instead of the text, models perfor
 
 ![Reyn's rating with no coach, with a random coach, with each LLM and Jev as coach, and holding "Don't die." all game](/data/melee/coaching-light.svg "wide")
 
-Reyn on its own rates 1846. With an LLM picking one of its ~100 commands every 5 seconds, it climbs to about 2300, HAL's level.Surprisingly, Reyn holding "Don't die." all game, with no coach at all, gets to 2452, above every LLM.
+Reyn on its own rates 1846. With an LLM picking one of its ~100 commands every 5 seconds, it climbs to about 2300, HAL's level. Surprisingly, Reyn holding "Don't die." all game, with no coach at all, gets to 2452, above every LLM.
 
 #### Coding
 
-I gave Claude Code 30 minutes, a sandbox and a practice tool to write a Python bot, starting from a 60-line bot that runs at the opponent and up-smashes. Turns our that starter is already above the level 9 CPU.
+I gave Claude Code 30 minutes, a sandbox and a practice tool to write a Python bot, starting from a 60-line bot that runs at the opponent and up-smashes. Turns out that starter is already above the level 9 CPU.
 
 ![Bots written by Opus, Haiku and Sonnet in 30-minute sessions: five each, with each model's average, next to the level 9 CPU, the starter bot and MIMIC](/data/melee/bot-writer-light.svg "wide")
 
@@ -146,11 +146,11 @@ All three end up level with the starter: Opus 1699 on average, Haiku 1686, Sonne
 
 After finding an intersection of my hobbies such as Melee and training neural networks, it's only natural to train my own AI bots. These were my first steps, I'm just getting into the community and understanding the state of the art, so might make an update later!
 
-Set as objective to make the best Yoshi (my main) I could. Started by training my own small transformer on human Yoshi replays, the way HAL does. The best one beat the level 9 CPU, but lost every game to the serious bots, and self-play RL in the simulator made it worse in the real game. To check my pipeline I retrained HAL's 20M Fox with it and found a bunch of bugs... Also tried making some primitives for specific Yoshi tech and labelling it in training data, but it didn't seem to be useful.
+My goal was to make the best Yoshi (my main) I could. Started by training my own small transformer on human Yoshi replays, the way HAL does. The best one beat the level 9 CPU, but lost every game to the serious bots, and self-play RL in the simulator made it worse in the real game. To check my pipeline I retrained HAL's 20M Fox with it and found a bunch of bugs... Also tried making some primitives for specific Yoshi tech and labelling it in training data, but it didn't seem to be useful.
 
-Delay seems like one of the biggest problems to solve. On stomped.dev the bot sees the game 10 frames late if playing from my server[^6], which heavily affects it's performance. It still can do double-jump cancel and L-cancels other tech like parries, which have to land in Yoshi's 6-frame shield start-up, go from 0.17 a minute to almost none (0.02).
+Delay seems like one of the biggest problems to solve. On stomped.dev the bot sees the game 10 frames late if playing from my server[^6], which heavily affects its performance. It still double-jump cancels and L-cancels, but parries, which have to land in Yoshi's 6-frame shield start-up, go from 0.17 a minute to almost none (0.02).
 
-Finally I switched the base to Faynt's 10M model, which plays Yoshi better than HAL out of the box, and ran RL against Phillip's anti-Yoshi bots inside melee-sim-light (60x faster than Dolphin). After 1,000 steps (about a day on my 3090) it won 85 of 88 games in Dolphin, by far my best Yoshi, but only with no delay. I'm now post-training it on different delay, see how that works.
+Finally I switched the base to Faynt's 10M model, which plays Yoshi better than HAL out of the box, and ran RL against Phillip's anti-Yoshi bots inside melee-sim-light (60x faster than Dolphin). After 1,000 steps (about a day on my 3090) it won 85 of 88 games in Dolphin, by far my best Yoshi, but only with no delay. I'm now training it further with the delay raised step by step up to 10 frames, we'll see how that goes.
 
 ![Win rate during the RL run against four opponents, rising to 100% by step 1000; the same bot with 1 frame of input delay wins 0 of 48](/data/melee/yoshi-rl-light.svg "wide")
 
