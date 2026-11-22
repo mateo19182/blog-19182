@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-11-21
+date: 2026-11-22
 tags: 
   - personal
 ---
@@ -9,6 +9,9 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Neuron Atlas: Map of All Neuron Poles - Goodfire](https://www.goodfire.com/research/public_neuron_atlas/all_labels) `Tech` *2026-11-21*
+- [tufazip: Learning to Compress a Billion Bytes of Wikipedia | Tufa Labs](https://tufalabs.ai/research/tufazip) `Tech` *2026-11-21*
+- [NIN Live — The Nine Inch Nails Live Archive](https://ninlive.com) `Museums - Indexers` *2026-11-21*
 - [Dead Simple Sites — Minimal Web Design Inspiration & Gallery](https://deadsimplesites.com) `Museums - Indexers` *2026-11-20*
 - [Enumeracion](https://enumeracion.com) `Blogs` *2026-11-19*
 - [Garage Door Spam – Harrison Was Here](https://blog.harrison.page/garage-door-spam) `Tech` *2026-11-19*
