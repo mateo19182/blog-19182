@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-11-22
+date: 2026-11-24
 tags: 
   - personal
 ---
@@ -9,6 +9,7 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Perplexity and Intelligence | OpenAI](https://openai.com/index/perplexity-and-intelligence) `Tech` *2026-11-23*
 - [Neuron Atlas: Map of All Neuron Poles - Goodfire](https://www.goodfire.com/research/public_neuron_atlas/all_labels) `Tech` *2026-11-21*
 - [tufazip: Learning to Compress a Billion Bytes of Wikipedia | Tufa Labs](https://tufalabs.ai/research/tufazip) `Tech` *2026-11-21*
 - [NIN Live — The Nine Inch Nails Live Archive](https://ninlive.com) `Museums - Indexers` *2026-11-21*
