@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-11-24
+date: 2026-11-25
 tags: 
   - personal
 ---
@@ -9,6 +9,11 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Caso Saga - Wikipedia, la enciclopedia libre](https://es.wikipedia.org/wiki/Caso_Saga) `Wikis` *2026-11-24*
+- [Eternal September - Wikipedia](https://en.wikipedia.org/wiki/Eternal_September) `Wikis` *2026-11-24*
+- [PaperTok](https://papertok.app/paper/ZG9pOjEwLjE2MDkvYWlpZGUudjE3aTEuMTg4ODQ) `Academic Papers and Resources` *2026-11-24*
+- [Programmer Science Fiction - by Sam T. Oates](https://stoates.substack.com/p/programmer-science-fiction) `Ideas` *2026-11-24*
+- [Bored.com: fun, interesting & cool websites to explore when bored](https://www.bored.com) `Museums - Indexers` *2026-11-24*
 - [Perplexity and Intelligence | OpenAI](https://openai.com/index/perplexity-and-intelligence) `Tech` *2026-11-23*
 - [Neuron Atlas: Map of All Neuron Poles - Goodfire](https://www.goodfire.com/research/public_neuron_atlas/all_labels) `Tech` *2026-11-21*
 - [tufazip: Learning to Compress a Billion Bytes of Wikipedia | Tufa Labs](https://tufalabs.ai/research/tufazip) `Tech` *2026-11-21*
