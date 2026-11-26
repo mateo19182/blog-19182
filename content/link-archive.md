@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-11-25
+date: 2026-11-26
 tags: 
   - personal
 ---
@@ -9,6 +9,7 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Serving Qwen via 5,600 Lambdas for fun and 80x negative profit · Noah Lindner](https://noahbuilt.it/writing/qwen-on-5600-lambdas) `Tech` *2026-11-25*
 - [Caso Saga - Wikipedia, la enciclopedia libre](https://es.wikipedia.org/wiki/Caso_Saga) `Wikis` *2026-11-24*
 - [Eternal September - Wikipedia](https://en.wikipedia.org/wiki/Eternal_September) `Wikis` *2026-11-24*
 - [PaperTok](https://papertok.app/paper/ZG9pOjEwLjE2MDkvYWlpZGUudjE3aTEuMTg4ODQ) `Academic Papers and Resources` *2026-11-24*
