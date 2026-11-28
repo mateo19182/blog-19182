@@ -11,7 +11,28 @@ draft: true
 
 For one more year, I will be compiling my favourite albums and EPs released this year, plus the live shows I saw. Items are listed in rough descending order of enjoyment.
 
-[Here's the 2022 list](/data/2022.jpeg), [[Favourite music of 2023]], [[Favourite music of 2024]], [[Favourite music of 2025]].
+### Albums/EPs
+
+- [The Pleasure Is Yours](https://genagenagena.bandcamp.com/album/the-pleasure-is-yours) - GENA
+- [Detached From The Rest Of You](https://lorainejames.bandcamp.com/album/detached-from-the-rest-of-you) - Loraine James
+- [EXPERIMENTAL RAP](https://jpegmafia.bandcamp.com/album/experimental-rap) - JPEGMAFIA
+- [POMPEII // UTILITY](https://mikelikesrap.bandcamp.com/album/pompeii-utility) - Earl Sweatshirt + MIKE + SURF GANG
+- [Lownoise](https://ringnoord.bandcamp.com/album/lownoise) - ring noord + Sleepnet + Former
+- [OVERTIME](https://username.bandcamp.com/album/overtime) - username
+- [Pure Devotion](https://overmono.bandcamp.com/album/pure-devotion) - Overmono
+- [Distracted](https://thundercat.bandcamp.com/album/distracted) - Thundercat
+- [PLANET FROG](https://actionbronsonofficial.bandcamp.com/album/planet-frog) - Action Bronson
+- [Potpourri](https://yourdebit.bandcamp.com/album/potpourri) - Debit
+- [Beetle](https://grrlmusic.bandcamp.com/album/beetle) - GRRL
+- [Sd-3](https://www.deezer.com/album/917629131) - Loukeman
+- [The Easy Underground](https://erichilton.bandcamp.com/album/the-easy-underground) - Eric Hilton
+- [Vol. II](https://anginedepoitrine.bandcamp.com/album/vol-ii) - Angine De Poitrine
+- [Newcastle Juke Party](https://nectax.bandcamp.com/album/newcastle-juke-party) - Nectax
+- [aka remixed](https://tennyson.bandcamp.com/album/aka-remixed) - Tennyson
+- [Beatback](https://www.deezer.com/album/911781291) - Fcukers
+- [Fake Idols / Atomic Clock](https://lowendactivist.bandcamp.com/album/fake-idols-atomic-clock) - Low End Activist
+- [Scrolling Through The Wound](https://yukumusic.bandcamp.com/album/scrolling-through-the-wound) - Artur M. Puga
+
 
 ### Live shows
 
@@ -53,34 +74,4 @@ This is not an exhaustive list, just the ones that stood out the most to me.
 
 ---
 
-### Albums/EPs
-
-- [EXPERIMENTAL RAP](https://jpegmafia.bandcamp.com/album/experimental-rap) - JPEGMAFIA
-- [POMPEII // UTILITY](https://mikelikesrap.bandcamp.com/album/pompeii-utility) - Earl Sweatshirt + MIKE + SURF GANG
-- [Distracted](https://thundercat.bandcamp.com/album/distracted) - Thundercat
-- [PLANET FROG](https://actionbronsonofficial.bandcamp.com/album/planet-frog) - Action Bronson
-- [Pure Devotion](https://overmono.bandcamp.com/album/pure-devotion) - Overmono
-- [Detached From The Rest Of You](https://lorainejames.bandcamp.com/album/detached-from-the-rest-of-you) - Loraine James
-- [Please](https://djplead.bandcamp.com/album/please) - DJ Plead
-- [Potpourri](https://yourdebit.bandcamp.com/album/potpourri) - Debit
-- [The Pleasure Is Yours](https://genagenagena.bandcamp.com/album/the-pleasure-is-yours) - GENA
-- [Beetle](https://grrlmusic.bandcamp.com/album/beetle) - GRRL
-- [Sd-3](https://www.deezer.com/album/917629131) - Loukeman
-- [The Easy Underground](https://erichilton.bandcamp.com/album/the-easy-underground) - Eric Hilton
-- [9 months & 50 hours](https://www.deezer.com/album/1043456602) - Fred again..
-- [OVERTIME](https://username.bandcamp.com/album/overtime) - username
-- [Vol. II](https://anginedepoitrine.bandcamp.com/album/vol-ii) - Angine De Poitrine
-- [Lownoise](https://ringnoord.bandcamp.com/album/lownoise) - ring noord + Sleepnet + Former
-- [Newcastle Juke Party](https://nectax.bandcamp.com/album/newcastle-juke-party) - Nectax
-- [aka remixed](https://tennyson.bandcamp.com/album/aka-remixed) - Tennyson
-- [Beatback](https://www.deezer.com/album/911781291) - Fcukers
-- [Fake Idols / Atomic Clock](https://lowendactivist.bandcamp.com/album/fake-idols-atomic-clock) - Low End Activist
-- [Scrolling Through The Wound](https://yukumusic.bandcamp.com/album/scrolling-through-the-wound) - Artur M. Puga
-- [Municipal Dreams (Remixes)](https://lowendactivist.bandcamp.com/album/municipal-dreams-remixes) - Low End Activist
-- [Fragment / 2](https://1985-music.bandcamp.com/album/fragment-2-va) - Various Artists
-
-TODO (draft only, remove before publishing): only one track of these is in the library, so check whether they're full releases you listened to: Radical Frame - Actress, Kammerkonzert - Squarepusher, There's Something Here for Us Both - Vegyn, Kora / Soma - Skrillex, PLAGUE MUSIC - KAVARI, tide pool bath - galen tipton, I Like - umru, Helicopters - Ezra Collective, plx - Tennyson, Next Day Cleaning - Sammy Virji, Desidia - Baby Pantera. Also the unnamed concert on May 5.
-
----
-
-If you got this far you can check out my music on [Soundcloud](https://soundcloud.com/m19182) and [Youtube](https://www.youtube.com/channel/UCEJKcBK7i88Iv3saZy2xuSg).
+If you got this far you can check out my music on [Soundcloud](https://soundcloud.com/m19182) and [Youtube](https://www.youtube.com/channel/UCEJKcBK7i88Iv3saZy2xuSg). Played around with Bitwig this year but haven't really been making any music for some months.
