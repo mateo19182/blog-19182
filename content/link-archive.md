@@ -1,6 +1,6 @@
 ---
 title: Link Archive
-date: 2026-11-27
+date: 2026-11-28
 tags: 
   - personal
 ---
@@ -9,6 +9,7 @@ Collection of places on the internet I enjoyed.
  Categories are rough, links are updated once a week from my collection.
  If a link is broken and you're interested in it, contact me for an archive.
 
+- [Proton Docs](https://docs.proton.me/doc?mode=open-url&token=QY9CM4GKFR&linkId=tzPuG21QtzIRns0n6sM6IA#KiGD90jxwxu6) `Reads` *2026-11-27*
 - [Shtetl-Optimized &raquo; Blog Archive &raquo; HOLY SHIT HOLY SHIT HOLY SHIT HOLY SHIT](https://scottaaronson.blog/?p=10379) `Ideas` *2026-11-26*
 - [OSINT tools · 29 tools, 4 levels, and a full workflow · MAX](https://osinttools.beacon.host) `Tools and Interactive Websites` *2026-11-26*
 - [Serving Qwen via 5,600 Lambdas for fun and 80x negative profit · Noah Lindner](https://noahbuilt.it/writing/qwen-on-5600-lambdas) `Tech` *2026-11-25*
