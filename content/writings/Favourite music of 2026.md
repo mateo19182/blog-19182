@@ -7,6 +7,10 @@ tags:
 series: Favourite music
 series_es: Música favorita
 draft: true
+soundtrack:
+  artist: "300SkullsAndCounting & Jenny Sparks"
+  title: "The Ballad of St Nick's Park"
+  file: 300skullsandcounting-the-ballad-of-st-nicks-park.webm
 ---
 
 For one more year, I will be compiling my favourite albums and EPs released this year, plus the live shows I saw. Items are listed in rough descending order of enjoyment.
