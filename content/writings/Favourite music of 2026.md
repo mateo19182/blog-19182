@@ -38,6 +38,8 @@ For one more year, I will be compiling my favourite albums and EPs released this
 - [There's Something Here for Us Both](https://vegyn.bandcamp.com/track/theres-something-here-for-us-both) - Vegyn
 - [PLAGUE MUSIC](https://kavarimusic.bandcamp.com/album/plague-music) - KAVARI
 - [Helicopters](https://warchildrecords.bandcamp.com/track/helicopters) - Ezra Collective + Greentea Peng
+- [FATHERS](https://www.deezer.com/album/1003880411) - Nate Smith
+- [Personal Jazz](https://jukebouncewerk.bandcamp.com/album/jbw-presents-dj-strawberry-personal-jazz) - DJ Strawberry
 
 
 ### Live shows
