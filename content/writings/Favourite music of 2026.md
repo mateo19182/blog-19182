@@ -24,7 +24,7 @@ For one more year, I will be compiling my favourite albums and EPs released this
 - [PLANET FROG](https://actionbronsonofficial.bandcamp.com/album/planet-frog) - Action Bronson
 - [Potpourri](https://yourdebit.bandcamp.com/album/potpourri) - Debit
 - [Beetle](https://grrlmusic.bandcamp.com/album/beetle) - GRRL
-- [Sd-3](https://www.deezer.com/album/917629131) - Loukeman
+- [Sd-3](https://loukeman.bandcamp.com/album/sd-3) - Loukeman
 - [The Easy Underground](https://erichilton.bandcamp.com/album/the-easy-underground) - Eric Hilton
 - [Vol. II](https://anginedepoitrine.bandcamp.com/album/vol-ii) - Angine De Poitrine
 - [Newcastle Juke Party](https://nectax.bandcamp.com/album/newcastle-juke-party) - Nectax
@@ -32,6 +32,12 @@ For one more year, I will be compiling my favourite albums and EPs released this
 - [Beatback](https://www.deezer.com/album/911781291) - Fcukers
 - [Fake Idols / Atomic Clock](https://lowendactivist.bandcamp.com/album/fake-idols-atomic-clock) - Low End Activist
 - [Scrolling Through The Wound](https://yukumusic.bandcamp.com/album/scrolling-through-the-wound) - Artur M. Puga
+- [THIS IS SPA TOWN!](https://300skullsandcounting.bandcamp.com/album/this-is-spa-town) - 300SkullsAndCounting + Jenny Sparks
+- [Radical Frame](https://actress.bandcamp.com/album/radical-frame) - Actress
+- [Kammerkonzert](https://squarepusher.bandcamp.com/album/kammerkonzert) - Squarepusher
+- [There's Something Here for Us Both](https://vegyn.bandcamp.com/track/theres-something-here-for-us-both) - Vegyn
+- [PLAGUE MUSIC](https://kavarimusic.bandcamp.com/album/plague-music) - KAVARI
+- [Helicopters](https://warchildrecords.bandcamp.com/track/helicopters) - Ezra Collective + Greentea Peng
 
 
 ### Live shows
